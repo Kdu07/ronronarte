@@ -12,6 +12,8 @@ var config = {
 var game = new Phaser.Game(config);
 var pombo;
 var parado = false;
+var velocidadeX = 9;
+var velocidadeY = 4; 
 
 function preload() {
     this.load.image('bg', 'assets/background.jpg');
@@ -35,10 +37,10 @@ function create() {
 
 
 function spawnPombo() {
-    let = Phaser.Math.Between(100, 560); // Posição inicial aleatória
-    let = Phaser.Math.Between(200, 600); 
+    let posX = Phaser.Math.Between(100, 560); // Posição inicial aleatória
+    let posY = Phaser.Math.Between(200, 600); 
 
-    pombo = this.add.sprite(100, 500, 'pombo').setScale(1.5);
+    pombo = this.add.sprite(500, 810, 'pombo').setScale(1.5);
     pombo.setInteractive();
     pombo.ida = true; // Inicializa a direção
 
@@ -81,21 +83,41 @@ function spawnPombo() {
 }
 
 function update() { 
-    if (pombo && !parado) { 
-        if (pombo.x >= 500) { 
-            pombo.setFlip(false, false);
+    if (!parado){ // Só move o rato se ele não estiver parado
+        // Movimento no eixo X
+        if (pombo.x >= 500){
+            pombo.setFlip(false,false);
             pombo.ida = true;
         }
-
-        if (pombo.x <= 70) {
-            pombo.setFlip(true, false);
+        if (pombo.x > 70 && pombo.ida === true){
+            pombo.x -= velocidadeX;
+            pombo.angle = 0;
+        }
+        if (pombo.x <= 70){
+            pombo.setFlip(true,false);
             pombo.ida = false;
         }
+        if (pombo.x < 500 && pombo.ida === false){
+            pombo.x += velocidadeX;
+            pombo.angle = 0;
+        }
 
-        if (pombo.ida) {
-            pombo.x -= 5;
-        } else {
-            pombo.x += 5;
+        // Movimento no eixo Y
+        if (pombo.y >= 810){
+            pombo.setFlip(false,false);
+            pombo.sobe = true;
+        }
+        if (pombo.y > 40 && pombo.sobe === true){
+            pombo.y -= velocidadeY;
+            pombo.angle = 0;
+        }
+        if (pombo.y <= 40){
+            pombo.setFlip(true,false);
+            pombo.sobe = false;
+        }
+        if (pombo.y < 810 && pombo.sobe === false){
+            pombo.y += velocidadeY;
+            pombo.angle = 0;
         }
     }
 }
