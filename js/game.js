@@ -14,7 +14,7 @@ var config = {
 var game = new Phaser.Game(config);
 var pombo;
 var parado = false;
-var velocidadeX = 9;
+var velocidadeX = 5;
 var velocidadeY = 4; 
 var audio = new Audio('assets/pru.mp3');
 
