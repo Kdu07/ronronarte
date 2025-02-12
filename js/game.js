@@ -1,3 +1,5 @@
+
+        //config inicial do Phaser
 var config = {
     type: Phaser.AUTO,
     width: 570,
@@ -8,7 +10,7 @@ var config = {
         update: update
     }
 };
-
+        //setar variaveis universais que serão uteis pro código
 var game = new Phaser.Game(config);
 var pombo;
 var parado = false;
@@ -17,19 +19,19 @@ var velocidadeY = 4;
 var audio = new Audio('assets/pru.mp3');
 
 
-
+        //função que "pré-carrega" os arquivos na página
 function preload() {
     this.load.image('bg', 'assets/background.jpg');
     this.load.spritesheet('pombo', 'assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
     this.load.image('splash', 'assets/splash.png');
     this.load.audio('pru', 'audios/pru.mp3')
 }
-
+        //função que cria as coisas na página
 function create() {
     this.add.image(285, 425, 'bg').setScale(1.0);
     somPombo = this.sound.add('pru');
 
-    // ✅ Criar animação DENTRO do create()
+    // criar animação do pombo voando
     this.anims.create({
         key: 'direita',
         frames: this.anims.generateFrameNumbers('pombo', { start: 0, end: 4 }),
@@ -63,19 +65,17 @@ function spawnPombo() {
                 ease: 'Linear',
                 onComplete: () => {
                     pombo.destroy();
-                    somPombo.play({volume: 0.5});
+                    somPombo.play({volume: 0.5});  //toca o som de pombo quando o pombo é clicado
                     this.time.delayedCall(1000, () => {
-                        somPombo.stop();
+                        somPombo.stop(); //para o som do pombo após 1000ms(1s)
                     });
                     spawnPombo.call(this); // Cria um novo pombo após sumir
-                    
-
                 }
                 
             });
 
-            let splash = this.add.image(pombo.x, pombo.y, 'splash').setScale(0.3);
-            splash.alpha = 0;
+            let splash = this.add.image(pombo.x, pombo.y, 'splash').setScale(0.3); //adiciona o splash de tinta na tela
+            splash.alpha = 0; 
 
             // Efeito de fade-in para o splash
             this.tweens.add({
