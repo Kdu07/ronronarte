@@ -1,4 +1,4 @@
-z   //config inicial do Phaser
+   //config inicial do Phaser
 var config = {
     type: Phaser.AUTO,
     width: 570,
@@ -53,22 +53,29 @@ function spawnPombo() {
 
     pombo.play('direita');
 
+    this.input.off('pointerdown');
+
     this.input.on('pointerdown', (pointer) => {
         if (pombo.getBounds().contains(pointer.x, pointer.y)) {
-    
+            pombo.disableInteractive();
             // Cria efeito de fade-out
             this.tweens.add({
                 targets: pombo,
                 alpha: 0,
-                duration: 300,
+                duration: 0,
                 ease: 'Linear',
                 onComplete: () => {
                     pombo.destroy();
+                    
                     somPombo.play({volume: 0.5});  //toca o som de pombo quando o pombo é clicado
-                    this.time.delayedCall(1000, () => {
-                        somPombo.stop(); //para o som do pombo após 1000ms(1s)
+                this.time.delayedCall(1000, () => {
+                    somPombo.stop(); //para o som do pombo após 1000ms(1s)
                     });
+
+                this.time.delayedCall(1000, ()=> {
                     spawnPombo.call(this); // Cria um novo pombo após sumir
+                    });
+                   
                 }
                 
             });
