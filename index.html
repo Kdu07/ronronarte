@@ -1,3 +1,5 @@
+e
+    <!-- Linha de declaração do doctype -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +9,7 @@
     <link rel = "stylesheet" href = "css/startScreen.css"> 
     <title>RonRonArte</title>
 
+    <!-- estilização dos nossos botões da tela de start com css-->
     <style>
         #startScreenMainContentStartButton {
             background-image: url("assets/botões/botao_start_sprite.png");
@@ -16,27 +19,54 @@
             border: none;
             cursor: pointer;
             background-color: transparent;
+            scale: 1.3;
+            animation: pulse 1.5s infinite ease-in-out;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            animation: animar 1.5s infinite ease-in-out
+
         }
 
         #startScreenMainContentOptionsButton {
-            background-image: url("assets/botões/botao_opcoes_sprite.png");
+            background-image: url("assets/botões/botao_opcoes_corr.png");
             background-position: 0 0;
             width: 128px;
             height: 64px;
             border: none;
             cursor: pointer;
             background-color: transparent;
+            scale: 1.2;
+            animation: animar 1.5s infinite ease-in-out
+
+        }
+        .botao:before, .botao:after {
+            content:" ";
+            display: block;
+            position: absolute;
+            border: 1px solid;
+            animation: animar 1.5s infinite ease-in-out;
+        }
+
+        @keyframes animar {
+            0%{
+                transform: scale(0.8);
+            }
+            100% {
+                transform: scale(1.0);
+            }
+            
         }
         </style>
 </head>
 <body>
+
+     <!-- corpo do código, botões de start etc-->
     <main id = "startScreenMainContent">
         <section id = "startScreenMainContentSection">
             <div id = "startScreenMainContentContainer">
                 <h1 id = "startScreenMainContentTitle">RonRonArte</h1>
 
-                <div id = "startScreenMainContentButtonsContainer">
-                    <button id = "startScreenMainContentStartButton"></button>
+                <div class="botao" id = "startScreenMainContentButtonsContainer">
+                    <button class="button" id = "startScreenMainContentStartButton"></button>
                     <script>
                         const button = document.getElementById('startScreenMainContentButtonsContainer');
                         const frameWidth = 128;
@@ -62,7 +92,7 @@
             </div>
         </section>
     </main>
-
+    <!-- source da próxima tela -->
     <script src="js/startScreen.js"></script>
 </body>
 </html>

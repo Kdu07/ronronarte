@@ -24,6 +24,7 @@ function preload() {
     this.load.spritesheet('pombo', 'assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
     this.load.image('splash', 'assets/splash.png');
     this.load.audio('pru', 'audios/pru.mp3')
+    this.load.image('PauseBtn', 'assets/botões/pause.png')
 }
         //função que cria as coisas na página
 function create() {
@@ -37,12 +38,20 @@ function create() {
         frameRate: 10,
         repeat: -1
     });
+    
+    // função que adiciona um botão de pause na tela
+    PauseBtn = this.add.image(40, 50, 'PauseBtn')
+    PauseBtn.setInteractive()
+    PauseBtn.on('pointerdown', () => {
+        window.location.href = "index.html";
+    })
 
     spawnPombo.call(this); // Agora o pombo já pode usar a animação
 }
 
+    // função que spawna o pombo em um lugar aleatório da tela
 function spawnPombo() {
-    let posX = Phaser.Math.Between(0, 600); // Posição inicial aleatória
+    let posX = Phaser.Math.Between(0, 600); 
     let posY = Phaser.Math.Between(0, 700); 
 
     pombo = this.add.sprite(posX, posY, 'pombo').setScale(1.5);
@@ -50,9 +59,10 @@ function spawnPombo() {
     pombo.ida = true; // Inicializa a direção
     pombo.sobe = true;
 
-
+    // chama a animação do pombo
     pombo.play('direita');
 
+    // faz o pombo ser clicável
     this.input.on('pointerdown', (pointer) => {
         if (pombo.getBounds().contains(pointer.x, pointer.y)) {
     
