@@ -14,15 +14,20 @@ var pombo;
 var parado = false;
 var velocidadeX = 9;
 var velocidadeY = 4; 
+var audio = new Audio('assets/pru.mp3');
+
+
 
 function preload() {
     this.load.image('bg', 'assets/background.jpg');
     this.load.spritesheet('pombo', 'assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
     this.load.image('splash', 'assets/splash.png');
+    this.load.audio('pru', 'audios/pru.mp3')
 }
 
 function create() {
     this.add.image(285, 425, 'bg').setScale(1.0);
+    somPombo = this.sound.add('pru');
 
     // ✅ Criar animação DENTRO do create()
     this.anims.create({
@@ -35,19 +40,21 @@ function create() {
     spawnPombo.call(this); // Agora o pombo já pode usar a animação
 }
 
-
 function spawnPombo() {
-    let posX = Phaser.Math.Between(100, 560); // Posição inicial aleatória
-    let posY = Phaser.Math.Between(200, 600); 
+    let posX = Phaser.Math.Between(0, 600); // Posição inicial aleatória
+    let posY = Phaser.Math.Between(0, 700); 
 
-    pombo = this.add.sprite(500, 810, 'pombo').setScale(1.5);
+    pombo = this.add.sprite(posX, posY, 'pombo').setScale(1.5);
     pombo.setInteractive();
     pombo.ida = true; // Inicializa a direção
+    pombo.sobe = true;
+
 
     pombo.play('direita');
 
     this.input.on('pointerdown', (pointer) => {
         if (pombo.getBounds().contains(pointer.x, pointer.y)) {
+    
             // Cria efeito de fade-out
             this.tweens.add({
                 targets: pombo,
@@ -56,8 +63,15 @@ function spawnPombo() {
                 ease: 'Linear',
                 onComplete: () => {
                     pombo.destroy();
+                    somPombo.play({volume: 0.5});
+                    this.time.delayedCall(1000, () => {
+                        somPombo.stop();
+                    });
                     spawnPombo.call(this); // Cria um novo pombo após sumir
+                    
+
                 }
+                
             });
 
             let splash = this.add.image(pombo.x, pombo.y, 'splash').setScale(0.3);
