@@ -1,8 +1,10 @@
+const gameWidth = 570;
+const gameHeight = 850;
 
 var config = {
     type: Phaser.AUTO,
-    width: 570,
-    height: 850,
+    width: gameWidth,
+    height: gameHeight,
     scene: {
         preload: preload,
         create: create,
@@ -13,12 +15,11 @@ var config = {
 var game = new Phaser.Game(config);
 var pombo;
 var parado = false;
-// Configurar a hitbox da imagem
-var pomboHitboxWidth = 43;
-var pomboHitboxHeight = 33;
+
 
         //função que "pré-carrega" os arquivos na página
 function preload() {
+    this.load.audio('pru', '/audios/pru.mp3');
     this.load.image('bg', 'assets/background.jpg');
     this.load.spritesheet('pombo', 'assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
     this.load.image('splash-pink', 'assets/splash-pink.png');
@@ -38,6 +39,7 @@ function create() {
         repeat: -1
     });
 
+    
     spawnPombo.call(this); // Agora o pombo já pode usar a animação
 }
 
@@ -58,11 +60,11 @@ function spawnPombo() {
     pombo.direcaoY = 1;
     
     // Hitbox
-    pombo.HitboxWidth = 43;
-    pombo.HitboxHeight = 33;
+    pombo.hitboxWidth = 43;
+    pombo.hitboxHeight = 33;
 
     pombo.play('direita');
-
+    this.input.removeAllListeners('pointerdown');
     this.input.on('pointerdown', (pointer) => {
         if (pombo.getBounds().contains(pointer.x, pointer.y)) {
     
@@ -84,7 +86,8 @@ function spawnPombo() {
             });
 
             // Adiciona splash invisível na tela
-            let splash = this.add.image(pombo.x, pombo.y, splashRand()).setScale(0.3);
+            let splashRan = splashRand();
+            let splash = this.add.image(pombo.x, pombo.y, splashRan).setScale(0.3);
             splash.alpha = 0;
 
             // Efeito de fade-in para o splash
@@ -96,7 +99,7 @@ function spawnPombo() {
                 onComplete: () => {
                     this.tweens.add({
                         targets: splash,
-                        alpha: 0.0,
+                        alpha: 0.7,
                         duration: 500,
                         ease: 'Linear'
                     });
@@ -115,20 +118,39 @@ function update() {
 function movimento(alvo) {
     // Confere se o alvo chegou no limite do game. Se chegar no limite, espelha a orientação
     // Eixo X
-    if (alvo.x >= (gameWidth - alvo.HitboxWidth)){
+    if (alvo.x >= (gameWidth - alvo.hitboxWidth)){
         alvo.setFlip(false,false);
         alvo.direcaoX = -1;
     }
-    if (alvo.x <= (0 + alvo.HitboxWidth)){
+    if (alvo.x <= (0 + alvo.hitboxWidth)){
         alvo.setFlip(true,false);
         alvo.direcaoX = 1;
     }
     // Eixo Y
-    if (alvo.y >= (gameHeight - alvo.HitboxHeight) || alvo.y <= (0 + alvo.HitboxHeight)){
+    if (alvo.y >= (gameHeight - alvo.hitboxHeight) || alvo.y <= (0 + alvo.hitboxHeight)){
         alvo.direcaoY *= -1;
     }
 
     // Move no eixo X e Y de acordo com a velocidade e a orientação
     alvo.x += alvo.velocidadeX * alvo.direcaoX;
     alvo.y += alvo.velocidadeY * alvo.direcaoY;
+}
+
+function splashRand(){
+    let splash = 'splash-yellow';
+    let rand = Phaser.Math.Between(0,2);
+    console.log(rand);
+
+    switch(rand){
+        case 0:
+            splash = 'splash-yellow';
+            break
+        case 1:
+            splash = 'splash-pink';
+            break
+        case 2:
+            splash = 'splash-blue';
+            break    
+    }
+    return splash;
 }
