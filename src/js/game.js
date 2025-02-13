@@ -45,13 +45,7 @@ function create() {
     PauseBtn = this.add.image(40, 50, 'PauseBtn')
     PauseBtn.setInteractive()
     PauseBtn.on('pointerdown', () => {
-        window.location.href = "index.html";
-    })
-
-    PauseBtn = this.add.image(40, 50, 'PauseBtn')
-    PauseBtn.setInteractive()
-    PauseBtn.on('pointerdown', () => {
-        window.location.href = "index.html";
+        window.location.href = "http://127.0.0.1:5501/index.html";
     })
 
     spawnPombo.call(this); // Agora o pombo já pode usar a animação
