@@ -75,7 +75,7 @@
 ## 1.2. Requisitos do Projeto (sprints 1 e 2)
 Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por meios dos quais se busca explicitar, de maneira breve, lógica e sucinta, suas principais funcionalidades e aspectos, de acordo com o escopo vigente.  
 
-\# | Requisito  
+\# | Requisitos  
 --- | ---
 1 | A tela inicial deve mostrar um botão “Jogar”, que, quando clicado, direcione o jogador às fases do jogo.
 2 | Nas fases, o jogador (gato) deve clicar nos animais que aparecerem na tela para eliminá-los.
