@@ -54,6 +54,8 @@ function create() {
 
     // Função para gerar o pombo em um lugar aleatório da tela
 function spawnPombo() {
+    parado = false;
+
     // Posição inicial aleatória
     let posX = gerarRandomPos(gameWidth, 200);
     let posY = gerarRandomPos(gameHeight, 200);
@@ -75,16 +77,16 @@ function spawnPombo() {
  
 
     pombo.play('direita');
+
     this.input.removeAllListeners('pointerdown');
+    
     this.input.on('pointerdown', (pointer) => {
         if (pombo.getBounds().contains(pointer.x, pointer.y)) {
-    
+            parado = true;
+
             // Cria efeito de fade-out
             this.tweens.add({
                 targets: pombo,
-                alpha: 0,
-                duration: 300,
-                ease: 'Linear',
                 onComplete: () => {
                     pombo.destroy();
                     somPombo.play({volume: 0.5});  //toca o som de pombo quando o pombo é clicado
