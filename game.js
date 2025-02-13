@@ -1,6 +1,7 @@
 const gameWidth = 570;
 const gameHeight = 850;
 
+// Configurações iniciais do jogo
 var config = {
     type: Phaser.AUTO,
     width: gameWidth,
@@ -11,15 +12,15 @@ var config = {
         update: update
     }
 };
-        //setar variaveis universais que serão uteis pro código
+
+// Variaveis globais que serão úteis para o código
 var game = new Phaser.Game(config);
 var pombo;
 var parado = false;
 
 
-//Carrega os arquivos na memória
+// Carrega os arquivos na memória
 function preload() {
-
     this.load.image('bg', '/assets/background.jpg');
     this.load.spritesheet('pombo', '/assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
     this.load.audio('pru', '/assets/audios/pru.mp3');
@@ -29,14 +30,14 @@ function preload() {
     this.load.image('splash-yellow', '/assets/splash-yellow.png');
 }
         
-//Adiciona e configura os elementos na página
+// Adiciona e configura os elementos na página
 function create() {
     this.add.image(285, 425, 'bg').setScale(1.0);
     somPombo = this.sound.add('pru');
 
     // Animação do pombo voando
     this.anims.create({
-        key: 'direita',
+        key: 'voo',
         frames: this.anims.generateFrameNumbers('pombo', { start: 0, end: 3 }),
         frameRate: 10,
         repeat: -1
@@ -56,8 +57,8 @@ function create() {
 function spawnPombo() {
     parado = false;
 
-    // Posição inicial aleatória
-    let posX = gerarRandomPos(gameWidth, 200);
+    // Adiciona o pombo
+    let posX = gerarRandomPos(gameWidth, 200); // Gera uma posição aleatoria fora da tela
     let posY = gerarRandomPos(gameHeight, 200);
     pombo = this.add.sprite(posX, posY, 'pombo').setScale(1.5);
     pombo.setInteractive();
@@ -67,7 +68,7 @@ function spawnPombo() {
     pombo.velocidadeX = Phaser.Math.Between(7,9);
     pombo.velocidadeY = Phaser.Math.Between(3,5);
     
-    // Inicializa a direção, que é usada junto da a velocidade para movimentar o pombo
+    // Inicializa a direção, que é usada junto da velocidade para movimentar o pombo
     pombo.direcaoX = -1; 
     pombo.direcaoY = 1;
     
@@ -76,29 +77,30 @@ function spawnPombo() {
     pombo.hitboxHeight = 33;
  
 
-    pombo.play('direita');
+    pombo.play('voo'); // Inicia animação de voo pombo
 
-    this.input.removeAllListeners('pointerdown');
+    this.input.removeAllListeners('pointerdown'); // Ignora todos os cliques anteriores 
     
+    // Confere se o pombo é clicado
     this.input.on('pointerdown', (pointer) => {
         if (pombo.getBounds().contains(pointer.x, pointer.y)) {
             parado = true;
 
-            // Cria efeito de fade-out
+            // Cria efeito de som e adiciona um novo pombo
             this.tweens.add({
                 targets: pombo,
                 onComplete: () => {
-                    pombo.destroy();
-                    somPombo.play({volume: 0.5});  //toca o som de pombo quando o pombo é clicado
+                    pombo.destroy(); // Remove o pombo da tela
+                    somPombo.play({volume: 0.5});  // Toca o som de pombo quando o pombo é clicado
                     this.time.delayedCall(1000, () => {
-                        somPombo.stop(); //para o som do pombo após 1000ms(1s)
+                        somPombo.stop(); // Para o som do pombo após 1000ms (1s)
                     });
                     spawnPombo.call(this); // Cria um novo pombo após sumir
                 }
     
             });
 
-            // Adiciona splash invisível na tela
+            // Adiciona splash aleatorio e invisível na tela
             let splashList = ['splash-pink', 'splash-yellow', 'splash-blue'];
             let splash = this.add.image(pombo.x, pombo.y, splashList[Phaser.Math.Between(0,2)]).setScale(0.3);
             splash.alpha = 0;
@@ -123,7 +125,7 @@ function spawnPombo() {
 }
 
 function update() { 
-    if (!parado){ // Só move o rato se ele não estiver parado
+    if (!parado){ // Só move o pombo se ele não foi clicado
         movimento(pombo);  
     }
 }
@@ -152,8 +154,9 @@ function movimento(alvo) {
     alvo.y += alvo.velocidadeY * alvo.direcaoY;
 }
 
+// Gera um número aleatorio correspondendo a pixels fora da tela do game (usado para gerar o pombo fora da tela)
 function gerarRandomPos(eixo, fora) {
-    var num = Math.floor(Math.random() * ((eixo + fora) - (0 - fora) + 1)) + (0 - fora);
-    return (num > 0 && num < eixo) ? gerarRandomPos(eixo, fora) : num;
+    var num = Math.floor(Math.random() * ((eixo + fora) - (0 - fora) + 1)) + (0 - fora); // Gera um valor do tamanho da tela + margem para os dois lados
+    return (num > 0 && num < eixo) ? gerarRandomPos(eixo, fora) : num; // Se o valor gerado estiver dentro da tela a função é chamada novamente
 }
 
