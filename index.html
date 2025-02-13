@@ -5,30 +5,26 @@ e
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel= "stylesheet" href = "/src/dist/style.css"> <base href="/">
-    <link type="text/css" rel= "stylesheet" href = "src/dist/startScreen.css"> <base href="/">
+    <link type="text/css" rel= "stylesheet" href = "/src/css/style.css"> <base href="/">
+    <link type="text/css" rel= "stylesheet" href = "/src/css/startScreen.css"> <base href="/">
     <title>RonRonArte</title>
 
     <!-- estilização dos nossos botões da tela de start com css-->
     <style>
         #startScreenMainContentStartButton {
-            background-image: url("/assets/botões/botao_start_preto.png");
+            background-image: url("./public/botões/botao_start_preto.png");
             background-position: 0 0;
             width: 128px;
             height: 64px;
             border: none;
             cursor: pointer;
             background-color: transparent;
-            scale: 1.3;
+            scale: 2.0;
             animation: pulse 1.5s infinite ease-in-out;
             box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-            animation: animar 1.5s infinite ease-in
 
         }
 
-        #startScreenMainContentOptionsButton {
-            background-image: url("assets/botões/botao_opcoes_corr.png");
-        }
 
         #startScreenMainContentOptionsButton {
             background-image: url("assets/botões/botao_opcoes_corr_preto.png");
@@ -38,26 +34,10 @@ e
             border: none;
             cursor: pointer;
             background-color: transparent;
-            scale: 1.2;
-            animation: animar 1.5s infinite ease-in-out;
-
-
-            scale: 1.3;
-        }
-        .botao:before, .botao:after {
-            content:" ";
-            display: block;
-            position: absolute;
-            border: 1px solid;
-            animation: animar 1.5s infinite ease-in-out;
+            scale: 2.0;
+            display:flex; 
         }
 
-        @keyframes animar {
-            0%{
-                transform: scale(0.8);
-            }
-            
-        }
 
         </style>
 </head>
@@ -98,6 +78,10 @@ e
     </main>
 
     <!-- source da próxima tela -->
-    <script src="src/dist/startScreen.js"></script>
+    <script src="src/js/startScreen.js"></script>
+
+
+    <script src="src/js/startScreen.js"></script>
+
 </body>
 </html>
