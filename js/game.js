@@ -1,8 +1,8 @@
 
 var config = {
     type: Phaser.AUTO,
-    width: 570,
-    height: 850,
+    width: 393,
+    height: 852,
     scene: {
         preload: preload,
         create: create,
