@@ -245,8 +245,8 @@ Logo abaixo, estão registrados os prints das telas da primeira versão do jogo.
 
 <h4 align = "center">Tela com a primeira cena</h4>
 
-<div style="text-align: center;">
-    <img src="https://github.com/user-attachments/assets/30f3865b-5e98-49f1-906e-e886c33ee157" alt="tela de start RonRonArte"  style="width: 50%; max-width: 300px;">
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/30f3865b-5e98-49f1-906e-e886c33ee157" width="300">
 </div>
 
 
