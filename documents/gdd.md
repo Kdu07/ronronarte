@@ -241,7 +241,7 @@ Logo abaixo, estão registrados os prints das telas da primeira versão do jogo.
 
 ![tela de start RonRonArte](https://github.com/user-attachments/assets/30f3865b-5e98-49f1-906e-e886c33ee157)
 
-<h4 align = "center">Fonte: autoria própria (2025). </h4>
+<h4 align = "center">Fonte: autoria própria (2025). </h4> <br> <br>
 
 
 
@@ -251,7 +251,7 @@ Logo abaixo, estão registrados os prints das telas da primeira versão do jogo.
   <img src="https://github.com/user-attachments/assets/a2107a97-8d01-4339-8469-bef594f42c61" width="300">
 </div>
 
-<h4 align = "center">Fonte: autoria própria (2025). </h4>
+<h4 align = "center">Fonte: autoria própria (2025). </h4> <br> <br>
 
 
 
@@ -261,7 +261,7 @@ Logo abaixo, estão registrados os prints das telas da primeira versão do jogo.
   <img src="https://github.com/user-attachments/assets/9581c99b-c61d-407d-bb58-b492f8a47998" width="300">
 </div>
 
-<h4 align = "center">Fonte: autoria própria (2025). </h4>
+<h4 align = "center">Fonte: autoria própria (2025). </h4> <br> <br>
 
 
 
