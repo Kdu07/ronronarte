@@ -30,7 +30,9 @@
 
 ## 📜 Descrição
 
-Feito por alunos do Inteli - Instituto de Liderança e Tecnologia - em parceria com Dr Pet - Alexandre Rossi. Em primeira análise, há uma crescente no mercado de pets no Brasil, especialmente para gatos. E com esse crescimento, 
+Feito por alunos do Inteli - Instituto de Liderança e Tecnologia - em parceria com Dr Pet - Alexandre Rossi. 
+
+Há uma crescente no mercado de pets no Brasil, especialmente para gatos. E com esse crescimento, a demanda de entretenimento para gatos e tutores aumentou. Dessa maneira, surgiu o RonRonArte, um jogo que implementa elementos que instigam o instinto de caça do felino, e ao mesmo tempo entretem e cria um laço com o seu tutor.
 
 *Inclua o link para o jogo aqui*
 
