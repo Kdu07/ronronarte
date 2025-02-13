@@ -41,27 +41,35 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 - <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
 
-- <b>document</b>: aqui estão todos os documentos do projeto, como o Game Development Document (GDD) bem como documentos complementares.
+- <b>document</b>: aqui estão todos os documentos do projeto, como o Game Development Document (GDD).
 
 - <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto do jogo.
 
 - <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto e o jogo (o mesmo que você está lendo agora).
 
+Diagrama de estrutura:
+```
+├───assets
+|    ├───audios
+|    ├───botões
+| 
+├───document
+|
+└───src
+    ├───.vscode
+    ├───css
+    ├───scenes
+```
 ## 🔧 Como executar o código
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o código e executar o jogo a partir de sua máquina ou seu repositório.*
+  Este jogo foi feito com HTML5, CSS3 e Javascript. Para execução do código, é necessário o uso de uma IDE (ambiente de desenvolvimento) - recomendanmos o Visual Studio Code.
+
+**Pré-Requisitos:**
+
+**IDE**: 
 
 
 ## 🗃 Histórico de lançamentos
-
-* 0.5.0 - XX/XX/2024
-    * 
-* 0.4.0 - XX/XX/2024
-    * 
-* 0.3.0 - XX/XX/2024
-    * 
-* 0.2.0 - XX/XX/2024
-    * 
 * 0.1.0 - 13/02/2025
     *
 
