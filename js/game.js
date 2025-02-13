@@ -44,16 +44,16 @@ function create() {
 }
 
 function spawnPombo() {
-    let posX = Phaser.Math.Between(0, 600); // Posição inicial aleatória
-    let posY = Phaser.Math.Between(0, 700); 
-
+    // Posição inicial aleatória
+    let posX = gerarRandomPos(gameWidth, 200);
+    let posY = gerarRandomPos(gameHeight, 200);
     pombo = this.add.sprite(posX, posY, 'pombo').setScale(1.5);
     pombo.setInteractive();
     
     // Cofigurações do pombo
     // Velocidade de movimento
-    pombo.velocidadeX = 9;
-    pombo.velocidadeY = 4;
+    pombo.velocidadeX = Phaser.Math.Between(7,9);
+    pombo.velocidadeY = Phaser.Math.Between(3,5);
     
     // Inicializa a direção, que é usada junto da a velocidade para movimentar o pombo
     pombo.direcaoX = -1; 
@@ -62,6 +62,7 @@ function spawnPombo() {
     // Hitbox
     pombo.hitboxWidth = 43;
     pombo.hitboxHeight = 33;
+ 
 
     pombo.play('direita');
     this.input.removeAllListeners('pointerdown');
@@ -86,8 +87,8 @@ function spawnPombo() {
             });
 
             // Adiciona splash invisível na tela
-            let splashRan = splashRand();
-            let splash = this.add.image(pombo.x, pombo.y, splashRan).setScale(0.3);
+            let splashList = ['splash-pink', 'splash-yellow', 'splash-blue'];
+            let splash = this.add.image(pombo.x, pombo.y, splashList[Phaser.Math.Between(0,2)]).setScale(0.3);
             splash.alpha = 0;
 
             // Efeito de fade-in para o splash
@@ -118,17 +119,20 @@ function update() {
 function movimento(alvo) {
     // Confere se o alvo chegou no limite do game. Se chegar no limite, espelha a orientação
     // Eixo X
-    if (alvo.x >= (gameWidth - alvo.hitboxWidth)){
+    if (alvo.x >= (gameWidth - alvo.hitboxWidth) || alvo.x >= (gameWidth + 200)){
         alvo.setFlip(false,false);
         alvo.direcaoX = -1;
     }
-    if (alvo.x <= (0 + alvo.hitboxWidth)){
+    if (alvo.x <= (0 + alvo.hitboxWidth) || alvo.x <= (0 - 200)){
         alvo.setFlip(true,false);
         alvo.direcaoX = 1;
     }
     // Eixo Y
-    if (alvo.y >= (gameHeight - alvo.hitboxHeight) || alvo.y <= (0 + alvo.hitboxHeight)){
-        alvo.direcaoY *= -1;
+    if (alvo.y >= (gameHeight - alvo.hitboxHeight) || alvo.y >= (gameHeight + 200)){
+        alvo.direcaoY = -1;
+    }
+    if (alvo.y <= (0 + alvo.hitboxHeight) || alvo.y <= (0 - 200)){
+        alvo.direcaoY = 1;
     }
 
     // Move no eixo X e Y de acordo com a velocidade e a orientação
@@ -136,21 +140,8 @@ function movimento(alvo) {
     alvo.y += alvo.velocidadeY * alvo.direcaoY;
 }
 
-function splashRand(){
-    let splash = 'splash-yellow';
-    let rand = Phaser.Math.Between(0,2);
-    console.log(rand);
-
-    switch(rand){
-        case 0:
-            splash = 'splash-yellow';
-            break
-        case 1:
-            splash = 'splash-pink';
-            break
-        case 2:
-            splash = 'splash-blue';
-            break    
-    }
-    return splash;
+function gerarRandomPos(eixo, fora) {
+    var num = Math.floor(Math.random() * ((eixo + fora) - (0 - fora) + 1)) + (0 - fora);
+    return (num > 0 && num < eixo) ? gerarRandomPos(eixo, fora) : num;
 }
+
