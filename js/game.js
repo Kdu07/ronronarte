@@ -1,27 +1,23 @@
-const gameWidth = 570;
-const gameHeight = 850;
 
 var config = {
     type: Phaser.AUTO,
-    width: gameWidth,
-    height: gameHeight,
+    width: 570,
+    height: 850,
     scene: {
         preload: preload,
         create: create,
         update: update
     }
 };
-
+        //setar variaveis universais que serão uteis pro código
 var game = new Phaser.Game(config);
 var pombo;
 var parado = false;
-
 // Configurar a hitbox da imagem
-function splashRand() {
-    let i = 1;
-    return 'splash-yellow';
-}
+var pomboHitboxWidth = 43;
+var pomboHitboxHeight = 33;
 
+        //função que "pré-carrega" os arquivos na página
 function preload() {
     this.load.image('bg', 'assets/background.jpg');
     this.load.spritesheet('pombo', 'assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
@@ -29,11 +25,12 @@ function preload() {
     this.load.image('splash-blue', 'assets/splash-blue.png');
     this.load.image('splash-yellow', 'assets/splash-yellow.png');
 }
-
+        //função que cria as coisas na página
 function create() {
     this.add.image(285, 425, 'bg').setScale(1.0);
+    somPombo = this.sound.add('pru');
 
-    // ✅ Criar animação DENTRO do create()
+    // criar animação do pombo voando
     this.anims.create({
         key: 'direita',
         frames: this.anims.generateFrameNumbers('pombo', { start: 0, end: 4 }),
@@ -44,10 +41,9 @@ function create() {
     spawnPombo.call(this); // Agora o pombo já pode usar a animação
 }
 
-
 function spawnPombo() {
-    let posX = Phaser.Math.Between(100, 560); // Posição inicial aleatória
-    let posY = Phaser.Math.Between(200, 600); 
+    let posX = Phaser.Math.Between(0, 600); // Posição inicial aleatória
+    let posY = Phaser.Math.Between(0, 700); 
 
     pombo = this.add.sprite(posX, posY, 'pombo').setScale(1.5);
     pombo.setInteractive();
@@ -69,6 +65,7 @@ function spawnPombo() {
 
     this.input.on('pointerdown', (pointer) => {
         if (pombo.getBounds().contains(pointer.x, pointer.y)) {
+    
             // Cria efeito de fade-out
             this.tweens.add({
                 targets: pombo,
@@ -77,8 +74,13 @@ function spawnPombo() {
                 ease: 'Linear',
                 onComplete: () => {
                     pombo.destroy();
+                    somPombo.play({volume: 0.5});  //toca o som de pombo quando o pombo é clicado
+                    this.time.delayedCall(1000, () => {
+                        somPombo.stop(); //para o som do pombo após 1000ms(1s)
+                    });
                     spawnPombo.call(this); // Cria um novo pombo após sumir
                 }
+    
             });
 
             // Adiciona splash invisível na tela
@@ -94,7 +96,7 @@ function spawnPombo() {
                 onComplete: () => {
                     this.tweens.add({
                         targets: splash,
-                        alpha: 0.1,
+                        alpha: 0.0,
                         duration: 500,
                         ease: 'Linear'
                     });
