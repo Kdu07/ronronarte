@@ -59,7 +59,7 @@ function create() {
 
     // função que spawna o pombo em um lugar aleatório da tela
 function spawnPombo() {
-    let posX = Phaser.Math.Between(0, 600); 
+    let posX = Phaser.Math.Between(100, 500); 
     let posY = Phaser.Math.Between(0, 700); 
 
     pombo = this.add.sprite(posX, posY, 'pombo').setScale(1.5);
@@ -117,19 +117,19 @@ function spawnPombo() {
 function update() { 
     if (!parado){ // Só move o rato se ele não estiver parado
         // Movimento no eixo X
-        if (pombo.x >= 500){
+        if (pombo.x >= 350){
             pombo.setFlip(false,false);
             pombo.ida = true;
         }
-        if (pombo.x > 70 && pombo.ida === true){
+        if (pombo.x > 40 && pombo.ida === true){
             pombo.x -= velocidadeX;
             pombo.angle = 0;
         }
-        if (pombo.x <= 70){
+        if (pombo.x <= 40){
             pombo.setFlip(true,false);
             pombo.ida = false;
         }
-        if (pombo.x < 500 && pombo.ida === false){
+        if (pombo.x < 350 && pombo.ida === false){
             pombo.x += velocidadeX;
             pombo.angle = 0;
         }
