@@ -12,8 +12,8 @@
 ## 👨‍🎓 Integrantes: 
 - Carlos Eduardo
 - Eduardo Jesus
-- Felipe Neves
-- Guilherme Guerreiro
+- <a href="https://www.linkedin.com/in/felipe-neves-36925a346/">Felipe Neves</a>
+- <a href="https://www.linkedin.com/in/guilherme-guerreiro-025986319/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Guilherme Guerreiro</a>
 - Luana de Jesus Lima
 - <a href="https://www.linkedin.com/in/luiz-hinuy-0995252b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Luiz Felipe Hinuy</a>
 - <a href="https://www.linkedin.com/in/nicolli-venino-santana-b84341254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Nicolli Venino Santana</a>
