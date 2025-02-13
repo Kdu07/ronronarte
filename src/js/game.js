@@ -17,22 +17,24 @@ var pombo;
 var parado = false;
 
 
-        //função que "pré-carrega" os arquivos na página
+//Carrega os arquivos na memória
 function preload() {
 
     this.load.image('bg', '/assets/background.jpg');
     this.load.spritesheet('pombo', '/assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
-    this.load.image('splash', '/assets/splash.png');
     this.load.audio('pru', '/assets/audios/pru.mp3');
-    this.load.image('PauseBtn', '/assets/botões/pause.png')
-
+    this.load.image('PauseBtn', '/assets/botões/pause.png');
+    this.load.image('splash-blue', '/assets/splash-blue.png');
+    this.load.image('splash-pink', '/assets/splash-pink.png');
+    this.load.image('splash-yellow', '/assets/splash-yellow.png');
 }
-        //função que cria as coisas na página
+        
+//Adiciona e configura os elementos na página
 function create() {
     this.add.image(285, 425, 'bg').setScale(1.0);
     somPombo = this.sound.add('pru');
 
-    // criar animação do pombo voando
+    // Animação do pombo voando
     this.anims.create({
         key: 'direita',
         frames: this.anims.generateFrameNumbers('pombo', { start: 0, end: 3 }),
@@ -40,17 +42,17 @@ function create() {
         repeat: -1
     });
     
-    // função que adiciona um botão de pause na tela
+    // Adiciona um botão de pause na tela
     PauseBtn = this.add.image(40, 50, 'PauseBtn')
     PauseBtn.setInteractive()
     PauseBtn.on('pointerdown', () => {
         window.location.href = "http://127.0.0.1:5501/index.html";
     })
 
-    spawnPombo.call(this); // Agora o pombo já pode usar a animação
+    spawnPombo.call(this); // Gera o pombo
 }
 
-    // função que spawna o pombo em um lugar aleatório da tela
+    // Função para gerar o pombo em um lugar aleatório da tela
 function spawnPombo() {
     // Posição inicial aleatória
     let posX = gerarRandomPos(gameWidth, 200);
