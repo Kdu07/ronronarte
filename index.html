@@ -24,17 +24,6 @@
             box-shadow: 0 0 1px rgba(0, 0, 0, 0);
         }
 
-        #startScreenMainContentOptionsButton {
-            background-image: url("assets/botões/botao_opcoes_corr_preto.png");
-            background-position: 0 0;
-            width: 128px;
-            height: 64px;
-            border: none;
-            cursor: pointer;
-            background-color: transparent;
-            scale: 2.0;
-            display: flex;
-        }
     </style>
 </head>
 <body>
@@ -58,13 +47,13 @@
     <script>
         document.getElementById('startScreenMainContentStartButton').addEventListener('click', function() {
             console.log("Botão Start pressionado!");
-            window.location.href = "game.html"; // Redireciona para a página do jogo
+            window.location.href = "src/game.html"; // Redireciona para a página do jogo
         });
 
-        document.getElementById('startScreenMainContentOptionsButton').addEventListener('click', function() {
-            console.log("Botão Opções pressionado!");
-            alert("Opções ainda não implementadas!");
-        });
+        // document.getElementById('startScreenMainContentOptionsButton').addEventListener('click', function() {
+          //  console.log("Botão Opções pressionado!");
+           // alert("Opções ainda não implementadas!");
+        //});
     </script>
 
 </body>

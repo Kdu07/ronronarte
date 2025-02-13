@@ -47,7 +47,7 @@ function create() {
     PauseBtn = this.add.image(40, 50, 'PauseBtn')
     PauseBtn.setInteractive()
     PauseBtn.on('pointerdown', () => {
-        window.location.href = "http://127.0.0.1:5501/index.html";
+        window.location.href = "http://127.0.0.1:5500/index.html";
     })
 
     spawnPombo.call(this); // Gera o pombo
