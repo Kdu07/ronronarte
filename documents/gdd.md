@@ -73,18 +73,18 @@
 *Definição de metas SMART (específicas, mensuráveis, alcançáveis, relevantes e temporais) para seu projeto, com indicadores claros para mensuração*
 
 ## 1.2. Requisitos do Projeto (sprints 1 e 2)
+Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por meios dos quais se busca explicitar, de maneira breve, lógica e sucinta, suas principais funcionalidades e aspectos, de acordo com o escopo vigente.  
 
-*Posicione aqui a lista de requisitos levantados para o projeto, sejam pedidos do parceiro ou invenções do grupo. Descreva-os de forma objetiva, de modo que seja possível entender claramente como implementá-los tecnicamente.*
-
-*ATUALIZE ESTA SEÇÃO SEMPRE QUE ALGUM REQUISITO MUDAR EM SEU PROJETO*
-
-*Exemplo de tabela de requisitos*
 \# | Requisito  
 --- | ---
-1 | O controle do personagem será realizado usando as teclas WASD para navegação pelas fases
-2 | O personagem perde uma vida toda vez que tocar em um inimigo ou em algum projétil inimigo
-3 | O jogo deve possuir uma tela de abertura para o jogador selecionar se quer jogar sozinho ou em dupla
-4 | ...
+1 | A tela inicial deve mostrar um botão “Jogar”, que, quando clicado, direcione o jogador às fases do jogo.
+2 | Nas fases, o jogador (gato) deve clicar nos animais que aparecerem na tela para eliminá-los.
+3 | Ao clicar na tela, o jogador (gato) consegue pintá-la.
+4 | Devem ser disponibilizados botões de hud na tela, ativados apenas quando clicados e pressionados em seguida (para que o gato não os ative sem querer).
+5 | A cada dificuldade avançada pelo jogador (gato), uma nova paleta de cor deverá ser desbloqueada para pintura.
+6 | As pinturas do gato serão guardadas em uma biblioteca de imagens disponibilizada no jogo para acesso do tutor.
+7 | O tutor do gato pode personalizar as fases do jogo, alterando os alvos a serem atingidos pelo gato e a sua velocidade.
+8 | Ao final de cada fase, o jogador (gato) deve receber uma recompensa do tutor (carinho, petiscos, por exemplo).
 
 ## 1.3. Público-alvo do Projeto (sprint 2)
 
