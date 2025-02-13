@@ -245,7 +245,10 @@ Logo abaixo, estão registrados os prints das telas da primeira versão do jogo.
 
 <h4 align = "center">Tela com a primeira cena</h4>
 
-<img src= "https://github.com/user-attachments/assets/45b2c31b-97a3-43b8-9df3-9a220abb8e47" align = "center">
+<div style = "text-align: center">
+  <img src= "https://github.com/user-attachments/assets/45b2c31b-97a3-43b8-9df3-9a220abb8e47" align = "center">
+</div>
+
 
 <h4 align = "center">Fonte: autoria própria (2025). </h4>
 
@@ -256,7 +259,7 @@ Logo abaixo, estão registrados os prints das telas da primeira versão do jogo.
 <h4 align = "center">Fonte: autoria própria (2025). </h4>
 
 
-Ademais, é significativo pontuar que, ao longo desse primeiro momento de desenvolvimento, foram encontradas algumas dificuldades. Sob esse viés, o inicial não reconhecimento do código por parte do GitHub Pages e alguns bugs referentes aos sprites foram as principais adversidades enfrentadas ao longo do processo de desenvolvimento. Nessa perspectiva, tais aspectos estão passando por um crivo maior, de sorte que seja superados.
+Ademais, é significativo pontuar que, ao longo desse primeiro momento de desenvolvimento, foram encontradas algumas dificuldades. Sob esse viés, o inicial não reconhecimento do código por parte do GitHub Pages e alguns bugs referentes aos sprites foram as principais adversidades enfrentadas ao longo do processo de desenvolvimento. Nessa perspectiva, tais aspectos estão passando por um crivo maior, de sorte que sejam superados.
 
 Portanto, como próximos passos, notam-se os subsequentes: habilitação de personalização de fase pelo tutor (por meio da qual ele poderá selecionar a quantidade de animais que aparecem na tela), criação de um menu de opções funcional e elaboração de uma tela bônus para pintura por parte do gato. 
 
