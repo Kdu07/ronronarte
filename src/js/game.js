@@ -15,16 +15,18 @@ var pombo;
 var parado = false;
 var velocidadeX = 5;
 var velocidadeY = 4; 
-var audio = new Audio('assets/pru.mp3');
+var audio = new Audio('/assets/audios/pru.mp3');
 
 
         //função que "pré-carrega" os arquivos na página
 function preload() {
-    this.load.image('bg', 'assets/background.jpg');
-    this.load.spritesheet('pombo', 'assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
-    this.load.image('splash', 'assets/splash.png');
-    this.load.audio('pru', 'audios/pru.mp3')
-    this.load.image('PauseBtn', 'assets/botões/pause.png')
+
+    this.load.image('bg', '/assets/background.jpg');
+    this.load.spritesheet('pombo', '/assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
+    this.load.image('splash', '/assets/splash.png');
+    this.load.audio('pru', '/assets/audios/pru.mp3');
+    this.load.image('PauseBtn', '/assets/botões/pause.png')
+
 }
         //função que cria as coisas na página
 function create() {
@@ -34,12 +36,18 @@ function create() {
     // criar animação do pombo voando
     this.anims.create({
         key: 'direita',
-        frames: this.anims.generateFrameNumbers('pombo', { start: 0, end: 4 }),
+        frames: this.anims.generateFrameNumbers('pombo', { start: 0, end: 3 }),
         frameRate: 10,
         repeat: -1
     });
     
     // função que adiciona um botão de pause na tela
+    PauseBtn = this.add.image(40, 50, 'PauseBtn')
+    PauseBtn.setInteractive()
+    PauseBtn.on('pointerdown', () => {
+        window.location.href = "index.html";
+    })
+
     PauseBtn = this.add.image(40, 50, 'PauseBtn')
     PauseBtn.setInteractive()
     PauseBtn.on('pointerdown', () => {
