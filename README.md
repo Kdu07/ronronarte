@@ -62,12 +62,29 @@ Diagrama de estrutura:
 ```
 ## 🔧 Como executar o código
 
-  Este jogo foi feito com HTML5, CSS3 e Javascript. Para execução do código, é necessário o uso de uma IDE (ambiente de desenvolvimento) - recomendanmos o Visual Studio Code.
+  Este jogo foi feito com HTML5, CSS3 e Javascript. Para execução do código, é necessário o uso de uma IDE (ambiente de desenvolvimento) - recomendamos o Visual Studio Code.
 
-**Pré-Requisitos:**
+### **Pré-Requisitos:**
 
-**IDE**: 
+**IDE**;
+**Navegador WEB**. como Google Chrome, Microsoft Edge, ou Mozilla Firefox, para visualização e teste do jogo.
+**Extensão Live Server do VSCode**
 
+Após a garantia de todos os pré-requisitos, instale o projeto assim:
+
+- Clone e faça o download desse repositório:
+```
+https://github.com/Inteli-College/2025-1A-T15-IN01-G03.git
+```
+### Instruções de execução
+
+  **1. Abra o Visual Studio Code**
+  
+  **2. Dentro do Visual Studio Code, clique em "Open Folder..."**
+
+  **3. Selecione a pasta do repositório que acabou de baixar**
+
+  **4. Clique com o botão direito em "indexhtml" e selecione "Open with Live Server"**
 
 ## 🗃 Histórico de lançamentos
 * 0.1.0 - 13/02/2025
@@ -75,4 +92,4 @@ Diagrama de estrutura:
 
 ## 📋 Licença/License
 
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Intelihub/Template_M1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/Intelihub/Template_M1">Inteli, Carlos Eduardo, Eduardo Jesus, Felipe Neves, Guilherme Guerreiro, Luana de Jesus Lima, Luiz Felipe Hinuy, Nicolli Venino Santana</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Intelihub/Template_M1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/Inteli-College/2025-1A-T15-IN01-G03">Inteli, Carlos Eduardo, Eduardo Jesus, Felipe Neves, Guilherme Guerreiro, Luana de Jesus Lima, Luiz Felipe Hinuy, Nicolli Venino Santana</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
