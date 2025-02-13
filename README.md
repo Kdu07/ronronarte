@@ -15,8 +15,8 @@
 - Felipe Neves
 - Guilherme Guerreiro
 - Luana de Jesus Lima
-- Luiz Felipe Hinuy
-- Nicolli Venino Santana
+- <a href="https://www.linkedin.com/in/luiz-hinuy-0995252b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Luiz Felipe Hinuy</a>
+- <a href="https://www.linkedin.com/in/nicolli-venino-santana-b84341254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Nicolli Venino Santana</a>
   
 ## 👩‍🏫 Professores:
 ### Orientador(a) 
