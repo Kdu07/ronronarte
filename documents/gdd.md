@@ -238,7 +238,7 @@ Em linhas gerais, a primeira versão do jogo “RonRonArte” conta com uma tela
 Logo abaixo, estão registrados os prints das telas da primeira versão do jogo.
 
 <div style = "display: flex; justify-content: center; align-items: center"> 
-    <h4 style = "text-align: center">Tela de início do jogo</h4>
+    <p style = "text-align: center">Tela de início do jogo</p>
 </div>
 
 
