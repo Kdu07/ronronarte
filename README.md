@@ -7,7 +7,7 @@
 <br>
 
 # Projeto RonRonArte
-## Grupo 
+## Grupo CatUp
 
 ## 👨‍🎓 Integrantes: 
 - Carlos Eduardo
