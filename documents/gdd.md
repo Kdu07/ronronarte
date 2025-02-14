@@ -7,7 +7,7 @@
 ## CatUp
 
 #### 👨‍🎓 Integrantes: 
-- Carlos Eduardo
+- Carlos Eduardo Quaglia
 - Eduardo Jesus
 - <a href="https://www.linkedin.com/in/felipe-neves-36925a346/">Felipe Neves</a>
 - <a href="https://www.linkedin.com/in/guilherme-guerreiro-025986319/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Guilherme Guerreiro</a>
