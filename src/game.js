@@ -19,7 +19,7 @@ var pombo;
 var parado = false;
 
 
-// Carrega os arquivos na memória
+// Função do Phaser que carrega os arquivos na memória
 function preload() {
     this.load.image('bg', '/assets/background.jpg');
     this.load.spritesheet('pombo', '/assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
@@ -28,12 +28,13 @@ function preload() {
     this.load.image('splash-blue', '/assets/splash-blue.png');
     this.load.image('splash-pink', '/assets/splash-pink.png');
     this.load.image('splash-yellow', '/assets/splash-yellow.png');
+    this.load.image('splash-paw-yellow', '/assets/splash-paw-yellow.png');
 }
         
-// Adiciona e configura os elementos na página
+// Função do Phaser que adiciona e configura os elementos na página
 function create() {
-    this.add.image(285, 425, 'bg').setScale(1.0);
-    somPombo = this.sound.add('pru');
+    this.add.image(285, 425, 'bg').setScale(1.0); // Adiciona background
+    somPombo = this.sound.add('pru'); // Adiciona som
 
     // Animação do pombo voando
     this.anims.create({
@@ -53,7 +54,15 @@ function create() {
     spawnPombo.call(this); // Gera o pombo
 }
 
-    // Função para gerar o pombo em um lugar aleatório da tela
+// Função do Phaser que roda em loop constante as funcionalidades do jogo
+function update() { 
+    clickPombo.call(this); // Confere se o pombo é clicado
+    if (!parado){ // Só move o pombo se ele não foi clicado
+        movimento(pombo);  
+    }
+}
+
+// Função para gerar o pombo em um lugar aleatório da tela
 function spawnPombo() {
     parado = false;
 
@@ -65,8 +74,8 @@ function spawnPombo() {
     
     // Cofigurações do pombo
     // Velocidade de movimento
-    pombo.velocidadeX = Phaser.Math.Between(7,9);
-    pombo.velocidadeY = Phaser.Math.Between(3,5);
+    pombo.velocidadeX = Phaser.Math.Between(5,7);
+    pombo.velocidadeY = Phaser.Math.Between(3,6);
     
     // Inicializa a direção, que é usada junto da velocidade para movimentar o pombo
     pombo.direcaoX = -1; 
@@ -78,10 +87,11 @@ function spawnPombo() {
  
 
     pombo.play('voo'); // Inicia animação de voo pombo
+}
 
-    this.input.removeAllListeners('pointerdown'); // Ignora todos os cliques anteriores 
-    
-    // Confere se o pombo é clicado
+// Função para quando o pombo é clicado
+function clickPombo() {
+    this.input.removeAllListeners('pointerdown'); // Ignora todos os cliques anteriores
     this.input.on('pointerdown', (pointer) => {
         if (pombo.getBounds().contains(pointer.x, pointer.y)) {
             parado = true;
@@ -91,18 +101,17 @@ function spawnPombo() {
                 targets: pombo,
                 onComplete: () => {
                     pombo.destroy(); // Remove o pombo da tela
-                    somPombo.play({volume: 0.5});  // Toca o som de pombo quando o pombo é clicado
+                    somPombo.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
                     this.time.delayedCall(1000, () => {
                         somPombo.stop(); // Para o som do pombo após 1000ms (1s)
                     });
                     spawnPombo.call(this); // Cria um novo pombo após sumir
                 }
-    
             });
 
             // Adiciona splash aleatorio e invisível na tela
-            let splashList = ['splash-pink', 'splash-yellow', 'splash-blue'];
-            let splash = this.add.image(pombo.x, pombo.y, splashList[Phaser.Math.Between(0,2)]).setScale(0.3);
+            let splashList = ['splash-pink', 'splash-yellow', 'splash-blue', 'splash-paw-yellow'];
+            let splash = this.add.image(pombo.x, pombo.y, splashList[Phaser.Math.Between(0, 3)]).setScale(0.25);
             splash.alpha = 0;
 
             // Efeito de fade-in para o splash
@@ -124,12 +133,7 @@ function spawnPombo() {
     });
 }
 
-function update() { 
-    if (!parado){ // Só move o pombo se ele não foi clicado
-        movimento(pombo);  
-    }
-}
-
+// Função para movimentar o pombo
 function movimento(alvo) {
     // Confere se o alvo chegou no limite do game. Se chegar no limite, espelha a orientação
     // Eixo X
