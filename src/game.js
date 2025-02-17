@@ -1,5 +1,5 @@
-const gameWidth = window.innerWidth;
-const gameHeight = window.innerHeight;
+const gameWidth = window.screen.innerWidth;
+const gameHeight = window.screen.innerHeight;
 
 // Configurações iniciais do jogo
 var config = {
@@ -33,6 +33,10 @@ function preload() {
         
 // Função do Phaser que adiciona e configura os elementos na página
 function create() {
+
+    let bg = this.add.image(gameWidth / 2, gameWidth / 2, 'bg');
+    bg.setDisplaySize(gameWidth, gameHeight); // Ajusta para o tamanho da tela
+
     this.add.image(285, 425, 'bg').setScale(1.0); // Adiciona background
     somPombo = this.sound.add('pru'); // Adiciona som
 
