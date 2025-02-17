@@ -1,5 +1,5 @@
-const gameWidth = 370;
-const gameHeight = 750;
+const gameWidth = window.innerWidth;
+const gameHeight = window.innerHeight;
 
 // Configurações iniciais do jogo
 var config = {
