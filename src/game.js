@@ -21,7 +21,7 @@ var parado = false;
 
 // Função do Phaser que carrega os arquivos na memória
 function preload() {
-    this.load.image('bg', '/assets/background.jpg');
+    this.load.image('bg', '/assets/larger_tiled_background.jpg');
     this.load.spritesheet('pombo', '/assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
     this.load.audio('pru', '/assets/audios/pru.mp3');
     this.load.image('PauseBtn', '/assets/botões/pause.png');
