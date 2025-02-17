@@ -1,5 +1,5 @@
-const gameWidth = window.screen.innerWidth;
-const gameHeight = window.screen.innerHeight;
+const gameWidth = window.innerWidth;
+const gameHeight = window.innerHeight;
 
 // Configurações iniciais do jogo
 var config = {
@@ -35,7 +35,8 @@ function preload() {
 function create() {
 
     let bg = this.add.image(gameWidth / 2, gameWidth / 2, 'bg');
-    bg.setDisplaySize(gameWidth, gameHeight); // Ajusta para o tamanho da tela
+    bg.setDisplaySize(gameWidth, gameHeight);
+    bg.setOrigin(0.5, 0.5)
 
     this.add.image(285, 425, 'bg').setScale(1.0); // Adiciona background
     somPombo = this.sound.add('pru'); // Adiciona som
