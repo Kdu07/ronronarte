@@ -57,7 +57,20 @@ Fonte: Autoria própria (2025)
 
 ### 1.1.3. Missão / Visão / Valores (sprint 2)
 
-*Posicione aqui a Missão, Visão e Valores do seu projeto.*
+Missão:
+
+Proporcionar momentos de conexão dos tutores com os gatos em casa, ao mesmo tempo em que se estimula o instinto natural de caça do pet.
+
+
+Visão:
+
+Ser uma empresa inovadora no mercado de jogos para gatos, pensando na satisfação do gato e do tutor.
+
+
+Valores:
+
+Ética, Respeito e Criatividade
+
 
 ### 1.1.4. Proposta de Valor (sprint 4)
 
