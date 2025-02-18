@@ -3,60 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel= "stylesheet" href = "src/css/style.css">
-    <link type="text/css" rel= "stylesheet" href = "/src/css/startScreen.css"> <base href="/">
-    <title>RonRonArte</title>
-
-    <!-- Estilos externos -->
-    <link type="text/css" rel="stylesheet" href="./src/css/style.css">
-    <link type="text/css" rel="stylesheet" href="./src/css/startScreen.css">
-
-    <!-- Estilos internos -->
+    <link rel="stylesheet" href="/src/css/efeitofade.css">
     <style>
-        #startScreenMainContentStartButton {
-            background-image: url("assets/botões/botao_start_preto.png");
-            background-position: 0 0;
-            width: 128px;
-            height: 64px;
-            border: none;
-            cursor: pointer;
-            background-color: transparent;
-            scale: 2.0;
-            animation: pulse 1.5s infinite ease-in-out;
-            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        body{
+            animation: fadein 1.5s;
+        }
+        .fade-out {
+            animation: fadeout 1.5s;
         }
 
+        h1 {
+            text-align: center;
+            margin-top: 23%
+        
+        }
     </style>
+    <title>Document</title>
 </head>
 <body>
+    <h1>CatUp</h1>
+<script>
 
-    <!-- Tela inicial -->
-    <main id="startScreenMainContent">
-        <section id="startScreenMainContentSection">
-            <div id="startScreenMainContentContainer">
-                <h1 id="startScreenMainContentTitle">RonRonArte</h1>
+    setTimeout(() => {
+        document.body.classList.add("fade-out");
+    }, 1500);
 
-                <div id="startScreenMainContentButtonsContainer">
-                    <button id="startScreenMainContentStartButton"></button>
-                   <!-- -><button id="startScreenMainContentOptionsButton"></button>-->
-                </div>
-            </div>
-        </section>
-    </main>
+    document.body.addEventListener("animationend", (event) => {
+        if (event.animationName === "fadeout") {
+            window.location.href = "/src/scenes/teste.html"
+        }}
+    );
 
-    <!-- Scripts -->
-    <script src="startScreen.js"></script>
-    <script>
-        document.getElementById('startScreenMainContentStartButton').addEventListener('click', function() {
-            console.log("Botão Start pressionado!");
-            window.location.href = "src/game.html"; // Redireciona para a página do jogo
-        });
-
-        // document.getElementById('startScreenMainContentOptionsButton').addEventListener('click', function() {
-          //  console.log("Botão Opções pressionado!");
-           // alert("Opções ainda não implementadas!");
-        //});
-    </script>
-
+</script>
 </body>
 </html>
