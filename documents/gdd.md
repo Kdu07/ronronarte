@@ -42,7 +42,8 @@
 
 ### 1.1.1. Contexto da indústria (sprint 2)
 
-*Posicione aqui o texto que explica o contexto da indústria/mercado do qual o parceiro de projeto faz parte. Contextualize o segmento de atuação do parceiro (pode ser indústria, comércio ou serviço). Caracterize as atividades executadas pelo negócio do parceiro e a abrangência de suas atividades (âmbito internacional, nacional ou regional).*
+Alexandre Rossi, também conhecido por Dr. Pet, é formado em zootecnia pela USP e fundador da marca Dr. Pet. A marca faz parte do mercado pet, e é especializada em educação e entretenimento direcionada aos tutores de cães e gatos. Em 2010, Dr. Pet ganhou visibilidade nacional por conta de sua cadela Estopinha e, desde então, atua como apresentador em rádios e programas de televisão. Atualmente tem quadro no programa “É de Casa" da rede Globo e apresenta o programa “Missão Pet”, no canal Nat Geo, além de produzir conteúdo em suas redes sociais.
+
 
 #### 1.1.1.1. Modelo de 5 Forças de Porter (sprint 2)
 
