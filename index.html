@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/efeitofade.css">
     <style>
+
+        
         body{
-            animation: fadein 1.5s;
+
+            opacity: 0%;
+            
+            animation: fadein 1.5s; /* chama a animação de fade in do arquivo css*/ 
+
+            background-color: black;
         }
         .fade-out {
-            animation: fadeout 1.5s;
+            animation: fadeout 1.5s; /* faz a animação de fade out  */ 
         }
 
         h1 {
             text-align: center;
-            margin-top: 23%
+            margin-top: 23%;
+            color: white;
+            font-size: 100px;
+            
         
         }
     </style>
@@ -25,9 +35,11 @@
 <script>
 
     setTimeout(() => {
+
+        //adiciona a classe fade-out para poder adicionar a animação no código
         document.body.classList.add("fade-out");
     }, 1500);
-
+        // quando a animação de fade out acabar, abre outra tela automaticamente
     document.body.addEventListener("animationend", (event) => {
         if (event.animationName === "fadeout") {
             window.location.href = "/src/scenes/teste.html"

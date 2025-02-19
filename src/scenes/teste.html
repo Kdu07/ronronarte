@@ -51,7 +51,11 @@
     <script>
         document.getElementById('startScreenMainContentStartButton').addEventListener('click', function() {
             console.log("Botão Start pressionado!");
-            window.location.href = "src/game.html"; // Redireciona para a página do jogo
+            document.getElementById("vinheta").style.opacity = "1";
+                setTimeout(() => {
+                     window.location.href = "src/game.html"; // Redireciona para a página do jogo
+                }, 1000);
+
         });
 
         // document.getElementById('startScreenMainContentOptionsButton').addEventListener('click', function() {
@@ -59,6 +63,6 @@
            // alert("Opções ainda não implementadas!");
         //});
     </script>
-
+    <div id="vinheta"></div>
 </body>
 </html>
