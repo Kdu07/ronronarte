@@ -278,6 +278,7 @@ Portanto, como próximos passos, notam-se os subsequentes: habilitação de pers
 
 A partir da versão preliminar do jogo, realizou-se o desenvolvimento básico do game. Nele, foi acrescentada uma splash screen (com o nome da equipe), a fim de dar mais fluidez à experiência do usuário. Além disso, foi implementado um novo background na tela de início, uma vez que o adicionado na primeira versão foi utilizado com objetivos de teste. Ademais, a tela de start conta com um botão que direciona aos modos de jogo do RonRonArte. Por fim, é válido mencionar que se iniciou a programação das sprites da tela de vitória, além da criação do contador de acertos para verificação do desempenho do jogador em sua gameplay. 
 
+*Falta colocar: próximas funcionalidades, próximos passos e eventuais dificuldades.*
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
 
