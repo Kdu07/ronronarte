@@ -276,7 +276,8 @@ Portanto, como próximos passos, notam-se os subsequentes: habilitação de pers
 
 ## 4.2. Desenvolvimento básico do jogo (sprint 2)
 
-*Descreva e ilustre aqui o desenvolvimento da versão básica do jogo, explicando brevemente o que foi entregue em termos de código e jogo. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+A partir da versão preliminar do jogo, realizou-se o desenvolvimento básico do game. Nele, foi acrescentada uma splash screen (com o nome da equipe), a fim de dar mais fluidez à experiência do usuário. Além disso, foi implementado um novo background na tela de início, uma vez que o adicionado na primeira versão foi utilizado com objetivos de teste. Ademais, a tela de start conta com um botão que direciona aos modos de jogo do RonRonArte. Por fim, é válido mencionar que se iniciou a programação das sprites da tela de vitória, além da criação do contador de acertos para verificação do desempenho do jogador em sua gameplay. 
+
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
 
