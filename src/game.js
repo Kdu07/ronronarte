@@ -17,6 +17,8 @@ var config = {
 var game = new Phaser.Game(config);
 var pombo;
 var parado = false;
+var score = 0;
+var scoreboard;
 
 
 // Função do Phaser que carrega os arquivos na memória
@@ -48,6 +50,8 @@ function create() {
         frameRate: 10,
         repeat: -1
     });
+    
+    scoreboard = this.add.text(gameWidth-250, 15, 'Pontos:' + score, {fontSize:'45px', fill:'#495613'})
     
     // Adiciona um botão de pause na tela
     PauseBtn = this.add.image(40, 50, 'PauseBtn')
@@ -100,12 +104,16 @@ function clickPombo() {
     this.input.on('pointerdown', (pointer) => {
         if (pombo.getBounds().contains(pointer.x, pointer.y)) {
             parado = true;
+            score+= 1;
+            scoreboard.setText('Pontos: ' + score);
+            console.log(score)
 
             // Cria efeito de som e adiciona um novo pombo
             this.tweens.add({
                 targets: pombo,
                 onComplete: () => {
                     pombo.destroy(); // Remove o pombo da tela
+                    let pomboDestruido = pombo.destroy();
                     somPombo.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
                     this.time.delayedCall(1000, () => {
                         somPombo.stop(); // Para o som do pombo após 1000ms (1s)
@@ -162,7 +170,6 @@ function movimento(alvo) {
     alvo.x += alvo.velocidadeX * alvo.direcaoX;
     alvo.y += alvo.velocidadeY * alvo.direcaoY;
 }
-
 // Gera um número aleatorio correspondendo a pixels fora da tela do game (usado para gerar o pombo fora da tela)
 function gerarRandomPos(eixo, fora) {
     var num = Math.floor(Math.random() * ((eixo + fora) - (0 - fora) + 1)) + (0 - fora); // Gera um valor do tamanho da tela + margem para os dois lados
