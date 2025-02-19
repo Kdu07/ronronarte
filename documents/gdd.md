@@ -42,7 +42,7 @@
 
 ### 1.1.1. Contexto da indústria (sprint 2)
 
-Alexandre Rossi, também conhecido por Dr. Pet, é formado em zootecnia pela USP e fundador da marca Dr. Pet. A marca faz parte do mercado pet, e é especializada em educação e entretenimento direcionada aos tutores de cães e gatos. Em 2010, Dr. Pet ganhou visibilidade nacional por conta de sua cadela Estopinha e, desde então, atua como apresentador em rádios e programas de televisão. Atualmente tem quadro no programa “É de Casa" da rede Globo e apresenta o programa “Missão Pet”, no canal Nat Geo, além de produzir conteúdo em suas redes sociais.
+Alexandre Rossi, também conhecido por Dr. Pet, é formado em zootecnia pela USP e fundador da marca Dr. Pet. A marca faz parte do mercado pet, e é especializada em educação e entretenimento direcionada aos tutores de cães e gatos. Em 2010, Dr. Pet ganhou visibilidade nacional por conta de sua cadela Estopinha e, desde então, atua como apresentador em rádios e programas de televisão. Atualmente tem quadro no programa “É de Casa" da rede Globo e apresenta o programa “Missão Pet”, no canal Nat Geo, além de se manter ativo em suas redes sociais. Também vende cursos para adestramento de cães e livros.
 
 
 #### 1.1.1.1. Modelo de 5 Forças de Porter (sprint 2)
