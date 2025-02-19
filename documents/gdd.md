@@ -89,7 +89,10 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 ## 1.3. Público-alvo do Projeto (sprint 2)
 
-*Posicione aqui uma descrição justificada do público-alvo do jogo, em termos demográficos e de preferências/gostos pessoais.*
+Em linhas gerais, o público-alvo do jogo RonRonArte se concentra em gatos domésticos e seus respectivos tutores. Nesse sentido, é válido destacar que, de acordo com o Censo Pet IPB (2022), o número de gatos vem crescendo ao longo dos últimos anos nos lares brasileiros, saltando de uma população de 25,6 milhões em 2020 para 27,1 milhões de indivíduos em 2021, com uma estimativa de 2,5% de crescimento médio anual. A título de comparação, essa pesquisa também mostrou que o percentual da quantidade de cães, maior contingente de pets do Brasil, foi inferior no mesmo período: 4%. Ademais, nota-se que as adoções dos felinos representam 65% do total, o que demonstra o crescimento de tutores desses animais. Portanto, é possível observar o aumento da preferência das pessoas pela adoção de gatos no país.
+  
+Além disso, os gatos domésticos, na ausência de seus tutores, passam por momentos de instabilidade emocional. Segundo um estudo publicado na Universidade do Estado de Oregon, 64,3% desses pets sentem muita falta de seus donos quando estes não estão por perto (PETZ, 2023). Tal dado evidencia a necessidade de promover uma interação mais profunda e divertida entre ambos os grupos, uma vez que ambos se apegam um ao outro. Dessa forma, um jogo com o escopo supracitado surge como alternativa à situação mencionada.
+
 
 # <a name="c2"></a>2. Visão Geral do Jogo (sprint 2)
 
@@ -273,7 +276,9 @@ Portanto, como próximos passos, notam-se os subsequentes: habilitação de pers
 
 ## 4.2. Desenvolvimento básico do jogo (sprint 2)
 
-*Descreva e ilustre aqui o desenvolvimento da versão básica do jogo, explicando brevemente o que foi entregue em termos de código e jogo. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+A partir da versão preliminar do jogo, realizou-se o desenvolvimento básico do game. Nele, foi acrescentada uma splash screen (com o nome da equipe), a fim de dar mais fluidez à experiência do usuário. Além disso, foi implementado um novo background na tela de início, uma vez que o adicionado na primeira versão foi utilizado com objetivos de teste. Ademais, a tela de start conta com um botão que direciona aos modos de jogo do RonRonArte. Por fim, é válido mencionar que se iniciou a programação das sprites da tela de vitória, além da criação do contador de acertos para verificação do desempenho do jogador em sua gameplay. 
+
+*Falta colocar: próximas funcionalidades, próximos passos e eventuais dificuldades.*
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
 
@@ -337,7 +342,15 @@ LUCK, Heloisa. Liderança em gestão escolar. 4. ed. Petrópolis: Vozes, 2010. <
 SOBRENOME, Nome. Título do livro: subtítulo do livro. Edição. Cidade de publicação: Nome da editora, Ano de publicação. <br>
 
 INTELI. Adalove. Disponível em: https://adalove.inteli.edu.br/feed. Acesso em: 1 out. 2023 <br>
-SOBRENOME, Nome. Título do site. Disponível em: link do site. Acesso em: Dia Mês Ano
+
+INSTITUTO PET BRASIL. Censo Pet IPB: com alta recorde de 6% em um ano, gatos lideram crescimento de animais de estimação no Brasil. 2022. Disponível em: https://institutopetbrasil.com/fique-por-dentro/amor-pelos-animais-impulsiona-os-negocios-2-2/ Acesso em: 18 fev. 2025. <br>
+
+PETZ. Gato tem sentimento? O que e como eles sentem?. [S. l.], 6 ago. 2023. Disponível em: https://www.petz.com.br/blog/pets/gatos/gato-tem-sentimento/. Acesso em: 18 fev. 2025.
+
+SOLLITTO, André. Por que brasileiros têm preferido escolher gatos como companheiros do lar. Veja, 2022.
+Disponível em: https://veja.abril.com.br/comportamento/por-que-brasileiros-tem-preferido-escolher-gatos-como-companheiros-do-lar/. Acesso em: 18 fev. 2025.
+
+
 
 # <a name="c8"></a>Anexos
 
