@@ -47,13 +47,13 @@ Alexandre Rossi, também conhecido por Dr. Pet, é formado em zootecnia pela USP
 
 #### 1.1.1.1. Modelo de 5 Forças de Porter (sprint 2)
 
-Quadro de modelo de 5 forças de Porter
-![Quadro branco de Mapa mental em Azul e Amarelo Simples Estilo de brainstorm (1)](https://github.com/user-attachments/assets/8c67d778-d4ec-4c1b-aae0-bb272e574681)
-Fonte: Autoria própria (2025) 
+Imagem 1: modelo de 5 forças de Porter
+![quadro_5_forcas](https://github.com/user-attachments/assets/479e357c-f3ad-4257-864e-4d431e079b6f)
+Fonte: Autoria própria (2025)
 
 ### 1.1.2. Análise SWOT (sprint 2)
 
-Quadro de Análise SWOT
+Imagem 2: Análise SWOT
 ![analise_SWOT](https://github.com/user-attachments/assets/cdfda52f-6985-4485-aed0-4fa58e7a7397)
 Fonte: Autoria própria (2025) 
 
