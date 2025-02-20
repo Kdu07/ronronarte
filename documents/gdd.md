@@ -53,7 +53,9 @@ Fonte: Autoria própria (2025)
 
 ### 1.1.2. Análise SWOT (sprint 2)
 
-*Posicione aqui a análise SWOT relacionada ao parceiro de projeto. Utilize a análise SWOT para fazer uma análise ambiental do parceiro no âmbito estratégico. Leve em consideração o contexto da indústria, concorrência e as características do ambiente interno (forças e fraquezas) e externo (oportunidades e ameaças) do parceiro.*
+Quadro de Análise SWOT
+![analise_SWOT](https://github.com/user-attachments/assets/cdfda52f-6985-4485-aed0-4fa58e7a7397)
+Fonte: Autoria própria (2025) 
 
 ### 1.1.3. Missão / Visão / Valores (sprint 2)
 
