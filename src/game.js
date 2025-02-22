@@ -21,28 +21,40 @@ var score = 0;
 var scoreboard;
 var maxScore = 10; // Defina a pontuação máxima aqui
 var gameEnded = false; // Variável para verificar se o jogo foi encerrado
+var borda;
+var quadro;
+var splash;
+var mask;
+var revealMask;
+var tinta1;
+var scaleTinta;
+
 
 
 // Função do Phaser que carrega os arquivos na memória
 function preload() {
-    this.load.image('bg', '/assets/larger_tiled_background.jpg');
+    this.load.image('borda', '/assets/borda.png');
+    this.load.image('tinta1', '/assets/tinta1.png');
+    this.load.image('splash', '/assets/splash.png');
     this.load.spritesheet('pombo', '/assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
     this.load.audio('pru', '/assets/audios/pru.mp3');
     this.load.image('PauseBtn', '/assets/botões/pause.png');
-    this.load.image('splash-blue', '/assets/splash-blue.png');
-    this.load.image('splash-pink', '/assets/splash-pink.png');
-    this.load.image('splash-yellow', '/assets/splash-yellow.png');
-    this.load.image('splash-paw-yellow', '/assets/splash-paw-yellow.png');
+    this.load.image('quadro', '/assets/quadro.png');
 }
         
 // Função do Phaser que adiciona e configura os elementos na página
 function create() {
 
-    let bg = this.add.image(gameWidth / 2, gameWidth / 2, 'bg');
-    bg.setDisplaySize(gameWidth, gameHeight);
-    bg.setOrigin(0.5, 0.5)
+    this.add.image(gameWidth / 2, gameHeight / 2, 'borda').setScale(0.34);
+    quadro = this.add.image(gameWidth / 2, gameHeight / 2, 'quadro').setScale(0.34);
+    quadro.setAlpha(0); // Começa invisível
 
-    this.add.image(285, 425, 'bg').setScale(1.0); // Adiciona background
+    // Cria uma máscara inicial vazia (false=não é transparente de inicio)
+    revealMask = this.make.renderTexture({ width: gameWidth, height: gameHeight }, false);
+    mask = new Phaser.Display.Masks.BitmapMask(this, revealMask);
+    //A máscara é aplicada à imagem quadro, o que significa que a imagem só será visível onde a revealMask for preenchida com pixels.
+    quadro.setMask(mask);
+
     somPombo = this.sound.add('pru'); // Adiciona som
 
     // Animação do pombo voando
@@ -129,28 +141,27 @@ function clickPombo() {
                     }
                 })
             };
+            //Cria um splash no local do clique
+        splash = this.add.image(pointer.x, pointer.y, 'splash').setScale(2.0);
+        splash.setAlpha(1);
+        revealMask.draw(splash, splash.x, splash.y);
+        this.time.delayedCall(0, function() {
+            splash.destroy(); //Remove o splash após liberar a área
+        });
 
-            // Adiciona splash aleatorio e invisível na tela
-            let splashList = ['splash-pink', 'splash-yellow', 'splash-blue', 'splash-paw-yellow'];
-            let splash = this.add.image(pombo.x, pombo.y, splashList[Phaser.Math.Between(0, 3)]).setScale(0.25);
-            splash.alpha = 0;
+        setTimeout(() => {
+        tinta1 = this.add.image(pointer.x, pointer.y, 'tinta1').setScale(2.5); // Aparece instantaneamente
+        tinta1.setAlpha(1);
+        scaleTinta = revealMask.draw(tinta1, tinta1.x, tinta1.y);
 
-            // Efeito de fade-in para o splash
-            this.tweens.add({
-                targets: splash,
-                alpha: 1,
-                duration: 300,
-                ease: 'Linear',
-                onComplete: () => {
-                    this.tweens.add({
-                        targets: splash,
-                        alpha: 0.7,
-                        duration: 500,
-                        ease: 'Linear'
-                    });
-                }
-            });
-        }
+        this.time.delayedCall(0, function() {
+            tinta1.destroy(); //Remove o splash após liberar a área
+        });
+            
+        },150);
+
+        quadro.setAlpha(1);
+    }
     });
 }
 
