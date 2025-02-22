@@ -19,6 +19,8 @@ var pombo;
 var parado = false;
 var score = 0;
 var scoreboard;
+var maxScore = 10; // Defina a pontuação máxima aqui
+var gameEnded = false; // Variável para verificar se o jogo foi encerrado
 
 
 // Função do Phaser que carrega os arquivos na memória
@@ -51,7 +53,7 @@ function create() {
         repeat: -1
     });
     
-    scoreboard = this.add.text(gameWidth-250, 15, 'Pontos:' + score, {fontSize:'45px', fill:'#495613'})
+    scoreboard = this.add.text(950, 15, 'Pontos:' + score, {fontSize:'45px', fill:'#495613'})
     
     // Adiciona um botão de pause na tela
     PauseBtn = this.add.image(40, 50, 'PauseBtn')
@@ -102,6 +104,7 @@ function spawnPombo() {
 function clickPombo() {
     this.input.removeAllListeners('pointerdown'); // Ignora todos os cliques anteriores
     this.input.on('pointerdown', (pointer) => {
+        if (gameEnded) return; // Verifique se o jogo já foi encerrado
         if (pombo.getBounds().contains(pointer.x, pointer.y)) {
             parado = true;
             score+= 1;
@@ -109,18 +112,23 @@ function clickPombo() {
             console.log(score)
 
             // Cria efeito de som e adiciona um novo pombo
-            this.tweens.add({
-                targets: pombo,
-                onComplete: () => {
-                    pombo.destroy(); // Remove o pombo da tela
-                    let pomboDestruido = pombo.destroy();
-                    somPombo.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
-                    this.time.delayedCall(1000, () => {
-                        somPombo.stop(); // Para o som do pombo após 1000ms (1s)
-                    });
-                    spawnPombo.call(this); // Cria um novo pombo após sumir
-                }
-            });
+            // Verifica se a pontuação atingiu a pontuação máxima
+            if (score >= maxScore) {
+                endGame.call(this);
+            } else {
+                this.tweens.add({
+                    targets: pombo,
+                    onComplete: () => {
+                        pombo.destroy(); // Remove o pombo da tela
+                        let pomboDestruido = pombo.destroy();
+                        somPombo.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
+                        this.time.delayedCall(1000, () => {
+                            somPombo.stop(); // Para o som do pombo após 1000ms (1s)
+                        });
+                        spawnPombo.call(this); // Cria um novo pombo após sumir
+                    }
+                })
+            };
 
             // Adiciona splash aleatorio e invisível na tela
             let splashList = ['splash-pink', 'splash-yellow', 'splash-blue', 'splash-paw-yellow'];
@@ -144,6 +152,17 @@ function clickPombo() {
             });
         }
     });
+}
+
+function endGame() {
+    gameEnded = true; // Atualize a variável para indicar que o jogo foi encerrado
+    // Acesse a física da cena diretamente
+    if (this.scene && this.scene.physics && this.scene.physics.pause) {
+        this.scene.physics.pause();
+    } else {
+        console.error("A física da cena não está definida ou 'pause' não está disponível.");
+    }
+    window.location.href = "Win.html"; // Redireciona para a tela de fim de jogo
 }
 
 // Função para movimentar o pombo
