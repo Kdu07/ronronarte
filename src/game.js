@@ -19,7 +19,7 @@ var pombo;
 var parado = false;
 var score = 0;
 var scoreboard;
-var maxScore = 10; // Defina a pontuação máxima aqui
+var maxScore = 3; // Defina a pontuação máxima aqui
 var gameEnded = false; // Variável para verificar se o jogo foi encerrado
 var borda;
 var quadro;
@@ -28,6 +28,7 @@ var mask;
 var revealMask;
 var tinta1;
 var scaleTinta;
+var vitoria;
 
 
 
@@ -40,16 +41,19 @@ function preload() {
     this.load.audio('pru', '/assets/audios/pru.mp3');
     this.load.image('PauseBtn', '/assets/botões/pause.png');
     this.load.image('quadro', '/assets/quadro.png');
+    this.load.image('artista', '/assets/artista.png');
+    this.load.image('paleta', '/assets/paleta.png');
+    this.load.video('vitoria', '/assets/tela_photoshop_1.mp4');
 }
         
 // Função do Phaser que adiciona e configura os elementos na página
 function create() {
 
-    this.add.image(gameWidth / 2, gameHeight / 2, 'borda').setScale(0.34);
+    this.add.image(gameWidth/2, gameHeight/2, 'borda').setScale(0.34);
     quadro = this.add.image(gameWidth / 2, gameHeight / 2, 'quadro').setScale(0.34);
     quadro.setAlpha(0); // Começa invisível
 
-    // Cria uma máscara inicial vazia (false=não é transparente de inicio)
+    // Cria uma máscara inicial vazia 
     revealMask = this.make.renderTexture({ width: gameWidth, height: gameHeight }, false);
     mask = new Phaser.Display.Masks.BitmapMask(this, revealMask);
     //A máscara é aplicada à imagem quadro, o que significa que a imagem só será visível onde a revealMask for preenchida com pixels.
@@ -90,8 +94,8 @@ function spawnPombo() {
     parado = false;
 
     // Adiciona o pombo
-    let posX = gerarRandomPos(gameWidth, 200); // Gera uma posição aleatoria fora da tela
-    let posY = gerarRandomPos(gameHeight, 200);
+    let posX = gerarRandomPos(quadro.x, quadro.x*2); // Gera uma posição aleatoria fora da tela
+    let posY = gerarRandomPos(quadro.y, quadro.y*2);
     pombo = this.add.sprite(posX, posY, 'pombo').setScale(1.5);
     pombo.setInteractive();
     
@@ -126,7 +130,11 @@ function clickPombo() {
             // Cria efeito de som e adiciona um novo pombo
             // Verifica se a pontuação atingiu a pontuação máxima
             if (score >= maxScore) {
-                endGame.call(this);
+                    vitoria = this.add.video(gameWidth / 2, gameHeight / 2, 'vitoria').setScale(0.6);
+                    this.add.image(vitoria.x-150, vitoria.y-110, 'quadro').setScale(0.15);
+                    this.add.image(vitoria.x+300, vitoria.y-110, 'artista').setScale(0.23);
+                    this.add.image(vitoria.x / 1.35, gvitoria.y / 2, 'paleta').setScale(0.2);
+
             } else {
                 this.tweens.add({
                     targets: pombo,
@@ -180,7 +188,7 @@ function endGame() {
 function movimento(alvo) {
     // Confere se o alvo chegou no limite do game. Se chegar no limite, espelha a orientação
     // Eixo X
-    if (alvo.x >= (gameWidth - alvo.hitboxWidth) || alvo.x >= (gameWidth + 200)){
+    if (alvo.x >= (quadro.x - alvo.hitboxWidth) || alvo.x >= (quadro.x + 200)){
         alvo.setFlip(false,false);
         alvo.direcaoX = -1;
     }
@@ -189,7 +197,7 @@ function movimento(alvo) {
         alvo.direcaoX = 1;
     }
     // Eixo Y
-    if (alvo.y >= (gameHeight - alvo.hitboxHeight) || alvo.y >= (gameHeight + 200)){
+    if (alvo.y >= (quadro.y*2 - alvo.hitboxHeight) || alvo.y >= (quadro.y*2 + 200)){
         alvo.direcaoY = -1;
     }
     if (alvo.y <= (0 + alvo.hitboxHeight) || alvo.y <= (0 - 200)){
