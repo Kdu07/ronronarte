@@ -94,8 +94,8 @@ function spawnPombo() {
     parado = false;
 
     // Adiciona o pombo
-    let posX = gerarRandomPos(quadro.x, quadro.x*2); // Gera uma posição aleatoria fora da tela
-    let posY = gerarRandomPos(quadro.y, quadro.y*2);
+    let posX = gerarRandomPos(gameWidth, 200); // Gera uma posição aleatoria fora da tela
+    let posY = gerarRandomPos(gameHeight, 200);
     pombo = this.add.sprite(posX, posY, 'pombo').setScale(1.5);
     pombo.setInteractive();
     
@@ -188,7 +188,7 @@ function endGame() {
 function movimento(alvo) {
     // Confere se o alvo chegou no limite do game. Se chegar no limite, espelha a orientação
     // Eixo X
-    if (alvo.x >= (quadro.x - alvo.hitboxWidth) || alvo.x >= (quadro.x + 200)){
+    if (alvo.x >= (gameWidth - alvo.hitboxWidth) || alvo.x >= (gameHeight + 200)){
         alvo.setFlip(false,false);
         alvo.direcaoX = -1;
     }
@@ -197,7 +197,7 @@ function movimento(alvo) {
         alvo.direcaoX = 1;
     }
     // Eixo Y
-    if (alvo.y >= (quadro.y*2 - alvo.hitboxHeight) || alvo.y >= (quadro.y*2 + 200)){
+    if (alvo.y >= (gameWidth - alvo.hitboxHeight) || alvo.y >= (gameHeight + 200)){
         alvo.direcaoY = -1;
     }
     if (alvo.y <= (0 + alvo.hitboxHeight) || alvo.y <= (0 - 200)){
