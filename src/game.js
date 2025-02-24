@@ -19,7 +19,7 @@ var pombo;
 var parado = false;
 var score = 0;
 var scoreboard;
-var maxScore = 1; // Defina a pontuação máxima aqui
+var maxScore = 3; // Defina a pontuação máxima aqui
 var gameEnded = false; // Variável para verificar se o jogo foi encerrado
 var borda;
 var quadro;
@@ -47,6 +47,7 @@ function preload() {
     this.load.video('vitoria', '/assets/tela_photoshop_1.mp4');
     this.load.image('star', '/assets/star.png');
     this.load.image('frase', '/assets/frase.png');
+    this.load.image('recompensa', '/assets/recompensa.png');
 }
         
 // Função do Phaser que adiciona e configura os elementos na página
@@ -161,7 +162,30 @@ function clickPombo() {
                                           });
                                       }
                                   });
-    
+
+                                  setTimeout(() => {
+                    var recompensa = this.add.image(quadro.x/1, quadro.y/0.8, 'recompensa').setScale(0.8);
+                    star1.alpha = 0;
+                    this.tweens.add({
+                                      targets: recompensa,
+                                      alpha: 1, // Torna visível
+                                      duration: 300, // Tempo da animação (0.3s)
+                                      scale: 0.9,
+                                      ease: 'Linear',
+                                      onComplete: () => {
+                                          // Após o fade-in, reduzimos a opacidade para 50%
+                                          this.tweens.add({
+                                              targets: recompensa,
+                                              alpha: 0.9, // Mantém opacidade em 50%
+                                              duration: 500, // Tempo da transição (0.5s)
+                                              scale: 0.8,
+                                              ease: 'Linear'
+                                          });
+                                      }
+                                  });
+                                    
+                                    },2000);
+                                  
                     var star1 = this.add.image(quadro.x-500, quadro.y+200, 'star').setScale(0.15);
                     star1.alpha = 0;
                     this.tweens.add({
@@ -205,7 +229,7 @@ function clickPombo() {
                     this.add.image(vitoria.x+300, vitoria.y-110, 'artista').setScale(0.23);
                     this.add.image(vitoria.x / 1.35, gvitoria.y / 2, 'paleta').setScale(0.2);
                     
-                    },5000);
+                    },7000);
                     
             } else {
                 this.tweens.add({
