@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel= "stylesheet" href = "src/css/style.css">
-    <link type="text/css" rel= "stylesheet" href = "/src/css/startScreen.css"> <base href="/">
+    <link type="text/css" rel= "stylesheet" href = "./src/css/style.css">
+    <link type="text/css" rel= "stylesheet" href = "./src/css/startScreen.css"> <base href="/">
     <title>RonRonArte</title>
 
     <!-- Estilos externos -->
@@ -14,7 +14,7 @@
     <!-- Estilos internos -->
     <style>
         #startScreenMainContentStartButton {
-            background-image: url("assets/botões/botao_start_preto.png");
+            background-image: url("../../assets/botões/botao_start_preto.png");
             background-position: 0 0;
             width: 105px;
             height: 64px;
@@ -47,13 +47,13 @@
     </main>
 
     <!-- Scripts -->
-    <script src="startScreen.js"></script>
+    <script src="./startScreen.js"></script>
     <script>
         document.getElementById('startScreenMainContentStartButton').addEventListener('click', function() {
             console.log("Botão Start pressionado!");
             document.getElementById("vinheta").style.opacity = "1";
                 setTimeout(() => {
-                     window.location.href = "src/game.html"; // Redireciona para a página do jogo
+                     window.location.href = "../game.html"; // Redireciona para a página do jogo
                 }, 1000);
 
         });
