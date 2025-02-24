@@ -30,6 +30,7 @@ var tinta1;
 var scaleTinta;
 var vitoria;
 var star;
+var bg;
 
 
 
@@ -48,11 +49,13 @@ function preload() {
     this.load.image('star', '/assets/star.png');
     this.load.image('frase', '/assets/frase.png');
     this.load.image('recompensa', '/assets/recompensa.png');
+    this.load.image('bg', '/assets/background1.png');
 }
         
 // Função do Phaser que adiciona e configura os elementos na página
 function create() {
     borda = this.add.image(gameWidth / 2, gameHeight / 2, 'borda').setScale(0.35);
+    bg = this.add.image(gameWidth / 2, gameHeight / 2, 'bg').setScale(0.35);
     quadro = this.add.image(gameWidth / 2, gameHeight / 2, 'quadro').setScale(0.35);
     
     borda.setAlpha(1); // Torna a borda visível
@@ -161,7 +164,7 @@ function clickPombo() {
                                               ease: 'Linear'
                                           });
                                       }
-                                  });
+                                  },5000);
 
                                   setTimeout(() => {
                     var recompensa = this.add.image(quadro.x/1, quadro.y/0.8, 'recompensa').setScale(0.8);
@@ -229,7 +232,7 @@ function clickPombo() {
                     this.add.image(vitoria.x+300, vitoria.y-110, 'artista').setScale(0.23);
                     this.add.image(vitoria.x / 1.35, gvitoria.y / 2, 'paleta').setScale(0.2);
                     
-                    },7000);
+                    },5700);
                     
             } else {
                 this.tweens.add({
