@@ -46,9 +46,11 @@ Alexandre Rossi, também conhecido por Dr. Pet, é formado em zootecnia pela USP
 
 #### 1.1.1.1. Modelo de 5 Forças de Porter (sprint 2)
 
+O modelo das 5 Forças de Porter é um modelo de análise que identifica as forças competitivas de um setor de negócios. São elas: Ameaça de produtos substitutos, Ameaça de entrada de novos concorrentes, Poder de negociação dos clientes, Poder de negociação dos fornecedores, Rivalidade entre os concorrentes.
+
 Figura 1: modelo de 5 forças de Porter
 ![quadro_5_forcas](https://github.com/user-attachments/assets/479e357c-f3ad-4257-864e-4d431e079b6f)
-Fonte: Autoria própria (2025)
+Fonte: Modelo criado por Michael Eugene Porter. Adaptação por Carlos Eduardo Serrano Quaglia.
 
 ### 1.1.2. Análise SWOT (sprint 2)
 
