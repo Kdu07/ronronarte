@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/efeitofade.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/efeitofade.css" />
+    <link type="text/css" rel="stylesheet" href="./src/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="./src/css/startScreen.css" />
+    <base href="/" />
+    <title>RonRonArte</title>
+
+    <!-- Estilos externos -->
+    <link type="text/css" rel="stylesheet" href="./src/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="./src/css/startScreen.css" />
+
     <style>
+      body {
+        opacity: 0%;
 
-        
-        body{
+        animation: fadein 1.5s; /* chama a animação de fade in do arquivo css*/
 
-            opacity: 0%;
-            
-            animation: fadein 1.5s; /* chama a animação de fade in do arquivo css*/ 
+        background-color: black;
+      }
+      .fade-out {
+        animation: fadeout 1.5s; /* faz a animação de fade out  */
+      }
 
-            background-color: black;
-        }
-        .fade-out {
-            animation: fadeout 1.5s; /* faz a animação de fade out  */ 
-        }
-
-        h1 {
-            text-align: center;
-            margin-top: 23%;
-            color: white;
-            font-size: 100px;
-            
-        
-        }
+      h1 {
+        text-align: center;
+        margin-top: 23%;
+        color: white;
+        font-size: 100px;
+      }
     </style>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>CatUp</h1>
-<script>
-
-    setTimeout(() => {
-
+    <script>
+      setTimeout(() => {
         //adiciona a classe fade-out para poder adicionar a animação no código
         document.body.classList.add("fade-out");
-    }, 1500);
-        // quando a animação de fade out acabar, abre outra tela automaticamente
-    document.body.addEventListener("animationend", (event) => {
+      }, 1500);
+      // quando a animação de fade out acabar, abre outra tela automaticamente
+      document.body.addEventListener("animationend", (event) => {
         if (event.animationName === "fadeout") {
-            window.location.href = "/src/scenes/teste.html"
-        }}
-    );
-
-</script>
-</body>
+          window.location.href = "./src/scenes/teste.html";
+        }
+      });
+    </script>
+  </body>
 </html>
