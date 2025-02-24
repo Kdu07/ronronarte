@@ -46,6 +46,7 @@ function preload() {
     this.load.image('paleta', '/assets/paleta.png');
     this.load.video('vitoria', '/assets/tela_photoshop_1.mp4');
     this.load.image('star', '/assets/star.png');
+    this.load.image('frase', '/assets/frase.png');
 }
         
 // Função do Phaser que adiciona e configura os elementos na página
@@ -135,14 +136,68 @@ function clickPombo() {
 
             // Cria efeito de som e adiciona um novo pombo
             // Verifica se a pontuação atingiu a pontuação máxima
-            if (score >= maxScore) {
+            if (score >= maxScore) {;
 
                 quadro.setMask();
                 quadro.setAlpha(1);
-                star = this.add.image(quadro.x-550, quadro.y-200, 'star').setScale(0.15);
-                star = this.add.image(quadro.x+550, quadro.y-200, 'star').setScale(0.15);
-                star = this.add.image(quadro.x-550, quadro.y+200, 'star').setScale(0.15);
-                star = this.add.image(quadro.x+550, quadro.y+200, 'star').setScale(0.15);
+
+                setTimeout(() => {
+                    var frase= this.add.image(quadro.x/0.95, quadro.y/1.1, 'frase').setScale(0.8);
+                    frase.alpha = 0;
+                    this.tweens.add({
+                                      targets: frase,
+                                      alpha: 1, // Torna visível
+                                      duration: 500, // Tempo da animação (0.3s)
+                                      ease: 'Linear',
+                                      scale: 0.81,
+                                      onComplete: () => {
+                                          // Após o fade-in, reduzimos a opacidade para 50%
+                                          this.tweens.add({
+                                              targets: frase,
+                                              alpha: 0.8, // Mantém opacidade em 50%
+                                              duration: 1000, // Tempo da transição (0.5s)
+                                              scale: 0.6,
+                                              ease: 'Linear'
+                                          });
+                                      }
+                                  });
+    
+                    var star1 = this.add.image(quadro.x-500, quadro.y+200, 'star').setScale(0.15);
+                    star1.alpha = 0;
+                    this.tweens.add({
+                                      targets: star1,
+                                      alpha: 1, // Torna visível
+                                      duration: 300, // Tempo da animação (0.3s)
+                                      ease: 'Linear',
+                                      onComplete: () => {
+                                          // Após o fade-in, reduzimos a opacidade para 50%
+                                          this.tweens.add({
+                                              targets: star1,
+                                              alpha: 0.5, // Mantém opacidade em 50%
+                                              duration: 500, // Tempo da transição (0.5s)
+                                              ease: 'Linear'
+                                          });
+                                      }
+                                  });
+    
+                    var star2 = this.add.image(quadro.x+500, quadro.y-200, 'star').setScale(0.15);
+                    star2.alpha = 0;
+                        this.tweens.add({
+                            targets: star2,
+                            alpha: 1, // Torna visível
+                            duration: 300, // Tempo da animação (0.3s)
+                            ease: 'Linear',
+                            onComplete: () => {
+                                // Após o fade-in, reduzimos a opacidade para 50%
+                                this.tweens.add({
+                                    targets: star2,
+                                    alpha: 0.5, // Mantém opacidade em 50%
+                                    duration: 500, // Tempo da transição (0.5s)
+                                    ease: 'Linear'
+                                });
+                            }
+                        });
+                    },300);
 
                 setTimeout(() => {
                     vitoria = this.add.video(gameWidth / 2, gameHeight / 2, 'vitoria').setScale(0.6);
@@ -150,7 +205,7 @@ function clickPombo() {
                     this.add.image(vitoria.x+300, vitoria.y-110, 'artista').setScale(0.23);
                     this.add.image(vitoria.x / 1.35, gvitoria.y / 2, 'paleta').setScale(0.2);
                     
-                    },2000);
+                    },5000);
                     
             } else {
                 this.tweens.add({
