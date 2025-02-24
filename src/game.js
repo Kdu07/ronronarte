@@ -19,7 +19,7 @@ var pombo;
 var parado = false;
 var score = 0;
 var scoreboard;
-var maxScore = 3; // Defina a pontuação máxima aqui
+var maxScore = 1; // Defina a pontuação máxima aqui
 var gameEnded = false; // Variável para verificar se o jogo foi encerrado
 var borda;
 var quadro;
@@ -29,6 +29,7 @@ var revealMask;
 var tinta1;
 var scaleTinta;
 var vitoria;
+var star;
 
 
 
@@ -44,13 +45,13 @@ function preload() {
     this.load.image('artista', '/assets/artista.png');
     this.load.image('paleta', '/assets/paleta.png');
     this.load.video('vitoria', '/assets/tela_photoshop_1.mp4');
+    this.load.image('star', '/assets/star.png');
 }
         
 // Função do Phaser que adiciona e configura os elementos na página
 function create() {
-
-    borda = this.add.image(gameWidth / 2, gameHeight / 2, 'borda').setScale(0.34);
-    quadro = this.add.image(gameWidth / 2, gameHeight / 2, 'quadro').setScale(0.34);
+    borda = this.add.image(gameWidth / 2, gameHeight / 2, 'borda').setScale(0.35);
+    quadro = this.add.image(gameWidth / 2, gameHeight / 2, 'quadro').setScale(0.35);
     
     borda.setAlpha(1); // Torna a borda visível
     quadro.setAlpha(0); // Torna o quadro visível
@@ -135,11 +136,22 @@ function clickPombo() {
             // Cria efeito de som e adiciona um novo pombo
             // Verifica se a pontuação atingiu a pontuação máxima
             if (score >= maxScore) {
+
+                quadro.setMask();
+                quadro.setAlpha(1);
+                star = this.add.image(quadro.x-550, quadro.y-200, 'star').setScale(0.15);
+                star = this.add.image(quadro.x+550, quadro.y-200, 'star').setScale(0.15);
+                star = this.add.image(quadro.x-550, quadro.y+200, 'star').setScale(0.15);
+                star = this.add.image(quadro.x+550, quadro.y+200, 'star').setScale(0.15);
+
+                setTimeout(() => {
                     vitoria = this.add.video(gameWidth / 2, gameHeight / 2, 'vitoria').setScale(0.6);
                     this.add.image(vitoria.x-150, vitoria.y-110, 'quadro').setScale(0.15);
                     this.add.image(vitoria.x+300, vitoria.y-110, 'artista').setScale(0.23);
                     this.add.image(vitoria.x / 1.35, gvitoria.y / 2, 'paleta').setScale(0.2);
-
+                    
+                    },2000);
+                    
             } else {
                 this.tweens.add({
                     targets: pombo,
