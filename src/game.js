@@ -17,28 +17,60 @@ var config = {
 var game = new Phaser.Game(config);
 var pombo;
 var parado = false;
+var score = 0;
+var scoreboard;
+var maxScore = 3; // Defina a pontuação máxima aqui
+var gameEnded = false; // Variável para verificar se o jogo foi encerrado
+var borda;
+var quadro;
+var splash;
+var mask;
+var revealMask;
+var tinta1;
+var scaleTinta;
+var vitoria;
+var star;
+var bg;
+
 
 
 // Função do Phaser que carrega os arquivos na memória
 function preload() {
-    this.load.image('bg', '/assets/larger_tiled_background.jpg');
-    this.load.spritesheet('pombo', '/assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
-    this.load.audio('pru', '/assets/audios/pru.mp3');
-    this.load.image('PauseBtn', '/assets/botões/pause.png');
-    this.load.image('splash-blue', '/assets/splash-blue.png');
-    this.load.image('splash-pink', '/assets/splash-pink.png');
-    this.load.image('splash-yellow', '/assets/splash-yellow.png');
-    this.load.image('splash-paw-yellow', '/assets/splash-paw-yellow.png');
+    this.load.image('borda', '../assets/borda.png');
+    this.load.image('tinta1', '../assets/tinta1.png');
+    this.load.image('splash', '../assets/splash.png');
+    this.load.spritesheet('pombo', '../assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
+    this.load.audio('pru', '../assets/audios/pru.mp3');
+    this.load.image('PauseBtn', '../assets/botões/pause.png');
+    this.load.image('quadro', '../assets/quadro.png');
+    this.load.image('artista', '../assets/artista.png');
+    this.load.image('paleta', '../assets/paleta.png');
+    this.load.video('vitoria', '../assets/tela_photoshop_1.mp4');
+    this.load.image('star', '../assets/star.png');
+    this.load.image('frase', '../assets/frase.png');
+    this.load.image('recompensa', '../assets/recompensa.png');
+    this.load.image('bg', '../assets/background1.png');
 }
         
 // Função do Phaser que adiciona e configura os elementos na página
 function create() {
+    borda = this.add.image(gameWidth / 2, gameHeight / 2, 'borda').setScale(0.35);
+    bg = this.add.image(gameWidth / 2, gameHeight / 2, 'bg').setScale(0.35);
+    quadro = this.add.image(gameWidth / 2, gameHeight / 2, 'quadro').setScale(0.35);
+    
+    borda.setAlpha(1); // Torna a borda visível
+    quadro.setAlpha(0); // Torna o quadro visível
 
-    let bg = this.add.image(gameWidth / 2, gameWidth / 2, 'bg');
-    bg.setDisplaySize(gameWidth, gameHeight);
-    bg.setOrigin(0.5, 0.5)
+    // Obter as dimensões da borda para restringir o movimento do pombo
+    let bordaWidth = borda.displayWidth;  // Largura da borda
+    let bordaHeight = borda.displayHeight; // Altura da borda
 
-    this.add.image(285, 425, 'bg').setScale(1.0); // Adiciona background
+    // Cria uma máscara inicial vazia 
+    revealMask = this.make.renderTexture({ width: gameWidth, height: gameHeight }, false);
+    mask = new Phaser.Display.Masks.BitmapMask(this, revealMask);
+    //A máscara é aplicada à imagem quadro, o que significa que a imagem só será visível onde a revealMask for preenchida com pixels.
+    quadro.setMask(mask);
+
     somPombo = this.sound.add('pru'); // Adiciona som
 
     // Animação do pombo voando
@@ -48,6 +80,8 @@ function create() {
         frameRate: 10,
         repeat: -1
     });
+    
+    scoreboard = this.add.text(950, 15, 'Pontos:' + score, {fontSize:'45px', fill:'#495613'})
     
     // Adiciona um botão de pause na tela
     PauseBtn = this.add.image(40, 50, 'PauseBtn')
@@ -71,25 +105,24 @@ function update() {
 function spawnPombo() {
     parado = false;
 
-    // Adiciona o pombo
-    let posX = gerarRandomPos(gameWidth, 200); // Gera uma posição aleatoria fora da tela
-    let posY = gerarRandomPos(gameHeight, 200);
+    // Obter as dimensões da borda (área visível onde o pombo vai se mover)
+    let bordaWidth = borda.displayWidth;
+    let bordaHeight = borda.displayHeight;
+
+    // Gerar uma posição aleatória dentro da área do quadro (borda)
+    let posX = Phaser.Math.Between(borda.x - bordaWidth / 2 + 50, borda.x + bordaWidth / 2 - 50);
+    let posY = Phaser.Math.Between(borda.y - bordaHeight / 2 + 50, borda.y + bordaHeight / 2 - 50);
+    
     pombo = this.add.sprite(posX, posY, 'pombo').setScale(1.5);
     pombo.setInteractive();
     
-    // Cofigurações do pombo
-    // Velocidade de movimento
-    pombo.velocidadeX = Phaser.Math.Between(5,7);
-    pombo.velocidadeY = Phaser.Math.Between(3,6);
-    
-    // Inicializa a direção, que é usada junto da velocidade para movimentar o pombo
-    pombo.direcaoX = -1; 
+    pombo.velocidadeX = Phaser.Math.Between(5, 7);
+    pombo.velocidadeY = Phaser.Math.Between(3, 6);
+    pombo.direcaoX = -1;
     pombo.direcaoY = 1;
     
-    // Hitbox
     pombo.hitboxWidth = 43;
     pombo.hitboxHeight = 33;
- 
 
     pombo.play('voo'); // Inicia animação de voo pombo
 }
@@ -98,71 +131,186 @@ function spawnPombo() {
 function clickPombo() {
     this.input.removeAllListeners('pointerdown'); // Ignora todos os cliques anteriores
     this.input.on('pointerdown', (pointer) => {
+        if (gameEnded) return; // Verifique se o jogo já foi encerrado
         if (pombo.getBounds().contains(pointer.x, pointer.y)) {
             parado = true;
+            score+= 1;
+            scoreboard.setText('Pontos: ' + score);
+            console.log(score)
 
             // Cria efeito de som e adiciona um novo pombo
-            this.tweens.add({
-                targets: pombo,
-                onComplete: () => {
-                    pombo.destroy(); // Remove o pombo da tela
-                    somPombo.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
-                    this.time.delayedCall(1000, () => {
-                        somPombo.stop(); // Para o som do pombo após 1000ms (1s)
-                    });
-                    spawnPombo.call(this); // Cria um novo pombo após sumir
-                }
-            });
+            // Verifica se a pontuação atingiu a pontuação máxima
+            if (score >= maxScore) {;
 
-            // Adiciona splash aleatorio e invisível na tela
-            let splashList = ['splash-pink', 'splash-yellow', 'splash-blue', 'splash-paw-yellow'];
-            let splash = this.add.image(pombo.x, pombo.y, splashList[Phaser.Math.Between(0, 3)]).setScale(0.25);
-            splash.alpha = 0;
+                quadro.setMask();
+                quadro.setAlpha(1);
 
-            // Efeito de fade-in para o splash
-            this.tweens.add({
-                targets: splash,
-                alpha: 1,
-                duration: 300,
-                ease: 'Linear',
-                onComplete: () => {
+                setTimeout(() => {
+                    var frase= this.add.image(quadro.x/0.95, quadro.y/1.1, 'frase').setScale(0.8);
+                    frase.alpha = 0;
                     this.tweens.add({
-                        targets: splash,
-                        alpha: 0.7,
-                        duration: 500,
-                        ease: 'Linear'
-                    });
-                }
-            });
-        }
+                                      targets: frase,
+                                      alpha: 1, // Torna visível
+                                      duration: 500, // Tempo da animação (0.3s)
+                                      ease: 'Linear',
+                                      scale: 0.81,
+                                      onComplete: () => {
+                                          // Após o fade-in, reduzimos a opacidade para 50%
+                                          this.tweens.add({
+                                              targets: frase,
+                                              alpha: 0.8, // Mantém opacidade em 50%
+                                              duration: 1000, // Tempo da transição (0.5s)
+                                              scale: 0.6,
+                                              ease: 'Linear'
+                                          });
+                                      }
+                                  },5000);
+
+                                  setTimeout(() => {
+                    var recompensa = this.add.image(quadro.x/1, quadro.y/0.8, 'recompensa').setScale(0.8);
+                    star1.alpha = 0;
+                    this.tweens.add({
+                                      targets: recompensa,
+                                      alpha: 1, // Torna visível
+                                      duration: 300, // Tempo da animação (0.3s)
+                                      scale: 0.9,
+                                      ease: 'Linear',
+                                      onComplete: () => {
+                                          // Após o fade-in, reduzimos a opacidade para 50%
+                                          this.tweens.add({
+                                              targets: recompensa,
+                                              alpha: 0.9, // Mantém opacidade em 50%
+                                              duration: 500, // Tempo da transição (0.5s)
+                                              scale: 0.8,
+                                              ease: 'Linear'
+                                          });
+                                      }
+                                  });
+                                    
+                                    },2000);
+                                  
+                    var star1 = this.add.image(quadro.x-500, quadro.y+200, 'star').setScale(0.15);
+                    star1.alpha = 0;
+                    this.tweens.add({
+                                      targets: star1,
+                                      alpha: 1, // Torna visível
+                                      duration: 300, // Tempo da animação (0.3s)
+                                      ease: 'Linear',
+                                      onComplete: () => {
+                                          // Após o fade-in, reduzimos a opacidade para 50%
+                                          this.tweens.add({
+                                              targets: star1,
+                                              alpha: 0.5, // Mantém opacidade em 50%
+                                              duration: 500, // Tempo da transição (0.5s)
+                                              ease: 'Linear'
+                                          });
+                                      }
+                                  });
+    
+                    var star2 = this.add.image(quadro.x+500, quadro.y-200, 'star').setScale(0.15);
+                    star2.alpha = 0;
+                        this.tweens.add({
+                            targets: star2,
+                            alpha: 1, // Torna visível
+                            duration: 300, // Tempo da animação (0.3s)
+                            ease: 'Linear',
+                            onComplete: () => {
+                                // Após o fade-in, reduzimos a opacidade para 50%
+                                this.tweens.add({
+                                    targets: star2,
+                                    alpha: 0.5, // Mantém opacidade em 50%
+                                    duration: 500, // Tempo da transição (0.5s)
+                                    ease: 'Linear'
+                                });
+                            }
+                        });
+                    },300);
+
+                setTimeout(() => {
+                    vitoria = this.add.video(gameWidth / 2, gameHeight / 2, 'vitoria').setScale(0.6);
+                    this.add.image(vitoria.x-150, vitoria.y-110, 'quadro').setScale(0.15);
+                    this.add.image(vitoria.x+300, vitoria.y-110, 'artista').setScale(0.23);
+                    this.add.image(vitoria.x / 1.35, gvitoria.y / 2, 'paleta').setScale(0.2);
+                    
+                    },5700);
+                    
+            } else {
+                this.tweens.add({
+                    targets: pombo,
+                    onComplete: () => {
+                        pombo.destroy(); // Remove o pombo da tela
+                        let pomboDestruido = pombo.destroy();
+                        somPombo.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
+                        this.time.delayedCall(1000, () => {
+                            somPombo.stop(); // Para o som do pombo após 1000ms (1s)
+                        });
+                        spawnPombo.call(this); // Cria um novo pombo após sumir
+                    }
+                })
+            };
+            //Cria um splash no local do clique
+        splash = this.add.image(pointer.x, pointer.y, 'splash').setScale(2.0);
+        splash.setAlpha(1);
+        revealMask.draw(splash, splash.x, splash.y);
+        this.time.delayedCall(0, function() {
+            splash.destroy(); //Remove o splash após liberar a área
+        });
+
+        setTimeout(() => {
+        tinta1 = this.add.image(pointer.x, pointer.y, 'tinta1').setScale(2.5); // Aparece instantaneamente
+        tinta1.setAlpha(1);
+        scaleTinta = revealMask.draw(tinta1, tinta1.x, tinta1.y);
+
+        this.time.delayedCall(0, function() {
+            tinta1.destroy(); //Remove o splash após liberar a área
+        });
+            
+        },150);
+
+        quadro.setAlpha(1);
+    }
     });
+}
+
+function endGame() {
+    gameEnded = true; // Atualize a variável para indicar que o jogo foi encerrado
+    // Acesse a física da cena diretamente
+    if (this.scene && this.scene.physics && this.scene.physics.pause) {
+        this.scene.physics.pause();
+    } else {
+        console.error("A física da cena não está definida ou 'pause' não está disponível.");
+    }
+    window.location.href = "./Win.html"; // Redireciona para a tela de fim de jogo
 }
 
 // Função para movimentar o pombo
 function movimento(alvo) {
-    // Confere se o alvo chegou no limite do game. Se chegar no limite, espelha a orientação
-    // Eixo X
-    if (alvo.x >= (gameWidth - alvo.hitboxWidth) || alvo.x >= (gameWidth + 200)){
-        alvo.setFlip(false,false);
+    // Obter as dimensões da borda (área visível)
+    let bordaWidth = borda.displayWidth;
+    let bordaHeight = borda.displayHeight;
+
+    // Limite para a borda em X (direita e esquerda)
+    if (alvo.x >= (borda.x + bordaWidth / 2 - alvo.hitboxWidth)) {
+        alvo.setFlip(false, false);  // Direção para a esquerda
         alvo.direcaoX = -1;
     }
-    if (alvo.x <= (0 + alvo.hitboxWidth) || alvo.x <= (0 - 200)){
-        alvo.setFlip(true,false);
+    if (alvo.x <= (borda.x - bordaWidth / 2 + alvo.hitboxWidth)) {
+        alvo.setFlip(true, false);  // Direção para a direita
         alvo.direcaoX = 1;
     }
-    // Eixo Y
-    if (alvo.y >= (gameHeight - alvo.hitboxHeight) || alvo.y >= (gameHeight + 200)){
-        alvo.direcaoY = -1;
+
+    // Limite para a borda em Y (superior e inferior)
+    if (alvo.y >= (borda.y + bordaHeight / 2 - alvo.hitboxHeight)) {
+        alvo.direcaoY = -1; // Direção para cima
     }
-    if (alvo.y <= (0 + alvo.hitboxHeight) || alvo.y <= (0 - 200)){
-        alvo.direcaoY = 1;
+    if (alvo.y <= (borda.y - bordaHeight / 2 + alvo.hitboxHeight)) {
+        alvo.direcaoY = 1; // Direção para baixo
     }
 
-    // Move no eixo X e Y de acordo com a velocidade e a orientação
+    // Move no eixo X e Y de acordo com a velocidade e direção
     alvo.x += alvo.velocidadeX * alvo.direcaoX;
     alvo.y += alvo.velocidadeY * alvo.direcaoY;
 }
-
 // Gera um número aleatorio correspondendo a pixels fora da tela do game (usado para gerar o pombo fora da tela)
 function gerarRandomPos(eixo, fora) {
     var num = Math.floor(Math.random() * ((eixo + fora) - (0 - fora) + 1)) + (0 - fora); // Gera um valor do tamanho da tela + margem para os dois lados
