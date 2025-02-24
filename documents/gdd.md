@@ -111,7 +111,7 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 ## 2.1. Objetivos do Jogo (sprint 2)
 
-*Descreva o que o jogador deve cumprir para avançar ou concluir o jogo*
+O objetivo do jogo é o gato eliminar todos os animais da tela num determinado período de tempo, e, fazer com que o tutor ensine o seu gato a mecânica de ser recompensado ao alcançar esse objetivo. Ademais, nosso jogo contemplará um modo de jogo alternativo em que o gato poderá "pintar" uma tela em branco, produzindo sua própria obra de arte.
 
 ## 2.2. Características do Jogo (sprint 2)
 
@@ -127,7 +127,7 @@ Navegadores compatíveis: Google Chrome, Microsoft Edge, Mozilla Firefox.
 
 ### 2.2.3. Número de jogadores (sprint 2)
 
-*1 jogador, 2 jogadores versus, 2 jogadores cooperação, multiplayer etc.*
+O jogo foi desenvolvido para ser uma experiência interativa entre o gato e seu tutor (2 jogadores), sendo majoritaria a participação do gato ao "caçar" os animais que aparecem nas fases, e a do tutor em recompensar o gato conforme avança pelos níveis. 
 
 ### 2.2.4. Títulos semelhantes e inspirações (sprint 2)
 
