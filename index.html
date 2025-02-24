@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel= "stylesheet" href = "src/css/style.css">
-    <link type="text/css" rel= "stylesheet" href = "/src/css/startScreen.css"> <base href="/">
+    <link type="text/css" rel= "stylesheet" href = "./src/css/style.css">
+    <link type="text/css" rel= "stylesheet" href = "./src/css/startScreen.css"> <base href="/">
     <title>RonRonArte</title>
 
     <!-- Estilos externos -->
@@ -45,11 +45,11 @@
     </main>
 
     <!-- Scripts -->
-    <script src="startScreen.js"></script>
+    <script src="./src/scenes/startScreen.js"></script>
     <script>
         document.getElementById('startScreenMainContentStartButton').addEventListener('click', function() {
             console.log("Botão Start pressionado!");
-            window.location.href = "src/game.html"; // Redireciona para a página do jogo
+            window.location.href = "./src/game.html"; // Redireciona para o jogo
         });
 
         // document.getElementById('startScreenMainContentOptionsButton').addEventListener('click', function() {
