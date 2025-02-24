@@ -117,13 +117,13 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 ### 2.2.1. Gênero do Jogo (sprint 2)
 
-*simulação, RPG, corrida, estratégia, esportes, ação, aventura etc.*  
+O jogo se encaixa principalmente no gênero Arcade, pois é um jogo rápido e simples, com a mecânica principal sendo a de tocar na tela para "capturar" algo.
 
 ### 2.2.2. Plataforma do Jogo (sprint 2)
 
-*quanto ao dispositivo: desktop, smartphones, tablets, TV etc.*
+O jogo será desenvolvido para _smartphones e tablets_, com reprodução através da web, sem a necessidade de instalação de aplicativos externos.
 
-*quanto ao sistema: navegadores compatíveis*
+Navegadores compatíveis: Google Chrome, Microsoft Edge, Mozilla Firefox.
 
 ### 2.2.3. Número de jogadores (sprint 2)
 
@@ -131,7 +131,13 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 ### 2.2.4. Títulos semelhantes e inspirações (sprint 2)
 
-*Liste e descreva títulos semelhantes e jogos que inspiram e são usados como referência do projeto*
+Nosso jogo teve como inspiração outros títulos de jogos para gato, como:
+
+Paint for Cats: Jogo cuja principal mecânica é ser um "jogo de pintar" para gatos, em que um rato colorido atravessa a tela com o intuito do gato bater na tela tentando o acertar. Ao acertá-lo, deixa um "splash" de tinta em formato de pata na tela.
+
+Games for Cats: Jogo em que o gato deve acertar um animal correndo pela tela. Contempla diferentes tipos de animais com diferentes características e níveis de dificuldade.
+
+Nosso jogo visa mesclar mecânicas presentes nesses outros jogos com uma identidade visual própria, buscando uma experiência interativa e divertida para gato e tutor.
 
 ### 2.2.5. Tempo estimado de jogo (sprint 5)
 
