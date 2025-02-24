@@ -9,10 +9,6 @@
     <base href="/" />
     <title>RonRonArte</title>
 
-    <!-- Estilos externos -->
-    <link type="text/css" rel="stylesheet" href="./src/css/style.css" />
-    <link type="text/css" rel="stylesheet" href="./src/css/startScreen.css" />
-
     <style>
       body {
         opacity: 0%;
@@ -44,7 +40,7 @@
       // quando a animação de fade out acabar, abre outra tela automaticamente
       document.body.addEventListener("animationend", (event) => {
         if (event.animationName === "fadeout") {
-          window.location.href = "./src/scenes/teste.html";
+          window.location.href = "src/scenes/teste.html";
         }
       });
     </script>

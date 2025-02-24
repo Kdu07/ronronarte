@@ -1,7 +1,7 @@
 body{
     height: 100vh;
     font-family: var(--mainFont);
-    background-image: url("/assets/expanded_startscreen.png");
+    
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
