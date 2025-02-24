@@ -100,12 +100,13 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 --- | ---
 1 | A tela inicial deve mostrar um botão “Jogar”, que, quando clicado, direcione o jogador às fases do jogo.
 2 | Nas fases, o jogador (gato) deve clicar nos animais que aparecerem na tela para eliminá-los.
-3 | Ao clicar na tela, o jogador (gato) consegue pintá-la.
-4 | Devem ser disponibilizados botões de hud na tela, ativados apenas quando clicados e pressionados em seguida (para que o gato não os ative sem querer).
-5 | A cada dificuldade avançada pelo jogador (gato), uma nova paleta de cor deverá ser desbloqueada para pintura.
-6 | As pinturas do gato serão guardadas em uma biblioteca de imagens disponibilizada no jogo para acesso do tutor.
-7 | O tutor do gato pode personalizar as fases do jogo, alterando os alvos a serem atingidos pelo gato e a sua velocidade.
-8 | Ao final de cada fase, o jogador (gato) deve receber uma recompensa do tutor: pestiscos e ração.
+3 | O gato percebe que eliminou o alvo por meio de um aviso sonoro e o efeito de splash na tela.
+4 | Ao clicar na tela, o jogador (gato) consegue pintá-la.
+5 | Devem ser disponibilizados botões de hud na tela, ativados apenas quando clicados e pressionados em seguida (para que o gato não os ative sem querer).
+6 | A cada dificuldade avançada pelo jogador (gato), uma nova paleta de cor deverá ser desbloqueada para pintura.
+7 | As pinturas do gato serão guardadas em uma biblioteca de imagens disponibilizada no jogo para acesso do tutor.
+8 | O tutor do gato pode personalizar as fases do jogo, alterando os alvos a serem atingidos pelo gato e a sua velocidade.
+9 | Ao final de cada fase, o jogador (gato) deve receber uma recompensa do tutor: pestiscos e ração.
 
 ## 1.3. Público-alvo do Projeto (sprint 2)
 
