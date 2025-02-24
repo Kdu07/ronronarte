@@ -154,7 +154,7 @@ No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador
 
 <p align = 'center'>Figura 3 - Spritesheet de pombo (RonRonArte)</p><br>
 <div align = 'center'>
-  <img src="![image](https://github.com/user-attachments/assets/25788045-9d07-4919-9ce3-5dcbc854e9de)">
+  <img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/pombo.png?raw=true">
 </div><br>
 
 <p align = 'center'>Fonte: autoria própria (2025).</p>
