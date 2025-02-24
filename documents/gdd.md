@@ -46,13 +46,13 @@ Alexandre Rossi, também conhecido por Dr. Pet, é formado em zootecnia pela USP
 
 #### 1.1.1.1. Modelo de 5 Forças de Porter (sprint 2)
 
-Imagem 1: modelo de 5 forças de Porter
+Figura 1: modelo de 5 forças de Porter
 ![quadro_5_forcas](https://github.com/user-attachments/assets/479e357c-f3ad-4257-864e-4d431e079b6f)
 Fonte: Autoria própria (2025)
 
 ### 1.1.2. Análise SWOT (sprint 2)
 
-Imagem 2: Análise SWOT
+Figura 2: Análise SWOT
 ![analise_SWOT](https://github.com/user-attachments/assets/cdfda52f-6985-4485-aed0-4fa58e7a7397)
 Fonte: Autoria própria (2025) 
 
@@ -150,10 +150,12 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 ## 3.2. Personagens (sprints 2 e 3)
 
 ### 3.2.1. Controláveis
+No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador, haja vista que o intuito do jogo é justamente incentivar hábitos de caça ao gato por intermédio de figuras clicáveis na tela (no caso, spritesheets). Desse modo, o objetivo não é que o jogador controle algum personagem no game, mas sim que ele possa eliminá-lo no decorrer do jogo em troca de recompensas alimentícias, a fim de que seus instintos naturais sejam estimulados. Portanto, especificamente no escopo de RonRonArte, o player pode interpretar tal circunstância como um meio pelo qual ele realiza uma ação e, em troca, ganha algo, associando o atingimento de objetivos com as recompensas supracitadas. A partir disso, abaixo estão as spritesheets correspondentes ao que acima foi observado.
 
-*Descreva os personagens controláveis pelo jogador. Mencione nome, objetivos, características, habilidades, diferenciais etc. Utilize figuras (character art, sprite sheets etc.) para ilustrá-los. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes.* 
+Figura 3 - Spritesheet de pombo (RonRonArte)
+![image](https://github.com/user-attachments/assets/25788045-9d07-4919-9ce3-5dcbc854e9de)
+Fonte: autoria própria (2025).
 
-*Caso não existam personagens (ex. jogo Tetris), mencione os motivos de não existirem e como o jogador pode interpretar tal fato.*
 
 ### 3.2.2. Non-Playable Characters (NPC)
 
