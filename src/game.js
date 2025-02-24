@@ -49,9 +49,15 @@ function preload() {
 // Função do Phaser que adiciona e configura os elementos na página
 function create() {
 
-    this.add.image(gameWidth/2, gameHeight/2, 'borda').setScale(0.34);
+    borda = this.add.image(gameWidth / 2, gameHeight / 2, 'borda').setScale(0.34);
     quadro = this.add.image(gameWidth / 2, gameHeight / 2, 'quadro').setScale(0.34);
-    quadro.setAlpha(0); // Começa invisível
+    
+    borda.setAlpha(1); // Torna a borda visível
+    quadro.setAlpha(0); // Torna o quadro visível
+
+    // Obter as dimensões da borda para restringir o movimento do pombo
+    let bordaWidth = borda.displayWidth;  // Largura da borda
+    let bordaHeight = borda.displayHeight; // Altura da borda
 
     // Cria uma máscara inicial vazia 
     revealMask = this.make.renderTexture({ width: gameWidth, height: gameHeight }, false);
@@ -93,25 +99,24 @@ function update() {
 function spawnPombo() {
     parado = false;
 
-    // Adiciona o pombo
-    let posX = gerarRandomPos(gameWidth, 200); // Gera uma posição aleatoria fora da tela
-    let posY = gerarRandomPos(gameHeight, 200);
+    // Obter as dimensões da borda (área visível onde o pombo vai se mover)
+    let bordaWidth = borda.displayWidth;
+    let bordaHeight = borda.displayHeight;
+
+    // Gerar uma posição aleatória dentro da área do quadro (borda)
+    let posX = Phaser.Math.Between(borda.x - bordaWidth / 2 + 50, borda.x + bordaWidth / 2 - 50);
+    let posY = Phaser.Math.Between(borda.y - bordaHeight / 2 + 50, borda.y + bordaHeight / 2 - 50);
+    
     pombo = this.add.sprite(posX, posY, 'pombo').setScale(1.5);
     pombo.setInteractive();
     
-    // Cofigurações do pombo
-    // Velocidade de movimento
-    pombo.velocidadeX = Phaser.Math.Between(5,7);
-    pombo.velocidadeY = Phaser.Math.Between(3,6);
-    
-    // Inicializa a direção, que é usada junto da velocidade para movimentar o pombo
-    pombo.direcaoX = -1; 
+    pombo.velocidadeX = Phaser.Math.Between(5, 7);
+    pombo.velocidadeY = Phaser.Math.Between(3, 6);
+    pombo.direcaoX = -1;
     pombo.direcaoY = 1;
     
-    // Hitbox
     pombo.hitboxWidth = 43;
     pombo.hitboxHeight = 33;
- 
 
     pombo.play('voo'); // Inicia animação de voo pombo
 }
@@ -186,25 +191,29 @@ function endGame() {
 
 // Função para movimentar o pombo
 function movimento(alvo) {
-    // Confere se o alvo chegou no limite do game. Se chegar no limite, espelha a orientação
-    // Eixo X
-    if (alvo.x >= (gameWidth - alvo.hitboxWidth) || alvo.x >= (gameHeight + 200)){
-        alvo.setFlip(false,false);
+    // Obter as dimensões da borda (área visível)
+    let bordaWidth = borda.displayWidth;
+    let bordaHeight = borda.displayHeight;
+
+    // Limite para a borda em X (direita e esquerda)
+    if (alvo.x >= (borda.x + bordaWidth / 2 - alvo.hitboxWidth)) {
+        alvo.setFlip(false, false);  // Direção para a esquerda
         alvo.direcaoX = -1;
     }
-    if (alvo.x <= (0 + alvo.hitboxWidth) || alvo.x <= (0 - 200)){
-        alvo.setFlip(true,false);
+    if (alvo.x <= (borda.x - bordaWidth / 2 + alvo.hitboxWidth)) {
+        alvo.setFlip(true, false);  // Direção para a direita
         alvo.direcaoX = 1;
     }
-    // Eixo Y
-    if (alvo.y >= (gameWidth - alvo.hitboxHeight) || alvo.y >= (gameHeight + 200)){
-        alvo.direcaoY = -1;
+
+    // Limite para a borda em Y (superior e inferior)
+    if (alvo.y >= (borda.y + bordaHeight / 2 - alvo.hitboxHeight)) {
+        alvo.direcaoY = -1; // Direção para cima
     }
-    if (alvo.y <= (0 + alvo.hitboxHeight) || alvo.y <= (0 - 200)){
-        alvo.direcaoY = 1;
+    if (alvo.y <= (borda.y - bordaHeight / 2 + alvo.hitboxHeight)) {
+        alvo.direcaoY = 1; // Direção para baixo
     }
 
-    // Move no eixo X e Y de acordo com a velocidade e a orientação
+    // Move no eixo X e Y de acordo com a velocidade e direção
     alvo.x += alvo.velocidadeX * alvo.direcaoX;
     alvo.y += alvo.velocidadeY * alvo.direcaoY;
 }
