@@ -172,7 +172,7 @@ No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 
-Considerando as personagens do game, analise se estas estão alinhadas ao público-alvo do jogo (seção 1.3), e compare-as dentro da realidade da sociedade brasileira. Por fim, discorra sobre qual é o impacto esperado da escolha dessas personagens.
+O jogo considera a diversidade e a inclusão de representatividade de minorias imprescindíveis. Por isso, na narrativa do modo com fases do RonRonArte, o jogador faz uma viagem pela história da arte e em cada período é exposto uma obra cujo autor pertence a um grupo sub-representado no universo artístico, como mulheres, negros, e integrantes da comunidade LGBTQIA +. Assim, o jogo se compromete em gerar visibilidade às figuras que foram intrínsecas no desenvolvimento da arte ao longo do tempo e que, em razão de vieses discriminatórios, não tiveram o merecido reconhecimento.
 
 ## 3.3. Mundo do jogo (sprints 2 e 3)
 
