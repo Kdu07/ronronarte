@@ -87,7 +87,7 @@ function create() {
     PauseBtn = this.add.image(40, 50, 'PauseBtn')
     PauseBtn.setInteractive()
     PauseBtn.on('pointerdown', () => {
-        window.location.href = "../index.html";
+        window.location.href = "2025-1A-T15-IN01-G03/index.html";
     })
 
     spawnPombo.call(this); // Gera o pombo
@@ -280,7 +280,7 @@ function endGame() {
     } else {
         console.error("A física da cena não está definida ou 'pause' não está disponível.");
     }
-    window.location.href = "./Win.html"; // Redireciona para a tela de fim de jogo
+    window.location.href = "2025-1A-T15-IN01-G03/src/Win.html"; // Redireciona para a tela de fim de jogo
 }
 
 // Função para movimentar o pombo
