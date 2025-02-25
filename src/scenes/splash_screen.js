@@ -19,6 +19,16 @@ export default class SplashScreen extends Phaser.Scene {
     }
 
     create(){
-        this.add.text(0, 0, 'Cat-up', {fontSize:'45px', fill:'#FFFFFF'})
+        this.cameras.main.fadeIn(1500, 0, 0, 0)
+        this.add.text(540, 400, 'Cat-up', {fontSize:'45px', fill:'#FFFFFF'})
+        
+        this.time.delayedCall(3000, () => {
+            this.cameras.main.fadeOut(1500, 0, 0, 0);
+            
+            // Aguarda o fadeOut antes de iniciar a próxima cena
+            this.time.delayedCall(1500, () => {
+                this.scene.start('Menu');
+            });
+        });          
     }
 }
