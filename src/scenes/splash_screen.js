@@ -16,11 +16,12 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('frase', './assets/frase.png');
         this.load.image('recompensa', './assets/recompensa.png');
         this.load.image('mask', './assets/mask.png');
+        this.load.image('catup', './assets/catup.png');
     }
 
     create(){
         this.cameras.main.fadeIn(1500, 0, 0, 0)
-        this.add.text(540, 400, 'Cat-up', {fontSize:'45px', fill:'#FFFFFF'})
+        this.add.image(600,430,'catup').setScale(0.5);
         
         this.time.delayedCall(3000, () => {
             this.cameras.main.fadeOut(1500, 0, 0, 0);
