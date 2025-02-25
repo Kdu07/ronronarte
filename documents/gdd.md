@@ -107,6 +107,9 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 7 | As pinturas do gato serão guardadas em uma biblioteca de imagens disponibilizada no jogo para acesso do tutor.
 8 | O tutor do gato pode personalizar as fases do jogo, alterando os alvos a serem atingidos pelo gato e a sua velocidade.
 9 | Ao final de cada fase, o jogador (gato) deve receber uma recompensa do tutor: pestiscos e ração.
+10 | O jogo será reproduzido em formato web direcionado para dispositivos móveis (smartphones e tablets).
+11 | Exibir som ao eliminar "alvos" para entendimento do tutor e do gato.
+12 | Cores chamativas e "alvo" que se movimenta para chamar atenção do gato.
 
 ## 1.3. Público-alvo do Projeto (sprint 2)
 
