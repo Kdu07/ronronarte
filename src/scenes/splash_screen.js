@@ -3,7 +3,6 @@ export default class SplashScreen extends Phaser.Scene {
         super('SplashScreen');
     }
     preload(){
-        this.load.image('borda', './assets/borda.png');
         this.load.image('tinta1', './assets/tinta1.png');
         this.load.image('splash', './assets/splash.png');
         this.load.spritesheet('pombo', './assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
@@ -16,7 +15,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('star', './assets/star.png');
         this.load.image('frase', './assets/frase.png');
         this.load.image('recompensa', './assets/recompensa.png');
-        this.load.image('bg', './assets/background1.png');
+        this.load.image('mask', './assets/mask.png');
     }
 
     create(){
