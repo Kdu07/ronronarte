@@ -137,7 +137,7 @@ Navegadores compatíveis: Google Chrome, Microsoft Edge, Mozilla Firefox.
 
 ### 2.2.3. Número de jogadores (sprint 2)
 
-O jogo foi desenvolvido para ser uma experiência interativa entre o gato e seu tutor (2 jogadores), sendo majoritaria a participação do gato ao "caçar" os animais que aparecem nas fases, e a do tutor em recompensar o gato conforme avança pelos níveis. 
+O jogo foi desenvolvido para ser uma experiência interativa entre o gato e seu tutor (2 jogadores), sendo majoritaria a participação do gato ao "caçar" os animais que aparecem nas fases, e a do tutor em recompensar o gato e acompanhar a história da arte conforme avança pelos níveis. 
 
 ### 2.2.4. Títulos semelhantes e inspirações (sprint 2)
 
