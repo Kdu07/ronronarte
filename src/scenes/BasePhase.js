@@ -64,8 +64,8 @@ export default class BasePhase extends Phaser.Scene {
 
                 // Verifica se a pontuação atingiu a pontuação máxima
                 if (this.score >= this.maxScore) {
-                    this.add.text((this.width/2) - 300, this.height/2, 'MUDA DE CENA',  {fontSize:'100px', fill:'#FFFFFF'})
                     this.target.destroy();
+                    this.add.text((this.width/2) - 300, this.height/2, 'MUDA DE CENA',  {fontSize:'100px', fill:'#FFFFFF'})
                     
                     // Troca de cena 'BasePhase' -> ''
                     // this.scene.start('');
