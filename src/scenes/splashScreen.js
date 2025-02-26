@@ -18,8 +18,9 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('mask', './assets/mask.png');
         this.load.image('catup', './assets/catup.png');
         this.load.image('bgTutorial', './assets/larger_tiled_background.jpg');
+        this.load.image('textBox', './assets/textBox.png');
     }
-    /*
+
     create(){
         this.cameras.main.fadeIn(1500, 0, 0, 0)
         this.add.image(this.scale.width/2, this.scale.height/2,'catup').setScale(0.5);
@@ -31,22 +32,7 @@ export default class SplashScreen extends Phaser.Scene {
             this.time.delayedCall(1500, () => {
                 this.scene.start('Tutorial');
                 this.scene.stop('SplashScreen');
-            });
-        });          
-    }
-    */
-    create(){
-        this.cameras.main.fadeIn(0, 0, 0, 0)
-        this.add.image(this.scale.width/2, this.scale.height/2,'catup').setScale(0.5);
-        
-        this.time.delayedCall(0, () => {
-            this.cameras.main.fadeOut(0, 0, 0, 0);
-            
-            // Aguarda o fadeOut antes de iniciar a próxima cena
-            this.time.delayedCall(0, () => {
-                this.scene.start('Tutorial');
-                this.scene.stop('SplashScreen');
-            });
+            }); 
         });          
     }
 }

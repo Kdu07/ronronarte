@@ -6,7 +6,7 @@ export default class BasePhase extends Phaser.Scene {
     create(){
         this.width = this.scale.width;
         this.height = this.scale.height;
-        let bg = this.add.image(this.width / 2, this.height / 2, 'bgTutorial').setScale(0.5);
+        let bg = this.add.image(this.width / 2, this.height / 2, 'bgTutorial');
         this.score = 0;
         this.maxScore = 3;
 
