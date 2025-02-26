@@ -100,16 +100,16 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 --- | ---
 1 | A tela inicial deve mostrar um botão “Jogar”, que, quando clicado, direcione o jogador às fases do jogo.
 2 | Nas fases, o jogador (gato) deve clicar nos animais que aparecerem na tela para eliminá-los.
-3 | O gato percebe que eliminou o alvo por meio de um aviso sonoro e o efeito de splash na tela.
-4 | Ao clicar na tela, o jogador (gato) consegue pintá-la.
-5 | Devem ser disponibilizados botões de hud na tela, ativados apenas quando clicados e pressionados em seguida (para que o gato não os ative sem querer).
-6 | A cada dificuldade avançada pelo jogador (gato), uma nova paleta de cor deverá ser desbloqueada para pintura.
-7 | As pinturas do gato serão guardadas em uma biblioteca de imagens disponibilizada no jogo para acesso do tutor.
-8 | O tutor do gato pode personalizar as fases do jogo, alterando os alvos a serem atingidos pelo gato e a sua velocidade.
-9 | Ao final de cada fase, o jogador (gato) deve receber uma recompensa do tutor: pestiscos e ração.
-10 | O jogo será reproduzido em formato web direcionado para dispositivos móveis (smartphones e tablets).
-11 | Exibir som ao eliminar "alvos" para entendimento do tutor e do gato.
-12 | Cores chamativas e "alvo" que se movimenta para chamar atenção do gato.
+3 | As cores que o gato enxerga com mais facilidade serão usadas nos animais que ele precisa bater e as cores que são mais dificultosas de ver serão usadas no background. Dessa forma, a emissão de mais estímulo visual junto com a movimentação pela tela, potencializa o interesse do gato em abater os alvos.
+4 | O gato percebe que eliminou o alvo por meio de um aviso sonoro e o efeito de splash na tela.
+5 | Ao clicar na tela, o jogador (gato) consegue pintá-la.
+6 | Devem ser disponibilizados botões de hud na tela, ativados apenas quando clicados e pressionados em seguida (para que o gato não os ative sem querer).
+7 | A cada dificuldade avançada pelo jogador (gato), uma nova paleta de cor deverá ser desbloqueada para pintura.
+8 | As pinturas do gato serão guardadas em uma biblioteca de imagens disponibilizada no jogo para acesso do tutor.
+9 | O tutor do gato pode personalizar as fases do jogo, alterando os alvos a serem atingidos pelo gato e a sua velocidade.
+10 | Ao final de cada fase, o jogador (gato) deve receber uma recompensa do tutor: petiscos e ração.
+11 | O jogo será reproduzido em formato web direcionado para dispositivos móveis (smartphones e tablets).
+12 | Exibir som ao eliminar "alvos" para entendimento do tutor e do gato.
 
 ## 1.3. Público-alvo do Projeto (sprint 2)
 
