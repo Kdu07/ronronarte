@@ -159,7 +159,9 @@ Nosso jogo visa mesclar mecânicas presentes nesses outros jogos com uma identid
 
 ## 3.1. Enredo do Jogo (sprints 2 e 3)
 
-Nós seres humanos, em algum momento de nossas vidas, pensamos no conceito de viagem no tempo. Um conceito interessante, desconhecido, e um tanto assutador. Entretanto, imagine se fosse possível, viajar no tempo com o seu pet? 
+Nós seres humanos, em algum momento de nossas vidas, pensamos no conceito de viagem no tempo. Um conceito interessante, desconhecido, e um tanto assutador. Entretanto, já imaginou se fosse possível viajar no tempo com o seu pet?
+Pois é esse o enredo de RonRonArte, uma viagem no tempo com o seu gato! Mas não é uma viagem no tempo qualquer, é uma viagem pelos diferentes períodos da arte, passando por arte contemporânea, arte moderna, arte medieval, e arte rupestre.
+Acompanhe seu pet nessa jornada e aprenda um pouco mais sobre a história da arte enquanto se diverte com seu amigo felino!
 
 ## 3.2. Personagens (sprints 2 e 3)
 
@@ -174,10 +176,6 @@ No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador
 <p align = 'center'>Fonte: autoria própria (2025).</p>
 
 
-### 3.2.2. Non-Playable Characters (NPC)
-
-*\<opcional\> Se existirem coadjuvantes ou vilões, aqui é o local para descrevê-los e ilustrá-los. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes. Caso não existam NPCs, remova esta seção.*
-
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 
 O jogo considera a diversidade e a inclusão de representatividade de minorias imprescindíveis. Por isso, na narrativa do modo com fases do RonRonArte, o jogador faz uma viagem pela história da arte e em cada período é exposto uma obra cujo autor pertence a um grupo sub-representado no universo artístico, como mulheres, negros, e integrantes da comunidade LGBTQIA +. Assim, o jogo se compromete em gerar visibilidade às figuras que foram intrínsecas no desenvolvimento da arte ao longo do tempo e que, em razão de vieses discriminatórios, não tiveram o merecido reconhecimento.
@@ -186,7 +184,7 @@ O jogo considera a diversidade e a inclusão de representatividade de minorias i
 
 ### 3.3.1. Locações Principais e/ou Mapas (sprints 2 e 3)
 
-O jogo vem de uma viagem no tempo, especificadamente por momentos históricos e importantes para a arte de pintura, coletando quadros de pintores famosos desses momentos em que o jogador, o gato, irá visitar. Essa aventura será possível por meio de um portal, fantasioso, que servirá para o jogador poder acessar as fases. Os momentos históricos serão representados por animais que foram o foco e pintores e artes pertencentes a cada respectiva época, por exemplo, o quadro de Van Gogh. Nesse jogo ele não se segue com uma linha do tempo não linear.
+O jogo vem de uma viagem no tempo, especificadamente por momentos históricos e importantes para a arte de pintura, coletando quadros de pintores famosos desses momentos em que o jogador, o gato, irá visitar. Essa aventura será possível por meio de um portal, fantasioso, que servirá para o jogador poder acessar as fases. Os momentos históricos serão representados por animais que foram o foco e pintores e artes pertencentes a cada respectiva época, por exemplo, o quadro de Van Gogh. Nesse jogo ele não se segue com uma linha do tempo linear.
 
 ### 3.3.2. Navegação pelo mundo (sprints 2 e 3)
 O jogador, sendo um gato, atravessará as fases atreves de um portal que o levará para épocas distintas e importantes para o conhecimento artístico da pintura. Com o passar das fases, elas se tornam selecionáveis a preferir do dono do gato, em que depois que o botão de “jogar”, poderá selecionar somente clicando com o dedo no botão referente a fase que for preferível a ser jogada.
