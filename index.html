@@ -12,16 +12,16 @@
 <body>
 <script type='module'>
     import SplashScreen from "./src/scenes/splash_screen.js";
-    import Menu from "./src/scenes/menu.js";
-    //import BasePhase from "./src/scenes/BasePhase.js";
+    //import Menu from "./src/scenes/menu.js";
+    import BasePhase from "./src/scenes/BasePhase.js";
     //import Tutorial from ".src/scenes/tutorial"
     //import Game from "./src/scenes/game.js";
 
     const config = {
         type: Phaser.AUTO,
         width: 1200,
-        height: 860,
-        scene: [SplashScreen], // Adicione as cenas ao jogo
+        height: 600,
+        scene: [SplashScreen, BasePhase], // Adicione as cenas ao jogo
     };
 
     const game = new Phaser.Game(config);
