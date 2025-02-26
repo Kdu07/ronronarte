@@ -121,7 +121,7 @@ Além disso, os gatos domésticos, na ausência de seus tutores, passam por mome
 
 ## 2.1. Objetivos do Jogo (sprint 2)
 
-O objetivo do jogo é o gato eliminar todos os animais da tela num determinado período de tempo, e, fazer com que o tutor ensine o seu gato a mecânica de ser recompensado ao alcançar esse objetivo. Ademais, nosso jogo contemplará um modo de jogo alternativo em que o gato poderá "pintar" uma tela em branco, produzindo sua própria obra de arte.
+O objetivo do jogo é fortalecer o laço entre tutor e gato, enquanto ensina uma nova forma de se divertir com o seu pet. O objetivo do gato é eliminar todos os animais da tela num determinado período de tempo, e o tutor deve aprender e exercer a mecânica de ser recompensado ao alcançar esse objetivo. Ademais, nosso jogo contemplará um modo de jogo alternativo em que o gato poderá "pintar" uma tela em branco, produzindo sua própria obra de arte.
 
 ## 2.2. Características do Jogo (sprint 2)
 
