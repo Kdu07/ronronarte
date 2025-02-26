@@ -329,14 +329,13 @@ A partir da versão preliminar do jogo, realizou-se o desenvolvimento básico do
 
 ## 5.1. Casos de Teste (sprints 2 a 4)
 
-*Descreva nesta seção os casos de teste comuns que podem ser executados a qualquer momento para testar o funcionamento e integração das partes do jogo. Utilize tabelas para facilitar a organização.*
+## 5.1. Casos de Teste (sprints 2 a 4)
 
-*Exemplo de tabela*
 \# | pré-condição | descrição do teste | pós-condição 
 --- | --- | --- | --- 
-1 | posicionar o jogo na tela de abertura | iniciar o jogo desde seu início | o jogo deve iniciar da fase 1
-2 | posicionar o personagem em local seguro de inimigos | aguardar o tempo passar até o final da contagem | o personagem deve perder uma vida e reiniciar a fase
-3 | ...
+1 | abrir o jogo no smartphone ou tablet | colocar a ração ou o petisco em cima do alvo do tutorial | o gato deve bater na tela quando o alvo aparecer
+2 | tutor clica no botão de iniciar | induzir o gato a bater na tela | o efeito de "splash" deve acontecer quando o gato clica na tela
+
 
 ## 5.2. Testes de jogabilidade (playtests) (sprint 4)
 
