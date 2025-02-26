@@ -57,7 +57,7 @@ Fonte: Modelo criado por Michael Eugene Porter (1980). Adaptação por Carlos Ed
 Análise SWOT é um planejamento estratégico que analisa os pontos fortes, pontos fracos, ameaças e oportunidades de um negócio.
 
 Figura 2: Análise SWOT
-![analise_SWOT](https://github.com/user-attachments/assets/cdfda52f-6985-4485-aed0-4fa58e7a7397)
+![analiseSwot](https://github.com/user-attachments/assets/8a0b1694-3b95-4dd7-882e-8d0a9ec40121)
 Fonte: Modelo criado por Albert S. Humphrey (1960). Adaptação por Carlos Eduardo Serrano Quaglia (2025). 
 
 ### 1.1.3. Missão / Visão / Valores (sprint 2)
