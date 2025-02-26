@@ -46,7 +46,7 @@ Alexandre Rossi, também conhecido por Dr. Pet, é formado em zootecnia pela USP
 
 #### 1.1.1.1. Modelo de 5 Forças de Porter (sprint 2)
 
-De acordo com o blog rockcontent.com.br, as 5 Forças de Porter são um framework de análise setorial que permite entender o nível de competitividade de um mercado. O modelo apresenta os atores envolvidos (Rivalidade entre concorrentes, poder de negociação dos fornecedores, poder de negociação dos compradores, ameaça de novos entrantes e ameaça de produtos substitutos), como eles se relacionam e como influenciam o sucesso dos negócios. O modelo determina que, o quão maior uma força for, maior o poder de ação ela tem sobre um negócio.
+De acordo com o livro "Entendendo Michael Porter: o guia essencial da competição e estratégia" de Joan Magretta (2019), o modelo das 5 Forças de Porter é um framework de análise setorial que permite entender o nível de competitividade de um mercado. O modelo apresenta 5 critérios: Rivalidade entre concorrentes, poder de negociação dos fornecedores, poder de negociação dos compradores, ameaça de novos entrantes e ameaça de produtos substitutos, e avaliamo a força de cada um deles e como eles influenciam a competitividade do setor em análise. O modelo determina que, quanto maior uma força for, maior o poder de ação ela tem sobre um negócio.
 
 Figura 1: modelo de 5 forças de Porter
 ![quadro_5_forcas](https://github.com/user-attachments/assets/479e357c-f3ad-4257-864e-4d431e079b6f)
