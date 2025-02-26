@@ -159,9 +159,7 @@ Nosso jogo visa mesclar mecânicas presentes nesses outros jogos com uma identid
 
 ## 3.1. Enredo do Jogo (sprints 2 e 3)
 
-*Descreva o enredo/história do jogo, criando contexto para os personagens (seção 3.2) e o mundo do jogo (seção 3.3). Uma boa história costuma ter um arco narrativo de contexto, conflito e resolução. Utilize etapas sequenciais para descrever esta história.* 
-
-*Caso seu jogo não possua enredo/história (ex. jogo Tetris), mencione os motivos de não existir e como o jogador pode se contextualizar com o ambiente do jogo.*
+Nós seres humanos, em algum momento de nossas vidas, pensamos no conceito de viagem no tempo. Um conceito interessante, desconhecido, e um tanto assutador. Entretanto, imagine se fosse possível, viajar no tempo com o seu pet? 
 
 ## 3.2. Personagens (sprints 2 e 3)
 
@@ -244,7 +242,50 @@ Figura 1: detalhe da cena da partida do herói para a missão, usando sua nave
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 
-*Posicione aqui seu "storyboard de programação" - o diagrama de cenas do jogo. Indique, por exemplo, como o jogo começa, quais opções o jogador tem, como ele avança nas fases, quais as condições de 'game over', como o jogo reinicia. Seu diagrama deve representar as classes, atributos e métodos usados no jogo.*
+Diagrama de cenas
+
+O diagrama de cenas é uma representação visual do caminhar do jogo ao longo de suas telas e cenas. Essa ferramenta apresenta como o design será feito, como as classes, objetos, atributos e métodos são realizados, facilitando a compreensão das funcionalidades.
+
+- Tela inicial (Splash Screen)
+A primeira cena do jogo conta com uma splash screen (cena exibida ao abrir o jogo) que apresenta o nome de nossa equipe em um fundo preto.
+
+Classes, atributos e métodos: classe "SplashScreen", métodos: preload e create.
+
+- Tela de start 
+A tela de start conta com uma imagem de fundo gerada por IA que apresenta elementos do storytelling do jogo como um portal, pinturas emolduradas e um gato. Além disso, há também um botão de "JOGAR", que ao ser pressionado redireciona para a tela de primeira fase do jogo.
+
+Classes, atributos e métodos:
+
+
+- Fase 1:   
+A primeira fase do jogo serve como tutorial para o tutor, apresentando como deverá ser feita a recompensa para o gato ao alcançar o objetivo do jogo. Nessa tela, haverá uma maneira de pular a cena de tutorial caso o tutor já saiba ou não queira ver o tutorial.
+Classes, atributos, métodos e objetos:
+
+- Tela de seleção de níveis
+Após passar pelo tutorial, o jogador será direcionado para uma tela de seleção de níveis, onde poderá (caso já estiver desbloqueado) escolher a "fase" que gostaria de jogar.
+Classes, atributos e métodos:
+
+- Fase 2:
+A segunda fase apresenta ao jogador a dinâmica principal do jogo, em que o gato, ao tocar em um animal "alvo" na tela (nessa fase em específico, será um pombo), preenche aos poucos o quadro de fundo, que revela uma obra de algum período da arte (nessa fase em específico, arte contemporânea). Após preenchimento desse quadro, é exibido uma tela de vitória que apresenta a obra completa, conjuntamente com um parágrafo explicativo sobre o artista e sua respectiva obra.
+Classes, atributos e métodos:
+
+- Texto pós-fase:
+Essa cena apresentará um diálogo por texto que trará informações sobre o período da arte que será abordado na próxima fase, assim como um caminhar da história do jogo.
+Classes, atributos e métodos: 
+
+- Fase 3: 
+A terceira fase apresentará ao jogador um cenário semelhante ao da fase 2, porém com foco em um período da arte diferente (nessa fase em específico, arte moderna). Nessa fase, o animal alvo apresentado será um animal característico do período em questão, sendo, nessa fase, uma Lebre.
+
+- Fase 4:
+A quarta fase apresentará ao jogador um cenário semelhante ao das outras fases, porém com foco em um período da arte diferente (nessa fase em específico, arte medieval). Nessa fase, o animal alvo apresentado será um animal característico do período em questão, sendo, nessa fase,        
+
+- Fase 5: 
+A quinta fase apresentará ao jogador um cenário semelhante ao das outras fases, porém com foco em um período da arte diferente (nessa fase em específico, arte rupestre). Nessa fase o animal alvo apresentado será um animal característico do período em questão, sendo, nessa fase, uma mosca.
+
+- Fase especial (Tela branca para pintura)
+A fase especial apresentará ao jogador uma tela em branco com uma variedade de opções de cores que podem ser escolhidas pelo tutor para seu gato pintar. Após escolhidas as cores, será necessário pressionar um botão para iniciar a fase. Após a iniciação da fase, um animal alvo passará pela tela atraindo a atenção do gato, que, ao acertar o alvo, pintará a região pressionada na tela branca de fundo.   
+
+- Tela de vitória: A tela de vitória apresenta a arte completa pintada pelo gato, conjuntamente com uma representação visual do autor original da obra. Abaixo há uma breve descrição sobre o contexto da arte e seu artista. Além disso, há uma “métrica” acerca do desempenho do gato, representado em estrelas e % de acerto.
 
 ## 3.6. Regras do jogo (sprint 3)
 
@@ -309,9 +350,18 @@ Portanto, como próximos passos, notam-se os subsequentes: habilitação de pers
 
 ## 4.2. Desenvolvimento básico do jogo (sprint 2)
 
-A partir da versão preliminar do jogo, realizou-se o desenvolvimento básico do game. Nele, foi acrescentada uma splash screen (com o nome da equipe), a fim de dar mais fluidez à experiência do usuário. Além disso, foi implementado um novo background na tela de início, uma vez que o adicionado na primeira versão foi utilizado com objetivos de teste. Ademais, a tela de start conta com um botão que direciona aos modos de jogo do RonRonArte. Por fim, é válido mencionar que se iniciou a programação das sprites da tela de vitória, além da criação do contador de acertos para verificação do desempenho do jogador em sua gameplay. 
+A partir da versão preliminar do jogo, realizou-se o desenvolvimento básico do game. Nele, foi acrescentado uma splash screen (com o nome da equipe), a fim de dar mais fluidez à experiência do usuário. Além disso, foi implementado um novo background na tela de início (gerada por IA), uma vez que o adicionado na primeira versão foi utilizado com objetivos de teste. Ademais, a tela de start conta com um botão que direciona ao tutorial do RonRonArte, nessa tela haverá disponível um botão para pular o tutorial caso o tutor já tenha o feito ou não queira o fazer, e, após o avanço do tutorial o jogador será redirecionado para a tela de primeira fase do jogo. Além disso, a idealização das fases já foi concluida, restando agora a implementação. Por fim, é válido mencionar que se iniciou a modularização do código, tendo sido refeitas as linhas de código em programação orientada a objetos. Conjunto a isso, houve a programação das sprites da tela de vitória, além da criação do contador de acertos para verificação do desempenho do jogador em sua gameplay. 
 
-*Falta colocar: próximas funcionalidades, próximos passos e eventuais dificuldades.*
+Os próximos passos para o desenvolvimento do jogo se desdobram em alguns objetivos, como:
+- Implementação de mais fases;
+- Melhoria na experiência do usuário;
+- Implementação do modo de pintura livre;
+- Criação de novos sprites de animais.
+
+Eventuais dificuldades presentes no projeto:
+- Familiaridade com a POO (Programação Orientada a Objetos);
+- Gestão de tempo;
+- Produção dos sprites/artes do jogo.
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
 
