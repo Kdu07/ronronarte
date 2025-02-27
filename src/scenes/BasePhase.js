@@ -39,11 +39,11 @@ export default class BasePhase extends Phaser.Scene {
         let posX = Phaser.Math.Between(0, this.width);
         let posY = Phaser.Math.Between(0, this.height);
         
-        this.target = this.add.sprite(posX, posY, 'target').setScale(1.5);
+        this.target = this.add.sprite(posX, posY, 'target').setScale(2.5);
         this.target.setInteractive();
         
-        this.target.velocidadeX = Phaser.Math.Between(5, 7);
-        this.target.velocidadeY = Phaser.Math.Between(3, 6);
+        this.target.velocidadeX = Phaser.Math.Between(3, 4);
+        this.target.velocidadeY = Phaser.Math.Between(1, 2);
         this.target.direcaoX = -1;
         this.target.direcaoY = 1;
         
@@ -65,11 +65,11 @@ export default class BasePhase extends Phaser.Scene {
                 // Verifica se a pontuação atingiu a pontuação máxima
                 if (this.score >= this.maxScore) {
                     this.target.destroy();
-                    this.add.text((this.width/2) - 300, this.height/2, 'MUDA DE CENA',  {fontSize:'100px', fill:'#FFFFFF'})
-                    
-                    // Troca de cena 'BasePhase' -> ''
-                    // this.scene.start('');
-                    // this.scene.stop('BasePhase');
+
+                    this.time.delayedCall(1500, () =>{    
+                        this.scene.start('Phase1');
+                        this.scene.stop('BasePhase');
+                    });
                 } else {
                     this.tweens.add({
                         targets: this.target,
@@ -84,17 +84,6 @@ export default class BasePhase extends Phaser.Scene {
                 this.splash = this.add.image(pointer.x, pointer.y, 'splash').setScale(0.5);
             }
         });
-    }
-
-    endGame() {
-        gameEnded = true; // Atualize a variável para indicar que o jogo foi encerrado
-        // Acesse a física da cena diretamente
-        if (this.scene && this.scene.physics && this.scene.physics.pause) {
-            this.scene.physics.pause();
-        } else {
-            console.error("A física da cena não está definida ou 'pause' não está disponível.");
-        }
-        window.location.href = "./Win.html"; // Redireciona para a tela de fim de jogo
     }
 
     // Função para movimentar o target

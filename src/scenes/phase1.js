@@ -19,8 +19,9 @@ export default class Phase1 extends Phaser.Scene {
         this.tinta1;
 
         
+        this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setScale(0.35);
         this.quadro = this.add.image(this.width / 2, this.height / 2, 'quadro').setScale(0.35);
-        //this.mask = this.add.image(this.width / 2, this.height / 2, 'mask').setScale(0.35).setVisible(false);
+        this.borda = this.add.image(this.width / 2, this.height / 2, 'borda').setScale(0.35);
         
         this.quadro.setAlpha(1); // Torna o quadro visível
 
@@ -41,7 +42,7 @@ export default class Phase1 extends Phaser.Scene {
             repeat: -1
         });
         
-        this.scoreboard = this.add.text(950, 15, 'Pontos:' + this.score, {fontSize:'45px', fill:'#495613'})
+        this.scoreboard = this.add.text(this.width - 300, 0 + 50, 'Pontos:' + this.score, {fontSize:'45px', fill:'#000000'})
         
         // Adiciona um botão de pause na tela
         this.PauseBtn = this.add.image(40, 50, 'PauseBtn')
