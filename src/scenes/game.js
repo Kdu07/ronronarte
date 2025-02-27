@@ -1,17 +1,3 @@
-const gameWidth = window.innerWidth;
-const gameHeight = window.innerHeight;
-
-// Configurações iniciais do jogo
-var config = {
-    type: Phaser.AUTO,
-    width: gameWidth,
-    height: gameHeight,
-    scene: {
-        preload: preload,
-        create: create,
-        update: update
-    }
-};
 
 // Variaveis globais que serão úteis para o código
 var game = new Phaser.Game(config);

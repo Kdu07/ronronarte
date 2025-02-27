@@ -1,48 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/efeitofade.css" />
-    <link type="text/css" rel="stylesheet" href="./src/css/style.css" />
-    <link type="text/css" rel="stylesheet" href="./src/css/startScreen.css" />
-    <base href="/" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RonRonArte</title>
 
-    <style>
-      body {
-        opacity: 0%;
+    <!-- Phaser -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js"></script>
+</head>
+<body>
+<script type='module'>
+    import SplashScreen from "./src/scenes/splashScreen.js";
+    import Menu from "./src/scenes/menu.js";
+    import BasePhase from "./src/scenes/basePhase.js";
+    import Tutorial from "./src/scenes/tutorial.js"
+    //import Game from "./src/scenes/game.js";
+    import Phase1 from "./src/scenes/phase1.js"
 
-        animation: fadein 1.5s; /* chama a animação de fade in do arquivo css*/
-
-        background-color: black;
-      }
-      .fade-out {
-        animation: fadeout 1.5s; /* faz a animação de fade out  */
-      }
-
-      h1 {
-        text-align: center;
-        margin-top: 23%;
-        color: white;
-        font-size: 100px;
-      }
-    </style>
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>CatUp</h1>
-    <script>
-      setTimeout(() => {
-        //adiciona a classe fade-out para poder adicionar a animação no código
-        document.body.classList.add("fade-out");
-      }, 1500);
-      // quando a animação de fade out acabar, abre outra tela automaticamente
-      document.body.addEventListener("animationend", (event) => {
-        if (event.animationName === "fadeout") {
-          window.location.href = "src/scenes/teste.html";
+    const config = {
+        type: Phaser.AUTO,
+        width: innerWidth,
+        height: innerHeight,
+        scene: [SplashScreen, Menu, Tutorial, BasePhase, Phase1], // Adicione as cenas ao jogo
+        scale: {
+            mode: Phaser.Scale.RESIZE,
+            autoCenter: Phaser.Scale.CENTER_BOTH,
         }
-      });
-    </script>
-  </body>
+
+    };
+
+    const game = new Phaser.Game(config);
+
+    window.addEventListener("resize", () => {
+    game.scale.resize(window.innerWidth, window.innerHeight);
+    });
+
+  </script>
+</body>
 </html>
