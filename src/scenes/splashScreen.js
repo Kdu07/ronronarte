@@ -22,15 +22,18 @@ export default class SplashScreen extends Phaser.Scene {
     }
 
     create(){
-        this.cameras.main.fadeIn(1500, 0, 0, 0)
+        const c1500 = 0; //1500;
+        const c3000 = 0; //3000;
+
+        this.cameras.main.fadeIn(c1500, 0, 0, 0)
         this.add.image(this.scale.width/2, this.scale.height/2,'catup').setScale(0.5);
         
-        this.time.delayedCall(3000, () => {
-            this.cameras.main.fadeOut(1500, 0, 0, 0);
+        this.time.delayedCall(c3000, () => {
+            this.cameras.main.fadeOut(c1500, 0, 0, 0);
             
             // Aguarda o fadeOut antes de iniciar a próxima cena
-            this.time.delayedCall(1500, () => {
-                this.scene.start('Tutorial');
+            this.time.delayedCall(c1500, () => {
+                this.scene.start('Phase1');
                 this.scene.stop('SplashScreen');
             }); 
         });          
