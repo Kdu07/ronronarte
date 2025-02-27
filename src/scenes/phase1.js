@@ -19,9 +19,9 @@ export default class Phase1 extends Phaser.Scene {
         this.tinta1;
 
         
-        this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setScale(0.35);
-        this.quadro = this.add.image(this.width / 2, this.height / 2, 'quadro').setScale(0.35);
-        this.borda = this.add.image(this.width / 2, this.height / 2, 'borda').setScale(0.35);
+        this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite');
+        this.quadro = this.add.image(this.width / 2, this.height / 2, 'quadro').setDisplaySize(this.scale.width, this.scale.height);
+        this.borda = this.add.image(this.width / 2, this.height / 2, 'borda').setDisplaySize(this.scale.width, this.scale.height);
         
         this.quadro.setAlpha(1); // Torna o quadro visível
 
