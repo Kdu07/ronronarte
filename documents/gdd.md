@@ -7,7 +7,7 @@
 ## Cat Up
 
 #### 👨‍🎓 Integrantes: 
-- Carlos Eduardo Serrano Quaglia
+- <a href="https://github.com/CaduQuaglia">Carlos Eduardo Serrano Quaglia</a>
 - Eduardo Jesus Tavares Sant'Anna
 - <a href="https://www.linkedin.com/in/felipe-neves-36925a346/">Felipe Neves Teixeira da Silva</a>
 - <a href="https://www.linkedin.com/in/luana-de-jesus-lima-8b17a9266/">Luana de Jesus Lima</a>
