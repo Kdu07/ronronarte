@@ -1,0 +1,113 @@
+export default class BasePhase extends Phaser.Scene {
+    constructor() {
+        super('BasePhase')
+    }
+    
+    create(){
+        this.width = this.scale.width;
+        this.height = this.scale.height;
+        let bg = this.add.image(this.width / 2, this.height / 2, 'bgTutorial');
+        this.score = 0;
+        this.maxScore = 3;
+
+        // Animação do target voando
+        this.anims.create({
+            key: 'fly',
+            frames: this.anims.generateFrameNumbers('pombo', { start: 0, end: 3 }),
+            frameRate: 10,
+            repeat: -1
+        });
+        
+        this.scoreboard = this.add.text(950, 15, 'Pontos:' + this.score, {fontSize:'45px', fill:'#495613'})
+
+        this.spawnTarget(); // Gera o target
+    }
+
+    // Função do Phaser que roda em loop constante as funcionalidades do jogo
+    update() {
+        this.clickTarget(); // Confere se o target é clicado
+        if (!this.parado){ // Só move o target se ele não foi clicado
+            this.movement(this.target);  
+        }
+    }
+
+    // Função para gerar o target em um lugar aleatório da tela
+    spawnTarget() {
+        this.parado = false;
+        
+        // Gerar uma posição aleatória dentro da área do quadro (borda)
+        let posX = Phaser.Math.Between(0, this.width);
+        let posY = Phaser.Math.Between(0, this.height);
+        
+        this.target = this.add.sprite(posX, posY, 'target').setScale(2.5);
+        this.target.setInteractive();
+        
+        this.target.velocidadeX = Phaser.Math.Between(3, 4);
+        this.target.velocidadeY = Phaser.Math.Between(1, 2);
+        this.target.direcaoX = -1;
+        this.target.direcaoY = 1;
+        
+        this.target.hitboxWidth = 43;
+        this.target.hitboxHeight = 33;
+
+        this.target.play('fly'); // Inicia animação de voo target
+    }
+
+    // Função para quando o target é clicado
+    clickTarget() {
+        this.input.removeAllListeners('pointerdown'); // Ignora todos os cliques anteriores
+        this.input.on('pointerdown', (pointer) => {
+            if (this.target.getBounds().contains(pointer.x, pointer.y)) {
+                this.parado = true;
+                this.score+= 1;
+                this.scoreboard.setText('Pontos: ' + this.score);
+
+                // Verifica se a pontuação atingiu a pontuação máxima
+                if (this.score >= this.maxScore) {
+                    this.target.destroy();
+
+                    this.time.delayedCall(1500, () =>{    
+                        this.scene.start('Phase1');
+                        this.scene.stop('BasePhase');
+                    });
+                } else {
+                    this.tweens.add({
+                        targets: this.target,
+                        onComplete: () => {
+                            this.target.destroy(); // Remove o target da tela
+                            this.spawnTarget(); // Cria um novo target após sumir
+                        }
+                    })
+                };
+
+                //Cria um splash no local do clique
+                this.splash = this.add.image(pointer.x, pointer.y, 'splash').setScale(0.5);
+            }
+        });
+    }
+
+    // Função para movimentar o target
+    movement(target) {
+        // Limite para a borda em X (direita e esquerda)
+        if (target.x >= (this.width - target.hitboxWidth)) {
+            target.setFlip(false, false);  // Direção para a esquerda
+            target.direcaoX = -1;
+        }
+        if (target.x <= (0 + target.hitboxWidth)) {
+            target.setFlip(true, false);  // Direção para a direita
+            target.direcaoX = 1;
+        }
+
+        // Limite para a borda em Y (superior e inferior)
+        if (target.y >= (this.height - target.hitboxHeight)) {
+            target.direcaoY = -1; // Direção para cima
+        }
+        if (target.y <= (0 + target.hitboxWidth)) {
+            target.direcaoY = 1; // Direção para baixo
+        }
+
+        // Move no eixo X e Y de acordo com a velocidade e direção
+        target.x += target.velocidadeX * target.direcaoX;
+        target.y += target.velocidadeY * target.direcaoY;
+    }
+}
