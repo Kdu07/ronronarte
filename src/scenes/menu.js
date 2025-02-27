@@ -10,7 +10,26 @@ export default class Menu extends Phaser.Scene{
         botaoStart.on("pointerdown", () => {
             this.scene.start('Tutorial')
         })
+            
+        // Ativar tela cheia ao pressionar a tecla "F"
+        this.input.keyboard.on('keydown-F', () => {
+            if (!this.scale.isFullscreen) {
+                this.scale.startFullscreen();
+            } else {
+                this.scale.stopFullscreen();
+            }
+        });
 
+        // Criar um botão de tela cheia
+        let fullscreenButton = this.add.text(10, 10, 'FullScreen', { fontSize: '20px', fill: '#fff' })
+            .setInteractive()
+            .on('pointerdown', () => {
+                if (!this.scale.isFullscreen) {
+                    this.scale.startFullscreen();
+                } else {
+                    this.scale.stopFullscreen();
+                }
+            });
         
     }
 }
