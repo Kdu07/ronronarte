@@ -381,9 +381,9 @@ Eventuais dificuldades presentes no projeto:
 
 \# | pré-condição | descrição do teste | pós-condição 
 --- | --- | --- | --- 
-1 | abrir o jogo no smartphone ou tablet | colocar a ração ou o petisco em cima do alvo do tutorial | o gato deve bater na tela quando o alvo aparecer
-2 | tutor clica no botão de iniciar | induzir o gato a bater na tela | o efeito de "splash" deve acontecer quando o gato clica na tela
-
+1 | abrir o jogo no smartphone ou tablet | colocar a ração ou o petisco em cima do alvo no tutorial | o gato deve bater na tela quando o alvo aparecer
+2 | tutor clicar no botão de iniciar | induzir o gato a bater na tela | o efeito de "splash" deve acontecer quando o gato clica na tela
+3 | aguardar o alvo passar na tela | deixar o gato comer a ração ou o petisco depois de bater no alvo e de ouvir o som emitido| o gato deve associar o bater no alvo com a recompensa da ração ou do petisco
 
 ## 5.2. Testes de jogabilidade (playtests) (sprint 4)
 
