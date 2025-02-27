@@ -61,27 +61,29 @@ Fonte: Modelo criado por Michael Eugene Porter (1980). Adaptação por Carlos Ed
 ##### 2. Ameaça de novos entrantes:
 
 - Principais barreiras: Visibilidade na mídia, persona comunicativa e carismática;
-
-- Impacto potencial: Crescimento no setor de educação pet.
+- Impacto potencial: Crescimento no setor de educação pet;
 
 ##### 3. Poder de barganha dos fornecedores:
 
 - Impacto: No caso de rescisão contratual com a emissora, haveria uma redução no alcance do Dr. Pet ao público;
-
 - Alternativas de fornecimento: Outras plataformas para vender cursos, outras emissoras de programas de televisão.
 
 ##### 4. Poder de barganha dos clientes:
 
-Descrição: Poder dos clientes sobre o mercado
+O poder de barganha dos clientes é considerado alto, pois há o fácil acesso a conteúdos similares por preços similares ou inferiores.
 
-- Os clientes podem encontrar conteúdo similar por preços mais baratos ou gratuitamente,
+Exemplos: 
+- Amantes de pets;
+- Tutores;
+- Futuros adestradores de pet.
 
 ##### 5. Ameaça de produtos ou serviços substitutos:
 
 Descrição: Produtos substitutos
 
-Cães ou outros pets robóticos: Robôs deste tipo dispensam o conteúdo do Dr. Pet porque dispensam adestramento.
-
+- Cães ou outros pets robóticos: Robôs deste tipo dispensam o conteúdo do Dr. Pet porque dispensam adestramento;
+- Pesquisa por IA Generativa;
+- Vídeos educacionais no Youtube, Instagram e outras plataformas.
 
 ### 1.1.2. Análise SWOT (sprint 2)
 
