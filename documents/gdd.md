@@ -58,25 +58,25 @@ Fonte: Modelo criado por Michael Eugene Porter (1980). Adaptação por Carlos Ed
 
 - Existem poucos apresentadores de televisão no setor de educação pet rivalidade traz inovação nos produtos e serviços do setor, consequentemente melhorando o bem estar dos pets.
 
-#### 2. Ameaça de novos entrantes:
+##### 2. Ameaça de novos entrantes:
 
 - Principais barreiras: Visibilidade na mídia, persona comunicativa e carismática;
 
 - Impacto potencial: Crescimento no setor de educação pet.
 
-#### 3. Poder de barganha dos fornecedores:
+##### 3. Poder de barganha dos fornecedores:
 
 - Impacto: No caso de rescisão contratual com a emissora, haveria uma redução no alcance do Dr. Pet ao público;
 
 - Alternativas de fornecimento: Outras plataformas para vender cursos, outras emissoras de programas de televisão.
 
-#### 4. Poder de barganha dos clientes:
+##### 4. Poder de barganha dos clientes:
 
 Descrição: Poder dos clientes sobre o mercado
 
 - Os clientes podem encontrar conteúdo similar por preços mais baratos ou gratuitamente,
 
-#### 5. Ameaça de produtos ou serviços substitutos:
+##### 5. Ameaça de produtos ou serviços substitutos:
 
 Descrição: Produtos substitutos
 
