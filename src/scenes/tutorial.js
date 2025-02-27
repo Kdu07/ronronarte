@@ -7,7 +7,7 @@ export default class Tutorial extends Phaser.Scene {
         this.clicks = 0;
         this.tutorialTexts = [
             'Olá, Tutor! Bem-vindo ao RonRonarte!',
-            'Seu gato está prestes a embarcar em uma jornada artística! Para jogar, siga estas instruções:',
+            'Seu gato está prestes a embarcar em uma\njornada artística! Para jogar, siga estas instruções:',
             '1 - Prepare a recompensa: Pegue um petisco para incentivar seu gato.',
             '2 - Atraia a atenção dele: Mostre a ração e mova-a sobre a tela acompanhando os alvos que aparecem. Dessa forma seu gato é estimulado a tocar na tela.',
             '3 - Comece devagar: Nos primeiros momentos, não exija muito. Recomendamos dar uma pequena recompensa até por toques em partes vazias da tela até seu gato pegar o jeito.',
