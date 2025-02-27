@@ -20,30 +20,30 @@ export default class BasePhase extends Phaser.Scene {
         
         this.scoreboard = this.add.text(950, 15, 'Pontos:' + this.score, {fontSize:'45px', fill:'#495613'})
 
-        this.spawntarget(); // Gera o target
+        this.spawnTarget(); // Gera o target
     }
 
     // Função do Phaser que roda em loop constante as funcionalidades do jogo
-    update() { 
-        this.clicktarget(); // Confere se o target é clicado
+    update() {
+        this.clickTarget(); // Confere se o target é clicado
         if (!this.parado){ // Só move o target se ele não foi clicado
-            this.movimento(this.target);  
+            this.movement(this.target);  
         }
     }
 
     // Função para gerar o target em um lugar aleatório da tela
-    spawntarget() {
+    spawnTarget() {
         this.parado = false;
         
         // Gerar uma posição aleatória dentro da área do quadro (borda)
         let posX = Phaser.Math.Between(0, this.width);
         let posY = Phaser.Math.Between(0, this.height);
         
-        this.target = this.add.sprite(posX, posY, 'target').setScale(1.5);
+        this.target = this.add.sprite(posX, posY, 'target').setScale(2.5);
         this.target.setInteractive();
         
-        this.target.velocidadeX = Phaser.Math.Between(5, 7);
-        this.target.velocidadeY = Phaser.Math.Between(3, 6);
+        this.target.velocidadeX = Phaser.Math.Between(3, 4);
+        this.target.velocidadeY = Phaser.Math.Between(1, 2);
         this.target.direcaoX = -1;
         this.target.direcaoY = 1;
         
@@ -54,7 +54,7 @@ export default class BasePhase extends Phaser.Scene {
     }
 
     // Função para quando o target é clicado
-    clicktarget() {
+    clickTarget() {
         this.input.removeAllListeners('pointerdown'); // Ignora todos os cliques anteriores
         this.input.on('pointerdown', (pointer) => {
             if (this.target.getBounds().contains(pointer.x, pointer.y)) {
@@ -65,17 +65,17 @@ export default class BasePhase extends Phaser.Scene {
                 // Verifica se a pontuação atingiu a pontuação máxima
                 if (this.score >= this.maxScore) {
                     this.target.destroy();
-                    this.add.text((this.width/2) - 300, this.height/2, 'MUDA DE CENA',  {fontSize:'100px', fill:'#FFFFFF'})
-                    
-                    // Troca de cena 'BasePhase' -> ''
-                    // this.scene.start('');
-                    // this.scene.stop('BasePhase');
+
+                    this.time.delayedCall(1500, () =>{    
+                        this.scene.start('Phase1');
+                        this.scene.stop('BasePhase');
+                    });
                 } else {
                     this.tweens.add({
                         targets: this.target,
                         onComplete: () => {
                             this.target.destroy(); // Remove o target da tela
-                            this.spawntarget(); // Cria um novo target após sumir
+                            this.spawnTarget(); // Cria um novo target após sumir
                         }
                     })
                 };
@@ -86,19 +86,8 @@ export default class BasePhase extends Phaser.Scene {
         });
     }
 
-    endGame() {
-        gameEnded = true; // Atualize a variável para indicar que o jogo foi encerrado
-        // Acesse a física da cena diretamente
-        if (this.scene && this.scene.physics && this.scene.physics.pause) {
-            this.scene.physics.pause();
-        } else {
-            console.error("A física da cena não está definida ou 'pause' não está disponível.");
-        }
-        window.location.href = "./Win.html"; // Redireciona para a tela de fim de jogo
-    }
-
     // Função para movimentar o target
-    movimento(target) {
+    movement(target) {
         // Limite para a borda em X (direita e esquerda)
         if (target.x >= (this.width - target.hitboxWidth)) {
             target.setFlip(false, false);  // Direção para a esquerda
@@ -121,10 +110,4 @@ export default class BasePhase extends Phaser.Scene {
         target.x += target.velocidadeX * target.direcaoX;
         target.y += target.velocidadeY * target.direcaoY;
     }
-    // Gera um número aleatorio correspondendo a pixels fora da tela do game (usado para gerar o target fora da tela)
-    gerarRandomPos(eixo, fora) {
-        var num = Math.floor(Math.random() * ((eixo + fora) - (0 - fora) + 1)) + (0 - fora); // Gera um valor do tamanho da tela + margem para os dois lados
-        return (num > 0 && num < eixo) ? gerarRandomPos(eixo, fora) : num; // Se o valor gerado estiver dentro da tela a função é chamada novamente
-    }
-
 }

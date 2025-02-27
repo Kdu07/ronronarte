@@ -6,14 +6,14 @@ export default class Tutorial extends Phaser.Scene {
         this.textAdded = false;
         this.clicks = 0;
         this.tutorialTexts = [
-            'Olá, Tutor! Bem-vindo ao RonRonarte!',
-            'Seu gato está prestes a embarcar em uma\njornada artística! Para jogar, siga estas instruções:',
-            '1 - Prepare a recompensa: Pegue um petisco para incentivar seu gato.',
-            '2 - Atraia a atenção dele: Mostre a ração e mova-a sobre a tela acompanhando os alvos que aparecem. Dessa forma seu gato é estimulado a tocar na tela.',
-            '3 - Comece devagar: Nos primeiros momentos, não exija muito. Recomendamos dar uma pequena recompensa até por toques em partes vazias da tela até seu gato pegar o jeito.',
-            '4 - Toque para criar! Quando seu gato tocar na tela, ele revelará partes de uma pintura clássica no Modo História ou criará uma obra autoral e única no Modo Criativo!',
-            '5 - Recompense e repita! Uma vez que o gato começa a tocar nos alvos sem a necessidade do petisco na tela, ofereça uma recompensa ao fim de cada fase.',
-            'Agora, clique no pombo para começar o jogo!']
+            'Olá humano,\nbem-vindo ao RonRonarte!',
+            'Seu gato está prestes a embarcar em\numa jornada artística!\n\nPara incentivá-lo a jogar,\nsiga estas instruções:',
+            'Pegue um petisco para incentivar seu\ngato.',
+            'Mostre a ração e mova-a sobre a\ntela acompanhando os alvos que \naparecem',
+            'No ínicio não exija muito,recomendamos\nrecompensar seu gato por todos os\ntoques na tela até ele se interessar',
+            'Seu gatinho pode revelar partes de \numa pintura clássica no Modo História\nou criar uma obra autoral\nno Modo Criativo!',
+            'Quando o gato começar a tocar nos\nalvos sem a necessidade do petisco na\ntela, ofereça uma recompensa quando\no jogo indicar',
+            'Está pronto para a aventura?\n\nClique no pombo para começar o jogo!']
         
         let bg = this.add.image(this.scale.width/2, this.scale.height/2, 'bgTutorial').setInteractive();
 
@@ -29,12 +29,12 @@ export default class Tutorial extends Phaser.Scene {
     }
     update(){
         if (this.character.x <= this.scale.width/2 && this.character.y <= this.scale.height/2){
-            this.character.x += 4;
+            this.character.x += 5;
             this.character.y += 2;
         }else{
             if(this.clicks == 0 && !this.textAdded){
-                this.textBox = this.add.image(this.scale.width/2, this.scale.height - 100, 'textBox');
-                this.tutorialText = this.add.text(this.textBox.x - 130, this.textBox.y - 80, 'Olá tutor', {fontSize:'30px', fill:'#000000'})
+                this.textBox = this.add.image(this.scale.width/2, this.scale.height - 120, 'textBox').setScale(1.2);
+                this.tutorialText = this.add.text(this.textBox.x - 350, this.textBox.y - 80, this.tutorialTexts[this.clicks], {fontSize:'30px', fill:'#000000'})
                 this.textAdded = true;
             }
 
@@ -52,7 +52,7 @@ export default class Tutorial extends Phaser.Scene {
                     this.textBox.destroy();
                     this.tutorialText.destroy();
                     this.add.image(this.character.x, this.character.y, 'splash').setScale(0.5);
-                    this.time.delayedCall(2000, () => {
+                    this.time.delayedCall(1500, () => {
                         this.scene.start('BasePhase');
                         this.scene.stop('Tutorial');
                     });

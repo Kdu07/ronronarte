@@ -15,13 +15,14 @@
     import Menu from "./src/scenes/menu.js";
     import BasePhase from "./src/scenes/basePhase.js";
     import Tutorial from "./src/scenes/tutorial.js"
-    // import Game from "./src/scenes/game.js";
+    //import Game from "./src/scenes/game.js";
+    import Phase1 from "./src/scenes/phase1.js"
 
     const config = {
         type: Phaser.AUTO,
-        width: 1200,
-        height: 600,
-        scene: [SplashScreen, Menu, Tutorial, BasePhase], // Adicione as cenas ao jogo
+        width: 1345,
+        height: 586,
+        scene: [SplashScreen, Menu, Tutorial, BasePhase, Phase1], // Adicione as cenas ao jogo
     };
 
     const game = new Phaser.Game(config);
