@@ -60,22 +60,69 @@ Figura 2: Análise SWOT
 ![analiseSwot](https://github.com/user-attachments/assets/8a0b1694-3b95-4dd7-882e-8d0a9ec40121)
 Fonte: Modelo criado por Albert S. Humphrey (1960). Adaptação por Carlos Eduardo Serrano Quaglia (2025). 
 
+
+
+## Strengths:
+
+  A seção de strenghts destaca os pontos fortes internos de uma organização, projeto ou indivíduo, ou seja, os aspectos que oferecem vantagem competitiva. Isso inclui recursos, habilidades, expertise, reputação, tecnologia, cultura organizacional e diferenciais que impulsionam o sucesso. 
+
+  - Alta visibilidade na mídia;
+
+  - Autoridade no assunto de educação pet;
+
+  - Habilidade de comunicação didática.
+
+## Weaknesses:
+
+  A seção de Weaknesses identifica os pontos fracos internos que podem prejudicar o desempenho de uma organização, projeto ou indivíduo. Isso inclui limitações em recursos, falta de expertise, baixa eficiência, problemas estruturais, dependência de terceiros ou falhas operacionais.
+
+  - A marca Dr. Pet está relacionada a apenas uma pessoa, pode se confundir com o seu representante, Alexandre Rossi;
+
+  - Nichado em cães;
+
+  - Forte dependência das redes de televisão.
+
+## Opportunities:
+
+  A seção de Opportunities analisa fatores externos positivos que podem ser explorados para crescimento e vantagem competitiva. Isso inclui tendências de mercado, avanços tecnológicos, mudanças regulatórias favoráveis, novas demandas dos consumidores ou parcerias estratégicas.
+
+  - Venda de produtos próprios com a marca Dr. Pet;
+
+  - Maior variedade de pets (Gatos, Passáros).
+
+## Threats:
+
+  A seção de Threats identifica os fatores externos que podem representar riscos para a organização, projeto ou indivíduo. Isso inclui concorrência acirrada, crises econômicas, mudanças regulatórias desfavoráveis, inovações disruptivas ou instabilidade política. 
+
+  - Rescisão de contratos com emissoras de televisão;
+
+  - Por uma possível falta de inovação criativa, as pessoas cansarem do mesmo conteúdo;
+
+  - Novos entrantes com maior escopo de animais abordados pela empresa;
+
+  - Indisponibilidade do Alexandre Rossi por qualquer motivo externo.
+
+<hr>
+
 ### 1.1.3. Missão / Visão / Valores (sprint 2)
 
-Missão:
+## Missão:
 
-Proporcionar momentos de conexão dos tutores com os gatos em casa, ao mesmo tempo em que se estimula o instinto natural de caça do pet.
+Contribuir para a educação pet em casa através da divulgação de conteúdo informativo nas redes sociais e venda de cursos e mentorias, com recursos que promovem a integração de tutores.
 
+## Visão:
 
-Visão:
+Ser referência no mercado pet focando na educação, oferecendo um serviço personalizado e exclusivo, e construir uma comunidade de tutores que compartilham experiências e aprendizados com seus pets e sobre eles também.
 
-Ser uma empresa inovadora no mercado de jogos para gatos, pensando na satisfação do gato e do tutor.
+## Valores:
 
+- Respeito aos animais (A marca Dr. Pet educa os tutores, promovendo amor e carinho entre os animais e as pessoas);
 
-Valores:
+- Comunidade (o curso do Alexandre Rossi - Dr. Pet promove a interação entre outros tutores através de grupos em redes sociais, visando a construção de uma comunidade);
 
-Ética, Respeito e Criatividade
+- Educação (a divulgação de conteúdo educativo é amplamente praticada pelo Dr. Pet, e o lema da comunidade de tutores é “Nenhuma dúvida fica para trás”, valorizando o aprendizado do cliente).
 
+<hr>
 
 ### 1.1.4. Proposta de Valor (sprint 4)
 
