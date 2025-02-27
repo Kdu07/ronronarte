@@ -52,6 +52,37 @@ Figura 1: modelo de 5 forças de Porter
 ![quadro_5_forcas](https://github.com/user-attachments/assets/479e357c-f3ad-4257-864e-4d431e079b6f)
 Fonte: Modelo criado por Michael Eugene Porter (1980). Adaptação por Carlos Eduardo Serrano Quaglia (2025).
 
+##### 1. Rivalidade entre os concorrentes:
+
+- A marca Dr. Pet encontra poucos concorrentes diretos no setor de educação pet e entretenimento pela televisão, com apenas alguns exemplos de personalidades que abordam o mesmo assunto. Já no setor de vendas de livros e cursos para adestramento a marca possui concorrência com algumas plataformas como hotmart;
+
+- Existem poucos apresentadores de televisão no setor de educação pet rivalidade traz inovação nos produtos e serviços do setor, consequentemente melhorando o bem estar dos pets.
+
+#### 2. Ameaça de novos entrantes:
+
+- Principais barreiras: Visibilidade na mídia, persona comunicativa e carismática;
+
+- Impacto potencial: Crescimento no setor de educação pet.
+
+#### 3. Poder de barganha dos fornecedores:
+
+- Impacto: No caso de rescisão contratual com a emissora, haveria uma redução no alcance do Dr. Pet ao público;
+
+- Alternativas de fornecimento: Outras plataformas para vender cursos, outras emissoras de programas de televisão.
+
+#### 4. Poder de barganha dos clientes:
+
+Descrição: Poder dos clientes sobre o mercado
+
+- Os clientes podem encontrar conteúdo similar por preços mais baratos ou gratuitamente,
+
+#### 5. Ameaça de produtos ou serviços substitutos:
+
+Descrição: Produtos substitutos
+
+Cães ou outros pets robóticos: Robôs deste tipo dispensam o conteúdo do Dr. Pet porque dispensam adestramento.
+
+
 ### 1.1.2. Análise SWOT (sprint 2)
 
 Análise SWOT é um planejamento estratégico que analisa os pontos fortes, pontos fracos, ameaças e oportunidades de um negócio.
