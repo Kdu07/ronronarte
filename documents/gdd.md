@@ -286,11 +286,10 @@ O jogador, sendo um gato, atravessará as fases atreves de um portal que o levar
 *Caso seja relevante, descreva como o tempo passa, se ele é um fator limitante ao jogo (ex. contagem de tempo para terminar uma fase)*
 
 ### 3.3.4. Concept Art (sprint 2)
+Uma Concept Art é um documento que mostra as características e os elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo. Com base nisso, realizou-se uma Concept Art de RonRonArte, de maneira a explicitar quais são os seus principais itens visuais e de história.
 
-*Inclua imagens de Concept Art do jogo que ainda não foram demonstradas em outras seções deste documento. Para cada imagem, coloque legendas, como no exemplo abaixo.*
  ![Concept Art - RonRonArte](https://github.com/user-attachments/assets/40ec0017-e333-43ed-956e-81564725f5af)
-
-Figura 1: detalhe da cena da partida do herói para a missão, usando sua nave
+Figura 1: Concept Arte de RonRonArte.
 
 ### 3.3.5. Trilha sonora (sprint 3)
 
