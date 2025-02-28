@@ -338,7 +338,9 @@ Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.
 <p align ="center">Figura 5: diagrama de cenas - RonRonArte</p>
 
 <img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/Diagrama%20de%20Cenas%20(2).png">
-<p align ="center">Fonte: autoria própria (2025).</p>
+<p align ="center">Fonte: autoria própria (2025).</p> <br>
+
+Caso queira ver o diagrama de cenas no Figma, [clique aqui](https://www.figma.com/design/M9iVkJjgLuhcVnC6v2aUAY/Diagrama-de-Cenas?node-id=0-1&p=f&t=fk8yJVrGBBaLzt2T-0)
 
 #### Diagrama de cenas:
 
