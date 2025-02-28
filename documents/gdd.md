@@ -495,6 +495,32 @@ Logo abaixo, estão as telas da versão básica do jogo.
 
 <p align = 'center'>Fonte: autoria própria (2025).</p>
 
+<p align = 'center'>Tela de tutorial</p><br>
+<div align = 'center'>
+  <img width="932" alt="image" src="https://github.com/user-attachments/assets/510f51b9-c320-4c1d-ab87-3690abf2d989" />
+</div><br>
+
+
+<p align = 'center'>Tela do início das fases</p><br>
+<div align = 'center'>
+  <img width="932" alt="image" src="https://github.com/user-attachments/assets/554c235d-a9b9-4f88-8729-2b6302444569" />
+</div><br>
+<p align = 'center'>Fonte: autoria própria (2025).</p>
+
+
+<p align = 'center'>Tela de pintura da fase 1</p><br>
+<div align = 'center'>
+  <img width="933" alt="image" src="https://github.com/user-attachments/assets/8f147d35-bbad-40ca-b773-183bf5c93b6d" />
+</div><br>
+<p align = 'center'>Fonte: autoria própria (2025).</p>
+
+<p align = 'center'>Tela de vitória da fase 1</p><br>
+<div align = 'center'>
+  <img width="932" alt="image" src="https://github.com/user-attachments/assets/1790cca4-9119-4d94-ac4f-9f7220c094aa" />
+</div><br>
+<p align = 'center'>Fonte: autoria própria (2025).</p>
+
+
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
 
