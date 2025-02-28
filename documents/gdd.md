@@ -332,8 +332,10 @@ Caso queira acessar a Concept Art com as animações, clique neste link: https:/
 3 | ... 
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
+<p align ="center">Figura : diagrama de cenas - RonRonArte</p>
 
 <img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/Diagrama%20de%20Cenas%20(2).png">
+<p align ="center">Fonte: autoria própria (2025).</p>
 
 #### Diagrama de cenas:
 
