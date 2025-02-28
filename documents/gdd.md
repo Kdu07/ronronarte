@@ -330,6 +330,8 @@ Figura 1: detalhe da cena da partida do herói para a missão, usando sua nave
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 
+![diagrama_de_cenas](https://github.com/user-attachments/assets/479e357c-f3ad-4257-864e-4d431e079b6f)
+
 Diagrama de cenas
 
 O diagrama de cenas é uma representação visual do caminhar do jogo ao longo de suas telas e cenas. Essa ferramenta apresenta como o design será feito, como as classes, objetos, atributos e métodos são realizados, facilitando a compreensão das funcionalidades.
