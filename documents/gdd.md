@@ -40,8 +40,8 @@
 ## 1.1. Plano Estratégico do Projeto
 
 ### 1.1.1. Contexto da indústria (sprint 2)
+Conhecer o contexto da indústria de um cliente é basilar para a realização de um projeto de sucesso, uma vez que tal abordagem possibilita tomadas de decisões estratégicas ao longo de todo processo de desenvolvimento. Nesse sentido, é significativo pontuar o escopo da empresa parceira do jogo refernte a esta documentação: Dr. Pet. Ela faz parte do mercado de serviços para pets no Brasil, sendo voltada à educação e ao entretenimento de tutores, cães e gatos, por intermédio de cursos online e livros voltados à essa temática. Ademais, outra vertente adotada por ela é a aparição de seu fundador (Alexandre Rossi) em programas de televisão, de modo a divulgar conteúdos inerentes à empresa e a pets de um modo geral, além da utilização das redes sociais para tal. Portanto, a marca atua com veemência no cenário supracitado.
 
-Alexandre Rossi, também conhecido por Dr. Pet, é formado em zootecnia pela USP e fundador da marca Dr. Pet. A marca faz parte do mercado pet, e é especializada em educação e entretenimento direcionada aos tutores de cães e gatos. Em 2010, Dr. Pet ganhou visibilidade nacional por conta de sua cadela Estopinha e, desde então, atua como apresentador em rádios e programas de televisão. Atualmente tem quadro no programa “É de Casa" da rede Globo e apresenta o programa “Missão Pet”, no canal Nat Geo, além de se manter ativo em suas redes sociais. Também vende cursos para adestramento de cães e livros.
 
 
 #### 1.1.1.1. Modelo de 5 Forças de Porter (sprint 2)
