@@ -446,31 +446,31 @@ Em linhas gerais, a primeira versão do jogo “RonRonArte” conta com uma tela
 
 Logo abaixo, estão registrados os prints das telas da primeira versão do jogo.
 
-<h4 align = "center">Tela de início do jogo</h4>
+<p align = "center">Tela de início do jogo</p>
 
 ![tela de start RonRonArte](https://github.com/user-attachments/assets/30f3865b-5e98-49f1-906e-e886c33ee157)
 
-<h4 align = "center">Fonte: autoria própria (2025). </h4> <br> <br>
+<p align = "center">Fonte: autoria própria (2025). </p> <br> <br>
 
 
 
-<h4 align = "center">Tela com a primeira cena</h4>
+<p align = "center">Tela com a primeira cena</p>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/a2107a97-8d01-4339-8469-bef594f42c61" width="300">
 </div>
 
-<h4 align = "center">Fonte: autoria própria (2025). </h4> <br> <br>
+<p align = "center">Fonte: autoria própria (2025). </p> <br> <br>
 
 
 
-<h4 align = "center">Tela da primeira cena com os splashes de tinta</h4>
+<p align = "center">Tela da primeira cena com os splashes de tinta</p>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/9581c99b-c61d-407d-bb58-b492f8a47998" width="300">
 </div>
 
-<h4 align = "center">Fonte: autoria própria (2025). </h4> <br> <br>
+<p align = "center">Fonte: autoria própria (2025). </p> <br> <br>
 
 
 
