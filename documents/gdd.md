@@ -488,6 +488,12 @@ Eventuais dificuldades presentes no projeto:
 - Produção dos sprites/artes do jogo.
 
 Logo abaixo, estão as telas da versão básica do jogo.
+<p align = 'center'>Figura 3 - Tela de instruções</p><br>
+<div align = 'center'>
+  <img width="935" alt="image" src="https://github.com/user-attachments/assets/7081f995-b960-4c10-84eb-42fedf96822f" />
+</div><br>
+
+<p align = 'center'>Fonte: autoria própria (2025).</p>
 
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
