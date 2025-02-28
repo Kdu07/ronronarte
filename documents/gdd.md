@@ -330,60 +330,86 @@ Caso queira acessar a Concept Art com as animações, clique neste link: https:/
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 
-<img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/Diagrama%20de%20Cenas%20(1).png">
+<img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/Diagrama%20de%20Cenas%20(2).png">
 
 Diagrama de cenas
 
 O diagrama de cenas é uma representação visual do caminhar do jogo ao longo de suas telas e cenas. Essa ferramenta apresenta como o design será feito, como as classes, objetos, atributos e métodos são realizados, facilitando a compreensão das funcionalidades.
 
-- Tela inicial (Splash Screen)
+- **Tela inicial (Splash Screen):**
 A primeira cena do jogo conta com uma splash screen (cena exibida ao abrir o jogo) que apresenta o nome de nossa equipe em um fundo preto.
 
 Classes, atributos e métodos: classe "SplashScreen", métodos: preload e create.
 
-- Tela de start 
+- **Tela de start:** 
 A tela de start conta com uma imagem de fundo gerada por IA que apresenta elementos do storytelling do jogo como um portal, pinturas emolduradas e um gato. Além disso, há também um botão de "JOGAR", que ao ser pressionado redireciona para a tela de primeira fase do jogo.
 
 Classes, atributos e métodos:
 
 <hr>
 
-- Tela de seleção de níveis:
-A tela de seleção de níveis conta com uma moldura de quadro com quatro molduras dentro. Essas molduras internas representam as 4 fases de nosso jogo, dividindo-as na progressão padrão do jogo.
-
-Classes, atributos e metódos: 
- - Classes: SelectPhase
- - Atributos e métodos ainda não implementados.
-
-- Fase 1:   
+- **Fase 1:**   
 A primeira fase do jogo serve como tutorial para o tutor, apresentando como deverá ser feita a recompensa para o gato ao alcançar o objetivo do jogo. Nessa tela, haverá uma maneira de pular a cena de tutorial caso o tutor já saiba ou não queira ver o tutorial.
 Classes, atributos, métodos e objetos:
 
 - Tela de seleção de níveis
 Após passar pelo tutorial, o jogador será direcionado para uma tela de seleção de níveis, onde poderá (caso já estiver desbloqueado) escolher a "fase" que gostaria de jogar.
-Classes, atributos e métodos:
 
-- Fase 2:
+ - Classes: SelectPhase
+ - Atributos e métodos ainda não implementados.
+
+<hr>
+
+- **Fase 2:**
 A segunda fase apresenta ao jogador a dinâmica principal do jogo, em que o gato, ao tocar em um animal "alvo" na tela (nessa fase em específico, será um pombo), preenche aos poucos o quadro de fundo, que revela uma obra de algum período da arte (nessa fase em específico, arte contemporânea). Após preenchimento desse quadro, é exibido uma tela de vitória que apresenta a obra completa, conjuntamente com um parágrafo explicativo sobre o artista e sua respectiva obra.
-Classes, atributos e métodos:
 
-- Texto pós-fase:
+- Classes: ContempPhase;
+- Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
+- Métodos: create, update; spawnTarget; clickTarget; movement(target);
+
+<hr>
+
+- **Texto pós-fase:**
 Essa cena apresentará um diálogo por texto que trará informações sobre o período da arte que será abordado na próxima fase, assim como um caminhar da história do jogo.
-Classes, atributos e métodos: 
+Classes, atributos e métodos: Ainda não implementado
 
-- Fase 3: 
-A terceira fase apresentará ao jogador um cenário semelhante ao da fase 2, porém com foco em um período da arte diferente (nessa fase em específico, arte moderna). Nessa fase, o animal alvo apresentado será um animal característico do período em questão, sendo, nessa fase, uma Lebre.
+- **Fase 3:** 
+A terceira fase apresentará ao jogador um cenário semelhante ao da fase 2, porém com foco em um período da arte diferente (nessa fase em específico, arte moderna). Nessa fase, o animal alvo apresentado será um animal característico do período em questão, sendo, nessa fase, um rato.
 
-- Fase 4:
-A quarta fase apresentará ao jogador um cenário semelhante ao das outras fases, porém com foco em um período da arte diferente (nessa fase em específico, arte medieval). Nessa fase, o animal alvo apresentado será um animal característico do período em questão, sendo, nessa fase,        
+- Classes: ModernPhase;
+- Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
+- Métodos: create, update; spawnTarget; clickTarget; movement(target);
 
-- Fase 5: 
+<hr>
+
+- **Fase 4:**
+A quarta fase apresentará ao jogador um cenário semelhante ao das outras fases, porém com foco em um período da arte diferente (nessa fase em específico, arte medieval). Nessa fase, o animal alvo apresentado será um animal característico do período em questão, sendo, nessa fase, um coelho. 
+
+- Classes: MedievalPhase;
+- Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
+- Métodos: create, update; spawnTarget; clickTarget; movement(target);
+
+<hr>      
+
+- **Fase 5:** 
 A quinta fase apresentará ao jogador um cenário semelhante ao das outras fases, porém com foco em um período da arte diferente (nessa fase em específico, arte rupestre). Nessa fase o animal alvo apresentado será um animal característico do período em questão, sendo, nessa fase, uma mosca.
 
-- Fase especial (Tela branca para pintura)
+- Classes: AncientPhase;
+- Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
+- Métodos: create, update; spawnTarget; clickTarget; movement(target);
+
+<hr>      
+
+- **Fase especial (Tela branca para pintura)**:
 A fase especial apresentará ao jogador uma tela em branco com uma variedade de opções de cores que podem ser escolhidas pelo tutor para seu gato pintar. Após escolhidas as cores, será necessário pressionar um botão para iniciar a fase. Após a iniciação da fase, um animal alvo passará pela tela atraindo a atenção do gato, que, ao acertar o alvo, pintará a região pressionada na tela branca de fundo.   
 
-- Tela de vitória: A tela de vitória apresenta a arte completa pintada pelo gato, conjuntamente com uma representação visual do autor original da obra. Abaixo há uma breve descrição sobre o contexto da arte e seu artista. Além disso, há uma “métrica” acerca do desempenho do gato, representado em estrelas e % de acerto.
+Classes, métodos e atributos: ainda não implementados.
+
+<hr>
+
+- **Tela de vitória:** A tela de vitória apresenta a arte completa pintada pelo gato, conjuntamente com uma representação visual do autor original da obra. Abaixo há uma breve descrição sobre o contexto da arte e seu artista. Além disso, há uma “métrica” acerca do desempenho do gato, representado em estrelas e % de acerto.
+
+Classes, métodos e atributos: ainda não implementados.
 
 ## 3.6. Regras do jogo (sprint 3)
 
