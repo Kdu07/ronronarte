@@ -1,5 +1,7 @@
+// Classe de cena a ser exportada
 export default class Tutorial extends Phaser.Scene {
     constructor(){
+        // Configura a chave de classe
         super('Tutorial')
     }
     create(){

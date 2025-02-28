@@ -1,5 +1,7 @@
+// Classe de cena a ser exportada
 export default class SplashScreen extends Phaser.Scene {
     constructor(){
+        // Configura a chave de classe
         super('SplashScreen');
     }
     preload(){
@@ -30,14 +32,15 @@ export default class SplashScreen extends Phaser.Scene {
         // Adiciona fade in na splash screen 
         this.cameras.main.fadeIn(1500, 0, 0, 0)
         this.add.image(this.scale.width/2, this.scale.height/2,'catup').setScale(0.5);
+
         // Adiciona fade out na splash screen depois de 3 segundos
         this.time.delayedCall(3000, () => {
             this.cameras.main.fadeOut(1500, 0, 0, 0);
             
             // Aguarda o fadeOut antes de iniciar a próxima cena
             this.time.delayedCall(1500, () => {
-                this.scene.stop('SplashScreen');
-                this.scene.start('Menu');
+                this.scene.stop('SplashScreen'); // Para a cena atual
+                this.scene.start('Menu'); // Inicia a cena Menu
             }); 
         });          
     }
