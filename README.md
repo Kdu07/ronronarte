@@ -10,8 +10,8 @@
 ## Grupo CatUp
 
 ## 👨‍🎓 Integrantes: 
-- Carlos Eduardo
-- Eduardo Jesus
+- <a href="https://github.com/CaduQuaglia">Carlos Eduardo Serrano Quaglia</a>
+- <a href="https://www.linkedin.com/in/eduardo-jesus-tavares-sant-anna-2bb399285/">Eduardo Jesus Tavares Sant'Anna</a>
 - <a href="https://www.linkedin.com/in/felipe-neves-36925a346/">Felipe Neves</a>
 - <a href="https://www.linkedin.com/in/guilherme-guerreiro-025986319/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Guilherme Guerreiro</a>
 - <a href="https://www.linkedin.com/in/luana-de-jesus-lima-8b17a9266/">Luana de Jesus Lima</a>
