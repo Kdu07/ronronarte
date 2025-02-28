@@ -18,7 +18,7 @@ export default class BasePhase extends Phaser.Scene {
             repeat: -1
         });
         
-        this.scoreboard = this.add.text(950, 15, 'Pontos:' + this.score, {fontSize:'45px', fill:'#495613'})
+        this.scoreboard = this.add.text(950, 15, 'Pontos:' + this.score, {fontSize:'45px', fill:'#000000'})
 
         this.spawnTarget(); // Gera o target
     }

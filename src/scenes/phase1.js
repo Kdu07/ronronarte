@@ -42,7 +42,7 @@ export default class Phase1 extends Phaser.Scene {
             repeat: -1
         });
         
-        this.scoreboard = this.add.text(this.width - 300, 0 + 50, 'Pontos:' + this.score, {fontSize:'45px', fill:'#000000'})
+        this.scoreboard = this.add.text(this.width - 300, 0 + 50, 'Pontos:' + this.score + '/' + this.maxScore, {fontSize:'45px', fill:'#FFFFFF'})
         
         // Adiciona um botão de pause na tela
         this.PauseBtn = this.add.image(40, 50, 'PauseBtn')
@@ -88,7 +88,7 @@ export default class Phase1 extends Phaser.Scene {
             if (this.pombo.getBounds().contains(pointer.x, pointer.y)) {
                 this.parado = true;
                 this.score++;
-                this.scoreboard.setText('Pontos: ' + this.score);
+                this.scoreboard.setText('Pontos: ' + this.score + '/' + this.maxScore);
                 
                 this.pombo.destroy(); // Remove o pombo da tela
                 this.somPombo.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
