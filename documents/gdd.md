@@ -537,7 +537,7 @@ Logo abaixo, estão as telas da versão básica do jogo.
 <p>Também está representada a modularização do código nas figuras 14 e 15.</p>
 <p align = 'center'>Figura 14: estrutura das pastas após a modularização do código</p>
 <div align = 'center'>
-  <img width="50%" alt="image" src="https://github.com/user-attachments/assets/76b12c16-e454-40a5-80c3-d23deaa03a73"/>
+  <img width="30%" alt="image" src="https://github.com/user-attachments/assets/76b12c16-e454-40a5-80c3-d23deaa03a73"/>
 </div><br>
 <p align = 'center'>Fonte: autoria própria (2025).</p> <br>
 
