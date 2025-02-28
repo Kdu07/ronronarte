@@ -294,9 +294,9 @@ Uma Concept Art é um documento que mostra as características e os elementos ge
 <p align = "center">Figura : Concept Art - RonRonArte</p>
 
  ![Concept Art - RonRonArte](https://github.com/user-attachments/assets/40ec0017-e333-43ed-956e-81564725f5af)
-<p align = "center">Fonte: autoria própria (2025).</p>
+<p align = "center">Fonte: autoria própria (2025).</p> <br>
 
-Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.figma.com/proto/O28uXtCzHpYgGD5H7lxE97/Concept-Art---RonRonArte?content-scaling=fixed&kind=proto&node-id=15-4&page-id=0%3A1&scaling=scale-down)
+Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.figma.com/proto/O28uXtCzHpYgGD5H7lxE97/Concept-Art---RonRonArte?content-scaling=fixed&kind=proto&node-id=15-4&page-id=0%3A1&scaling=scale-down) <br>
 
 ### 3.3.5. Trilha sonora (sprint 3)
 
