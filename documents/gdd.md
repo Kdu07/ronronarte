@@ -534,6 +534,7 @@ Logo abaixo, estão as telas da versão básica do jogo.
 </div><br>
 <p align = 'center'>Fonte: autoria própria (2025).</p><br>
 
+
 <p>Também está representada a modularização do código nas figuras 14 e 15.</p>
 <p align = 'center'>Figura 14: estrutura das pastas após a modularização do código</p>
 <div align = 'center'>
@@ -541,9 +542,10 @@ Logo abaixo, estão as telas da versão básica do jogo.
 </div><br>
 <p align = 'center'>Fonte: autoria própria (2025).</p> <br> <br>
 
+
 <p align = 'center'>Figura 15: estrutura da versão básica do jogo (com importações de cenas phaser)</p>
 <div align = 'center'>
-  <img width="50%" alt="image" src="https://github.com/user-attachments/assets/a3d6a5f5-8cad-4108-906c-16fae2e00bf4"/>
+  <img width="70%" alt="image" src="https://github.com/user-attachments/assets/a3d6a5f5-8cad-4108-906c-16fae2e00bf4"/>
 </div><br>
 <p align = 'center'>Fonte: autoria própria (2025).</p> <br>
 
