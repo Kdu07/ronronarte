@@ -499,7 +499,7 @@ Eventuais dificuldades presentes no projeto:
 - Produção dos sprites/artes do jogo.
 
 Logo abaixo, estão as telas da versão básica do jogo.
-<p align = 'center'>Figura 9: tela de instruções</p><br>
+<p align = 'center'>Figura 9: tela de instruções</p>
 <div align = 'center'>
   <img width="935" alt="image" src="https://github.com/user-attachments/assets/7081f995-b960-4c10-84eb-42fedf96822f" />
 </div><br>
@@ -507,28 +507,28 @@ Logo abaixo, estão as telas da versão básica do jogo.
 <p align = 'center'>Fonte: autoria própria (2025).</p> <br>
 
 
-<p align = 'center'>Figura 10: tela de tutorial</p><br>
+<p align = 'center'>Figura 10: tela de tutorial</p>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/510f51b9-c320-4c1d-ab87-3690abf2d989" />
 </div><br>
 <p align = 'center'>Fonte: autoria própria (2025).</p><br>
 
 
-<p align = 'center'>Figura 11: tela do início das fases</p><br>
+<p align = 'center'>Figura 11: tela do início das fases</p>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/554c235d-a9b9-4f88-8729-2b6302444569" />
 </div><br>
 <p align = 'center'>Fonte: autoria própria (2025).</p> <br>
 
 
-<h4 align = 'center'>Figura 12: tela de pintura da fase 1</h4><br>
+<p align = 'center'>Figura 12: tela de pintura da fase 1</p>
 <div align = 'center'>
   <img width="933" alt="image" src="https://github.com/user-attachments/assets/8f147d35-bbad-40ca-b773-183bf5c93b6d" />
 </div><br>
 <p align = 'center'>Fonte: autoria própria (2025).</p><br>
 
 
-<p align = 'center'>Figura 13: tela de vitória da fase 1</p><br>
+<p align = 'center'>Figura 13: tela de vitória da fase 1</p>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/1790cca4-9119-4d94-ac4f-9f7220c094aa" />
 </div><br>
