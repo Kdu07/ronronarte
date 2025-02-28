@@ -97,7 +97,7 @@ Exemplos:
 
 ### 1.1.2. Análise SWOT (sprint 2)
 
-Análise SWOT é um planejamento estratégico que analisa os pontos fortes, pontos fracos, ameaças e oportunidades de um negócio.
+A Análise SWOT é uma ferramenta estratégica usada para avaliar a posição de uma empresa, projeto ou indivíduo, considerando fatores internos e externos. Ela é dividida em quatro componentes: Forças (Strengths), que são os pontos fortes internos; Fraquezas (Weaknesses), que representam os desafios internos; Oportunidades (Opportunities), que são fatores externos positivos que podem ser aproveitados; e Ameaças (Threats), que são riscos externos que podem impactar negativamente. Essa análise ajuda na tomada de decisões e no desenvolvimento de estratégias mais eficazes.
 
 Figura 2: Análise SWOT
 ![analiseSwot](https://github.com/user-attachments/assets/8a0b1694-3b95-4dd7-882e-8d0a9ec40121)
@@ -332,14 +332,18 @@ Caso queira acessar a Concept Art com as animações, clique neste link: https:/
 
 <img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/Diagrama%20de%20Cenas%20(2).png">
 
-Diagrama de cenas
+#### Diagrama de cenas:
 
 O diagrama de cenas é uma representação visual do caminhar do jogo ao longo de suas telas e cenas. Essa ferramenta apresenta como o design será feito, como as classes, objetos, atributos e métodos são realizados, facilitando a compreensão das funcionalidades.
+
+<hr>
 
 - **Tela inicial (Splash Screen):**
 A primeira cena do jogo conta com uma splash screen (cena exibida ao abrir o jogo) que apresenta o nome de nossa equipe em um fundo preto.
 
 Classes, atributos e métodos: classe "SplashScreen", métodos: preload e create.
+
+<hr>
 
 - **Tela de start:** 
 A tela de start conta com uma imagem de fundo gerada por IA que apresenta elementos do storytelling do jogo como um portal, pinturas emolduradas e um gato. Além disso, há também um botão de "JOGAR", que ao ser pressionado redireciona para a tela de primeira fase do jogo.
