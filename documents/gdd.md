@@ -51,7 +51,7 @@ De acordo com o livro de Magretta (2019), que detalha o estudos de Michael Porte
 <p align = "center">Figura 1: modelo de 5 forças de Porter</p>
 
 ![quadro_5_forcas](https://github.com/user-attachments/assets/479e357c-f3ad-4257-864e-4d431e079b6f)
-<p align = "center">Fonte: Modelo criado por Michael Eugene Porter (1980). Adaptação feita pelos autores(2025).</p> <br> <br>
+<p align = "center">Fonte: Modelo criado por Michael Eugene Porter (1980). Adaptação feita pelos autores (2025).</p> <br> <br>
 
 
 #### 1. Rivalidade entre os concorrentes:
@@ -101,9 +101,10 @@ Exemplos:
 
 A Análise SWOT é uma ferramenta estratégica usada para avaliar a posição de uma empresa, projeto ou indivíduo, considerando fatores internos e externos. Ela é dividida em quatro componentes: Forças (Strengths), que são os pontos fortes internos; Fraquezas (Weaknesses), que representam os desafios internos; Oportunidades (Opportunities), que são fatores externos positivos que podem ser aproveitados; e Ameaças (Threats), que são riscos externos que podem impactar negativamente. Essa análise ajuda na tomada de decisões e no desenvolvimento de estratégias mais eficazes.
 
-Figura 2: Análise SWOT
+<p align = "center">Figura 2: Análise SWOT</p>
+
 ![analiseSwot](https://github.com/user-attachments/assets/8a0b1694-3b95-4dd7-882e-8d0a9ec40121)
-Fonte: Modelo criado por Albert S. Humphrey (1960). Adaptação por Carlos Eduardo Serrano Quaglia (2025). 
+<p align = "center">Fonte: Modelo criado por Albert S. Humphrey (1960). Adaptação feita pelos autores (2025).</p> <br>
 
 
 
