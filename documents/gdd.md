@@ -293,7 +293,8 @@ Uma Concept Art é um documento que mostra as características e os elementos ge
 
 <p align = "center">Figura 4: Concept Art - RonRonArte</p>
 
- ![Concept Art - RonRonArte](https://github.com/user-attachments/assets/40ec0017-e333-43ed-956e-81564725f5af)
+![Concept Art - RonRonArte](https://github.com/user-attachments/assets/c83e725a-4a16-47f9-b950-1ee1616377ca)
+
 <p align = "center">Fonte: autoria própria (2025).</p> <br>
 
 Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.figma.com/proto/O28uXtCzHpYgGD5H7lxE97/Concept-Art---RonRonArte?content-scaling=fixed&kind=proto&node-id=15-4&page-id=0%3A1&scaling=scale-down) <br>
