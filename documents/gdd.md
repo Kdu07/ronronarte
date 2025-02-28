@@ -493,35 +493,35 @@ Logo abaixo, estão as telas da versão básica do jogo.
   <img width="935" alt="image" src="https://github.com/user-attachments/assets/7081f995-b960-4c10-84eb-42fedf96822f" />
 </div><br>
 
-<h4 align = 'center'>Fonte: autoria própria (2025).</h4>
+<h4 align = 'center'>Fonte: autoria própria (2025).</h4> <br>
 
 
 <h4 align = 'center'>Tela de tutorial</h4><br>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/510f51b9-c320-4c1d-ab87-3690abf2d989" />
 </div><br>
-<h4 align = 'center'>Fonte: autoria própria (2025).</h4>
+<h4 align = 'center'>Fonte: autoria própria (2025).</h4><br>
 
 
 <h4 align = 'center'>Tela do início das fases</h4><br>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/554c235d-a9b9-4f88-8729-2b6302444569" />
 </div><br>
-<h4 align = 'center'>Fonte: autoria própria (2025).</h4>
+<h4 align = 'center'>Fonte: autoria própria (2025).</h4> <br>
 
 
 <h4 align = 'center'>Tela de pintura da fase 1</h4><br>
 <div align = 'center'>
   <img width="933" alt="image" src="https://github.com/user-attachments/assets/8f147d35-bbad-40ca-b773-183bf5c93b6d" />
 </div><br>
-<h4 align = 'center'>Fonte: autoria própria (2025).</h4>
+<h4 align = 'center'>Fonte: autoria própria (2025).</h4><br>
 
 
 <h4 align = 'center'>Tela de vitória da fase 1</h4><br>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/1790cca4-9119-4d94-ac4f-9f7220c094aa" />
 </div><br>
-<h4 align = 'center'>Fonte: autoria própria (2025).</h4>
+<h4 align = 'center'>Fonte: autoria própria (2025).</h4><br>
 
 
 
