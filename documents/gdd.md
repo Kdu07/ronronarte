@@ -52,7 +52,7 @@ Figura 1: modelo de 5 forças de Porter
 ![quadro_5_forcas](https://github.com/user-attachments/assets/479e357c-f3ad-4257-864e-4d431e079b6f)
 Fonte: Modelo criado por Michael Eugene Porter (1980). Adaptação por Carlos Eduardo Serrano Quaglia (2025).
 
-##### 1. Rivalidade entre os concorrentes:
+#### 1. Rivalidade entre os concorrentes:
 
 Essa força avalia o nível de competição dentro de um setor e seu impacto na lucratividade das empresas. Uma rivalidade intensa ocorre quando há muitos concorrentes de tamanho semelhante, crescimento lento do mercado, produtos pouco diferenciados ou altos custos fixos, levando a disputas agressivas de preços, marketing e inovação.
 
@@ -60,21 +60,21 @@ Essa força avalia o nível de competição dentro de um setor e seu impacto na 
 
 - Existem poucos apresentadores de televisão no setor de educação pet rivalidade traz inovação nos produtos e serviços do setor, consequentemente melhorando o bem estar dos pets.
 
-##### 2. Ameaça de novos entrantes:
+#### 2. Ameaça de novos entrantes:
 
 Essa força avalia o quanto a entrada de novas empresas pode afetar a competitividade e a lucratividade de um setor. Se houver poucas barreiras de entrada, como baixos custos iniciais, acesso fácil a canais de distribuição e pouca regulamentação, novos concorrentes podem surgir rapidamente, aumentando a competição e pressionando preços e margens de lucro para baixo.
 
 - Principais barreiras: Visibilidade na mídia, persona comunicativa e carismática;
 - Impacto potencial: Crescimento no setor de educação pet;
 
-##### 3. Poder de barganha dos fornecedores:
+#### 3. Poder de barganha dos fornecedores:
 
 Essa força examina a influência que os fornecedores exercem sobre as empresas do setor. Se houver poucos fornecedores, produtos insubstituíveis ou altos custos de troca, eles podem impor preços elevados, prazos rígidos e condições desfavoráveis, reduzindo a lucratividade das empresas compradoras. Já quando há muitos fornecedores, produtos padronizados e facilidade de substituição, o poder de barganha diminui, permitindo que as empresas negociem melhores condições. A dependência de matérias-primas específicas ou tecnologia exclusiva também pode aumentar a força dos fornecedores no mercado.
 
 - Impacto: No caso de rescisão contratual com a emissora, haveria uma redução no alcance do Dr. Pet ao público;
 - Alternativas de fornecimento: Outras plataformas para vender cursos, outras emissoras de programas de televisão.
 
-##### 4. Poder de barganha dos clientes:
+#### 4. Poder de barganha dos clientes:
 
 Essa força avalia a influência dos consumidores sobre as empresas do setor. Quando os clientes têm muitas opções, produtos pouco diferenciados ou baixo custo de troca, eles podem exigir preços mais baixos, melhor qualidade e melhores serviços, reduzindo a lucratividade das empresas. Esse poder aumenta quando compram em grandes volumes ou têm acesso fácil a informações sobre preços e concorrentes. Por outro lado, quando há poucos clientes, produtos exclusivos ou alta dependência da empresa, o poder de barganha dos consumidores diminui, permitindo que a empresa mantenha margens mais elevadas.
 
@@ -85,7 +85,7 @@ Exemplos:
 - Tutores;
 - Futuros adestradores de pet.
 
-##### 5. Ameaça de produtos ou serviços substitutos:
+#### 5. Ameaça de produtos ou serviços substitutos:
 
 avalia o risco de os consumidores optarem por soluções alternativas que atendam às mesmas necessidades. Essa ameaça é alta quando há substitutos de qualidade, com preços mais baixos ou vantagens superiores, pressionando as empresas a reduzirem preços ou inovarem para manter sua base de clientes. Se os custos de troca forem baixos e os consumidores perceberem benefícios significativos nos substitutos, a competitividade do setor diminui. Por outro lado, quando há poucas alternativas viáveis ou altos custos de mudança, essa ameaça se reduz, favorecendo as empresas estabelecidas.
 
