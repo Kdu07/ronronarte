@@ -534,7 +534,13 @@ Logo abaixo, estão as telas da versão básica do jogo.
 </div><br>
 <p align = 'center'>Fonte: autoria própria (2025).</p><br>
 
-<p>Também está representada a modularização do código nas figuras abaixo.</p>
+<p>Também está representada a modularização do código nas figuras 14 e 15.</p>
+<p align = 'center'>Figura 14: estrutura das pastas após a modularização do código</p>
+<div align = 'center'>
+  <img width="932" alt="image" src="![image](https://github.com/user-attachments/assets/76b12c16-e454-40a5-80c3-d23deaa03a73)
+" />
+</div><br>
+<p align = 'center'>Fonte: autoria própria (2025).</p> <br>
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
 
