@@ -339,7 +339,7 @@ Figura 1: detalhe da cena da partida do herói para a missão, usando sua nave
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 
-![diagrama_de_cenas](https://github.com/user-attachments/assets/479e357c-f3ad-4257-864e-4d431e079b6f)
+<img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/Diagrama%20de%20Cenas%20(1).png">
 
 Diagrama de cenas
 
@@ -355,6 +355,14 @@ A tela de start conta com uma imagem de fundo gerada por IA que apresenta elemen
 
 Classes, atributos e métodos:
 
+<hr>
+
+- Tela de seleção de níveis:
+A tela de seleção de níveis conta com uma moldura de quadro com quatro molduras dentro. Essas molduras internas representam as 4 fases de nosso jogo, dividindo-as na progressão padrão do jogo.
+
+Classes, atributos e metódos: 
+ - Classes: SelectPhase
+ - Atributos e métodos ainda não implementados.
 
 - Fase 1:   
 A primeira fase do jogo serve como tutorial para o tutor, apresentando como deverá ser feita a recompensa para o gato ao alcançar o objetivo do jogo. Nessa tela, haverá uma maneira de pular a cena de tutorial caso o tutor já saiba ou não queira ver o tutorial.
