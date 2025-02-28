@@ -291,7 +291,7 @@ O jogador, sendo um gato, atravessará as fases atreves de um portal que o levar
 ### 3.3.4. Concept Art (sprint 2)
 Uma Concept Art é um documento que mostra as características e os elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo. Com base nisso, realizou-se uma Concept Art de RonRonArte, de maneira a explicitar quais são os seus principais itens visuais e de história.
 
-<p align = "center">Figura : Concept Art - RonRonArte</p>
+<p align = "center">Figura 4: Concept Art - RonRonArte</p>
 
  ![Concept Art - RonRonArte](https://github.com/user-attachments/assets/40ec0017-e333-43ed-956e-81564725f5af)
 <p align = "center">Fonte: autoria própria (2025).</p> <br>
@@ -334,7 +334,7 @@ Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.
 3 | ... 
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
-<p align ="center">Figura : diagrama de cenas - RonRonArte</p>
+<p align ="center">Figura 5: diagrama de cenas - RonRonArte</p>
 
 <img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/Diagrama%20de%20Cenas%20(2).png">
 <p align ="center">Fonte: autoria própria (2025).</p>
@@ -450,7 +450,7 @@ Em linhas gerais, a primeira versão do jogo “RonRonArte” conta com uma tela
 
 Logo abaixo, estão registrados os prints das telas da primeira versão do jogo.
 
-<p align = "center">Tela de início do jogo</p>
+<p align = "center">Figura 6: tela de início do jogo</p>
 
 ![tela de start RonRonArte](https://github.com/user-attachments/assets/30f3865b-5e98-49f1-906e-e886c33ee157)
 
@@ -458,7 +458,7 @@ Logo abaixo, estão registrados os prints das telas da primeira versão do jogo.
 
 
 
-<p align = "center">Tela com a primeira cena</p>
+<p align = "center">Figura 7: tela com a primeira cena</p>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/a2107a97-8d01-4339-8469-bef594f42c61" width="300">
@@ -468,7 +468,7 @@ Logo abaixo, estão registrados os prints das telas da primeira versão do jogo.
 
 
 
-<p align = "center">Tela da primeira cena com os splashes de tinta</p>
+<p align = "center">Figura 8: tela da primeira cena com os splashes de tinta</p>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/9581c99b-c61d-407d-bb58-b492f8a47998" width="300">
@@ -499,7 +499,7 @@ Eventuais dificuldades presentes no projeto:
 - Produção dos sprites/artes do jogo.
 
 Logo abaixo, estão as telas da versão básica do jogo.
-<p align = 'center'>Figura 3 - Tela de instruções</p><br>
+<p align = 'center'>Figura 9: tela de instruções</p><br>
 <div align = 'center'>
   <img width="935" alt="image" src="https://github.com/user-attachments/assets/7081f995-b960-4c10-84eb-42fedf96822f" />
 </div><br>
@@ -507,34 +507,34 @@ Logo abaixo, estão as telas da versão básica do jogo.
 <p align = 'center'>Fonte: autoria própria (2025).</p> <br>
 
 
-<p align = 'center'>Tela de tutorial</p><br>
+<p align = 'center'>Figura 10: tela de tutorial</p><br>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/510f51b9-c320-4c1d-ab87-3690abf2d989" />
 </div><br>
 <p align = 'center'>Fonte: autoria própria (2025).</p><br>
 
 
-<p align = 'center'>Tela do início das fases</p><br>
+<p align = 'center'>Figura 11: tela do início das fases</p><br>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/554c235d-a9b9-4f88-8729-2b6302444569" />
 </div><br>
 <p align = 'center'>Fonte: autoria própria (2025).</p> <br>
 
 
-<h4 align = 'center'>Tela de pintura da fase 1</h4><br>
+<h4 align = 'center'>Figura 12: tela de pintura da fase 1</h4><br>
 <div align = 'center'>
   <img width="933" alt="image" src="https://github.com/user-attachments/assets/8f147d35-bbad-40ca-b773-183bf5c93b6d" />
 </div><br>
 <p align = 'center'>Fonte: autoria própria (2025).</p><br>
 
 
-<p align = 'center'>Tela de vitória da fase 1</p><br>
+<p align = 'center'>Figura 13: tela de vitória da fase 1</p><br>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/1790cca4-9119-4d94-ac4f-9f7220c094aa" />
 </div><br>
 <p align = 'center'>Fonte: autoria própria (2025).</p><br>
 
-
+<p>Também está representada a modularização do código nas figuras abaixo.</p>
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
 
