@@ -89,8 +89,9 @@ https://github.com/Inteli-College/2025-1A-T15-IN01-G03.git
   **4. Clique com o botão direito em "index.html" e selecione "Open with Live Server"**
 
 ## 🗃 Histórico de lançamentos
+* 0.2.0 - 28/02/2025 
 * 0.1.0 - 13/02/2025
-    *
+    
 
 ## 📋 Licença/License
 
