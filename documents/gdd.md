@@ -291,10 +291,12 @@ O jogador, sendo um gato, atravessará as fases atreves de um portal que o levar
 ### 3.3.4. Concept Art (sprint 2)
 Uma Concept Art é um documento que mostra as características e os elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo. Com base nisso, realizou-se uma Concept Art de RonRonArte, de maneira a explicitar quais são os seus principais itens visuais e de história.
 
- ![Concept Art - RonRonArte](https://github.com/user-attachments/assets/40ec0017-e333-43ed-956e-81564725f5af)
-Figura 1: Concept Arte de RonRonArte.
+<p align = "center">Figura : Concept Art - RonRonArte</p>
 
-Caso queira acessar a Concept Art com as animações, clique neste link: https://www.figma.com/proto/O28uXtCzHpYgGD5H7lxE97/Concept-Art---RonRonArte?content-scaling=fixed&kind=proto&node-id=15-4&page-id=0%3A1&scaling=scale-down
+ ![Concept Art - RonRonArte](https://github.com/user-attachments/assets/40ec0017-e333-43ed-956e-81564725f5af)
+<p align = "center">Fonte: autoria própria (2025).</p>
+
+Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.figma.com/proto/O28uXtCzHpYgGD5H7lxE97/Concept-Art---RonRonArte?content-scaling=fixed&kind=proto&node-id=15-4&page-id=0%3A1&scaling=scale-down)
 
 ### 3.3.5. Trilha sonora (sprint 3)
 
