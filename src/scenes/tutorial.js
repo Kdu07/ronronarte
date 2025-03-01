@@ -5,8 +5,9 @@ export default class Tutorial extends Phaser.Scene {
         super('Tutorial')
     }
     create(){
-        this.textAdded = false;
-        this.clicks = 0;
+        this.textAdded = false; // Boolean para adicionar apenas uma vez o texto usando o update
+        this.clicks = 0; // Contagem de clicks na tela
+        // Texto de tutorial organizado por elementos em lista
         this.tutorialTexts = [
             'Olá humano,\nbem-vindo ao RonRonarte!',
             'Seu gato está prestes a embarcar em\numa jornada artística!\n\nPara incentivá-lo a jogar,\nsiga estas instruções:',
@@ -17,8 +18,10 @@ export default class Tutorial extends Phaser.Scene {
             'Quando o gato começar a tocar nos\nalvos sem a necessidade do petisco na\ntela, ofereça uma recompensa quando\no jogo indicar',
             'Está pronto para a aventura?\n\nClique no pombo para começar o jogo!']
         
+        // Adiciona background
         let bg = this.add.image(this.scale.width/2, this.scale.height/2, 'bgTutorial').setInteractive();
-
+        
+        // Animação de voo do personagem
         this.anims.create({
             key: 'fly',
             frames: this.anims.generateFrameNumbers('pombo', { start: 0, end: 3 }),
@@ -26,35 +29,52 @@ export default class Tutorial extends Phaser.Scene {
             repeat: -1
         });
 
+        // Adiciona o pombo como personagem e inicia a animação
         this.character = this.add.sprite(0, 0, 'pombo').setScale(2).setFlip(true, false);
         this.character.play('fly');
     }
     update(){
+        // Confere se o personagem chegou no meio da tela
         if (this.character.x <= this.scale.width/2 && this.character.y <= this.scale.height/2){
+            // Move o personagem em direção ao meio da tela
             this.character.x += 5;
             this.character.y += 2;
         }else{
-            if(this.clicks == 0 && !this.textAdded){
+            // O personagem está no meio da tela
+            
+            // Se o a caixa de texto e o texto ainda não foram adicionados
+            if(!this.textAdded){
+                // Adiciona os elementos
                 this.textBox = this.add.image(this.scale.width/2, this.scale.height - 120, 'textBox').setScale(1.2);
                 this.tutorialText = this.add.text(this.textBox.x - 350, this.textBox.y - 80, this.tutorialTexts[this.clicks], {fontSize:'30px', fill:'#000000'})
-                this.textAdded = true;
+                this.textAdded = true; // Altera a flag para true
             }
 
             this.input.removeAllListeners('pointerdown'); // Ignora todos os cliques anteriores
+            // Quando o mouse é clicado
             this.input.on('pointerdown', (pointer) => {
+                // Se o número de cliques não for maior que o tamanho da lista de textos
                 if (this.clicks < this.tutorialTexts.length - 1){
+                    // Adiciona um clique à contagem
                     this.clicks++;
                 }
 
+                // Atualiza o texto com a frase de mesmo index da contagem atual de clicks
                 this.tutorialText.setText(this.tutorialTexts[this.clicks])
 
+                // Se o clique foi no personagem E todos os textos do tutorial foram mostrados
                 if (this.character.getBounds().contains(pointer.x, pointer.y) && this.clicks == this.tutorialTexts.length - 1){
-                    console.log('clicou no pombo')
+                    // Destrói alguns elementos
                     this.character.destroy();
                     this.textBox.destroy();
                     this.tutorialText.destroy();
+                    
+                    // Adiciona o splash 
                     this.add.image(this.character.x, this.character.y, 'splash').setScale(0.5);
+                    
+                    // Espera 1,5 segundos
                     this.time.delayedCall(1500, () => {
+                        // Começa a próxima cena e finaliza essa
                         this.scene.start('BasePhase');
                         this.scene.stop('Tutorial');
                     });

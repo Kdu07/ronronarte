@@ -5,7 +5,7 @@ export default class SplashScreen extends Phaser.Scene {
         super('SplashScreen');
     }
     preload(){
-        // Carrega assets do jogo
+        // Carrega todos os assets do jogo
         this.load.image('tinta1', './assets/tinta1.png');
         this.load.image('splash', './assets/splash.png');
         this.load.spritesheet('pombo', './assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
@@ -14,7 +14,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('quadro', './assets/quadro.png');
         this.load.image('artista', './assets/artista.png');
         this.load.image('paleta', './assets/paleta.png');
-        this.load.video('vitoria', './assets/tela_photoshop_1.mp4');
+        this.load.image('bgVictory', './assets/bgVictory.png');
         this.load.image('star', './assets/star.png');
         this.load.image('frase', './assets/frase.png');
         this.load.image('recompensa', './assets/recompensa.png');

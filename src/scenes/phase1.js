@@ -1,30 +1,29 @@
+// Classe de cena a ser exportada
 export default class Phase1 extends Phaser.Scene {
     constructor() {
+        // Configura a chave de classe
         super('Phase1')
     }
 
     create(){
+        // Facilita a escrita da váriavel para o tamanho da tela
         this.width = this.scale.width;
         this.height = this.scale.height;
-        
-        this.pombo;
+    
         this.parado = false;
-        this.score = 0;
-        this.scoreboard;
-        this.maxScore = 3; // Defina a pontuação máxima aqui
-        this.gameEnded = false; // Variável para verificar se o jogo foi encerrado
-        this.splash;
-        this.mask;
-        this.revealMask;
-        this.tinta1;
 
+        // Configura a pontuação inicial e máxima
+        this.score = 0;
+        this.maxScore = 3;
         
+        // Adiciona máscara branca, quadro e a borda
         this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setScale(0.35);
         this.quadro = this.add.image(this.width / 2, this.height / 2, 'quadro').setScale(0.35);
         this.borda = this.add.image(this.width / 2, this.height / 2, 'borda').setScale(0.35);
         
-        this.quadro.setAlpha(1); // Torna o quadro visível
-
+        // Torna o quadro visível
+        this.quadro.setAlpha(1); 
+        
         // Cria uma máscara inicial vazia 
         this.revealMask = this.make.renderTexture({x: this.width/2, y: this.height/2, width: this.width, height: this.height}, false);
         this.mask = new Phaser.Display.Masks.BitmapMask(this, this.revealMask);
@@ -32,7 +31,8 @@ export default class Phase1 extends Phaser.Scene {
         //A máscara é aplicada à imagem quadro, o que significa que a imagem só será visível onde a revealMask for preenchida com pixels.
         this.quadro.setMask(this.mask);
 
-        this.somPombo = this.sound.add('pru'); // Adiciona som
+        // Adiciona som
+        this.somPombo = this.sound.add('pru'); 
 
         // Animação do pombo voando
         this.anims.create({
@@ -42,53 +42,68 @@ export default class Phase1 extends Phaser.Scene {
             repeat: -1
         });
         
+        // Adiciona o placar
         this.scoreboard = this.add.text(this.width - 300, 0 + 50, 'Pontos:' + this.score + '/' + this.maxScore, {fontSize:'45px', fill:'#FFFFFF'})
         
         // Adiciona um botão de pause na tela
         this.PauseBtn = this.add.image(40, 50, 'PauseBtn')
         this.PauseBtn.setInteractive()
+        // Configura o botão para voltar ao menu
         this.PauseBtn.on('pointerdown', () => {
-            window.location.href = "../index.html";
+            this.scene.start('Menu');
+            this.scene.stop('Phase1');
         })
 
-        this.spawnPombo(); // Gera o pombo
+        // Configura e adiciona o pombo na tela
+        this.spawnPombo();
     }
 
     update(){
-        this.clickPombo(); // Confere se o pombo é clicado
-        if (!this.parado){ // Só move o pombo se ele não foi clicado
+        // Confere se o pombo é clicado
+        this.clickPombo(); 
+
+        // Só move o pombo se ele não foi clicado
+        if (!this.parado){ 
             this.movimento(this.pombo);  
         }
     }
 
     spawnPombo() {
+        // Inicia a movimentação do pombo
         this.parado = false;
     
-        // Gerar uma posição aleatória dentro da área do quadro (borda)
+        // Gerar uma posição aleatória dentro da área do quadro
         let posX = Phaser.Math.Between(100,500);
         let posY = Phaser.Math.Between(100,500);
         
+        // Adiciona o pombo e torna interativo
         this.pombo = this.add.sprite(posX, posY, 'pombo').setScale(1.5);
         this.pombo.setInteractive();
         
+        // Configura a velocidade aleatória do pombo e a direção inicial de movimento
         this.pombo.velocidadeX = Phaser.Math.Between(5, 7);
         this.pombo.velocidadeY = Phaser.Math.Between(3, 6);
         this.pombo.direcaoX = -1;
         this.pombo.direcaoY = 1;
         
+        // Hitbox do pombo (usado para que não saia da tela)
         this.pombo.hitboxWidth = 43;
         this.pombo.hitboxHeight = 33;
     
-        this.pombo.play('voo'); // Inicia animação de voo pombo
+        // Inicia a animação de voo do pombo
+        this.pombo.play('voo');
     }
 
+    // Função para quando o pombo é clicado
     clickPombo() {
         this.input.removeAllListeners('pointerdown'); // Ignora todos os cliques anteriores
+        // Quando o mouse é clicado
         this.input.on('pointerdown', (pointer) => {
+            // Se o ponteiro está no do alvo
             if (this.pombo.getBounds().contains(pointer.x, pointer.y)) {
-                this.parado = true;
-                this.score++;
-                this.scoreboard.setText('Pontos: ' + this.score + '/' + this.maxScore);
+                this.parado = true; // Alvo para de se movimentar
+                this.score++; // Adiciona 1 ponto à pontuação
+                this.scoreboard.setText('Pontos: ' + this.score + '/' + this.maxScore); // Atualiza o placar
                 
                 this.pombo.destroy(); // Remove o pombo da tela
                 this.somPombo.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
@@ -96,17 +111,13 @@ export default class Phase1 extends Phaser.Scene {
                     this.somPombo.stop(); // Para o som do pombo após 1000ms (1s)
                 });
 
-
-
-
-                // Cria efeito de som e adiciona um novo pombo
-                // Verifica se a pontuação atingiu a pontuação máxima
-                if (this.score >= this.maxScore) {;
-                    console.log('GANHOU');
-    
+                // Se a pontuação atingiu a pontuação máxima
+                if (this.score >= this.maxScore) {
+                    // Revela o quadro inteiro
                     this.quadro.setMask();
                     this.quadro.setAlpha(1);
     
+                    // Adiciona a frase de vitória
                     setTimeout(() => {
                         let frase = this.add.image(this.quadro.x/0.95, this.quadro.y/1.1, 'frase').setScale(0.8);
                         frase.alpha = 0;
@@ -128,6 +139,7 @@ export default class Phase1 extends Phaser.Scene {
                             }
                         },5000);
     
+                        // Adiciona o aviso de recompensa para o tutor
                         setTimeout(() => {
                             let recompensa = this.add.image(this.quadro.x/1, this.quadro.y/0.8, 'recompensa').setScale(0.8);
                             this.tweens.add({
@@ -150,60 +162,56 @@ export default class Phase1 extends Phaser.Scene {
                         },2000);
                     },300);
     
+                    // Adicona tela de vitória depois de 5,7 segundos 
                     setTimeout(() => {
-                        let vitoria = this.add.video(this.width / 2, this.height / 2, 'vitoria').setScale(0.6);
-                        this.add.image(vitoria.x-150, vitoria.y-110, 'quadro').setScale(0.15);
-                        this.add.image(vitoria.x+300, vitoria.y-110, 'artista').setScale(0.23);
-                        this.add.image(vitoria.x / 1.35, vitoria.y / 2, 'paleta').setScale(0.2);
+                        let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(0.4);
+                        this.add.image(bgVictory.x-150, bgVictory.y-110, 'quadro').setScale(0.15);
+                        this.add.image(bgVictory.x+300, bgVictory.y-110, 'artista').setScale(0.23);
+                        this.add.image(bgVictory.x / 1.35, bgVictory.y / 2, 'paleta').setScale(0.2);
                     },5700);
                         
                 } else {
+                    // Se o jogo não acabou, gera outro pombo
                     this.spawnPombo();
                 };
     
-                //Cria um splash no local do clique
+                // Cria um splash no local do clique e revela a mesma área do quadro
                 this.splash = this.add.image(pointer.x, pointer.y, 'splash').setScale(2.0);
                 this.splash.setAlpha(1);
                 this.revealMask.draw(this.splash, this.splash.x, this.splash.y);
                 this.splash.destroy(); //Remove o splash após liberar a área
-        
-                this.tinta1 = this.add.image(pointer.x, pointer.y, 'tinta1').setScale(2.5); // Aparece instantaneamente
-                this.tinta1.setAlpha(1);
-                this.revealMask.draw(this.tinta1, this.tinta1.x, this.tinta1.y);
-                this.tinta1.destroy(); //Remove o splash após liberar a área
-
                 this.quadro.setAlpha(1);
             }
         });
     }
 
     movimento(alvo) {
-        // Limite para a borda em X (direita e esquerda)
+        // Limite para a borda em X considerando a hitbox do pombo
         if (alvo.x >= (this.width - alvo.hitboxWidth)) {
-            alvo.setFlip(false, false);  // Direção para a esquerda
+            // Direção para a esquerda
+            alvo.setFlip(false, false);
             alvo.direcaoX = -1;
         }
         if (alvo.x <= (0 + alvo.hitboxWidth)) {
-            alvo.setFlip(true, false);  // Direção para a direita
+            // Direção para a direita
+            alvo.setFlip(true, false);
             alvo.direcaoX = 1;
         }
     
-        // Limite para a borda em Y (superior e inferior)
+        // Limite para a borda em Y considerando a hitbox do pombo
         if (alvo.y >= (this.height - alvo.hitboxHeight)) {
-            alvo.direcaoY = -1; // Direção para cima
+            // Direção para cima
+            alvo.direcaoY = -1;
         }
         if (alvo.y <= (0 + alvo.hitboxHeight)) {
-            alvo.direcaoY = 1; // Direção para baixo
+            // Direção para baixo
+            alvo.direcaoY = 1;
         }
     
         // Move no eixo X e Y de acordo com a velocidade e direção
+        // Nova posição do pombo = posição atual do pombo + velocidade do pombo * direção do pombo (-1,1)
         alvo.x += alvo.velocidadeX * alvo.direcaoX;
         alvo.y += alvo.velocidadeY * alvo.direcaoY;
-    }
-
-    gerarRandomPos(eixo, fora) {
-        var num = Math.floor(Math.random() * ((eixo + fora) - (0 - fora) + 1)) + (0 - fora); // Gera um valor do tamanho da tela + margem para os dois lados
-        return (num > 0 && num < eixo) ? gerarRandomPos(eixo, fora) : num; // Se o valor gerado estiver dentro da tela a função é chamada novamente
     }
 }
 
