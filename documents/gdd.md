@@ -435,7 +435,7 @@ Classes, métodos e atributos: ainda não implementados.
 
 ## 3.7. Mecânicas do jogo (sprint 3)
 
-As mecânicas do jogo RonRonArte são simples e de fácil entendimento. A mecânica de touch funciona quando o jogador acerta o alvo, assim revelando parte de uma pintura. No modo criativo segue-se uma mecânica parecida, alterando apenas o resultado dela, em que após a ação de clicar e acertar o alvo na tela o jogador irá pintar uma quadro em branco, dessa forma pintando um quadro de autoria do próprio jogador.
+As mecânicas do jogo RonRonArte são simples e de fácil entendimento. A mecânica de touch funciona quando o jogador acerta o alvo, e assim, revelando parte de uma pintura. No modo criativo segue-se uma mecânica parecida, alterando apenas o resultado dela, em que após a ação de clicar e acertar o alvo na tela o jogador irá pintar um quadro em branco, dessa forma, pintando um quadro de autoria do próprio jogador.
 
 ## 3.8. Implementação Matemática de Animação/Movimento (sprint 3)
 
