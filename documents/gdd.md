@@ -4,15 +4,14 @@
 # GDD - Game Design Document - Módulo 1 - Inteli
 
 
-## CatUp
+## Cat Up
 
 #### 👨‍🎓 Integrantes: 
-- Carlos Eduardo Quaglia
-- Eduardo Jesus
-- <a href="https://www.linkedin.com/in/felipe-neves-36925a346/">Felipe Neves</a>
-- <a href="https://www.linkedin.com/in/guilherme-guerreiro-025986319/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Guilherme Guerreiro</a>
+- <a href="https://github.com/CaduQuaglia">Carlos Eduardo Serrano Quaglia</a>
+- <a href="https://www.linkedin.com/in/eduardo-jesus-tavares-sant-anna-2bb399285/">Eduardo Jesus Tavares Sant'Anna</a>
+- <a href="https://www.linkedin.com/in/felipe-neves-36925a346/">Felipe Neves Teixeira da Silva</a>
 - <a href="https://www.linkedin.com/in/luana-de-jesus-lima-8b17a9266/">Luana de Jesus Lima</a>
-- <a href="https://www.linkedin.com/in/luiz-hinuy-0995252b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Luiz Felipe Hinuy</a>
+- <a href="https://www.linkedin.com/in/luiz-hinuy-0995252b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Luiz Felipe Paravatti Maciel Hinuy</a>
 - <a href="https://www.linkedin.com/in/nicolli-venino-santana-b84341254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Nicolli Venino Santana</a>
 
 ## Sumário
@@ -41,21 +40,135 @@
 ## 1.1. Plano Estratégico do Projeto
 
 ### 1.1.1. Contexto da indústria (sprint 2)
+Conhecer o contexto da indústria de um cliente é basilar para a realização de um projeto de sucesso, uma vez que tal abordagem possibilita tomadas de decisões estratégicas ao longo de todo processo de desenvolvimento. Nesse sentido, é significativo pontuar o escopo da empresa parceira do jogo refernte a esta documentação: Dr. Pet. Ela faz parte do mercado de serviços para pets no Brasil, sendo voltada à educação e ao entretenimento de tutores, cães e gatos, por intermédio de cursos online e livros voltados à essa temática. Ademais, outra vertente adotada por ela é a aparição de seu fundador (Alexandre Rossi) em programas de televisão, de modo a divulgar conteúdos inerentes à empresa e a pets de um modo geral, além da utilização das redes sociais para tal. Portanto, a marca atua com veemência no cenário supracitado.
 
-Alexandre Rossi, também conhecido por Dr. Pet, é formado em zootecnia pela USP e fundador da marca Dr. Pet. A marca faz parte do mercado pet, e é especializada em educação e entretenimento direcionada aos tutores de cães e gatos. Em 2010, Dr. Pet ganhou visibilidade nacional por conta de sua cadela Estopinha e, desde então, atua como apresentador em rádios e programas de televisão. Atualmente tem quadro no programa “É de Casa" da rede Globo e apresenta o programa “Missão Pet”, no canal Nat Geo, além de produzir conteúdo em suas redes sociais.
 
 
 #### 1.1.1.1. Modelo de 5 Forças de Porter (sprint 2)
 
-*Posicione aqui o modelo de 5 Forças de Porter para sustentar o contexto da indústria.*
+De acordo com o livro de Magretta (2019), que detalha o estudos de Michael Porter, o modelo das 5 Forças de Porter é um framework de análise setorial que permite entender o nível de competitividade de um mercado. O modelo apresenta 5 critérios: Rivalidade entre concorrentes, poder de negociação dos fornecedores, poder de negociação dos compradores, ameaça de novos entrantes e ameaça de produtos substitutos, e avaliamo a força de cada um deles e como eles influenciam a competitividade do setor em análise. O modelo determina que, quanto maior uma força for, maior o poder de ação ela tem sobre um negócio.
+
+<p align = "center">Figura 1: modelo de 5 forças de Porter</p>
+
+![quadro_5_forcas](https://github.com/user-attachments/assets/479e357c-f3ad-4257-864e-4d431e079b6f)
+<p align = "center">Fonte: Modelo criado por Michael Eugene Porter (1980). Adaptação feita pelos autores (2025).</p> <br> <br>
+
+
+#### 1. Rivalidade entre os concorrentes:
+
+Essa força avalia o nível de competição dentro de um setor e seu impacto na lucratividade das empresas. Uma rivalidade intensa ocorre quando há muitos concorrentes de tamanho semelhante, crescimento lento do mercado, produtos pouco diferenciados ou altos custos fixos, levando a disputas agressivas de preços, marketing e inovação.
+
+- A marca Dr. Pet encontra poucos concorrentes diretos no setor de educação pet e entretenimento pela televisão, com apenas alguns exemplos de personalidades que abordam o mesmo assunto. Já no setor de vendas de livros e cursos para adestramento a marca possui concorrência com algumas plataformas como hotmart;
+
+- Existem poucos apresentadores de televisão no setor de educação pet rivalidade traz inovação nos produtos e serviços do setor, consequentemente melhorando o bem estar dos pets.
+
+#### 2. Ameaça de novos entrantes:
+
+Essa força avalia o quanto a entrada de novas empresas pode afetar a competitividade e a lucratividade de um setor. Se houver poucas barreiras de entrada, como baixos custos iniciais, acesso fácil a canais de distribuição e pouca regulamentação, novos concorrentes podem surgir rapidamente, aumentando a competição e pressionando preços e margens de lucro para baixo.
+
+- Principais barreiras: Visibilidade na mídia, persona comunicativa e carismática;
+- Impacto potencial: Crescimento no setor de educação pet;
+
+#### 3. Poder de barganha dos fornecedores:
+
+Essa força examina a influência que os fornecedores exercem sobre as empresas do setor. Se houver poucos fornecedores, produtos insubstituíveis ou altos custos de troca, eles podem impor preços elevados, prazos rígidos e condições desfavoráveis, reduzindo a lucratividade das empresas compradoras. Já quando há muitos fornecedores, produtos padronizados e facilidade de substituição, o poder de barganha diminui, permitindo que as empresas negociem melhores condições. A dependência de matérias-primas específicas ou tecnologia exclusiva também pode aumentar a força dos fornecedores no mercado.
+
+- Impacto: No caso de rescisão contratual com a emissora, haveria uma redução no alcance do Dr. Pet ao público;
+- Alternativas de fornecimento: Outras plataformas para vender cursos, outras emissoras de programas de televisão.
+
+#### 4. Poder de barganha dos clientes:
+
+Essa força avalia a influência dos consumidores sobre as empresas do setor. Quando os clientes têm muitas opções, produtos pouco diferenciados ou baixo custo de troca, eles podem exigir preços mais baixos, melhor qualidade e melhores serviços, reduzindo a lucratividade das empresas. Esse poder aumenta quando compram em grandes volumes ou têm acesso fácil a informações sobre preços e concorrentes. Por outro lado, quando há poucos clientes, produtos exclusivos ou alta dependência da empresa, o poder de barganha dos consumidores diminui, permitindo que a empresa mantenha margens mais elevadas.
+
+O poder de barganha dos clientes é considerado alto, pois há o fácil acesso a conteúdos similares por preços similares ou inferiores.
+
+Exemplos: 
+- Amantes de pets;
+- Tutores;
+- Futuros adestradores de pet.
+
+#### 5. Ameaça de produtos ou serviços substitutos:
+
+Essa força avalia o risco de os consumidores optarem por soluções alternativas que atendam às mesmas necessidades. Essa ameaça é alta quando há substitutos de qualidade, com preços mais baixos ou vantagens superiores, pressionando as empresas a reduzirem preços ou inovarem para manter sua base de clientes. Se os custos de troca forem baixos e os consumidores perceberem benefícios significativos nos substitutos, a competitividade do setor diminui. Por outro lado, quando há poucas alternativas viáveis ou altos custos de mudança, essa ameaça se reduz, favorecendo as empresas estabelecidas.
+
+Exemplos:
+- Cães ou outros pets robóticos: Robôs deste tipo dispensam o conteúdo do Dr. Pet porque dispensam adestramento;
+- Pesquisa por IA Generativa;
+- Vídeos educacionais no Youtube, Instagram e outras plataformas.
+
 
 ### 1.1.2. Análise SWOT (sprint 2)
 
-*Posicione aqui a análise SWOT relacionada ao parceiro de projeto. Utilize a análise SWOT para fazer uma análise ambiental do parceiro no âmbito estratégico. Leve em consideração o contexto da indústria, concorrência e as características do ambiente interno (forças e fraquezas) e externo (oportunidades e ameaças) do parceiro.*
+A Análise SWOT é uma ferramenta estratégica usada para avaliar a posição de uma empresa, projeto ou indivíduo, considerando fatores internos e externos. Ela é dividida em quatro componentes: Forças (Strengths), que são os pontos fortes internos; Fraquezas (Weaknesses), que representam os desafios internos; Oportunidades (Opportunities), que são fatores externos positivos que podem ser aproveitados; e Ameaças (Threats), que são riscos externos que podem impactar negativamente. Essa análise ajuda na tomada de decisões e no desenvolvimento de estratégias mais eficazes.
+
+<p align = "center">Figura 2: Análise SWOT</p>
+
+![analiseSwot](https://github.com/user-attachments/assets/8a0b1694-3b95-4dd7-882e-8d0a9ec40121)
+<p align = "center">Fonte: Modelo criado por Albert S. Humphrey (1960). Adaptação feita pelos autores (2025).</p> <br>
+
+
+
+## Strengths:
+
+  A seção de strenghts destaca os pontos fortes internos de uma organização, projeto ou indivíduo, ou seja, os aspectos que oferecem vantagem competitiva. Isso inclui recursos, habilidades, expertise, reputação, tecnologia, cultura organizacional e diferenciais que impulsionam o sucesso. 
+
+  - Alta visibilidade na mídia;
+
+  - Autoridade no assunto de educação pet;
+
+  - Habilidade de comunicação didática.
+
+## Weaknesses:
+
+  A seção de Weaknesses identifica os pontos fracos internos que podem prejudicar o desempenho de uma organização, projeto ou indivíduo. Isso inclui limitações em recursos, falta de expertise, baixa eficiência, problemas estruturais, dependência de terceiros ou falhas operacionais.
+
+  - A marca Dr. Pet está relacionada a apenas uma pessoa, pode se confundir com o seu representante, Alexandre Rossi;
+
+  - Nichado em cães;
+
+  - Forte dependência das redes de televisão.
+
+## Opportunities:
+
+  A seção de Opportunities analisa fatores externos positivos que podem ser explorados para crescimento e vantagem competitiva. Isso inclui tendências de mercado, avanços tecnológicos, mudanças regulatórias favoráveis, novas demandas dos consumidores ou parcerias estratégicas.
+
+  - Venda de produtos próprios com a marca Dr. Pet;
+
+  - Maior variedade de pets (Gatos, Passáros).
+
+## Threats:
+
+  A seção de Threats identifica os fatores externos que podem representar riscos para a organização, projeto ou indivíduo. Isso inclui concorrência acirrada, crises econômicas, mudanças regulatórias desfavoráveis, inovações disruptivas ou instabilidade política. 
+
+  - Rescisão de contratos com emissoras de televisão;
+
+  - Por uma possível falta de inovação criativa, as pessoas cansarem do mesmo conteúdo;
+
+  - Novos entrantes com maior escopo de animais abordados pela empresa;
+
+  - Indisponibilidade do Alexandre Rossi por qualquer motivo externo.
+
+<hr>
 
 ### 1.1.3. Missão / Visão / Valores (sprint 2)
 
-*Posicione aqui a Missão, Visão e Valores do seu projeto.*
+## Missão:
+
+Contribuir para a educação pet em casa através da divulgação de conteúdo informativo nas redes sociais e venda de cursos e mentorias, com recursos que promovem a integração de tutores.
+
+## Visão:
+
+Ser referência no mercado pet focando na educação, oferecendo um serviço personalizado e exclusivo, e construir uma comunidade de tutores que compartilham experiências e aprendizados com seus pets e sobre eles também.
+
+## Valores:
+
+- Respeito aos animais (A marca Dr. Pet educa os tutores, promovendo amor e carinho entre os animais e as pessoas);
+
+- Comunidade (o curso do Alexandre Rossi - Dr. Pet promove a interação entre outros tutores através de grupos em redes sociais, visando a construção de uma comunidade);
+
+- Educação (a divulgação de conteúdo educativo é amplamente praticada pelo Dr. Pet, e o lema da comunidade de tutores é “Nenhuma dúvida fica para trás”, valorizando o aprendizado do cliente).
+
+<hr>
 
 ### 1.1.4. Proposta de Valor (sprint 4)
 
@@ -78,14 +191,17 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 \# | Requisitos  
 --- | ---
-1 | A tela inicial deve mostrar um botão “Jogar”, que, quando clicado, direcione o jogador às fases do jogo.
+1 | A tela inicial deve mostrar um botão “Jogar”, que, quando clicado, direciona o jogador às fases do jogo.
 2 | Nas fases, o jogador (gato) deve clicar nos animais que aparecerem na tela para eliminá-los.
-3 | Ao clicar na tela, o jogador (gato) consegue pintá-la.
-4 | Devem ser disponibilizados botões de hud na tela, ativados apenas quando clicados e pressionados em seguida (para que o gato não os ative sem querer).
-5 | A cada dificuldade avançada pelo jogador (gato), uma nova paleta de cor deverá ser desbloqueada para pintura.
-6 | As pinturas do gato serão guardadas em uma biblioteca de imagens disponibilizada no jogo para acesso do tutor.
-7 | O tutor do gato pode personalizar as fases do jogo, alterando os alvos a serem atingidos pelo gato e a sua velocidade.
-8 | Ao final de cada fase, o jogador (gato) deve receber uma recompensa do tutor: pestiscos e ração.
+3 | As cores que o gato enxerga com mais facilidade serão usadas nos animais que ele precisa bater e as cores que são mais dificultosas de ver serão usadas no background. Dessa forma, a emissão de mais estímulo visual junto com a movimentação do alvo pela tela, potencializa o interesse do gato em abater os alvos.
+4 | O gato percebe que eliminou o alvo por meio de um aviso sonoro e o efeito de splash na tela.
+5 | No modo criativo, ao clicar na tela, o jogador (gato) consegue pintá-la.
+6 | No modo de fases, ao clicar na tela, o jogador (gato) vai revelando uma pintura de um período da história da arte.
+7 | Devem ser disponibilizados botões de hud na tela, ativados apenas quando clicados e pressionados em seguida (para que o gato não os ative sem querer).
+8 | No modo criativo, as pinturas do gato serão guardadas em uma biblioteca de imagens disponibilizada no jogo para acesso do tutor.
+9 | Ao final de cada fase, o jogador (gato) deve receber uma recompensa do tutor: petiscos ou ração.
+10 | O jogo será reproduzido em formato web direcionado para dispositivos móveis (smartphones e tablets).
+11 | Exibir som ao finalizar a fase para notificar o tutor e facilitar o entendimento do gato em relação à recompensa.
 
 ## 1.3. Público-alvo do Projeto (sprint 2)
 
@@ -98,27 +214,33 @@ Além disso, os gatos domésticos, na ausência de seus tutores, passam por mome
 
 ## 2.1. Objetivos do Jogo (sprint 2)
 
-*Descreva o que o jogador deve cumprir para avançar ou concluir o jogo*
+O objetivo do jogo é fortalecer o laço entre tutor e gato, enquanto ensina uma nova forma de se divertir com o seu pet. O objetivo do gato é eliminar todos os animais da tela num determinado período de tempo, e o tutor deve aprender e exercer a mecânica de ser recompensado ao alcançar esse objetivo. Ademais, nosso jogo contemplará um modo de jogo alternativo em que o gato poderá "pintar" uma tela em branco, produzindo sua própria obra de arte.
 
 ## 2.2. Características do Jogo (sprint 2)
 
 ### 2.2.1. Gênero do Jogo (sprint 2)
 
-*simulação, RPG, corrida, estratégia, esportes, ação, aventura etc.*  
+O jogo se encaixa principalmente no gênero Arcade, pois é um jogo rápido e simples, com a mecânica principal sendo a de tocar na tela para "capturar" algo.
 
 ### 2.2.2. Plataforma do Jogo (sprint 2)
 
-*quanto ao dispositivo: desktop, smartphones, tablets, TV etc.*
+O jogo será desenvolvido para _smartphones e tablets_, com reprodução através da web, sem a necessidade de instalação de aplicativos externos.
 
-*quanto ao sistema: navegadores compatíveis*
+Navegadores compatíveis: Google Chrome, Microsoft Edge, Mozilla Firefox.
 
 ### 2.2.3. Número de jogadores (sprint 2)
 
-*1 jogador, 2 jogadores versus, 2 jogadores cooperação, multiplayer etc.*
+O jogo foi desenvolvido para ser uma experiência interativa entre o gato e seu tutor (2 jogadores), sendo majoritaria a participação do gato ao "caçar" os animais que aparecem nas fases, e a do tutor em recompensar o gato e acompanhar a história da arte conforme avança pelos níveis. 
 
 ### 2.2.4. Títulos semelhantes e inspirações (sprint 2)
 
-*Liste e descreva títulos semelhantes e jogos que inspiram e são usados como referência do projeto*
+Nosso jogo teve como inspiração outros títulos de jogos para gato, como:
+
+Paint for Cats: Jogo cuja principal mecânica é ser um "jogo de pintar" para gatos, em que um rato colorido atravessa a tela com o intuito do gato bater na tela tentando o acertar. Ao acertá-lo, deixa um "splash" de tinta em formato de pata na tela.
+
+Games for Cats: Jogo em que o gato deve acertar um animal correndo pela tela. Contempla diferentes tipos de animais com diferentes características e níveis de dificuldade.
+
+Nosso jogo visa mesclar mecânicas presentes nesses outros jogos com uma identidade visual própria, buscando uma experiência interativa e divertida para gato e tutor.
 
 ### 2.2.5. Tempo estimado de jogo (sprint 5)
 
@@ -130,35 +252,35 @@ Além disso, os gatos domésticos, na ausência de seus tutores, passam por mome
 
 ## 3.1. Enredo do Jogo (sprints 2 e 3)
 
-*Descreva o enredo/história do jogo, criando contexto para os personagens (seção 3.2) e o mundo do jogo (seção 3.3). Uma boa história costuma ter um arco narrativo de contexto, conflito e resolução. Utilize etapas sequenciais para descrever esta história.* 
-
-*Caso seu jogo não possua enredo/história (ex. jogo Tetris), mencione os motivos de não existir e como o jogador pode se contextualizar com o ambiente do jogo.*
+Nós seres humanos, em algum momento de nossas vidas, pensamos no conceito de viagem no tempo. Um conceito interessante, desconhecido, e um tanto assutador. Entretanto, já imaginou se fosse possível viajar no tempo com o seu pet?
+Pois é esse o enredo de RonRonArte, uma viagem no tempo com o seu gato! Mas não é uma viagem no tempo qualquer, é uma viagem pelos diferentes períodos da arte, passando por arte contemporânea, arte moderna, arte medieval, e arte rupestre.
+Acompanhe seu pet nessa jornada e aprenda um pouco mais sobre a história da arte enquanto se diverte com seu amigo felino!
 
 ## 3.2. Personagens (sprints 2 e 3)
 
 ### 3.2.1. Controláveis
+No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador, haja vista que o intuito do jogo é justamente incentivar hábitos de caça ao gato por intermédio de figuras clicáveis na tela (no caso, spritesheets). Desse modo, o objetivo não é que o jogador controle algum personagem no game, mas sim que ele possa eliminá-lo no decorrer do jogo em troca de recompensas alimentícias, a fim de que seus instintos naturais sejam estimulados. Portanto, especificamente no escopo de RonRonArte, o player pode interpretar tal circunstância como um meio pelo qual ele realiza uma ação e, em troca, ganha algo, associando o atingimento de objetivos com as recompensas supracitadas. A partir disso, abaixo estão as spritesheets correspondentes ao que acima foi observado.
 
-*Descreva os personagens controláveis pelo jogador. Mencione nome, objetivos, características, habilidades, diferenciais etc. Utilize figuras (character art, sprite sheets etc.) para ilustrá-los. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes.* 
+<p align = 'center'>Figura 3 - Spritesheet de pombo (RonRonArte)</p><br>
+<div align = 'center'>
+  <img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/pombo.png?raw=true">
+</div><br>
 
-*Caso não existam personagens (ex. jogo Tetris), mencione os motivos de não existirem e como o jogador pode interpretar tal fato.*
+<p align = 'center'>Fonte: autoria própria (2025).</p>
 
-### 3.2.2. Non-Playable Characters (NPC)
-
-*\<opcional\> Se existirem coadjuvantes ou vilões, aqui é o local para descrevê-los e ilustrá-los. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes. Caso não existam NPCs, remova esta seção.*
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 
-Considerando as personagens do game, analise se estas estão alinhadas ao público-alvo do jogo (seção 1.3), e compare-as dentro da realidade da sociedade brasileira. Por fim, discorra sobre qual é o impacto esperado da escolha dessas personagens.
+O jogo considera a diversidade e a inclusão de representatividade de minorias imprescindíveis. Por isso, na narrativa do modo com fases do RonRonArte, o jogador faz uma viagem pela história da arte e em cada período é exposto uma obra cujo autor pertence a um grupo sub-representado no universo artístico, como mulheres, negros, e integrantes da comunidade LGBTQIA +. Assim, o jogo se compromete em gerar visibilidade às figuras que foram intrínsecas no desenvolvimento da arte ao longo do tempo e que, em razão de vieses discriminatórios, não tiveram o merecido reconhecimento.
 
 ## 3.3. Mundo do jogo (sprints 2 e 3)
 
 ### 3.3.1. Locações Principais e/ou Mapas (sprints 2 e 3)
 
-*Descreva o ambiente do jogo, em que locais ele ocorre. Ilustre com imagens. Se houverem mapas, posicione-os aqui, descrevendo as áreas em acordo com o enredo. Se houverem fases, descreva-as também em acordo com o enredo (pode ser um jogo de uma fase só). Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes.*
+O jogo vem de uma viagem no tempo, especificadamente por momentos históricos e importantes para a arte de pintura, coletando quadros de pintores famosos desses momentos em que o jogador, o gato, irá visitar. Essa aventura será possível por meio de um portal, fantasioso, que servirá para o jogador poder acessar as fases. Os momentos históricos serão representados por animais que foram o foco e pintores e artes pertencentes a cada respectiva época, por exemplo, o quadro de Van Gogh. Nesse jogo ele não se segue com uma linha do tempo linear.
 
 ### 3.3.2. Navegação pelo mundo (sprints 2 e 3)
-
-*Descreva como os personagens se movem no mundo criado e as relações entre as locações – como as áreas/fases são acessadas ou desbloqueadas, o que é necessário para serem acessadas etc. Utilize listas ou tabelas para organizar esta seção.*
+O jogador, sendo um gato, atravessará as fases atreves de um portal que o levará para épocas distintas e importantes para o conhecimento artístico da pintura. Com o passar das fases, elas se tornam selecionáveis a preferir do dono do gato, em que depois que o botão de “jogar”, poderá selecionar somente clicando com o dedo no botão referente a fase que for preferível a ser jogada.
 
 ### 3.3.3. Condições climáticas e temporais (sprints 2 e 3)
 
@@ -167,12 +289,15 @@ Considerando as personagens do game, analise se estas estão alinhadas ao públi
 *Caso seja relevante, descreva como o tempo passa, se ele é um fator limitante ao jogo (ex. contagem de tempo para terminar uma fase)*
 
 ### 3.3.4. Concept Art (sprint 2)
+Uma Concept Art é um documento que mostra as características e os elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo. Com base nisso, realizou-se uma Concept Art de RonRonArte, de maneira a explicitar quais são os seus principais itens visuais e de história.
 
-*Inclua imagens de Concept Art do jogo que ainda não foram demonstradas em outras seções deste documento. Para cada imagem, coloque legendas, como no exemplo abaixo.*
+<p align = "center">Figura 4: Concept Art - RonRonArte</p>
 
-<img src="../assets/concept1.jpg">
+![Concept Art - RonRonArte](https://github.com/user-attachments/assets/c83e725a-4a16-47f9-b950-1ee1616377ca)
 
-Figura 1: detalhe da cena da partida do herói para a missão, usando sua nave
+<p align = "center">Fonte: autoria própria (2025).</p> <br>
+
+Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.figma.com/proto/O28uXtCzHpYgGD5H7lxE97/Concept-Art---RonRonArte?content-scaling=fixed&kind=proto&node-id=15-4&page-id=0%3A1&scaling=scale-down) <br>
 
 ### 3.3.5. Trilha sonora (sprint 3)
 
@@ -210,8 +335,95 @@ Figura 1: detalhe da cena da partida do herói para a missão, usando sua nave
 3 | ... 
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
+<p align ="center">Figura 5: diagrama de cenas - RonRonArte</p>
 
-*Posicione aqui seu "storyboard de programação" - o diagrama de cenas do jogo. Indique, por exemplo, como o jogo começa, quais opções o jogador tem, como ele avança nas fases, quais as condições de 'game over', como o jogo reinicia. Seu diagrama deve representar as classes, atributos e métodos usados no jogo.*
+<img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/Diagrama%20de%20Cenas%20(2).png">
+<p align ="center">Fonte: autoria própria (2025).</p> <br>
+
+Caso queira ver o diagrama de cenas no Figma, [clique aqui](https://www.figma.com/design/M9iVkJjgLuhcVnC6v2aUAY/Diagrama-de-Cenas?node-id=0-1&p=f&t=fk8yJVrGBBaLzt2T-0)
+
+#### Diagrama de cenas:
+
+O diagrama de cenas é uma representação visual do caminhar do jogo ao longo de suas telas e cenas. Essa ferramenta apresenta como o design será feito, como as classes, objetos, atributos e métodos são realizados, facilitando a compreensão das funcionalidades.
+
+<hr>
+
+- **Tela inicial (Splash Screen):**
+A primeira cena do jogo conta com uma splash screen (cena exibida ao abrir o jogo) que apresenta o nome de nossa equipe em um fundo preto.
+
+Classes, atributos e métodos: classe "SplashScreen", métodos: preload e create.
+
+<hr>
+
+- **Tela de start:** 
+A tela de start conta com uma imagem de fundo gerada por IA que apresenta elementos do storytelling do jogo como um portal, pinturas emolduradas e um gato. Além disso, há também um botão de "JOGAR", que ao ser pressionado redireciona para a tela de primeira fase do jogo.
+
+Classes, atributos e métodos:
+
+<hr>
+
+- **Fase 1:**   
+A primeira fase do jogo serve como tutorial para o tutor, apresentando como deverá ser feita a recompensa para o gato ao alcançar o objetivo do jogo. Nessa tela, haverá uma maneira de pular a cena de tutorial caso o tutor já saiba ou não queira ver o tutorial.
+Classes, atributos, métodos e objetos:
+
+- Tela de seleção de níveis
+Após passar pelo tutorial, o jogador será direcionado para uma tela de seleção de níveis, onde poderá (caso já estiver desbloqueado) escolher a "fase" que gostaria de jogar.
+
+ - Classes: SelectPhase
+ - Atributos e métodos ainda não implementados.
+
+<hr>
+
+- **Fase 2:**
+A segunda fase apresenta ao jogador a dinâmica principal do jogo, em que o gato, ao tocar em um animal "alvo" na tela (nessa fase em específico, será um pombo), preenche aos poucos o quadro de fundo, que revela uma obra de algum período da arte (nessa fase em específico, arte contemporânea). Após preenchimento desse quadro, é exibido uma tela de vitória que apresenta a obra completa, conjuntamente com um parágrafo explicativo sobre o artista e sua respectiva obra.
+
+- Classes: ContempPhase;
+- Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
+- Métodos: create, update; spawnTarget; clickTarget; movement(target);
+
+<hr>
+
+- **Texto pós-fase:**
+Essa cena apresentará um diálogo por texto que trará informações sobre o período da arte que será abordado na próxima fase, assim como um caminhar da história do jogo.
+Classes, atributos e métodos: Ainda não implementado
+
+- **Fase 3:** 
+A terceira fase apresentará ao jogador um cenário semelhante ao da fase 2, porém com foco em um período da arte diferente (nessa fase em específico, arte moderna). Nessa fase, o animal alvo apresentado será um animal característico do período em questão, sendo, nessa fase, um rato.
+
+- Classes: ModernPhase;
+- Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
+- Métodos: create, update; spawnTarget; clickTarget; movement(target);
+
+<hr>
+
+- **Fase 4:**
+A quarta fase apresentará ao jogador um cenário semelhante ao das outras fases, porém com foco em um período da arte diferente (nessa fase em específico, arte medieval). Nessa fase, o animal alvo apresentado será um animal característico do período em questão, sendo, nessa fase, um coelho. 
+
+- Classes: MedievalPhase;
+- Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
+- Métodos: create, update; spawnTarget; clickTarget; movement(target);
+
+<hr>      
+
+- **Fase 5:** 
+A quinta fase apresentará ao jogador um cenário semelhante ao das outras fases, porém com foco em um período da arte diferente (nessa fase em específico, arte rupestre). Nessa fase o animal alvo apresentado será um animal característico do período em questão, sendo, nessa fase, uma mosca.
+
+- Classes: AncientPhase;
+- Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
+- Métodos: create, update; spawnTarget; clickTarget; movement(target);
+
+<hr>      
+
+- **Fase especial (Tela branca para pintura)**:
+A fase especial apresentará ao jogador uma tela em branco com uma variedade de opções de cores que podem ser escolhidas pelo tutor para seu gato pintar. Após escolhidas as cores, será necessário pressionar um botão para iniciar a fase. Após a iniciação da fase, um animal alvo passará pela tela atraindo a atenção do gato, que, ao acertar o alvo, pintará a região pressionada na tela branca de fundo.   
+
+Classes, métodos e atributos: ainda não implementados.
+
+<hr>
+
+- **Tela de vitória:** A tela de vitória apresenta a arte completa pintada pelo gato, conjuntamente com uma representação visual do autor original da obra. Abaixo há uma breve descrição sobre o contexto da arte e seu artista. Além disso, há uma “métrica” acerca do desempenho do gato, representado em estrelas e % de acerto.
+
+Classes, métodos e atributos: ainda não implementados.
 
 ## 3.6. Regras do jogo (sprint 3)
 
@@ -241,31 +453,31 @@ Em linhas gerais, a primeira versão do jogo “RonRonArte” conta com uma tela
 
 Logo abaixo, estão registrados os prints das telas da primeira versão do jogo.
 
-<h4 align = "center">Tela de início do jogo</h4>
+<p align = "center">Figura 6: tela de início do jogo</p>
 
 ![tela de start RonRonArte](https://github.com/user-attachments/assets/30f3865b-5e98-49f1-906e-e886c33ee157)
 
-<h4 align = "center">Fonte: autoria própria (2025). </h4> <br> <br>
+<p align = "center">Fonte: autoria própria (2025). </p> <br> <br>
 
 
 
-<h4 align = "center">Tela com a primeira cena</h4>
+<p align = "center">Figura 7: tela com a primeira cena</p>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/a2107a97-8d01-4339-8469-bef594f42c61" width="300">
 </div>
 
-<h4 align = "center">Fonte: autoria própria (2025). </h4> <br> <br>
+<p align = "center">Fonte: autoria própria (2025). </p> <br> <br>
 
 
 
-<h4 align = "center">Tela da primeira cena com os splashes de tinta</h4>
+<p align = "center">Figura 8: tela da primeira cena com os splashes de tinta</p>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/9581c99b-c61d-407d-bb58-b492f8a47998" width="300">
 </div>
 
-<h4 align = "center">Fonte: autoria própria (2025). </h4> <br> <br>
+<p align = "center">Fonte: autoria própria (2025). </p> <br> <br>
 
 
 
@@ -276,9 +488,69 @@ Portanto, como próximos passos, notam-se os subsequentes: habilitação de pers
 
 ## 4.2. Desenvolvimento básico do jogo (sprint 2)
 
-A partir da versão preliminar do jogo, realizou-se o desenvolvimento básico do game. Nele, foi acrescentada uma splash screen (com o nome da equipe), a fim de dar mais fluidez à experiência do usuário. Além disso, foi implementado um novo background na tela de início, uma vez que o adicionado na primeira versão foi utilizado com objetivos de teste. Ademais, a tela de start conta com um botão que direciona aos modos de jogo do RonRonArte. Por fim, é válido mencionar que se iniciou a programação das sprites da tela de vitória, além da criação do contador de acertos para verificação do desempenho do jogador em sua gameplay. 
+A partir da versão preliminar do jogo, realizou-se o desenvolvimento básico do game. Nele, foi acrescentado uma splash screen (com o nome da equipe), a fim de dar mais fluidez à experiência do usuário. Além disso, foi implementado um novo background na tela de início (gerada por IA), uma vez que o adicionado na primeira versão foi utilizado com objetivos de teste. Ademais, a tela de start conta com um botão que direciona ao tutorial do RonRonArte, nessa tela haverá disponível um botão para pular o tutorial caso o tutor já tenha o feito ou não queira o fazer, e, após o avanço do tutorial o jogador será redirecionado para a tela de primeira fase do jogo. Além disso, a idealização das fases já foi concluida, restando agora a implementação. Por fim, é válido mencionar que se iniciou a modularização do código, tendo sido refeitas as linhas de código em programação orientada a objetos. Conjunto a isso, houve a programação das sprites da tela de vitória, além da criação do contador de acertos para verificação do desempenho do jogador em sua gameplay. 
 
-*Falta colocar: próximas funcionalidades, próximos passos e eventuais dificuldades.*
+Os próximos passos para o desenvolvimento do jogo se desdobram em alguns objetivos, como:
+- Implementação de mais fases;
+- Melhoria na experiência do usuário;
+- Implementação do modo de pintura livre;
+- Criação de novos sprites de animais.
+
+Eventuais dificuldades presentes no projeto:
+- Familiaridade com a POO (Programação Orientada a Objetos);
+- Gestão de tempo;
+- Produção dos sprites/artes do jogo.
+
+Logo abaixo, estão as telas da versão básica do jogo.
+<p align = 'center'>Figura 9: tela de instruções</p>
+<div align = 'center'>
+  <img width="935" alt="image" src="https://github.com/user-attachments/assets/7081f995-b960-4c10-84eb-42fedf96822f" />
+</div><br>
+
+<p align = 'center'>Fonte: autoria própria (2025).</p> <br>
+
+
+<p align = 'center'>Figura 10: tela de tutorial</p>
+<div align = 'center'>
+  <img width="932" alt="image" src="https://github.com/user-attachments/assets/510f51b9-c320-4c1d-ab87-3690abf2d989" />
+</div><br>
+<p align = 'center'>Fonte: autoria própria (2025).</p><br>
+
+
+<p align = 'center'>Figura 11: tela do início das fases</p>
+<div align = 'center'>
+  <img width="932" alt="image" src="https://github.com/user-attachments/assets/554c235d-a9b9-4f88-8729-2b6302444569" />
+</div><br>
+<p align = 'center'>Fonte: autoria própria (2025).</p> <br>
+
+
+<p align = 'center'>Figura 12: tela de pintura da fase 1</p>
+<div align = 'center'>
+  <img width="933" alt="image" src="https://github.com/user-attachments/assets/8f147d35-bbad-40ca-b773-183bf5c93b6d" />
+</div><br>
+<p align = 'center'>Fonte: autoria própria (2025).</p><br>
+
+
+<p align = 'center'>Figura 13: tela de vitória da fase 1</p>
+<div align = 'center'>
+  <img width="932" alt="image" src="https://github.com/user-attachments/assets/1790cca4-9119-4d94-ac4f-9f7220c094aa" />
+</div><br>
+<p align = 'center'>Fonte: autoria própria (2025).</p><br>
+
+
+<p>Também está representada a modularização do código nas figuras 14 e 15.</p>
+<p align = 'center'>Figura 14: estrutura das pastas após a modularização do código</p>
+<div align = 'center'>
+  <img width="30%" alt="image" src="https://github.com/user-attachments/assets/76b12c16-e454-40a5-80c3-d23deaa03a73"/>
+</div><br>
+<p align = 'center'>Fonte: autoria própria (2025).</p> <br> <br>
+
+
+<p align = 'center'>Figura 15: estrutura da versão básica do jogo (com importações de cenas phaser)</p>
+<div align = 'center'>
+  <img width="70%" alt="image" src="https://github.com/user-attachments/assets/a3d6a5f5-8cad-4108-906c-16fae2e00bf4"/>
+</div><br>
+<p align = 'center'>Fonte: autoria própria (2025).</p> <br>
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
 
@@ -296,14 +568,13 @@ A partir da versão preliminar do jogo, realizou-se o desenvolvimento básico do
 
 ## 5.1. Casos de Teste (sprints 2 a 4)
 
-*Descreva nesta seção os casos de teste comuns que podem ser executados a qualquer momento para testar o funcionamento e integração das partes do jogo. Utilize tabelas para facilitar a organização.*
+## 5.1. Casos de Teste (sprints 2 a 4)
 
-*Exemplo de tabela*
 \# | pré-condição | descrição do teste | pós-condição 
 --- | --- | --- | --- 
-1 | posicionar o jogo na tela de abertura | iniciar o jogo desde seu início | o jogo deve iniciar da fase 1
-2 | posicionar o personagem em local seguro de inimigos | aguardar o tempo passar até o final da contagem | o personagem deve perder uma vida e reiniciar a fase
-3 | ...
+1 | abrir o jogo no smartphone ou tablet | colocar a ração ou o petisco em cima do alvo no tutorial | o gato deve bater na tela quando o alvo aparecer
+2 | tutor clicar no botão de iniciar | induzir o gato a bater na tela | o efeito de "splash" deve acontecer quando o gato clica na tela
+3 | aguardar o alvo passar na tela | deixar o gato comer a ração ou o petisco depois de bater no alvo e de ouvir o som emitido| o gato deve associar o bater no alvo com a recompensa da ração ou do petisco
 
 ## 5.2. Testes de jogabilidade (playtests) (sprint 4)
 
@@ -335,15 +606,9 @@ O que poderia melhorar no jogo? | A responsividade do personagem aos controles, 
 *Relacione também quaisquer ideias que o grupo tenha para melhorias futuras*
 
 # <a name="c7"></a>7. Referências (sprint 5)
-
-_Incluir as principais referências de seu projeto, para que seu parceiro possa consultar caso ele se interessar em aprofundar. Um exemplo de referência de livro e de site:_<br>
-
-LUCK, Heloisa. Liderança em gestão escolar. 4. ed. Petrópolis: Vozes, 2010. <br>
-SOBRENOME, Nome. Título do livro: subtítulo do livro. Edição. Cidade de publicação: Nome da editora, Ano de publicação. <br>
-
-INTELI. Adalove. Disponível em: https://adalove.inteli.edu.br/feed. Acesso em: 1 out. 2023 <br>
-
 INSTITUTO PET BRASIL. Censo Pet IPB: com alta recorde de 6% em um ano, gatos lideram crescimento de animais de estimação no Brasil. 2022. Disponível em: https://institutopetbrasil.com/fique-por-dentro/amor-pelos-animais-impulsiona-os-negocios-2-2/ Acesso em: 18 fev. 2025. <br>
+
+MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia. Rio de Janeiro: Alta Books, 2019. 1 recurso online. ISBN 9788550805047. Disponível em: https://integrada.minhabiblioteca.com.br/books/9788550805047. Acesso em: 28 fev. 2025.
 
 PETZ. Gato tem sentimento? O que e como eles sentem?. [S. l.], 6 ago. 2023. Disponível em: https://www.petz.com.br/blog/pets/gatos/gato-tem-sentimento/. Acesso em: 18 fev. 2025.
 

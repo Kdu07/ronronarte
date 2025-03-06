@@ -10,8 +10,8 @@
 ## Grupo CatUp
 
 ## 👨‍🎓 Integrantes: 
-- Carlos Eduardo
-- Eduardo Jesus
+- <a href="https://github.com/CaduQuaglia">Carlos Eduardo Serrano Quaglia</a>
+- <a href="https://www.linkedin.com/in/eduardo-jesus-tavares-sant-anna-2bb399285/">Eduardo Jesus Tavares Sant'Anna</a>
 - <a href="https://www.linkedin.com/in/felipe-neves-36925a346/">Felipe Neves</a>
 - <a href="https://www.linkedin.com/in/guilherme-guerreiro-025986319/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Guilherme Guerreiro</a>
 - <a href="https://www.linkedin.com/in/luana-de-jesus-lima-8b17a9266/">Luana de Jesus Lima</a>
@@ -34,7 +34,7 @@ Feito por alunos do Inteli - Instituto de Liderança e Tecnologia - em parceria 
 
 Há uma crescente no mercado de pets no Brasil, especialmente para gatos. E com esse crescimento, a demanda de entretenimento para gatos e tutores aumentou. Dessa maneira, surgiu o RonRonArte, um jogo que implementa elementos que instigam o instinto de caça do felino, e ao mesmo tempo entretem e cria um laço com o seu tutor.
 
-<a href="https://two025-1a-t15-in01-g03.onrender.com/">Link do jogo</a>
+<a href="https://inteli-college.github.io/2025-1A-T15-IN01-G03/">Link do jogo</a>
 
 
 ## 📁 Estrutura de pastas
@@ -89,8 +89,9 @@ https://github.com/Inteli-College/2025-1A-T15-IN01-G03.git
   **4. Clique com o botão direito em "index.html" e selecione "Open with Live Server"**
 
 ## 🗃 Histórico de lançamentos
+* 0.2.0 - 28/02/2025 
 * 0.1.0 - 13/02/2025
-    *
+    
 
 ## 📋 Licença/License
 
