@@ -17,9 +17,9 @@ export default class Phase1 extends Phaser.Scene {
         this.maxScore = 3;
         
         // Adiciona máscara branca, quadro e a borda
-        this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setScale(0.35);
-        this.quadro = this.add.image(this.width / 2, this.height / 2, 'quadro').setScale(0.35);
-        this.borda = this.add.image(this.width / 2, this.height / 2, 'borda').setScale(0.35);
+        this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setDisplaySize(this.width, this.width/1.77);
+        this.quadro = this.add.image(this.width / 2, this.height / 2, 'quadro').setDisplaySize(this.width, this.width/1.77);
+        this.borda = this.add.image(this.width / 2, this.height / 2, 'borda').setDisplaySize(this.width, this.width/1.77);
         
         // Torna o quadro visível
         this.quadro.setAlpha(1); 
