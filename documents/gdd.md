@@ -435,11 +435,7 @@ Classes, métodos e atributos: ainda não implementados.
 
 ## 3.7. Mecânicas do jogo (sprint 3)
 
-*Descreva aqui as formas de controle e interação que o jogador tem sobre o jogo: quais os comandos disponíveis, quais combinações de comandos, e quais as ações consequentes desses comandos. Utilize listas ou tabelas para organizar esta seção.*
-
-*Ex. Em um jogo de plataforma 2D para desktop, o jogador pode usar as teclas WASD para mecânicas de andar, mirar para cima, agachar, e as teclas JKL para atacar, correr, arremesar etc.*
-
-*Ex. Em um jogo de puzzle para celular, o jogador pode tocar e arrastar sobre uma peça para movê-la sobre o tabuleiro, ou fazer um toque simples para rotacioná-la*
+As mecânicas do jogo RonRonArte são simples e de fácil entendimento. A mecânica de touch funciona quando o jogador acerta o alvo, assim revelando parte de uma pintura. No modo criativo segue-se uma mecânica parecida, alterando apenas o resultado dela, em que após a ação de clicar e acertar o alvo na tela o jogador irá pintar uma quadro em branco, dessa forma pintando um quadro de autoria do próprio jogador.
 
 ## 3.8. Implementação Matemática de Animação/Movimento (sprint 3)
 
