@@ -19,8 +19,9 @@ export default class Phase1 extends Phaser.Scene {
         // Adiciona máscara branca, quadro e a borda
         this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setDisplaySize(this.width, this.width/1.77);
         this.quadro = this.add.image(this.width / 2, this.height / 2, 'quadro').setDisplaySize(this.width, this.width/1.77);
-        this.borda = this.add.image(this.width / 2, this.height / 2, 'borda').setDisplaySize(this.width, this.width/1.77);
-        
+        this.borda = this.add.image(this.width / 2, this.height / 2, 'borda').setDisplaySize(this.width, this.width/2.3);
+        this.bordaHitbox = this.borda.displayWidth/35;
+
         // Torna o quadro visível
         this.quadro.setAlpha(1); 
         
@@ -56,6 +57,10 @@ export default class Phase1 extends Phaser.Scene {
 
         // Configura e adiciona o pombo na tela
         this.spawnPombo();
+
+        console.log(this.borda.y)
+        console.log(this.borda.height)
+        console.log(this.borda.displayHeight)
     }
 
     update(){
@@ -187,23 +192,23 @@ export default class Phase1 extends Phaser.Scene {
 
     movimento(alvo) {
         // Limite para a borda em X considerando a hitbox do pombo
-        if (alvo.x >= (this.width - alvo.hitboxWidth)) {
+        if (alvo.x >= (this.width - alvo.hitboxWidth - this.bordaHitbox)) {
             // Direção para a esquerda
             alvo.setFlip(false, false);
             alvo.direcaoX = -1;
         }
-        if (alvo.x <= (0 + alvo.hitboxWidth)) {
+        if (alvo.x <= (0 + alvo.hitboxWidth + this.bordaHitbox)) {
             // Direção para a direita
             alvo.setFlip(true, false);
             alvo.direcaoX = 1;
         }
     
         // Limite para a borda em Y considerando a hitbox do pombo
-        if (alvo.y >= (this.height - alvo.hitboxHeight)) {
+        if (alvo.y >= (this.borda.y + (this.borda.displayHeight/2) - alvo.hitboxHeight - this.bordaHitbox)) {
             // Direção para cima
             alvo.direcaoY = -1;
         }
-        if (alvo.y <= (0 + alvo.hitboxHeight)) {
+        if (alvo.y <= (this.borda.y - (this.borda.displayHeight/2) + alvo.hitboxHeight + this.bordaHitbox)) {
             // Direção para baixo
             alvo.direcaoY = 1;
         }

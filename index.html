@@ -23,13 +23,13 @@
         type: Phaser.AUTO,
         width: innerWidth,
         height: innerHeight,
-        scene: [SplashScreen, Menu, Tutorial, BasePhase, Phase1], // Adicione as cenas ao jogo
+        scene: [SplashScreen, /*Menu, Tutorial, BasePhase,*/ Phase1], // Adicione as cenas ao jogo
         scale: {
             mode: Phaser.Scale.RESIZE,
             autoCenter: Phaser.Scale.CENTER_BOTH,
         }
-
     };
+
     // Instancia do jogo
     const game = new Phaser.Game(config);
     
