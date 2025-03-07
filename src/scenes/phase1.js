@@ -165,8 +165,11 @@ export default class Phase1 extends Phaser.Scene {
                     // Adicona tela de vitória depois de 5,7 segundos 
                     setTimeout(() => {
                         let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(0.4);
-                        this.add.image(bgVictory.x-150, bgVictory.y-110, 'quadro').setScale(0.15);
-                        this.add.image(bgVictory.x+300, bgVictory.y-110, 'artista3').setScale(0.23);
+                        this.textMichelangelo = ['Michelangelo foi um renomado\nartista italiano do período\nrenascentista. Com formação\nhumanista e influenciado\npela arte clássica, pode-se\ndizer que ele foi um dos\nmaiores artistas do Ocidente'];
+                        this.add.image(bgVictory.x-150, bgVictory.y-142, 'quadro').setScale(0.15);
+                        this.add.image(bgVictory.x+300, bgVictory.y-142, 'artista3').setScale(0.23);
+                        this.add.image(bgVictory.x+300, bgVictory.y+105, 'textArtistBox').setScale(0.7);
+                        this.textArtist = this.add.text(bgVictory.x+158, bgVictory.y+42, this.textMichelangelo[0], {fontSize:'17px', fill:'#000000'});
                     },5700);
                         
                 } else {
