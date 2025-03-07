@@ -9,6 +9,8 @@ export default class Phase1 extends Phaser.Scene {
         // Facilita a escrita da váriavel para o tamanho da tela
         this.width = this.scale.width;
         this.height = this.scale.height;
+
+        this.totalClicks = 0;
     
         this.parado = false;
 
@@ -104,6 +106,7 @@ export default class Phase1 extends Phaser.Scene {
         this.input.removeAllListeners('pointerdown'); // Ignora todos os cliques anteriores
         // Quando o mouse é clicado
         this.input.on('pointerdown', (pointer) => {
+            this.totalClicks += 1;
             // Se o ponteiro está no do alvo
             if (this.pombo.getBounds().contains(pointer.x, pointer.y) && this.score < this.maxScore) {
                 this.parado = true; // Alvo para de se movimentar
@@ -139,6 +142,8 @@ export default class Phase1 extends Phaser.Scene {
     }
 
     displayVictory() {
+        this.precision = this.score/this.totalClicks*100
+        
         // Adiciona a frase de vitória
         setTimeout(() => {
             let frase = this.add.image(this.quadro.x / 0.95, this.quadro.y / 1.1, 'frase').setScale(0.8);
@@ -186,18 +191,24 @@ export default class Phase1 extends Phaser.Scene {
 
         // Adicona tela de vitória depois de 5,7 segundos 
         setTimeout(() => {
+            // Background
             let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(0.4);
+
+            // Textos
             this.textMichelangelo = ['Michelangelo foi um renomado\nartista italiano do período\nrenascentista. Com formação\nhumanista e influenciado\npela arte clássica, pode-se\ndizer que ele foi um dos\nmaiores artistas do Ocidente'];
             this.textAdao = ['A obra A criação de Adão fica\nno teto da Capela Sistina e\nrepresenta a passagem bíblica\nem que Deus dá origem à\nhumanidade. Realizado com a\ntécnica do afresco, o quadro\nexpressa harmonia, mistério\ne força divina.'];
+            
+            // Imagens
             this.add.image(bgVictory.x - 150, bgVictory.y - 142, 'quadro').setScale(0.15);
             this.add.image(bgVictory.x + 300, bgVictory.y - 142, 'artista3').setScale(0.23);
-            this.textartist = this.add.image(bgVictory.x + 300, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
-            this.textQuadro = this.add.image(bgVictory.x - 100, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
-            this.textArtist = this.add.text(bgVictory.x + 158, bgVictory.y + 42, this.textMichelangelo[0], { fontSize: '17px', fill: '#000000' });
-            this.textQuadro = this.add.text(bgVictory.x - 245, bgVictory.y + 39, this.textAdao[0], { fontSize: '16.3px', fill: '#000000' });
-            this.scoreboard = this.add.text(this.width - 300, 0 + 50, 'Pontos:' + this.score + '/' + this.maxScore, { fontSize: '30px', fill: '#FFFFFF' });
-            this.scoreboard.x = bgVictory.x - 480;
-            this.scoreboard.y = bgVictory.y + 2;
+            let textBoxArtist = this.add.image(bgVictory.x + 300, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
+            let textBoxQuadro = this.add.image(bgVictory.x - 90, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
+            
+            // Textos na tela
+            this.textArtist = this.add.text(textBoxArtist.x - 145, textBoxArtist.y - 70, this.textMichelangelo[0], { fontSize: '17px', fill: '#000000' });
+            this.textQuadro = this.add.text(textBoxQuadro.x - 145, textBoxQuadro.y - 70, this.textAdao[0], { fontSize: '16.3px', fill: '#000000' });
+            this.scoreboard = this.add.text(bgVictory.x - 480, bgVictory.y + 2, 'Pontos:' + this.score + '/' + this.maxScore, { fontSize: '27px', fill: '#000000' });
+            this.precisionText = this.add.text(bgVictory.x - 480, bgVictory.y + 30, 'Precisão:' + Math.round(this.precision) + '%', { fontSize: '27px', fill: '#000000' });
 
             // Botao para proxima fase
             this.next = this.add.text(bgVictory.x + 210, bgVictory.y + 225, 'Próxima Fase', {
