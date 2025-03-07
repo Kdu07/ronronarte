@@ -105,7 +105,7 @@ export default class Phase1 extends Phaser.Scene {
         // Quando o mouse é clicado
         this.input.on('pointerdown', (pointer) => {
             // Se o ponteiro está no do alvo
-            if (this.pombo.getBounds().contains(pointer.x, pointer.y)) {
+            if (this.pombo.getBounds().contains(pointer.x, pointer.y) && this.score < this.maxScore) {
                 this.parado = true; // Alvo para de se movimentar
                 this.score++; // Adiciona 1 ponto à pontuação
                 this.scoreboard.setText('Pontos: ' + this.score + '/' + this.maxScore); // Atualiza o placar
