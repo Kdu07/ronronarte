@@ -172,7 +172,10 @@ export default class Phase1 extends Phaser.Scene {
                         this.textartist = this.add.image(bgVictory.x+300, bgVictory.y+105, 'textArtistBox').setScale(0.7);
                         this.textQuadro = this.add.image(bgVictory.x-100, bgVictory.y+105, 'textArtistBox').setScale(0.7);
                         this.textArtist = this.add.text(bgVictory.x+158, bgVictory.y+42, this.textMichelangelo[0], {fontSize:'17px', fill:'#000000'});
-                        this.textQuadro = this.add.text(bgVictory.x-250, bgVictory.y+39, this.textAdao[0], {fontSize:'17px', fill:'#000000'});
+                        this.textQuadro = this.add.text(bgVictory.x-245, bgVictory.y+39, this.textAdao[0], {fontSize:'16.3px', fill:'#000000'});
+                        this.scoreboard = this.add.text(this.width - 300, 0 + 50, 'Pontos:' + this.score + '/' + this.maxScore, {fontSize:'30px', fill:'#FFFFFF'});
+                        this.scoreboard.x = bgVictory.x-480;
+                        this.scoreboard.y = bgVictory.y+2;
                     },5700);
         
                         
