@@ -166,11 +166,15 @@ export default class Phase1 extends Phaser.Scene {
                     setTimeout(() => {
                         let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(0.4);
                         this.textMichelangelo = ['Michelangelo foi um renomado\nartista italiano do período\nrenascentista. Com formação\nhumanista e influenciado\npela arte clássica, pode-se\ndizer que ele foi um dos\nmaiores artistas do Ocidente'];
+                        this.textAdao = ['A obra A criação de Adão fica\nno teto da Capela Sistina e\nrepresenta a passagem bíblica\nem que Deus dá origem à\nhumanidade. Realizado com a\ntécnica do afresco, o quadro\nexpressa harmonia, mistério\ne força divina.']
                         this.add.image(bgVictory.x-150, bgVictory.y-142, 'quadro').setScale(0.15);
                         this.add.image(bgVictory.x+300, bgVictory.y-142, 'artista3').setScale(0.23);
-                        this.add.image(bgVictory.x+300, bgVictory.y+105, 'textArtistBox').setScale(0.7);
+                        this.textartist = this.add.image(bgVictory.x+300, bgVictory.y+105, 'textArtistBox').setScale(0.7);
+                        this.textQuadro = this.add.image(bgVictory.x-100, bgVictory.y+105, 'textArtistBox').setScale(0.7);
                         this.textArtist = this.add.text(bgVictory.x+158, bgVictory.y+42, this.textMichelangelo[0], {fontSize:'17px', fill:'#000000'});
+                        this.textQuadro = this.add.text(bgVictory.x-250, bgVictory.y+39, this.textAdao[0], {fontSize:'17px', fill:'#000000'});
                     },5700);
+        
                         
                 } else {
                     // Se o jogo não acabou, gera outro pombo
