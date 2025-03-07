@@ -338,7 +338,9 @@ Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.
 <p align ="center">Figura 5: diagrama de cenas - RonRonArte</p>
 
 <img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/Diagrama%20de%20Cenas%20(2).png">
-<p align ="center">Fonte: autoria própria (2025).</p>
+<p align ="center">Fonte: autoria própria (2025).</p> <br>
+
+Caso queira ver o diagrama de cenas no Figma, [clique aqui](https://www.figma.com/design/M9iVkJjgLuhcVnC6v2aUAY/Diagrama-de-Cenas?node-id=0-1&p=f&t=fk8yJVrGBBaLzt2T-0)
 
 #### Diagrama de cenas:
 
@@ -433,11 +435,7 @@ Classes, métodos e atributos: ainda não implementados.
 
 ## 3.7. Mecânicas do jogo (sprint 3)
 
-*Descreva aqui as formas de controle e interação que o jogador tem sobre o jogo: quais os comandos disponíveis, quais combinações de comandos, e quais as ações consequentes desses comandos. Utilize listas ou tabelas para organizar esta seção.*
-
-*Ex. Em um jogo de plataforma 2D para desktop, o jogador pode usar as teclas WASD para mecânicas de andar, mirar para cima, agachar, e as teclas JKL para atacar, correr, arremesar etc.*
-
-*Ex. Em um jogo de puzzle para celular, o jogador pode tocar e arrastar sobre uma peça para movê-la sobre o tabuleiro, ou fazer um toque simples para rotacioná-la*
+As mecânicas do jogo RonRonArte são simples e de fácil entendimento. A mecânica de touch funciona quando o jogador acerta o alvo, e assim, revelando parte de uma pintura. No modo criativo segue-se uma mecânica parecida, alterando apenas o resultado dela, em que após a ação de clicar e acertar o alvo na tela o jogador irá pintar um quadro em branco, dessa forma, pintando um quadro de autoria do próprio jogador.
 
 ## 3.8. Implementação Matemática de Animação/Movimento (sprint 3)
 
