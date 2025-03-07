@@ -4,6 +4,7 @@ export default class BasePhase extends Phaser.Scene {
         // Configura a chave de classe
         super('BasePhase');
     }
+
     
     create(){
         // Facilita a escrita da váriavel para o tamanho da tela
@@ -15,7 +16,7 @@ export default class BasePhase extends Phaser.Scene {
         
         // Configura a pontuação inicial e máxima
         this.score = 0;
-        this.maxScore = 3;
+        //this.maxScore = 3;
 
         // Animação do alvo voando
         this.anims.create({
@@ -26,7 +27,7 @@ export default class BasePhase extends Phaser.Scene {
         });
         
         // Adiciona o placar
-        this.scoreboard = this.add.text(950, 15, 'Pontos:' + this.score, {fontSize:'45px', fill:'#000000'})
+        this.scoreboard = this.add.text(50, 15, 'Pontos:' + this.score, {fontSize:'45px', fill:'#000000'})
 
         // Configura e adiciona o alvo na tela
         this.spawnTarget(); 
@@ -82,15 +83,14 @@ export default class BasePhase extends Phaser.Scene {
                 this.score+= 1; // Adiciona 1 ponto à pontuação
                 this.scoreboard.setText('Pontos: ' + this.score); // Atualiza o placar
 
-                // Se a pontuação atingiu a pontuação máxima
-                if (this.score >= this.maxScore) {
-                    // Espera 1,5 segundos, começa a próxima cena e para a cena atual
-                    this.time.delayedCall(1500, () =>{    
-                        this.scene.start('Phase1');
-                        this.scene.stop('BasePhase');
-                    });
-                } else {
-                    this.spawnTarget(); // Cria um novo alvo após sumir
+                this.spawnTarget();
+
+                // Se a pontuação atingiu 3 pontos, aparece o botão de pular tutorial.
+                if (this.score > 3) {
+                    let skipTutorialButton = this.add.image(this.width - 100, 50, 'skipTutorialButton').setInteractive();
+                    skipTutorialButton.on("pointerdown", ()=>{
+                        this.scene.start("Phase1");
+                    })
                 }
                 
                 //Cria um splash no local do clique
