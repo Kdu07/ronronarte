@@ -166,8 +166,7 @@ export default class Phase1 extends Phaser.Scene {
                     setTimeout(() => {
                         let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(0.4);
                         this.add.image(bgVictory.x-150, bgVictory.y-110, 'quadro').setScale(0.15);
-                        this.add.image(bgVictory.x+300, bgVictory.y-110, 'artista').setScale(0.23);
-                        this.add.image(bgVictory.x / 1.35, bgVictory.y / 2, 'paleta').setScale(0.2);
+                        this.add.image(bgVictory.x+300, bgVictory.y-110, 'artista3').setScale(0.23);
                     },5700);
                         
                 } else {

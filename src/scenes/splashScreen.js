@@ -12,7 +12,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.audio('pru', './assets/audios/pru.mp3');
         this.load.image('PauseBtn', './assets/botões/pause.png');
         this.load.image('quadro', './assets/quadro.png');
-        this.load.image('artista', './assets/artista.png');
+        this.load.image('artista3', './assets/artista3.png');
         this.load.image('paleta', './assets/paleta.png');
         this.load.image('bgVictory', './assets/bgVictory.png');
         this.load.image('star', './assets/star.png');
