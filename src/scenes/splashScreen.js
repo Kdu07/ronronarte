@@ -26,7 +26,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('borda', './assets/borda.png');
         this.load.image('bgMenu', './assets/expanded_startscreen.png');
         this.load.image('botaoStart', './assets/botões/botao_start_preto.png');
-        
+        this.load.image('working', './assets/working.png');
     }
 
     create(){
@@ -41,7 +41,7 @@ export default class SplashScreen extends Phaser.Scene {
             // Aguarda o fadeOut antes de iniciar a próxima cena
             this.time.delayedCall(1500, () => {
                 this.scene.stop('SplashScreen'); // Para a cena atual
-                this.scene.start('Phase1'); // Inicia a cena Menu
+                this.scene.start('Menu'); // Inicia a cena Menu
             }); 
         });          
     }

@@ -76,7 +76,7 @@ export default class BasePhase extends Phaser.Scene {
         // Quando o mouse é clicado
         this.input.on('pointerdown', (pointer) => {
             // Se o ponteiro está no do alvo
-            if (this.target.getBounds().contains(pointer.x, pointer.y)) {
+            if (this.target.getBounds().contains(pointer.x, pointer.y) && this.score < this.maxScore) {
                 this.parado = true; // Alvo para de se movimentar
                 this.target.destroy(); // Destrói o alvo
                 this.score+= 1; // Adiciona 1 ponto à pontuação

@@ -17,8 +17,8 @@ export default class Phase1 extends Phaser.Scene {
         this.maxScore = 3;
         
         // Adiciona máscara branca, quadro e a borda
-        this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setDisplaySize(this.width, this.width/1.77);
-        this.quadro = this.add.image(this.width / 2, this.height / 2, 'quadro').setDisplaySize(this.width, this.width/1.77);
+        this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setDisplaySize(this.width, this.width/1.8);
+        this.quadro = this.add.image(this.width / 2, this.height / 2, 'quadro').setDisplaySize(this.width, this.width/1.8);
         this.borda = this.add.image(this.width / 2, this.height / 2, 'borda').setDisplaySize(this.width, this.width/2.3);
         this.bordaHitbox = this.borda.displayWidth/35;
 
@@ -121,69 +121,8 @@ export default class Phase1 extends Phaser.Scene {
                     // Revela o quadro inteiro
                     this.quadro.setMask();
                     this.quadro.setAlpha(1);
-    
-                    // Adiciona a frase de vitória
-                    setTimeout(() => {
-                        let frase = this.add.image(this.quadro.x/0.95, this.quadro.y/1.1, 'frase').setScale(0.8);
-                        frase.alpha = 0;
-                        this.tweens.add({
-                            targets: frase,
-                            alpha: 1, // Torna visível
-                            duration: 500, // Tempo da animação (0.3s)
-                            ease: 'Linear',
-                            scale: 0.81,
-                            onComplete: () => {
-                                // Após o fade-in, reduzimos a opacidade para 50%
-                                this.tweens.add({
-                                    targets: frase,
-                                    alpha: 0.8, // Mantém opacidade em 50%
-                                    duration: 1000, // Tempo da transição (0.5s)
-                                    scale: 0.6,
-                                    ease: 'Linear'
-                                });
-                            }
-                        },5000);
-    
-                        // Adiciona o aviso de recompensa para o tutor
-                        setTimeout(() => {
-                            let recompensa = this.add.image(this.quadro.x/1, this.quadro.y/0.8, 'recompensa').setScale(0.8);
-                            this.tweens.add({
-                                targets: recompensa,
-                                alpha: 1, // Torna visível
-                                duration: 300, // Tempo da animação (0.3s)
-                                scale: 0.9,
-                                ease: 'Linear',
-                                onComplete: () => {
-                                    // Após o fade-in, reduzimos a opacidade para 50%
-                                    this.tweens.add({
-                                        targets: recompensa,
-                                        alpha: 0.9, // Mantém opacidade em 50%
-                                        duration: 500, // Tempo da transição (0.5s)
-                                        scale: 0.8,
-                                        ease: 'Linear'
-                                    });
-                                }
-                            });
-                        },2000);
-                    },300);
-    
-                    // Adicona tela de vitória depois de 5,7 segundos 
-                    setTimeout(() => {
-                        let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(0.4);
-                        this.textMichelangelo = ['Michelangelo foi um renomado\nartista italiano do período\nrenascentista. Com formação\nhumanista e influenciado\npela arte clássica, pode-se\ndizer que ele foi um dos\nmaiores artistas do Ocidente'];
-                        this.textAdao = ['A obra A criação de Adão fica\nno teto da Capela Sistina e\nrepresenta a passagem bíblica\nem que Deus dá origem à\nhumanidade. Realizado com a\ntécnica do afresco, o quadro\nexpressa harmonia, mistério\ne força divina.']
-                        this.add.image(bgVictory.x-150, bgVictory.y-142, 'quadro').setScale(0.15);
-                        this.add.image(bgVictory.x+300, bgVictory.y-142, 'artista3').setScale(0.23);
-                        this.textartist = this.add.image(bgVictory.x+300, bgVictory.y+105, 'textArtistBox').setScale(0.7);
-                        this.textQuadro = this.add.image(bgVictory.x-100, bgVictory.y+105, 'textArtistBox').setScale(0.7);
-                        this.textArtist = this.add.text(bgVictory.x+158, bgVictory.y+42, this.textMichelangelo[0], {fontSize:'17px', fill:'#000000'});
-                        this.textQuadro = this.add.text(bgVictory.x-245, bgVictory.y+39, this.textAdao[0], {fontSize:'16.3px', fill:'#000000'});
-                        this.scoreboard = this.add.text(this.width - 300, 0 + 50, 'Pontos:' + this.score + '/' + this.maxScore, {fontSize:'30px', fill:'#FFFFFF'});
-                        this.scoreboard.x = bgVictory.x-480;
-                        this.scoreboard.y = bgVictory.y+2;
-                    },5700);
-        
-                        
+
+                    this.displayVictory();                        
                 } else {
                     // Se o jogo não acabou, gera outro pombo
                     this.spawnPombo();
@@ -197,6 +136,83 @@ export default class Phase1 extends Phaser.Scene {
                 this.quadro.setAlpha(1);
             }
         });
+    }
+
+    displayVictory() {
+        // Adiciona a frase de vitória
+        setTimeout(() => {
+            let frase = this.add.image(this.quadro.x / 0.95, this.quadro.y / 1.1, 'frase').setScale(0.8);
+            frase.alpha = 0;
+            this.tweens.add({
+                targets: frase,
+                alpha: 1, // Torna visível
+                duration: 500, // Tempo da animação (0.3s)
+                ease: 'Linear',
+                scale: 0.81,
+                onComplete: () => {
+                    // Após o fade-in, reduzimos a opacidade para 50%
+                    this.tweens.add({
+                        targets: frase,
+                        alpha: 0.8, // Mantém opacidade em 50%
+                        duration: 1000, // Tempo da transição (0.5s)
+                        scale: 0.6,
+                        ease: 'Linear'
+                    });
+                }
+            }, 5000);
+
+            // Adiciona o aviso de recompensa para o tutor
+            setTimeout(() => {
+                let recompensa = this.add.image(this.quadro.x / 1, this.quadro.y / 0.8, 'recompensa').setScale(0.8);
+                this.tweens.add({
+                    targets: recompensa,
+                    alpha: 1, // Torna visível
+                    duration: 300, // Tempo da animação (0.3s)
+                    scale: 0.9,
+                    ease: 'Linear',
+                    onComplete: () => {
+                        // Após o fade-in, reduzimos a opacidade para 50%
+                        this.tweens.add({
+                            targets: recompensa,
+                            alpha: 0.9, // Mantém opacidade em 50%
+                            duration: 500, // Tempo da transição (0.5s)
+                            scale: 0.8,
+                            ease: 'Linear'
+                        });
+                    }
+                });
+            }, 2000);
+        }, 300);
+
+        // Adicona tela de vitória depois de 5,7 segundos 
+        setTimeout(() => {
+            let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(0.4);
+            this.textMichelangelo = ['Michelangelo foi um renomado\nartista italiano do período\nrenascentista. Com formação\nhumanista e influenciado\npela arte clássica, pode-se\ndizer que ele foi um dos\nmaiores artistas do Ocidente'];
+            this.textAdao = ['A obra A criação de Adão fica\nno teto da Capela Sistina e\nrepresenta a passagem bíblica\nem que Deus dá origem à\nhumanidade. Realizado com a\ntécnica do afresco, o quadro\nexpressa harmonia, mistério\ne força divina.'];
+            this.add.image(bgVictory.x - 150, bgVictory.y - 142, 'quadro').setScale(0.15);
+            this.add.image(bgVictory.x + 300, bgVictory.y - 142, 'artista3').setScale(0.23);
+            this.textartist = this.add.image(bgVictory.x + 300, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
+            this.textQuadro = this.add.image(bgVictory.x - 100, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
+            this.textArtist = this.add.text(bgVictory.x + 158, bgVictory.y + 42, this.textMichelangelo[0], { fontSize: '17px', fill: '#000000' });
+            this.textQuadro = this.add.text(bgVictory.x - 245, bgVictory.y + 39, this.textAdao[0], { fontSize: '16.3px', fill: '#000000' });
+            this.scoreboard = this.add.text(this.width - 300, 0 + 50, 'Pontos:' + this.score + '/' + this.maxScore, { fontSize: '30px', fill: '#FFFFFF' });
+            this.scoreboard.x = bgVictory.x - 480;
+            this.scoreboard.y = bgVictory.y + 2;
+
+            // Botao para proxima fase
+            this.next = this.add.text(bgVictory.x + 210, bgVictory.y + 225, 'Próxima Fase', {
+                fontSize: '32px',
+                fill: '#fff',
+                backgroundColor: '#ffd300',
+                padding: { x: 10, y: 5 }
+            })
+            .setInteractive()
+            .on('pointerdown', () => {
+                this.scene.stop('Phase1');
+                this.scene.start('Phase2');
+            })
+
+        }, 5700);
     }
 
     movimento(alvo) {

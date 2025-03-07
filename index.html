@@ -17,13 +17,14 @@
     import BasePhase from "./src/scenes/basePhase.js";
     import Tutorial from "./src/scenes/tutorial.js"
     import Phase1 from "./src/scenes/phase1.js"
+    import Phase2 from "./src/scenes/phase2.js"
 
     // Configurações da cena phaser
     const config = {
         type: Phaser.AUTO,
         width: innerWidth,
         height: innerHeight,
-        scene: [SplashScreen, Menu, Tutorial, BasePhase, Phase1], // Adicione as cenas ao jogo
+        scene: [SplashScreen, Menu, Tutorial, BasePhase, Phase1, Phase2], // Adicione as cenas ao jogo
         scale: {
             mode: Phaser.Scale.RESIZE,
             autoCenter: Phaser.Scale.CENTER_BOTH,
