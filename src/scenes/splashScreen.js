@@ -7,6 +7,7 @@ export default class SplashScreen extends Phaser.Scene {
     preload(){
         // Carrega todos os assets do jogo
         this.load.image('tinta1', './assets/tinta1.png');
+        this.load.image('textArtistBox', './assets/textArtistBox.png');
         this.load.image('splash', './assets/splash.png');
         this.load.spritesheet('pombo', './assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
         this.load.audio('pru', './assets/audios/pru.mp3');
