@@ -26,7 +26,8 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('borda', './assets/borda.png');
         this.load.image('bgMenu', './assets/expanded_startscreen.png');
         this.load.image('botaoStart', './assets/botões/botao_start_preto.png');
-        
+        this.load.image('skipTutorialButton', './assets/botões/pause.png');
+        this.load.image('working', './assets/working.png');
     }
 
     create(){
