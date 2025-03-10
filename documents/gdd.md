@@ -569,8 +569,8 @@ Logo abaixo, estão as telas da versão básica do jogo.
 \# | pré-condição | descrição do teste | pós-condição 
 --- | --- | --- | --- 
 1 | Jogo aberto no dispositivo (smartphone ou tablet) | Tocar no botão “iniciar” | O usuário é direcionado para a cena de tutorial
-2 | Volume do dispoísvel audível | Tocar na tela | As instruções do tutorial surgem conforme o usuário toca na tela
-3 | Lido as instruções do tutorial | Colocar o petisco em cima do alvo conforme instruido | O gato entende que precisa bater no alvo para ser recompensado
+2 | Tutor e gato atentos na tela | Tocar na tela | As instruções do tutorial surgem conforme o usuário toca na tela
+3 | Lido as instruções do tutorial e volume do dispositível audível | Colocar o petisco em cima do alvo conforme instruido | O gato entende que precisa bater no alvo para ser recompensado
 4 | Completado o tutorial | Clicar no botão de pular o tutorial | O usuário é direcionado para a cena da primeira fase
 5 | Volume do dispositivo audível | Gato abate os alvos | O usuário é direcionado para a tela de vitória
 
