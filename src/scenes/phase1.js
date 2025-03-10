@@ -283,5 +283,6 @@ export default class Phase1 extends Phaser.Scene {
         alvo.x += alvo.velocidadeX * alvo.direcaoX;
         alvo.y += alvo.velocidadeY * alvo.direcaoY;
     }
+
 }
 
