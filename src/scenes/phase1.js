@@ -17,7 +17,13 @@ export default class Phase1 extends Phaser.Scene {
         // Configura a pontuação inicial e máxima
         this.score = 0;
         this.maxScore = 3;
-        
+
+        // Configurar o temporizador
+        this.timerText = null;
+        this.startTime = null;
+        this.timerEvent = null;
+        this.elapsedSeconds = 0;
+
         // Adiciona máscara branca, quadro e a borda
         this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setDisplaySize(this.width, this.width/1.8);
         this.quadro = this.add.image(this.width / 2, this.height / 2, 'quadro').setDisplaySize(this.width, this.width/1.8);
@@ -47,22 +53,48 @@ export default class Phase1 extends Phaser.Scene {
         
         // Adiciona o placar
         this.scoreboard = this.add.text(this.width - 300, 0 + 50, 'Pontos:' + this.score + '/' + this.maxScore, {fontSize:'45px', fill:'#FFFFFF'})
-        
+
+        // Adiciona o temporizador
+        this.timerText = this.add.text(10, 10, 'Tempo: 0', { fontSize: '32px', fill: '#fff' });
+
         // Adiciona um botão de pause na tela
         this.PauseBtn = this.add.image(40, 50, 'PauseBtn')
         this.PauseBtn.setInteractive()
+        
         // Configura o botão para voltar ao menu
         this.PauseBtn.on('pointerdown', () => {
             this.scene.start('Menu');
             this.scene.stop('Phase1');
         })
 
+        // Crie o evento do temporizador e guarde a referência
+        this.timerEvent = this.time.addEvent({
+            delay: 1000,
+            callback: this.updateTimer,
+            callbackScope: this,
+            loop: true
+        });
+
+        // Adicione a lógica de término da fase
+        this.time.addEvent({
+            delay: 5000, // Por exemplo, fase termina após 5 segundos
+            callback: this.endPhase,
+            callbackScope: this
+        });
+
+        
         // Configura e adiciona o pombo na tela
         this.spawnPombo();
 
         console.log(this.borda.y)
         console.log(this.borda.height)
         console.log(this.borda.displayHeight)
+    }
+
+    // Função para contar o tempo no temporizador
+    updateTimer() {
+        this.elapsedSeconds++;
+        this.timerText.setText('Tempo: ' + this.elapsedSeconds);
     }
 
     update(){
@@ -188,6 +220,11 @@ export default class Phase1 extends Phaser.Scene {
                 });
             }, 2000);
         }, 300);
+        
+        // trava o evento do temporizador
+        if (this.timerEvent) {
+            this.timerEvent.remove();
+        }
 
         // Adicona tela de vitória depois de 5,7 segundos 
         setTimeout(() => {
@@ -254,5 +291,6 @@ export default class Phase1 extends Phaser.Scene {
         alvo.x += alvo.velocidadeX * alvo.direcaoX;
         alvo.y += alvo.velocidadeY * alvo.direcaoY;
     }
+
 }
 
