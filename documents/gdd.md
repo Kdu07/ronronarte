@@ -574,7 +574,7 @@ Logo abaixo, estão as telas da versão básica do jogo.
 4 | O tutor coloca o petisco em cima do alvo conforme instruído no tutorial | Gato bater no alvo | Splash de tinta aparece no lugar do alvo e é emitido um estímulo sonoro
 5 | O gato compreendeu que deve bater nos alvos para ser recompensado | Apertar botão de pular o tutorial | O tutorial acaba e o jogo direciona para a cena da fase 1
 6 | Fase 1 em curso e volume do dispositível audível | Gato bater no alvo da fase 1 | É revelado parte de um quadro a cada acerto do gato no alvo e é emitido um estímulo sonoro
-6 | Gato abateu o alvo três vezes | Esperar 6 segundos | O jogo direciona para a tela de vitória e é emitido um estímulo sonoro
+7 | Gato abateu o alvo três vezes | Esperar 6 segundos | O jogo direciona para a tela de vitória e é emitido um estímulo sonoro
 
 ## 5.2. Testes de jogabilidade (playtests) (sprint 4)
 
