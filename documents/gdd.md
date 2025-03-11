@@ -562,7 +562,7 @@ Logo abaixo, estão as telas da versão básica do jogo.
 
 \# | pré-condição | descrição do teste | pós-condição 
 --- | --- | --- | --- 
-1 | Jogo mantém proporção correta na tela | Abrir o jogo, naveguar entre os menus e as fases | Imagens visíveis e tela clicável
+1 | Jogo mantém proporção correta na tela | Abrir o jogo, navegar entre os menus e as fases | Imagens visíveis e tela clicável
 2 | Jogo aberto no dispositivo (smartphone ou tablet) | Tocar no botão “iniciar” | O jogo direciona para a cena de tutorial
 3 | Tutor e gato atentos na tela | Ler a instrução do tutorial e tocar na tela | As instruções do tutorial surgem conforme o usuário toca na tela
 4 | Lido as instruções do tutorial e volume do dispositível audível | Pegar um petisco e tocar na tela | Um alvo voa aleatoriamente na tela e inicia uma contagem de pontos infinitamente
