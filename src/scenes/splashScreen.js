@@ -32,7 +32,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('blueSplash', './assets/blueSplash.png');
         this.load.image('greenSplash', './assets/greenSplash.png');
         this.load.image('purpleSplash', './assets/purpleSplash.png');
-
+        this.load.image('optionsBtn', './assets/botões/botao_opcoes_corr_preto.png');
         this.load.image('screenCriative', 'assets/tela_branca.png');
         this.load.image('selectBg', 'assets/textBoxFuncional.png');
         this.load.image('molduraQuadrado','assets/moldura_quadrado.png');

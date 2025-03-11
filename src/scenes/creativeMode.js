@@ -7,7 +7,7 @@ export default class CreativeMode extends Phaser.Scene{
         this.width = this.scale.width;
         this.height = this.scale.height;
         this.background = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setDisplaySize(this.width, this.width/1.8);
-        this.edge = this.add.image(this.width / 2, this.height / 2, 'borda').setDisplaySize(this.width, this.width/2.3);
+        this.edge = this.add.image(this.width / 2, this.height / 2, 'frame').setDisplaySize(this.width, this.width/2.3);
         this.palette = this.add.image(this.width - 100, 100, 'paleta').setScale(0.1).setInteractive();
 
         //Animação para o pombo voar.
