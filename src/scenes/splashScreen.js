@@ -11,8 +11,8 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('splash', './assets/splash.png');
         this.load.spritesheet('pombo', './assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
         this.load.audio('pru', './assets/audios/pru.mp3');
-        this.load.image('PauseBtn', './assets/botões/pause.png');
-        this.load.image('quadro', './assets/quadro.png');
+        this.load.image('pauseBtn', './assets/botões/pause.png');
+        this.load.image('painting', './assets/painting.png');
         this.load.image('artista3', './assets/artista3.png');
         this.load.image('paleta', './assets/paleta.png');
         this.load.image('bgVictory', './assets/bgVictory.png');
@@ -23,7 +23,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('catup', './assets/catup.png');
         this.load.image('bgTutorial', './assets/larger_tiled_background.jpg');
         this.load.image('textBox', './assets/textBox.png');
-        this.load.image('borda', './assets/borda.png');
+        this.load.image('frame', './assets/frame.png');
         this.load.image('bgMenu', './assets/expanded_startscreen.png');
         this.load.image('botaoStart', './assets/botões/botao_start_preto.png');
         this.load.image('skipTutorialButton', './assets/botões/pause.png');
@@ -36,7 +36,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('screenCriative', 'assets/tela_branca.png');
         this.load.image('selectBg', 'assets/textBoxFuncional.png');
         this.load.image('molduraQuadrado','assets/moldura_quadrado.png');
-        
+        this.load.spritesheet('cat', './assets/cat.png', { frameWidth: 64, frameHeight:64 });
     }
 
     create(){

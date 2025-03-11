@@ -19,6 +19,20 @@ export default class Menu extends Phaser.Scene{
         // Ajusta a o jogo de acordo com a tela
         this.scale.on('resize', (gameSize) => this.resizeGame(gameSize), this);
 
+        
+        //ANIMAÇÃO DO GATO PARA USO FUTURO
+
+        this.anims.create({
+            key: 'animCat',
+            frames: this.anims.generateFrameNumbers('cat', { start: 0, end: 3 }),
+            frameRate: 10,
+            repeat: -1
+        });
+
+
+        
+        this.cat = this.add.sprite(500, 800, 'cat').setScale(9);
+        this.cat.play('animCat');
     };
 
     resizeGame(gameSize) {
@@ -28,7 +42,7 @@ export default class Menu extends Phaser.Scene{
         if (this.bgMenu) {
             // Ajusta a escala proporcionalmente
             this.bgMenu.setPosition(width / 2, height / 2);
-            this.bgMenu.setScale(Math.min(width / 800, height / 600)); 
+            this.bgMenu.setScale(Math.min(width / 2000, height / 1400)); 
         }
 
         if (this.botaoStart) {
