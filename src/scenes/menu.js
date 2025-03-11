@@ -12,7 +12,7 @@ export default class Menu extends Phaser.Scene{
         
         // Quando botão start for clicado direciona para a cena Tutorial
         botaoStart.on("pointerdown", () => {
-            this.scene.start('Tutorial')
+            this.scene.start('CreativeMode')
             this.scene.stop('Menu')
         });
 
@@ -21,7 +21,7 @@ export default class Menu extends Phaser.Scene{
 
     };
 
-    resizeGame() {
+    resizeGame(gameSize) {
         // Define o tamanho da tela
         const {width, height} = gameSize;
 

@@ -7,7 +7,7 @@ export default class BasePhase extends Phaser.Scene {
 
     
     create(){
-        // Facilita a escrita da váriavel para o tamanho da tela
+        // Facilita a escrita da variável para o tamanho da tela
         this.width = this.scale.width;
         this.height = this.scale.height;
 
@@ -16,7 +16,6 @@ export default class BasePhase extends Phaser.Scene {
         
         // Configura a pontuação inicial e máxima
         this.score = 0;
-        //this.maxScore = 3;
 
         // Animação do alvo voando
         this.anims.create({
