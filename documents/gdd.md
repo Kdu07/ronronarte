@@ -426,12 +426,7 @@ Classes, métodos e atributos: ainda não implementados.
 Classes, métodos e atributos: ainda não implementados.
 
 ## 3.6. Regras do jogo (sprint 3)
-
-*Descreva aqui as regras do seu jogo: objetivos/desafios, meios para se conseguir alcançar*
-
-*Ex. O jogador deve pilotar o carro e conseguir terminar a corrida dentro de um minuto sem bater em nenhum obstáculo.*
-
-*Ex. O jogador deve concluir a fase dentro do tempo, para obter uma estrela. Se além disso ele coletar todas as moedas, ganha mais uma estrela. E se além disso ele coletar os três medalhões espalhados, ganha mais uma estrela, totalizando três. Ao final do jogo, obtendo três estrelas em todas as fases, desbloqueia o mundo secreto.*  
+No mundo de RonRonArte, o jogador precisa atingir os alvos (animaizinhos) que aparecem na tela por intermédio de cliques nela, completando obras de arte dos mais diversos períodos artísticos (no modo criativo, o jogador deverá criar suas próprias pinturas). A partir disso, ele receberá pontos e, se ele fizer todos os pontos, o tutor será incentivado a dar petiscos ao seu pet, a fim de que ele associe essa ação com a recompensa alimentícia. Logo, há a intersecção entre os instintos naturais de caça do gato, arte e alimentação animal.
 
 ## 3.7. Mecânicas do jogo (sprint 3)
 
