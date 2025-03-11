@@ -14,19 +14,20 @@
     // Importa classes de cenas
     import SplashScreen from "./src/scenes/splashScreen.js";
     import Menu from "./src/scenes/menu.js";
-    import BasePhase from "./src/scenes/basePhase.js";
+    import Phase0 from "./src/scenes/phase0.js";
     import Tutorial from "./src/scenes/tutorial.js"
     import Phase1 from "./src/scenes/phase1.js"
     import Phase2 from "./src/scenes/phase2.js"
-    import Criative from "/src/scenes/Criative.js";
-    import LevelSelect from "/src/scenes/levelSelect.js";
+    import Criative from "./src/scenes/Criative.js";
+    import LevelSelect from "./src/scenes/levelSelect.js";
+    import BasePhase from "./src/scenes/basePhase.js"
 
     // Configurações da cena phaser
     const config = {
         type: Phaser.AUTO,
         width: innerWidth,
         height: innerHeight,
-        scene: [SplashScreen, Menu, Tutorial, BasePhase, Phase1, Criative, LevelSelect], // Adicione as cenas ao jogo
+        scene: [SplashScreen, Menu, Tutorial, Phase0, Phase1, Phase2, Criative, LevelSelect], // Adicione as cenas ao jogo
         scale: {
             mode: Phaser.Scale.RESIZE,
             autoCenter: Phaser.Scale.CENTER_BOTH,

@@ -37,8 +37,8 @@ export default class Tutorial extends Phaser.Scene {
         // Confere se o personagem chegou no meio da tela
         if (this.character.x <= this.scale.width/2 && this.character.y <= this.scale.height/2){
             // Move o personagem em direção ao meio da tela
-            this.character.x += 5;
-            this.character.y += 2;
+            this.character.x += 2.5;
+            this.character.y += 1;
         }else{
             // O personagem está no meio da tela
             
@@ -75,7 +75,7 @@ export default class Tutorial extends Phaser.Scene {
                     // Espera 1,5 segundos
                     this.time.delayedCall(1500, () => {
                         // Começa a próxima cena e finaliza essa
-                        this.scene.start('BasePhase');
+                        this.scene.start('Phase0');
                         this.scene.stop('Tutorial');
                     });
                 }

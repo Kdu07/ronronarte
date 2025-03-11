@@ -1,21 +1,25 @@
+import BasePhase from "./basePhase.js";
+
 // Classe de cena a ser exportada
-export default class Phase2 extends Phaser.Scene {
+export default class Phase2 extends BasePhase {
     constructor() {
         // Configura a chave de classe
-        super('Phase2')
+        super('Phase2', true, 'painting2', 'cat', 'animCat', 'pru')
     }
 
     create(){
-        this.add.image(this.scale.width/2, this.scale.height/2, 'working')
+        this.anims.create({
+            key: 'animCat',
+            frames: this.anims.generateFrameNumbers('cat', { start: 0, end: 3 }),
+            frameRate: 10,
+            repeat: -1
+        });
 
-        // Adiciona um botão de pause na tela
-        this.PauseBtn = this.add.image(40, 50, 'PauseBtn')
-        this.PauseBtn.setInteractive()
-        // Configura o botão para voltar ao menu
-        this.PauseBtn.on('pointerdown', () => {
-            this.scene.start('Menu');
-            this.scene.stop('Phase1');
-        })
-    }        
+        super.create();
+    }
+
+    update(){
+        super.update()
+    }
 }
 
