@@ -562,13 +562,14 @@ Logo abaixo, estão as telas da versão básica do jogo.
 
 \# | pré-condição | descrição do teste | pós-condição 
 --- | --- | --- | --- 
-1 | Jogo aberto no dispositivo (smartphone ou tablet) | Tocar no botão “iniciar” | O jogo direciona para a cena de tutorial
-2 | Tutor e gato atentos na tela | Ler a instrução do tutorial e tocar na tela | As instruções do tutorial surgem conforme o usuário toca na tela
-3 | Lido as instruções do tutorial e volume do dispositível audível | Pegar um petisco e tocar na tela | Um alvo voa aleatoriamente na tela e inicia uma contagem de pontos infinitamente
-4 | O tutor coloca o petisco em cima do alvo conforme instruído no tutorial | Gato bater no alvo | Splash de tinta aparece no lugar do alvo e é emitido um estímulo sonoro
-5 | O gato compreendeu que deve bater nos alvos para ser recompensado | Apertar botão de pular o tutorial | O tutorial acaba e o jogo direciona para a cena da fase 1
-6 | Fase 1 em curso e volume do dispositível audível | Gato bater no alvo da fase 1 | É revelado parte de um quadro a cada acerto do gato no alvo e é emitido um estímulo sonoro
-7 | Gato abateu o alvo três vezes | Esperar 6 segundos | O jogo direciona para a tela de vitória e é emitido um estímulo sonoro
+1 | Jogo mantém proporção correta na tela | Abrir o jogo, naveguar entre os menus e as fases | Imagens visíveis e tela clicável
+2 | Jogo aberto no dispositivo (smartphone ou tablet) | Tocar no botão “iniciar” | O jogo direciona para a cena de tutorial
+3 | Tutor e gato atentos na tela | Ler a instrução do tutorial e tocar na tela | As instruções do tutorial surgem conforme o usuário toca na tela
+4 | Lido as instruções do tutorial e volume do dispositível audível | Pegar um petisco e tocar na tela | Um alvo voa aleatoriamente na tela e inicia uma contagem de pontos infinitamente
+5 | O tutor coloca o petisco em cima do alvo conforme instruído no tutorial | Gato bater no alvo | Splash de tinta aparece no lugar do alvo e é emitido um estímulo sonoro
+6 | O gato compreendeu que deve bater nos alvos para ser recompensado | Apertar botão de pular o tutorial | O tutorial acaba e o jogo direciona para a cena da fase 1
+7 | Fase 1 em curso e volume do dispositível audível | Gato bater no alvo da fase 1 | É revelado parte de um quadro a cada acerto do gato no alvo e é emitido um estímulo sonoro
+8 | Gato abateu o alvo três vezes | Esperar 6 segundos | O jogo direciona para a tela de vitória e é emitido um estímulo sonoro
 
 ## 5.2. Testes de jogabilidade (playtests) (sprint 4)
 
