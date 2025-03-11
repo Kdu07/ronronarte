@@ -426,7 +426,7 @@ Classes, métodos e atributos: ainda não implementados.
 Classes, métodos e atributos: ainda não implementados.
 
 ## 3.6. Regras do jogo (sprint 3)
-No mundo de RonRonArte, o jogador precisa atingir os alvos (animaizinhos) que aparecem na tela por intermédio de cliques nela, completando obras de arte dos mais diversos períodos artísticos (no modo criativo, o jogador deverá criar suas próprias pinturas). A partir disso, ele receberá pontos e, se ele fizer todos os pontos, o tutor será incentivado a dar petiscos ao seu pet, a fim de que ele associe essa ação com a recompensa alimentícia. Logo, há a intersecção entre os instintos naturais de caça do gato, arte e alimentação animal.
+No mundo de RonRonArte, o gato precisa atingir com toques na tela os alvos (animaizinhos) que aparecem na tela e se movem por ela, completando as fases que são obras de arte dos mais diversos períodos artísticos. A partir disso, ele receberá pontos e, se ele fizer todos os pontos, o tutor será incentivado a dar petiscos ao seu pet, a fim de que ele associe essa ação com a recompensa alimentícia. Além disso, são desbloqueados tintas e formatos diferentes que o tutor pode selecionar no modo criativo, nesse modo o gato poderá criar suas próprias pinturas. Logo, há a intersecção entre os instintos naturais de caça do gato, arte e alimentação animal.
 
 ## 3.7. Mecânicas do jogo (sprint 3)
 
