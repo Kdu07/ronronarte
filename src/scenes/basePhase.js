@@ -175,7 +175,7 @@ export default class BasePhase extends Phaser.Scene {
         });
     }
 
-    // Função para quando o pombo é clicado
+    // Função para quando o alvo é clicado
     clickTargetComplete() {
         this.input.removeAllListeners('pointerdown'); // Ignora todos os cliques anteriores
         // Quando o mouse é clicado
