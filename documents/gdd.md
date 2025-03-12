@@ -333,7 +333,7 @@ Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.
 \# | inimigo |  | ocorrências | função | impacto | efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
 1 | Pombo |![pombo](https://github.com/user-attachments/assets/a5622248-210c-4bab-b020-a67c1c3a113e)| No tutorial e na 1°fase | Ficará voando em direção aléatoria paa que o jogador acerte ele | Se for acertado pode revelar uma parte de um quadro, caso esteja no modo história, ou pode pintar uma tela em branco, caso esteja no modo criativo | sons de pombo
-1 | Rato Robótico |![RatoMecanico](https://github.com/user-attachments/assets/12336b6d-147a-4922-8c6d-65c66726c4c8)| Somente na 2°fase | Ficará andando pela tela em direção aléatoria paa que o jogador acerte ele | Se for acertado pode revelar uma parte de um quadro, caso esteja no modo história, ou pode pintar uma tela em branco, caso esteja no modo criativo | sons de de rato
+2 | Rato Robótico |![RatoMecanico](https://github.com/user-attachments/assets/12336b6d-147a-4922-8c6d-65c66726c4c8)| Somente na 2°fase | Ficará andando pela tela em direção aléatoria paa que o jogador acerte ele | Se for acertado pode revelar uma parte de um quadro, caso esteja no modo história, ou pode pintar uma tela em branco, caso esteja no modo criativo | sons de de rato
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 <p align ="center">Figura 5: diagrama de cenas - RonRonArte</p>
