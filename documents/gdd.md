@@ -318,9 +318,12 @@ Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.
 *Exemplo de tabela*
 \# | item |  | como obter | função | efeito sonoro
 --- | --- | --- | --- | --- | ---
-1 | Splash Amarelo | (Imagem do Splash) | Será entregue após a conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
-2 | madeira | <img src="../assets/wood.png"> | há muitas espalhadas em todas as fases | acumula madeira para construir casas | som de madeiras
-3 | ... 
+1 | PawYellow |![splash_amarelo](https://github.com/user-attachments/assets/9e3c67ee-3614-4116-996f-c95e65b93ed0)| Será entregue após a conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
+2 | PawRed | (Imagem do Splash) | Será entregue após a conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
+3 | PawOrange | (Imagem do Splash) | Será entregue após a conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
+4 | PawBlue |![splash_azul](https://github.com/user-attachments/assets/eb6d8494-0c7f-40fb-9ec3-1a9592e07664)| Será Conquistada após passar da 2° Fase, junto de outros Splash's | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
+5 | PawPurple |![splash_roxo](https://github.com/user-attachments/assets/84cb3d4f-5870-4ea4-887f-74007bca7b6f)| Será Conquistada após passar da 2° Fase, junto de outros Splash's | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
+5 | PawPink |![splash_rosa](https://github.com/user-attachments/assets/e8ff66bc-87a5-43b6-945d-e33d824fd6e5)| Será Conquistada após passar da 2° Fase, junto de outros Splash's | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
 
 ### 3.4.2. Bestiário
 
@@ -329,9 +332,8 @@ Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.
 *Exemplo de tabela*
 \# | inimigo |  | ocorrências | função | impacto | efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
-1 | robô terrestre | <img src="../assets/inimigo2.PNG"> |  a partir da fase 1 | ataca o personagem vindo pelo chão em sua direção, com velocidade constante, atirando parafusos | se encostar no inimigo ou no parafuso arremessado, o personagem perde 1 ponto de vida | sons de tiros e engrenagens girando
-2 | robô voador | <img src="../assets/inimigo1.PNG"> | a partir da fase 2 | ataca o personagem vindo pelo ar, fazendo movimento em 'V' quando se aproxima | se encostar, o personagem perde 3 pontos de vida | som de hélice
-3 | ... 
+1 | Pombo |![pombo](https://github.com/user-attachments/assets/a5622248-210c-4bab-b020-a67c1c3a113e)| No tutorial e na 1°fase | Ficará voando em direção aléatoria paa que o jogador acerte ele | Se for acertado pode revelar uma parte de um quadro, caso esteja no modo história, ou pode pintar uma tela em branco, caso esteja no modo criativo | sons de pombo
+1 | Rato Robótico |![RatoMecanico](https://github.com/user-attachments/assets/12336b6d-147a-4922-8c6d-65c66726c4c8)| Somente na 2°fase | Ficará andando pela tela em direção aléatoria paa que o jogador acerte ele | Se for acertado pode revelar uma parte de um quadro, caso esteja no modo história, ou pode pintar uma tela em branco, caso esteja no modo criativo | sons de de rato
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 <p align ="center">Figura 5: diagrama de cenas - RonRonArte</p>
