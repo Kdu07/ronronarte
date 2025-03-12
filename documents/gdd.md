@@ -318,7 +318,7 @@ Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.
 *Exemplo de tabela*
 \# | item |  | como obter | função | efeito sonoro
 --- | --- | --- | --- | --- | ---
-1 | moeda | <img src="../assets/coin.png"> | há muitas espalhadas em todas as fases | acumula dinheiro para comprar outros itens | som de moeda
+1 | Splash Amarelo | (Imagem do Splash) | Será entregue após a conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
 2 | madeira | <img src="../assets/wood.png"> | há muitas espalhadas em todas as fases | acumula madeira para construir casas | som de madeiras
 3 | ... 
 
