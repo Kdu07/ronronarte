@@ -116,7 +116,7 @@ export default class BasePhase extends Phaser.Scene {
         }
 
         // Só move o pombo se ele não foi clicado
-        if (!this.parado){ 
+        if (!this.stopped){ 
             this.movement(this.target);  
         }
     }
@@ -129,14 +129,14 @@ export default class BasePhase extends Phaser.Scene {
 
     spawnTarget() {
         // Inicia a movimentação do pombo
-        this.parado = false;
+        this.stopped = false;
     
         // Gerar uma posição aleatória dentro da área do quadro
         let posX = Phaser.Math.Between(100,500);
         let posY = Phaser.Math.Between(100,500);
         
         // Adiciona o pombo e torna interativo
-        this.target = this.add.sprite(posX, posY, this.targetKey).setScale(1.5);
+        this.target = this.add.sprite(posX, posY, this.targetKey).setScale(1.5).setDepth(20);
         this.target.setInteractive();
         
         // Configura a velocidade aleatória do pombo e a direção inicial de movimento
@@ -162,7 +162,7 @@ export default class BasePhase extends Phaser.Scene {
             if (this.target.getBounds().contains(pointer.x, pointer.y)) {
                 this.score+= 1; // Adiciona 1 ponto à pontuação
 
-                this.parado = true; // Alvo para de se movimentar
+                this.stopped = true; // Alvo para de se movimentar
                 this.target.destroy(); // Destrói o alvo
                 this.clickSound.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
                 this.time.delayedCall(1000, () => {
@@ -183,7 +183,7 @@ export default class BasePhase extends Phaser.Scene {
             this.totalClicks += 1;
             // Se o ponteiro está no alvo
             if (this.target.getBounds().contains(pointer.x, pointer.y) && this.score < this.maxScore) {
-                this.parado = true; // Alvo para de se movimentar
+                this.stopped = true; // Alvo para de se movimentar
                 this.target.destroy(); // Remove o pombo da tela
                 this.clickSound.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
                 this.time.delayedCall(1000, () => {
@@ -219,10 +219,10 @@ export default class BasePhase extends Phaser.Scene {
         
         // Adiciona a frase de vitória
         setTimeout(() => {
-            let frase = this.add.image(this.painting.x / 0.95, this.painting.y / 1.1, 'frase').setScale(0.8);
-            frase.alpha = 0;
+            let phrase = this.add.image(this.painting.x / 0.95, this.painting.y / 1.1, 'phrase').setScale(0.8);
+            phrase.alpha = 0;
             this.tweens.add({
-                targets: frase,
+                targets: phrase,
                 alpha: 1, // Torna visível
                 duration: 500, // Tempo da animação (0.3s)
                 ease: 'Linear',
@@ -230,7 +230,7 @@ export default class BasePhase extends Phaser.Scene {
                 onComplete: () => {
                     // Após o fade-in, reduzimos a opacidade para 50%
                     this.tweens.add({
-                        targets: frase,
+                        targets: phrase,
                         alpha: 0.8, // Mantém opacidade em 50%
                         duration: 1000, // Tempo da transição (0.5s)
                         scale: 0.6,
@@ -241,9 +241,9 @@ export default class BasePhase extends Phaser.Scene {
 
             // Adiciona o aviso de recompensa para o tutor
             setTimeout(() => {
-                let recompensa = this.add.image(this.painting.x / 1, this.painting.y / 0.8, 'recompensa').setScale(0.8);
+                let reward = this.add.image(this.painting.x / 1, this.painting.y / 0.8, 'reward').setScale(0.8);
                 this.tweens.add({
-                    targets: recompensa,
+                    targets: reward,
                     alpha: 1, // Torna visível
                     duration: 300, // Tempo da animação (0.3s)
                     scale: 0.9,
@@ -251,7 +251,7 @@ export default class BasePhase extends Phaser.Scene {
                     onComplete: () => {
                         // Após o fade-in, reduzimos a opacidade para 50%
                         this.tweens.add({
-                            targets: recompensa,
+                            targets: reward,
                             alpha: 0.9, // Mantém opacidade em 50%
                             duration: 500, // Tempo da transição (0.5s)
                             scale: 0.8,
@@ -278,7 +278,7 @@ export default class BasePhase extends Phaser.Scene {
             
             // Imagens
             this.add.image(bgVictory.x - 150, bgVictory.y - 142, this.backgroundKey).setScale(0.15);
-            this.add.image(bgVictory.x + 300, bgVictory.y - 142, 'artista3').setScale(0.23);
+            this.add.image(bgVictory.x + 300, bgVictory.y - 142, 'thirdArtist').setScale(0.23);
             let textBoxArtist = this.add.image(bgVictory.x + 300, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
             let textBoxPainting = this.add.image(bgVictory.x - 90, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
             
