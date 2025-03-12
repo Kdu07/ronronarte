@@ -27,6 +27,15 @@ export default class Menu extends Phaser.Scene{
         // Ajusta a o jogo de acordo com a tela
         this.scale.on('resize', (gameSize) => this.resizeGame(gameSize), this);
 
+        // Obtém todas as cenas registradas
+        const scenes = this.scene.manager.scenes;
+
+        console.log('Cenas configuradas:', scenes);
+
+        // Exibir todas as chaves das cenas
+        scenes.forEach(scene => {
+            console.log('Cena registrada:', scene.sys.settings.key);
+        });
         
         /*
         ANIMAÇÃO DO GATO PARA USO FUTURO
