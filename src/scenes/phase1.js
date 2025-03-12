@@ -26,7 +26,7 @@ export default class Phase1 extends Phaser.Scene {
 
         // Adiciona máscara branca, quadro e a borda
         this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setDisplaySize(this.width, this.width/1.8);
-        this.quadro = this.add.image(this.width / 2, this.height / 2, 'quadro').setDisplaySize(this.width, this.width/1.8);
+        this.quadro = this.add.image(this.width / 2, this.height / 2, 'juanPainting').setDisplaySize(this.width, this.width/1.8);
         this.borda = this.add.image(this.width / 2, this.height / 2, 'borda').setDisplaySize(this.width, this.width/2.3);
         this.bordaHitbox = this.borda.displayWidth/35;
 
@@ -236,7 +236,7 @@ export default class Phase1 extends Phaser.Scene {
             this.textAdao = ['A obra A criação de Adão fica\nno teto da Capela Sistina e\nrepresenta a passagem bíblica\nem que Deus dá origem à\nhumanidade. Realizado com a\ntécnica do afresco, o quadro\nexpressa harmonia, mistério\ne força divina.'];
             
             // Imagens
-            this.add.image(bgVictory.x - 150, bgVictory.y - 142, 'quadro').setScale(0.15);
+            this.add.image(bgVictory.x - 150, bgVictory.y - 142, 'juanPainting').setScale(0.15);
             this.add.image(bgVictory.x + 300, bgVictory.y - 142, 'artista3').setScale(0.23);
             let textBoxArtist = this.add.image(bgVictory.x + 300, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
             let textBoxQuadro = this.add.image(bgVictory.x - 90, bgVictory.y + 105, 'textArtistBox').setScale(0.7);

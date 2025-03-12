@@ -31,6 +31,13 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('screenCriative', 'assets/tela_branca.png');
         this.load.image('selectBg', 'assets/textBoxFuncional.png');
         this.load.image('molduraQuadrado','assets/moldura_quadrado.png');
+        this.load.image('juanPainting', '/assets/JuanPixelAart.png');
+        this.load.image('buttonCriative', '/assets/botões/botao_criativo.png');
+        this.load.image('teste', '/assets/575x56.png');
+        this.load.image('selectTutorial', 'assets/Select_Tutorial.png');
+        this.load.image('selectCriative', 'assets/Select_Criativo.png');
+        this.load.image('selectPhasesUnf', 'assets/Select_PhasesUnf.png');
+        this.load.image('selectPhase1', 'assets/Select_Phase1.png');
         
     }
 
@@ -46,7 +53,7 @@ export default class SplashScreen extends Phaser.Scene {
             // Aguarda o fadeOut antes de iniciar a próxima cena
             this.time.delayedCall(1500, () => {
                 this.scene.stop('SplashScreen'); // Para a cena atual
-                this.scene.start('Menu'); // Inicia a cena Menu
+                this.scene.start('LevelSelect'); // Inicia a cena Menu
             }); 
         });          
     }

@@ -89,7 +89,7 @@ export default class BasePhase extends Phaser.Scene {
                 if (this.score > 3) {
                     let skipTutorialButton = this.add.image(this.width - 100, 50, 'skipTutorialButton').setInteractive();
                     skipTutorialButton.on("pointerdown", ()=>{
-                        this.scene.start("Phase1");
+                        this.scene.start("LevelSelect");
                     })
                 }
                 

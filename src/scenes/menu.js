@@ -9,7 +9,8 @@ export default class Menu extends Phaser.Scene{
         // Adiciona imagens de background e botão jogar
         this.bgMenu = this.add.image(this.scale.width/2, this.scale.height/2, 'bgMenu').setScale(0.60);
         const botaoStart = this.add.image((this.scale.width/2) + 10, this.scale.height/2, 'botaoStart').setInteractive({cursor: "pointer"}).setScale(2);
-        
+      
+
         // Quando botão start for clicado direciona para a cena Tutorial
         botaoStart.on("pointerdown", () => {
             this.scene.start('Tutorial')
