@@ -4,7 +4,7 @@ import BasePhase from "./basePhase.js";
 export default class Phase2 extends BasePhase {
     constructor() {
         // Configura a chave de classe
-        super('Phase2', true, 'painting', 'cat', 'animCat', 'pru')
+        super('Phase2', true, 'painting', 'cat', 'animCat', 'pigeonSound', 'artist3')
     }
 
     create(){

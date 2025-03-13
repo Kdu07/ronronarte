@@ -23,19 +23,19 @@ export default class Tutorial extends Phaser.Scene {
         
         // Animação de voo do personagem
         this.anims.create({
-            key: 'fly',
-            frames: this.anims.generateFrameNumbers('pombo', { start: 0, end: 3 }),
+            key: 'flyPigeon',
+            frames: this.anims.generateFrameNumbers('pigeon', { start: 0, end: 3 }),
             frameRate: 10,
             repeat: -1
         });
 
         // Adiciona o pombo como personagem e inicia a animação
-        this.character = this.add.sprite(0, 0, 'pombo').setScale(2).setFlip(true, false);
-        this.character.play('fly');
+        this.character = this.add.sprite(0, 0, 'pigeon').setScale(2).setFlip(true, false);
+        this.character.play('flyPigeon');
     }
     update(){
         // Confere se o personagem chegou no meio da tela
-        if (this.character.x <= this.scale.width/2 && this.character.y <= this.scale.height/2){
+        if (this.character.x <= this.scale.width/2){
             // Move o personagem em direção ao meio da tela
             this.character.x += 4;
             this.character.y += 2;

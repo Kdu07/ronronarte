@@ -4,14 +4,14 @@ import BasePhase from "./basePhase.js";
 export default class Phase0 extends BasePhase {
     constructor() {
         // Configura a chave de classe
-        super('Phase0', false, 'bgTutorial', 'pombo', 'voo', 'pru')
+        super('Phase0', false, 'bgTutorial', 'pigeon', 'flyPigeon', 'pigeonSound')
     }
 
     create(){
         // Animação do pombo voando
         this.anims.create({
-            key: 'voo',
-            frames: this.anims.generateFrameNumbers('pombo', { start: 0, end: 3 }),
+            key: 'flyPigeon',
+            frames: this.anims.generateFrameNumbers('pigeon', { start: 0, end: 3 }),
             frameRate: 10,
             repeat: -1
         });
