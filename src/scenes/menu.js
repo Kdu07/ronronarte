@@ -12,27 +12,12 @@ export default class Menu extends Phaser.Scene{
         
         // Quando botão start for clicado direciona para a cena Tutorial
         botaoStart.on("pointerdown", () => {
-            this.scene.start('Tutorial')
+            this.scene.start('Phase1')
             this.scene.stop('Menu')
         });
 
         // Ajusta a o jogo de acordo com a tela
         this.scale.on('resize', (gameSize) => this.resizeGame(gameSize), this);
-
-        
-        //ANIMAÇÃO DO GATO PARA USO FUTURO
-
-        this.anims.create({
-            key: 'animCat',
-            frames: this.anims.generateFrameNumbers('cat', { start: 0, end: 3 }),
-            frameRate: 10,
-            repeat: -1
-        });
-
-
-        
-        this.cat = this.add.sprite(500, 800, 'cat').setScale(9);
-        this.cat.play('animCat');
     };
 
     resizeGame(gameSize) {
