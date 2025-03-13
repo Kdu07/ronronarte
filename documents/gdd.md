@@ -214,7 +214,7 @@ Além disso, os gatos domésticos, na ausência de seus tutores, passam por mome
 
 ## 2.1. Objetivos do Jogo (sprint 2)
 
-O objetivo do jogo é fortalecer o laço entre tutor e gato, enquanto ensina uma nova forma de se divertir com o seu pet. O objetivo do gato é eliminar todos os animais da tela num determinado período de tempo, e o tutor deve aprender e exercer a mecânica de ser recompensado ao alcançar esse objetivo. Ademais, nosso jogo contemplará um modo de jogo alternativo em que o gato poderá "pintar" uma tela em branco, produzindo sua própria obra de arte.
+O objetivo do jogo é fortalecer o laço entre tutor e gato, enquanto ensina uma nova forma de se divertir com o seu pet. O objetivo do gato é eliminar todos os animais da tela num determinado período de tempo. Já o objetivo do tutor é o de aprender e exercer a mecânica de recompensar seu pet ao alcançar seu determinado objetivo delimitado entre as fases. Ademais, nosso jogo contemplará um modo de jogo alternativo em que o gato poderá "pintar" uma tela em branco, produzindo sua própria obra de arte.
 
 ## 2.2. Características do Jogo (sprint 2)
 
@@ -261,7 +261,7 @@ Acompanhe seu pet nessa jornada e aprenda um pouco mais sobre a história da art
 ### 3.2.1. Controláveis
 No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador, haja vista que o intuito do jogo é justamente incentivar hábitos de caça ao gato por intermédio de figuras clicáveis na tela (no caso, spritesheets). Desse modo, o objetivo não é que o jogador controle algum personagem no game, mas sim que ele possa eliminá-lo no decorrer do jogo em troca de recompensas alimentícias, a fim de que seus instintos naturais sejam estimulados. Portanto, especificamente no escopo de RonRonArte, o player pode interpretar tal circunstância como um meio pelo qual ele realiza uma ação e, em troca, ganha algo, associando o atingimento de objetivos com as recompensas supracitadas. A partir disso, abaixo estão as spritesheets correspondentes ao que acima foi observado.
 
-<p align = 'center'>Figura 3 - Spritesheet de pombo (RonRonArte)</p><br>
+<p align = 'center'>Figura 3 - Figura do pombo (RonRonArte)</p><br>
 <div align = 'center'>
   <img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/pombo.png?raw=true">
 </div><br>
@@ -276,19 +276,13 @@ O Ronronart contém inclusão em sua jogabilidade, uma vez que o jogador, em alg
 
 ### 3.3.1. Locações Principais e/ou Mapas (sprints 2 e 3)
 
-O jogo vem de uma viagem no tempo, especificadamente por momentos históricos e importantes para a arte de pintura, coletando quadros de pintores famosos desses momentos em que o jogador, o gato, irá visitar. Essa aventura será possível por meio de um portal, fantasioso, que servirá para o jogador poder acessar as fases. Os momentos históricos serão representados por animais que foram o foco e pintores e artes pertencentes a cada respectiva época, por exemplo, o quadro de Van Gogh. Nesse jogo ele não se segue com uma linha do tempo linear.
+  O jogo vem de uma viagem mágica no mundo da arte, coletando quadros de pintores que não receberam o devido reconhecimento de diversas nacionalidades que o jogador, o gato, visitará. Essa aventura será possível por meio de um portal, fantasioso, que servirá para o jogador poder acessar as fases. Os momentos históricos serão representados por animais que são presentes no cotidiano do período apresentado e pintores e artes pertencentes a cada respectiva época, por exemplo, o quadro da Maria Auxiliadora (quadro presente até o momento). O jogo não segue uma história linear, entretanto, o fluxo de fases segue, sendo um level liberado após o outro.
 
 ### 3.3.2. Navegação pelo mundo (sprints 2 e 3)
 O jogador, sendo um gato, atravessará as fases atreves de um portal que o levará para épocas distintas e importantes para o conhecimento artístico da pintura. Com o passar das fases, elas se tornam selecionáveis a preferir do dono do gato, em que depois que o botão de “jogar”, poderá selecionar somente clicando com o dedo no botão referente a fase que for preferível a ser jogada.
 
-### 3.3.3. Condições climáticas e temporais (sprints 2 e 3)
-
-*\<opcional\> Descreva diferentes condições de clima que podem afetar o mundo e as fases, se aplicável*
-
-*Caso seja relevante, descreva como o tempo passa, se ele é um fator limitante ao jogo (ex. contagem de tempo para terminar uma fase)*
-
 ### 3.3.4. Concept Art (sprint 2)
-Uma Concept Art é um documento que mostra as características e os elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo. Com base nisso, realizou-se uma Concept Art de RonRonArte, de maneira a explicitar quais são os seus principais itens visuais e de história.
+Uma Concept Art é um fluxo de imagens que mostra as características e os elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo. Com base nisso, realizou-se uma Concept Art de RonRonArte, de maneira a explicitar quais são os seus principais itens visuais e de história.
 
 <p align = "center">Figura 4: Concept Art - RonRonArte</p>
 
