@@ -312,7 +312,7 @@ export default class BasePhase extends Phaser.Scene {
             .setInteractive()
             .on('pointerdown', () => {
                 this.scene.stop('Phase1');
-                this.scene.start('Phase2');
+                this.scene.start('LevelSelect');
             })
 
         }, 5700);
