@@ -6,6 +6,10 @@ export default class SplashScreen extends Phaser.Scene {
     }
     preload(){
         // Carrega todos os assets do jogo
+        // Quadros e artistas
+        // Elementos da tela de vitória
+        // Alvo
+        // Backgrounds
         this.load.image('tinta1', './assets/tinta1.png');
         this.load.image('textArtistBox', './assets/textArtistBox.png');
         this.load.image('splash', './assets/splash.png');

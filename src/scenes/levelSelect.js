@@ -13,7 +13,7 @@ export default class LevelSelect extends Phaser.Scene {
         this.selectPhasesUnf = this.add.image(this.scale.width/3 + 225, this.scale.height/3 + 164, 'selectPhasesUnf').setScale(0.8).setInteractive();
 
         this.selectCriative.on('pointerdown', () => {        
-            this.scene.start('Criative');    
+            this.scene.start('CreativeMode');    
         });
 
         this.selectTutorial.on('pointerdown', () => {

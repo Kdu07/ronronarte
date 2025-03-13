@@ -65,7 +65,7 @@ export default class CreativeMode extends BasePhase{
                 this.spawnTarget();
                 
                 //Cria um splash no local do clique
-                this.splash = this.add.image(pointer.x, pointer.y, this.selectedSplash).setScale(0.5).setDepth(20);
+                this.splash = this.add.image(pointer.x, pointer.y, this.selectedSplash).setScale(0.5);
             }
         });
         
