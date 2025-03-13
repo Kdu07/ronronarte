@@ -1,31 +1,49 @@
+// Classe de cena a ser exportada
 export default class Menu extends Phaser.Scene{
     constructor(){
+        // Configura a chave de classe
         super('Menu');
     }
 
     create() {
+        // Adiciona imagens de background e botão jogar
         this.bgMenu = this.add.image(this.scale.width/2, this.scale.height/2, 'bgMenu').setScale(0.60);
-        const botaoStart = this.add.image((this.scale.width/2) + 10, this.scale.height/2, 'botaoStart').setInteractive({cursor: "pointer"}).setScale(2);
+        this.startButton = this.add.image((this.scale.width/2) + 10, this.scale.height/2, 'startButton').setInteractive({cursor: "pointer"}).setScale(2);
+        this.creativeButton = this.add.image((this.scale.width/3), this.scale.height/2, 'optionsBtn').setInteractive({cursor: "pointer"}).setScale(2);
 
-        botaoStart.on("pointerdown", () => {
+        // Quando botão start for clicado direciona para a cena Tutorial
+        this.startButton.on("pointerdown", () => {
             this.scene.start('Tutorial')
+            this.scene.stop('Menu')
         });
 
+        // Quando botão de modo criativo for clicado direciona para a cena Tutorial
+        this.creativeButton.on("pointerdown", () => {
+            this.scene.start('CreativeMode')
+            this.scene.stop('Menu')
+        });
+
+
+        // Ajusta a o jogo de acordo com a tela
         this.scale.on('resize', (gameSize) => this.resizeGame(gameSize), this);
 
     };
 
-    resizeGame() {
-
+    resizeGame(gameSize) {
+        // Define o tamanho da tela
         const {width, height} = gameSize;
 
         if (this.bgMenu) {
+            // Ajusta a escala proporcionalmente
             this.bgMenu.setPosition(width / 2, height / 2);
-            this.bgMenu.setScale(Math.min(width / 800, height / 600)); // Ajusta a escala proporcionalmente
+            this.bgMenu.setScale(Math.min(width / 2000, height / 1400)); 
         }
 
-        if (this.botaoStart) {
-            this.botaoStart.setPosition(width / 2 + 10, height / 2);
-    }
+        if (this.startButton) {
+            // Ajusta posição do botão start
+            this.startButton.setPosition(width / 2 + 10, height / 2);
+        }
     };
 }
+
+
