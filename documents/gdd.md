@@ -546,7 +546,7 @@ Logo abaixo, estão as telas da versão básica do jogo.
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
 
-*Descreva e ilustre aqui o desenvolvimento da versão intermediária do jogo, explicando brevemente o que foi entregue em termos de código e jogo. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+No desenvolvimento intermediário do jogo, foram acrescentados mais itens ao game em relação à versão intermediária. Em termos de código, foi adicionada uma classe “basePhase”, que servirá de arquétipo para o desenvolvimento de todas as outras, parecido com um template. Já em termos de jogo, adicionou-se mais uma fase com outra pintura e outro alvo a ser clicado. Ademais, iniciou a implementação do modo criativo do game, que já possui sua principal característica implementada: a seleção de cores por parte do tutor em uma paleta na tela, a fim que seu gato produza suas próprias pinturas de modo personalizado. Por fim, adicionou-se um menu de seleção de níveis, no qual o tutor poderá escolher entre a fase de tutorial, as fases propostas ou o modo criativo.
 
 ## 4.4. Desenvolvimento final do MVP (sprint 4)
 
