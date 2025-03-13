@@ -1,14 +1,23 @@
 // Classe de cena a ser exportada
 export default class BasePhase extends Phaser.Scene {
-    constructor(phaseKey, completePhase, backgroundKey, targetKey, animKey, soundKey) {
+    constructor(phaseKey, completePhase, backgroundKey, targetKey, animKey, soundKey, artistKey, textArtist, textPainting) {
         // Configura a chave de classe
         super(phaseKey);
         this.completePhase = completePhase;
-
         this.backgroundKey = backgroundKey;
         this.soundKey = soundKey;
         this.targetKey = targetKey;
         this.animKey = animKey;
+
+        if(artistKey != undefined){
+            this.artistKey = artistKey;
+        }
+        if(textArtist != undefined){
+            this.textArtist = textArtist;
+        }
+        if(textPainting != undefined){
+            this.textPainting = textPainting;
+        }
     }
 
     create(){
@@ -272,19 +281,24 @@ export default class BasePhase extends Phaser.Scene {
             // Background
             let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(0.4);
 
-            // Textos
-            this.textMichelangelo = ['Michelangelo foi um renomado\nartista italiano do período\nrenascentista. Com formação\nhumanista e influenciado\npela arte clássica, pode-se\ndizer que ele foi um dos\nmaiores artistas do Ocidente'];
-            this.textAdao = ['A obra A criação de Adão fica\nno teto da Capela Sistina e\nrepresenta a passagem bíblica\nem que Deus dá origem à\nhumanidade. Realizado com a\ntécnica do afresco, o quadro\nexpressa harmonia, mistério\ne força divina.'];
-            
             // Imagens
             this.add.image(bgVictory.x - 150, bgVictory.y - 142, this.backgroundKey).setScale(0.15);
-            this.add.image(bgVictory.x + 300, bgVictory.y - 142, 'thirdArtist').setScale(0.23);
+            this.add.image(bgVictory.x + 300, bgVictory.y - 142, this.artistKey).setScale(0.23);
             let textBoxArtist = this.add.image(bgVictory.x + 300, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
             let textBoxPainting = this.add.image(bgVictory.x - 90, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
+            this.anims.create({
+                key: 'animCat',
+                frames: this.anims.generateFrameNumbers('cat', { start: 0, end: 3 }),
+                frameRate: 10,
+                repeat: -1
+            });
+
+            this.cat = this.add.sprite(bgVictory.x - 370, bgVictory.y + 190, 'cat').setScale(9).setFlip(true,false);
+            this.cat.play('animCat');
             
             // Textos na tela
-            this.textArtist = this.add.text(textBoxArtist.x - 145, textBoxArtist.y - 70, this.textMichelangelo[0], { fontSize: '17px', fill: '#000000' });
-            this.textPainting = this.add.text(textBoxPainting.x - 145, textBoxPainting.y - 70, this.textAdao[0], { fontSize: '16.3px', fill: '#000000' });
+            this.textArtistAdded = this.add.text(textBoxArtist.x - 145, textBoxArtist.y - 70, this.textArtist[0], { fontSize: '17px', fill: '#000000' });
+            this.textPaintingAdded = this.add.text(textBoxPainting.x - 145, textBoxPainting.y - 70, this.textPainting[0], { fontSize: '16.3px', fill: '#000000' });
             this.scoreboard = this.add.text(bgVictory.x - 480, bgVictory.y + 2, 'Pontos:' + this.score + '/' + this.maxScore, { fontSize: '27px', fill: '#000000' });
             this.precisionText = this.add.text(bgVictory.x - 480, bgVictory.y + 30, 'Precisão:' + Math.round(this.precision) + '%', { fontSize: '27px', fill: '#000000' });
 
