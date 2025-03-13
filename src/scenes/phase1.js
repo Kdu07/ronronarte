@@ -9,7 +9,7 @@ export default class Phase1 extends BasePhase {
         
 
         // Configura a chave de classe
-        super('Phase1', true, 'painting', 'pigeon', 'flyPigeon', 'pigeonSound', 'artista3', textArtist, textPainting)
+        super('Phase1', true, 'painting', 'pigeon', 'flyPigeon', 'pigeonSound', 'artist3', textArtist, textPainting)
     }
 
     create(){
