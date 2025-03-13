@@ -12,7 +12,7 @@ export default class Menu extends Phaser.Scene{
         
         // Quando botão start for clicado direciona para a cena Tutorial
         botaoStart.on("pointerdown", () => {
-            this.scene.start('Phase1')
+            this.scene.start('Tutorial')
             this.scene.stop('Menu')
         });
 
