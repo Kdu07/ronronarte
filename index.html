@@ -22,26 +22,40 @@
     import CreativeMode from "./src/scenes/creativeMode.js"
     import BasePhase from "./src/scenes/basePhase.js"
 
-    // Configurações da cena phaser
+    // Configurações do Phaser
     const config = {
         type: Phaser.AUTO,
-        width: innerWidth,
-        height: innerHeight,
-        scene: [SplashScreen, Menu, Tutorial, Phase0, Phase1, Phase2, LevelSelect, CreativeMode], // Adicione as cenas ao jogo
+        width: 1600, // Largura base (2:1)
+        height: 800, // Altura base (2:1)
+        scene: [SplashScreen, Menu, Tutorial, Phase0, Phase1, Phase2, LevelSelect, CreativeMode], // Cenas do jogo
         pixelArt: true,
         scale: {
-            mode: Phaser.Scale.RESIZE,
-            autoCenter: Phaser.Scale.CENTER_BOTH,
+            mode: Phaser.Scale.FIT,  // Mantém a proporção 2:1
+            autoCenter: Phaser.Scale.CENTER_BOTH // Centraliza o jogo na tela
         }
     };
 
-    // Instancia do jogo
+    // Instancia o jogo
     const game = new Phaser.Game(config);
-    
-    // Configura o tamanho do jogo de acordo com a tela
-    window.addEventListener("resize", () => {
-        game.scale.resize(window.innerWidth, window.innerHeight);
-    });
+
+    // Evento para redimensionar o jogo mantendo 2:1
+    window.addEventListener('resize', resizeGame);
+
+    function resizeGame() {
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        let gameRatio = 2 / 1; // Proporção fixa de 2:1
+
+        // Ajusta a largura e altura para manter a proporção
+        if (width / height > gameRatio) {
+            width = height * gameRatio;  // Mantém a altura e ajusta a largura
+        } else {
+            height = width / gameRatio;  // Mantém a largura e ajusta a altura
+        }
+
+        game.scale.resize(width, height);
+    }
+
 
   </script>
 </body>
