@@ -9,6 +9,15 @@ export default class BasePhase extends Phaser.Scene {
         this.targetKey = targetKey;
         this.animKey = animKey;
 
+        if(artistKey != undefined){
+            this.artistKey = artistKey;
+        }
+        if(textArtist != undefined){
+            this.textArtist = textArtist;
+        }
+        if(textPainting != undefined){
+            this.textPainting = textPainting;
+        }
     }
 
     create(){
@@ -28,7 +37,7 @@ export default class BasePhase extends Phaser.Scene {
             this.createBackgroundComplete();
             
             // Adiciona o placar
-            this.scoreboard = this.add.text(this.width - 300, 0 + 50, 'Pontos:' + this.score + '/' + this.maxScore, {fontSize:'45px', fill:'#FFFFFF'})
+            this.scoreboard = this.add.text(this.width/2, this.height/200, this.score + '/' + this.maxScore, {fontFamily:'Futura', fontSize:'45px', fill:'#FFFFFF'})
 
             // Adiciona o temporizador
             this.createTimer();
@@ -54,7 +63,7 @@ export default class BasePhase extends Phaser.Scene {
         this.timerEvent = null;
         this.elapsedSeconds = 0;
         
-        this.timerText = this.add.text(10, 10, 'Tempo: 0', { fontSize: '32px', fill: '#fff' });
+        this.timerText = this.add.text(this.width/1.05, this.height/200, '0', { fontFamily:'Futura',fontSize: '45px', fill: '#fff' });
 
         // Crie o evento do temporizador e guarde a referência
         this.timerEvent = this.time.addEvent({
@@ -81,7 +90,7 @@ export default class BasePhase extends Phaser.Scene {
         // Adiciona máscara branca, quadro e a borda
         this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setDisplaySize(this.width, this.width / 1.8);
         this.painting = this.add.image(this.width / 2, this.height / 2, this.backgroundKey).setDisplaySize(this.width, this.width / 1.8);
-        this.frame = this.add.image(this.width / 2, this.height / 2, 'frame').setDisplaySize(this.width, this.width / 2.3);
+        this.frame = this.add.image(this.width / 2, this.height / 2, 'frame').setDisplaySize(this.width, this.width/2.3);
         this.frameHitbox = this.frame.displayWidth / 35;
 
         // Torna o quadro visível
@@ -97,7 +106,7 @@ export default class BasePhase extends Phaser.Scene {
 
     createPauseButton() {
        // Adiciona um botão de pause na tela
-       this.pauseBtn = this.add.image(40, 50, 'pauseBtn')
+       this.pauseBtn = this.add.image(this.width/55, this.height/27, 'pauseBtn').setScale(this.width/1500)
        this.pauseBtn.setInteractive()
        
        // Configura o botão para voltar ao menu
@@ -107,7 +116,7 @@ export default class BasePhase extends Phaser.Scene {
        })
     }
 
-    update(){
+    update(){        
         if(this.completePhase){
             // Confere se o pombo é clicado
             this.clickTargetComplete(); 
@@ -124,7 +133,7 @@ export default class BasePhase extends Phaser.Scene {
     // Função para contar o tempo no temporizador
     updateTimer() {
         this.elapsedSeconds++;
-        this.timerText.setText('Tempo: ' + this.elapsedSeconds);
+        this.timerText.setText(this.elapsedSeconds);
     }
 
     spawnTarget() {
@@ -132,22 +141,22 @@ export default class BasePhase extends Phaser.Scene {
         this.stopped = false;
     
         // Gerar uma posição aleatória dentro da área do quadro
-        let posX = Phaser.Math.Between(100,1900);
-        let posY = Phaser.Math.Between(100,600);
+        let posX = Phaser.Math.Between(50,this.width-50);
+        let posY = Phaser.Math.Between(100,this.height-100);
         
         // Adiciona o pombo e torna interativo
-        this.target = this.add.sprite(posX, posY, this.targetKey).setScale(1.5).setDepth(20);
+        this.target = this.add.sprite(posX, posY, this.targetKey).setScale(this.width/400);
         this.target.setInteractive();
         
         // Configura a velocidade aleatória do pombo e a direção inicial de movimento
-        this.target.speedX = Phaser.Math.Between(2, 3);
-        this.target.speedY = Phaser.Math.Between(2, 3);
+        this.target.speedX = Phaser.Math.Between(2, 6);
+        this.target.speedY = Phaser.Math.Between(3, 5);
         this.target.directionX = -1;
         this.target.directionY = 1;
         
         // Hitbox do pombo (usado para que não saia da tela)
-        this.target.hitboxWidth = 43;
-        this.target.hitboxHeight = 33;
+        this.target.hitboxWidth = 45;
+        this.target.hitboxHeight = 45;
     
         // Inicia a animação de voo do pombo
         this.target.play(this.animKey);
@@ -169,7 +178,7 @@ export default class BasePhase extends Phaser.Scene {
                     this.clickSound.stop(); // Para o som do pombo após 1000ms (1s)
                 });
                 
-                this.splash = this.add.image(pointer.x, pointer.y, 'splash').setScale(0.5); // Cria um splash no local do clique
+                this.splash = this.add.image(pointer.x, pointer.y, 'yellowSplash').setScale(this.width/4000).setAlpha(0.6); // Cria um splash no local do clique
                 this.spawnTarget(); // Adiciona um novo alvo
             }
         });
@@ -190,14 +199,14 @@ export default class BasePhase extends Phaser.Scene {
                     this.clickSound.stop(); // Para o som do pombo após 1000ms (1s)
                 });
                 this.score++; // Adiciona 1 ponto à pontuação
-                this.scoreboard.setText('Pontos: ' + this.score + '/' + this.maxScore); // Atualiza o placar 
+                this.scoreboard.setText(this.score + '/' + this.maxScore); // Atualiza o placar 
 
                 // Cria um splash no local do clique e revela a mesma área do quadro
-                this.splash = this.add.image(pointer.x, pointer.y, 'splash').setScale(2.0);
+                this.splash = this.add.image(pointer.x, pointer.y, 'splash').setScale(this.width/800);
                 this.splash.setAlpha(1);
                 this.revealMask.draw(this.splash, this.splash.x, this.splash.y);
                 this.splash.destroy(); //Remove o splash após liberar a área
-                this.painting.setAlpha(1);
+                this.painting.setAlpha(0.6);
 
                 // Se a pontuação atingiu a pontuação máxima
                 if (this.score >= this.maxScore) {
@@ -270,36 +279,41 @@ export default class BasePhase extends Phaser.Scene {
         // Adiciona tela de vitória depois de 5,7 segundos 
         setTimeout(() => {
             // Background
-            let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(0.4);
+            let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(this.width/900);
 
             // Imagens
-            this.add.image(bgVictory.x + 20, bgVictory.y -110, this.backgroundKey).setScale(0.15);
-            
-            //this.add.image(bgVictory.x + 300, bgVictory.y - 142, this.artistKey).setScale(0.23);
-          // let textBoxArtist = this.add.image(bgVictory.x + 300, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
-           // let textBoxPainting = this.add.image(bgVictory.x - 90, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
-          // this.anims.create({
-            //    key: 'animCat',
-              //  frames: this.anims.generateFrameNumbers('cat', { start: 0, end: 3 }),
-              //frameRate: 10,
-              // repeat: -1
-            //}); 
+            this.add.image(bgVictory.x - 150, bgVictory.y - 142, this.backgroundKey).setScale(0.15);
+            this.add.image(bgVictory.x + 300, bgVictory.y - 142, this.artistKey).setScale(0.23);
+            let textBoxArtist = this.add.image(bgVictory.x + 300, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
+            let textBoxPainting = this.add.image(bgVictory.x - 90, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
+            this.anims.create({
+                key: 'animCat',
+                frames: this.anims.generateFrameNumbers('cat', { start: 0, end: 3 }),
+                frameRate: 10,
+                repeat: -1
+            });
 
-          //  this.cat = this.add.sprite(bgVictory.x - 370, bgVictory.y + 190, 'cat').setScale(9).setFlip(true,false);
-         //   this.cat.play('animCat');
+            this.cat = this.add.sprite(bgVictory.x - 370, bgVictory.y + 190, 'cat').setScale(9).setFlip(true,false);
+            this.cat.play('animCat');
             
             // Textos na tela
-          //  this.textArtistAdded = this.add.text(textBoxArtist.x - 145, textBoxArtist.y - 70, this.textArtist[0], { fontSize: '17px', fill: '#000000' });
-          //  this.textPaintingAdded = this.add.text(textBoxPainting.x - 145, textBoxPainting.y - 70, this.textPainting[0], { fontSize: '16.3px', fill: '#000000' });
-            this.scoreboard = this.add.text(bgVictory.x - 240, bgVictory.y + 225, 'Pontos:' + this.score + '/' + this.maxScore, { fontSize: '27px', fill: '#000000' });
-            this.precisionText = this.add.text(bgVictory.x - 240, bgVictory.y + 250, 'Precisão:' + Math.round(this.precision) + '%', { fontSize: '27px', fill: '#000000' });
+            this.textArtistAdded = this.add.text(textBoxArtist.x - 145, textBoxArtist.y - 70, this.textArtist[0], {fontFamily:'Futura', fontSize: '17px', fill: '#000000' });
+            this.textPaintingAdded = this.add.text(textBoxPainting.x - 145, textBoxPainting.y - 70, this.textPainting[0], {fontFamily:'Futura', fontSize: '16.3px', fill: '#000000' });
+            this.scoreboard = this.add.text(bgVictory.x - 480, bgVictory.y + 2, 'Pontos:' + this.score + '/' + this.maxScore, {fontFamily:'Futura', fontSize: '27px', fill: '#000000' });
+            this.precisionText = this.add.text(bgVictory.x - 480, bgVictory.y + 30, 'Precisão:' + Math.round(this.precision) + '%', {fontFamily:'Futura', fontSize: '27px', fill: '#000000' });
 
             // Botao para proxima fase
-            this.next = this.add.image(bgVictory.x + 350, bgVictory.y + 225, 'buttonContinue').setInteractive().setScale(2.0).on('pointerdown', () => {
+            this.next = this.add.text(bgVictory.x + 210, bgVictory.y + 225, 'Próxima Fase', {
+                fontSize: '32px',
+                fill: '#fff',
+                backgroundColor: '#ffd300',
+                padding: { x: 10, y: 5 }
+            })
+            .setInteractive()
+            .on('pointerdown', () => {
                 this.scene.stop('Phase1');
                 this.scene.start('LevelSelect');
-            
-            });
+            })
 
         }, 5700);
     }
