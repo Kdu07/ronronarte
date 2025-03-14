@@ -70,7 +70,7 @@ export default class SplashScreen extends Phaser.Scene {
             // Aguarda o fadeOut antes de iniciar a próxima cena
             this.time.delayedCall(time1500, () => {
                 this.scene.stop('SplashScreen'); // Para a cena atual
-                this.scene.start('Phase1'); // Inicia a cena Menu
+                this.scene.start('Menu'); // Inicia a cena Menu
             }); 
         });          
     }
