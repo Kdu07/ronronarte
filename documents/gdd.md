@@ -305,9 +305,7 @@ Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.
 
 ## 3.4. Inventário e Bestiário (sprint 3)
 
-### 3.4.1. Inventário
-
-*\<opcional\> Caso seu jogo utilize itens ou poderes para os personagens obterem, descreva-os aqui, indicando títulos, imagens, meios de obtenção e funções no jogo. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes.* 
+### 3.4.1. Inventário 
 
 *Exemplo de tabela*
 \# | item |  | como obter | função | efeito sonoro
