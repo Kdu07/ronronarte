@@ -317,6 +317,8 @@ Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.
 5 | PawPurple |![splash_roxo](https://github.com/user-attachments/assets/84cb3d4f-5870-4ea4-887f-74007bca7b6f)| Será Conquistada após passar da 2° Fase, junto de outros Splash's | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
 5 | PawPink |![splash_rosa](https://github.com/user-attachments/assets/e8ff66bc-87a5-43b6-945d-e33d824fd6e5)| Será Conquistada após passar da 2° Fase, junto de outros Splash's | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
 
+<p align ="center">Fonte: autoria própria (2025).</p> <br>
+
 ### 3.4.2. Bestiário
 
 *Legenda da tabela*
