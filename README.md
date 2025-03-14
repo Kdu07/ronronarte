@@ -33,7 +33,7 @@ Feito por alunos do Inteli - Instituto de Liderança e Tecnologia - em parceria 
 
 Há uma crescente no mercado de pets no Brasil, especialmente para gatos. E com esse crescimento, a demanda de entretenimento para gatos e tutores aumentou. Dessa maneira, surgiu o RonRonArte, um jogo que implementa elementos que instigam o instinto de caça do felino, e ao mesmo tempo entretem e cria um laço com o seu tutor.
 
-<a href="https://inteli-college.github.io/2025-1A-T15-IN01-G03/">Link do jogo</a>
+<a href="https://two025-1a-t15-in01-g03-cadu.onrender.com/">Link do jogo</a>
 
 
 ## 📁 Estrutura de pastas
