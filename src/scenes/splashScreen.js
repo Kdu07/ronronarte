@@ -52,6 +52,10 @@ export default class SplashScreen extends Phaser.Scene {
     }
 
     create(){
+        this.input.once('pointerdown', () => {
+            this.scale.startFullscreen();
+        });
+        
         // Adiciona fade in na splash screen 
         this.cameras.main.fadeIn(1500, 0, 0, 0)
         this.add.image(this.scale.width/2, this.scale.height/2,'catup').setScale(0.5);
