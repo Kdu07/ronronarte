@@ -60,22 +60,42 @@ export default class SplashScreen extends Phaser.Scene {
         } else {
             this.scale.startFullscreen();
         }
-        window.addEventListener('resize', resizeGame);
+
+        setTimeout(() => {
+            this.resizeGame();
+        }, 100);
     });
         
+        let time1500 = 0;
+        let time3000 = 0;
+
         // Adiciona fade in na splash screen 
-        this.cameras.main.fadeIn(1500, 0, 0, 0)
+        this.cameras.main.fadeIn(time1500, 0, 0, 0)
         this.add.image(this.scale.width/2, this.scale.height/2,'catup').setScale(0.5);
 
         // Adiciona fade out na splash screen depois de 3 segundos
-        this.time.delayedCall(3000, () => {
-            this.cameras.main.fadeOut(1500, 0, 0, 0);
+        this.time.delayedCall(time3000, () => {
+            this.cameras.main.fadeOut(time1500, 0, 0, 0);
             
             // Aguarda o fadeOut antes de iniciar a próxima cena
-            this.time.delayedCall(1500, () => {
+            this.time.delayedCall(time1500, () => {
                 this.scene.stop('SplashScreen'); // Para a cena atual
                 this.scene.start('LevelSelect'); // Inicia a cena Menu
             }); 
         });          
+    }
+
+    resizeGame() {
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        let gameRatio = 2 / 1; // Mantém 2:1
+    
+        if (width / height > gameRatio) {
+            width = height * gameRatio;
+        } else {
+            height = width / gameRatio;
+        }
+    
+        game.scale.resize(width, height);
     }
 }

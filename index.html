@@ -31,7 +31,8 @@
         pixelArt: true,
         scale: {
             mode: Phaser.Scale.FIT,  // Mantém a proporção 2:1
-            autoCenter: Phaser.Scale.CENTER_BOTH // Centraliza o jogo na tela
+            autoCenter: Phaser.Scale.CENTER_BOTH, // Centraliza o jogo na tela
+            fullscreenTarget: document.documentElement // Define o alvo para tela cheia
         }
     };
 
