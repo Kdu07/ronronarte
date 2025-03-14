@@ -145,7 +145,7 @@ export default class BasePhase extends Phaser.Scene {
         let posY = Phaser.Math.Between(100,this.height-100);
         
         // Adiciona o pombo e torna interativo
-        this.target = this.add.sprite(posX, posY, this.targetKey).setScale(this.width/800);
+        this.target = this.add.sprite(posX, posY, this.targetKey).setScale(this.width/400);
         this.target.setInteractive();
         
         // Configura a velocidade aleatória do pombo e a direção inicial de movimento
@@ -279,7 +279,7 @@ export default class BasePhase extends Phaser.Scene {
         // Adiciona tela de vitória depois de 5,7 segundos 
         setTimeout(() => {
             // Background
-            let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(0.4);
+            let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(this.width/900);
 
             // Imagens
             this.add.image(bgVictory.x - 150, bgVictory.y - 142, this.backgroundKey).setScale(0.15);
@@ -297,10 +297,10 @@ export default class BasePhase extends Phaser.Scene {
             this.cat.play('animCat');
             
             // Textos na tela
-            this.textArtistAdded = this.add.text(textBoxArtist.x - 145, textBoxArtist.y - 70, this.textArtist[0], { fontSize: '17px', fill: '#000000' });
-            this.textPaintingAdded = this.add.text(textBoxPainting.x - 145, textBoxPainting.y - 70, this.textPainting[0], { fontSize: '16.3px', fill: '#000000' });
-            this.scoreboard = this.add.text(bgVictory.x - 480, bgVictory.y + 2, 'Pontos:' + this.score + '/' + this.maxScore, { fontSize: '27px', fill: '#000000' });
-            this.precisionText = this.add.text(bgVictory.x - 480, bgVictory.y + 30, 'Precisão:' + Math.round(this.precision) + '%', { fontSize: '27px', fill: '#000000' });
+            this.textArtistAdded = this.add.text(textBoxArtist.x - 145, textBoxArtist.y - 70, this.textArtist[0], {fontFamily:'Futura', fontSize: '17px', fill: '#000000' });
+            this.textPaintingAdded = this.add.text(textBoxPainting.x - 145, textBoxPainting.y - 70, this.textPainting[0], {fontFamily:'Futura', fontSize: '16.3px', fill: '#000000' });
+            this.scoreboard = this.add.text(bgVictory.x - 480, bgVictory.y + 2, 'Pontos:' + this.score + '/' + this.maxScore, {fontFamily:'Futura', fontSize: '27px', fill: '#000000' });
+            this.precisionText = this.add.text(bgVictory.x - 480, bgVictory.y + 30, 'Precisão:' + Math.round(this.precision) + '%', {fontFamily:'Futura', fontSize: '27px', fill: '#000000' });
 
             // Botao para proxima fase
             this.next = this.add.text(bgVictory.x + 210, bgVictory.y + 225, 'Próxima Fase', {
