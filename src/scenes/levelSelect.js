@@ -5,12 +5,12 @@ export default class LevelSelect extends Phaser.Scene {
     create() {
 
         this.selectBg = this.add.image(this.scale.width/2, this.scale.height/2, 'selectBg').setDisplaySize(this.scale.width, this.scale.height);
-        this.selectTutorial = this.add.image(this.scale.width/3 - 90, this.scale.height/3, 'selectTutorial').setScale(0.25).setInteractive();
-        this.selectCriative = this.add.image(this.scale.width/3 - 90, this.scale.height/3 + 130, 'selectCriative').setScale(0.25).setInteractive();
-        this.selectPhase1 = this.add.image(this.scale.width/3 + 225, this.scale.height/3 - 34, 'selectPhase1').setScale(0.8).setInteractive();
-        this.selectPhasesUnf = this.add.image(this.scale.width/3 + 225, this.scale.height/3 + 34, 'selectPhasesUnf').setScale(0.8).setInteractive();
-        this.selectPhasesUnf = this.add.image(this.scale.width/3 + 225, this.scale.height/3 + 98, 'selectPhasesUnf').setScale(0.8).setInteractive();
-        this.selectPhasesUnf = this.add.image(this.scale.width/3 + 225, this.scale.height/3 + 164, 'selectPhasesUnf').setScale(0.8).setInteractive();
+        this.selectTutorial = this.add.image(this.scale.width/3 - 150, this.scale.height/3, 'selectTutorial').setScale(0.5).setInteractive();
+        this.selectCriative = this.add.image(this.scale.width/3 - 150, this.scale.height/3 + 270, 'selectCriative').setScale(0.5).setInteractive();
+        this.selectPhase1 = this.add.image(this.scale.width/3 + 455, this.scale.height/3 - 74, 'selectPhase1').setScale(1.5).setInteractive();
+        this.selectPhasesUnf = this.add.image(this.scale.width/3 + 455, this.scale.height/3 + 64, 'selectPhasesUnf').setScale(1.5).setInteractive();
+        this.selectPhasesUnf = this.add.image(this.scale.width/3 + 455, this.scale.height/3 + 198, 'selectPhasesUnf').setScale(1.5).setInteractive();
+        this.selectPhasesUnf = this.add.image(this.scale.width/3 + 455, this.scale.height/3 + 342, 'selectPhasesUnf').setScale(1.5).setInteractive();
 
         this.selectCriative.on('pointerdown', () => {        
             this.scene.start('CreativeMode');    

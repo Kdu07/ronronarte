@@ -9,15 +9,6 @@ export default class BasePhase extends Phaser.Scene {
         this.targetKey = targetKey;
         this.animKey = animKey;
 
-        if(artistKey != undefined){
-            this.artistKey = artistKey;
-        }
-        if(textArtist != undefined){
-            this.textArtist = textArtist;
-        }
-        if(textPainting != undefined){
-            this.textPainting = textPainting;
-        }
     }
 
     create(){
@@ -141,8 +132,8 @@ export default class BasePhase extends Phaser.Scene {
         this.stopped = false;
     
         // Gerar uma posição aleatória dentro da área do quadro
-        let posX = Phaser.Math.Between(100,500);
-        let posY = Phaser.Math.Between(100,500);
+        let posX = Phaser.Math.Between(100,1900);
+        let posY = Phaser.Math.Between(100,600);
         
         // Adiciona o pombo e torna interativo
         this.target = this.add.sprite(posX, posY, this.targetKey).setScale(1.5).setDepth(20);
@@ -282,38 +273,32 @@ export default class BasePhase extends Phaser.Scene {
             let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(0.4);
 
             // Imagens
-            this.add.image(bgVictory.x - 150, bgVictory.y - 142, this.backgroundKey).setScale(0.15);
+            this.add.image(bgVictory.x + 20, bgVictory.y -110, this.backgroundKey).setScale(0.15);
             this.add.image(bgVictory.x + 300, bgVictory.y - 142, this.artistKey).setScale(0.23);
-            let textBoxArtist = this.add.image(bgVictory.x + 300, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
-            let textBoxPainting = this.add.image(bgVictory.x - 90, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
-            this.anims.create({
-                key: 'animCat',
-                frames: this.anims.generateFrameNumbers('cat', { start: 0, end: 3 }),
-                frameRate: 10,
-                repeat: -1
-            });
+          // let textBoxArtist = this.add.image(bgVictory.x + 300, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
+           // let textBoxPainting = this.add.image(bgVictory.x - 90, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
+          // this.anims.create({
+            //    key: 'animCat',
+              //  frames: this.anims.generateFrameNumbers('cat', { start: 0, end: 3 }),
+              //frameRate: 10,
+              // repeat: -1
+            //}); 
 
-            this.cat = this.add.sprite(bgVictory.x - 370, bgVictory.y + 190, 'cat').setScale(9).setFlip(true,false);
-            this.cat.play('animCat');
+          //  this.cat = this.add.sprite(bgVictory.x - 370, bgVictory.y + 190, 'cat').setScale(9).setFlip(true,false);
+         //   this.cat.play('animCat');
             
             // Textos na tela
-            this.textArtistAdded = this.add.text(textBoxArtist.x - 145, textBoxArtist.y - 70, this.textArtist[0], { fontSize: '17px', fill: '#000000' });
-            this.textPaintingAdded = this.add.text(textBoxPainting.x - 145, textBoxPainting.y - 70, this.textPainting[0], { fontSize: '16.3px', fill: '#000000' });
-            this.scoreboard = this.add.text(bgVictory.x - 480, bgVictory.y + 2, 'Pontos:' + this.score + '/' + this.maxScore, { fontSize: '27px', fill: '#000000' });
-            this.precisionText = this.add.text(bgVictory.x - 480, bgVictory.y + 30, 'Precisão:' + Math.round(this.precision) + '%', { fontSize: '27px', fill: '#000000' });
+          //  this.textArtistAdded = this.add.text(textBoxArtist.x - 145, textBoxArtist.y - 70, this.textArtist[0], { fontSize: '17px', fill: '#000000' });
+          //  this.textPaintingAdded = this.add.text(textBoxPainting.x - 145, textBoxPainting.y - 70, this.textPainting[0], { fontSize: '16.3px', fill: '#000000' });
+            this.scoreboard = this.add.text(bgVictory.x - 240, bgVictory.y + 225, 'Pontos:' + this.score + '/' + this.maxScore, { fontSize: '27px', fill: '#000000' });
+            this.precisionText = this.add.text(bgVictory.x - 240, bgVictory.y + 250, 'Precisão:' + Math.round(this.precision) + '%', { fontSize: '27px', fill: '#000000' });
 
             // Botao para proxima fase
-            this.next = this.add.text(bgVictory.x + 210, bgVictory.y + 225, 'Próxima Fase', {
-                fontSize: '32px',
-                fill: '#fff',
-                backgroundColor: '#ffd300',
-                padding: { x: 10, y: 5 }
-            })
-            .setInteractive()
-            .on('pointerdown', () => {
+            this.next = this.add.image(bgVictory.x + 350, bgVictory.y + 225, 'buttonContinue').setInteractive().setScale(2.0).on('pointerdown', () => {
                 this.scene.stop('Phase1');
-                this.scene.start('Phase2');
-            })
+                this.scene.start('LevelSelect');
+            
+            });
 
         }, 5700);
     }

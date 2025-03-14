@@ -17,7 +17,6 @@
     import Phase0 from "./src/scenes/phase0.js"
     import Tutorial from "./src/scenes/tutorial.js"
     import Phase1 from "./src/scenes/phase1.js"
-    import Phase2 from "./src/scenes/phase2.js"
     import LevelSelect from "/src/scenes/levelSelect.js"
     import CreativeMode from "./src/scenes/creativeMode.js"
     import BasePhase from "./src/scenes/basePhase.js"
@@ -27,7 +26,7 @@
         type: Phaser.AUTO,
         width: innerWidth,
         height: innerHeight,
-        scene: [SplashScreen, Menu, Tutorial, Phase0, Phase1, Phase2, LevelSelect, CreativeMode], // Adicione as cenas ao jogo
+        scene: [SplashScreen, Menu, Tutorial, Phase0, Phase1, LevelSelect, CreativeMode], // Adicione as cenas ao jogo
         pixelArt: true,
         scale: {
             mode: Phaser.Scale.RESIZE,
