@@ -4,13 +4,13 @@ export default class LevelSelect extends Phaser.Scene {
     }
     create() {
 
-        this.selectBg = this.add.image(this.scale.width/2, this.scale.height/2, 'selectBg').setDisplaySize(this.scale.width, this.scale.height);
-        this.selectTutorial = this.add.image(this.scale.width/3 - 90, this.scale.height/3, 'selectTutorial').setScale(0.25).setInteractive();
-        this.selectCriative = this.add.image(this.scale.width/3 - 90, this.scale.height/3 + 130, 'selectCriative').setScale(0.25).setInteractive();
-        this.selectPhase1 = this.add.image(this.scale.width/3 + 225, this.scale.height/3 - 34, 'selectPhase1').setScale(0.8).setInteractive();
-        this.selectPhasesUnf = this.add.image(this.scale.width/3 + 225, this.scale.height/3 + 34, 'selectPhasesUnf').setScale(0.8).setInteractive();
-        this.selectPhasesUnf = this.add.image(this.scale.width/3 + 225, this.scale.height/3 + 98, 'selectPhasesUnf').setScale(0.8).setInteractive();
-        this.selectPhasesUnf = this.add.image(this.scale.width/3 + 225, this.scale.height/3 + 164, 'selectPhasesUnf').setScale(0.8).setInteractive();
+        this.selectBg = this.add.image(this.scale.width*0.5, this.scale.height*0.5, 'selectBg').setDisplaySize(this.scale.width, this.scale.height);
+        this.selectTutorial = this.add.image(this.scale.width*0.18, this.scale.height*0.33, 'selectTutorial').setScale(this.scale.width/3200).setInteractive();
+        this.selectCriative = this.add.image(this.scale.width*0.18, this.scale.height*0.67, 'selectCriative').setScale(this.scale.width/3200).setInteractive();
+        this.selectPhase1 = this.add.image(this.scale.width*0.6, this.scale.height*0.25, 'selectPhase1').setScale(this.scale.width/1000).setInteractive();
+        this.selectPhasesUnf = this.add.image(this.scale.width*0.6, this.scale.height*0.42, 'selectPhasesUnf').setScale(this.scale.width/1000).setInteractive();
+        this.selectPhasesUnf = this.add.image(this.scale.width*0.6, this.scale.height*0.58, 'selectPhasesUnf').setScale(this.scale.width/1000).setInteractive();
+        this.selectPhasesUnf = this.add.image(this.scale.width*0.6, this.scale.height*0.75, 'selectPhasesUnf').setScale(this.scale.width/1000).setInteractive();
 
         this.selectCriative.on('pointerdown', () => {        
             this.scene.start('CreativeMode');    
