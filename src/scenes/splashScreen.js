@@ -52,9 +52,15 @@ export default class SplashScreen extends Phaser.Scene {
     }
 
     create(){
-        this.input.once('pointerdown', () => {
+        const fullscreenButton = this.add.text(100, 100, 'Fullscreen', { fontSize: '24px', fill: '#fff' })
+    .setInteractive()
+    .on('pointerdown', () => {
+        if (this.scale.isFullscreen) {
+            this.scale.stopFullscreen();
+        } else {
             this.scale.startFullscreen();
-        });
+        }
+    });
         
         // Adiciona fade in na splash screen 
         this.cameras.main.fadeIn(1500, 0, 0, 0)
