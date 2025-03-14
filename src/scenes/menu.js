@@ -18,7 +18,7 @@ export default class Menu extends Phaser.Scene{
                 this.resizeGame();
                 this.scene.start('LevelSelect')
                 this.scene.stop('Menu')
-            }, 2000);
+            }, 4000);
 
 
             
