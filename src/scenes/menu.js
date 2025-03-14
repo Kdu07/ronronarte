@@ -18,10 +18,7 @@ export default class Menu extends Phaser.Scene{
                 this.resizeGame();
                 this.scene.start('LevelSelect')
                 this.scene.stop('Menu')
-            }, 4000);
-
-
-            
+            }, 1000);
         });
         /*
         this.fullscreenButton = this.add.image(this.scale.width/7, this.scale.height/1.18, 'fullscreen')
