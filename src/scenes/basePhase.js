@@ -37,7 +37,7 @@ export default class BasePhase extends Phaser.Scene {
             this.createBackgroundComplete();
             
             // Adiciona o placar
-            this.scoreboard = this.add.text(this.width/2, this.height/200, this.score + '/' + this.maxScore, {fontFamily:'Futura', fontSize:'45px', fill:'#FFFFFF'})
+            this.scoreboard = this.add.text(this.width/1000, this.height/2, this.score + '/' + this.maxScore, {fontFamily:'Futura', fontSize:'40px', fill:'#FFFFFF'})
 
             // Adiciona o temporizador
             this.createTimer();
@@ -63,7 +63,7 @@ export default class BasePhase extends Phaser.Scene {
         this.timerEvent = null;
         this.elapsedSeconds = 0;
         
-        this.timerText = this.add.text(this.width/1.05, this.height/200, '0', { fontFamily:'Futura',fontSize: '45px', fill: '#fff' });
+        this.timerText = this.add.text(this.width/300, this.height/1.15, '0', { fontFamily:'Futura',fontSize: '40px', fill: '#FFFFFF' });
 
         // Crie o evento do temporizador e guarde a referência
         this.timerEvent = this.time.addEvent({
@@ -88,9 +88,9 @@ export default class BasePhase extends Phaser.Scene {
 
     createBackgroundComplete() {
         // Adiciona máscara branca, quadro e a borda
-        this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setDisplaySize(this.width, this.width / 1.8);
-        this.painting = this.add.image(this.width / 2, this.height / 2, this.backgroundKey).setDisplaySize(this.width, this.width / 1.8);
-        this.frame = this.add.image(this.width / 2, this.height / 2, 'frame').setDisplaySize(this.width, this.width/2.3);
+        this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setDisplaySize(this.width, this.width/1.4);
+        this.painting = this.add.image(this.width / 2, this.height / 2, this.backgroundKey).setDisplaySize(this.width/1.065, (this.width / 1.77)/1.03);
+        this.frame = this.add.image(this.width / 2, this.height / 2, 'frame2').setDisplaySize(this.width, this.height);
         this.frameHitbox = this.frame.displayWidth / 35;
 
         // Torna o quadro visível
