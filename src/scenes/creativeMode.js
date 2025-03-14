@@ -29,7 +29,7 @@ export default class CreativeMode extends BasePhase{
         //Criando os botões de splash.
         this.splashesButtons = this.add.group();
         this.splashes.forEach((splash, index) =>{
-            let splashButton = this.add.image(this.width - 100, 160 + (index * 80), splash).setInteractive().setScale(0.2).setVisible(false).setDepth(20);
+            let splashButton = this.add.image(this.width - 100, 160 + (index * 80), splash).setInteractive().setScale(this.width/3500).setVisible(false).setDepth(20);
 
             splashButton.on('pointerdown', () =>{
                 this.selectedSplash = splash;
