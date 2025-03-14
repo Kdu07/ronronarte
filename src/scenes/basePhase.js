@@ -206,7 +206,7 @@ export default class BasePhase extends Phaser.Scene {
                 this.splash.setAlpha(1);
                 this.revealMask.draw(this.splash, this.splash.x, this.splash.y);
                 this.splash.destroy(); //Remove o splash após liberar a área
-                this.painting.setAlpha(1);
+                this.painting.setAlpha(0.6);
 
                 // Se a pontuação atingiu a pontuação máxima
                 if (this.score >= this.maxScore) {

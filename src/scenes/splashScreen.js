@@ -51,25 +51,12 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('selectPhase1', 'assets/Select_Phase1.png');
         this.load.spritesheet('cat', './assets/cat.png', { frameWidth: 64, frameHeight:64 });
         this.load.image('continueBtn', './assets/botões/botao_continuar_preto.png');
+        this.load.image('fullscreen', './assets/fullscreen.png');
     }
 
-    create(){
-        const fullscreenButton = this.add.text(100, 100, 'Fullscreenn', { fontSize: '24px', fill: '#fff' })
-    .setInteractive()
-    .on('pointerdown', () => {
-        if (this.scale.isFullscreen) {
-            this.scale.stopFullscreen();
-        } else {
-            this.scale.startFullscreen();
-        }
-
-        setTimeout(() => {
-            this.resizeGame();
-        }, 100);
-    });
-        
+    create(){    
         let time1500 = 0;//1500;
-        let time3000 = 0;//4000;
+        let time3000 = 0;//3000;
 
         // Adiciona fade in na splash screen 
         this.cameras.main.fadeIn(time1500, 0, 0, 0)
@@ -82,7 +69,7 @@ export default class SplashScreen extends Phaser.Scene {
             // Aguarda o fadeOut antes de iniciar a próxima cena
             this.time.delayedCall(time1500, () => {
                 this.scene.stop('SplashScreen'); // Para a cena atual
-                this.scene.start('Phase1'); // Inicia a cena Menu
+                this.scene.start('Menu'); // Inicia a cena Menu
             }); 
         });          
     }
