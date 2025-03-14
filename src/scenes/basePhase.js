@@ -149,14 +149,14 @@ export default class BasePhase extends Phaser.Scene {
         this.target.setInteractive();
         
         // Configura a velocidade aleatória do pombo e a direção inicial de movimento
-        this.target.speedX = Phaser.Math.Between(2, 3);
-        this.target.speedY = Phaser.Math.Between(2, 3);
+        this.target.speedX = Phaser.Math.Between(2, 6);
+        this.target.speedY = Phaser.Math.Between(3, 5);
         this.target.directionX = -1;
         this.target.directionY = 1;
         
         // Hitbox do pombo (usado para que não saia da tela)
-        this.target.hitboxWidth = 70;
-        this.target.hitboxHeight = 70;
+        this.target.hitboxWidth = 45;
+        this.target.hitboxHeight = 45;
     
         // Inicia a animação de voo do pombo
         this.target.play(this.animKey);
