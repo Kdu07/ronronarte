@@ -106,7 +106,7 @@ export default class BasePhase extends Phaser.Scene {
 
     createPauseButton() {
        // Adiciona um botão de pause na tela
-       this.pauseBtn = this.add.image(40, 50, 'pauseBtn')
+       this.pauseBtn = this.add.image(this.width/40, this.height/20, 'pauseBtn').setScale(this.width/1500)
        this.pauseBtn.setInteractive()
        
        // Configura o botão para voltar ao menu
@@ -116,7 +116,7 @@ export default class BasePhase extends Phaser.Scene {
        })
     }
 
-    update(){
+    update(){        
         if(this.completePhase){
             // Confere se o pombo é clicado
             this.clickTargetComplete(); 
@@ -141,11 +141,11 @@ export default class BasePhase extends Phaser.Scene {
         this.stopped = false;
     
         // Gerar uma posição aleatória dentro da área do quadro
-        let posX = Phaser.Math.Between(100,500);
-        let posY = Phaser.Math.Between(100,500);
+        let posX = Phaser.Math.Between(50,this.width-50);
+        let posY = Phaser.Math.Between(50,this.height-50);
         
         // Adiciona o pombo e torna interativo
-        this.target = this.add.sprite(posX, posY, this.targetKey).setScale(1.5).setDepth(20);
+        this.target = this.add.sprite(posX, posY, this.targetKey).setScale(this.width/800);
         this.target.setInteractive();
         
         // Configura a velocidade aleatória do pombo e a direção inicial de movimento
@@ -178,7 +178,7 @@ export default class BasePhase extends Phaser.Scene {
                     this.clickSound.stop(); // Para o som do pombo após 1000ms (1s)
                 });
                 
-                this.splash = this.add.image(pointer.x, pointer.y, 'splash').setScale(0.5); // Cria um splash no local do clique
+                this.splash = this.add.image(pointer.x, pointer.y, 'splash').setScale(this.width/4000).setAlpha(0.5); // Cria um splash no local do clique
                 this.spawnTarget(); // Adiciona um novo alvo
             }
         });

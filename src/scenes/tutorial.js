@@ -30,22 +30,22 @@ export default class Tutorial extends Phaser.Scene {
         });
 
         // Adiciona o pombo como personagem e inicia a animação
-        this.character = this.add.sprite(0, 0, 'pigeon').setScale(2).setFlip(true, false);
+        this.character = this.add.sprite(0, 0, 'pigeon').setScale(this.scale.width/400).setFlip(true, false);
         this.character.play('flyPigeon');
     }
     update(){
         // Confere se o personagem chegou no meio da tela
         if (this.character.x <= this.scale.width/2){
             // Move o personagem em direção ao meio da tela
-            this.character.x += 4;
-            this.character.y += 2;
+            this.character.x += this.scale.width/800;
+            this.character.y += this.scale.height/1000;
         }else{
             // O personagem está no meio da tela
             
             // Se o a caixa de texto e o texto ainda não foram adicionados
             if(!this.textAdded){
                 // Adiciona os elementos
-                this.textBox = this.add.image(this.scale.width/2, this.scale.height - 120, 'textBox').setScale(1.2);
+                this.textBox = this.add.image(this.scale.width/2, this.scale.height/1.2, 'textBox').setScale(this.scale.width/1000);
                 this.tutorialText = this.add.text(this.textBox.x - 350, this.textBox.y - 80, this.tutorialTexts[this.clicks], {fontSize:'30px', fill:'#000000'})
                 this.textAdded = true; // Altera a flag para true
             }
@@ -70,7 +70,7 @@ export default class Tutorial extends Phaser.Scene {
                     this.tutorialText.destroy();
                     
                     // Adiciona o splash 
-                    this.add.image(this.character.x, this.character.y, 'splash').setScale(0.5);
+                    this.add.image(this.character.x, this.character.y, 'splash').setScale(this.scale.width/2500);
                     
                     // Espera 1,5 segundos
                     this.time.delayedCall(1500, () => {
