@@ -46,7 +46,7 @@ export default class Tutorial extends Phaser.Scene {
             if(!this.textAdded){
                 // Adiciona os elementos
                 this.textBox = this.add.image(this.scale.width/2, this.scale.height/1.2, 'textBox').setScale(this.scale.width/1000);
-                this.tutorialText = this.add.text(this.textBox.x - 350, this.textBox.y - 80, this.tutorialTexts[this.clicks], {fontSize:'30px', fill:'#000000'})
+                this.tutorialText = this.add.text(this.textBox.x - 350, this.textBox.y - 80, this.tutorialTexts[this.clicks], {fontSize:'15px', fill:'#000000'})
                 this.textAdded = true; // Altera a flag para true
             }
 

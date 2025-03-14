@@ -9,9 +9,9 @@ export default class CreativeMode extends BasePhase{
         //Adicionando a borda e a paleta.
         this.width = this.scale.width;
         this.height = this.scale.height;
-        this.edge = this.add.image(this.width / 2, this.height / 2, 'frame').setDisplaySize(this.width, this.width/2.3).setDepth(10);
-        this.palette = this.add.image(this.width - 100, 100, 'palette').setScale(0.1).setInteractive().setDepth(100);
-
+        this.bg = this.add.image(this.width/2, this.height/2, 'bgWhite').setScale(this.width/2500);
+        this.palette = this.add.image(this.width/1.065, this.height*0.11, 'palette').setScale(this.width/12000).setInteractive();
+        
         //Animação para o pombo voar.
         this.anims.create({
             key: 'flyPigeon',
@@ -62,10 +62,9 @@ export default class CreativeMode extends BasePhase{
             if (this.target.getBounds().contains(pointer.x, pointer.y)) {
                 this.stopped = true; // Alvo para de se movimentar
                 this.target.destroy(); // Destrói o alvo
-                this.spawnTarget();
-                
                 //Cria um splash no local do clique
                 this.splash = this.add.image(pointer.x, pointer.y, this.selectedSplash).setScale(0.5);
+                this.spawnTarget();
             }
         });
         
