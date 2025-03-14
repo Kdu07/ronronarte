@@ -66,8 +66,8 @@ export default class SplashScreen extends Phaser.Scene {
         }, 100);
     });
         
-        let time1500 = 0;
-        let time3000 = 0;
+        let time1500 = 1500;
+        let time3000 = 4000;
 
         // Adiciona fade in na splash screen 
         this.cameras.main.fadeIn(time1500, 0, 0, 0)
