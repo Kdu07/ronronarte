@@ -52,7 +52,7 @@ export default class SplashScreen extends Phaser.Scene {
     }
 
     create(){
-        const fullscreenButton = this.add.text(100, 100, 'Fullscreen', { fontSize: '24px', fill: '#fff' })
+        const fullscreenButton = this.add.text(100, 100, 'Fullscreenn', { fontSize: '24px', fill: '#fff' })
     .setInteractive()
     .on('pointerdown', () => {
         if (this.scale.isFullscreen) {
@@ -60,6 +60,7 @@ export default class SplashScreen extends Phaser.Scene {
         } else {
             this.scale.startFullscreen();
         }
+        window.addEventListener('resize', resizeGame);
     });
         
         // Adiciona fade in na splash screen 
