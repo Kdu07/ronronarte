@@ -310,12 +310,12 @@ Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.
 *Legenda da tabela*
 \# | item |  | Como obter | Função | Efeito sonoro
 --- | --- | --- | --- | --- | ---
-1 | PawYellow |![splash_amarelo](https://github.com/user-attachments/assets/9e3c67ee-3614-4116-996f-c95e65b93ed0)| Será entregue após a conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
-2 | PawRed |![vermelhoclaro](https://github.com/user-attachments/assets/f4e62404-2d30-496c-be8a-44a80d24abe7)| Será entregue após a conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
-3 | PawOrange |![laranja](https://github.com/user-attachments/assets/4f2e7185-eb8e-4ef1-8a80-59a62a98a1bd)| Será entregue após a conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
-4 | PawBlue |![splash_azul](https://github.com/user-attachments/assets/eb6d8494-0c7f-40fb-9ec3-1a9592e07664)| Será Conquistada após passar da 2° Fase, junto de outros Splash's | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
-5 | PawPurple |![splash_roxo](https://github.com/user-attachments/assets/84cb3d4f-5870-4ea4-887f-74007bca7b6f)| Será Conquistada após passar da 2° Fase, junto de outros Splash's | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
-5 | PawPink |![splash_rosa](https://github.com/user-attachments/assets/e8ff66bc-87a5-43b6-945d-e33d824fd6e5)| Será Conquistada após passar da 2° Fase, junto de outros Splash's | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
+1 | PawYellow |![splash_amarelo](https://github.com/user-attachments/assets/9e3c67ee-3614-4116-996f-c95e65b93ed0)| Conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo | som de splash de tinta
+2 | PawRed |![vermelhoclaro](https://github.com/user-attachments/assets/f4e62404-2d30-496c-be8a-44a80d24abe7)| Conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo | som de splash de tinta
+3 | PawOrange |![laranja](https://github.com/user-attachments/assets/4f2e7185-eb8e-4ef1-8a80-59a62a98a1bd)| Conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo | som de splash de tinta
+4 | PawBlue |![splash_azul](https://github.com/user-attachments/assets/eb6d8494-0c7f-40fb-9ec3-1a9592e07664)| Conclusão da fase 1 | Pintar o quadro onde o gato acerta o alvo | som de splash de tinta
+5 | PawPurple |![splash_roxo](https://github.com/user-attachments/assets/84cb3d4f-5870-4ea4-887f-74007bca7b6f)| Conclusão da fase 1 | Pintar o quadro onde o gato acerta o alvo | som de splash de tinta
+5 | PawPink |![splash_rosa](https://github.com/user-attachments/assets/e8ff66bc-87a5-43b6-945d-e33d824fd6e5)| Conclusão da fase 1 | Pintar o quadro onde o gato acerta o alvo | som de splash de tinta
 
 <p align ="center">Fonte: autoria própria (2025).</p> <br>
 
