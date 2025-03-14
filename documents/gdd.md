@@ -307,7 +307,7 @@ Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.
 
 ### 3.4.1. Inventário 
 
-*Exemplo de tabela*
+*Legenda da tabela*
 \# | item |  | Como obter | Função | Efeito sonoro
 --- | --- | --- | --- | --- | ---
 1 | PawYellow |![splash_amarelo](https://github.com/user-attachments/assets/9e3c67ee-3614-4116-996f-c95e65b93ed0)| Será entregue após a conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
@@ -319,9 +319,7 @@ Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.
 
 ### 3.4.2. Bestiário
 
-*\<opcional\> Caso seu jogo tenha inimigos, descreva-os aqui, indicando nomes, imagens, momentos de aparição, funções e impactos no jogo. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes.* 
-
-*Exemplo de tabela*
+*Legenda da tabela*
 \# | inimigo |  | ocorrências | função | impacto | efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
 1 | Pombo |![pombo](https://github.com/user-attachments/assets/a5622248-210c-4bab-b020-a67c1c3a113e)| No tutorial e na 1°fase | Ficará voando em direção aléatoria para que o jogador acerte ele | Ao atingido revelará uma parte do quadro, caso esteja no modo história. Caso esteja no modo criativo, pintará uma tela em branco. | sons de pombo
