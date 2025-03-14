@@ -146,8 +146,8 @@ export default class BasePhase extends Phaser.Scene {
         this.target.directionY = 1;
         
         // Hitbox do pombo (usado para que não saia da tela)
-        this.target.hitboxWidth = 43;
-        this.target.hitboxHeight = 33;
+        this.target.hitboxWidth = 50;
+        this.target.hitboxHeight = 50;
     
         // Inicia a animação de voo do pombo
         this.target.play(this.animKey);
