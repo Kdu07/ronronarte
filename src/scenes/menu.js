@@ -31,6 +31,21 @@ export default class Menu extends Phaser.Scene{
             }, 200);
         });
     };
+
+    resizeGame() {
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        let gameRatio = 2 / 1; // Proporção fixa de 2:1
+
+        // Ajusta a largura e altura para manter a proporção
+        if (width / height > gameRatio) {
+            width = height * gameRatio;  // Mantém a altura e ajusta a largura
+        } else {
+            height = width / gameRatio;  // Mantém a largura e ajusta a altura
+        }
+
+        game.scale.resize(width, height);
+    }
 }
 
 
