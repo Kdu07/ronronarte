@@ -308,7 +308,7 @@ Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.
 ### 3.4.1. Inventário 
 
 *Exemplo de tabela*
-\# | item |  | como obter | função | efeito sonoro
+\# | item |  | Como obter | Função | Efeito sonoro
 --- | --- | --- | --- | --- | ---
 1 | PawYellow |![splash_amarelo](https://github.com/user-attachments/assets/9e3c67ee-3614-4116-996f-c95e65b93ed0)| Será entregue após a conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
 2 | PawRed |![vermelhoclaro](https://github.com/user-attachments/assets/f4e62404-2d30-496c-be8a-44a80d24abe7)| Será entregue após a conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo | som de Splash de tinta
