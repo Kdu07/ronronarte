@@ -3,25 +3,29 @@ export default class LevelSelect extends Phaser.Scene {
         super("LevelSelect");
     }
     create() {
-        this.selectBg = this.add.image(this.scale.width/2, this.scale.height/2, 'selectBg').setDisplaySize(this.scale.width, this.scale.height);
-        this.square = this.add.image(this.scale.width/4, this.scale.height/2, 'squareFrame').setScale(0.5).setInteractive();
-        this.square2 = this.add.image(this.scale.width/2, this.scale.height/2, 'squareFrame').setScale(0.5).setInteractive();
-      
-      
-        this.square2.on('pointerdown', () => {
-            this.scene.start('Criative');
-            this.scene.stop();
+
+        this.selectBg = this.add.image(this.scale.width*0.5, this.scale.height*0.5, 'selectBg').setDisplaySize(this.scale.width, this.scale.height);
+        this.selectTutorial = this.add.image(this.scale.width*0.18, this.scale.height*0.33, 'selectTutorial').setScale(this.scale.width/3200).setInteractive();
+        this.selectCriative = this.add.image(this.scale.width*0.18, this.scale.height*0.67, 'selectCriative').setScale(this.scale.width/3200).setInteractive();
+        this.selectPhase1 = this.add.image(this.scale.width*0.6, this.scale.height*0.25, 'selectPhase1').setScale(this.scale.width/1000).setInteractive();
+        this.selectPhasesUnf = this.add.image(this.scale.width*0.6, this.scale.height*0.42, 'selectPhasesUnf').setScale(this.scale.width/1000).setInteractive();
+        this.selectPhasesUnf = this.add.image(this.scale.width*0.6, this.scale.height*0.58, 'selectPhasesUnf').setScale(this.scale.width/1000).setInteractive();
+        this.selectPhasesUnf = this.add.image(this.scale.width*0.6, this.scale.height*0.75, 'selectPhasesUnf').setScale(this.scale.width/1000).setInteractive();
+
+        this.selectCriative.on('pointerdown', () => {        
+            this.scene.start('CreativeMode');    
         });
 
-        this.square2.depth = 1;
-        this.square.depth = 1;
-
-        this.square.on('pointerdown', () => {
-            this.scene.start('Phase1')
-            this.scene.stop();
+        this.selectTutorial.on('pointerdown', () => {
+            this.scene.start('Tutorial');
         });
-    };
 
+        this.selectPhase1.on('pointerdown', () => {
+            this.scene.start('Phase1');
+        });
+    }; 
+
+        
     update() {
 
     };
