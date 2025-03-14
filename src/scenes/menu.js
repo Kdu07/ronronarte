@@ -12,12 +12,8 @@ export default class Menu extends Phaser.Scene{
 
         // Quando botão start for clicado direciona para a cena Tutorial
         this.startButton.on("pointerdown", () => {
-            if (this.scale.isFullscreen) {
-                this.scale.stopFullscreen();
-            } else {
-                this.scale.startFullscreen();
-            }
-
+            this.scale.startFullscreen();
+            
             setTimeout(() => {
                 this.resizeGame();
                 this.scene.start('LevelSelect')
