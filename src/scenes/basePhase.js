@@ -270,7 +270,7 @@ export default class BasePhase extends Phaser.Scene {
         // Adiciona tela de vitória depois de 5,7 segundos 
         setTimeout(() => {
             // Background
-            let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(0.4);
+            let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(1);
 
             // Imagens
             this.add.image(bgVictory.x + 20, bgVictory.y -110, this.backgroundKey).setScale(0.15);
