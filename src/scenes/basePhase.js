@@ -37,7 +37,7 @@ export default class BasePhase extends Phaser.Scene {
             this.createBackgroundComplete();
             
             // Adiciona o placar
-            this.scoreboard = this.add.text(this.width - 300, 0 + 50, 'Pontos:' + this.score + '/' + this.maxScore, {fontSize:'45px', fill:'#FFFFFF'})
+            this.scoreboard = this.add.text(this.width/2, this.height/200, this.score + '/' + this.maxScore, {fontFamily:'Futura', fontSize:'45px', fill:'#FFFFFF'})
 
             // Adiciona o temporizador
             this.createTimer();
@@ -63,7 +63,7 @@ export default class BasePhase extends Phaser.Scene {
         this.timerEvent = null;
         this.elapsedSeconds = 0;
         
-        this.timerText = this.add.text(10, 10, 'Tempo: 0', { fontSize: '32px', fill: '#fff' });
+        this.timerText = this.add.text(this.width/1.05, this.height/200, '0', { fontFamily:'Futura',fontSize: '45px', fill: '#fff' });
 
         // Crie o evento do temporizador e guarde a referência
         this.timerEvent = this.time.addEvent({
@@ -90,7 +90,7 @@ export default class BasePhase extends Phaser.Scene {
         // Adiciona máscara branca, quadro e a borda
         this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setDisplaySize(this.width, this.width / 1.8);
         this.painting = this.add.image(this.width / 2, this.height / 2, this.backgroundKey).setDisplaySize(this.width, this.width / 1.8);
-        this.frame = this.add.image(this.width / 2, this.height / 2, 'frame').setDisplaySize(this.width, this.width / 2.3);
+        this.frame = this.add.image(this.width / 2, this.height / 2, 'frame').setDisplaySize(this.width, this.width/2.3);
         this.frameHitbox = this.frame.displayWidth / 35;
 
         // Torna o quadro visível
@@ -106,7 +106,7 @@ export default class BasePhase extends Phaser.Scene {
 
     createPauseButton() {
        // Adiciona um botão de pause na tela
-       this.pauseBtn = this.add.image(this.width/40, this.height/20, 'pauseBtn').setScale(this.width/1500)
+       this.pauseBtn = this.add.image(this.width/55, this.height/27, 'pauseBtn').setScale(this.width/1500)
        this.pauseBtn.setInteractive()
        
        // Configura o botão para voltar ao menu
@@ -133,7 +133,7 @@ export default class BasePhase extends Phaser.Scene {
     // Função para contar o tempo no temporizador
     updateTimer() {
         this.elapsedSeconds++;
-        this.timerText.setText('Tempo: ' + this.elapsedSeconds);
+        this.timerText.setText(this.elapsedSeconds);
     }
 
     spawnTarget() {
@@ -142,7 +142,7 @@ export default class BasePhase extends Phaser.Scene {
     
         // Gerar uma posição aleatória dentro da área do quadro
         let posX = Phaser.Math.Between(50,this.width-50);
-        let posY = Phaser.Math.Between(50,this.height-50);
+        let posY = Phaser.Math.Between(100,this.height-100);
         
         // Adiciona o pombo e torna interativo
         this.target = this.add.sprite(posX, posY, this.targetKey).setScale(this.width/800);
@@ -178,7 +178,7 @@ export default class BasePhase extends Phaser.Scene {
                     this.clickSound.stop(); // Para o som do pombo após 1000ms (1s)
                 });
                 
-                this.splash = this.add.image(pointer.x, pointer.y, 'splash').setScale(this.width/4000).setAlpha(0.5); // Cria um splash no local do clique
+                this.splash = this.add.image(pointer.x, pointer.y, 'yellowSplash').setScale(this.width/4000).setAlpha(0.6); // Cria um splash no local do clique
                 this.spawnTarget(); // Adiciona um novo alvo
             }
         });
@@ -199,10 +199,10 @@ export default class BasePhase extends Phaser.Scene {
                     this.clickSound.stop(); // Para o som do pombo após 1000ms (1s)
                 });
                 this.score++; // Adiciona 1 ponto à pontuação
-                this.scoreboard.setText('Pontos: ' + this.score + '/' + this.maxScore); // Atualiza o placar 
+                this.scoreboard.setText(this.score + '/' + this.maxScore); // Atualiza o placar 
 
                 // Cria um splash no local do clique e revela a mesma área do quadro
-                this.splash = this.add.image(pointer.x, pointer.y, 'splash').setScale(2.0);
+                this.splash = this.add.image(pointer.x, pointer.y, 'splash').setScale(this.width/800);
                 this.splash.setAlpha(1);
                 this.revealMask.draw(this.splash, this.splash.x, this.splash.y);
                 this.splash.destroy(); //Remove o splash após liberar a área

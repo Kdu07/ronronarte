@@ -24,7 +24,7 @@ export default class Phase0 extends BasePhase {
         
         // Se a pontuação atingiu 3 pontos, aparece o botão de pular tutorial.
         if (this.score > 3) {
-            let skipTutorialButton = this.add.image(this.width - 100, 50, 'skipTutorialButton').setInteractive();
+            let skipTutorialButton = this.add.image(this.width*0.95, this.height*0.05, 'skipTutorialButton').setScale(this.width/1200).setInteractive();
             skipTutorialButton.on("pointerdown", ()=>{
                 this.scene.start("Phase1");
             })

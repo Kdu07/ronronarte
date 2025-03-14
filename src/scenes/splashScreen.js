@@ -31,12 +31,13 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('frame', './assets/frame.png');
         this.load.image('bgMenu', './assets/expanded_startscreen.png');
         this.load.image('startButton', './assets/botões/botao_start_preto.png');
-        this.load.image('skipTutorialButton', './assets/botões/pause.png');
+        this.load.image('skipTutorialButton', './assets/botões/botao_pular.png');
         this.load.image('working', './assets/working.png');
         this.load.image('pinkSplash', './assets/pinkSplash.png');
         this.load.image('blueSplash', './assets/blueSplash.png');
         this.load.image('greenSplash', './assets/greenSplash.png');
         this.load.image('purpleSplash', './assets/purpleSplash.png');
+        this.load.image('yellowSplash', './assets/splash-paw-yellow.png');
         this.load.image('optionsBtn', './assets/botões/botao_opcoes_corr_preto.png');
         this.load.image('screenCriative', 'assets/tela_branca.png');
         this.load.image('selectBg', 'assets/textBoxFuncional.png');
@@ -49,6 +50,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('selectPhasesUnf', 'assets/Select_PhasesUnf.png');
         this.load.image('selectPhase1', 'assets/Select_Phase1.png');
         this.load.spritesheet('cat', './assets/cat.png', { frameWidth: 64, frameHeight:64 });
+        this.load.image('continueBtn', './assets/botões/botao_continuar_preto.png');
     }
 
     create(){
@@ -80,7 +82,7 @@ export default class SplashScreen extends Phaser.Scene {
             // Aguarda o fadeOut antes de iniciar a próxima cena
             this.time.delayedCall(time1500, () => {
                 this.scene.stop('SplashScreen'); // Para a cena atual
-                this.scene.start('Phase0'); // Inicia a cena Menu
+                this.scene.start('Phase1'); // Inicia a cena Menu
             }); 
         });          
     }
