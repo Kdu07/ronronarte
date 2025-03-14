@@ -12,14 +12,6 @@ export default class Menu extends Phaser.Scene{
 
         // Quando botão start for clicado direciona para a cena Tutorial
         this.startButton.on("pointerdown", () => {
-            this.scene.start('LevelSelect')
-            this.scene.stop('Menu')
-        });
-
-        this.fullscreenButton = this.add.image(this.scale.width/7, this.scale.height/1.18, 'fullscreen')
-        .setScale(this.scale.width/4000)
-        .setInteractive()
-        .on('pointerdown', () => {
             if (this.scale.isFullscreen) {
                 this.scale.stopFullscreen();
             } else {
@@ -28,8 +20,21 @@ export default class Menu extends Phaser.Scene{
 
             setTimeout(() => {
                 this.resizeGame();
-            }, 200);
+                this.scene.start('LevelSelect')
+                this.scene.stop('Menu')
+            }, 2000);
+
+
+            
         });
+        /*
+        this.fullscreenButton = this.add.image(this.scale.width/7, this.scale.height/1.18, 'fullscreen')
+        .setScale(this.scale.width/4000)
+        .setInteractive()
+        .on('pointerdown', () => {
+            
+        });
+        */
     };
 
     resizeGame() {
@@ -44,7 +49,7 @@ export default class Menu extends Phaser.Scene{
             height = width / gameRatio;  // Mantém a largura e ajusta a altura
         }
 
-        game.scale.resize(width, height);
+        this.game.scale.resize(width, height);
     }
 }
 
