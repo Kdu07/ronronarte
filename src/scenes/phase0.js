@@ -3,7 +3,7 @@ import BasePhase from "./basePhase.js";
 // Classe de cena a ser exportada
 export default class Phase0 extends BasePhase {
     constructor() {
-        // Configura a chave de classe
+        // Configura a chave de classe e assets
         super('Phase0', false, 'bgTutorial', 'pigeon', 'flyPigeon', 'pigeonSound')
     }
 

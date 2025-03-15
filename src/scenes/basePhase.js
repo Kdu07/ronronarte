@@ -3,14 +3,14 @@ export default class BasePhase extends Phaser.Scene {
     constructor(phaseKey, completePhase, backgroundKey, targetKey, animKey, soundKey, artistKey, textArtist, textPainting) {
         // Configura a chave de classe
         super(phaseKey);
-        // Armazenamento de parâmetros
+        // Armazenamento dos parâmetros de key (usado para referenciar os assets)
         this.completePhase = completePhase;
         this.backgroundKey = backgroundKey;
         this.soundKey = soundKey;
         this.targetKey = targetKey;
         this.animKey = animKey;
 
-        // Verifica se os parâmetros foram passados ao constructor
+        // Parâmetros opcionais
         if(artistKey != undefined){
             this.artistKey = artistKey;
         }
@@ -36,6 +36,7 @@ export default class BasePhase extends Phaser.Scene {
             // Configura a pontuação máxima
             this.maxScore = 3;
             
+            // Cria o background de fase completa
             this.createBackgroundComplete();
             
             // Adiciona o placar
@@ -45,6 +46,7 @@ export default class BasePhase extends Phaser.Scene {
             this.createTimer();
 
         }else{
+            // Cria o background
             this.createBackground();
         }
 
@@ -121,11 +123,13 @@ export default class BasePhase extends Phaser.Scene {
        })
     }
 
-    update(){        
+    update(){
+        // Confere e ativa funcionalidades quando o pombo é clicado        
         if(this.completePhase){
-            // Confere se o pombo é clicado
+            // Para a configuração de fase completa 
             this.clickTargetComplete(); 
         }else{
+            // Para a configuração de fase básica
             this.clickTarget();
         }
 
@@ -220,6 +224,7 @@ export default class BasePhase extends Phaser.Scene {
                     this.painting.setMask();
                     this.painting.setAlpha(1);
 
+                    // Adiciona a tela de vitória
                     this.displayVictory();                        
                 } else {
                     // Se o jogo não acabou, gera outro pombo
@@ -323,7 +328,8 @@ export default class BasePhase extends Phaser.Scene {
                 backgroundColor: '#ffd300',
                 padding: { x: 10, y: 5 }
             })
-            // Torna o botão de próxima fase clicávl e permite que, caso ele seja clicado, pare a fase 1 e o jogo direcione para o menu de seleção de níveis
+            // Torna o botão de próxima fase clicável e permite que, caso ele seja clicado, 
+            // pare a fase 1 e o jogo direcione para o menu de seleção de níveis
             .setInteractive() 
             .on('pointerdown', () => {
                 this.scene.stop('Phase1'); // Para a fase 1

@@ -8,7 +8,7 @@ export default class Phase1 extends BasePhase {
         let textPainting = ['A obra A criação de Adão fica\nno teto da Capela Sistina e\nrepresenta a passagem bíblica\nem que Deus dá origem à\nhumanidade. Realizado com a\ntécnica do afresco, o quadro\nexpressa harmonia, mistério\ne força divina.'];
         
 
-        // Configura a chave de classe
+        // Configura a chave de classe e os assets da fase
         super('Phase1', true, 'painting2', 'pigeon', 'flyPigeon', 'pigeonSound', 'artist3', textArtist, textPainting)
     }
 
@@ -21,10 +21,12 @@ export default class Phase1 extends BasePhase {
             repeat: -1 // Define que a animação será contínua
         });
 
+        // Chama o create da classe pai
         super.create();
     }
 
     update(){
+        // Chama o update da classe pai
         super.update()
     }
 }
