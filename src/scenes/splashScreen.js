@@ -56,16 +56,17 @@ export default class SplashScreen extends Phaser.Scene {
     }
 
     create(){    
-        let time1500 = 1500;
+        // Define e armezena a duração do fadeIn e do fadeOut
+        let time1500 = 1500; 
         let time3000 = 3000;
 
         // Adiciona fade in na splash screen
-        this.cameras.main.fadeIn(time1500, 0, 0, 0)
+        this.cameras.main.fadeIn(time1500, 0, 0, 0) // Aplica um efeito de fade-in que escurece a tela
         this.add.image(this.scale.width/2, this.scale.height/2,'catup').setScale(0.5);
 
         // Adiciona fade out na splash screen depois de 3 segundos
         this.time.delayedCall(time3000, () => {
-            this.cameras.main.fadeOut(time1500, 0, 0, 0);
+            this.cameras.main.fadeOut(time1500, 0, 0, 0); // Aplica um efeito de fade-out que escurece a tela
             
             // Aguarda o fadeOut antes de iniciar a próxima cena
             this.time.delayedCall(time1500, () => {
@@ -76,16 +77,18 @@ export default class SplashScreen extends Phaser.Scene {
     }
 
     resizeGame() {
+        // Armazena as dimensões da tela do navegador
         let width = window.innerWidth;
         let height = window.innerHeight;
-        let gameRatio = 2 / 1; // Mantém 2:1
+        let gameRatio = 2 / 1; // Mantém a proporção 2:1
     
+        // Ajusta a proporção do jogo para a proporção pré-definida
         if (width / height > gameRatio) {
             width = height * gameRatio;
         } else {
             height = width / gameRatio;
         }
     
-        game.scale.resize(width, height);
+        game.scale.resize(width, height); // Chama a função para ajustar as dimensões do jogo de acordo com a proporção definida
     }
 }
