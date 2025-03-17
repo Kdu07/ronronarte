@@ -6,16 +6,25 @@ export default class SplashScreen extends Phaser.Scene {
     }
     preload(){
         // Carrega todos os assets do jogo
+        // Quadros
+        this.load.image('painting1', './assets/painting1.png');
+        this.load.image('painting2', './assets/painting2.png');
+        this.load.image('painting3', './assets/painting3.png');
+        this.load.image('painting4', './assets/painting4.png');
+        
+        // Artistas
+        this.load.image('artist1', './assets/artist1.png');
+        this.load.image('artist2', './assets/artist2.png');
+        this.load.image('artist3', './assets/artist3.png');
+        this.load.image('artist4', './assets/artist4.png');
+
+
         this.load.image('tinta1', './assets/tinta1.png');
         this.load.image('textArtistBox', './assets/textArtistBox.png');
         this.load.image('splash', './assets/splash.png');
         this.load.spritesheet('pigeon', './assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
         this.load.audio('pigeonSound', './assets/audios/pru.mp3');
         this.load.image('pauseBtn', './assets/botões/pause.png');
-        this.load.image('painting', './assets/painting.png');
-        this.load.image('painting2', './assets/painting2.png');
-        this.load.image('painting3', './assets/painting3.png');
-        this.load.image('artist3', './assets/artista3.png');
         this.load.image('palette', './assets/paleta.png');
         this.load.image('bgVictory', './assets/bgVictory.png');
         this.load.image('star', './assets/star.png');
@@ -30,7 +39,6 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('bgMenu', './assets/expanded_startscreen.png');
         this.load.image('startButton', './assets/botões/botao_start_preto.png');
         this.load.image('skipTutorialButton', './assets/botões/botao_pular.png');
-        this.load.image('working', './assets/working.png');
         this.load.image('pinkSplash', './assets/pinkSplash.png');
         this.load.image('blueSplash', './assets/blueSplash.png');
         this.load.image('greenSplash', './assets/greenSplash.png');
@@ -40,7 +48,6 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('screenCriative', 'assets/tela_branca.png');
         this.load.image('selectBg', 'assets/textBoxFuncional.png');
         this.load.image('squareFrame','assets/moldura_quadrado.png');
-        this.load.image('juanPainting', '/assets/JuanPixelAart.png');
         this.load.image('buttonCriative', '/assets/botões/botao_criativo.png');
         this.load.image('teste', '/assets/575x56.png');
         this.load.image('selectTutorial', 'assets/Select_Tutorial.png');
@@ -49,13 +56,12 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('selectPhase1', 'assets/Select_Phase1.png');
         this.load.spritesheet('cat', './assets/cat.png', { frameWidth: 64, frameHeight:64 });
         this.load.image('continueBtn', './assets/botões/botao_continuar_preto.png');
-        this.load.image('fullscreen', './assets/fullscreen.png');
     }
 
     create(){    
         // Define e armezena a duração do fadeIn e do fadeOut
-        let time1500 = 1500; 
-        let time3000 = 3000;
+        let time1500 = 0;//1500; 
+        let time3000 = 0;//3000;
 
         // Adiciona fade in na splash screen
         this.cameras.main.fadeIn(time1500, 0, 0, 0) // Aplica um efeito de fade-in que escurece a tela

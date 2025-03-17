@@ -5,8 +5,8 @@ export default class Phase1 extends BasePhase {
     constructor() {
         let configDict = {
             "completePhase":true,
-            "backgroundKey":"painting2",
-            "artistKey":"artist3",
+            "backgroundKey":"painting1",
+            "artistKey":"artist1",
             "textArtist":['Michelangelo foi um renomado\nartista italiano do período\nrenascentista. Com formação\nhumanista e influenciado\npela arte clássica, pode-se\ndizer que ele foi um dos\nmaiores artistas do Ocidente'],
             "textPainting":['A obra A criação de Adão fica\nno teto da Capela Sistina e\nrepresenta a passagem bíblica\nem que Deus dá origem à\nhumanidade. Realizado com a\ntécnica do afresco, o quadro\nexpressa harmonia, mistério\ne força divina.'],
             "targetKey":"pigeon",
