@@ -1,9 +1,11 @@
 export default class LevelSelect extends Phaser.Scene {
     constructor() {
+        // Configura a chave de classe
         super("LevelSelect");
     }
     create() {
 
+        // Cria as imagens presentes no menu de seleção de níveis
         this.selectBg = this.add.image(this.scale.width*0.5, this.scale.height*0.5, 'selectBg').setDisplaySize(this.scale.width, this.scale.height);
         this.selectTutorial = this.add.image(this.scale.width*0.18, this.scale.height*0.33, 'selectTutorial').setScale(this.scale.width/3200).setInteractive();
         this.selectCriative = this.add.image(this.scale.width*0.18, this.scale.height*0.67, 'selectCriative').setScale(this.scale.width/3200).setInteractive();
@@ -12,14 +14,17 @@ export default class LevelSelect extends Phaser.Scene {
         this.selectPhasesUnf = this.add.image(this.scale.width*0.6, this.scale.height*0.58, 'selectPhasesUnf').setScale(this.scale.width/1000).setInteractive();
         this.selectPhasesUnf = this.add.image(this.scale.width*0.6, this.scale.height*0.75, 'selectPhasesUnf').setScale(this.scale.width/1000).setInteractive();
 
+        // Se o usuário selecionar a imagem que remete ao modo criativo, ele será direcionado para o modo criativo
         this.selectCriative.on('pointerdown', () => {        
             this.scene.start('CreativeMode');    
         });
 
+        // Se o usuário selecionar a imagem que remete ao tutorial, ele será direcionado para o tutorial
         this.selectTutorial.on('pointerdown', () => {
             this.scene.start('Tutorial');
         });
 
+        // Se o usuário selecionar a imagem que remete à primeira fase, ele será direcionado para a primeira fase
         this.selectPhase1.on('pointerdown', () => {
             this.scene.start('Phase1');
         });
