@@ -3,8 +3,19 @@ import BasePhase from "./basePhase.js";
 // Classe de cena a ser exportada
 export default class Phase2 extends BasePhase {
     constructor() {
+        let configDict = {
+            "completePhase":true,
+            "backgroundKey":"painting2",
+            "artistKey":"artist3",
+            "textArtist":['Juan...'],
+            "textPainting":['Pintura...'],
+            "targetKey":"pigeon",
+            "animKey":"flyPigeon",
+            "soundKey":"pigeonSound",
+        }
+
         // Configura a chave de classe
-        super('Phase2', true, 'painting', 'cat', 'animCat', 'pigeonSound', 'artist3')
+        super('Phase2', configDict)
     }
 
     // Configura a animação do pombo voando
