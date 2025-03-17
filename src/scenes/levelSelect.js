@@ -1,27 +1,44 @@
 export default class LevelSelect extends Phaser.Scene {
     constructor() {
+        // Configura a chave de classe
         super("LevelSelect");
     }
     create() {
 
-        this.selectBg = this.add.image(this.scale.width/2, this.scale.height/2, 'selectBg').setDisplaySize(this.scale.width, this.scale.height);
-        this.selectTutorial = this.add.image(this.scale.width/3 - 150, this.scale.height/3, 'selectTutorial').setScale(0.5).setInteractive();
-        this.selectCriative = this.add.image(this.scale.width/3 - 150, this.scale.height/3 + 270, 'selectCriative').setScale(0.5).setInteractive();
-        this.selectPhase1 = this.add.image(this.scale.width/3 + 455, this.scale.height/3 - 74, 'selectPhase1').setScale(1.5).setInteractive();
-        this.selectPhasesUnf = this.add.image(this.scale.width/3 + 455, this.scale.height/3 + 64, 'selectPhasesUnf').setScale(1.5).setInteractive();
-        this.selectPhasesUnf = this.add.image(this.scale.width/3 + 455, this.scale.height/3 + 198, 'selectPhasesUnf').setScale(1.5).setInteractive();
-        this.selectPhasesUnf = this.add.image(this.scale.width/3 + 455, this.scale.height/3 + 342, 'selectPhasesUnf').setScale(1.5).setInteractive();
+        // Cria as imagens presentes no menu de seleção de níveis
+        this.selectBg = this.add.image(this.scale.width*0.5, this.scale.height*0.5, 'selectBg').setDisplaySize(this.scale.width, this.scale.height);
+        this.selectTutorial = this.add.image(this.scale.width*0.18, this.scale.height*0.33, 'selectTutorial').setScale(this.scale.width/3200).setInteractive();
+        this.selectCriative = this.add.image(this.scale.width*0.18, this.scale.height*0.67, 'selectCriative').setScale(this.scale.width/3200).setInteractive();
+        this.selectPhase1 = this.add.image(this.scale.width*0.6, this.scale.height*0.25, 'selectPhase1').setScale(this.scale.width/1000).setInteractive();
+        this.selectPhase2 = this.add.image(this.scale.width*0.6, this.scale.height*0.42, 'selectPhasesUnf').setScale(this.scale.width/1000).setInteractive();
+        this.selectPhase3 = this.add.image(this.scale.width*0.6, this.scale.height*0.58, 'selectPhasesUnf').setScale(this.scale.width/1000).setInteractive();
+        this.selectPhase4 = this.add.image(this.scale.width*0.6, this.scale.height*0.75, 'selectPhasesUnf').setScale(this.scale.width/1000).setInteractive();
 
+        // Se o usuário selecionar a imagem que remete ao modo criativo, ele será direcionado para o modo criativo
         this.selectCriative.on('pointerdown', () => {        
             this.scene.start('CreativeMode');    
         });
 
+        // Se o usuário selecionar a imagem que remete ao tutorial, ele será direcionado para o tutorial
         this.selectTutorial.on('pointerdown', () => {
             this.scene.start('Tutorial');
         });
 
+        // Se o usuário selecionar a imagem que remete à primeira fase, ele será direcionado para a primeira fase
         this.selectPhase1.on('pointerdown', () => {
             this.scene.start('Phase1');
+        });
+
+        this.selectPhase2.on('pointerdown', () => {
+            this.scene.start('Phase2');
+        });
+
+        this.selectPhase3.on('pointerdown', () => {
+            this.scene.start('Phase3');
+        });
+
+        this.selectPhase4.on('pointerdown', () => {
+            this.scene.start('Phase4');
         });
     }; 
 
