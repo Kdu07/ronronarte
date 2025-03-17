@@ -1,24 +1,26 @@
 // Classe de cena a ser exportada
 export default class BasePhase extends Phaser.Scene {
-    constructor(phaseKey, completePhase, backgroundKey, targetKey, animKey, soundKey, artistKey, textArtist, textPainting) {
+    constructor(phaseKey, configDict) {
         // Configura a chave de classe
         super(phaseKey);
         // Armazenamento dos parâmetros de key (usado para referenciar os assets)
-        this.completePhase = completePhase;
-        this.backgroundKey = backgroundKey;
-        this.soundKey = soundKey;
-        this.targetKey = targetKey;
-        this.animKey = animKey;
+        this.phases = ['Phase0', 'Phase1', 'Phase2', 'Phase3', 'Phase4', 'CreativeMode'];
+        this.phaseKey = phaseKey;
+        this.completePhase = configDict['completePhase'];
+        this.backgroundKey = configDict['backgroundKey'];
+        this.soundKey = configDict['soundKey'];
+        this.targetKey = configDict['targetKey'];
+        this.animKey = configDict['animKey'];
 
         // Parâmetros opcionais
-        if(artistKey != undefined){
-            this.artistKey = artistKey;
+        if(configDict['artistKey'] != undefined){
+            this.artistKey = configDict['artistKey'];
         }
-        if(textArtist != undefined){
-            this.textArtist = textArtist;
+        if(configDict['textArtist'] != undefined){
+            this.textArtist = configDict['textArtist'];
         }
-        if(textPainting != undefined){
-            this.textPainting = textPainting;
+        if(configDict['textPainting'] != undefined){
+            this.textPainting = configDict['textPainting'];
         }
     }
 
@@ -332,8 +334,11 @@ export default class BasePhase extends Phaser.Scene {
             // pare a fase 1 e o jogo direcione para o menu de seleção de níveis
             .setInteractive() 
             .on('pointerdown', () => {
-                this.scene.stop('Phase1'); // Para a fase 1
-                this.scene.start('LevelSelect'); // Direciona para a seleção de níveis
+                this.nextPhase = this.phases[this.phases.indexOf(this.phaseKey) + 1];
+                console.log(this.phaseKey)
+                console.log(this.nextPhase)
+                this.scene.stop(this.phaseKey); // Para a fase 1
+                this.scene.start(this.nextPhase); // Direciona para a seleção de níveis
             })
 
         }, 5700);

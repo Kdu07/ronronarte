@@ -2,7 +2,19 @@ import BasePhase from "./basePhase.js";
 
 export default class CreativeMode extends BasePhase{
     constructor(){
-        super('CreativeMode', false, 'bgWhite', 'pigeon', 'flyPigeon', 'pigeonSound')
+        let configDict = {
+            "completePhase":false,
+            "backgroundKey":"bgWhite",
+            "artistKey":"artist3",
+            "textArtist":['Cheri...'],
+            "textPainting":['Pintura...'],
+            "targetKey":"pigeon",
+            "animKey":"flyPigeon",
+            "soundKey":"pigeonSound",
+        }
+        
+        // Configura a chave de classe e os assets da fase
+        super('CreativeMode', configDict)
     }
 
     create(){

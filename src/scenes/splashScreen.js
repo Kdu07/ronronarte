@@ -6,10 +6,6 @@ export default class SplashScreen extends Phaser.Scene {
     }
     preload(){
         // Carrega todos os assets do jogo
-        // Quadros e artistas
-        // Elementos da tela de vitória
-        // Alvo
-        // Backgrounds
         this.load.image('tinta1', './assets/tinta1.png');
         this.load.image('textArtistBox', './assets/textArtistBox.png');
         this.load.image('splash', './assets/splash.png');
@@ -18,6 +14,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('pauseBtn', './assets/botões/pause.png');
         this.load.image('painting', './assets/painting.png');
         this.load.image('painting2', './assets/painting2.png');
+        this.load.image('painting3', './assets/painting3.png');
         this.load.image('artist3', './assets/artista3.png');
         this.load.image('palette', './assets/paleta.png');
         this.load.image('bgVictory', './assets/bgVictory.png');
