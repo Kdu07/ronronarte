@@ -6,34 +6,45 @@ export default class Menu extends Phaser.Scene{
     }
 
     create() {
-        // Adiciona imagens de background e botão jogar
-        this.bgMenu = this.add.image(this.scale.width/2, this.scale.height/2, 'bgMenu').setScale(0.60);
-        const botaoStart = this.add.image((this.scale.width/2) + 10, this.scale.height/2, 'botaoStart').setInteractive({cursor: "pointer"}).setScale(2);
-        
-        // Quando botão start for clicado direciona para a cena Tutorial
-        botaoStart.on("pointerdown", () => {
-            this.scene.start('Tutorial')
-            this.scene.stop('Menu')
+        // Cria imagens de background e botão jogar
+        this.bgMenu = this.add.image(this.scale.width/2, this.scale.height/2, 'bgMenu').setDisplaySize(this.scale.width, this.scale.height);
+        this.startButton = this.add.image(this.scale.width/1.95, this.scale.height/2, 'startButton').setScale(this.scale.width/800).setInteractive({cursor: "pointer"});
+
+        // Quando o botão jogar for clicado direciona para o menu de seleção de níveis
+        this.startButton.on("pointerdown", () => {
+            this.scale.startFullscreen(); // Coloca o jogo em tela cheia
+            
+            setTimeout(() => {
+                this.resizeGame();
+                this.scene.start('LevelSelect') // Direciona para a tela de seleção de níveis
+                this.scene.stop('Menu') // Para o menu
+            }, 1000); 
         });
-
-        // Ajusta a o jogo de acordo com a tela
-        this.scale.on('resize', (gameSize) => this.resizeGame(gameSize), this);
-
+        /*
+        this.fullscreenButton = this.add.image(this.scale.width/7, this.scale.height/1.18, 'fullscreen')
+        .setScale(this.scale.width/4000)
+        .setInteractive()
+        .on('pointerdown', () => {
+            
+        });
+        */
     };
 
     resizeGame() {
-        // Define o tamanho da tela
-        const {width, height} = gameSize;
+        // Facilita a escrita da variável para o tamanho da tela
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        let gameRatio = 2 / 1; // Proporção fixa de 2:1
 
-        if (this.bgMenu) {
-            // Ajusta a escala proporcionalmente
-            this.bgMenu.setPosition(width / 2, height / 2);
-            this.bgMenu.setScale(Math.min(width / 800, height / 600)); 
+        // Ajusta a largura e altura para manter a proporção
+        if (width / height > gameRatio) {
+            width = height * gameRatio;  // Mantém a altura e ajusta a largura
+        } else {
+            height = width / gameRatio;  // Mantém a largura e ajusta a altura
         }
 
-        if (this.botaoStart) {
-            // Ajusta posição do botão start
-            this.botaoStart.setPosition(width / 2 + 10, height / 2);
-        }
-    };
+        this.game.scale.resize(width, height);
+    }
 }
+
+
