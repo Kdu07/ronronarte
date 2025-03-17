@@ -6,7 +6,7 @@ export default class Phase2 extends BasePhase {
         let configDict = {
             "completePhase":true,
             "backgroundKey":"painting2",
-            "artistKey":"artist3",
+            "artistKey":"artist2",
             "textArtist":['Juan...'],
             "textPainting":['Pintura...'],
             "targetKey":"pigeon",
