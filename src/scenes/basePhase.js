@@ -36,7 +36,7 @@ export default class BasePhase extends Phaser.Scene {
             this.totalClicks = 0;
             
             // Configura a pontuação máxima
-            this.maxScore = 1;
+            this.maxScore = 3;
             
             // Cria o background de fase completa
             this.createBackgroundComplete();
