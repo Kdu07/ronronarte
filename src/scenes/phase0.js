@@ -59,7 +59,6 @@ export default class Phase0 extends BasePhase {
                 this.spriteLoading.setVisible(false);
 
                 if (touchDuration >= 2500) {
-                    console.log("Toque curto detectado!");
                     this.scene.start("Phase1");
                 }
             });
