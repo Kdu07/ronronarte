@@ -10,9 +10,9 @@ export default class LevelSelect extends Phaser.Scene {
         this.selectTutorial = this.add.image(this.scale.width*0.18, this.scale.height*0.33, 'selectTutorial').setScale(this.scale.width/3200).setInteractive();
         this.selectCriative = this.add.image(this.scale.width*0.18, this.scale.height*0.67, 'selectCriative').setScale(this.scale.width/3200).setInteractive();
         this.selectPhase1 = this.add.image(this.scale.width*0.6, this.scale.height*0.25, 'selectPhase1').setScale(this.scale.width/1000).setInteractive();
-        this.selectPhase2 = this.add.image(this.scale.width*0.6, this.scale.height*0.42, 'selectPhasesUnf').setScale(this.scale.width/1000).setInteractive();
-        this.selectPhase3 = this.add.image(this.scale.width*0.6, this.scale.height*0.58, 'selectPhasesUnf').setScale(this.scale.width/1000).setInteractive();
-        this.selectPhase4 = this.add.image(this.scale.width*0.6, this.scale.height*0.75, 'selectPhasesUnf').setScale(this.scale.width/1000).setInteractive();
+        this.selectPhase2 = this.add.image(this.scale.width*0.6, this.scale.height*0.42, 'selectPhase2').setScale(this.scale.width/1000).setInteractive();
+        this.selectPhase3 = this.add.image(this.scale.width*0.6, this.scale.height*0.58, 'selectPhase3').setScale(this.scale.width/1000).setInteractive();
+        this.selectPhase4 = this.add.image(this.scale.width*0.6, this.scale.height*0.75, 'selectPhase4').setScale(this.scale.width/1000).setInteractive();
 
         // Se o usuário selecionar a imagem que remete ao modo criativo, ele será direcionado para o modo criativo
         this.selectCriative.on('pointerdown', () => {        
