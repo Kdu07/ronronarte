@@ -26,7 +26,11 @@ export default class LevelSelect extends Phaser.Scene {
 
         // Se o usuário selecionar a imagem que remete à primeira fase, ele será direcionado para a primeira fase
         this.selectPhase1.on('pointerdown', () => {
-            this.scene.start('Phase1');
+                this.scene.launch('OverlayScene'); // Lança a cena sobreposta
+                this.scene.bringToTop('OverlayScene');
+                this.time.delayedCall(1000, () => {
+                    this.scene.start("Phase1");
+                });
         });
 
         this.selectPhase2.on('pointerdown', () => {

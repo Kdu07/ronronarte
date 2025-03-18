@@ -19,14 +19,12 @@ export default class Phase1 extends BasePhase {
     }
 
     create(){
-        // Configura a animação do pombo voando
-        this.anims.create({
-            key: 'flyPigeon',
-            frames: this.anims.generateFrameNumbers('pigeon', { start: 0, end: 3 }), // Define os frames do spritesheet que serão usados
-            frameRate: 10, // Quantidade de frames por segundo
-            repeat: -1 // Define que a animação será contínua
-        });
-
+            this.anims.create({
+                key: 'flyPigeon',
+                frames: this.anims.generateFrameNumbers('pigeon', { start: 0, end: 3 }), // Define os frames do spritesheet que serão usados
+                frameRate: 10, // Quantidade de frames por segundo
+                repeat: -1 // Define que a animação será contínua
+            });
         // Chama o create da classe pai
         super.create();
     }

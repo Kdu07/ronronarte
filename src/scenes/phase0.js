@@ -32,14 +32,37 @@ export default class Phase0 extends BasePhase {
 
     update(){
         super.update()
-        
+        this.touchStartTime;
+        this.spriteLoading;
         // Se a pontuação atingiu 3 pontos, aparece o botão de pular tutorial.
         if (this.score > 3) {
             // Cria o botão de pular o tutorial
-            let skipTutorialButton = this.add.image(this.width*0.95, this.height*0.05, 'skipTutorialButton').setScale(this.width/1200).setInteractive();
-            skipTutorialButton.on("pointerdown", ()=>{ //Se o botão de pular o tutorial for clicado
-                this.scene.start("Phase1"); // Direciona para a fase 1
-            })
+            let skipTutorialButton = this.add.image(this.width*0.95, this.height*0.05, 'skipTutorialButton').setScale(this.width/1200).setInteractive({ useHandCursor: true });
+            skipTutorialButton.on('pointerdown', (pointer) => {
+                this.spriteLoading = this.add.sprite(this.width*0.95, this.height*0.1, 'spriteLoading').setScale(0.2).setInteractive();
+                this.spriteLoading.setVisible(true);
+                this.anims.create({
+                    key: 'SpriteLoading', // Nome da animação
+                    frames: this.anims.generateFrameNumbers('spriteLoading', {start:0, end:5}), 
+                    frameRate: 2, 
+                    repeat: -1 
+                })
+                // Inicia a animação do jogador configurada
+                this.spriteLoading.anims.play('SpriteLoading',true);
+                this.touchStartTime = pointer.downTime; // Armazena o tempo do toque
+            });
+
+            skipTutorialButton.on('pointerup', (pointer) => {
+                let touchDuration = this.time.now - this.touchStartTime; // Calcula a duração
+                this.spriteLoading.anims.stop();
+                this.spriteLoading.setFrame(0);
+                this.spriteLoading.setVisible(false);
+
+                if (touchDuration >= 2500) {
+                    console.log("Toque curto detectado!");
+                    this.scene.start("Phase1");
+                }
+            });
         }
     }
 }

@@ -20,6 +20,7 @@ export default class SplashScreen extends Phaser.Scene {
 
 
         this.load.image('tinta1', './assets/tinta1.png');
+        this.load.spritesheet('spriteLoading', './assets/spriteLoading1.png', {frameWidth: 292, frameHeight: 68.16});
         this.load.image('textArtistBox', './assets/textArtistBox.png');
         this.load.image('splash', './assets/splash.png');
         this.load.spritesheet('pigeon', './assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
