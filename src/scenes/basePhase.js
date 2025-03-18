@@ -108,21 +108,79 @@ export default class BasePhase extends Phaser.Scene {
         this.revealMask = this.make.renderTexture({ x: this.width / 2, y: this.height / 2, width: this.width, height: this.height }, false);
         this.mask = new Phaser.Display.Masks.BitmapMask(this, this.revealMask);
 
-        //A máscara é aplicada à imagem quadro, o que significa que a imagem só será visível onde a revealMask for preenchida com pixels.
+        // A máscara é aplicada à imagem quadro, o que significa que a imagem só será visível onde a revealMask for preenchida com pixels.
         this.painting.setMask(this.mask);
     }
 
     createPauseButton() {
-       // Cria um botão de pause na tela
-       this.pauseBtn = this.add.image(this.width/55, this.height/27, 'pauseBtn').setScale(this.width/1500)
-       // Torna o botão de pause clicável
-       this.pauseBtn.setInteractive()
-       
-       // Configura o botão de pause para, quando clicado, parar a fase e direcionar para o menu
-       this.pauseBtn.on('pointerdown', () => {
-           this.scene.start('Menu'); // Direciona para o menu 
-           this.scene.stop('Phase1'); // Para a fase 1
-       })
+        // Cria um botão de pause na tela
+        this.pauseBtn = this.add.image(this.width/55, this.height/27, 'pauseBtn').setScale(this.width/1500)
+        // Torna o botão de pause clicável
+        this.pauseBtn.setInteractive()
+
+        this.anims.create({
+            key: 'SpriteLoading', // Nome da animação
+            frames: this.anims.generateFrameNumbers('spriteLoading', {start:0, end:5}), 
+            frameRate: 2, 
+            repeat: -1 
+        })
+
+        this.spriteLoading = this.add.sprite(this.width/34, this.height/12, 'spriteLoading')
+        .setScale(this.width/7000)
+        .setInteractive();
+
+    
+        // Cria o botão de pular o tutorial
+        this.pauseBtn.on('pointerdown', (pointer) => {
+            this.spriteLoading.setVisible(true);
+            
+            // Inicia a animação do jogador configurada
+            this.spriteLoading.anims.play('SpriteLoading',true);
+            this.touchStartTime = pointer.downTime; // Armazena o tempo do toque
+
+            let touchDuration = this.time.now - this.touchStartTime; // Calcula a duração
+            
+
+            if (touchDuration >= 2500) {
+                this.scene.start("LevelSelect");
+                this.spriteLoading.anims.stop();
+                this.spriteLoading.setFrame(0);
+                this.spriteLoading.setVisible(false);
+            }
+        });
+
+        /*
+        this.pauseBtn.on('pointerup', (pointer) => {
+            let touchDuration = this.time.now - this.touchStartTime; // Calcula a duração
+            this.spriteLoading.anims.stop();
+            this.spriteLoading.setFrame(0);
+            this.spriteLoading.setVisible(false);
+
+            if (touchDuration >= 2500) {
+                this.scene.start("LevelSelect");
+            }
+        });
+        */
+
+        /*
+        // Configura o botão de pause para, quando clicado, parar a fase e direcionar para o menu
+        this.pauseBtn.on('pointerdown', () => {
+            this.spriteLoading = this.add.sprite(this.width*0.95, this.height*0.1, 'spriteLoading').setScale(0.2).setInteractive();
+            this.spriteLoading.setVisible(true);
+            this.anims.create({
+                key: 'SpriteLoading', // Nome da animação
+                frames: this.anims.generateFrameNumbers('spriteLoading', {start:0, end:5}), 
+                frameRate: 2, 
+                repeat: -1, 
+                onComplete: () => {
+                    this.scene.start('LevelSelect'); // Direciona para o menu 
+                    this.scene.stop('Phase1'); // Para a fase 1
+                }
+            })
+            // Inicia a animação do jogador configurada
+            this.spriteLoading.anims.play('SpriteLoading', true);
+            this.touchStartTime = pointer.downTime; // Armazena o tempo do toque
+       }) */
     }
 
     update(){
@@ -302,12 +360,7 @@ export default class BasePhase extends Phaser.Scene {
             this.precisionText = this.add.text(bgVictory.x - 480, bgVictory.y + 30, 'Precisão:' + Math.round(this.precision) + '%', {fontFamily:'Futura', fontSize: '27px', fill: '#000000' });
 
             // Cria o botao para proxima fase
-            this.next = this.add.text(bgVictory.x + 210, bgVictory.y + 225, 'Próxima Fase', {
-                fontSize: '32px',
-                fill: '#fff',
-                backgroundColor: '#ffd300',
-                padding: { x: 10, y: 5 }
-            })
+            this.next = this.add.image(bgVictory.x + bgVictory.width/1.5, bgVictory.y + bgVictory.height/1.25, 'continueBtn')
             // Torna o botão de próxima fase clicável e permite que, caso ele seja clicado, 
             // pare a fase 1 e o jogo direcione para o menu de seleção de níveis
             .setInteractive() 
@@ -316,6 +369,7 @@ export default class BasePhase extends Phaser.Scene {
                 this.scene.stop(this.phaseKey); // Para a fase 1
                 this.scene.start(this.nextPhase); // Direciona para a seleção de níveis
             })
+            .setScale(this.width/800)
 
         }, 5700);
     }
