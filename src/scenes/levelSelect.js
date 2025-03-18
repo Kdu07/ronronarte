@@ -14,39 +14,25 @@ export default class LevelSelect extends Phaser.Scene {
         this.selectPhase3 = this.add.image(this.scale.width*0.6, this.scale.height*0.58, 'selectPhase3').setScale(this.scale.width/1000).setInteractive();
         this.selectPhase4 = this.add.image(this.scale.width*0.6, this.scale.height*0.75, 'selectPhase4').setScale(this.scale.width/1000).setInteractive();
 
-        // Se o usuário selecionar a imagem que remete ao modo criativo, ele será direcionado para o modo criativo
-        this.selectCriative.on('pointerdown', () => {        
-            this.scene.start('CreativeMode');    
-        });
-
-        // Se o usuário selecionar a imagem que remete ao tutorial, ele será direcionado para o tutorial
-        this.selectTutorial.on('pointerdown', () => {
-            this.scene.start('Tutorial');
-        });
-
         // Se o usuário selecionar a imagem que remete à primeira fase, ele será direcionado para a primeira fase
-        this.selectPhase1.on('pointerdown', () => {
-                this.scene.launch('OverlayScene'); // Lança a cena sobreposta
-                this.scene.bringToTop('OverlayScene');
-                this.time.delayedCall(1000, () => {
-                    this.scene.start("Phase1");
-                });
-        });
-
-        this.selectPhase2.on('pointerdown', () => {
-            this.scene.start('Phase2');
-        });
-
-        this.selectPhase3.on('pointerdown', () => {
-            this.scene.start('Phase3');
-        });
-
-        this.selectPhase4.on('pointerdown', () => {
-            this.scene.start('Phase4');
-        });
+        this.changeScene(this.selectTutorial, 'Tutorial');
+        this.changeScene(this.selectPhase1, 'Phase1');
+        this.changeScene(this.selectPhase2, 'Phase2');
+        this.changeScene(this.selectPhase3, 'Phase3');
+        this.changeScene(this.selectPhase4, 'Phase4');
+        this.changeScene(this.selectCriative, 'CreativeMode');
     }; 
 
-        
+    changeScene(selectPhase, phaseKey) {
+        selectPhase.on('pointerdown', () => {
+            this.scene.launch('OverlayScene'); // Lança a cena sobreposta
+            this.scene.bringToTop('OverlayScene');
+            this.time.delayedCall(1000, () => {
+                this.scene.start(phaseKey);
+            });
+        });
+    }
+
     update() {
 
     };
