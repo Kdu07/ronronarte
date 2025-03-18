@@ -56,7 +56,7 @@ export default class BasePhase extends Phaser.Scene {
         this.clickSound = this.sound.add(this.soundKey);
 
         // Adiciona o botão de pause
-        this.createPauseButton();
+        this.createHoldButton();
         
         // Configura e adiciona o pombo na tela
         this.spawnTarget();
@@ -112,75 +112,26 @@ export default class BasePhase extends Phaser.Scene {
         this.painting.setMask(this.mask);
     }
 
-    createPauseButton() {
+    createHoldButton() {
+        this.hold = false;
+
         // Cria um botão de pause na tela
         this.pauseBtn = this.add.image(this.width/55, this.height/27, 'pauseBtn').setScale(this.width/1500)
+        
         // Torna o botão de pause clicável
         this.pauseBtn.setInteractive()
 
         this.anims.create({
             key: 'SpriteLoading', // Nome da animação
             frames: this.anims.generateFrameNumbers('spriteLoading', {start:0, end:5}), 
-            frameRate: 2, 
-            repeat: -1 
+            frameRate: 3, 
+            repeat: 0
         })
 
         this.spriteLoading = this.add.sprite(this.width/34, this.height/12, 'spriteLoading')
         .setScale(this.width/7000)
-        .setInteractive();
-
-    
-        // Cria o botão de pular o tutorial
-        this.pauseBtn.on('pointerdown', (pointer) => {
-            this.spriteLoading.setVisible(true);
-            
-            // Inicia a animação do jogador configurada
-            this.spriteLoading.anims.play('SpriteLoading',true);
-            this.touchStartTime = pointer.downTime; // Armazena o tempo do toque
-
-            let touchDuration = this.time.now - this.touchStartTime; // Calcula a duração
-            
-
-            if (touchDuration >= 2500) {
-                this.scene.start("LevelSelect");
-                this.spriteLoading.anims.stop();
-                this.spriteLoading.setFrame(0);
-                this.spriteLoading.setVisible(false);
-            }
-        });
-
-        /*
-        this.pauseBtn.on('pointerup', (pointer) => {
-            let touchDuration = this.time.now - this.touchStartTime; // Calcula a duração
-            this.spriteLoading.anims.stop();
-            this.spriteLoading.setFrame(0);
-            this.spriteLoading.setVisible(false);
-
-            if (touchDuration >= 2500) {
-                this.scene.start("LevelSelect");
-            }
-        });
-        */
-
-        /*
-        // Configura o botão de pause para, quando clicado, parar a fase e direcionar para o menu
-        this.pauseBtn.on('pointerdown', () => {
-            this.spriteLoading = this.add.sprite(this.width*0.95, this.height*0.1, 'spriteLoading').setScale(0.2).setInteractive();
-            this.spriteLoading.setVisible(true);
-            this.anims.create({
-                key: 'SpriteLoading', // Nome da animação
-                frames: this.anims.generateFrameNumbers('spriteLoading', {start:0, end:5}), 
-                frameRate: 2, 
-                repeat: -1, 
-                onComplete: () => {
-                    this.scene.start('LevelSelect'); // Direciona para o menu 
-                    this.scene.stop('Phase1'); // Para a fase 1
-                }
-            })
-            // Inicia a animação do jogador configurada
-            this.spriteLoading.anims.play('SpriteLoading', true);
-            this.touchStartTime = pointer.downTime; // Armazena o tempo do toque
-       }) */
+        .setInteractive()
+        .setVisible(false);
     }
 
     update(){
@@ -197,6 +148,8 @@ export default class BasePhase extends Phaser.Scene {
         if (!this.stopped){ 
             this.movement(this.target);  
         }
+
+        this.updateHoldButton()
     }
 
     // Função para contar o tempo no temporizador
@@ -204,6 +157,30 @@ export default class BasePhase extends Phaser.Scene {
         this.elapsedSeconds++;
         this.timerText.setText(this.elapsedSeconds);
     }
+
+    updateHoldButton(){
+        // Cria o botão de pular o tutorial
+        this.pauseBtn.on('pointerdown', (pointer) => {
+            this.hold = true
+        });
+
+        this.pauseBtn.on('pointerup', (pointer) => {
+            this.hold = false
+        });
+        
+        if (this.hold){
+            this.spriteLoading.setVisible(true);
+            this.spriteLoading.anims.play('SpriteLoading',true);
+
+            if (this.spriteLoading.anims.currentFrame.index == 5){
+                this.scene.start("LevelSelect");
+                this.scene.stop(this.phaseKey);
+            }
+        }else{
+            this.spriteLoading.anims.stop().setFrame(0).setVisible(false);
+        }
+    }
+
 
     spawnTarget() {
         // Inicia a movimentação do pombo
