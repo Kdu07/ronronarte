@@ -2,7 +2,19 @@ import BasePhase from "./basePhase.js";
 
 export default class CreativeMode extends BasePhase{
     constructor(){
-        super('CreativeMode', false, 'bgWhite', 'pigeon', 'flyPigeon', 'pigeonSound')
+        let configDict = {
+            "completePhase":false,
+            "backgroundKey":"bgWhite",
+            "artistKey":"artist3",
+            "textArtist":['Cheri...'],
+            "textPainting":['Pintura...'],
+            "targetKey":"pigeon",
+            "animKey":"flyPigeon",
+            "soundKey":"pigeonSound",
+        }
+        
+        // Configura a chave de classe e os assets da fase
+        super('CreativeMode', configDict)
     }
 
     create(){
@@ -30,7 +42,7 @@ export default class CreativeMode extends BasePhase{
         this.splashesButtons = this.add.group();
         // Configura as propriedades de botão para cada splash do arrey de splashes
         this.splashes.forEach((splash, index) =>{ 
-            let splashButton = this.add.image(this.width - 100, 160 + (index * 80), splash).setInteractive().setScale(this.width/3500).setVisible(false).setDepth(20);
+            let splashButton = this.add.image(this.width - 100, 240 + (index * this.width/3500*300), splash).setInteractive().setScale(this.width/3500).setVisible(false).setDepth(20);
 
             splashButton.on('pointerdown', () =>{
                 this.selectedSplash = splash;

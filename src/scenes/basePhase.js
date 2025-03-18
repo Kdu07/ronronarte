@@ -1,24 +1,26 @@
 // Classe de cena a ser exportada
 export default class BasePhase extends Phaser.Scene {
-    constructor(phaseKey, completePhase, backgroundKey, targetKey, animKey, soundKey, artistKey, textArtist, textPainting) {
+    constructor(phaseKey, configDict) {
         // Configura a chave de classe
         super(phaseKey);
         // Armazenamento dos parâmetros de key (usado para referenciar os assets)
-        this.completePhase = completePhase;
-        this.backgroundKey = backgroundKey;
-        this.soundKey = soundKey;
-        this.targetKey = targetKey;
-        this.animKey = animKey;
+        this.phases = ['Phase0', 'Phase1', 'Phase2', 'Phase3', 'Phase4', 'CreativeMode'];
+        this.phaseKey = phaseKey;
+        this.completePhase = configDict['completePhase'];
+        this.backgroundKey = configDict['backgroundKey'];
+        this.soundKey = configDict['soundKey'];
+        this.targetKey = configDict['targetKey'];
+        this.animKey = configDict['animKey'];
 
         // Parâmetros opcionais
-        if(artistKey != undefined){
-            this.artistKey = artistKey;
+        if(configDict['artistKey'] != undefined){
+            this.artistKey = configDict['artistKey'];
         }
-        if(textArtist != undefined){
-            this.textArtist = textArtist;
+        if(configDict['textArtist'] != undefined){
+            this.textArtist = configDict['textArtist'];
         }
-        if(textPainting != undefined){
-            this.textPainting = textPainting;
+        if(configDict['textPainting'] != undefined){
+            this.textPainting = configDict['textPainting'];
         }
     }
 
@@ -259,28 +261,6 @@ export default class BasePhase extends Phaser.Scene {
                         ease: 'Linear' // Define que a transição será linear
                     });
                 }
-            }, 5000);
-
-            // Adiciona o aviso de recompensa para o tutor
-            setTimeout(() => {
-                let reward = this.add.image(this.painting.x / 1, this.painting.y / 0.8, 'reward').setScale(0.8);
-                // Cria o efeito de fade-in
-                this.tweens.add({
-                    targets: reward,
-                    alpha: 1, // Torna o aviso de recompensa visível
-                    duration: 300, // Tempo da animação de 0.3 segundos
-                    scale: 0.9, // Aumenta um pouco a escala para potencializar o efeito de entrada do aviso de recompensa
-                    ease: 'Linear', // Define que a transição será linear
-                    onComplete: () => {
-                        this.tweens.add({
-                            targets: reward,
-                            alpha: 0.9, // Diminui a opacidade para 90%
-                            duration: 500, // Tempo da transição de meio segundo
-                            scale: 0.8, // Retorna a escala original do aviso de vitória
-                            ease: 'Linear'
-                        });
-                    }
-                });
             }, 2000);
         }, 300);
         
@@ -294,8 +274,8 @@ export default class BasePhase extends Phaser.Scene {
             // Cria o background da tela de vitória
             let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(this.width/900);
 
-            this.add.image(bgVictory.x - 150, bgVictory.y - 142, this.backgroundKey).setScale(0.15);
-            this.add.image(bgVictory.x + 300, bgVictory.y - 142, this.artistKey).setScale(0.23);
+            this.add.image(this.width / 3, this.height / 3, this.backgroundKey).setDisplaySize(this.width/4.5, this.width/4.5/1.77);
+            this.add.image(this.width / 1.5, this.height / 3, this.artistKey).setDisplaySize(this.width/7, this.width/7);
 
             // Cria a caixa de texto de contextualização do artista e do quadro
             let textBoxArtist = this.add.image(bgVictory.x + 300, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
@@ -332,8 +312,9 @@ export default class BasePhase extends Phaser.Scene {
             // pare a fase 1 e o jogo direcione para o menu de seleção de níveis
             .setInteractive() 
             .on('pointerdown', () => {
-                this.scene.stop('Phase1'); // Para a fase 1
-                this.scene.start('LevelSelect'); // Direciona para a seleção de níveis
+                this.nextPhase = this.phases[this.phases.indexOf(this.phaseKey) + 1];
+                this.scene.stop(this.phaseKey); // Para a fase 1
+                this.scene.start(this.nextPhase); // Direciona para a seleção de níveis
             })
 
         }, 5700);
