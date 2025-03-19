@@ -1,22 +1,26 @@
 // Classe de cena a ser exportada
 export default class BasePhase extends Phaser.Scene {
-    constructor(phaseKey, completePhase, backgroundKey, targetKey, animKey, soundKey, artistKey, textArtist, textPainting) {
+    constructor(phaseKey, configDict) {
         // Configura a chave de classe
         super(phaseKey);
-        this.completePhase = completePhase;
-        this.backgroundKey = backgroundKey;
-        this.soundKey = soundKey;
-        this.targetKey = targetKey;
-        this.animKey = animKey;
+        // Armazenamento dos parâmetros de key (usado para referenciar os assets)
+        this.phases = ['Phase0', 'Phase1', 'Phase2', 'Phase3', 'Phase4', 'CreativeMode'];
+        this.phaseKey = phaseKey;
+        this.completePhase = configDict['completePhase'];
+        this.backgroundKey = configDict['backgroundKey'];
+        this.soundKey = configDict['soundKey'];
+        this.targetKey = configDict['targetKey'];
+        this.animKey = configDict['animKey'];
 
-        if(artistKey != undefined){
-            this.artistKey = artistKey;
+        // Parâmetros opcionais
+        if(configDict['artistKey'] != undefined){
+            this.artistKey = configDict['artistKey'];
         }
-        if(textArtist != undefined){
-            this.textArtist = textArtist;
+        if(configDict['textArtist'] != undefined){
+            this.textArtist = configDict['textArtist'];
         }
-        if(textPainting != undefined){
-            this.textPainting = textPainting;
+        if(configDict['textPainting'] != undefined){
+            this.textPainting = configDict['textPainting'];
         }
     }
 
@@ -34,15 +38,17 @@ export default class BasePhase extends Phaser.Scene {
             // Configura a pontuação máxima
             this.maxScore = 3;
             
+            // Cria o background de fase completa
             this.createBackgroundComplete();
             
             // Adiciona o placar
-            this.scoreboard = this.add.text(this.width/2, this.height/200, this.score + '/' + this.maxScore, {fontFamily:'Futura', fontSize:'45px', fill:'#FFFFFF'})
+            this.scoreboard = this.add.text(this.width/1000, this.height/2, this.score + '/' + this.maxScore, {fontFamily:'Futura', fontSize:'40px', fill:'#FFFFFF'})
 
             // Adiciona o temporizador
             this.createTimer();
 
         }else{
+            // Cria o background
             this.createBackground();
         }
 
@@ -57,15 +63,16 @@ export default class BasePhase extends Phaser.Scene {
     }
 
     createTimer() {
-        // Configurar o temporizador
+        // Configura o temporizador
         this.timerText = null;
         this.startTime = null;
         this.timerEvent = null;
         this.elapsedSeconds = 0;
         
-        this.timerText = this.add.text(this.width/1.05, this.height/200, '0', { fontFamily:'Futura',fontSize: '45px', fill: '#fff' });
+        // Cria o texto do temporizador
+        this.timerText = this.add.text(this.width/300, this.height/1.15, '0', { fontFamily:'Futura',fontSize: '40px', fill: '#FFFFFF' });
 
-        // Crie o evento do temporizador e guarde a referência
+        // Cria o evento do temporizador e guarda a referência
         this.timerEvent = this.time.addEvent({
             delay: 1000,
             callback: this.updateTimer,
@@ -73,30 +80,31 @@ export default class BasePhase extends Phaser.Scene {
             loop: true
         });
 
-        // Adicione a lógica de término da fase
+        // Adiciona a lógica de término da fase
         this.time.addEvent({
-            delay: 5000, // Por exemplo, fase termina após 5 segundos
+            delay: 5000, // Fase termina após 5 segundos
             callback: this.endPhase,
             callbackScope: this
         });
     }
 
     createBackground(){
+        // Cria a imagem do background
         this.frame = this.add.image(this.width / 2, this.height / 2, this.backgroundKey).setDisplaySize(this.width, this.height);
         this.frameHitbox = 0;
     }
 
     createBackgroundComplete() {
-        // Adiciona máscara branca, quadro e a borda
-        this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setDisplaySize(this.width, this.width / 1.8);
-        this.painting = this.add.image(this.width / 2, this.height / 2, this.backgroundKey).setDisplaySize(this.width, this.width / 1.8);
-        this.frame = this.add.image(this.width / 2, this.height / 2, 'frame').setDisplaySize(this.width, this.width/2.3);
+        // Adiciona máscara branca, o quadro e a borda
+        this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setDisplaySize(this.width, this.width/1.4);
+        this.painting = this.add.image(this.width / 2, this.height / 2, this.backgroundKey).setDisplaySize(this.width/1.065, (this.width / 1.77)/1.03);
+        this.frame = this.add.image(this.width / 2, this.height / 2, 'frame2').setDisplaySize(this.width, this.height);
         this.frameHitbox = this.frame.displayWidth / 35;
 
         // Torna o quadro visível
         this.painting.setAlpha(1);
 
-        // Cria uma máscara inicial vazia 
+        // Cria uma máscara inicialmente vazia 
         this.revealMask = this.make.renderTexture({ x: this.width / 2, y: this.height / 2, width: this.width, height: this.height }, false);
         this.mask = new Phaser.Display.Masks.BitmapMask(this, this.revealMask);
 
@@ -105,22 +113,25 @@ export default class BasePhase extends Phaser.Scene {
     }
 
     createPauseButton() {
-       // Adiciona um botão de pause na tela
+       // Cria um botão de pause na tela
        this.pauseBtn = this.add.image(this.width/55, this.height/27, 'pauseBtn').setScale(this.width/1500)
+       // Torna o botão de pause clicável
        this.pauseBtn.setInteractive()
        
-       // Configura o botão para voltar ao menu
+       // Configura o botão de pause para, quando clicado, parar a fase e direcionar para o menu
        this.pauseBtn.on('pointerdown', () => {
-           this.scene.start('Menu');
-           this.scene.stop('Phase1');
+           this.scene.start('Menu'); // Direciona para o menu 
+           this.scene.stop('Phase1'); // Para a fase 1
        })
     }
 
-    update(){        
+    update(){
+        // Confere e ativa funcionalidades quando o pombo é clicado        
         if(this.completePhase){
-            // Confere se o pombo é clicado
+            // Para a configuração de fase completa 
             this.clickTargetComplete(); 
         }else{
+            // Para a configuração de fase básica
             this.clickTarget();
         }
 
@@ -172,6 +183,7 @@ export default class BasePhase extends Phaser.Scene {
         this.target.play(this.animKey); // Fim
     }
 
+    // Função que confere se o pombo é clicado
     clickTarget(){
         this.input.removeAllListeners('pointerdown'); // Ignora todos os cliques anteriores
         
@@ -224,6 +236,7 @@ export default class BasePhase extends Phaser.Scene {
                     this.painting.setMask();
                     this.painting.setAlpha(1);
 
+                    // Adiciona a tela de vitória
                     this.displayVictory();                        
                 } else {
                     // Se o jogo não acabou, gera outro pombo
@@ -234,50 +247,30 @@ export default class BasePhase extends Phaser.Scene {
     }
 
     displayVictory() {
+        // Armeza a precisão do usuário
         this.precision = this.score/this.totalClicks*100
         
         // Adiciona a frase de vitória
         setTimeout(() => {
+            // Cria a imagem da tela de vitória
             let phrase = this.add.image(this.painting.x / 0.95, this.painting.y / 1.1, 'phrase').setScale(0.8);
-            phrase.alpha = 0;
+            phrase.alpha = 0; // Inicialmente, deixa a frase de vitória invisível (para dar o efeito de fade-in)
+            // Cria o efeito de fade-in
             this.tweens.add({
                 targets: phrase,
-                alpha: 1, // Torna visível
-                duration: 500, // Tempo da animação (0.3s)
-                ease: 'Linear',
-                scale: 0.81,
+                alpha: 1, // Torna a frase de vitória visível
+                duration: 500, // Tempo da aparecimento da frase de vitória de meio segundo
+                ease: 'Linear', // Define que a transição será linear
+                scale: 0.81, // Aumenta um pouco a escala para potencializar o efeito de entrada da frase
                 onComplete: () => {
-                    // Após o fade-in, reduzimos a opacidade para 50%
                     this.tweens.add({
                         targets: phrase,
-                        alpha: 0.8, // Mantém opacidade em 50%
-                        duration: 1000, // Tempo da transição (0.5s)
-                        scale: 0.6,
-                        ease: 'Linear'
+                        alpha: 0.8, // Diminui a opacidade para 80%
+                        duration: 1000, // Tempo da aparecimento da frase de vitória de 1 segundo
+                        scale: 0.6, // Diminui a escala para potencializar o efeito de entrada da frase
+                        ease: 'Linear' // Define que a transição será linear
                     });
                 }
-            }, 5000);
-
-            // Adiciona o aviso de recompensa para o tutor
-            setTimeout(() => {
-                let reward = this.add.image(this.painting.x / 1, this.painting.y / 0.8, 'reward').setScale(0.8);
-                this.tweens.add({
-                    targets: reward,
-                    alpha: 1, // Torna visível
-                    duration: 300, // Tempo da animação (0.3s)
-                    scale: 0.9,
-                    ease: 'Linear',
-                    onComplete: () => {
-                        // Após o fade-in, reduzimos a opacidade para 50%
-                        this.tweens.add({
-                            targets: reward,
-                            alpha: 0.9, // Mantém opacidade em 50%
-                            duration: 500, // Tempo da transição (0.5s)
-                            scale: 0.8,
-                            ease: 'Linear'
-                        });
-                    }
-                });
             }, 2000);
         }, 300);
         
@@ -286,43 +279,52 @@ export default class BasePhase extends Phaser.Scene {
             this.timerEvent.remove();
         }
 
-        // Adiciona tela de vitória depois de 5,7 segundos 
+        // Adiciona tela de vitória depois de 5,3 segundos 
         setTimeout(() => {
-            // Background
+            // Cria o background da tela de vitória
             let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(this.width/900);
 
-            // Imagens
-            this.add.image(bgVictory.x - 150, bgVictory.y - 142, this.backgroundKey).setScale(0.15);
-            this.add.image(bgVictory.x + 300, bgVictory.y - 142, this.artistKey).setScale(0.23);
+            this.add.image(this.width / 3, this.height / 3, this.backgroundKey).setDisplaySize(this.width/4.5, this.width/4.5/1.77);
+            this.add.image(this.width / 1.5, this.height / 3, this.artistKey).setDisplaySize(this.width/7, this.width/7);
+
+            // Cria a caixa de texto de contextualização do artista e do quadro
             let textBoxArtist = this.add.image(bgVictory.x + 300, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
             let textBoxPainting = this.add.image(bgVictory.x - 90, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
+            // Configura a animação do spritesheet do gato
             this.anims.create({
                 key: 'animCat',
-                frames: this.anims.generateFrameNumbers('cat', { start: 0, end: 3 }),
-                frameRate: 10,
-                repeat: -1
+                frames: this.anims.generateFrameNumbers('cat', { start: 0, end: 3 }), // Define os frames do spritesheet que serão usados 
+                frameRate: 10, // Define o número de frames por segundos
+                repeat: -1 // Define a animação como contínua
             });
 
+            // Cria o spritesheet do gato na tela de vitória
             this.cat = this.add.sprite(bgVictory.x - 370, bgVictory.y + 190, 'cat').setScale(9).setFlip(true,false);
+            // Inicia a anumação do spritesheet do gato
             this.cat.play('animCat');
             
-            // Textos na tela
+            // Cria os textos de contextualização do artista e do quadro da tela de vitória 
             this.textArtistAdded = this.add.text(textBoxArtist.x - 145, textBoxArtist.y - 70, this.textArtist[0], {fontFamily:'Futura', fontSize: '17px', fill: '#000000' });
             this.textPaintingAdded = this.add.text(textBoxPainting.x - 145, textBoxPainting.y - 70, this.textPainting[0], {fontFamily:'Futura', fontSize: '16.3px', fill: '#000000' });
+
+            // Cria os textos que mostram os pontos e a precisão do usuário
             this.scoreboard = this.add.text(bgVictory.x - 480, bgVictory.y + 2, 'Pontos:' + this.score + '/' + this.maxScore, {fontFamily:'Futura', fontSize: '27px', fill: '#000000' });
             this.precisionText = this.add.text(bgVictory.x - 480, bgVictory.y + 30, 'Precisão:' + Math.round(this.precision) + '%', {fontFamily:'Futura', fontSize: '27px', fill: '#000000' });
 
-            // Botao para proxima fase
+            // Cria o botao para proxima fase
             this.next = this.add.text(bgVictory.x + 210, bgVictory.y + 225, 'Próxima Fase', {
                 fontSize: '32px',
                 fill: '#fff',
                 backgroundColor: '#ffd300',
                 padding: { x: 10, y: 5 }
             })
-            .setInteractive()
+            // Torna o botão de próxima fase clicável e permite que, caso ele seja clicado, 
+            // pare a fase 1 e o jogo direcione para o menu de seleção de níveis
+            .setInteractive() 
             .on('pointerdown', () => {
-                this.scene.stop('Phase1');
-                this.scene.start('LevelSelect');
+                this.nextPhase = this.phases[this.phases.indexOf(this.phaseKey) + 1];
+                this.scene.stop(this.phaseKey); // Para a fase 1
+                this.scene.start(this.nextPhase); // Direciona para a seleção de níveis
             })
 
         }, 5700);
