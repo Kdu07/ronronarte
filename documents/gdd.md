@@ -255,7 +255,7 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
    
    **Plano de ação:** Estudar mais como fazer essa adaptabilidade em todas as funcionalidades e explicar ao parceiro a dificuldade dessa tarefa.
 
-9. **Atrasos ou ausência de membros na daily** : 
+9. **Atrasos ou ausência de membros na daily** : Dado os deveres em 
    
    **Impacto:** 
    
@@ -278,6 +278,8 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
    **Probabilidade:** 
    
    **Plano de ação:**
+
+### Oportunidades
 
 ### 1.1.7. Objetivos, Metas e Indicadores (sprint 4)
 
