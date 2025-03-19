@@ -239,7 +239,7 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
    
    **Plano de ação:** Priorizar a produção de um jogo testável dentro do prazo estabelecido e cobrar o parceiro de reazliar seus testes, conforme combinado.
 
-7. **Conflitos entre a equipe** : De conflitos entre a equipe considera-se quaisquer desacordos ou desentendimentos, como opniões divergentes sobre como uma tarefa deve ser implementada ou em casos de tarefas mal executadas ou atrasadas.
+7. **Conflitos entre a equipe** : De conflitos entre a equipe considera-se quaisquer desacordos ou desentendimentos, como opiniões divergentes sobre como uma tarefa deve ser implementada ou em casos de tarefas mal executadas ou atrasadas.
    
    **Impacto:** Moderado, pois depende do grau da discordância. Em casos extremos, o desempenho e a convivência da equipe podem ser afetados.
    
