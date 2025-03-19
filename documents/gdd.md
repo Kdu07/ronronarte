@@ -217,7 +217,7 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
    
    **Probabilidade:** 
    
-   **Plano de ação:** Explicar e sempre deixar claro ao parceiro exatamente o que é possível desenvolver, assim como não prometer implementos sem a certeza de que será possível implementá-lo, tendo em mente as habilidades técnicas que serão aprendidas neste módulo. Além disso, dar ênfase às expectativas que são possíevis executar.
+   **Plano de ação:** Explicar e sempre deixar claro ao parceiro exatamente o que é possível desenvolver, assim como não prometer implementos sem a certeza de que será possível implementá-lo, tendo em mente as habilidades técnicas que serão aprendidas neste módulo. Além disso, dar ênfase às expectativas que são possíveis executar.
 
 5. **Baixo engajamento dos membros com o projeto**: Pode acontecer de, por excesso de atividades ou compromissos extracurriculares, membros da equipe desviarem sua atenção das suas responsabilidades no projeto. 
    
@@ -234,7 +234,30 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
    **Probabilidade:** Entre 11 a 30%, pois desde a primeira sprint o parceiro se disponibilizou e se mostrou motivado para realizar os testes, assim como a faculdade também se propôs a auxiliar nesse feito. Entretanto, é possível de acontecer impedimentos como não entregar um protótipo testável à tempo.
    
    **Plano de ação:** Priorizar a produção de um jogo testável dentro do prazo estabelecido e cobrar o parceiro de reazliar seus testes, conforme combinado.
+
+7. **Conflitos entre a equipe** : De conflitos entre a equipe considera-se quaisquer desacordos ou desentendimentos, como opniões divergentes sobre como uma tarefa deve ser implementadam ou em casos de tarefas mal executadas ou atrasadas.
    
+   **Impacto:** Moderado, pois depende do grau da discordância. Em casos extremos, o desempenho e a convivência da equipe podem ser afetados.
+   
+   **Probabilidade:** De 51% a 70%, haja vista que o grupo é composto por indivíduos diversos e, por isso, é comum que suas perspectivas sejam divergentes. 
+   
+   **Plano de ação:** Cada membro deve sempre atualizar o andamento da sua tarefa à equipe e optar pela comunicação não violenta.
+
+8. **Conflitos entre a equipe** : De conflitos entre a equipe considera-se quaisquer desacordos ou desentendimentos, como opniões divergentes sobre como uma tarefa deve ser implementadam ou em casos de tarefas mal executadas ou atrasadas.
+   
+   **Impacto:** Moderado, pois depende do grau da discordância. Em casos extremos, o desempenho e a convivência da equipe podem ser afetados.
+   
+   **Probabilidade:** De 51% a 70%, haja vista que o grupo é composto por indivíduos diversos e, por isso, é comum que suas perspectivas sejam divergentes. 
+   
+   **Plano de ação:** Cada membro deve sempre atualizar o andamento da sua tarefa à equipe e optar pela comunicação não violenta.
+
+9. **A equipe não entregar o jogo adaptado para todos os tipos de dispositivos solicitados pelo parceiro** : Em razão da insciência dos membros e da complexidade de promover a adaptabilidade de algumas funcionalidades do jogo em dispositivos diversos, é possível que a equipe não entregue a experienciada da jogabilidade em sua completude em todos os dispositivo solicitados, de modo que funcione efetimente somente pelo celular ou somente pelo tablet. 
+   
+   **Impacto:** Moderado, pois, embora o projeto ainda pode ser atendido completamente em um dispositivo, a problemática desacata uma preferência do parceiro.
+   
+   **Probabilidade:** 90%, em função da complexidade de implementar responsividade ao jogo com a linguagem e com a biblioteca utilizada no código. 
+   
+   **Plano de ação:** Estudar mais como fazer essa adaptabilidade em todas as funcionalidades e explicar ao parceiro a dificuldade dessa tarefa.
 
 ### 1.1.7. Objetivos, Metas e Indicadores (sprint 4)
 
