@@ -42,7 +42,8 @@ export default class BasePhase extends Phaser.Scene {
             this.createBackgroundComplete();
             
             // Adiciona o placar
-            this.scoreboard = this.add.text(this.width/1000, this.height/2, this.score + '/' + this.maxScore, {fontFamily:'Futura', fontSize:'40px', fill:'#FFFFFF'})
+            this.scoreboard = this.add.text(this.width/2, this.height*0.001, this.score + '/' + this.maxScore, 
+                {fontFamily:'Futura', fontSize:this.width/50, fill:'#000'})
 
             // Adiciona o temporizador
             this.createTimer();
@@ -70,7 +71,8 @@ export default class BasePhase extends Phaser.Scene {
         this.elapsedSeconds = 0;
         
         // Cria o texto do temporizador
-        this.timerText = this.add.text(this.width/300, this.height/1.15, '0', { fontFamily:'Futura',fontSize: '40px', fill: '#FFFFFF' });
+        this.timerText = this.add.text(this.width/1.1, this.height*0.001, '0', 
+        { fontFamily:'Futura',fontSize: this.width/50, fill: '#000' });
 
         // Cria o evento do temporizador e guarda a referência
         this.timerEvent = this.time.addEvent({
@@ -201,8 +203,8 @@ export default class BasePhase extends Phaser.Scene {
         this.target.directionY = 1;
         
         // AJusta a hitbox do pombo (usado para que não saia da tela)
-        this.target.hitboxWidth = 45;
-        this.target.hitboxHeight = 45;
+        this.target.hitboxWidth = this.target.width;
+        this.target.hitboxHeight = this.target.height;
     
         // Inicia a animação de voo do pombo
         this.target.play(this.animKey);

@@ -88,7 +88,13 @@ export default class SplashScreen extends Phaser.Scene {
                 this.scene.stop('SplashScreen'); // Para a cena atual
                 this.scene.start('Menu'); // Inicia a cena Menu
             }); 
-        });          
+        });
+
+        if (this.isPortrait){
+            this.add.text(this.scale.width/3.2, this.scale.height*0.83, 
+                'Para uma melhor experiência, \nvire seu celular na horizontal', 
+                {fontFamily:'Futura', fontSize:this.scale.width/30, fill:'#FFFFFF'})
+        }
     }
 
     resizeGame() {
