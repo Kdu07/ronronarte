@@ -204,7 +204,7 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
 
 3. **Mudança drástica de escopo**: Configura-se como mudança drástica de escopo a ocasião em que o parceiro queira mudar, de maneira drástica, as principais funcionalidades e objetivos do projeto, ou a aprovação de regulamentações não esperadas que coloquem em risco a execução do escopo original do projeto.
    
-   **Impacto:** 90%, pois o projeto é guiado pelo seu designio estabelecido com o parceiro e com o stakeholder anteriormente ao início das sprints, de forma que, a alteração brusca desse alcance exigi, com alta prioridade em um curto período de tempo, a remodelagem de quase todos os setores já desenvolvidos, se não também dos próprios artefatos. 
+   **Impacto:** Muito Alto, pois o projeto é guiado pelo seu designio estabelecido com o parceiro e com o stakeholder anteriormente ao início das sprints, de forma que, a alteração brusca desse alcance exigi, com alta prioridade em um curto período de tempo, a remodelagem de quase todos os setores já desenvolvidos, se não também dos próprios artefatos. 
    
    **Probabilidade:** Em torno de 11 a 30%, pois, em relação ao parceiro, ele demonstrou interesse e flexibilidade ao definir o escopo, compreendendo o nível de conhecimento dos membros. Entretanto, ainda pode acontecer dele apresentar insatisfação ou mudar de ideia bruscamente, de forma a querer redefinir grande parte do desenvolvimento.
    Já sobre mudanças de regulamento, alterações que impossibilitem a entrega do projeto são muito improváveis, considerando principalmente que a aprovação e aplicação de mutações legislativas exigem muito tempo para serem efetivadas.
