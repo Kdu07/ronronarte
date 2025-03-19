@@ -255,6 +255,30 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
    
    **Plano de ação:** Estudar mais como fazer essa adaptabilidade em todas as funcionalidades e explicar ao parceiro a dificuldade dessa tarefa.
 
+9. **Atrasos ou ausência de membros na daily** : 
+   
+   **Impacto:** 
+   
+   **Probabilidade:** 
+   
+   **Plano de ação:**
+
+10. **Falta de materiais essenciais fornecidos pelo parceiro** : 
+   
+   **Impacto:** 
+   
+   **Probabilidade:** 
+   
+   **Plano de ação:**
+
+11. **Projeto não finalizado após 10 semanas:** : 
+   
+   **Impacto:** 
+   
+   **Probabilidade:** 
+   
+   **Plano de ação:**
+
 ### 1.1.7. Objetivos, Metas e Indicadores (sprint 4)
 
 *Definição de metas SMART (específicas, mensuráveis, alcançáveis, relevantes e temporais) para seu projeto, com indicadores claros para mensuração*
