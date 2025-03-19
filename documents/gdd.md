@@ -255,15 +255,15 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
    
    **Plano de ação:** Estudar mais como fazer essa adaptabilidade em todas as funcionalidades e explicar ao parceiro a dificuldade dessa tarefa.
 
-9. **Atrasos ou ausência de membros na daily** : Dado os deveres em 
+9. **Atrasos ou ausência de membros na daily** : Dado as responsabilidades dos membros em atividades extras, é possível que haja demora em chegar para os horários da daily ou até mesmo a ausência nela. 
    
-   **Impacto:** 
+   **Impacto:** Alto, pois a falta de um ou mais membros na daily deixa o membro ausênte desatualizado do kanban, e consequentemente das atividades concluídas e das que serão trabalhadas no horário de desenvolvimento e deixa a equipe desinformada do que o membro está desenvolvendo. Dessa forma, o obstáculo dificulta a comunicação entre os membros, principalmente em casos de atrasos ou de tarefas com dependências ainda não realizadas e alimenta, assim, o individualismo.
    
-   **Probabilidade:** 
+   **Probabilidade:** 31% a 50%, pois não é raro acontecer de um membro se perder em seus horários e atrasar para chegar na daily, especialmente em razão de todos estarem no primeiro módulo, ainda em período de adaptação. 
    
-   **Plano de ação:**
+   **Plano de ação:** 5 minutos antes da daily, como forma de mitigar a problemática, é válido o ScrumMaster ou os outros membros mandarem mensagem no grupo de Whatsapp e no Slack solicitando que todos os membros retornem para a sala e, se necessário, marcando também os membros que ainda não estiverem no local. Ademais, comunicar os membros que estiverem atrasando ou se ausentando da daily sobre a importância desse momento para o desenvolvimento do projeto e sugerir formas de ajudar a lembrá-lo de chegar no horário, como colocar um despertador.
 
-10. **Falta de materiais essenciais fornecidos pelo parceiro** : 
+11. **Falta de materiais essenciais fornecidos pelo parceiro** : 
    
    **Impacto:** 
    
