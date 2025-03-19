@@ -243,15 +243,7 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
    
    **Plano de ação:** Cada membro deve sempre atualizar o andamento da sua tarefa à equipe e optar pela comunicação não violenta.
 
-8. **Conflitos entre a equipe** : De conflitos entre a equipe considera-se quaisquer desacordos ou desentendimentos, como opniões divergentes sobre como uma tarefa deve ser implementadam ou em casos de tarefas mal executadas ou atrasadas.
-   
-   **Impacto:** Moderado, pois depende do grau da discordância. Em casos extremos, o desempenho e a convivência da equipe podem ser afetados.
-   
-   **Probabilidade:** De 51% a 70%, haja vista que o grupo é composto por indivíduos diversos e, por isso, é comum que suas perspectivas sejam divergentes. 
-   
-   **Plano de ação:** Cada membro deve sempre atualizar o andamento da sua tarefa à equipe e optar pela comunicação não violenta.
-
-9. **A equipe não entregar o jogo adaptado para todos os tipos de dispositivos solicitados pelo parceiro** : Em razão da insciência dos membros e da complexidade de promover a adaptabilidade de algumas funcionalidades do jogo em dispositivos diversos, é possível que a equipe não entregue a experienciada da jogabilidade em sua completude em todos os dispositivo solicitados, de modo que funcione efetimente somente pelo celular ou somente pelo tablet. 
+8. **A equipe não entregar o jogo adaptado para todos os tipos de dispositivos solicitados pelo parceiro** : Em razão da insciência dos membros e da complexidade de promover a adaptabilidade de algumas funcionalidades do jogo em dispositivos diversos, é possível que a equipe não entregue a experienciada da jogabilidade em sua completude em todos os dispositivo solicitados, de modo que funcione efetimente somente pelo celular ou somente pelo tablet. 
    
    **Impacto:** Moderado, pois, embora o projeto ainda pode ser atendido completamente em um dispositivo, a problemática desacata uma preferência do parceiro.
    
