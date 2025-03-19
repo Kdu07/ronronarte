@@ -267,7 +267,10 @@ export default class BasePhase extends Phaser.Scene {
                     this.displayVictory();                        
                 } else {
                     // Se o jogo não acabou, gera outro pombo
-                    this.spawnTarget();
+                    setTimeout(() => {
+                        this.spawnTarget();
+                        this.add.image(this.width/2, this.height/2, 'reward')
+                    }, 2000);
                 };
             }
         });
