@@ -208,7 +208,6 @@ export default class BasePhase extends Phaser.Scene {
 
         // Configura aceleração do pombo no eixo y
         this.target.accelerationY = Phaser.Math.FloatBetween(-0.5, 0.5);
-        this.target.t = 0; // Tempo inicial
         this.target.VyMax = 15; // Velocidade máxima no eixo y
         this.target.VyMin = 0.5; // Velocidade mínima no eixo y
 
@@ -363,11 +362,7 @@ export default class BasePhase extends Phaser.Scene {
         }, 5700);
     }
 
-    movement(target, deltaTime) {
-
-        // Icremento no tempo t
-        target.t += deltaTime / 1000
-
+    movement(target) {
         // Limite para a borda em X considerando a hitbox do pombo
         if (target.x >= (this.width - target.hitboxWidth - this.frameHitbox)) {
             // Direção para a esquerda
