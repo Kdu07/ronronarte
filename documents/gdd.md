@@ -182,7 +182,7 @@ Ser referência no mercado pet focando na educação, oferecendo um serviço per
 
 A matriz de risco consiste em uma ferramenta que auxilia na identificação e avaliação de potenciais obstáculos que podem afetar o desenvolvimento e a conclusão de um projeto, assim como as possíveis oportunidades de elevar o escopo do projeto para uma esfera maior. Para isso, por intermédio de uma estrutura coluna x linha que relaciona probabilidade e impacto, a matriz quantifica e classifica os riscos e oportunidades, de modo a torná-los mais visíveis e, portanto, mais tangíveis para elaborar um plano de ação de modo a mitigar as ameaças e aproveitar as circunstâncias favoráveis. Dessa forma, a matriz de risco e oportunidades é útil para garantir que os esforços e os recursos sejam estrategicamente e adequadamente alocados e para maximizar as chances de sucesso do projeto. 
 
-Sob essa ótica, segue listados os riscos - bem como o plano de ação correspondente para mitigá-los - e as oportunidades identificadass pela equipe, ressaltando também como eles se enquadram na matriz e seus impactos relevantes sobre o projeto.
+Sob essa ótica, segue listados os riscos - bem como o plano de ação correspondente para mitigá-los - e as oportunidades identificadas pela equipe, ressaltando também como eles se enquadram na matriz e seus impactos relevantes sobre o projeto.
 
 ### Riscos
 
@@ -200,7 +200,16 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
    
    **Probabilidade:** 80%, visto que as habilidades do campo da programação - o qual correspondente à base do funcionando do jogo em si - exigem, sempre, conhecimentos da linguagem e da biblioteca utilizada. 
    
-   **Plano de ação:** Adiantar os estudos técnicos que a faculdade fornece, buscar outras fontes de conhecimento (como a internet ou livros) e solicitar auxílio da professor ou do monitor da área de programação para tarefas mais complexas que estivermos com dificuldade de executar. 
+   **Plano de ação:** Adiantar os estudos técnicos que a faculdade fornece, buscar outras fontes de conhecimento (como a internet ou livros) e solicitar auxílio da professora ou do monitor da área de programação para tarefas do código mais complexas que estivermos com dificuldade de executar.
+
+3. **Mudança drástica de escopo**: Configura-se como mudança drástica de escopo a ocasião em que o parceiro queira mudar, de maneira drástica, as principais funcionalidades e objetivos do projeto, ou a aprovação de regulamentações não esperadas que coloquem em risco a execução do escopo original do projeto.
+   
+   **Impacto:** 90%, pois o projeto é guiado pelo seu designio estabelecido com o parceiro e com o stakeholder anteriormente ao início das sprints, de forma que, a alteração busca desse alcance exigi, com alta prioridade em um curto período de tempo, a remodelagem de quase todos os setores já desenvolvidos, se não também dos próprios artefatos. 
+   
+   **Probabilidade:** Em torno de 11 a 30%, pois, em relação ao parceiro, ele demonstrou interesse e flexibilidade ao definir o escopo, compreendendo o nível de conhecimento dos membros. Entretanto, pode acontecer do parceiro apresentar insatisfação ou mudar de ideia bruscamente, de forma a querer redefinir grande parte do desenvolvimento.
+   Já sobre mudanças de regulamento, alterações que impossibilitem a entrega do projeto são muito improváveis, considerando principalmente que a aprovação e aplicação de mutações legislativas exigem muito tempo.
+   
+   **Plano de ação:** 
    
 
 ### 1.1.7. Objetivos, Metas e Indicadores (sprint 4)
