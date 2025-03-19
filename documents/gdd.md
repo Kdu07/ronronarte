@@ -209,7 +209,31 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
    **Probabilidade:** Em torno de 11 a 30%, pois, em relação ao parceiro, ele demonstrou interesse e flexibilidade ao definir o escopo, compreendendo o nível de conhecimento dos membros. Entretanto, ainda pode acontecer dele apresentar insatisfação ou mudar de ideia bruscamente, de forma a querer redefinir grande parte do desenvolvimento.
    Já sobre mudanças de regulamento, alterações que impossibilitem a entrega do projeto são muito improváveis, considerando principalmente que a aprovação e aplicação de mutações legislativas exigem muito tempo para serem efetivadas.
    
-   **Plano de ação:** 
+   **Plano de ação:**
+
+4. **Partes interessadas desenvolvem expectativas imprecisas sobre o jogo**: O parceiro pode criar expectativas irrealistas em relação ao entregável, como desejar implemantações que não cabem na grade curricular da equipe no período das 5 sprints. 
+   
+   **Impacto:** Moderado, pois a expectativa do parceiro, apesar de atrapalhar a visão dele em relação ao andamento do projeto sem a sua implementação desejada, não impede o desenvolvimento de acontecer. 
+   
+   **Probabilidade:** 
+   
+   **Plano de ação:** Explicar e sempre deixar claro ao parceiro exatamente o que é possível desenvolver, assim como não prometer implementos sem a certeza de que será possível implementá-lo, tendo em mente as habilidades técnicas que serão aprendidas neste módulo. Além disso, dar ênfase às expectativas que são possíevis executar.
+
+5. **Baixo engajamento dos membros com o projeto**: Pode acontecer de, por excesso de atividades ou compromissos extracurriculares, membros da equipe desviarem sua atenção das suas responsabilidades no projeto. 
+   
+   **Impacto:** Muito Alto, haja vista que o não comprisso de um ou mais membros diminui a produtividade de toda a equipe, sobrecarrega os membros engajados e potencializa o risco de não cumprir com os prazos. 
+   
+   **Probabilidade:** 31 a 50%, pois apesar do projeto dever ocupar um nível de prioridade na rotina dos membros, não é raro superestimar o quanto é possível  responsabilizar-se em atividades extracurriculares que podem consumir muito tempo e esforço, de modo que as terefas do projeto ficam desprezadas.
+   
+   **Plano de ação:** Incentivar os membros que estão menos engajados e mais sobrecarregados com outras atividades a desenvolver uma rotina saudável que respeite suas obrigações dentro do projeto, assim como deixar claro sua importância para o desenvolvimento de toda a equipe.
+
+6. **Não conseguir realizar efetivamente os testes**: Por "realizar efetivamente os testes" entende-se testar o jogo com tutores e gatos de variadas idades e rotinas, de modo a cumprir com todos os passos do "casos de teste" definido. A problemática se revela quando esses testes não são possíveis de serem aplicados, por falta de tempo ou por falta de voluntários, por exemplo.
+   
+   **Impacto:** Alto, pois a não realização dos testes impede a validação de tudo o que foi desenvolvido no jogo, assim como inibe a obtenção de feedbacks de potenciais usuários para identificar possíveis falhas na jogabilidade.
+   
+   **Probabilidade:** Entre 11 a 30%, pois desde a primeira sprint o parceiro se disponibilizou e se mostrou motivado para realizar os testes, assim como a faculdade também se propôs a auxiliar nesse feito. Entretanto, é possível de acontecer impedimentos como não entregar um protótipo testável à tempo.
+   
+   **Plano de ação:** Priorizar a produção de um jogo testável dentro do prazo estabelecido e cobrar o parceiro de reazliar seus testes, conforme combinado.
    
 
 ### 1.1.7. Objetivos, Metas e Indicadores (sprint 4)
