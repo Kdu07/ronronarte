@@ -38,8 +38,8 @@ export default class Tutorial extends Phaser.Scene {
         // Confere se o personagem chegou no meio da tela
         if (this.character.x <= this.scale.width/2){
             // Move o personagem em direção ao meio da tela
-            this.character.x += this.scale.width/1000;
-            this.character.y += this.scale.width/3500;
+            this.character.x += 10;
+            this.character.y += 3;
         }else{
             // O personagem está no meio da tela
             

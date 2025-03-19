@@ -130,8 +130,8 @@ export default class BasePhase extends Phaser.Scene {
             repeat: 0
         })
 
-        this.spriteLoading = this.add.sprite(this.width/34, this.height/12, 'spriteLoading')
-        .setScale(this.width/7000)
+        this.spriteLoading = this.add.sprite(this.width/50, this.height/12, 'spriteLoading')
+        .setScale(this.width/8000)
         .setInteractive()
         .setVisible(false);
     }
@@ -228,7 +228,13 @@ export default class BasePhase extends Phaser.Scene {
                 });
                 
                 this.splash = this.add.image(pointer.x, pointer.y, 'yellowSplash').setScale(this.width/4000).setAlpha(0.6); // Cria um splash no local do clique
-                this.spawnTarget(); // Adiciona um novo alvo
+                this.reward = this.add.image(this.width/2, this.height/2, 'reward').setScale(this.width/1200)
+                    
+                // Se o jogo não acabou, gera outro pombo
+                setTimeout(() => {
+                    this.spawnTarget();
+                    this.reward.destroy()
+                }, 4000);
             }
         });
     }
@@ -266,11 +272,13 @@ export default class BasePhase extends Phaser.Scene {
                     // Adiciona a tela de vitória
                     this.displayVictory();                        
                 } else {
+                    this.reward = this.add.image(this.width/2, this.height/2, 'reward').setScale(this.width/1200)
+                    
                     // Se o jogo não acabou, gera outro pombo
                     setTimeout(() => {
                         this.spawnTarget();
-                        this.add.image(this.width/2, this.height/2, 'reward')
-                    }, 2000);
+                        this.reward.destroy()
+                    }, 4000);
                 };
             }
         });
