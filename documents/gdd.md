@@ -180,7 +180,16 @@ Ser referência no mercado pet focando na educação, oferecendo um serviço per
 
 ### 1.1.6. Matriz de Riscos (sprint 4)
 
-A matriz de risco consiste em uma ferramenta que auxilia na identificação e avaliação de potenciais obstáculos que podem afetar o desenvolvimento e a conclusão de um projeto, assim como as possíveis oportunidades de elevar o escopo do projeto para uma esfera maior. Para isso, por intermédio de uma estrutura coluna x linha que relaciona probabilidade e impacto, a matriz quantifica e classifica os riscos e oportunidades, de modo a torná-las mais visíveis e, portanto, mais tangíveis para elaborar um plano de ação de modo a mitigar as ameaças e aproveitar as circunstâncias favoráveis. Dessa forma, a da matriz de risco e oportunidades é útil para garantir que os esforços e os recursos sejam estratégicamente e adequadamente alocados e para maximizar as chances de sucesso do projeto. 
+A matriz de risco consiste em uma ferramenta que auxilia na identificação e avaliação de potenciais obstáculos que podem afetar o desenvolvimento e a conclusão de um projeto, assim como as possíveis oportunidades de elevar o escopo do projeto para uma esfera maior. Para isso, por intermédio de uma estrutura coluna x linha que relaciona probabilidade e impacto, a matriz quantifica e classifica os riscos e oportunidades, de modo a torná-los mais visíveis e, portanto, mais tangíveis para elaborar um plano de ação de modo a mitigar as ameaças e aproveitar as circunstâncias favoráveis. Dessa forma, a matriz de risco e oportunidades é útil para garantir que os esforços e os recursos sejam estrategicamente e adequadamente alocados e para maximizar as chances de sucesso do projeto. 
+
+Sob essa ótica, segue listados os riscos - bem como o plano de ação correspondente para mitigá-los - e as oportunidades identificadass pela equipe, ressaltando também como eles se enquadram na matriz e seus impactos relevantes sobre o projeto.
+
+### Riscos
+
+1. **Perda de recursos humanos**: Entende-se como perda de recursos humanos a indisponibilidade absoluta no projeto de qualquer membro da equipe Catup, por motivos como saúde ou imprevistos pessoais.
+   **Impacto:** Muito alto, haja vista que, no ponto de vista da entrega e da execução das funções, a deficiência de membros acarreta na diminuição da produtividade e na sobrecarga de todos os membros ainda presentes. Além disso, é válido mencionar também que a falta de um membro pode diminuir a criatividade do projeto, devido ao fato de existir um indivíduo a menos para contribuir com sua perspectiva de pensamento nas ideias para o projeto.
+   **Probabilidade:** 50%, pois não é possível atribuir certeza em relação à acontecimentos catastróficos e imprevistos extremos na vida pessoal de cada membro
+   **Plano de ação:**
 
 ### 1.1.7. Objetivos, Metas e Indicadores (sprint 4)
 
