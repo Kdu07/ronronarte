@@ -265,22 +265,40 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
 
 11. **Falta de materiais essenciais fornecidos pelo parceiro** : Pode acontecer do parceiro esquecer de enviar materias úteis para o desenvolvimento de alguma parte do projeto, como arquivos relacionados ao negócio ou informações dos requisitos. 
    
-   **Impacto:** Baixo, pois apesar de, em alguns casos, ter o potencial de tornar o desenvolvimento menos preciso, a faculdade já dispõe das informações e dos materiais que são, de fato, imprescindíveis para o projeto.
+   **Impacto:** Baixo, pois apesar de, em alguns casos, ter o potencial de tornar o desenvolvimento menos preciso, a faculdade já dispõe das informações e dos materiais que são, de fato, imprescindíveis para o projeto. 
    
    **Probabilidade:** de 11% a 30%, pois embora o parceiro seja uma figura pública com uma agenda cheia, o instrutor e o coordenador do curso estão sempre mantendo contato com ele.
    
    **Plano de ação:** Comunicar o instrutor para que, se necessário, cobre o parceiro de enviar os materiais necessários. 
 
-11. **Projeto não finalizado após 10 semanas:** : 
+11. **Projeto não finalizado após 10 semanas:** : Existe a possibilidade de, por consequencia da não intervenção para mitigar os possíveis riscos, por motivos de atrasos, ou imprevistos na equipe, o projeto não ser finalizado em sua completude até a quinta sprint.
    
-   **Impacto:** Muito Alto, pois 
+   **Impacto:** Muito Alto, pois a entrega do projeto é a prioridade do módulo. 
    
-   **Probabilidade:** 
+   **Probabilidade:** 1% a 10%, pois mesmo que não seja possível entregar o projeto de modo a atingir todas as expectativas, ao menos o MVP é mais provável de ser entregue.
    
-   **Plano de ação:**
+   **Plano de ação:** Organizar as atividades derivadas das User Stories nas sprints, de forma que seja possível entregá-las com, ao menos uma pequena margem de antecedência.
 
 ### Oportunidades
 
+1. **Contratação para prestação de serviços para a Dr. Pet** : 
+   
+   **Impacto:** Muito Alto, uma vez que isso traria escalabilidade a este projeto, mas também a outros eventuais projetos desenvolvidos pela equipe CatUp.
+   
+   **Probabilidade:** 50%, já que o próprio parceiro comentou sobre essa possibilidade em uma das reviews.
+
+2. **Criação de uma startup** : 
+   
+   **Impacto:** Muito Alto, haja vista que seria possível aprofundar o atual projeto, atualizando-o  e gerando notoriedade pública a ele.
+   
+   **Probabilidade:** 10%, já que, no momento, a equipe considera tal empreendimento complexo para o atual momento, uma vez que este é o primeiro módulo.
+
+3. **Parcerias com empresas do ramo pet (publicidade)** : 
+   
+   **Impacto:** Muito Alto, visto que tal aspecto aumentaria a visibilidade do projeto e lhe traria uma associação de peso com marcas já reconhecidas no ramo pet.
+   
+   **Probabilidade:** 10%, haja vista que a equipe não atingiu visibilidade pública de modo a gerar consolidação de parcerias com empresas do ramo pet.
+   
 ### 1.1.7. Objetivos, Metas e Indicadores (sprint 4)
 
 *Definição de metas SMART (específicas, mensuráveis, alcançáveis, relevantes e temporais) para seu projeto, com indicadores claros para mensuração*
