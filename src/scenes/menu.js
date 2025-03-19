@@ -20,14 +20,6 @@ export default class Menu extends Phaser.Scene{
                 this.scene.stop('Menu') // Para o menu
             }, 500); 
         });
-        /*
-        this.fullscreenButton = this.add.image(this.scale.width/7, this.scale.height/1.18, 'fullscreen')
-        .setScale(this.scale.width/4000)
-        .setInteractive()
-        .on('pointerdown', () => {
-            
-        });
-        */
     };
 
     resizeGame() {

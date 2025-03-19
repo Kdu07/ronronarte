@@ -42,7 +42,8 @@ export default class BasePhase extends Phaser.Scene {
             this.createBackgroundComplete();
             
             // Adiciona o placar
-            this.scoreboard = this.add.text(this.width/1000, this.height/2, this.score + '/' + this.maxScore, {fontFamily:'Futura', fontSize:'40px', fill:'#FFFFFF'})
+            this.scoreboard = this.add.text(this.width/2, this.height*0.001, this.score + '/' + this.maxScore, 
+                {fontFamily:'Futura', fontSize:this.width/50, fill:'#000'})
 
             // Adiciona o temporizador
             this.createTimer();
@@ -56,7 +57,7 @@ export default class BasePhase extends Phaser.Scene {
         this.clickSound = this.sound.add(this.soundKey);
 
         // Adiciona o botão de pause
-        this.createPauseButton();
+        this.createHoldButton();
         
         // Configura e adiciona o pombo na tela
         this.spawnTarget();
@@ -70,7 +71,8 @@ export default class BasePhase extends Phaser.Scene {
         this.elapsedSeconds = 0;
         
         // Cria o texto do temporizador
-        this.timerText = this.add.text(this.width/300, this.height/1.15, '0', { fontFamily:'Futura',fontSize: '40px', fill: '#FFFFFF' });
+        this.timerText = this.add.text(this.width/1.1, this.height*0.001, '0', 
+        { fontFamily:'Futura',fontSize: this.width/50, fill: '#000' });
 
         // Cria o evento do temporizador e guarda a referência
         this.timerEvent = this.time.addEvent({
@@ -108,21 +110,30 @@ export default class BasePhase extends Phaser.Scene {
         this.revealMask = this.make.renderTexture({ x: this.width / 2, y: this.height / 2, width: this.width, height: this.height }, false);
         this.mask = new Phaser.Display.Masks.BitmapMask(this, this.revealMask);
 
-        //A máscara é aplicada à imagem quadro, o que significa que a imagem só será visível onde a revealMask for preenchida com pixels.
+        // A máscara é aplicada à imagem quadro, o que significa que a imagem só será visível onde a revealMask for preenchida com pixels.
         this.painting.setMask(this.mask);
     }
 
-    createPauseButton() {
-       // Cria um botão de pause na tela
-       this.pauseBtn = this.add.image(this.width/55, this.height/27, 'pauseBtn').setScale(this.width/1500)
-       // Torna o botão de pause clicável
-       this.pauseBtn.setInteractive()
-       
-       // Configura o botão de pause para, quando clicado, parar a fase e direcionar para o menu
-       this.pauseBtn.on('pointerdown', () => {
-           this.scene.start('Menu'); // Direciona para o menu 
-           this.scene.stop('Phase1'); // Para a fase 1
-       })
+    createHoldButton() {
+        this.hold = false;
+
+        // Cria um botão de pause na tela
+        this.pauseBtn = this.add.image(this.width/55, this.height/27, 'pauseBtn').setScale(this.width/1500)
+        
+        // Torna o botão de pause clicável
+        this.pauseBtn.setInteractive()
+
+        this.anims.create({
+            key: 'SpriteLoading', // Nome da animação
+            frames: this.anims.generateFrameNumbers('spriteLoading', {start:0, end:5}), 
+            frameRate: 3, 
+            repeat: 0
+        })
+
+        this.spriteLoading = this.add.sprite(this.width/34, this.height/12, 'spriteLoading')
+        .setScale(this.width/7000)
+        .setInteractive()
+        .setVisible(false);
     }
 
     update(){
@@ -139,6 +150,8 @@ export default class BasePhase extends Phaser.Scene {
         if (!this.stopped){ 
             this.movement(this.target);  
         }
+
+        this.updateHoldButton()
     }
 
     // Função para contar o tempo no temporizador
@@ -146,6 +159,30 @@ export default class BasePhase extends Phaser.Scene {
         this.elapsedSeconds++;
         this.timerText.setText(this.elapsedSeconds);
     }
+
+    updateHoldButton(){
+        // Cria o botão de pular o tutorial
+        this.pauseBtn.on('pointerdown', (pointer) => {
+            this.hold = true
+        });
+
+        this.pauseBtn.on('pointerup', (pointer) => {
+            this.hold = false
+        });
+        
+        if (this.hold){
+            this.spriteLoading.setVisible(true);
+            this.spriteLoading.anims.play('SpriteLoading',true);
+
+            if (this.spriteLoading.anims.currentFrame.index == 5){
+                this.scene.start("LevelSelect");
+                this.scene.stop(this.phaseKey);
+            }
+        }else{
+            this.spriteLoading.anims.stop().setFrame(0).setVisible(false);
+        }
+    }
+
 
     spawnTarget() {
         // Inicia a movimentação do pombo
@@ -312,12 +349,7 @@ export default class BasePhase extends Phaser.Scene {
             this.precisionText = this.add.text(bgVictory.x - 480, bgVictory.y + 30, 'Precisão:' + Math.round(this.precision) + '%', {fontFamily:'Futura', fontSize: '27px', fill: '#000000' });
 
             // Cria o botao para proxima fase
-            this.next = this.add.text(bgVictory.x + 210, bgVictory.y + 225, 'Próxima Fase', {
-                fontSize: '32px',
-                fill: '#fff',
-                backgroundColor: '#ffd300',
-                padding: { x: 10, y: 5 }
-            })
+            this.next = this.add.image(bgVictory.x + bgVictory.width/1.5, bgVictory.y + bgVictory.height/1.25, 'continueBtn')
             // Torna o botão de próxima fase clicável e permite que, caso ele seja clicado, 
             // pare a fase 1 e o jogo direcione para o menu de seleção de níveis
             .setInteractive() 
@@ -326,6 +358,7 @@ export default class BasePhase extends Phaser.Scene {
                 this.scene.stop(this.phaseKey); // Para a fase 1
                 this.scene.start(this.nextPhase); // Direciona para a seleção de níveis
             })
+            .setScale(this.width/800)
 
         }, 5700);
     }

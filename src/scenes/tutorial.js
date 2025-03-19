@@ -33,20 +33,21 @@ export default class Tutorial extends Phaser.Scene {
         this.character = this.add.sprite(0, 0, 'pigeon').setScale(this.scale.width/400).setFlip(true, false);
         this.character.play('flyPigeon');
     }
+
     update(){
         // Confere se o personagem chegou no meio da tela
         if (this.character.x <= this.scale.width/2){
             // Move o personagem em direção ao meio da tela
-            this.character.x += this.scale.width/800;
-            this.character.y += this.scale.height/1000;
+            this.character.x += this.scale.width/1000;
+            this.character.y += this.scale.width/3500;
         }else{
             // O personagem está no meio da tela
             
             // Se o a caixa de texto e o texto ainda não foram adicionados
             if(!this.textAdded){
                 // Adiciona os elementos
-                this.textBox = this.add.image(this.scale.width/2, this.scale.height/1.2, 'textBox').setScale(this.scale.width/1000);
-                this.tutorialText = this.add.text(this.scale.width/5, this.scale.height/1.45, this.tutorialTexts[this.clicks], {fontSize:'15px', fill:'#000000'})
+                this.textBox = this.add.image(this.scale.width/2, this.scale.height/1.3, 'textBox').setScale(this.scale.width/800);
+                this.tutorialText = this.add.text(this.scale.width/8, this.scale.height/1.7, this.tutorialTexts[this.clicks], {fontSize: this.scale.width/33, fill:'#000'})
                 this.textAdded = true; // Altera a flag para true
             }
 
