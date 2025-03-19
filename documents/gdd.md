@@ -180,7 +180,7 @@ Ser referência no mercado pet focando na educação, oferecendo um serviço per
 
 ### 1.1.6. Matriz de Riscos (sprint 4)
 
-*Registre na matriz os riscos identificados no projeto, visando avaliar situações que possam representar ameaças e oportunidades, bem como os impactos relevantes sobre o projeto. Apresente os riscos, ressaltando, para cada um, impactos e probabilidades com plano de ação e respostas.*
+A matriz de risco consiste em uma ferramenta que auxilia na identificação e avaliação de potenciais obstáculos que podem afetar o desenvolvimento e a conclusão de um projeto, assim como as possíveis oportunidades de elevar o escopo do projeto para uma esfera maior. Para isso, por intermédio de uma estrutura coluna x linha que relaciona probabilidade e impacto, a matriz quantifica e classifica os riscos e oportunidades, de modo a torná-las mais visíveis e, portanto, mais tangíveis para elaborar um plano de ação de modo a mitigar as ameaças e aproveitar as circunstâncias favoráveis. Dessa forma, a da matriz de risco e oportunidades é útil para garantir que os esforços e os recursos sejam estratégicamente e adequadamente alocados e para maximizar as chances de sucesso do projeto. 
 
 ### 1.1.7. Objetivos, Metas e Indicadores (sprint 4)
 
