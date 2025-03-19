@@ -50,7 +50,7 @@ export default class Phase0 extends BasePhase {
         this.hold1 = false;
 
         // Cria um botão de pause na tela
-        this.continueBtn = this.add.image(this.width/1.1, this.height/27, 'continueBtn').setScale(this.width/1500)
+        this.continueBtn = this.add.image(this.width/1.05, this.height/27, 'continueBtn').setScale(this.width/1500)
         
         // Torna o botão de pause clicável
         this.continueBtn.setInteractive()
@@ -62,7 +62,7 @@ export default class Phase0 extends BasePhase {
             repeat: 0
         })
 
-        this.spriteLoading1 = this.add.sprite(this.width/1.1, this.height/12, 'spriteLoading')
+        this.spriteLoading1 = this.add.sprite(this.width/1.05, this.height/12, 'spriteLoading')
         .setScale(this.width/7000)
         .setInteractive()
         .setVisible(false);
