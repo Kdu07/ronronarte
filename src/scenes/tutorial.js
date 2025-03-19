@@ -21,32 +21,33 @@ export default class Tutorial extends Phaser.Scene {
         // Adiciona background
         let bg = this.add.image(this.scale.width/2, this.scale.height/2, 'bgTutorial').setInteractive();
         
-        // Animação de voo do personagem
+        // Configura a animação de voo do personagem
         this.anims.create({
             key: 'flyPigeon',
-            frames: this.anims.generateFrameNumbers('pigeon', { start: 0, end: 3 }),
-            frameRate: 10,
-            repeat: -1
+            frames: this.anims.generateFrameNumbers('pigeon', { start: 0, end: 3 }), // Define os frames do spritesheet que serão usados
+            frameRate: 10, // Quantidade de frames por segundo
+            repeat: -1 // Define que a animação será linear
         });
 
         // Adiciona o pombo como personagem e inicia a animação
         this.character = this.add.sprite(0, 0, 'pigeon').setScale(this.scale.width/400).setFlip(true, false);
         this.character.play('flyPigeon');
     }
+
     update(){
         // Confere se o personagem chegou no meio da tela
         if (this.character.x <= this.scale.width/2){
             // Move o personagem em direção ao meio da tela
-            this.character.x += this.scale.width/800;
-            this.character.y += this.scale.height/1000;
+            this.character.x += this.scale.width/1000;
+            this.character.y += this.scale.width/3500;
         }else{
             // O personagem está no meio da tela
             
             // Se o a caixa de texto e o texto ainda não foram adicionados
             if(!this.textAdded){
                 // Adiciona os elementos
-                this.textBox = this.add.image(this.scale.width/2, this.scale.height/1.2, 'textBox').setScale(this.scale.width/1000);
-                this.tutorialText = this.add.text(this.scale.width/5, this.scale.height/1.45, this.tutorialTexts[this.clicks], {fontSize:'15px', fill:'#000000'})
+                this.textBox = this.add.image(this.scale.width/2, this.scale.height/1.3, 'textBox').setScale(this.scale.width/800);
+                this.tutorialText = this.add.text(this.scale.width/8, this.scale.height/1.7, this.tutorialTexts[this.clicks], {fontSize: this.scale.width/33, fill:'#000'})
                 this.textAdded = true; // Altera a flag para true
             }
 
