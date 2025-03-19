@@ -247,7 +247,7 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
    
    **Impacto:** Moderado, pois, embora o projeto ainda pode ser atendido completamente em um dispositivo, a problemática desacata uma preferência do parceiro.
    
-   **Probabilidade:** 90%, em função da complexidade de implementar responsividade ao jogo com a linguagem e com a biblioteca utilizada no código. 
+   **Probabilidade:** 51% a 70%, em função da complexidade de implementar responsividade ao jogo com a linguagem e com a biblioteca utilizada no código. 
    
    **Plano de ação:** Estudar mais como fazer essa adaptabilidade em todas as funcionalidades e explicar ao parceiro a dificuldade dessa tarefa.
 
