@@ -187,9 +187,21 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
 ### Riscos
 
 1. **Perda de recursos humanos**: Entende-se como perda de recursos humanos a indisponibilidade absoluta no projeto de qualquer membro da equipe Catup, por motivos como saúde ou imprevistos pessoais.
+   
    **Impacto:** Muito alto, haja vista que, no ponto de vista da entrega e da execução das funções, a deficiência de membros acarreta na diminuição da produtividade e na sobrecarga de todos os membros ainda presentes. Além disso, é válido mencionar também que a falta de um membro pode diminuir a criatividade do projeto, devido ao fato de existir um indivíduo a menos para contribuir com sua perspectiva de pensamento nas ideias para o projeto.
-   **Probabilidade:** 50%, pois não é possível atribuir certeza em relação à acontecimentos catastróficos e imprevistos extremos na vida pessoal de cada membro
+   
+   **Probabilidade:** 50%, pois não é possível atribuir certeza em relação à acontecimentos catastróficos e imprevistos extremos na vida pessoal de cada membro.
+   
    **Plano de ação:**
+
+2. **Falta de habilidades técnicas necessárias**: Na equipe Catup, a falta de habilidades técnicas é um problema válido de analisar, pois todos os membros encontram-se no primeiro módulo da faculdade e todos carragam uma bagagem de conhecimentos de programação similares, de forma que, não raro, para a eficiente implementação de funcionalidades do código do jogo Ronrart, é necessário ceder esforços e tempo para estudar a sua execução.
+   
+   **Impacto:** Moderado, já que, apesar de renunciar algum tempo do desenvolvimento bruto da tarefa para aprender a habilidade técnica, o risco não impede a entrega do código, apenas demanda mais horas e dedicação para executá-la.
+   
+   **Probabilidade:** 80%, visto que as habilidades do campo da programação - o qual correspondente à base do funcionando do jogo em si - exigem, sempre, conhecimentos da linguagem e da biblioteca utilizada. 
+   
+   **Plano de ação:** Adiantar os estudos técnicos que a faculdade fornece, buscar outras fontes de conhecimento (como a internet ou livros) e solicitar auxílio da professor ou do monitor da área de programação para tarefas mais complexas que estivermos com dificuldade de executar. 
+   
 
 ### 1.1.7. Objetivos, Metas e Indicadores (sprint 4)
 
