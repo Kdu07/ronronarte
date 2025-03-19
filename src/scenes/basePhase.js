@@ -139,27 +139,37 @@ export default class BasePhase extends Phaser.Scene {
     spawnTarget() {
         // Inicia a movimentação do pombo
         this.stopped = false;
-    
-        // Gerar uma posição aleatória dentro da área do quadro
+
+        // Coeficiente para aceleração do alvo
+        this.coeficient = 1;
+
+
+        //  Gerar uma posição aleatória dentro da área do quadro
         let posX = Phaser.Math.Between(50,this.width-50);
         let posY = Phaser.Math.Between(100,this.height-100);
-        
+    
         // Adiciona o pombo e torna interativo
         this.target = this.add.sprite(posX, posY, this.targetKey).setScale(this.width/400);
         this.target.setInteractive();
-        
+    
         // Configura a velocidade aleatória do pombo e a direção inicial de movimento
-        this.target.speedX = Phaser.Math.Between(2, 6);
-        this.target.speedY = Phaser.Math.Between(3, 5);
+        this.target.speedX = Phaser.Math.Between(6, 8);
+        this.target.speedY = Phaser.Math.Between(1, 2);
         this.target.directionX = -1;
         this.target.directionY = 1;
-        
+
+        // Configura aceleração do pombo no eixo y
+        this.target.accelerationY = Phaser.Math.FloatBetween(-0.5, 0.5);
+        this.target.t = 0; // Tempo inicial
+        this.target.VyMax = 15; // Velocidade máxima no eixo y
+        this.target.VyMin = 0.5; // Velocidade mínima no eixo y
+
         // Hitbox do pombo (usado para que não saia da tela)
         this.target.hitboxWidth = 45;
         this.target.hitboxHeight = 45;
-    
+
         // Inicia a animação de voo do pombo
-        this.target.play(this.animKey);
+        this.target.play(this.animKey); // Fim
     }
 
     clickTarget(){
@@ -318,7 +328,11 @@ export default class BasePhase extends Phaser.Scene {
         }, 5700);
     }
 
-    movement(target) {
+    movement(target, deltaTime) {
+
+        // Icremento no tempo t
+        target.t += deltaTime / 1000
+
         // Limite para a borda em X considerando a hitbox do pombo
         if (target.x >= (this.width - target.hitboxWidth - this.frameHitbox)) {
             // Direção para a esquerda
@@ -330,7 +344,7 @@ export default class BasePhase extends Phaser.Scene {
             target.setFlip(true, false);
             target.directionX = 1;
         }
-    
+
         // Limite para a borda em Y considerando a hitbox do pombo
         if (target.y >= (this.frame.y + (this.frame.displayHeight/2) - target.hitboxHeight - this.frameHitbox)) {
             // Direção para cima
@@ -340,10 +354,20 @@ export default class BasePhase extends Phaser.Scene {
             // Direção para baixo
             target.directionY = 1;
         }
-    
+
+        // Atualiza velocidade no eixo y
+        target.speedY += (0.1 * this.coeficient);//target.accelerationY * target.t;
+        if (target.speedY >= target.VyMax) {
+            this.coeficient = -1;
+        }
+        
+        if (target.speedY <= target.VyMin) {
+            this.coeficient = 1;
+        }
+
         // Move no eixo X e Y de acordo com a velocidade e direção
         // Nova posição do pombo = posição atual do pombo + velocidade do pombo * direção do pombo (-1,1)
         target.x += target.speedX * target.directionX;
-        target.y += target.speedY * target.directionY;
+        target.y += target.speedY * target.directionY; // Fim
     }
 }
