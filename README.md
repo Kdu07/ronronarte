@@ -13,7 +13,6 @@
 - <a href="https://github.com/CaduQuaglia">Carlos Eduardo Serrano Quaglia</a>
 - <a href="https://www.linkedin.com/in/eduardo-jesus-tavares-sant-anna-2bb399285/">Eduardo Jesus Tavares Sant'Anna</a>
 - <a href="https://www.linkedin.com/in/felipe-neves-36925a346/">Felipe Neves</a>
-- <a href="https://www.linkedin.com/in/guilherme-guerreiro-025986319/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Guilherme Guerreiro</a>
 - <a href="https://www.linkedin.com/in/luana-de-jesus-lima-8b17a9266/">Luana de Jesus Lima</a>
 - <a href="https://www.linkedin.com/in/luiz-hinuy-0995252b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Luiz Felipe Hinuy</a>
 - <a href="https://www.linkedin.com/in/nicolli-venino-santana-b84341254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Nicolli Venino Santana</a>
@@ -34,7 +33,7 @@ Feito por alunos do Inteli - Instituto de Liderança e Tecnologia - em parceria 
 
 Há uma crescente no mercado de pets no Brasil, especialmente para gatos. E com esse crescimento, a demanda de entretenimento para gatos e tutores aumentou. Dessa maneira, surgiu o RonRonArte, um jogo que implementa elementos que instigam o instinto de caça do felino, e ao mesmo tempo entretem e cria um laço com o seu tutor.
 
-<a href="https://inteli-college.github.io/2025-1A-T15-IN01-G03/">Link do jogo</a>
+<a href="https://two025-1a-t15-in01-g03-cadu.onrender.com/">Link do jogo</a>
 
 
 ## 📁 Estrutura de pastas
@@ -89,10 +88,11 @@ https://github.com/Inteli-College/2025-1A-T15-IN01-G03.git
   **4. Clique com o botão direito em "index.html" e selecione "Open with Live Server"**
 
 ## 🗃 Histórico de lançamentos
+* 0.3.0 - 14/03/2025
 * 0.2.0 - 28/02/2025 
 * 0.1.0 - 13/02/2025
     
 
 ## 📋 Licença/License
 
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Intelihub/Template_M1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/Inteli-College/2025-1A-T15-IN01-G03">Inteli, Carlos Eduardo, Eduardo Jesus, Felipe Neves, Guilherme Guerreiro, Luana de Jesus Lima, Luiz Felipe Hinuy, Nicolli Venino Santana</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Intelihub/Template_M1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/Inteli-College/2025-1A-T15-IN01-G03">Inteli, Carlos Eduardo, Eduardo Jesus, Felipe Neves, Luana de Jesus Lima, Luiz Felipe Hinuy, Nicolli Venino Santana</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
