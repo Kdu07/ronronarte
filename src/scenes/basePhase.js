@@ -12,16 +12,11 @@ export default class BasePhase extends Phaser.Scene {
         this.targetKey = configDict['targetKey'];
         this.animKey = configDict['animKey'];
 
-        // Parâmetros opcionais
-        if(configDict['artistKey'] != undefined){
-            this.artistKey = configDict['artistKey'];
-        }
-        if(configDict['textArtist'] != undefined){
-            this.textArtist = configDict['textArtist'];
-        }
-        if(configDict['textPainting'] != undefined){
-            this.textPainting = configDict['textPainting'];
-        }
+        // Parâmetros de fase completa
+        this.artistKey = configDict['artistKey'];
+        this.textArtist = configDict['textArtist'];
+        this.textPainting = configDict['textPainting'];
+        this.maxScore = configDict['maxScore'];
     }
 
     create(){
@@ -34,9 +29,6 @@ export default class BasePhase extends Phaser.Scene {
         // Se for uma fase completa
         if (this.completePhase){
             this.totalClicks = 0;
-            
-            // Configura a pontuação máxima
-            this.maxScore = 3;
             
             // Cria o background de fase completa
             this.createBackgroundComplete();
@@ -201,16 +193,16 @@ export default class BasePhase extends Phaser.Scene {
         this.target.setInteractive();
     
         // Configura a velocidade aleatória do pombo e a direção inicial de movimento
-        this.target.speedX = Phaser.Math.Between(6, 8);
+        this.target.speedX = Phaser.Math.Between(6, 9);
         this.target.speedY = Phaser.Math.Between(1, 2);
         this.target.directionX = -1;
         this.target.directionY = 1;
 
         // Configura aceleração do pombo no eixo y
-        this.target.accelerationY = Phaser.Math.FloatBetween(-0.5, 0.5);
+        this.target.accelerationY = 0; //Phaser.Math.FloatBetween(0.01, 0.06);
         this.target.t = 0; // Tempo inicial
-        this.target.VyMax = 15; // Velocidade máxima no eixo y
-        this.target.VyMin = 0.5; // Velocidade mínima no eixo y
+        this.target.VyMax = 10; // Velocidade máxima no eixo y
+        this.target.VyMin = 1; // Velocidade mínima no eixo y
 
         // Hitbox do pombo (usado para que não saia da tela)
         this.target.hitboxWidth = 45;
@@ -297,7 +289,22 @@ export default class BasePhase extends Phaser.Scene {
     displayVictory() {
         // Armeza a precisão do usuário
         this.precision = this.score/this.totalClicks*100
-        
+        this.starScore = (this.elapsedSeconds+4)/this.score;
+
+        if (this.starScore <= 10){
+            this.starScore = 5;
+        }else if(this.starScore <= 15){
+            this.starScore = 4;
+        }else if(this.starScore <= 20){
+            this.starScore = 3;
+        }else if(this.starScore <= 30){
+            this.starScore = 2;
+        }else{
+            this.starScore = 1;
+        }
+
+        console.log(this.starScore)
+
         // Adiciona a frase de vitória
         setTimeout(() => {
             // Cria a imagem da tela de vitória
@@ -330,14 +337,11 @@ export default class BasePhase extends Phaser.Scene {
         // Adiciona tela de vitória depois de 5,3 segundos 
         setTimeout(() => {
             // Cria o background da tela de vitória
-            let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(this.width/900);
+            let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(this.width/600);
 
-            this.add.image(this.width / 3, this.height / 3, this.backgroundKey).setDisplaySize(this.width/4.5, this.width/4.5/1.77);
-            this.add.image(this.width / 1.5, this.height / 3, this.artistKey).setDisplaySize(this.width/7, this.width/7);
+            //this.add.image(this.width / 3, this.height / 3, this.backgroundKey).setDisplaySize(this.width/4.5, this.width/4.5/1.77);
+            //this.add.image(this.width / 1.5, this.height / 3, this.artistKey).setDisplaySize(this.width/7, this.width/7);
 
-            // Cria a caixa de texto de contextualização do artista e do quadro
-            let textBoxArtist = this.add.image(bgVictory.x + 300, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
-            let textBoxPainting = this.add.image(bgVictory.x - 90, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
             // Configura a animação do spritesheet do gato
             this.anims.create({
                 key: 'animCat',
@@ -347,30 +351,49 @@ export default class BasePhase extends Phaser.Scene {
             });
 
             // Cria o spritesheet do gato na tela de vitória
-            this.cat = this.add.sprite(bgVictory.x - 370, bgVictory.y + 190, 'cat').setScale(9).setFlip(true,false);
+            //this.cat = this.add.sprite(bgVictory.x - 370, bgVictory.y + 190, 'cat').setScale(9).setFlip(true,false);
             // Inicia a anumação do spritesheet do gato
-            this.cat.play('animCat');
-            
-            // Cria os textos de contextualização do artista e do quadro da tela de vitória 
-            this.textArtistAdded = this.add.text(textBoxArtist.x - 145, textBoxArtist.y - 70, this.textArtist[0], {fontFamily:'Futura', fontSize: '17px', fill: '#000000' });
-            this.textPaintingAdded = this.add.text(textBoxPainting.x - 145, textBoxPainting.y - 70, this.textPainting[0], {fontFamily:'Futura', fontSize: '16.3px', fill: '#000000' });
+            //this.cat.play('animCat');
 
-            // Cria os textos que mostram os pontos e a precisão do usuário
-            this.scoreboard = this.add.text(bgVictory.x - 480, bgVictory.y + 2, 'Pontos:' + this.score + '/' + this.maxScore, {fontFamily:'Futura', fontSize: '27px', fill: '#000000' });
-            this.precisionText = this.add.text(bgVictory.x - 480, bgVictory.y + 30, 'Precisão:' + Math.round(this.precision) + '%', {fontFamily:'Futura', fontSize: '27px', fill: '#000000' });
+            // Cria os textos que mostram os pontos e a precisão do gato
+            this.scoreboard = this.add.text(bgVictory.x - bgVictory.width/3.5, bgVictory.y - bgVictory.height/9, 
+                'Pontos: ' + this.score + '/' + this.maxScore, 
+                {fontFamily:'Futura', fontSize: this.width/30, fill: '#000000' });
 
-            // Cria o botao para proxima fase
-            this.next = this.add.image(bgVictory.x + bgVictory.width/1.5, bgVictory.y + bgVictory.height/1.25, 'continueBtn')
-            // Torna o botão de próxima fase clicável e permite que, caso ele seja clicado, 
-            // pare a fase 1 e o jogo direcione para o menu de seleção de níveis
+            this.precisionText = this.add.text(bgVictory.x - bgVictory.width/2.7, bgVictory.y + bgVictory.height/6, 
+                'Precisão: ' + Math.round(this.precision) + '%', 
+                {fontFamily:'Futura', fontSize: this.width/30, fill: '#000000' });
+
+            // Cria e configura o botao para proxima fase
+            this.next = this.add.image(bgVictory.x, bgVictory.y + bgVictory.height/1.25, 'continueBtn')
             .setInteractive() 
             .on('pointerdown', () => {
                 this.nextPhase = this.phases[this.phases.indexOf(this.phaseKey) + 1];
-                this.scene.stop(this.phaseKey); // Para a fase 1
-                this.scene.start(this.nextPhase); // Direciona para a seleção de níveis
+                this.scene.stop(this.phaseKey); // Para a fase atual
+                this.scene.start(this.nextPhase); // Inicia a próxima fase
             })
             .setScale(this.width/800)
+            /*
+            // Adiciona as estrelas
+            for (let i=0; i<this.starScore; i++){
+                setTimeout(() => {
+                   
+                }, 6000);
+            }
+            */
+            let i = 0;
+            let starScale = this.width/5000;
 
+            this.stars = setInterval(() => {
+                this.add.image((bgVictory.x - bgVictory.width*1.23) + ((i+1)*(starScale*550)), this.height/4, 'scoreStar')
+                .setScale(starScale)
+                
+                i++;
+                
+                if (i === this.starScore){
+                    clearInterval(this.stars)
+                }
+            }, 1000);
         }, 5700);
     }
 
@@ -402,7 +425,7 @@ export default class BasePhase extends Phaser.Scene {
         }
 
         // Atualiza velocidade no eixo y
-        target.speedY += (0.1 * this.coeficient);//target.accelerationY * target.t;
+        target.speedY += (target.accelerationY * this.coeficient);//target.accelerationY * target.t;
         if (target.speedY >= target.VyMax) {
             this.coeficient = -1;
         }

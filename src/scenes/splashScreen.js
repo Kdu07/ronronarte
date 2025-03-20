@@ -63,6 +63,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.spritesheet('cat', './assets/misc/cat.png', { frameWidth: 64, frameHeight:64 });
         this.load.image('squareFrame','assets/misc/moldura_quadrado.png');
         this.load.image('teste', '/assets/misc/575x56.png');
+        this.load.image('scoreStar', '/assets/misc/scoreStar.png');
 
         //Alvos
         this.load.spritesheet('pigeon', './assets/targets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
@@ -72,8 +73,8 @@ export default class SplashScreen extends Phaser.Scene {
 
     create(){    
         // Define e armezena a duração do fadeIn e do fadeOut
-        let time1500 = 1500; 
-        let time3000 = 3000;
+        let time1500 = 0;//1500; 
+        let time3000 = 0;//3000;
 
         // Adiciona fade in na splash screen
         this.cameras.main.fadeIn(time1500, 0, 0, 0) // Aplica um efeito de fade-in que escurece a tela
@@ -86,7 +87,7 @@ export default class SplashScreen extends Phaser.Scene {
             // Aguarda o fadeOut antes de iniciar a próxima cena
             this.time.delayedCall(time1500, () => {
                 this.scene.stop('SplashScreen'); // Para a cena atual
-                this.scene.start('Menu'); // Inicia a cena Menu
+                this.scene.start('Phase1'); // Inicia a cena Menu
             }); 
         });
 
