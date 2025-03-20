@@ -265,19 +265,19 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
 
 10. **Falta de materiais essenciais fornecidos pelo parceiro** : Pode acontecer do parceiro esquecer de enviar materias úteis para o desenvolvimento de alguma parte do projeto, como arquivos relacionados ao negócio ou informações dos requisitos. 
    
-   **Impacto:** Baixo, pois apesar de, em alguns casos, ter o potencial de tornar o desenvolvimento menos preciso, a faculdade já dispõe das informações e dos materiais que são, de fato, imprescindíveis para o projeto. 
+	**Impacto:** Baixo, pois apesar de, em alguns casos, ter o potencial de tornar o desenvolvimento menos preciso, a faculdade já dispõe das informações e dos materiais que são, de fato, imprescindíveis para o projeto. 
    
-   **Probabilidade:** de 11% a 30%, pois embora o parceiro seja uma figura pública com uma agenda cheia, o instrutor e o coordenador do curso estão sempre mantendo contato com ele.
+   	**Probabilidade:** de 11% a 30%, pois embora o parceiro seja uma figura pública com uma agenda cheia, o instrutor e o coordenador do curso estão sempre mantendo contato com ele.
    
-   **Plano de ação:** Comunicar o instrutor para que, se necessário, cobre o parceiro de enviar os materiais necessários. 
+   	**Plano de ação:** Comunicar o instrutor para que, se necessário, cobre o parceiro de enviar os materiais necessários. 
 
 11. **Projeto não finalizado após 10 semanas:** : Existe a possibilidade de, por consequencia da não intervenção para mitigar os possíveis riscos, por motivos de atrasos, ou imprevistos na equipe, o projeto não ser finalizado em sua completude até a quinta sprint.
     
-   **Impacto:** Muito Alto, pois a entrega do projeto é a prioridade do módulo. 
+   	**Impacto:** Muito Alto, pois a entrega do projeto é a prioridade do módulo. 
    
-   **Probabilidade:** 1% a 10%, pois mesmo que não seja possível entregar o projeto de modo a atingir todas as expectativas, ao menos o MVP é mais provável de ser entregue.
+   	**Probabilidade:** 1% a 10%, pois mesmo que não seja possível entregar o projeto de modo a atingir todas as expectativas, ao menos o MVP é mais provável de ser entregue.
    
-   **Plano de ação:** Organizar as atividades derivadas das User Stories nas sprints, de forma que seja possível entregá-las com, ao menos uma pequena margem de antecedência.
+   	**Plano de ação:** Organizar as atividades derivadas das User Stories nas sprints, de forma que seja possível entregá-las com, ao menos uma pequena margem de antecedência.
 
 ### Oportunidades
 
