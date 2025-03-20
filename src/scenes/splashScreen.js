@@ -63,10 +63,12 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.spritesheet('cat', './assets/misc/cat.png', { frameWidth: 64, frameHeight:64 });
         this.load.image('squareFrame','assets/misc/moldura_quadrado.png');
         this.load.image('teste', '/assets/misc/575x56.png');
+        this.load.image('scoreStar', '/assets/misc/scoreStar.png');
 
         //Alvos
         this.load.spritesheet('pigeon', './assets/targets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
         this.load.audio('pigeonSound', './assets/audios/pru.mp3');
+        this.load.audio('meow', './assets/audios/meow.mp3');
         
     }
 
@@ -86,7 +88,7 @@ export default class SplashScreen extends Phaser.Scene {
             // Aguarda o fadeOut antes de iniciar a próxima cena
             this.time.delayedCall(time1500, () => {
                 this.scene.stop('SplashScreen'); // Para a cena atual
-                this.scene.start('Menu'); // Inicia a cena Menu
+                this.scene.start('LevelSelect'); // Inicia a cena Menu
             }); 
         });
 
