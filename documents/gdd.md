@@ -176,110 +176,11 @@ Ser referência no mercado pet focando na educação, oferecendo um serviço per
 
 ### 1.1.5. Descrição da Solução Desenvolvida (sprint 4)
 
-  O problema a ser resolvido está diretamente relacionado à demanda de jogos para gatos. Nesse sentido, o cerne da questão está no fato de que as atuais propostas de tais ferramentas, embora procurem estimular os instintos naturais de caça do gato, contam com uma similaridade forte e pouco diferencial entre si. Além disso, não há uma interação direta entre tutor e gato, o que pode acarretar ansiedade no pet, visto que ele sente falta de seu tutor. Ademais, nesses games, não há previsão de recompensas dadas pelo tutor ao gato durante o momento de jogabilidade. Portanto, a situação supracitada gera monotonia ao pet e não leva em consideração a interação afetiva entre gato e tutor, uma vez que centra seu foco no ato de jogar por jogar. <br> <br>
-  Sob esse viés, faz-se necessário criar uma proposta que solucione a problemática supracitada. Nessa perspectiva, concebeu-se um jogo que concilia os instintos naturais de caça do gato (por meio de recompensas alimentícias) com interação gato-tutor dentro desse contexto, de modo a estimular tanto o pet quanto seu tutor, de maneira que nesse momento sejam geradas diversão e proximidade entre ambos. Logo, a ideia é aproximar o gato do tutor e vice-versa, além de fornecer uma melhor experiência de usuário aos dois jogadores, resolvendo a dor que até então foi passada como escopo para a solução. 
-Ademais, é significativo pontuar como tal solução deve ser usada. Em linhas gerais, ela deve ser utilizada por gatos e tutores preferencialmente em dispositivos móveis, por meio do navegador. No que se refere à interação entre ambos, menciona-se que ela deve ser efetivada por intermédio da recompensa dada pelo tutor ao gato, além da própria jogabilidade projetada, a qual, necessariamente, preconiza a participação ativa do tutor através da escolha de elementos do jogo para que, de fato, o gato possa jogar. <br> <br>
-	Assim, no que se refere à solução proposta, um de seus benefícios é uma interação mais próxima entre gato e tutor, de modo mais afetivo. Além disso,  menciona-se como outro benefício do jogo o incentivo mais contundente aos hábitos de caça dos gatos, por meio de recompensas alimentícias dadas pelo tutor ao pet. Dessa forma, tais benefícios incluem tanto gato e tutor, a fim de que sua relação seja aprofundada. 
-
+*Descreva brevemente a solução desenvolvida para o parceiro de negócios. Descreva os aspectos essenciais para a criação de valor da ideia do produto com o objetivo de ajudar a entender melhor a realidade do cliente e entregar uma solução que está alinhado com o que ele espera. Observe a seção 2 e verifique que ali é possível trazer mais detalhes, portanto seja objetivo aqui. Atualize esta descrição até a entrega final, conforme desenvolvimento.*
 
 ### 1.1.6. Matriz de Riscos (sprint 4)
 
-A matriz de risco consiste em uma ferramenta que auxilia na identificação e avaliação de potenciais obstáculos que podem afetar o desenvolvimento e a conclusão de um projeto, assim como as possíveis oportunidades de elevar o escopo do projeto para uma esfera maior. Para isso, por intermédio de uma estrutura coluna x linha que relaciona probabilidade e impacto, a matriz quantifica e classifica os riscos e oportunidades, de modo a torná-los mais visíveis e, portanto, mais tangíveis para elaborar um plano de ação de modo a mitigar as ameaças e aproveitar as circunstâncias favoráveis. Dessa forma, a matriz de risco e oportunidades é útil para garantir que os esforços e os recursos sejam estrategicamente e adequadamente alocados e para maximizar as chances de sucesso do projeto. 
-
-Sob essa ótica, segue listados os riscos - bem como o plano de ação correspondente para mitigá-los - e as oportunidades identificadas pela equipe, ressaltando também como eles se enquadram na matriz e seus impactos relevantes sobre o projeto.
-
-### Riscos
-
-1. **Perda de recursos humanos**: Entende-se como perda de recursos humanos a indisponibilidade absoluta no projeto de qualquer membro da equipe, por motivos como saúde ou imprevistos pessoais.
-   
-   **Impacto:** Muito alto, haja vista que, no ponto de vista da entrega e da execução das funções, a deficiência de membros acarreta na diminuição da produtividade e na sobrecarga de todos os membros ainda presentes. Além disso, é válido mencionar também que a falta de um membro pode diminuir a criatividade do projeto, devido ao fato de existir um indivíduo a menos para contribuir com sua perspectiva de pensamento nas ideias.
-   
-   **Probabilidade:** 50%, pois não é possível atribuir certeza em relação à acontecimentos catastróficos e imprevistos extremos na vida pessoal de cada membro.
-   
-   **Plano de ação:**
-
-2. **Falta de habilidades técnicas necessárias**: Na equipe CatUp, a falta de habilidades técnicas é um problema válido de analisar, pois todos os membros encontram-se no primeiro módulo da faculdade e todos carragam uma bagagem de conhecimentos de programação similares, de forma que, não raro, para a eficiente implementação de funcionalidades do código do jogo Ronrart, é necessário ceder esforços e tempo para estudar a sua execução.
-   
-   **Impacto:** Moderado, já que, apesar de renunciar algum tempo do desenvolvimento bruto da tarefa para aprender a habilidade técnica, o risco não impede a entrega do código, apenas demanda mais horas e dedicação para executá-la.
-   
-   **Probabilidade:** 80%, visto que as habilidades do campo da programação - o qual correspondente à base do funcionando do jogo em si - exigem, sempre, conhecimentos da linguagem e da biblioteca utilizada. 
-   
-   **Plano de ação:** Adiantar os estudos técnicos que a faculdade fornece, buscar outras fontes de conhecimento (como a internet ou livros) e solicitar auxílio da professora ou do monitor da área de programação para tarefas do código mais complexas que estivermos com dificuldade de executar.
-
-3. **Mudança drástica de escopo**: Configura-se como mudança drástica de escopo a ocasião em que o parceiro queira mudar, de maneira drástica, as principais funcionalidades e objetivos do projeto, ou a aprovação de regulamentações não esperadas que coloquem em risco a execução do escopo original do projeto.
-   
-   **Impacto:** Muito Alto, pois o projeto é guiado pelo seu designio estabelecido com o parceiro e com o stakeholder anteriormente ao início das sprints, de forma que, a alteração brusca desse alcance exigi, com alta prioridade em um curto período de tempo, a remodelagem de quase todos os setores já desenvolvidos, se não também dos próprios artefatos. 
-   
-   **Probabilidade:** Em torno de 11 a 30%, pois, em relação ao parceiro, ele demonstrou interesse e flexibilidade ao definir o escopo, compreendendo o nível de conhecimento dos membros. Entretanto, ainda pode acontecer dele apresentar insatisfação ou mudar de ideia bruscamente, de forma a querer redefinir grande parte do desenvolvimento.
-   Já sobre mudanças de regulamento, alterações que impossibilitem a entrega do projeto são muito improváveis, considerando principalmente que a aprovação e aplicação de mutações legislativas exigem muito tempo para serem efetivadas.
-   
-   **Plano de ação:**
-
-4. **Partes interessadas desenvolvem expectativas imprecisas sobre o jogo**: O parceiro pode criar expectativas irrealistas em relação ao entregável, como desejar implemantações que não cabem na grade curricular da equipe no período das 5 sprints. 
-   
-   **Impacto:** Moderado, pois a expectativa do parceiro, apesar de atrapalhar a visão dele em relação ao andamento do projeto sem a sua implementação desejada, não impede o desenvolvimento de acontecer. 
-   
-   **Probabilidade:** 
-   
-   **Plano de ação:** Explicar e sempre deixar claro ao parceiro exatamente o que é possível desenvolver, assim como não prometer implementos sem a certeza de que será possível implementá-lo, tendo em mente as habilidades técnicas que serão aprendidas neste módulo. Além disso, dar ênfase às expectativas que são possíveis executar.
-
-5. **Baixo engajamento dos membros com o projeto**: Pode acontecer de, por excesso de atividades ou compromissos extracurriculares, membros da equipe desviarem sua atenção das suas responsabilidades no projeto. 
-   
-   **Impacto:** Muito Alto, haja vista que o não comprisso de um ou mais membros diminui a produtividade de toda a equipe, sobrecarrega os membros engajados e potencializa o risco de não cumprir com os prazos. 
-   
-   **Probabilidade:** 31 a 50%, pois apesar do projeto dever ocupar um nível de prioridade na rotina dos membros, não é raro superestimar o quanto é possível  responsabilizar-se em atividades extracurriculares que podem consumir muito tempo e esforço, de modo que as terefas do projeto ficam desprezadas.
-   
-   **Plano de ação:** Incentivar os membros que estão menos engajados e mais sobrecarregados com outras atividades a desenvolver uma rotina saudável que respeite suas obrigações dentro do projeto, assim como deixar claro sua importância para o desenvolvimento de toda a equipe.
-
-6. **Não conseguir realizar efetivamente os testes**: Por "realizar efetivamente os testes" entende-se testar o jogo com tutores e gatos de variadas idades e rotinas, de modo a cumprir com todos os passos do "casos de teste" definido. A problemática se revela quando esses testes não são possíveis de serem aplicados, por falta de tempo ou por falta de voluntários, por exemplo.
-   
-   **Impacto:** Alto, pois a não realização dos testes impede a validação de tudo o que foi desenvolvido no jogo, assim como inibe a obtenção de feedbacks de potenciais usuários para identificar possíveis falhas na jogabilidade.
-   
-   **Probabilidade:** Entre 11 a 30%, pois desde a primeira sprint o parceiro se disponibilizou e se mostrou motivado para realizar os testes, assim como a faculdade também se propôs a auxiliar nesse feito. Entretanto, é possível de acontecer impedimentos como não entregar um protótipo testável à tempo.
-   
-   **Plano de ação:** Priorizar a produção de um jogo testável dentro do prazo estabelecido e cobrar o parceiro de reazliar seus testes, conforme combinado.
-
-7. **Conflitos entre a equipe** : De conflitos entre a equipe considera-se quaisquer desacordos ou desentendimentos, como opiniões divergentes sobre como uma tarefa deve ser implementada ou em casos de tarefas mal executadas ou atrasadas.
-   
-   **Impacto:** Moderado, pois depende do grau da discordância. Em casos extremos, o desempenho e a convivência da equipe podem ser afetados.
-   
-   **Probabilidade:** De 51% a 70%, haja vista que o grupo é composto por indivíduos diversos e, por isso, é comum que suas perspectivas sejam divergentes. 
-   
-   **Plano de ação:** Cada membro deve sempre atualizar o andamento da sua tarefa à equipe e optar pela comunicação não violenta.
-
-8. **A equipe não entregar o jogo adaptado para todos os tipos de dispositivos solicitados pelo parceiro** : Em razão da insciência dos membros e da complexidade de promover a adaptabilidade de algumas funcionalidades do jogo em dispositivos diversos, é possível que a equipe não entregue a experiência da jogabilidade em sua completude em todos os dispositivo solicitados, de modo que funcione efetimente somente pelo celular ou somente pelo tablet. 
-   
-   **Impacto:** Moderado, pois, embora o projeto ainda pode ser atendido completamente em um dispositivo, a problemática desacata uma preferência do parceiro.
-   
-   **Probabilidade:** 51% a 70%, em função da complexidade de implementar responsividade ao jogo com a linguagem e com a biblioteca utilizada no código. 
-   
-   **Plano de ação:** Estudar mais como fazer essa adaptabilidade em todas as funcionalidades e explicar ao parceiro a dificuldade dessa tarefa.
-
-9. **Atrasos ou ausência de membros na daily** : Dado as responsabilidades dos membros em atividades extras, é possível que haja demora em chegar para os horários da daily ou até mesmo a ausência nela. 
-   
-   **Impacto:** Alto, pois a falta de um ou mais membros na daily deixa o membro ausênte desatualizado do kanban, e consequentemente das atividades concluídas e das que serão trabalhadas no horário de desenvolvimento e deixa a equipe desinformada do que o membro está desenvolvendo. Dessa forma, o obstáculo dificulta a comunicação entre os membros, principalmente em casos de atrasos ou de tarefas com dependências ainda não realizadas e alimenta, assim, o individualismo.
-   
-   **Probabilidade:** 31% a 50%, pois não é raro acontecer de um membro se perder em seus horários e atrasar para chegar na daily, especialmente em razão de todos estarem no primeiro módulo, ainda em período de adaptação. 
-   
-   **Plano de ação:** 5 minutos antes da daily, como forma de mitigar a problemática, é válido o ScrumMaster ou os outros membros mandarem mensagem no grupo de Whatsapp e no Slack solicitando que todos os membros retornem para a sala e, se necessário, marcando também os membros que ainda não estiverem no local. Ademais, comunicar os membros que estiverem atrasando ou se ausentando da daily sobre a importância desse momento para o desenvolvimento do projeto e sugerir formas de ajudar a lembrá-lo de chegar no horário, como colocar um despertador.
-
-11. **Falta de materiais essenciais fornecidos pelo parceiro** : 
-   
-   **Impacto:** 
-   
-   **Probabilidade:** 
-   
-   **Plano de ação:**
-
-11. **Projeto não finalizado após 10 semanas:** : 
-   
-   **Impacto:** 
-   
-   **Probabilidade:** 
-   
-   **Plano de ação:**
-
-### Oportunidades
+*Registre na matriz os riscos identificados no projeto, visando avaliar situações que possam representar ameaças e oportunidades, bem como os impactos relevantes sobre o projeto. Apresente os riscos, ressaltando, para cada um, impactos e probabilidades com plano de ação e respostas.*
 
 ### 1.1.7. Objetivos, Metas e Indicadores (sprint 4)
 
@@ -313,7 +214,7 @@ Além disso, os gatos domésticos, na ausência de seus tutores, passam por mome
 
 ## 2.1. Objetivos do Jogo (sprint 2)
 
-O objetivo do jogo é fortalecer o laço entre tutor e gato, enquanto ensina uma nova forma de se divertir com o seu pet. O objetivo do gato é eliminar todos os animais da tela num determinado período de tempo. Já o objetivo do tutor é o de aprender e exercer a mecânica de recompensar seu pet ao alcançar seu determinado objetivo delimitado entre as fases. Ademais, nosso jogo contemplará um modo de jogo alternativo em que o gato poderá "pintar" uma tela em branco, produzindo sua própria obra de arte.
+O objetivo do jogo é fortalecer o laço entre tutor e gato, enquanto ensina uma nova forma de se divertir com o seu pet. O objetivo do gato é eliminar todos os animais da tela num determinado período de tempo, e o tutor deve aprender e exercer a mecânica de ser recompensado ao alcançar esse objetivo. Ademais, nosso jogo contemplará um modo de jogo alternativo em que o gato poderá "pintar" uma tela em branco, produzindo sua própria obra de arte.
 
 ## 2.2. Características do Jogo (sprint 2)
 
@@ -360,7 +261,7 @@ Acompanhe seu pet nessa jornada e aprenda um pouco mais sobre a história da art
 ### 3.2.1. Controláveis
 No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador, haja vista que o intuito do jogo é justamente incentivar hábitos de caça ao gato por intermédio de figuras clicáveis na tela (no caso, spritesheets). Desse modo, o objetivo não é que o jogador controle algum personagem no game, mas sim que ele possa eliminá-lo no decorrer do jogo em troca de recompensas alimentícias, a fim de que seus instintos naturais sejam estimulados. Portanto, especificamente no escopo de RonRonArte, o player pode interpretar tal circunstância como um meio pelo qual ele realiza uma ação e, em troca, ganha algo, associando o atingimento de objetivos com as recompensas supracitadas. A partir disso, abaixo estão as spritesheets correspondentes ao que acima foi observado.
 
-<p align = 'center'>Figura 3 - Figura do pombo (RonRonArte)</p><br>
+<p align = 'center'>Figura 3 - Spritesheet de pombo (RonRonArte)</p><br>
 <div align = 'center'>
   <img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/pombo.png?raw=true">
 </div><br>
@@ -369,19 +270,26 @@ No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador
 
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
-O Ronronart contém inclusão em sua jogabilidade, uma vez que o jogador, em algumas fases, é convidado a conhecer mais sobre uma obra cujo autor pertence a um grupo sub-representado no universo artístico. 
+
+O jogo considera a diversidade e a inclusão de representatividade de minorias imprescindíveis. Por isso, na narrativa do modo com fases do RonRonArte, o jogador faz uma viagem pela história da arte e em cada período é exposto uma obra cujo autor pertence a um grupo sub-representado no universo artístico, como mulheres, negros, e integrantes da comunidade LGBTQIA +. Assim, o jogo se compromete em gerar visibilidade às figuras que foram intrínsecas no desenvolvimento da arte ao longo do tempo e que, em razão de vieses discriminatórios, não tiveram o merecido reconhecimento.
 
 ## 3.3. Mundo do jogo (sprints 2 e 3)
 
 ### 3.3.1. Locações Principais e/ou Mapas (sprints 2 e 3)
 
-  O jogo vem de uma viagem mágica no mundo da arte, coletando quadros de pintores que não receberam o devido reconhecimento de diversas nacionalidades que o jogador, o gato, visitará. Essa aventura será possível por meio de um portal, fantasioso, que servirá para o jogador poder acessar as fases. Os momentos históricos serão representados por animais que são presentes no cotidiano do período apresentado e pintores e artes pertencentes a cada respectiva época, por exemplo, o quadro da Maria Auxiliadora (quadro presente até o momento). O jogo não segue uma história linear, entretanto, o fluxo de fases segue, sendo um level liberado após o outro.
+O jogo vem de uma viagem no tempo, especificadamente por momentos históricos e importantes para a arte de pintura, coletando quadros de pintores famosos desses momentos em que o jogador, o gato, irá visitar. Essa aventura será possível por meio de um portal, fantasioso, que servirá para o jogador poder acessar as fases. Os momentos históricos serão representados por animais que foram o foco e pintores e artes pertencentes a cada respectiva época, por exemplo, o quadro de Van Gogh. Nesse jogo ele não se segue com uma linha do tempo linear.
 
 ### 3.3.2. Navegação pelo mundo (sprints 2 e 3)
 O jogador, sendo um gato, atravessará as fases atreves de um portal que o levará para épocas distintas e importantes para o conhecimento artístico da pintura. Com o passar das fases, elas se tornam selecionáveis a preferir do dono do gato, em que depois que o botão de “jogar”, poderá selecionar somente clicando com o dedo no botão referente a fase que for preferível a ser jogada.
 
+### 3.3.3. Condições climáticas e temporais (sprints 2 e 3)
+
+*\<opcional\> Descreva diferentes condições de clima que podem afetar o mundo e as fases, se aplicável*
+
+*Caso seja relevante, descreva como o tempo passa, se ele é um fator limitante ao jogo (ex. contagem de tempo para terminar uma fase)*
+
 ### 3.3.4. Concept Art (sprint 2)
-Uma Concept Art é um fluxo de imagens que mostra as características e os elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo. Com base nisso, realizou-se uma Concept Art de RonRonArte, de maneira a explicitar quais são os seus principais itens visuais e de história.
+Uma Concept Art é um documento que mostra as características e os elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo. Com base nisso, realizou-se uma Concept Art de RonRonArte, de maneira a explicitar quais são os seus principais itens visuais e de história.
 
 <p align = "center">Figura 4: Concept Art - RonRonArte</p>
 
@@ -404,27 +312,27 @@ Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.
 
 ## 3.4. Inventário e Bestiário (sprint 3)
 
-### 3.4.1. Inventário 
+### 3.4.1. Inventário
 
-*Legenda da tabela*
-\# | item |  | Como obter | Função | Efeito sonoro
+*\<opcional\> Caso seu jogo utilize itens ou poderes para os personagens obterem, descreva-os aqui, indicando títulos, imagens, meios de obtenção e funções no jogo. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes.* 
+
+*Exemplo de tabela*
+\# | item |  | como obter | função | efeito sonoro
 --- | --- | --- | --- | --- | ---
-1 | PawYellow |![splash_amarelo](https://github.com/user-attachments/assets/9e3c67ee-3614-4116-996f-c95e65b93ed0)| Conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo no modo criativo | Som de splash de tinta
-2 | PawRed |![vermelhoclaro](https://github.com/user-attachments/assets/f4e62404-2d30-496c-be8a-44a80d24abe7)| Conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo no modo criativov | Som de splash de tinta
-3 | PawOrange |![laranja](https://github.com/user-attachments/assets/4f2e7185-eb8e-4ef1-8a80-59a62a98a1bd)| Conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo no modo criativo | Som de splash de tinta
-4 | PawBlue |![splash_azul](https://github.com/user-attachments/assets/eb6d8494-0c7f-40fb-9ec3-1a9592e07664)| Conclusão da fase 1 | Pintar o quadro onde o gato acerta o alvo no modo criativo | Som de splash de tinta
-5 | PawPurple |![splash_roxo](https://github.com/user-attachments/assets/84cb3d4f-5870-4ea4-887f-74007bca7b6f)| Conclusão da fase 1 | Pintar o quadro onde o gato acerta o alvo no modo criativo | Som de splash de tinta
-5 | PawPink |![splash_rosa](https://github.com/user-attachments/assets/e8ff66bc-87a5-43b6-945d-e33d824fd6e5)| Conclusão da fase 1 | Pintar o quadro onde o gato acerta o alvo no modo criativo | Som de splash de tinta
-
-<p align ="center">Fonte: autoria própria (2025).</p> <br>
+1 | moeda | <img src="../assets/coin.png"> | há muitas espalhadas em todas as fases | acumula dinheiro para comprar outros itens | som de moeda
+2 | madeira | <img src="../assets/wood.png"> | há muitas espalhadas em todas as fases | acumula madeira para construir casas | som de madeiras
+3 | ... 
 
 ### 3.4.2. Bestiário
 
-*Legenda da tabela*
-\# | Inimigo | Design | Ocorrências | Função | Impacto | Efeito sonoro
+*\<opcional\> Caso seu jogo tenha inimigos, descreva-os aqui, indicando nomes, imagens, momentos de aparição, funções e impactos no jogo. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes.* 
+
+*Exemplo de tabela*
+\# | inimigo |  | ocorrências | função | impacto | efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
-1 | Pombo |![pombo](https://github.com/user-attachments/assets/a5622248-210c-4bab-b020-a67c1c3a113e)| Tutorial e Fase 1 | Voa em direção aléatoria para que o jogador tente acertá-lo | Ao atingido revela uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes. | Som de pombo
-2 | Rato Robótico |![RatoMecanico](https://github.com/user-attachments/assets/12336b6d-147a-4922-8c6d-65c66726c4c8)| Fase 2 | Anda pela tela em direção aléatoria para que o jogador tente acertá-lo | Ao atingido revela uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes. | Som de rato
+1 | robô terrestre | <img src="../assets/inimigo2.PNG"> |  a partir da fase 1 | ataca o personagem vindo pelo chão em sua direção, com velocidade constante, atirando parafusos | se encostar no inimigo ou no parafuso arremessado, o personagem perde 1 ponto de vida | sons de tiros e engrenagens girando
+2 | robô voador | <img src="../assets/inimigo1.PNG"> | a partir da fase 2 | ataca o personagem vindo pelo ar, fazendo movimento em 'V' quando se aproxima | se encostar, o personagem perde 3 pontos de vida | som de hélice
+3 | ... 
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 <p align ="center">Figura 5: diagrama de cenas - RonRonArte</p>
@@ -518,7 +426,12 @@ Classes, métodos e atributos: ainda não implementados.
 Classes, métodos e atributos: ainda não implementados.
 
 ## 3.6. Regras do jogo (sprint 3)
-No mundo de RonRonArte, o gato precisa atingir com toques na tela os alvos (animaizinhos) que aparecem na tela e se movem por ela, completando as fases que são obras de arte dos mais diversos períodos artísticos. A partir disso, ele receberá pontos e, se ele fizer todos os pontos, o tutor será incentivado a dar petiscos ao seu pet, a fim de que ele associe essa ação com a recompensa alimentícia. Além disso, são desbloqueados tintas e formatos diferentes que o tutor pode selecionar no modo criativo, nesse modo o gato poderá criar suas próprias pinturas. Logo, há a intersecção entre os instintos naturais de caça do gato, arte e alimentação animal.
+
+*Descreva aqui as regras do seu jogo: objetivos/desafios, meios para se conseguir alcançar*
+
+*Ex. O jogador deve pilotar o carro e conseguir terminar a corrida dentro de um minuto sem bater em nenhum obstáculo.*
+
+*Ex. O jogador deve concluir a fase dentro do tempo, para obter uma estrela. Se além disso ele coletar todas as moedas, ganha mais uma estrela. E se além disso ele coletar os três medalhões espalhados, ganha mais uma estrela, totalizando três. Ao final do jogo, obtendo três estrelas em todas as fases, desbloqueia o mundo secreto.*  
 
 ## 3.7. Mecânicas do jogo (sprint 3)
 
@@ -637,7 +550,7 @@ Logo abaixo, estão as telas da versão básica do jogo.
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
 
-No desenvolvimento intermediário do jogo, foram acrescentados mais itens ao game em relação à versão intermediária. Em termos de código, foi adicionada uma classe “basePhase”, que servirá de arquétipo para o desenvolvimento de todas as outras, parecido com um template. Já em termos de jogo, iniciou-se a implementação do modo criativo do game, que já possui sua principal característica implementada: a seleção de cores por parte do tutor em uma paleta na tela, a fim que seu gato produza suas próprias pinturas de modo personalizado. Por fim, adicionou-se um menu de seleção de níveis, no qual o tutor poderá escolher entre a fase de tutorial, as fases propostas ou o modo criativo.
+*Descreva e ilustre aqui o desenvolvimento da versão intermediária do jogo, explicando brevemente o que foi entregue em termos de código e jogo. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
 
 ## 4.4. Desenvolvimento final do MVP (sprint 4)
 
@@ -655,15 +568,9 @@ No desenvolvimento intermediário do jogo, foram acrescentados mais itens ao gam
 
 \# | pré-condição | descrição do teste | pós-condição 
 --- | --- | --- | --- 
-1 | Jogo mantém proporção correta na tela | Abrir o jogo, navegar entre os menus e as fases | Imagens e textos visíveis e tela clicável
-2 | Jogo aberto no dispositivo (smartphone ou tablet) | Tocar no botão “iniciar” | O jogo direciona para a cena de seleção de fases
-3 | Cena de tutorial na tela | Tocar na tela para ler as instruções | As instruções do tutorial surgem conforme o usuário toca na tela
-4 | Lido as instruções do tutorial e volume do dispositível audível | Pegar um petisco e tocar na tela | Um alvo clicável voa aleatoriamente na tela infinitamente até o tutor pular o tutorial
-5 | O tutor coloca o petisco em cima do alvo conforme instruído no tutorial | Gato bater no alvo | Splash de tinta aparece no lugar do alvo e é emitido um estímulo sonoro
-6 | O gato compreendeu que deve bater nos alvos para ser recompensado | Apertar botão de pular o tutorial | O tutorial acaba e o jogo direciona para a cena da fase 1
-7 | Fase 1 em curso e volume do dispositível audível | Gato bater no alvo da fase 1 | É revelado parte de um quadro a cada acerto do gato no alvo e é emitido um estímulo sonoro
-8 | Gato abateu o alvo três vezes | Esperar 6 segundos | O jogo direciona para a tela de vitória e é emitido um estímulo sonoro
-9 | Cena do modo criativo | Selecionar tinta na paleta de tintas | Ao clicar no alvo, a tinta selecionada é pintda na tela
+1 | abrir o jogo no smartphone ou tablet | colocar a ração ou o petisco em cima do alvo no tutorial | o gato deve bater na tela quando o alvo aparecer
+2 | tutor clicar no botão de iniciar | induzir o gato a bater na tela | o efeito de "splash" deve acontecer quando o gato clica na tela
+3 | aguardar o alvo passar na tela | deixar o gato comer a ração ou o petisco depois de bater no alvo e de ouvir o som emitido| o gato deve associar o bater no alvo com a recompensa da ração ou do petisco
 
 ## 5.2. Testes de jogabilidade (playtests) (sprint 4)
 
