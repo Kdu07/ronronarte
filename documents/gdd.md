@@ -219,7 +219,7 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
    
    **Impacto:** Moderado, pois a expectativa do parceiro, apesar de atrapalhar a visão dele em relação ao andamento do projeto sem a sua implementação desejada, não impede o desenvolvimento de acontecer. 
    
-   **Probabilidade:** 
+   **Probabilidade:** Entre 31% e 50%, pois apesar de compreensível, o parceiro demonstrou interesse no desenvolvimento de implementos que não são viáveis no momento acadêmico da equipe.
    
    **Plano de ação:** Explicar e sempre deixar claro ao parceiro exatamente o que é possível desenvolver, assim como não prometer implementos sem a certeza de que será possível implementá-lo, tendo em mente as habilidades técnicas que serão aprendidas neste módulo. Além disso, dar ênfase às expectativas que são possíveis executar.
 
