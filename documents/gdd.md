@@ -196,7 +196,7 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
    
    **Probabilidade:** 50%, pois não é possível atribuir certeza em relação à acontecimentos catastróficos e imprevistos extremos na vida pessoal de cada membro.
    
-   **Plano de ação:**
+   **Plano de ação:** Fazer com que a organização e o planejamento da equipe seja flexível, ou seja, fazer com que tenha sempre uma margem para lidar com imprevistos para que, caso aconteça de um membro se ausentar, a equipe consiga se adaptar. 
 
 2. **Falta de habilidades técnicas necessárias**: Na equipe CatUp, a falta de habilidades técnicas é um problema válido de analisar, pois todos os membros encontram-se no primeiro módulo da faculdade e todos carragam uma bagagem de conhecimentos de programação similares, de forma que, não raro, para a eficiente implementação de funcionalidades do código do jogo Ronrart, é necessário ceder esforços e tempo para estudar a sua execução.
    
@@ -213,7 +213,7 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
    **Probabilidade:** Em torno de 11 a 30%, pois, em relação ao parceiro, ele demonstrou interesse e flexibilidade ao definir o escopo, compreendendo o nível de conhecimento dos membros. Entretanto, ainda pode acontecer dele apresentar insatisfação ou mudar de ideia bruscamente, de forma a querer redefinir grande parte do desenvolvimento.
    Já sobre mudanças de regulamento, alterações que impossibilitem a entrega do projeto são muito improváveis, considerando principalmente que a aprovação e aplicação de mutações legislativas exigem muito tempo para serem efetivadas.
    
-   **Plano de ação:**
+   **Plano de ação:** Manter comunicação clara com o parceiro, em especial nas Sprints Reviews.
 
 4. **Partes interessadas desenvolvem expectativas imprecisas sobre o jogo**: O parceiro pode criar expectativas irrealistas em relação ao entregável, como desejar implemantações que não cabem na grade curricular da equipe no período das 5 sprints. 
    
