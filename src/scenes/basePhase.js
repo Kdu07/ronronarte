@@ -35,7 +35,7 @@ export default class BasePhase extends Phaser.Scene {
             
             // Adiciona o placar
             this.scoreboard = this.add.text(this.width/2, this.height*0.001, this.score + '/' + this.maxScore, 
-                {fontFamily:'Futura', fontSize:this.width/50, fill:'#000'})
+                {fontFamily:'Futura', fontSize:this.width/22, fill:'#FFF'})
 
             // Adiciona o temporizador
             this.createTimer();
@@ -64,7 +64,7 @@ export default class BasePhase extends Phaser.Scene {
         
         // Cria o texto do temporizador
         this.timerText = this.add.text(this.width/1.1, this.height*0.001, '0', 
-        { fontFamily:'Futura',fontSize: this.width/50, fill: '#000' });
+        { fontFamily:'Futura',fontSize:this.width/22, fill:'#FFF'});
 
         // Cria o evento do temporizador e guarda a referência
         this.timerEvent = this.time.addEvent({
@@ -91,7 +91,7 @@ export default class BasePhase extends Phaser.Scene {
     createBackgroundComplete() {
         // Adiciona máscara branca, o quadro e a borda
         this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setDisplaySize(this.width, this.width/1.4);
-        this.painting = this.add.image(this.width / 2, this.height / 2, this.backgroundKey).setDisplaySize(this.width/1.065, (this.width / 1.77)/1.03);
+        this.painting = this.add.image(this.width / 2, this.height / 2, this.backgroundKey).setDisplaySize(this.width/1.11, (this.width / 1.77)/1.37);
         this.frame = this.add.image(this.width / 2, this.height / 2, 'frame2').setDisplaySize(this.width, this.height);
         this.frameHitbox = this.frame.displayWidth / 35;
 
@@ -110,7 +110,7 @@ export default class BasePhase extends Phaser.Scene {
         this.hold = false;
 
         // Cria um botão de pause na tela
-        this.pauseBtn = this.add.image(this.width/55, this.height/27, 'pauseBtn').setScale(this.width/1500)
+        this.pauseBtn = this.add.image(this.width/40, this.height/18, 'pauseBtn').setScale(this.width/1000)
         
         // Torna o botão de pause clicável
         this.pauseBtn.setInteractive()
@@ -122,7 +122,7 @@ export default class BasePhase extends Phaser.Scene {
             repeat: 0
         })
 
-        this.spriteLoading = this.add.sprite(this.width/50, this.height/12, 'spriteLoading')
+        this.spriteLoading = this.add.sprite(this.width/40, this.height/10, 'spriteLoading')
         .setScale(this.width/8000)
         .setInteractive()
         .setVisible(false);
@@ -175,7 +175,6 @@ export default class BasePhase extends Phaser.Scene {
         }
     }
 
-
     spawnTarget() {
         // Inicia a movimentação do pombo
         this.stopped = false;
@@ -193,15 +192,15 @@ export default class BasePhase extends Phaser.Scene {
         this.target.setInteractive();
     
         // Configura a velocidade aleatória do pombo e a direção inicial de movimento
-        this.target.speedX = Phaser.Math.Between(6, 9);
+        this.target.speedX = Phaser.Math.Between(8, 12);
         this.target.speedY = Phaser.Math.Between(1, 2);
         this.target.directionX = -1;
         this.target.directionY = 1;
 
         // Configura aceleração do pombo no eixo y
-        this.target.accelerationY = 0; //Phaser.Math.FloatBetween(0.01, 0.06);
+        this.target.accelerationY = Phaser.Math.FloatBetween(0.2, 0.6);
         this.target.t = 0; // Tempo inicial
-        this.target.VyMax = 10; // Velocidade máxima no eixo y
+        this.target.VyMax = 12; // Velocidade máxima no eixo y
         this.target.VyMin = 1; // Velocidade mínima no eixo y
 
         // Hitbox do pombo (usado para que não saia da tela)
@@ -337,7 +336,8 @@ export default class BasePhase extends Phaser.Scene {
         // Adiciona tela de vitória depois de 5,3 segundos 
         setTimeout(() => {
             // Cria o background da tela de vitória
-            let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(this.width/600);
+            let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setDisplaySize(this.width/1.7, this.height/1.7);
+            let frameVictory = this.add.image(this.width / 2, this.height / 2, 'frame2').setScale(this.width/900);
 
             //this.add.image(this.width / 3, this.height / 3, this.backgroundKey).setDisplaySize(this.width/4.5, this.width/4.5/1.77);
             //this.add.image(this.width / 1.5, this.height / 3, this.artistKey).setDisplaySize(this.width/7, this.width/7);
@@ -365,7 +365,7 @@ export default class BasePhase extends Phaser.Scene {
                 {fontFamily:'Futura', fontSize: this.width/30, fill: '#000000' });
 
             // Cria e configura o botao para proxima fase
-            this.next = this.add.image(bgVictory.x, bgVictory.y + bgVictory.height/1.25, 'continueBtn')
+            this.next = this.add.image(bgVictory.x, bgVictory.y + bgVictory.height/1.35, 'continueBtn')
             .setInteractive() 
             .on('pointerdown', () => {
                 this.nextPhase = this.phases[this.phases.indexOf(this.phaseKey) + 1];
@@ -373,19 +373,12 @@ export default class BasePhase extends Phaser.Scene {
                 this.scene.start(this.nextPhase); // Inicia a próxima fase
             })
             .setScale(this.width/800)
-            /*
-            // Adiciona as estrelas
-            for (let i=0; i<this.starScore; i++){
-                setTimeout(() => {
-                   
-                }, 6000);
-            }
-            */
+
             let i = 0;
             let starScale = this.width/5000;
 
             this.stars = setInterval(() => {
-                this.add.image((bgVictory.x - bgVictory.width*1.23) + ((i+1)*(starScale*550)), this.height/4, 'scoreStar')
+                this.add.image((bgVictory.x - bgVictory.width*1.23) + ((i+1)*(starScale*550)), this.height/3, 'scoreStar')
                 .setScale(starScale)
                 
                 i++;
@@ -438,5 +431,11 @@ export default class BasePhase extends Phaser.Scene {
         // Nova posição do pombo = posição atual do pombo + velocidade do pombo * direção do pombo (-1,1)
         target.x += target.speedX * target.directionX;
         target.y += target.speedY * target.directionY; // Fim
+        
+        console.log("Posição X" + target.x)
+        console.log("Posição Y" + target.y)
+        console.log("Velocidade X" + target.speedX)
+        console.log("Velocidade Y" + target.speedY)
+        console.log("------------------------------------")
     }
 }
