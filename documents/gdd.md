@@ -300,7 +300,7 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
    **Probabilidade:** 10%, haja vista que a equipe não atingiu visibilidade pública de modo a gerar consolidação de parcerias com empresas do ramo pet.
 
    ![MatrizdeRisco](https://github.com/user-attachments/assets/e0e8eebb-9f85-470b-a2b3-1dd77247050f)
-   Fonte: Tabela de ferramentasdaqualidade.org
+   Fonte: Tabela de "ferramentasdaqualidade.org"; adaptada pela equipe CatUp.
 
 ### 1.1.7. Objetivos, Metas e Indicadores (sprint 4)
 
