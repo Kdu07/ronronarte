@@ -12,7 +12,7 @@ export default class Phase4 extends BasePhase {
             "targetKey":"pigeon",
             "animKey":"flyPigeon",
             "soundKey":"soundGecko",
-            "maxScore": 3
+            "maxScore": 10
         }
         
         // Configura a chave de classe e os assets da fase
