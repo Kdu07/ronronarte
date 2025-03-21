@@ -11,7 +11,7 @@ export default class Phase1 extends BasePhase {
             "textPainting":['A obra A criação de Adão fica\nno teto da Capela Sistina e\nrepresenta a passagem bíblica\nem que Deus dá origem à\nhumanidade. Realizado com a\ntécnica do afresco, o quadro\nexpressa harmonia, mistério\ne força divina.'],
             "targetKey":"pigeon",
             "animKey":"flyPigeon",
-            "soundKey":"meow",
+            "soundKey":"soundPigeon",
             "maxScore": 1
         }
         

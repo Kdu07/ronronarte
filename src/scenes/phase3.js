@@ -11,7 +11,7 @@ export default class Phase3 extends BasePhase {
             "textPainting":['Pintura...'],
             "targetKey":"pigeon",
             "animKey":"flyPigeon",
-            "soundKey":"pigeonSound",
+            "soundKey":"soundPigeon",
             "maxScore": 3
         }
         

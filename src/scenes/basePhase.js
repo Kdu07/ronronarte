@@ -55,7 +55,10 @@ export default class BasePhase extends Phaser.Scene {
         }
 
         // Adiciona som que toca quando o alvo é clicado
-        this.clickSound = this.sound.add(this.soundKey);
+        this.soundClick = this.sound.add('soundClick');
+        this.soundTarget = this.sound.add(this.soundKey);
+        this.soundPause = this.sound.add('soundPauseButton');
+        this.soundStar = this.sound.add('soundStar')
 
         // Adiciona o botão de pause
         this.createHoldButton();
@@ -176,6 +179,8 @@ export default class BasePhase extends Phaser.Scene {
             this.spriteLoading.anims.play('SpriteLoading',true);
 
             if (this.spriteLoading.anims.currentFrame.index == 5){
+                this.soundPause.play({ volume: 0.5 });
+                this.soundTarget.stop();
                 this.scene.start("LevelSelect");
                 this.scene.stop(this.phaseKey);
             }
@@ -218,6 +223,9 @@ export default class BasePhase extends Phaser.Scene {
 
         // Inicia a animação de voo do pombo
         this.target.play(this.animKey); // Fim
+
+        // Inicia o audio do alvo
+        this.soundTarget.play({ volume: 0.5, loop: true });
     }
 
     // Função que confere se o pombo é clicado
@@ -232,9 +240,9 @@ export default class BasePhase extends Phaser.Scene {
 
                 this.stopped = true; // Alvo para de se movimentar
                 this.target.destroy(); // Destrói o alvo
-                this.clickSound.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
+                this.soundClick.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
                 this.time.delayedCall(1000, () => {
-                    this.clickSound.stop(); // Para o som do pombo após 1000ms (1s)
+                    this.soundClick.stop(); // Para o som do pombo após 1000ms (1s)
                 });
                 
                 this.splash = this.add.image(pointer.x, pointer.y, 'yellowSplash').setScale(this.width/4000).setAlpha(0.6); // Cria um splash no local do clique
@@ -259,10 +267,14 @@ export default class BasePhase extends Phaser.Scene {
             if (this.target.getBounds().contains(pointer.x, pointer.y) && this.score < this.maxScore) {
                 this.stopped = true; // Alvo para de se movimentar
                 this.target.destroy(); // Remove o pombo da tela
-                this.clickSound.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
+                this.soundTarget.stop();
+                
+                this.soundClick.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
+                /*
                 this.time.delayedCall(1000, () => {
-                    this.clickSound.stop(); // Para o som do pombo após 1000ms (1s)
+                    this.soundClick.stop(); // Para o som do pombo após 1000ms (1s)
                 });
+                */
                 this.score++; // Adiciona 1 ponto à pontuação
                 this.scoreboard.setText(this.score + '/' + this.maxScore); // Atualiza o placar 
 
@@ -358,7 +370,7 @@ export default class BasePhase extends Phaser.Scene {
                 {fontFamily:'Futura', fontSize: this.width/30, fill: '#000000' });
 
             // Cria e configura o botao para proxima fase
-            this.next = this.add.image(bgVictory.x, bgVictory.y + bgVictory.height/1.35, 'continueBtn')
+            this.next = this.add.image(this.width/2, bgVictory.y + bgVictory.height/1.35, 'continueBtn')
             .setInteractive() 
             .on('pointerdown', () => {
                 this.scene.start('Victory', this.phaseInfo);
@@ -373,12 +385,14 @@ export default class BasePhase extends Phaser.Scene {
                 this.add.image((bgVictory.x - bgVictory.width*1.3) + ((i+1)*(starScale*550)), this.height/3, 'scoreStar')
                 .setScale(starScale)
                 
+                this.soundStar.play()
+
                 i++;
                 
                 if (i === this.starScore){
                     clearInterval(this.stars)
                 }
-            }, 1000);
+            }, 600);
         }, 5700);
     }
 

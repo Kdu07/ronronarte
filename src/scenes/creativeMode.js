@@ -10,7 +10,7 @@ export default class CreativeMode extends BasePhase{
             "textPainting":['Pintura...'],
             "targetKey":"pigeon",
             "animKey":"flyPigeon",
-            "soundKey":"pigeonSound",
+            "soundKey":"soundPigeon",
         }
         
         // Configura a chave de classe e os assets da fase

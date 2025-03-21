@@ -65,8 +65,17 @@ export default class SplashScreen extends Phaser.Scene {
 
         //Alvos
         this.load.spritesheet('pigeon', './assets/targets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
-        this.load.audio('pigeonSound', './assets/audios/pru.mp3');
-        this.load.audio('meow', './assets/audios/meow.mp3');
+        
+        //Audios
+        this.load.audio('soundClick', './assets/audios/soundClick.mp3');
+        this.load.audio('soundContinueButton', './assets/audios/soundContinueButton.mp3');
+        this.load.audio('soundGecko', './assets/audios/soundGecko.mp3');
+        this.load.audio('soundPauseButton', './assets/audios/soundPauseButton.mp3');
+        this.load.audio('soundPigeon', './assets/audios/soundPigeon.mp3');
+        this.load.audio('soundPlayButton', './assets/audios/soundPlayButton.mp3');
+        this.load.audio('soundRat', './assets/audios/soundRat.mp3');
+        this.load.audio('soundSplash', './assets/audios/soundSplash.mp3');
+        this.load.audio('soundStar', './assets/audios/soundStar.mp3');
         
     }
 

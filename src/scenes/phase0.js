@@ -11,7 +11,7 @@ export default class Phase0 extends BasePhase {
             "textPainting":[' '],
             "targetKey":"pigeon",
             "animKey":"flyPigeon",
-            "soundKey":"pigeonSound",
+            "soundKey":"soundPigeon",
         }
 
         // Configura a chave de classe e assets
@@ -28,6 +28,8 @@ export default class Phase0 extends BasePhase {
             frameRate: 10, // Quantidade de frames por segundo
             repeat: -1 // Define que a animação será contínua
         });
+
+        this.soundContinue = this.sound.add('soundContinueButton');
 
         super.create();
     }
@@ -83,6 +85,10 @@ export default class Phase0 extends BasePhase {
             this.spriteLoading1.anims.play('SpriteLoading',true);
 
             if (this.spriteLoading1.anims.currentFrame.index == 5){
+                this.soundContinue.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
+                this.time.delayedCall(1000, () => {
+                    this.soundContinue.stop(); // Para o som do pombo após 1000ms (1s)
+                });
                 this.scene.start("Phase1");
                 this.scene.stop(this.phaseKey);
             }
