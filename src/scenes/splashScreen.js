@@ -49,6 +49,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('selectBg', 'assets/backgrounds/textBoxFuncional.png');
         this.load.image('bgVictory', './assets/backgrounds/bgVictory.png');
         this.load.image('bgWhite', './assets/backgrounds/bgWhite.png');
+        this.load.image('bgVictoryScene', './assets/backgrounds/bgVictoryScene.png');
 
         //Misc
         this.load.image('textArtistBox', './assets/misc/textArtistBox.png');
@@ -60,6 +61,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.spritesheet('cat', './assets/misc/cat.png', { frameWidth: 64, frameHeight:64 });
         this.load.image('teste', '/assets/misc/575x56.png');
         this.load.image('scoreStar', '/assets/misc/scoreStar.png');
+        this.load.image('victoryTextBox', '/assets/misc/victoryTextBox.png');
 
         //Alvos
         this.load.spritesheet('pigeon', './assets/targets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
@@ -84,7 +86,7 @@ export default class SplashScreen extends Phaser.Scene {
             // Aguarda o fadeOut antes de iniciar a próxima cena
             this.time.delayedCall(time1500, () => {
                 this.scene.stop('SplashScreen'); // Para a cena atual
-                this.scene.start('LevelSelect'); // Inicia a cena Menu
+                this.scene.start('Menu'); // Inicia a cena Menu
             }); 
         });
 
