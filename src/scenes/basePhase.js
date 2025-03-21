@@ -17,6 +17,15 @@ export default class BasePhase extends Phaser.Scene {
         this.textArtist = configDict['textArtist'];
         this.textPainting = configDict['textPainting'];
         this.maxScore = configDict['maxScore'];
+
+        this.nextPhase = this.phases[this.phases.indexOf(this.phaseKey) + 1]; // Define a próxima fase
+        
+        // Junta todas as variaveis a serem passadas para a próxima cena
+        this.phaseInfo = {
+            configDict: configDict, 
+            nextPhase: this.nextPhase
+        };
+        
     }
 
     create(){
@@ -52,7 +61,7 @@ export default class BasePhase extends Phaser.Scene {
         this.createHoldButton();
         
         // Configura e adiciona o pombo na tela
-        this.spawnTarget();
+        this.spawnTarget();        
     }
 
     createTimer() {
@@ -192,16 +201,16 @@ export default class BasePhase extends Phaser.Scene {
         this.target.setInteractive();
     
         // Configura a velocidade aleatória do pombo e a direção inicial de movimento
-        this.target.speedX = Phaser.Math.Between(8, 12);
+        this.target.speedX = Phaser.Math.Between(6, 9);
         this.target.speedY = Phaser.Math.Between(1, 2);
         this.target.directionX = -1;
         this.target.directionY = 1;
 
         // Configura aceleração do pombo no eixo y
-        this.target.accelerationY = Phaser.Math.FloatBetween(0.2, 0.6);
+        this.target.accelerationY = Phaser.Math.FloatBetween(0.03, 0.07);
         this.target.t = 0; // Tempo inicial
-        this.target.VyMax = 12; // Velocidade máxima no eixo y
-        this.target.VyMin = 1; // Velocidade mínima no eixo y
+        this.target.VyMax = 8; // Velocidade máxima no eixo y
+        this.target.VyMin = 0; // Velocidade mínima no eixo y
 
         // Hitbox do pombo (usado para que não saia da tela)
         this.target.hitboxWidth = 45;
@@ -352,9 +361,8 @@ export default class BasePhase extends Phaser.Scene {
             this.next = this.add.image(bgVictory.x, bgVictory.y + bgVictory.height/1.35, 'continueBtn')
             .setInteractive() 
             .on('pointerdown', () => {
-                this.nextPhase = this.phases[this.phases.indexOf(this.phaseKey) + 1];
+                this.scene.start('Victory', this.phaseInfo);
                 this.scene.stop(this.phaseKey); // Para a fase atual
-                this.scene.start(this.nextPhase); // Inicia a próxima fase
             })
             .setScale(this.width/800)
 
@@ -362,7 +370,7 @@ export default class BasePhase extends Phaser.Scene {
             let starScale = this.width/5000;
 
             this.stars = setInterval(() => {
-                this.add.image((bgVictory.x - bgVictory.width*1.23) + ((i+1)*(starScale*550)), this.height/3, 'scoreStar')
+                this.add.image((bgVictory.x - bgVictory.width*1.3) + ((i+1)*(starScale*550)), this.height/3, 'scoreStar')
                 .setScale(starScale)
                 
                 i++;
