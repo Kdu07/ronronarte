@@ -92,7 +92,7 @@ export default class BasePhase extends Phaser.Scene {
         // Adiciona máscara branca, o quadro e a borda
         this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setDisplaySize(this.width, this.width/1.4);
         this.painting = this.add.image(this.width / 2, this.height / 2, this.backgroundKey).setDisplaySize(this.width/1.11, (this.width / 1.77)/1.37);
-        this.frame = this.add.image(this.width / 2, this.height / 2, 'frame2').setDisplaySize(this.width, this.height);
+        this.frame = this.add.image(this.width / 2, this.height / 2, 'frame').setDisplaySize(this.width, this.height);
         this.frameHitbox = this.frame.displayWidth / 35;
 
         // Torna o quadro visível
@@ -337,23 +337,7 @@ export default class BasePhase extends Phaser.Scene {
         setTimeout(() => {
             // Cria o background da tela de vitória
             let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setDisplaySize(this.width/1.7, this.height/1.7);
-            let frameVictory = this.add.image(this.width / 2, this.height / 2, 'frame2').setScale(this.width/900);
-
-            //this.add.image(this.width / 3, this.height / 3, this.backgroundKey).setDisplaySize(this.width/4.5, this.width/4.5/1.77);
-            //this.add.image(this.width / 1.5, this.height / 3, this.artistKey).setDisplaySize(this.width/7, this.width/7);
-
-            // Configura a animação do spritesheet do gato
-            this.anims.create({
-                key: 'animCat',
-                frames: this.anims.generateFrameNumbers('cat', { start: 0, end: 3 }), // Define os frames do spritesheet que serão usados 
-                frameRate: 10, // Define o número de frames por segundos
-                repeat: -1 // Define a animação como contínua
-            });
-
-            // Cria o spritesheet do gato na tela de vitória
-            //this.cat = this.add.sprite(bgVictory.x - 370, bgVictory.y + 190, 'cat').setScale(9).setFlip(true,false);
-            // Inicia a anumação do spritesheet do gato
-            //this.cat.play('animCat');
+            let frameVictory = this.add.image(this.width / 2, this.height / 2, 'frame').setScale(this.width/900);
 
             // Cria os textos que mostram os pontos e a precisão do gato
             this.scoreboard = this.add.text(bgVictory.x - bgVictory.width/3.5, bgVictory.y - bgVictory.height/9, 

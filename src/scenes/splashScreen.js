@@ -51,17 +51,13 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('bgWhite', './assets/backgrounds/bgWhite.png');
 
         //Misc
-        this.load.image('tinta1', './assets/misc/tinta1.png');
         this.load.image('textArtistBox', './assets/misc/textArtistBox.png');
         this.load.image('textBox', './assets/misc/textBox.png');
         this.load.image('frame', './assets/misc/frame.png');
-        this.load.image('frame2', './assets/misc/frame2.png');
-        this.load.image('star', './assets/misc/star.png');
         this.load.image('phrase', './assets/misc/frase.png');
         this.load.image('reward', './assets/misc/recompensa.png');
         this.load.image('catup', './assets/misc/catup.png');
         this.load.spritesheet('cat', './assets/misc/cat.png', { frameWidth: 64, frameHeight:64 });
-        this.load.image('squareFrame','assets/misc/moldura_quadrado.png');
         this.load.image('teste', '/assets/misc/575x56.png');
         this.load.image('scoreStar', '/assets/misc/scoreStar.png');
 
