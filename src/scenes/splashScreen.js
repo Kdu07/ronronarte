@@ -49,24 +49,33 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('selectBg', 'assets/backgrounds/textBoxFuncional.png');
         this.load.image('bgVictory', './assets/backgrounds/bgVictory.png');
         this.load.image('bgWhite', './assets/backgrounds/bgWhite.png');
+        this.load.image('bgVictoryScene', './assets/backgrounds/bgVictoryScene.png');
 
         //Misc
-        this.load.image('tinta1', './assets/misc/tinta1.png');
         this.load.image('textArtistBox', './assets/misc/textArtistBox.png');
         this.load.image('textBox', './assets/misc/textBox.png');
         this.load.image('frame', './assets/misc/frame.png');
-        this.load.image('frame2', './assets/misc/frame2.png');
-        this.load.image('star', './assets/misc/star.png');
         this.load.image('phrase', './assets/misc/frase.png');
         this.load.image('reward', './assets/misc/recompensa.png');
         this.load.image('catup', './assets/misc/catup.png');
         this.load.spritesheet('cat', './assets/misc/cat.png', { frameWidth: 64, frameHeight:64 });
-        this.load.image('squareFrame','assets/misc/moldura_quadrado.png');
         this.load.image('teste', '/assets/misc/575x56.png');
+        this.load.image('scoreStar', '/assets/misc/scoreStar.png');
+        this.load.image('victoryTextBox', '/assets/misc/victoryTextBox.png');
 
         //Alvos
         this.load.spritesheet('pigeon', './assets/targets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
-        this.load.audio('pigeonSound', './assets/audios/pru.mp3');
+        
+        //Audios
+        this.load.audio('soundClick', './assets/audios/soundClick.mp3');
+        this.load.audio('soundContinueButton', './assets/audios/soundContinueButton.mp3');
+        this.load.audio('soundGecko', './assets/audios/soundGecko.mp3');
+        this.load.audio('soundPauseButton', './assets/audios/soundPauseButton.mp3');
+        this.load.audio('soundPigeon', './assets/audios/soundPigeon.mp3');
+        this.load.audio('soundPlayButton', './assets/audios/soundPlayButton.mp3');
+        this.load.audio('soundRat', './assets/audios/soundRat.mp3');
+        this.load.audio('soundSplash', './assets/audios/soundSplash.mp3');
+        this.load.audio('soundStar', './assets/audios/soundStar.mp3');
         
     }
 

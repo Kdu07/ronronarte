@@ -12,16 +12,20 @@ export default class BasePhase extends Phaser.Scene {
         this.targetKey = configDict['targetKey'];
         this.animKey = configDict['animKey'];
 
-        // Parâmetros opcionais
-        if(configDict['artistKey'] != undefined){
-            this.artistKey = configDict['artistKey'];
-        }
-        if(configDict['textArtist'] != undefined){
-            this.textArtist = configDict['textArtist'];
-        }
-        if(configDict['textPainting'] != undefined){
-            this.textPainting = configDict['textPainting'];
-        }
+        // Parâmetros de fase completa
+        this.artistKey = configDict['artistKey'];
+        this.textArtist = configDict['textArtist'];
+        this.textPainting = configDict['textPainting'];
+        this.maxScore = configDict['maxScore'];
+
+        this.nextPhase = this.phases[this.phases.indexOf(this.phaseKey) + 1]; // Define a próxima fase
+        
+        // Junta todas as variaveis a serem passadas para a próxima cena
+        this.phaseInfo = {
+            configDict: configDict, 
+            nextPhase: this.nextPhase
+        };
+        
     }
 
     create(){
@@ -35,15 +39,12 @@ export default class BasePhase extends Phaser.Scene {
         if (this.completePhase){
             this.totalClicks = 0;
             
-            // Configura a pontuação máxima
-            this.maxScore = 3;
-            
             // Cria o background de fase completa
             this.createBackgroundComplete();
             
             // Adiciona o placar
             this.scoreboard = this.add.text(this.width/2, this.height*0.001, this.score + '/' + this.maxScore, 
-                {fontFamily:'Futura', fontSize:this.width/50, fill:'#000'})
+                {fontFamily:'Futura', fontSize:this.width/22, fill:'#FFF'})
 
             // Adiciona o temporizador
             this.createTimer();
@@ -54,13 +55,16 @@ export default class BasePhase extends Phaser.Scene {
         }
 
         // Adiciona som que toca quando o alvo é clicado
-        this.clickSound = this.sound.add(this.soundKey);
+        this.soundClick = this.sound.add('soundClick');
+        this.soundTarget = this.sound.add(this.soundKey);
+        this.soundPause = this.sound.add('soundPauseButton');
+        this.soundStar = this.sound.add('soundStar')
 
         // Adiciona o botão de pause
         this.createHoldButton();
         
         // Configura e adiciona o pombo na tela
-        this.spawnTarget();
+        this.spawnTarget();        
     }
 
     createTimer() {
@@ -72,7 +76,7 @@ export default class BasePhase extends Phaser.Scene {
         
         // Cria o texto do temporizador
         this.timerText = this.add.text(this.width/1.1, this.height*0.001, '0', 
-        { fontFamily:'Futura',fontSize: this.width/50, fill: '#000' });
+        { fontFamily:'Futura',fontSize:this.width/22, fill:'#FFF'});
 
         // Cria o evento do temporizador e guarda a referência
         this.timerEvent = this.time.addEvent({
@@ -99,8 +103,8 @@ export default class BasePhase extends Phaser.Scene {
     createBackgroundComplete() {
         // Adiciona máscara branca, o quadro e a borda
         this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setDisplaySize(this.width, this.width/1.4);
-        this.painting = this.add.image(this.width / 2, this.height / 2, this.backgroundKey).setDisplaySize(this.width/1.065, (this.width / 1.77)/1.03);
-        this.frame = this.add.image(this.width / 2, this.height / 2, 'frame2').setDisplaySize(this.width, this.height);
+        this.painting = this.add.image(this.width / 2, this.height / 2, this.backgroundKey).setDisplaySize(this.width/1.11, (this.width / 1.77)/1.37);
+        this.frame = this.add.image(this.width / 2, this.height / 2, 'frame').setDisplaySize(this.width, this.height);
         this.frameHitbox = this.frame.displayWidth / 35;
 
         // Torna o quadro visível
@@ -118,7 +122,7 @@ export default class BasePhase extends Phaser.Scene {
         this.hold = false;
 
         // Cria um botão de pause na tela
-        this.pauseBtn = this.add.image(this.width/55, this.height/27, 'pauseBtn').setScale(this.width/1500)
+        this.pauseBtn = this.add.image(this.width/40, this.height/18, 'pauseBtn').setScale(this.width/1000)
         
         // Torna o botão de pause clicável
         this.pauseBtn.setInteractive()
@@ -130,8 +134,8 @@ export default class BasePhase extends Phaser.Scene {
             repeat: 0
         })
 
-        this.spriteLoading = this.add.sprite(this.width/34, this.height/12, 'spriteLoading')
-        .setScale(this.width/7000)
+        this.spriteLoading = this.add.sprite(this.width/40, this.height/10, 'spriteLoading')
+        .setScale(this.width/8000)
         .setInteractive()
         .setVisible(false);
     }
@@ -175,6 +179,8 @@ export default class BasePhase extends Phaser.Scene {
             this.spriteLoading.anims.play('SpriteLoading',true);
 
             if (this.spriteLoading.anims.currentFrame.index == 5){
+                this.soundPause.play({ volume: 0.5 });
+                this.soundTarget.stop();
                 this.scene.start("LevelSelect");
                 this.scene.stop(this.phaseKey);
             }
@@ -182,7 +188,6 @@ export default class BasePhase extends Phaser.Scene {
             this.spriteLoading.anims.stop().setFrame(0).setVisible(false);
         }
     }
-
 
     spawnTarget() {
         // Inicia a movimentação do pombo
@@ -201,16 +206,16 @@ export default class BasePhase extends Phaser.Scene {
         this.target.setInteractive();
     
         // Configura a velocidade aleatória do pombo e a direção inicial de movimento
-        this.target.speedX = Phaser.Math.Between(6, 8);
+        this.target.speedX = Phaser.Math.Between(6, 9);
         this.target.speedY = Phaser.Math.Between(1, 2);
         this.target.directionX = -1;
         this.target.directionY = 1;
 
         // Configura aceleração do pombo no eixo y
-        this.target.accelerationY = Phaser.Math.FloatBetween(-0.5, 0.5);
+        this.target.accelerationY = Phaser.Math.FloatBetween(0.03, 0.07);
         this.target.t = 0; // Tempo inicial
-        this.target.VyMax = 15; // Velocidade máxima no eixo y
-        this.target.VyMin = 0.5; // Velocidade mínima no eixo y
+        this.target.VyMax = 8; // Velocidade máxima no eixo y
+        this.target.VyMin = 0; // Velocidade mínima no eixo y
 
         // Hitbox do pombo (usado para que não saia da tela)
         this.target.hitboxWidth = 45;
@@ -218,6 +223,9 @@ export default class BasePhase extends Phaser.Scene {
 
         // Inicia a animação de voo do pombo
         this.target.play(this.animKey); // Fim
+
+        // Inicia o audio do alvo
+        this.soundTarget.play({ volume: 0.5, loop: true });
     }
 
     // Função que confere se o pombo é clicado
@@ -232,13 +240,19 @@ export default class BasePhase extends Phaser.Scene {
 
                 this.stopped = true; // Alvo para de se movimentar
                 this.target.destroy(); // Destrói o alvo
-                this.clickSound.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
+                this.soundClick.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
                 this.time.delayedCall(1000, () => {
-                    this.clickSound.stop(); // Para o som do pombo após 1000ms (1s)
+                    this.soundClick.stop(); // Para o som do pombo após 1000ms (1s)
                 });
                 
                 this.splash = this.add.image(pointer.x, pointer.y, 'yellowSplash').setScale(this.width/4000).setAlpha(0.6); // Cria um splash no local do clique
-                this.spawnTarget(); // Adiciona um novo alvo
+                this.reward = this.add.image(this.width/2, this.height/2, 'reward').setScale(this.width/1200)
+                    
+                // Se o jogo não acabou, gera outro pombo
+                setTimeout(() => {
+                    this.spawnTarget();
+                    this.reward.destroy()
+                }, 4000);
             }
         });
     }
@@ -253,10 +267,14 @@ export default class BasePhase extends Phaser.Scene {
             if (this.target.getBounds().contains(pointer.x, pointer.y) && this.score < this.maxScore) {
                 this.stopped = true; // Alvo para de se movimentar
                 this.target.destroy(); // Remove o pombo da tela
-                this.clickSound.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
+                this.soundTarget.stop();
+                
+                this.soundClick.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
+                /*
                 this.time.delayedCall(1000, () => {
-                    this.clickSound.stop(); // Para o som do pombo após 1000ms (1s)
+                    this.soundClick.stop(); // Para o som do pombo após 1000ms (1s)
                 });
+                */
                 this.score++; // Adiciona 1 ponto à pontuação
                 this.scoreboard.setText(this.score + '/' + this.maxScore); // Atualiza o placar 
 
@@ -276,8 +294,13 @@ export default class BasePhase extends Phaser.Scene {
                     // Adiciona a tela de vitória
                     this.displayVictory();                        
                 } else {
+                    this.reward = this.add.image(this.width/2, this.height/2, 'reward').setScale(this.width/1200)
+                    
                     // Se o jogo não acabou, gera outro pombo
-                    this.spawnTarget();
+                    setTimeout(() => {
+                        this.spawnTarget();
+                        this.reward.destroy()
+                    }, 4000);
                 };
             }
         });
@@ -286,7 +309,22 @@ export default class BasePhase extends Phaser.Scene {
     displayVictory() {
         // Armeza a precisão do usuário
         this.precision = this.score/this.totalClicks*100
-        
+        this.starScore = (this.elapsedSeconds+4)/this.score;
+
+        if (this.starScore <= 10){
+            this.starScore = 5;
+        }else if(this.starScore <= 15){
+            this.starScore = 4;
+        }else if(this.starScore <= 20){
+            this.starScore = 3;
+        }else if(this.starScore <= 30){
+            this.starScore = 2;
+        }else{
+            this.starScore = 1;
+        }
+
+        console.log(this.starScore)
+
         // Adiciona a frase de vitória
         setTimeout(() => {
             // Cria a imagem da tela de vitória
@@ -319,47 +357,42 @@ export default class BasePhase extends Phaser.Scene {
         // Adiciona tela de vitória depois de 5,3 segundos 
         setTimeout(() => {
             // Cria o background da tela de vitória
-            let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setScale(this.width/900);
+            let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setDisplaySize(this.width/1.7, this.height/1.7);
+            let frameVictory = this.add.image(this.width / 2, this.height / 2, 'frame').setScale(this.width/900);
 
-            this.add.image(this.width / 3, this.height / 3, this.backgroundKey).setDisplaySize(this.width/4.5, this.width/4.5/1.77);
-            this.add.image(this.width / 1.5, this.height / 3, this.artistKey).setDisplaySize(this.width/7, this.width/7);
+            // Cria os textos que mostram os pontos e a precisão do gato
+            this.scoreboard = this.add.text(bgVictory.x - bgVictory.width/3.5, bgVictory.y - bgVictory.height/9, 
+                'Pontos: ' + this.score + '/' + this.maxScore, 
+                {fontFamily:'Futura', fontSize: this.width/30, fill: '#000000' });
 
-            // Cria a caixa de texto de contextualização do artista e do quadro
-            let textBoxArtist = this.add.image(bgVictory.x + 300, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
-            let textBoxPainting = this.add.image(bgVictory.x - 90, bgVictory.y + 105, 'textArtistBox').setScale(0.7);
-            // Configura a animação do spritesheet do gato
-            this.anims.create({
-                key: 'animCat',
-                frames: this.anims.generateFrameNumbers('cat', { start: 0, end: 3 }), // Define os frames do spritesheet que serão usados 
-                frameRate: 10, // Define o número de frames por segundos
-                repeat: -1 // Define a animação como contínua
-            });
+            this.precisionText = this.add.text(bgVictory.x - bgVictory.width/2.7, bgVictory.y + bgVictory.height/6, 
+                'Precisão: ' + Math.round(this.precision) + '%', 
+                {fontFamily:'Futura', fontSize: this.width/30, fill: '#000000' });
 
-            // Cria o spritesheet do gato na tela de vitória
-            this.cat = this.add.sprite(bgVictory.x - 370, bgVictory.y + 190, 'cat').setScale(9).setFlip(true,false);
-            // Inicia a anumação do spritesheet do gato
-            this.cat.play('animCat');
-            
-            // Cria os textos de contextualização do artista e do quadro da tela de vitória 
-            this.textArtistAdded = this.add.text(textBoxArtist.x - 145, textBoxArtist.y - 70, this.textArtist[0], {fontFamily:'Futura', fontSize: '17px', fill: '#000000' });
-            this.textPaintingAdded = this.add.text(textBoxPainting.x - 145, textBoxPainting.y - 70, this.textPainting[0], {fontFamily:'Futura', fontSize: '16.3px', fill: '#000000' });
-
-            // Cria os textos que mostram os pontos e a precisão do usuário
-            this.scoreboard = this.add.text(bgVictory.x - 480, bgVictory.y + 2, 'Pontos:' + this.score + '/' + this.maxScore, {fontFamily:'Futura', fontSize: '27px', fill: '#000000' });
-            this.precisionText = this.add.text(bgVictory.x - 480, bgVictory.y + 30, 'Precisão:' + Math.round(this.precision) + '%', {fontFamily:'Futura', fontSize: '27px', fill: '#000000' });
-
-            // Cria o botao para proxima fase
-            this.next = this.add.image(bgVictory.x + bgVictory.width/1.5, bgVictory.y + bgVictory.height/1.25, 'continueBtn')
-            // Torna o botão de próxima fase clicável e permite que, caso ele seja clicado, 
-            // pare a fase 1 e o jogo direcione para o menu de seleção de níveis
+            // Cria e configura o botao para proxima fase
+            this.next = this.add.image(this.width/2, bgVictory.y + bgVictory.height/1.35, 'continueBtn')
             .setInteractive() 
             .on('pointerdown', () => {
-                this.nextPhase = this.phases[this.phases.indexOf(this.phaseKey) + 1];
-                this.scene.stop(this.phaseKey); // Para a fase 1
-                this.scene.start(this.nextPhase); // Direciona para a seleção de níveis
+                this.scene.start('Victory', this.phaseInfo);
+                this.scene.stop(this.phaseKey); // Para a fase atual
             })
             .setScale(this.width/800)
 
+            let i = 0;
+            let starScale = this.width/5000;
+
+            this.stars = setInterval(() => {
+                this.add.image((bgVictory.x - bgVictory.width*1.3) + ((i+1)*(starScale*550)), this.height/3, 'scoreStar')
+                .setScale(starScale)
+                
+                this.soundStar.play()
+
+                i++;
+                
+                if (i === this.starScore){
+                    clearInterval(this.stars)
+                }
+            }, 600);
         }, 5700);
     }
 
@@ -391,7 +424,7 @@ export default class BasePhase extends Phaser.Scene {
         }
 
         // Atualiza velocidade no eixo y
-        target.speedY += (0.1 * this.coeficient);//target.accelerationY * target.t;
+        target.speedY += (target.accelerationY * this.coeficient);//target.accelerationY * target.t;
         if (target.speedY >= target.VyMax) {
             this.coeficient = -1;
         }
@@ -404,5 +437,11 @@ export default class BasePhase extends Phaser.Scene {
         // Nova posição do pombo = posição atual do pombo + velocidade do pombo * direção do pombo (-1,1)
         target.x += target.speedX * target.directionX;
         target.y += target.speedY * target.directionY; // Fim
+        
+        console.log("Posição X" + target.x)
+        console.log("Posição Y" + target.y)
+        console.log("Velocidade X" + target.speedX)
+        console.log("Velocidade Y" + target.speedY)
+        console.log("------------------------------------")
     }
 }
