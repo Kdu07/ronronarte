@@ -11,7 +11,7 @@ export default class Phase0 extends BasePhase {
             "textPainting":[' '],
             "targetKey":"pigeon",
             "animKey":"flyPigeon",
-            "soundKey":"pigeonSound",
+            "soundKey":"soundPigeon",
         }
 
         // Configura a chave de classe e assets
@@ -19,6 +19,8 @@ export default class Phase0 extends BasePhase {
     }
 
     create(){
+        this.continueButtonCreated = false;
+        
         // Configura a animação do pombo voando
         this.anims.create({
             key: 'flyPigeon',
@@ -27,41 +29,71 @@ export default class Phase0 extends BasePhase {
             repeat: -1 // Define que a animação será contínua
         });
 
+        this.soundContinue = this.sound.add('soundContinueButton');
+
         super.create();
     }
 
     update(){
         super.update()
         this.touchStartTime;
-        this.spriteLoading;
+        this.spriteLoading1;
         // Se a pontuação atingiu 3 pontos, aparece o botão de pular tutorial.
         if (this.score > 3) {
-            // Cria o botão de pular o tutorial
-            let skipTutorialButton = this.add.image(this.width*0.95, this.height*0.05, 'skipTutorialButton').setScale(this.width/1200).setInteractive({ useHandCursor: true });
-            skipTutorialButton.on('pointerdown', (pointer) => {
-                this.spriteLoading = this.add.sprite(this.width*0.95, this.height*0.1, 'spriteLoading').setScale(0.2).setInteractive();
-                this.spriteLoading.setVisible(true);
-                this.anims.create({
-                    key: 'SpriteLoading', // Nome da animação
-                    frames: this.anims.generateFrameNumbers('spriteLoading', {start:0, end:5}), 
-                    frameRate: 2, 
-                    repeat: -1 
-                })
-                // Inicia a animação do jogador configurada
-                this.spriteLoading.anims.play('SpriteLoading',true);
-                this.touchStartTime = pointer.downTime; // Armazena o tempo do toque
-            });
+            if (!this.continueButtonCreated){
+                this.createContinueButton()
+            }
+            this.continueButtonCreated = true;
+            this.updateContinueButton()
+        }
+    }
 
-            skipTutorialButton.on('pointerup', (pointer) => {
-                let touchDuration = this.time.now - this.touchStartTime; // Calcula a duração
-                this.spriteLoading.anims.stop();
-                this.spriteLoading.setFrame(0);
-                this.spriteLoading.setVisible(false);
+    createContinueButton() {
+        this.hold1 = false;
 
-                if (touchDuration >= 2500) {
-                    this.scene.start("Phase1");
-                }
-            });
+        // Cria um botão de pause na tela
+        this.continueBtn = this.add.image(this.width/1.05, this.height/27, 'continueBtn').setScale(this.width/1100)
+        
+        // Torna o botão de pause clicável
+        this.continueBtn.setInteractive()
+
+        this.anims.create({
+            key: 'SpriteLoading', // Nome da animação
+            frames: this.anims.generateFrameNumbers('spriteLoading', {start:0, end:5}), 
+            frameRate: 3, 
+            repeat: 0
+        })
+
+        this.spriteLoading1 = this.add.sprite(this.width/1.05, this.height/12, 'spriteLoading')
+        .setScale(this.width/8000)
+        .setInteractive()
+        .setVisible(false);
+    }
+
+    updateContinueButton(){
+        // Cria o botão de pular o tutorial
+        this.continueBtn.on('pointerdown', (pointer) => {
+            this.hold1 = true
+        });
+
+        this.continueBtn.on('pointerup', (pointer) => {
+            this.hold1 = false
+        });
+        
+        if (this.hold1){
+            this.spriteLoading1.setVisible(true);
+            this.spriteLoading1.anims.play('SpriteLoading',true);
+
+            if (this.spriteLoading1.anims.currentFrame.index == 5){
+                this.soundContinue.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
+                this.time.delayedCall(1000, () => {
+                    this.soundContinue.stop(); // Para o som do pombo após 1000ms (1s)
+                });
+                this.scene.start("Phase1");
+                this.scene.stop(this.phaseKey);
+            }
+        }else{
+            this.spriteLoading1.anims.stop().setFrame(0).setVisible(false);
         }
     }
 }

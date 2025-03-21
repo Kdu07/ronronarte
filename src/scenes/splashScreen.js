@@ -7,56 +7,76 @@ export default class SplashScreen extends Phaser.Scene {
     preload(){
         // Carrega todos os assets do jogo
         // Quadros
-        this.load.image('painting1', './assets/painting1.png');
-        this.load.image('painting2', './assets/painting2.png');
-        this.load.image('painting3', './assets/painting3.png');
-        this.load.image('painting4', './assets/painting4.png');
+        this.load.image('painting1', './assets/paintings/painting1.png');
+        this.load.image('painting2', './assets/paintings/painting2.png');
+        this.load.image('painting3', './assets/paintings/painting3.png');
+        this.load.image('painting4', './assets/paintings/painting4.png');
         
         // Artistas
-        this.load.image('artist1', './assets/artist1.png');
-        this.load.image('artist2', './assets/artist2.png');
-        this.load.image('artist3', './assets/artist3.png');
-        this.load.image('artist4', './assets/artist4.png');
+        this.load.image('artist1', './assets/artists/artist1.png');
+        this.load.image('artist2', './assets/artists/artist2.png');
+        this.load.image('artist3', './assets/artists/artist3.png');
+        this.load.image('artist4', './assets/artists/artist4.png');
 
+        //Splashs
+        this.load.image('splash', './assets/splashs/splash.png');
+        this.load.image('pinkSplash', './assets/splashs/pinkSplash.png');
+        this.load.image('blueSplash', './assets/splashs/blueSplash.png');
+        this.load.image('greenSplash', './assets/splashs/greenSplash.png');
+        this.load.image('purpleSplash', './assets/splashs/purpleSplash.png');
+        this.load.image('yellowSplash', './assets/splashs/splash-paw-yellow.png');
 
-        this.load.image('tinta1', './assets/tinta1.png');
-        this.load.spritesheet('spriteLoading', './assets/spriteLoading1.png', {frameWidth: 292, frameHeight: 68.16});
-        this.load.image('textArtistBox', './assets/textArtistBox.png');
-        this.load.image('splash', './assets/splash.png');
-        this.load.spritesheet('pigeon', './assets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
-        this.load.audio('pigeonSound', './assets/audios/pru.mp3');
-        this.load.image('pauseBtn', './assets/botões/pause.png');
-        this.load.image('palette', './assets/paleta.png');
-        this.load.image('bgVictory', './assets/bgVictory.png');
-        this.load.image('star', './assets/star.png');
-        this.load.image('phrase', './assets/frase.png');
-        this.load.image('reward', './assets/recompensa.png');
-        this.load.image('bgWhite', './assets/bgWhite.png');
-        this.load.image('catup', './assets/catup.png');
-        this.load.image('bgTutorial', './assets/larger_tiled_background.jpg');
-        this.load.image('textBox', './assets/textBox.png');
-        this.load.image('frame', './assets/frame.png');
-        this.load.image('frame2', './assets/frame2.png');
-        this.load.image('bgMenu', './assets/expanded_startscreen.png');
-        this.load.image('startButton', './assets/botões/botao_start_preto.png');
-        this.load.image('skipTutorialButton', './assets/botões/botao_pular.png');
-        this.load.image('pinkSplash', './assets/pinkSplash.png');
-        this.load.image('blueSplash', './assets/blueSplash.png');
-        this.load.image('greenSplash', './assets/greenSplash.png');
-        this.load.image('purpleSplash', './assets/purpleSplash.png');
-        this.load.image('yellowSplash', './assets/splash-paw-yellow.png');
-        this.load.image('optionsBtn', './assets/botões/botao_opcoes_corr_preto.png');
-        this.load.image('screenCriative', 'assets/tela_branca.png');
-        this.load.image('selectBg', 'assets/textBoxFuncional.png');
-        this.load.image('squareFrame','assets/moldura_quadrado.png');
-        this.load.image('buttonCriative', '/assets/botões/botao_criativo.png');
-        this.load.image('teste', '/assets/575x56.png');
-        this.load.image('selectTutorial', 'assets/Select_Tutorial.png');
-        this.load.image('selectCriative', 'assets/Select_Criativo.png');
-        this.load.image('selectPhasesUnf', 'assets/Select_PhasesUnf.png');
-        this.load.image('selectPhase1', 'assets/Select_Phase1.png');
-        this.load.spritesheet('cat', './assets/cat.png', { frameWidth: 64, frameHeight:64 });
-        this.load.image('continueBtn', './assets/botões/botao_continuar_preto.png');
+        //Botões
+        this.load.image('selectTutorial', './assets/buttons/Select_Tutorial.png');
+        this.load.image('selectCriative', './assets/buttons/Select_Criativo.png');
+        this.load.image('selectPhase1', './assets/buttons/Select_Phase1.png');
+        this.load.image('selectPhase2', './assets/buttons/Select_Phase2.png');
+        this.load.image('selectPhase3', './assets/buttons/Select_Phase3.png');
+        this.load.image('selectPhase4', './assets/buttons/Select_Phase4.png');
+        this.load.image('startButton', './assets/buttons/botao_start_preto.png');
+        this.load.image('skipTutorialButton', './assets/buttons/botao_pular.png');
+        this.load.image('optionsBtn', './assets/buttons/botao_opcoes_corr_preto.png');
+        this.load.image('pauseBtn', './assets/buttons/pause.png');
+        this.load.image('buttonCriative', '/assets/buttons/botao_criativo.png');
+        this.load.image('continueBtn', './assets/buttons/botao_continuar_preto.png');
+        this.load.spritesheet('spriteLoading', './assets/buttons/loading.png', {frameWidth: 292, frameHeight: 68.16});
+        this.load.image('palette', './assets/buttons/paleta.png');
+
+        //Backgrounds
+        this.load.image('bgMenu', './assets/backgrounds/expanded_startscreen.png');
+        this.load.image('bgTutorial', './assets/backgrounds/larger_tiled_background.jpg');
+        this.load.image('screenCriative', 'assets/backgrounds/tela_branca.png');
+        this.load.image('selectBg', 'assets/backgrounds/textBoxFuncional.png');
+        this.load.image('bgVictory', './assets/backgrounds/bgVictory.png');
+        this.load.image('bgWhite', './assets/backgrounds/bgWhite.png');
+        this.load.image('bgVictoryScene', './assets/backgrounds/bgVictoryScene.png');
+
+        //Misc
+        this.load.image('textArtistBox', './assets/misc/textArtistBox.png');
+        this.load.image('textBox', './assets/misc/textBox.png');
+        this.load.image('frame', './assets/misc/frame.png');
+        this.load.image('phrase', './assets/misc/frase.png');
+        this.load.image('reward', './assets/misc/recompensa.png');
+        this.load.image('catup', './assets/misc/catup.png');
+        this.load.spritesheet('cat', './assets/misc/cat.png', { frameWidth: 64, frameHeight:64 });
+        this.load.image('teste', '/assets/misc/575x56.png');
+        this.load.image('scoreStar', '/assets/misc/scoreStar.png');
+        this.load.image('victoryTextBox', '/assets/misc/victoryTextBox.png');
+
+        //Alvos
+        this.load.spritesheet('pigeon', './assets/targets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
+        
+        //Audios
+        this.load.audio('soundClick', './assets/audios/soundClick.mp3');
+        this.load.audio('soundContinueButton', './assets/audios/soundContinueButton.mp3');
+        this.load.audio('soundGecko', './assets/audios/soundGecko.mp3');
+        this.load.audio('soundPauseButton', './assets/audios/soundPauseButton.mp3');
+        this.load.audio('soundPigeon', './assets/audios/soundPigeon.mp3');
+        this.load.audio('soundPlayButton', './assets/audios/soundPlayButton.mp3');
+        this.load.audio('soundRat', './assets/audios/soundRat.mp3');
+        this.load.audio('soundSplash', './assets/audios/soundSplash.mp3');
+        this.load.audio('soundStar', './assets/audios/soundStar.mp3');
+        
     }
 
     create(){    
@@ -66,7 +86,7 @@ export default class SplashScreen extends Phaser.Scene {
 
         // Adiciona fade in na splash screen
         this.cameras.main.fadeIn(time1500, 0, 0, 0) // Aplica um efeito de fade-in que escurece a tela
-        this.add.image(this.scale.width/2, this.scale.height/2,'catup').setScale(0.5);
+        this.add.image(this.scale.width/2, this.scale.height/2,'catup').setScale(1.0);
 
         // Adiciona fade out na splash screen depois de 3 segundos
         this.time.delayedCall(time3000, () => {
@@ -77,7 +97,13 @@ export default class SplashScreen extends Phaser.Scene {
                 this.scene.stop('SplashScreen'); // Para a cena atual
                 this.scene.start('Menu'); // Inicia a cena Menu
             }); 
-        });          
+        });
+
+        if (this.isPortrait){
+            this.add.text(this.scale.width/3.2, this.scale.height*0.83, 
+                'Para uma melhor experiência, \nvire seu celular na horizontal', 
+                {fontFamily:'Futura', fontSize:this.scale.width/30, fill:'#FFFFFF'})
+        }
     }
 
     resizeGame() {

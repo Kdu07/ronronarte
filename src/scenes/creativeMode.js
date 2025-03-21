@@ -10,7 +10,7 @@ export default class CreativeMode extends BasePhase{
             "textPainting":['Pintura...'],
             "targetKey":"pigeon",
             "animKey":"flyPigeon",
-            "soundKey":"pigeonSound",
+            "soundKey":"soundPigeon",
         }
         
         // Configura a chave de classe e os assets da fase
@@ -22,7 +22,7 @@ export default class CreativeMode extends BasePhase{
         this.width = this.scale.width;
         this.height = this.scale.height;
         this.bg = this.add.image(this.width/2, this.height/2, 'bgWhite').setScale(this.width/2500);
-        this.palette = this.add.image(this.width/1.065, this.height*0.11, 'palette').setScale(this.width/12000).setInteractive();
+        this.palette = this.add.image(this.width/1.065, this.height*0.11, 'palette').setScale(this.width/9000).setInteractive();
         
         // Configura a animação para o pombo voar
         this.anims.create({
@@ -35,14 +35,18 @@ export default class CreativeMode extends BasePhase{
         // Array com os splashes de tinta
         this.splashes = ['splash', 'pinkSplash', 'greenSplash', 'purpleSplash', 'blueSplash'];
 
-         // Splash selecionado (por padrão, começa no amarelo)
+        // Splash selecionado (por padrão, começa no amarelo)
         this.selectedSplash = this.splashes[0];
 
         // Cria os botões de splash
         this.splashesButtons = this.add.group();
         // Configura as propriedades de botão para cada splash do arrey de splashes
         this.splashes.forEach((splash, index) =>{ 
-            let splashButton = this.add.image(this.width - 100, 240 + (index * this.width/3500*300), splash).setInteractive().setScale(this.width/3500).setVisible(false).setDepth(20);
+            let splashButton = this.add.image(this.palette.x, this.palette.y + (this.height/6*(index+1)), splash)
+            .setInteractive()
+            .setScale(this.width/3500)
+            .setVisible(false)
+            .setDepth(20);
 
             splashButton.on('pointerdown', () =>{
                 this.selectedSplash = splash;

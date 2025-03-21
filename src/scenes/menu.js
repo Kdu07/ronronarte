@@ -12,6 +12,8 @@ export default class Menu extends Phaser.Scene{
 
         // Quando o botão jogar for clicado direciona para o menu de seleção de níveis
         this.startButton.on("pointerdown", () => {
+            this.soundPlay = this.sound.add('soundPlayButton').play();
+            
             this.scale.startFullscreen(); // Coloca o jogo em tela cheia
             
             setTimeout(() => {
@@ -20,14 +22,8 @@ export default class Menu extends Phaser.Scene{
                 this.scene.stop('Menu') // Para o menu
             }, 500); 
         });
-        /*
-        this.fullscreenButton = this.add.image(this.scale.width/7, this.scale.height/1.18, 'fullscreen')
-        .setScale(this.scale.width/4000)
-        .setInteractive()
-        .on('pointerdown', () => {
-            
-        });
-        */
+
+        
     };
 
     resizeGame() {
