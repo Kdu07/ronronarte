@@ -370,7 +370,7 @@ export default class BasePhase extends Phaser.Scene {
             let starScale = this.width/5000;
 
             this.stars = setInterval(() => {
-                this.add.image((bgVictory.x - bgVictory.width*1.23) + ((i+1)*(starScale*550)), this.height/3, 'scoreStar')
+                this.add.image((bgVictory.x - bgVictory.width*1.3) + ((i+1)*(starScale*550)), this.height/3, 'scoreStar')
                 .setScale(starScale)
                 
                 i++;
