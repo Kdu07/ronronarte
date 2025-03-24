@@ -441,7 +441,7 @@ As mecânicas do jogo RonRonArte são simples e de fácil entendimento. A mecân
 
 ### 3.8.1. Parâmetros de Entrada
 
-O elemento gráfico que tem o movimento modelado matematicamente é o alvo que translada na tela de cada fase do jogo, neste caso, um pombo. As posições iniciais \(x\) e \(y\) do alvo do jogo são definidas pelas variáveis `posX` e `posY` respectivamente, e são inicializadas como valores aleatórios dentro da área do quadro exibido na tela. Os valores aleatórios são obtidos com as seguintes linhas de código: `let posX = Phaser.Math.Between(50,this.width-50)` e `let posY = Phaser.Math.Between(100,this.height-100)` (linhas 201 e 202 do arquivo basePhase.js, respectivamente). 
+O elemento gráfico que tem o movimento modelado matematicamente é o alvo que translada na tela de cada fase do jogo, neste caso, um pombo. As posições iniciais \(x\) e \(y\) do alvo do jogo são definidas pelas variáveis `posX` e `posY` respectivamente, e são inicializadas com valores aleatórios dentro da área do quadro exibido na tela. Os valores aleatórios são obtidos com as seguintes linhas de código: `let posX = Phaser.Math.Between(50,this.width-50)` e `let posY = Phaser.Math.Between(100,this.height-100)` (linhas 201 e 202 do arquivo basePhase.js, respectivamente). 
 
 A posição inicial do alvo e o tempo de duração da animação não podem ser obtidos com exatidão sem suposições iniciais a posição e a velocidade inicial do alvo, pois o alvo surge na tela com velocidade e posição aleatórias e se move na tela por tempo indefinido, uma vez que a animação só acaba quando o alvo é tocado.
 
@@ -459,11 +459,11 @@ $$
 
 Onde \( x_i \) representa a posição inicial no eixo \(x\) (`posX`), \(v_x\) representa a velocidade inicial do alvo (`this.target.speedX`), e \(t\) representa o tempo.
 
-#### 3.8.2.2 Movimentação no eixo \(y\)
+#### 3.8.2.2 Movimentação no eixo \(y\) (MUV)
 
 A velocidade no eixo \(y\) também é inicializada de maneira aleatória e é um número obtido através da seguinte linha de código: `this.target.speedY = Phaser.Math.Between(1, 2)` (linha 210 do arquivo basePhase.js).
 
- Como o movimento no eixo \(y\) é uniformmente variado, definimos uma aceleração que é inicializada de maeira aleatória, e também um coeficiente, inicialmente igual a \(1\), essas cariáveis são definidas nas seguintes linhas de código, respectivamente: `this.target.accelerationY = Phaser.Math.FloatBetween(0.03, 0.07)` (linha 215 do aquivo basePhase.js) e `this.coeficient = 1` (linha 197 do arquivo basePhase.js). Como o alvo se move por tempo indefinido na tela, definimos também uma velocidade máxima: `this.target.VyMax = 8` (linha 216 do arquivo basePhase.js).
+ Como o movimento no eixo \(y\) é uniformemente variado, definimos uma aceleração que é inicializada de maeira aleatória, e também um coeficiente, inicialmente igual a \(1\), essas variáveis são definidas nas seguintes linhas de código, respectivamente: `this.target.accelerationY = Phaser.Math.FloatBetween(0.03, 0.07)` (linha 215 do aquivo basePhase.js) e `this.coeficient = 1` (linha 197 do arquivo basePhase.js). Como o alvo se move por tempo indefinido na tela, definimos também uma velocidade máxima: `this.target.VyMax = 8` (linha 216 do arquivo basePhase.js).
 
 A fim de adicionar uma camada de complexidade à movimentação do alvo, fizemos com que o sinal da aceleração seja invertido quando o alvo alcança a velocidade máxima (mudando o valor do coeficiente para \(-1\)), fazendo com que ele desacelere até uma velocidade mínima, e quando essa velocidade é alcançada, o alvo volta a acelerar até a velocidade máxima e o ciclo se repete até o alvo ser tocado. A velocidade mínima é definida na seguinte linha de código: `this.target.VyMin = 0` (linha 217 do arquivo basePhase.js). 
 
