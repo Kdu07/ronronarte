@@ -439,7 +439,65 @@ As mecânicas do jogo RonRonArte são simples e de fácil entendimento. A mecân
 
 ## 3.8. Implementação Matemática de Animação/Movimento (sprint 3)
 
-*Descreva aqui a função que implementa a movimentação/animação de personagens ou elementos gráficos no seu jogo. Sua função deve se basear em alguma formulação matemática (e.g. fórmula de aceleração). A explicação do funcionamento desta função deve conter notação matemática formal de fórmulas/equações. Se necessário, crie subseções para sua descrição.*
+### 3.8.1. Parâmetros de Entrada
+
+O elemento gráfico que tem o movimento modelado matematicamente é o alvo que translada na tela de cada fase do jogo, neste caso, um pombo. As posições iniciais \(x\) e \(y\) do alvo do jogo são definidas pelas variáveis `posX` e `posY` respectivamente, e são inicializadas como valores aleatórios dentro da área do quadro exibido na tela. Os valores aleatórios são obtidos com as seguintes linhas de código: `let posX = Phaser.Math.Between(50,this.width-50)` e `let posY = Phaser.Math.Between(100,this.height-100)` (linhas 201 e 202 do arquivo basePhase.js, respectivamente). 
+
+A posição inicial do alvo e o tempo de duração da animação não podem ser obtidos com exatidão sem suposições iniciais a posição e a velocidade inicial do alvo, pois o alvo surge na tela com velocidade e posição aleatórias e se move na tela por tempo indefinido, uma vez que a animação só acaba quando o alvo é tocado.
+
+### 3.8.2. Modelagem Matemática
+
+O movimento ocorre simultaneamente nos dois eixos do plano, sendo que no eixo \(x\) o movimento é uniforme (MU) e no eixo \(y\) o movimento é uniformemente variado (MUV).
+
+#### 3.8.2.1. Movimentação no eixo \(x\) (MU)
+
+A velocidade do alvo no eixo \(x\) é inicializada como um número aleatória no momento em que ele surge na tela, o número na tela é obtido com a seguinte linha de código: `this.target.speedX = Phaser.Math.Between(6, 9)` (linha 209 do arquivo basePhase.js). Dessa maneira, a posição \(x\) do alvo é modelada pela seguinte fórmula:
+
+$$
+x(t) = x_i + v_x \cdot t
+$$
+
+Onde \( x_i \) representa a posição inicial no eixo \(x\) (`posX`), \(v_x\) representa a velocidade inicial do alvo (`this.target.speedX`), e \(t\) representa o tempo.
+
+#### 3.8.2.2 Movimentação no eixo \(y\)
+
+A velocidade no eixo \(y\) também é inicializada de maneira aleatória e é um número obtido através da seguinte linha de código: `this.target.speedY = Phaser.Math.Between(1, 2)` (linha 210 do arquivo basePhase.js).
+
+ Como o movimento no eixo \(y\) é uniformmente variado, definimos uma aceleração que é inicializada de maeira aleatória, e também um coeficiente, inicialmente igual a \(1\), essas cariáveis são definidas nas seguintes linhas de código, respectivamente: `this.target.accelerationY = Phaser.Math.FloatBetween(0.03, 0.07)` (linha 215 do aquivo basePhase.js) e `this.coeficient = 1` (linha 197 do arquivo basePhase.js). Como o alvo se move por tempo indefinido na tela, definimos também uma velocidade máxima: `this.target.VyMax = 8` (linha 216 do arquivo basePhase.js).
+
+A fim de adicionar uma camada de complexidade à movimentação do alvo, fizemos com que o sinal da aceleração seja invertido quando o alvo alcança a velocidade máxima (mudando o valor do coeficiente para \(-1\)), fazendo com que ele desacelere até uma velocidade mínima, e quando essa velocidade é alcançada, o alvo volta a acelerar até a velocidade máxima e o ciclo se repete até o alvo ser tocado. A velocidade mínima é definida na seguinte linha de código: `this.target.VyMin = 0` (linha 217 do arquivo basePhase.js). 
+
+O processo de aceleração e desaceleração supracitado ocorre nas seguintes linhas de código:
+
+```javascript
+if (target.speedY >= target.VyMax) {
+    this.coeficient = -1;
+}
+
+if (target.speedY <= target.VyMin) {
+    this.coeficient = 1;
+}
+```
+
+Dessa maneira, a velocidade do alvo no eixo \(y\) é modelada pela seguinte equação:
+
+$$
+v_y(t) = v_i + a \cdot t
+$$
+
+Onde \(v_y(t)\) é a velocidade do alvo em função do tempo \(t\), \(v_i\) é a velocidade inicial (`this.target.speedY`) e \(a\) é a aceleração do alvo (`this.target.accelerationY`).
+
+E a posição do alvo no eixo \(y\) é modelada pela seguinte equação:
+
+$$
+y(t) = y_i + \frac{1}{2} \cdot a \cdot t^2
+$$
+
+Onde \(y(t)\) é a posição do alvo e função do tempo \(t\), \(y_i\) é a posição inicial (`posY`) e \(a\) é a aceleração do alvo.
+
+#### 3.8.2.3 O tempo no jogo
+
+É possível observar que não definimos uma variável tempo para iterar sobre ao modelar o movimento do alvo. Isso ocorre porque a função de movimento do nosso alvo está dentro da função `update()` do Phaser. A função `update()` é executada \(1\) vez a cada frame e, por padrão, nosso jogo está rodando a \(60\) frames por segundo, ou seja, o tempo entre cada atualização é de \(\frac{1}{60}\) segundos.
 
 # <a name="c4"></a>4. Desenvolvimento do Jogo
 
