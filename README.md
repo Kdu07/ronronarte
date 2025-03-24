@@ -88,9 +88,9 @@ https://github.com/Inteli-College/2025-1A-T15-IN01-G03.git
   **4. Clique com o botão direito em "index.html" e selecione "Open with Live Server"**
 
 ## 🗃 Histórico de lançamentos
-* 0.3.0 - 14/03/2025
-* 0.2.0 - 28/02/2025 
-* 0.1.0 - 13/02/2025
+* 0.3.0 - 14/03/2025 - 
+* 0.2.0 - 28/02/2025 - Segunda versão beta do jogo | 
+* 0.1.0 - 13/02/2025 - Primeira versão alpha do jogo para materialização da ideia.
     
 
 ## 📋 Licença/License
