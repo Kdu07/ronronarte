@@ -21,9 +21,23 @@ export default class CreativeMode extends BasePhase{
         // Adiciona a borda e a paleta
         this.width = this.scale.width;
         this.height = this.scale.height;
-        this.bg = this.add.image(this.width/2, this.height/2, 'bgWhite').setScale(this.width/2500);
-        this.palette = this.add.image(this.width/1.065, this.height*0.11, 'palette').setScale(this.width/9000).setInteractive();
         
+        // Configura a animação do pombo voando
+        this.anims.create({
+            key: 'flyPigeon',
+            frames: this.anims.generateFrameNumbers('pigeon', { start: 0, end: 3 }), // Define os frames do spritesheet que serão usados
+            frameRate: 10, // Quantidade de frames por segundo
+            repeat: -1 // Define que a animação será contínua
+        });
+
+        //A função create do modo criativo herda da função create da clase BasePhase
+        super.create();
+        this.createPalette();
+    }
+
+    createPalette() {
+        this.palette = this.add.image(this.width / 1.065, this.height * 0.11, 'palette').setScale(this.width / 9000).setInteractive();
+
         // Configura a animação para o pombo voar
         this.anims.create({
             key: 'flyPigeon',
@@ -41,30 +55,27 @@ export default class CreativeMode extends BasePhase{
         // Cria os botões de splash
         this.splashesButtons = this.add.group();
         // Configura as propriedades de botão para cada splash do arrey de splashes
-        this.splashes.forEach((splash, index) =>{ 
-            let splashButton = this.add.image(this.palette.x, this.palette.y + (this.height/6*(index+1)), splash)
-            .setInteractive()
-            .setScale(this.width/3500)
-            .setVisible(false)
-            .setDepth(20);
+        this.splashes.forEach((splash, index) => {
+            let splashButton = this.add.image(this.palette.x, this.palette.y + (this.height / 6 * (index + 1)), splash)
+                .setInteractive()
+                .setScale(this.width / 3500)
+                .setVisible(false)
+                .setDepth(20);
 
-            splashButton.on('pointerdown', () =>{
+            splashButton.on('pointerdown', () => {
                 this.selectedSplash = splash;
                 this.toggleSplashMenu(false);
-                console.log(this.selectedSplash)
+                console.log(this.selectedSplash);
             });
 
             this.splashesButtons.add(splashButton);
-        })
+        });
 
         //Quando a paleta é clicada, aparece um menu com os splashes que o tutor pode selecionar para o seu gato pintar
-        this.palette.on('pointerdown', ()=>{
+        this.palette.on('pointerdown', () => {
             let splashMenuIsVisible = this.splashesButtons.getChildren()[0].visible;
             this.toggleSplashMenu(!splashMenuIsVisible);
-        })
-        
-        //A função create do modo criativo herda da função create da clase BasePhase
-        super.create();
+        });
     }
 
     //A função update do modo criativo herda da função update da clase BasePhase

@@ -64,7 +64,8 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('victoryTextBox', '/assets/misc/victoryTextBox.png');
 
         //Alvos
-        this.load.spritesheet('pigeon', './assets/targets/pombo.png', { frameWidth: 64, frameHeight:64 }); 
+        this.load.spritesheet('pigeon', './assets/targets/pigeon.png', { frameWidth: 64, frameHeight:64 });
+        this.load.spritesheet('rat', './assets/targets/rat.png', { frameWidth: 64, frameHeight:64 }); 
         
         //Audios
         this.load.audio('soundClick', './assets/audios/soundClick.mp3');
