@@ -312,7 +312,13 @@ As metas serem Específicas dizem respeito ao o que será alcançado e quais os 
 
 Antes de estruturarmos as metas seguindo o modelo SMART, construímo-las no modelo de OKRs (Objectives and Key Results), o qual corresponde a um método simples para criar alinhamento e engajamento em torno de metas mensuráveis. O intuito é definir uma meta qualitativa detalhada e algumas métricas quantitativas (Key Results).
 
-Segue os OKRs definidos pela equipe:
+Nesse sentido, fizemos nossos OKRs (com auxílio da instrutora de liderança), os quais estão apresentados na figura 4 e descritos no texto que vem em seguida.
+
+<p align = "center">Figura 4: OKRs</p>
+
+![image](https://github.com/user-attachments/assets/e55c9777-5929-4b70-a3fc-d7b1fe223c86)
+
+<p align = "center">Fonte: material produzido pelos autores (2025).</p>
 
 Objetivo 1: Ter comunicação clara e eficiente entre os membros da equipe, de modo que todos permaneçam engajados.
 
