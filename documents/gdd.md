@@ -310,7 +310,7 @@ Os objetivos, as metas e os indicadores de medição foram criados com base na m
 
 As metas serem Específicas dizem respeito ao o que será alcançado e quais os passos para que a concretização ocorra; em relação a Mensuráveis, elas abrangem os indicadores para medir a efetivação e o progresso; já Atribuíveis se referem aos responsáveis para a execução da meta; Realista está associado à possibilidade real de a meta ser concreta, ou seja, ser executável; por fim, Temporal se trata da definição de um prazo para atingir a meta.
 
-Antes de estruturarmos as metas seguindo o modelo SMART, construímo-las no modelo de OKRs (Objectives and Key Results), o qual corresponde a um método simples para criar alinhamento e engajamento em torno de metas mensuráveis. O intuito é definir uma meta qualitativa detalhada e algumas métricas quantitativas (Key Results).
+Antes de estruturarmos as metas seguindo o modelo SMART, construímo-las no modelo de OKRs (Objectives and Key Results), o qual corresponde a um método simples para criar alinhamento e engajamento em torno de metas mensuráveis. O intuito é definir uma meta qualitativa detalhada (Objectives) e algumas métricas quantitativas (Key Results).
 
 Nesse sentido, fizemos nossos OKRs (com auxílio da instrutora de liderança), os quais estão apresentados na figura 4 e descritos no texto que vem em seguida.
 
