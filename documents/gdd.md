@@ -40,13 +40,13 @@
 ## 1.1. Plano Estratégico do Projeto
 
 ### 1.1.1. Contexto da indústria (sprint 2)
-Conhecer o contexto da indústria de um cliente é basilar para a realização de um projeto de sucesso, uma vez que tal abordagem possibilita tomadas de decisões estratégicas ao longo de todo processo de desenvolvimento. Nesse sentido, é significativo pontuar o escopo da empresa parceira do jogo refernte a esta documentação: Dr. Pet. Ela faz parte do mercado de serviços para pets no Brasil, sendo voltada à educação e ao entretenimento de tutores, cães e gatos, por intermédio de cursos online e livros voltados à essa temática. Ademais, outra vertente adotada por ela é a aparição de seu fundador (Alexandre Rossi) em programas de televisão, de modo a divulgar conteúdos inerentes à empresa e a pets de um modo geral, além da utilização das redes sociais para tal. Portanto, a marca atua com veemência no cenário supracitado.
+&nbsp; &nbsp; &nbsp; &nbsp;Conhecer o contexto da indústria de um cliente é basilar para a realização de um projeto de sucesso, uma vez que tal abordagem possibilita tomadas de decisões estratégicas ao longo de todo processo de desenvolvimento. Nesse sentido, é significativo pontuar o escopo da empresa parceira do jogo refernte a esta documentação: Dr. Pet. Ela faz parte do mercado de serviços para pets no Brasil, sendo voltada à educação e ao entretenimento de tutores, cães e gatos, por intermédio de cursos online e livros voltados à essa temática. Ademais, outra vertente adotada por ela é a aparição de seu fundador (Alexandre Rossi) em programas de televisão, de modo a divulgar conteúdos inerentes à empresa e a pets de um modo geral, além da utilização das redes sociais para tal. Portanto, a marca atua com veemência no cenário supracitado.
 
 
 
 #### 1.1.1.1. Modelo de 5 Forças de Porter (sprint 2)
 
-De acordo com o livro de Magretta (2019), que detalha o estudos de Michael Porter, o modelo das 5 Forças de Porter é um framework de análise setorial que permite entender o nível de competitividade de um mercado. O modelo apresenta 5 critérios: Rivalidade entre concorrentes, poder de negociação dos fornecedores, poder de negociação dos compradores, ameaça de novos entrantes e ameaça de produtos substitutos, e avaliamo a força de cada um deles e como eles influenciam a competitividade do setor em análise. O modelo determina que, quanto maior uma força for, maior o poder de ação ela tem sobre um negócio.
+&nbsp; &nbsp; &nbsp; &nbsp;De acordo com o livro de Magretta (2019), que detalha o estudos de Michael Porter, o modelo das 5 Forças de Porter é um framework de análise setorial que permite entender o nível de competitividade de um mercado. O modelo apresenta 5 critérios: Rivalidade entre concorrentes, poder de negociação dos fornecedores, poder de negociação dos compradores, ameaça de novos entrantes e ameaça de produtos substitutos, e avaliamo a força de cada um deles e como eles influenciam a competitividade do setor em análise. O modelo determina que, quanto maior uma força for, maior o poder de ação ela tem sobre um negócio.
 
 <p align = "center">Figura 1: modelo de 5 forças de Porter</p>
 
@@ -56,7 +56,7 @@ De acordo com o livro de Magretta (2019), que detalha o estudos de Michael Porte
 
 #### 1. Rivalidade entre os concorrentes:
 
-Essa força avalia o nível de competição dentro de um setor e seu impacto na lucratividade das empresas. Uma rivalidade intensa ocorre quando há muitos concorrentes de tamanho semelhante, crescimento lento do mercado, produtos pouco diferenciados ou altos custos fixos, levando a disputas agressivas de preços, marketing e inovação.
+&nbsp; &nbsp; &nbsp; &nbsp;Essa força avalia o nível de competição dentro de um setor e seu impacto na lucratividade das empresas. Uma rivalidade intensa ocorre quando há muitos concorrentes de tamanho semelhante, crescimento lento do mercado, produtos pouco diferenciados ou altos custos fixos, levando a disputas agressivas de preços, marketing e inovação.
 
 - A marca Dr. Pet encontra poucos concorrentes diretos no setor de educação pet e entretenimento pela televisão, com apenas alguns exemplos de personalidades que abordam o mesmo assunto. Já no setor de vendas de livros e cursos para adestramento a marca possui concorrência com algumas plataformas como hotmart;
 
@@ -64,23 +64,23 @@ Essa força avalia o nível de competição dentro de um setor e seu impacto na 
 
 #### 2. Ameaça de novos entrantes:
 
-Essa força avalia o quanto a entrada de novas empresas pode afetar a competitividade e a lucratividade de um setor. Se houver poucas barreiras de entrada, como baixos custos iniciais, acesso fácil a canais de distribuição e pouca regulamentação, novos concorrentes podem surgir rapidamente, aumentando a competição e pressionando preços e margens de lucro para baixo.
+&nbsp; &nbsp; &nbsp; &nbsp;Essa força avalia o quanto a entrada de novas empresas pode afetar a competitividade e a lucratividade de um setor. Se houver poucas barreiras de entrada, como baixos custos iniciais, acesso fácil a canais de distribuição e pouca regulamentação, novos concorrentes podem surgir rapidamente, aumentando a competição e pressionando preços e margens de lucro para baixo.
 
 - Principais barreiras: Visibilidade na mídia, persona comunicativa e carismática;
 - Impacto potencial: Crescimento no setor de educação pet;
 
 #### 3. Poder de barganha dos fornecedores:
 
-Essa força examina a influência que os fornecedores exercem sobre as empresas do setor. Se houver poucos fornecedores, produtos insubstituíveis ou altos custos de troca, eles podem impor preços elevados, prazos rígidos e condições desfavoráveis, reduzindo a lucratividade das empresas compradoras. Já quando há muitos fornecedores, produtos padronizados e facilidade de substituição, o poder de barganha diminui, permitindo que as empresas negociem melhores condições. A dependência de matérias-primas específicas ou tecnologia exclusiva também pode aumentar a força dos fornecedores no mercado.
+&nbsp; &nbsp; &nbsp; &nbsp;Essa força examina a influência que os fornecedores exercem sobre as empresas do setor. Se houver poucos fornecedores, produtos insubstituíveis ou altos custos de troca, eles podem impor preços elevados, prazos rígidos e condições desfavoráveis, reduzindo a lucratividade das empresas compradoras. Já quando há muitos fornecedores, produtos padronizados e facilidade de substituição, o poder de barganha diminui, permitindo que as empresas negociem melhores condições. A dependência de matérias-primas específicas ou tecnologia exclusiva também pode aumentar a força dos fornecedores no mercado.
 
 - Impacto: No caso de rescisão contratual com a emissora, haveria uma redução no alcance do Dr. Pet ao público;
 - Alternativas de fornecimento: Outras plataformas para vender cursos, outras emissoras de programas de televisão.
 
 #### 4. Poder de barganha dos clientes:
 
-Essa força avalia a influência dos consumidores sobre as empresas do setor. Quando os clientes têm muitas opções, produtos pouco diferenciados ou baixo custo de troca, eles podem exigir preços mais baixos, melhor qualidade e melhores serviços, reduzindo a lucratividade das empresas. Esse poder aumenta quando compram em grandes volumes ou têm acesso fácil a informações sobre preços e concorrentes. Por outro lado, quando há poucos clientes, produtos exclusivos ou alta dependência da empresa, o poder de barganha dos consumidores diminui, permitindo que a empresa mantenha margens mais elevadas.
+&nbsp; &nbsp; &nbsp; &nbsp;Essa força avalia a influência dos consumidores sobre as empresas do setor. Quando os clientes têm muitas opções, produtos pouco diferenciados ou baixo custo de troca, eles podem exigir preços mais baixos, melhor qualidade e melhores serviços, reduzindo a lucratividade das empresas. Esse poder aumenta quando compram em grandes volumes ou têm acesso fácil a informações sobre preços e concorrentes. Por outro lado, quando há poucos clientes, produtos exclusivos ou alta dependência da empresa, o poder de barganha dos consumidores diminui, permitindo que a empresa mantenha margens mais elevadas.
 
-O poder de barganha dos clientes é considerado alto, pois há o fácil acesso a conteúdos similares por preços similares ou inferiores.
+&nbsp; &nbsp; &nbsp; &nbsp;O poder de barganha dos clientes é considerado alto, pois há o fácil acesso a conteúdos similares por preços similares ou inferiores.
 
 Exemplos: 
 - Amantes de pets;
@@ -89,7 +89,7 @@ Exemplos:
 
 #### 5. Ameaça de produtos ou serviços substitutos:
 
-Essa força avalia o risco de os consumidores optarem por soluções alternativas que atendam às mesmas necessidades. Essa ameaça é alta quando há substitutos de qualidade, com preços mais baixos ou vantagens superiores, pressionando as empresas a reduzirem preços ou inovarem para manter sua base de clientes. Se os custos de troca forem baixos e os consumidores perceberem benefícios significativos nos substitutos, a competitividade do setor diminui. Por outro lado, quando há poucas alternativas viáveis ou altos custos de mudança, essa ameaça se reduz, favorecendo as empresas estabelecidas.
+&nbsp; &nbsp; &nbsp; &nbsp;Essa força avalia o risco de os consumidores optarem por soluções alternativas que atendam às mesmas necessidades. Essa ameaça é alta quando há substitutos de qualidade, com preços mais baixos ou vantagens superiores, pressionando as empresas a reduzirem preços ou inovarem para manter sua base de clientes. Se os custos de troca forem baixos e os consumidores perceberem benefícios significativos nos substitutos, a competitividade do setor diminui. Por outro lado, quando há poucas alternativas viáveis ou altos custos de mudança, essa ameaça se reduz, favorecendo as empresas estabelecidas.
 
 Exemplos:
 - Cães ou outros pets robóticos: Robôs deste tipo dispensam o conteúdo do Dr. Pet porque dispensam adestramento;
@@ -99,7 +99,7 @@ Exemplos:
 
 ### 1.1.2. Análise SWOT (sprint 2)
 
-A Análise SWOT é uma ferramenta estratégica usada para avaliar a posição de uma empresa, projeto ou indivíduo, considerando fatores internos e externos. Ela é dividida em quatro componentes: Forças (Strengths), que são os pontos fortes internos; Fraquezas (Weaknesses), que representam os desafios internos; Oportunidades (Opportunities), que são fatores externos positivos que podem ser aproveitados; e Ameaças (Threats), que são riscos externos que podem impactar negativamente. Essa análise ajuda na tomada de decisões e no desenvolvimento de estratégias mais eficazes.
+&nbsp; &nbsp; &nbsp; &nbsp;A Análise SWOT é uma ferramenta estratégica usada para avaliar a posição de uma empresa, projeto ou indivíduo, considerando fatores internos e externos. Ela é dividida em quatro componentes: Forças (Strengths), que são os pontos fortes internos; Fraquezas (Weaknesses), que representam os desafios internos; Oportunidades (Opportunities), que são fatores externos positivos que podem ser aproveitados; e Ameaças (Threats), que são riscos externos que podem impactar negativamente. Essa análise ajuda na tomada de decisões e no desenvolvimento de estratégias mais eficazes.
 
 <p align = "center">Figura 2: Análise SWOT</p>
 
@@ -110,7 +110,7 @@ A Análise SWOT é uma ferramenta estratégica usada para avaliar a posição de
 
 ## Strengths:
 
-  A seção de strenghts destaca os pontos fortes internos de uma organização, projeto ou indivíduo, ou seja, os aspectos que oferecem vantagem competitiva. Isso inclui recursos, habilidades, expertise, reputação, tecnologia, cultura organizacional e diferenciais que impulsionam o sucesso. 
+&nbsp; &nbsp; &nbsp; &nbsp;A seção de strenghts destaca os pontos fortes internos de uma organização, projeto ou indivíduo, ou seja, os aspectos que oferecem vantagem competitiva. Isso inclui recursos, habilidades, expertise, reputação, tecnologia, cultura organizacional e diferenciais que impulsionam o sucesso. 
 
   - Alta visibilidade na mídia;
 
@@ -120,7 +120,7 @@ A Análise SWOT é uma ferramenta estratégica usada para avaliar a posição de
 
 ## Weaknesses:
 
-  A seção de Weaknesses identifica os pontos fracos internos que podem prejudicar o desempenho de uma organização, projeto ou indivíduo. Isso inclui limitações em recursos, falta de expertise, baixa eficiência, problemas estruturais, dependência de terceiros ou falhas operacionais.
+&nbsp; &nbsp; &nbsp; &nbsp;A seção de Weaknesses identifica os pontos fracos internos que podem prejudicar o desempenho de uma organização, projeto ou indivíduo. Isso inclui limitações em recursos, falta de expertise, baixa eficiência, problemas estruturais, dependência de terceiros ou falhas operacionais.
 
   - A marca Dr. Pet está relacionada a apenas uma pessoa, pode se confundir com o seu representante, Alexandre Rossi;
 
@@ -130,7 +130,7 @@ A Análise SWOT é uma ferramenta estratégica usada para avaliar a posição de
 
 ## Opportunities:
 
-  A seção de Opportunities analisa fatores externos positivos que podem ser explorados para crescimento e vantagem competitiva. Isso inclui tendências de mercado, avanços tecnológicos, mudanças regulatórias favoráveis, novas demandas dos consumidores ou parcerias estratégicas.
+&nbsp; &nbsp; &nbsp; &nbsp;A seção de Opportunities analisa fatores externos positivos que podem ser explorados para crescimento e vantagem competitiva. Isso inclui tendências de mercado, avanços tecnológicos, mudanças regulatórias favoráveis, novas demandas dos consumidores ou parcerias estratégicas.
 
   - Venda de produtos próprios com a marca Dr. Pet;
 
@@ -138,7 +138,7 @@ A Análise SWOT é uma ferramenta estratégica usada para avaliar a posição de
 
 ## Threats:
 
-  A seção de Threats identifica os fatores externos que podem representar riscos para a organização, projeto ou indivíduo. Isso inclui concorrência acirrada, crises econômicas, mudanças regulatórias desfavoráveis, inovações disruptivas ou instabilidade política. 
+&nbsp; &nbsp; &nbsp; &nbsp;A seção de Threats identifica os fatores externos que podem representar riscos para a organização, projeto ou indivíduo. Isso inclui concorrência acirrada, crises econômicas, mudanças regulatórias desfavoráveis, inovações disruptivas ou instabilidade política. 
 
   - Rescisão de contratos com emissoras de televisão;
 
@@ -154,11 +154,11 @@ A Análise SWOT é uma ferramenta estratégica usada para avaliar a posição de
 
 ## Missão:
 
-Contribuir para a educação pet em casa através da divulgação de conteúdo informativo nas redes sociais e venda de cursos e mentorias, com recursos que promovem a integração de tutores.
+&nbsp; &nbsp; &nbsp; &nbsp;Contribuir para a educação pet em casa através da divulgação de conteúdo informativo nas redes sociais e venda de cursos e mentorias, com recursos que promovem a integração de tutores.
 
 ## Visão:
 
-Ser referência no mercado pet focando na educação, oferecendo um serviço personalizado e exclusivo, e construir uma comunidade de tutores que compartilham experiências e aprendizados com seus pets e sobre eles também.
+&nbsp; &nbsp; &nbsp; &nbsp;Ser referência no mercado pet focando na educação, oferecendo um serviço personalizado e exclusivo, e construir uma comunidade de tutores que compartilham experiências e aprendizados com seus pets e sobre eles também.
 
 ## Valores:
 
@@ -176,10 +176,10 @@ Ser referência no mercado pet focando na educação, oferecendo um serviço per
 
 ### 1.1.5. Descrição da Solução Desenvolvida (sprint 4)
 
-  O problema a ser resolvido está diretamente relacionado à demanda de jogos para gatos. Nesse sentido, o cerne da questão está no fato de que as atuais propostas de tais ferramentas, embora procurem estimular os instintos naturais de caça do gato, contam com uma similaridade forte e pouco diferencial entre si. Além disso, não há uma interação direta entre tutor e gato, o que pode acarretar ansiedade no pet, visto que ele sente falta de seu tutor. Ademais, nesses games, não há previsão de recompensas dadas pelo tutor ao gato durante o momento de jogabilidade. Portanto, a situação supracitada gera monotonia ao pet e não leva em consideração a interação afetiva entre gato e tutor, uma vez que centra seu foco no ato de jogar por jogar. <br> <br>
-  Sob esse viés, faz-se necessário criar uma proposta que solucione a problemática supracitada. Nessa perspectiva, concebeu-se um jogo que concilia os instintos naturais de caça do gato (por meio de recompensas alimentícias) com interação gato-tutor dentro desse contexto, de modo a estimular tanto o pet quanto seu tutor, de maneira que nesse momento sejam geradas diversão e proximidade entre ambos. Logo, a ideia é aproximar o gato do tutor e vice-versa, além de fornecer uma melhor experiência de usuário aos dois jogadores, resolvendo a dor que até então foi passada como escopo para a solução. 
-Ademais, é significativo pontuar como tal solução deve ser usada. Em linhas gerais, ela deve ser utilizada por gatos e tutores preferencialmente em dispositivos móveis, por meio do navegador. No que se refere à interação entre ambos, menciona-se que ela deve ser efetivada por intermédio da recompensa dada pelo tutor ao gato, além da própria jogabilidade projetada, a qual, necessariamente, preconiza a participação ativa do tutor através da escolha de elementos do jogo para que, de fato, o gato possa jogar. <br> <br>
-	Assim, no que se refere à solução proposta, um de seus benefícios é uma interação mais próxima entre gato e tutor, de modo mais afetivo. Além disso,  menciona-se como outro benefício do jogo o incentivo mais contundente aos hábitos de caça dos gatos, por meio de recompensas alimentícias dadas pelo tutor ao pet. Dessa forma, tais benefícios incluem tanto gato e tutor, a fim de que sua relação seja aprofundada. 
+&nbsp; &nbsp; &nbsp; &nbsp;O problema a ser resolvido está diretamente relacionado à demanda de jogos para gatos. Nesse sentido, o cerne da questão está no fato de que as atuais propostas de tais ferramentas, embora procurem estimular os instintos naturais de caça do gato, contam com uma similaridade forte e pouco diferencial entre si. Além disso, não há uma interação direta entre tutor e gato, o que pode acarretar ansiedade no pet, visto que ele sente falta de seu tutor. Ademais, nesses games, não há previsão de recompensas dadas pelo tutor ao gato durante o momento de jogabilidade. Portanto, a situação supracitada gera monotonia ao pet e não leva em consideração a interação afetiva entre gato e tutor, uma vez que centra seu foco no ato de jogar por jogar. <br> <br>
+&nbsp; &nbsp; &nbsp; &nbsp;Sob esse viés, faz-se necessário criar uma proposta que solucione a problemática supracitada. Nessa perspectiva, concebeu-se um jogo que concilia os instintos naturais de caça do gato (por meio de recompensas alimentícias) com interação gato-tutor dentro desse contexto, de modo a estimular tanto o pet quanto seu tutor, de maneira que nesse momento sejam geradas diversão e proximidade entre ambos. Logo, a ideia é aproximar o gato do tutor e vice-versa, além de fornecer uma melhor experiência de usuário aos dois jogadores, resolvendo a dor que até então foi passada como escopo para a solução. 
+&nbsp; &nbsp; &nbsp; &nbsp;Ademais, é significativo pontuar como tal solução deve ser usada. Em linhas gerais, ela deve ser utilizada por gatos e tutores preferencialmente em dispositivos móveis, por meio do navegador. No que se refere à interação entre ambos, menciona-se que ela deve ser efetivada por intermédio da recompensa dada pelo tutor ao gato, além da própria jogabilidade projetada, a qual, necessariamente, preconiza a participação ativa do tutor através da escolha de elementos do jogo para que, de fato, o gato possa jogar. <br> <br>
+&nbsp; &nbsp; &nbsp; &nbsp;Assim, no que se refere à solução proposta, um de seus benefícios é uma interação mais próxima entre gato e tutor, de modo mais afetivo. Além disso,  menciona-se como outro benefício do jogo o incentivo mais contundente aos hábitos de caça dos gatos, por meio de recompensas alimentícias dadas pelo tutor ao pet. Dessa forma, tais benefícios incluem tanto gato e tutor, a fim de que sua relação seja aprofundada. 
 
 
 ### 1.1.6. Matriz de Riscos (sprint 4)
@@ -382,42 +382,42 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 ## 1.3. Público-alvo do Projeto (sprint 2)
 
-Em linhas gerais, o público-alvo do jogo RonRonArte se concentra em gatos domésticos e seus respectivos tutores. Nesse sentido, é válido destacar que, de acordo com o Censo Pet IPB (2022), o número de gatos vem crescendo ao longo dos últimos anos nos lares brasileiros, saltando de uma população de 25,6 milhões em 2020 para 27,1 milhões de indivíduos em 2021, com uma estimativa de 2,5% de crescimento médio anual. A título de comparação, essa pesquisa também mostrou que o percentual da quantidade de cães, maior contingente de pets do Brasil, foi inferior no mesmo período: 4%. Ademais, nota-se que as adoções dos felinos representam 65% do total, o que demonstra o crescimento de tutores desses animais. Portanto, é possível observar o aumento da preferência das pessoas pela adoção de gatos no país.
+&nbsp; &nbsp; &nbsp; &nbsp;Em linhas gerais, o público-alvo do jogo RonRonArte se concentra em gatos domésticos e seus respectivos tutores. Nesse sentido, é válido destacar que, de acordo com o Censo Pet IPB (2022), o número de gatos vem crescendo ao longo dos últimos anos nos lares brasileiros, saltando de uma população de 25,6 milhões em 2020 para 27,1 milhões de indivíduos em 2021, com uma estimativa de 2,5% de crescimento médio anual. A título de comparação, essa pesquisa também mostrou que o percentual da quantidade de cães, maior contingente de pets do Brasil, foi inferior no mesmo período: 4%. Ademais, nota-se que as adoções dos felinos representam 65% do total, o que demonstra o crescimento de tutores desses animais. Portanto, é possível observar o aumento da preferência das pessoas pela adoção de gatos no país.
   
-Além disso, os gatos domésticos, na ausência de seus tutores, passam por momentos de instabilidade emocional. Segundo um estudo publicado na Universidade do Estado de Oregon, 64,3% desses pets sentem muita falta de seus donos quando estes não estão por perto (PETZ, 2023). Tal dado evidencia a necessidade de promover uma interação mais profunda e divertida entre ambos os grupos, uma vez que ambos se apegam um ao outro. Dessa forma, um jogo com o escopo supracitado surge como alternativa à situação mencionada.
+&nbsp; &nbsp; &nbsp; &nbsp;Além disso, os gatos domésticos, na ausência de seus tutores, passam por momentos de instabilidade emocional. Segundo um estudo publicado na Universidade do Estado de Oregon, 64,3% desses pets sentem muita falta de seus donos quando estes não estão por perto (PETZ, 2023). Tal dado evidencia a necessidade de promover uma interação mais profunda e divertida entre ambos os grupos, uma vez que ambos se apegam um ao outro. Dessa forma, um jogo com o escopo supracitado surge como alternativa à situação mencionada.
 
 
 # <a name="c2"></a>2. Visão Geral do Jogo (sprint 2)
 
 ## 2.1. Objetivos do Jogo (sprint 2)
 
-O objetivo do jogo é fortalecer o laço entre tutor e gato, enquanto ensina uma nova forma de se divertir com o seu pet. O objetivo do gato é eliminar todos os animais da tela num determinado período de tempo. Já o objetivo do tutor é o de aprender e exercer a mecânica de recompensar seu pet ao alcançar seu determinado objetivo delimitado entre as fases. Ademais, nosso jogo contemplará um modo de jogo alternativo em que o gato poderá "pintar" uma tela em branco, produzindo sua própria obra de arte.
+&nbsp; &nbsp; &nbsp; &nbsp;O objetivo do jogo é fortalecer o laço entre tutor e gato, enquanto ensina uma nova forma de se divertir com o seu pet. O objetivo do gato é eliminar todos os animais da tela num determinado período de tempo. Já o objetivo do tutor é o de aprender e exercer a mecânica de recompensar seu pet ao alcançar seu determinado objetivo delimitado entre as fases. Ademais, nosso jogo contemplará um modo de jogo alternativo em que o gato poderá "pintar" uma tela em branco, produzindo sua própria obra de arte.
 
 ## 2.2. Características do Jogo (sprint 2)
 
 ### 2.2.1. Gênero do Jogo (sprint 2)
 
-O jogo se encaixa principalmente no gênero Arcade, pois é um jogo rápido e simples, com a mecânica principal sendo a de tocar na tela para "capturar" algo.
+&nbsp; &nbsp; &nbsp; &nbsp;O jogo se encaixa principalmente no gênero Arcade, pois é um jogo rápido e simples, com a mecânica principal sendo a de tocar na tela para "capturar" algo.
 
 ### 2.2.2. Plataforma do Jogo (sprint 2)
 
-O jogo será desenvolvido para _smartphones e tablets_, com reprodução através da web, sem a necessidade de instalação de aplicativos externos.
+&nbsp; &nbsp; &nbsp; &nbsp;O jogo será desenvolvido para _smartphones e tablets_, com reprodução através da web, sem a necessidade de instalação de aplicativos externos.
 
-Navegadores compatíveis: Google Chrome, Microsoft Edge, Mozilla Firefox.
+&nbsp; &nbsp; &nbsp; &nbsp;Navegadores compatíveis: Google Chrome, Microsoft Edge, Mozilla Firefox.
 
 ### 2.2.3. Número de jogadores (sprint 2)
 
-O jogo foi desenvolvido para ser uma experiência interativa entre o gato e seu tutor (2 jogadores), sendo majoritaria a participação do gato ao "caçar" os animais que aparecem nas fases, e a do tutor em recompensar o gato e acompanhar a história da arte conforme avança pelos níveis. 
+&nbsp; &nbsp; &nbsp; &nbsp;O jogo foi desenvolvido para ser uma experiência interativa entre o gato e seu tutor (2 jogadores), sendo majoritaria a participação do gato ao "caçar" os animais que aparecem nas fases, e a do tutor em recompensar o gato e acompanhar a história da arte conforme avança pelos níveis. 
 
 ### 2.2.4. Títulos semelhantes e inspirações (sprint 2)
 
-Nosso jogo teve como inspiração outros títulos de jogos para gato, como:
+&nbsp; &nbsp; &nbsp; &nbsp;Nosso jogo teve como inspiração outros títulos de jogos para gato, como:
 
-Paint for Cats: Jogo cuja principal mecânica é ser um "jogo de pintar" para gatos, em que um rato colorido atravessa a tela com o intuito do gato bater na tela tentando o acertar. Ao acertá-lo, deixa um "splash" de tinta em formato de pata na tela.
+&nbsp; &nbsp; &nbsp; &nbsp;Paint for Cats: Jogo cuja principal mecânica é ser um "jogo de pintar" para gatos, em que um rato colorido atravessa a tela com o intuito do gato bater na tela tentando o acertar. Ao acertá-lo, deixa um "splash" de tinta em formato de pata na tela.
 
-Games for Cats: Jogo em que o gato deve acertar um animal correndo pela tela. Contempla diferentes tipos de animais com diferentes características e níveis de dificuldade.
+&nbsp; &nbsp; &nbsp; &nbsp;Games for Cats: Jogo em que o gato deve acertar um animal correndo pela tela. Contempla diferentes tipos de animais com diferentes características e níveis de dificuldade.
 
-Nosso jogo visa mesclar mecânicas presentes nesses outros jogos com uma identidade visual própria, buscando uma experiência interativa e divertida para gato e tutor.
+&nbsp; &nbsp; &nbsp; &nbsp;Nosso jogo visa mesclar mecânicas presentes nesses outros jogos com uma identidade visual própria, buscando uma experiência interativa e divertida para gato e tutor.
 
 ### 2.2.5. Tempo estimado de jogo (sprint 5)
 
@@ -429,14 +429,14 @@ Nosso jogo visa mesclar mecânicas presentes nesses outros jogos com uma identid
 
 ## 3.1. Enredo do Jogo (sprints 2 e 3)
 
-Nós seres humanos, em algum momento de nossas vidas, pensamos no conceito de viagem no tempo. Um conceito interessante, desconhecido, e um tanto assutador. Entretanto, já imaginou se fosse possível viajar no tempo com o seu pet?
-Pois é esse o enredo de RonRonArte, uma viagem no tempo com o seu gato! Mas não é uma viagem no tempo qualquer, é uma viagem pelos diferentes períodos da arte, passando por arte contemporânea, arte moderna, arte medieval, e arte rupestre.
-Acompanhe seu pet nessa jornada e aprenda um pouco mais sobre a história da arte enquanto se diverte com seu amigo felino!
+&nbsp; &nbsp; &nbsp; &nbsp;Nós seres humanos, em algum momento de nossas vidas, pensamos no conceito de viagem no tempo. Um conceito interessante, desconhecido, e um tanto assutador. Entretanto, já imaginou se fosse possível viajar no tempo com o seu pet?
+&nbsp; &nbsp; &nbsp; &nbsp;Pois é esse o enredo de RonRonArte, uma viagem no tempo com o seu gato! Mas não é uma viagem no tempo qualquer, é uma viagem pelos diferentes períodos da arte, passando por arte contemporânea, arte moderna, arte medieval, e arte rupestre.
+&nbsp; &nbsp; &nbsp; &nbsp;Acompanhe seu pet nessa jornada e aprenda um pouco mais sobre a história da arte enquanto se diverte com seu amigo felino!
 
 ## 3.2. Personagens (sprints 2 e 3)
 
 ### 3.2.1. Controláveis
-No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador, haja vista que o intuito do jogo é justamente incentivar hábitos de caça ao gato por intermédio de figuras clicáveis na tela (no caso, spritesheets). Desse modo, o objetivo não é que o jogador controle algum personagem no game, mas sim que ele possa eliminá-lo no decorrer do jogo em troca de recompensas alimentícias, a fim de que seus instintos naturais sejam estimulados. Portanto, especificamente no escopo de RonRonArte, o player pode interpretar tal circunstância como um meio pelo qual ele realiza uma ação e, em troca, ganha algo, associando o atingimento de objetivos com as recompensas supracitadas. A partir disso, abaixo estão as spritesheets correspondentes ao que acima foi observado.
+&nbsp; &nbsp; &nbsp; &nbsp;No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador, haja vista que o intuito do jogo é justamente incentivar hábitos de caça ao gato por intermédio de figuras clicáveis na tela (no caso, spritesheets). Desse modo, o objetivo não é que o jogador controle algum personagem no game, mas sim que ele possa eliminá-lo no decorrer do jogo em troca de recompensas alimentícias, a fim de que seus instintos naturais sejam estimulados. Portanto, especificamente no escopo de RonRonArte, o player pode interpretar tal circunstância como um meio pelo qual ele realiza uma ação e, em troca, ganha algo, associando o atingimento de objetivos com as recompensas supracitadas. A partir disso, abaixo estão as spritesheets correspondentes ao que acima foi observado.
 
 <p align = 'center'>Figura 3 - Figura do pombo (RonRonArte)</p><br>
 <div align = 'center'>
@@ -447,19 +447,19 @@ No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador
 
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
-O Ronronart contém inclusão em sua jogabilidade, uma vez que o jogador, em algumas fases, é convidado a conhecer mais sobre uma obra cujo autor pertence a um grupo sub-representado no universo artístico. 
+&nbsp; &nbsp; &nbsp; &nbsp;O RonRonArte contém inclusão em sua jogabilidade, uma vez que o jogador, em algumas fases, é convidado a conhecer mais sobre uma obra cujo autor pertence a um grupo sub-representado no universo artístico. 
 
 ## 3.3. Mundo do jogo (sprints 2 e 3)
 
 ### 3.3.1. Locações Principais e/ou Mapas (sprints 2 e 3)
 
-  O jogo vem de uma viagem mágica no mundo da arte, coletando quadros de pintores que não receberam o devido reconhecimento de diversas nacionalidades que o jogador, o gato, visitará. Essa aventura será possível por meio de um portal, fantasioso, que servirá para o jogador poder acessar as fases. Os momentos históricos serão representados por animais que são presentes no cotidiano do período apresentado e pintores e artes pertencentes a cada respectiva época, por exemplo, o quadro da Maria Auxiliadora (quadro presente até o momento). O jogo não segue uma história linear, entretanto, o fluxo de fases segue, sendo um level liberado após o outro.
+&nbsp; &nbsp; &nbsp; &nbsp;O jogo vem de uma viagem mágica no mundo da arte, coletando quadros de pintores que não receberam o devido reconhecimento de diversas nacionalidades que o jogador, o gato, visitará. Essa aventura será possível por meio de um portal, fantasioso, que servirá para o jogador poder acessar as fases. Os momentos históricos serão representados por animais que são presentes no cotidiano do período apresentado e pintores e artes pertencentes a cada respectiva época, por exemplo, o quadro da Maria Auxiliadora (quadro presente até o momento). O jogo não segue uma história linear, entretanto, o fluxo de fases segue, sendo um level liberado após o outro.
 
 ### 3.3.2. Navegação pelo mundo (sprints 2 e 3)
-O jogador, sendo um gato, atravessará as fases atreves de um portal que o levará para épocas distintas e importantes para o conhecimento artístico da pintura. Com o passar das fases, elas se tornam selecionáveis a preferir do dono do gato, em que depois que o botão de “jogar”, poderá selecionar somente clicando com o dedo no botão referente a fase que for preferível a ser jogada.
+&nbsp; &nbsp; &nbsp; &nbsp;O jogador, sendo um gato, atravessará as fases atreves de um portal que o levará para épocas distintas e importantes para o conhecimento artístico da pintura. Com o passar das fases, elas se tornam selecionáveis a preferir do dono do gato, em que depois que o botão de “jogar”, poderá selecionar somente clicando com o dedo no botão referente a fase que for preferível a ser jogada.
 
 ### 3.3.4. Concept Art (sprint 2)
-Uma Concept Art é um fluxo de imagens que mostra as características e os elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo. Com base nisso, realizou-se uma Concept Art de RonRonArte, de maneira a explicitar quais são os seus principais itens visuais e de história.
+&nbsp; &nbsp; &nbsp; &nbsp;Uma Concept Art é um fluxo de imagens que mostra as características e os elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo. Com base nisso, realizou-se uma Concept Art de RonRonArte, de maneira a explicitar quais são os seus principais itens visuais e de história.
 
 <p align = "center">Figura 4: Concept Art - RonRonArte</p>
 
@@ -467,7 +467,7 @@ Uma Concept Art é um fluxo de imagens que mostra as características e os eleme
 
 <p align = "center">Fonte: autoria própria (2025).</p> <br>
 
-Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.figma.com/proto/O28uXtCzHpYgGD5H7lxE97/Concept-Art---RonRonArte?content-scaling=fixed&kind=proto&node-id=15-4&page-id=0%3A1&scaling=scale-down) <br>
+&nbsp; &nbsp; &nbsp; &nbsp;Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.figma.com/proto/O28uXtCzHpYgGD5H7lxE97/Concept-Art---RonRonArte?content-scaling=fixed&kind=proto&node-id=15-4&page-id=0%3A1&scaling=scale-down) <br>
 
 ### 3.3.5. Trilha sonora (sprint 3)
 
@@ -514,7 +514,7 @@ Caso queira ver o diagrama de cenas no Figma, [clique aqui](https://www.figma.co
 
 #### Diagrama de cenas:
 
-O diagrama de cenas é uma representação visual do caminhar do jogo ao longo de suas telas e cenas. Essa ferramenta apresenta como o design será feito, como as classes, objetos, atributos e métodos são realizados, facilitando a compreensão das funcionalidades.
+&nbsp; &nbsp; &nbsp; &nbsp;O diagrama de cenas é uma representação visual do caminhar do jogo ao longo de suas telas e cenas. Essa ferramenta apresenta como o design será feito, como as classes, objetos, atributos e métodos são realizados, facilitando a compreensão das funcionalidades.
 
 <hr>
 
@@ -596,11 +596,11 @@ Classes, métodos e atributos: ainda não implementados.
 Classes, métodos e atributos: ainda não implementados.
 
 ## 3.6. Regras do jogo (sprint 3)
-No mundo de RonRonArte, o gato precisa atingir com toques na tela os alvos (animaizinhos) que aparecem na tela e se movem por ela, completando as fases que são obras de arte dos mais diversos períodos artísticos. A partir disso, ele receberá pontos e, se ele fizer todos os pontos, o tutor será incentivado a dar petiscos ao seu pet, a fim de que ele associe essa ação com a recompensa alimentícia. Além disso, são desbloqueados tintas e formatos diferentes que o tutor pode selecionar no modo criativo, nesse modo o gato poderá criar suas próprias pinturas. Logo, há a intersecção entre os instintos naturais de caça do gato, arte e alimentação animal.
+&nbsp; &nbsp; &nbsp; &nbsp;No mundo de RonRonArte, o gato precisa atingir com toques na tela os alvos (animaizinhos) que aparecem na tela e se movem por ela, completando as fases que são obras de arte dos mais diversos períodos artísticos. A partir disso, ele receberá pontos e, se ele fizer todos os pontos, o tutor será incentivado a dar petiscos ao seu pet, a fim de que ele associe essa ação com a recompensa alimentícia. Além disso, são desbloqueados tintas e formatos diferentes que o tutor pode selecionar no modo criativo, nesse modo o gato poderá criar suas próprias pinturas. Logo, há a intersecção entre os instintos naturais de caça do gato, arte e alimentação animal.
 
 ## 3.7. Mecânicas do jogo (sprint 3)
 
-As mecânicas do jogo RonRonArte são simples e de fácil entendimento. A mecânica de touch funciona quando o jogador acerta o alvo, e assim, revelando parte de uma pintura. No modo criativo segue-se uma mecânica parecida, alterando apenas o resultado dela, em que após a ação de clicar e acertar o alvo na tela o jogador irá pintar um quadro em branco, dessa forma, pintando um quadro de autoria do próprio jogador.
+&nbsp; &nbsp; &nbsp; &nbsp;As mecânicas do jogo RonRonArte são simples e de fácil entendimento. A mecânica de touch funciona quando o jogador acerta o alvo, e assim, revelando parte de uma pintura. No modo criativo segue-se uma mecânica parecida, alterando apenas o resultado dela, em que após a ação de clicar e acertar o alvo na tela o jogador irá pintar um quadro em branco, dessa forma, pintando um quadro de autoria do próprio jogador.
 
 ## 3.8. Implementação Matemática de Animação/Movimento (sprint 3)
 
@@ -610,9 +610,9 @@ As mecânicas do jogo RonRonArte são simples e de fácil entendimento. A mecân
 
 ## 4.1. Desenvolvimento preliminar do jogo (sprint 1)
 
-Em linhas gerais, a primeira versão do jogo “RonRonArte” conta com uma tela inicial, que contempla o botão “Jogar”. Sob essa perspectiva, criou-se a primeira cena do jogo, a qual é ativada quando o botão supracitado é clicado. Nela, sprites de animais aparecem randomicamente na tela, de maneira que o jogador (gato) seja incentivado a pressioná-los. Nesse sentido, é válido mencionar que, quando essas imagens animadas são clicadas, são liberados splashes de tinta com forma de patinha de gato, funcionalidade que nas próximas versões será refinada, a fim de que o jogador produza pinturas de acordo com os splashes. Portanto, objetiva-se ir além do convencional (apenas cliques na tela), por intermédio de dinâmicas atrelada à arte.  
+&nbsp; &nbsp; &nbsp; &nbsp;Em linhas gerais, a primeira versão do jogo “RonRonArte” conta com uma tela inicial, que contempla o botão “Jogar”. Sob essa perspectiva, criou-se a primeira cena do jogo, a qual é ativada quando o botão supracitado é clicado. Nela, sprites de animais aparecem randomicamente na tela, de maneira que o jogador (gato) seja incentivado a pressioná-los. Nesse sentido, é válido mencionar que, quando essas imagens animadas são clicadas, são liberados splashes de tinta com forma de patinha de gato, funcionalidade que nas próximas versões será refinada, a fim de que o jogador produza pinturas de acordo com os splashes. Portanto, objetiva-se ir além do convencional (apenas cliques na tela), por intermédio de dinâmicas atrelada à arte.  
 
-Logo abaixo, estão registrados os prints das telas da primeira versão do jogo.
+&nbsp; &nbsp; &nbsp; &nbsp;Logo abaixo, estão registrados os prints das telas da primeira versão do jogo.
 
 <p align = "center">Figura 6: tela de início do jogo</p>
 
@@ -643,13 +643,13 @@ Logo abaixo, estão registrados os prints das telas da primeira versão do jogo.
 
 
 
-Ademais, é significativo pontuar que, ao longo desse primeiro momento de desenvolvimento, foram encontradas algumas dificuldades. Sob esse viés, o inicial não reconhecimento do código por parte do GitHub Pages e alguns bugs referentes aos sprites foram as principais adversidades enfrentadas ao longo do processo de desenvolvimento. Nessa perspectiva, tais aspectos estão passando por um crivo maior, de sorte que sejam superados.
+&nbsp; &nbsp; &nbsp; &nbsp;Ademais, é significativo pontuar que, ao longo desse primeiro momento de desenvolvimento, foram encontradas algumas dificuldades. Sob esse viés, o inicial não reconhecimento do código por parte do GitHub Pages e alguns bugs referentes aos sprites foram as principais adversidades enfrentadas ao longo do processo de desenvolvimento. Nessa perspectiva, tais aspectos estão passando por um crivo maior, de sorte que sejam superados.
 
-Portanto, como próximos passos, notam-se os subsequentes: habilitação de personalização de fase pelo tutor (por meio da qual ele poderá selecionar a quantidade de animais que aparecem na tela), criação de um menu de opções funcional e elaboração de uma tela bônus para pintura por parte do gato. 
+&nbsp; &nbsp; &nbsp; &nbsp;Portanto, como próximos passos, notam-se os subsequentes: habilitação de personalização de fase pelo tutor (por meio da qual ele poderá selecionar a quantidade de animais que aparecem na tela), criação de um menu de opções funcional e elaboração de uma tela bônus para pintura por parte do gato. 
 
 ## 4.2. Desenvolvimento básico do jogo (sprint 2)
 
-A partir da versão preliminar do jogo, realizou-se o desenvolvimento básico do game. Nele, foi acrescentado uma splash screen (com o nome da equipe), a fim de dar mais fluidez à experiência do usuário. Além disso, foi implementado um novo background na tela de início (gerada por IA), uma vez que o adicionado na primeira versão foi utilizado com objetivos de teste. Ademais, a tela de start conta com um botão que direciona ao tutorial do RonRonArte, nessa tela haverá disponível um botão para pular o tutorial caso o tutor já tenha o feito ou não queira o fazer, e, após o avanço do tutorial o jogador será redirecionado para a tela de primeira fase do jogo. Além disso, a idealização das fases já foi concluida, restando agora a implementação. Por fim, é válido mencionar que se iniciou a modularização do código, tendo sido refeitas as linhas de código em programação orientada a objetos. Conjunto a isso, houve a programação das sprites da tela de vitória, além da criação do contador de acertos para verificação do desempenho do jogador em sua gameplay. 
+&nbsp; &nbsp; &nbsp; &nbsp;A partir da versão preliminar do jogo, realizou-se o desenvolvimento básico do game. Nele, foi acrescentado uma splash screen (com o nome da equipe), a fim de dar mais fluidez à experiência do usuário. Além disso, foi implementado um novo background na tela de início (gerada por IA), uma vez que o adicionado na primeira versão foi utilizado com objetivos de teste. Ademais, a tela de start conta com um botão que direciona ao tutorial do RonRonArte, nessa tela haverá disponível um botão para pular o tutorial caso o tutor já tenha o feito ou não queira o fazer, e, após o avanço do tutorial o jogador será redirecionado para a tela de primeira fase do jogo. Além disso, a idealização das fases já foi concluida, restando agora a implementação. Por fim, é válido mencionar que se iniciou a modularização do código, tendo sido refeitas as linhas de código em programação orientada a objetos. Conjunto a isso, houve a programação das sprites da tela de vitória, além da criação do contador de acertos para verificação do desempenho do jogador em sua gameplay. 
 
 Os próximos passos para o desenvolvimento do jogo se desdobram em alguns objetivos, como:
 - Implementação de mais fases;
@@ -715,7 +715,7 @@ Logo abaixo, estão as telas da versão básica do jogo.
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
 
-No desenvolvimento intermediário do jogo, foram acrescentados mais itens ao game em relação à versão intermediária. Em termos de código, foi adicionada uma classe “basePhase”, que servirá de arquétipo para o desenvolvimento de todas as outras, parecido com um template. Já em termos de jogo, iniciou-se a implementação do modo criativo do game, que já possui sua principal característica implementada: a seleção de cores por parte do tutor em uma paleta na tela, a fim que seu gato produza suas próprias pinturas de modo personalizado. Por fim, adicionou-se um menu de seleção de níveis, no qual o tutor poderá escolher entre a fase de tutorial, as fases propostas ou o modo criativo.
+&nbsp; &nbsp; &nbsp; &nbsp;No desenvolvimento intermediário do jogo, foram acrescentados mais itens ao game em relação à versão intermediária. Em termos de código, foi adicionada uma classe “basePhase”, que servirá de arquétipo para o desenvolvimento de todas as outras, parecido com um template. Já em termos de jogo, iniciou-se a implementação do modo criativo do game, que já possui sua principal característica implementada: a seleção de cores por parte do tutor em uma paleta na tela, a fim que seu gato produza suas próprias pinturas de modo personalizado. Por fim, adicionou-se um menu de seleção de níveis, no qual o tutor poderá escolher entre a fase de tutorial, as fases propostas ou o modo criativo.
 
 ## 4.4. Desenvolvimento final do MVP (sprint 4)
 
