@@ -191,7 +191,7 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
 <p align = "center">Figura 3: Matriz de risco</p>
 
 ![MatrizdeRisco](https://github.com/user-attachments/assets/e0e8eebb-9f85-470b-a2b3-1dd77247050f)
-   Fonte: Tabela de "ferramentasdaqualidade.org"; adaptada pelos autores.
+   Fonte: Tabela de "ferramentasdaqualidade.org", adaptada pelos autores.
 
 ### Riscos
 
@@ -308,29 +308,28 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
 
 Os objetivos, as metas e os indicadores de medição foram criados com base na metodologia de metas SMART, a qual define que as metas devem ser Específicas, Mensuráveis, Atribuíveis, Realistas e Temporais. 
 
-As metas serem Específicas diz respeito ao o que será alcançado e quais os passos para que a concretização ocorra; em relação à Mensuráveis, elas abrangem os indicadores para medir a efetivação e o progresso; já Atribuíveis diz respeito aos responsáveis para a execução da meta; realista está associado à possibilidade real de a meta ser concreta, ou seja, ser executável; por fim, temporal trata de definir um prazo para atingir a meta.
+As metas serem Específicas dizem respeito ao o que será alcançado e quais os passos para que a concretização ocorra; em relação a Mensuráveis, elas abrangem os indicadores para medir a efetivação e o progresso; já Atribuíveis se referem aos responsáveis para a execução da meta; Realista está associado à possibilidade real de a meta ser concreta, ou seja, ser executável; por fim, Temporal se trata da definição de um prazo para atingir a meta.
 
-Antes de estruturarmos as metas seguindo o modelo SMART, construímo-las no modelo de OKRs, o qual corresponde á um método simples para criar alinhamento e engajamento em torno de metas mensuráveis. O intuito é definir uma meta qualitativa detalhada e algumas métricas quantitativas (Key Results).
+Antes de estruturarmos as metas seguindo o modelo SMART, construímo-las no modelo de OKRs (Objectives and Key Results), o qual corresponde a um método simples para criar alinhamento e engajamento em torno de metas mensuráveis. O intuito é definir uma meta qualitativa detalhada e algumas métricas quantitativas (Key Results).
 
 Segue os OKRs definidos pela equipe:
 
-Objetivo: Ter comunicação clara e eficiente entre os membros da equipe, de modo que todos permaneçam engajados.
+Objetivo 1: Ter comunicação clara e eficiente entre os membros da equipe, de modo que todos permaneçam engajados.
 
 Key Results:
-
 - Ter, no máximo, duas faltas na daily por sprint;
 - Utilizar mais os canais de comunicação como Slack e Whatsapp para comunicar 100% das tasks feitas fora do horário de desenvolvimento do projeto e de reviews feitas individualmente;
 - Ter, no máximo, duas faltas no fechamento por sprint.
 
-Objetivo: Entregar o melhor MVP possível com a proposta de melhorar a relação entre tutor e gato de maneira inovadora, através da arte.
+
+Objetivo 2: Entregar o melhor MVP possível com a proposta de melhorar a relação entre tutor e gato de maneira inovadora, através da arte.
 
 Key Results:
-
 - Aumentar a frequência das reviews em grupo das tasks de 0 para 1 vez por semana;
 - Cada membro completar ao menos uma task P por dia ou 1 task M a cada dois dias ou uma task G a cada 3 dias;
 - Aumentar a nota de todos os artefatos para, no mínimo, 9,0.
 
-Segue os objetivos estruturados no molde SMART: 
+Além disso, seguem os objetivos estruturados no molde SMART: 
 
 Objetivos:
 
@@ -338,11 +337,11 @@ Nosso objetivo é fazer a comunicação entre os membros do grupo ser mais clara
 
 S. **Específico:** Ter comunicação clara e eficiente entre os membros da equipe, de modo que todos permaneçam engajados.
 
-M. **Mensurável:** A análise das dailys servirá de indicador para a medição do sucesso ou falha da meta, haja vista que, por intermédio dessa vistoria, é possível visualizar o que cada membro da equipe fez e está fazendo, sendo, portanto, útil para identificar baixos e altos engajamentos.
+M. **Mensurável:** A análise das dailies servirá de indicador para a medição do sucesso ou falha da meta, haja vista que, por intermédio dessa vistoria, é possível visualizar o que cada membro da equipe fez e está fazendo, sendo, portanto, útil para identificar baixos e altos engajamentos.
 
 A. **Atribuível:** A responsabilidade desse objetivo contempla todos os membros da equipe.
 
-R. **Relevante:** A equipe possui acesso à canais de comunicação eficientes como o Slack e o grupo de Whatsapp e momentos cedidos pela universidade para a eficiente organização e comunicação da equipe.
+R. **Relevante:** A equipe possui acesso a canais de comunicação eficientes como o Slack e o grupo de Whatsapp e momentos cedidos pela universidade para a eficiente organização e comunicação da equipe.
 
 T. **Oportuno:** Melhorar o prazo definido para melhorar a comunicação será a sprint review da sprint 4.
 
@@ -350,13 +349,13 @@ Nosso objetivo é entregar o melhor MVP possível ao parceiro até a sprint revi
 
 S. **Específico:** Entregar o melhor MVP possível com a proposta de melhorar a relação entre tutor e gato de maneira inovadora, através da arte.
 
-M. **Mensurável:** A nota do artefato atuará como ferramenta para mensurar o progresso do MVP e o KanBan para monitorar o ritmo das conclusões das tasks.
+M. **Mensurável:** ter os artefatos com nota, no mínimo,  9, uma vez que essa nota atua como ferramenta para mensurar o progresso do MVP e, além disso, há o Kanban, que serve para monitorar o ritmo das conclusões das tasks.
 
 A. **Atribuível:** A responsabilidade desse objetivo contempla todos os membros da equipe.
 
-R. **Relevante:** A equipe possui recursos como aulas e professores das áreas de programação, matemática, física, UX, liderança e negócios, assim como o auxílio de um instrutor na execução do projeto, o que viabiliza o objetivo.
+R. **Relevante:** A equipe possui recursos como aulas e professores das áreas de programação, matemática, física, UX, liderança e negócios, assim como o auxílio de um orientador na execução do projeto, o que viabiliza o objetivo.
 
-T. **Oportuno:** A **e**ntrega do melhor MVP possível terá como prazo a sprint review da sprint 4.
+T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint review da sprint 4.
 
 ## 1.2. Requisitos do Projeto (sprints 1 e 2)
 Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por meios dos quais se busca explicitar, de maneira breve, lógica e sucinta, suas principais funcionalidades e aspectos, de acordo com o escopo vigente.  
