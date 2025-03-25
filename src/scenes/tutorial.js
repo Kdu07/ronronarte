@@ -71,7 +71,7 @@ export default class Tutorial extends Phaser.Scene {
                     this.tutorialText.destroy();
                     
                     // Adiciona o splash 
-                    this.add.image(this.character.x, this.character.y, 'yellowSplash').setScale(this.scale.width/2500);
+                    this.add.image(this.character.x, this.character.y, 'splashTutorial').setScale(this.scale.width/2500);
                     
                     // Espera 1,5 segundos
                     this.time.delayedCall(1500, () => {

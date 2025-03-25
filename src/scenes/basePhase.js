@@ -245,7 +245,7 @@ export default class BasePhase extends Phaser.Scene {
                     this.soundClick.stop(); // Para o som do pombo após 1000ms (1s)
                 });
                 
-                this.splash = this.add.image(pointer.x, pointer.y, 'yellowSplash').setScale(this.width/4000).setAlpha(0.6); // Cria um splash no local do clique
+                this.splash = this.add.image(pointer.x, pointer.y, 'splashTutorial').setScale(this.width/4000).setAlpha(0.6); // Cria um splash no local do clique
                 this.reward = this.add.image(this.width/2, this.height/2, 'reward').setScale(this.width/1200)
                     
                 // Se o jogo não acabou, gera outro pombo
@@ -279,7 +279,7 @@ export default class BasePhase extends Phaser.Scene {
                 this.scoreboard.setText(this.score + '/' + this.maxScore); // Atualiza o placar 
 
                 // Cria um splash no local do clique e revela a mesma área do quadro
-                this.splash = this.add.image(pointer.x, pointer.y, 'splash').setScale(this.width/800);
+                this.splash = this.add.image(pointer.x, pointer.y, 'splashPhases').setScale(this.width/800);
                 this.splash.setAlpha(1);
                 this.revealMask.draw(this.splash, this.splash.x, this.splash.y);
                 this.splash.destroy(); //Remove o splash após liberar a área
@@ -322,8 +322,6 @@ export default class BasePhase extends Phaser.Scene {
         }else{
             this.starScore = 1;
         }
-
-        console.log(this.starScore)
 
         // Adiciona a frase de vitória
         setTimeout(() => {
