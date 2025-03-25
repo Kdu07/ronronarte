@@ -48,10 +48,12 @@ export default class BasePhase extends Phaser.Scene {
 
             // Adiciona o temporizador
             this.createTimer();
+            this.clickTargetComplete();
 
         }else{
             // Cria o background
             this.createBackground();
+            this.clickTarget();
         }
 
         // Adiciona som que toca quando o alvo é clicado
@@ -64,7 +66,7 @@ export default class BasePhase extends Phaser.Scene {
         this.createHoldButton();
         
         // Configura e adiciona o pombo na tela
-        this.spawnTarget();        
+        this.spawnTarget();    
     }
 
     createTimer() {
@@ -141,15 +143,6 @@ export default class BasePhase extends Phaser.Scene {
     }
 
     update(){
-        // Confere e ativa funcionalidades quando o pombo é clicado        
-        if(this.completePhase){
-            // Para a configuração de fase completa 
-            this.clickTargetComplete(); 
-        }else{
-            // Para a configuração de fase básica
-            this.clickTarget();
-        }
-
         // Só move o pombo se ele não foi clicado
         if (!this.stopped){ 
             this.movement(this.target);  
@@ -202,7 +195,7 @@ export default class BasePhase extends Phaser.Scene {
         let posY = Phaser.Math.Between(100,this.height-100);
     
         // Adiciona o pombo e torna interativo
-        this.target = this.add.sprite(posX, posY, this.targetKey).setScale(this.width/400);
+        this.target = this.add.sprite(posX, posY, this.targetKey).setScale(5/*this.width/400*/);
         this.target.setInteractive();
     
         // Configura a velocidade aleatória do pombo e a direção inicial de movimento
@@ -222,24 +215,23 @@ export default class BasePhase extends Phaser.Scene {
         this.target.hitboxHeight = this.target.height;
 
         // Inicia a animação de voo do pombo
-        this.target.play(this.animKey); // Fim
+        this.target.play(this.animKey);
 
         // Inicia o audio do alvo
         this.soundTarget.play({ volume: 0.5, loop: true });
     }
 
     // Função que confere se o pombo é clicado
-    clickTarget(){
-        this.input.removeAllListeners('pointerdown'); // Ignora todos os cliques anteriores
-        
+    clickTarget(){        
         // Quando o mouse é clicado
         this.input.on('pointerdown', (pointer) => {
             // Se o ponteiro está no do alvo
-            if (this.target.getBounds().contains(pointer.x, pointer.y)) {
+            if (this.target && this.target.getBounds().contains(pointer.x, pointer.y)) {
                 this.score+= 1; // Adiciona 1 ponto à pontuação
 
                 this.stopped = true; // Alvo para de se movimentar
-                this.target.destroy(); // Destrói o alvo
+                this.target.destroy();
+                this.target = null; // Destrói o alvo
                 this.soundClick.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
                 this.time.delayedCall(1000, () => {
                     this.soundClick.stop(); // Para o som do pombo após 1000ms (1s)
@@ -259,14 +251,13 @@ export default class BasePhase extends Phaser.Scene {
 
     // Função para quando o alvo é clicado
     clickTargetComplete() {
-        this.input.removeAllListeners('pointerdown'); // Ignora todos os cliques anteriores
-        // Quando o mouse é clicado
         this.input.on('pointerdown', (pointer) => {
             this.totalClicks += 1;
             // Se o ponteiro está no alvo
             if (this.target.getBounds().contains(pointer.x, pointer.y) && this.score < this.maxScore) {
                 this.stopped = true; // Alvo para de se movimentar
                 this.target.destroy(); // Remove o pombo da tela
+                this.target = null;
                 this.soundTarget.stop();
                 
                 this.soundClick.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
