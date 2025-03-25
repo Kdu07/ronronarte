@@ -184,9 +184,9 @@ Ademais, é significativo pontuar como tal solução deve ser usada. Em linhas g
 
 ### 1.1.6. Matriz de Riscos (sprint 4)
 
-A matriz de risco consiste em uma ferramenta que auxilia na identificação e avaliação de potenciais obstáculos que podem afetar o desenvolvimento e a conclusão de um projeto, assim como as possíveis oportunidades de elevar o escopo do projeto para uma esfera maior. Para isso, por intermédio de uma estrutura coluna x linha que relaciona probabilidade e impacto, a matriz quantifica e classifica os riscos e oportunidades, de modo a torná-los mais visíveis e, portanto, mais tangíveis para elaborar um plano de ação de modo a mitigar as ameaças e aproveitar as circunstâncias favoráveis. Dessa forma, a matriz de risco e oportunidades é útil para garantir que os esforços e os recursos sejam estrategicamente e adequadamente alocados e para maximizar as chances de sucesso do projeto. 
+&nbsp; &nbsp; &nbsp; &nbsp;A matriz de risco consiste em uma ferramenta que auxilia na identificação e avaliação de potenciais obstáculos que podem afetar o desenvolvimento e a conclusão de um projeto, assim como as possíveis oportunidades de elevar o escopo do projeto para uma esfera maior. Para isso, por intermédio de uma estrutura coluna x linha que relaciona probabilidade e impacto, a matriz quantifica e classifica os riscos e oportunidades, de modo a torná-los mais visíveis e, portanto, mais tangíveis para elaborar um plano de ação de modo a mitigar as ameaças e aproveitar as circunstâncias favoráveis. Dessa forma, a matriz de risco e oportunidades é útil para garantir que os esforços e os recursos sejam estrategicamente e adequadamente alocados e para maximizar as chances de sucesso do projeto. 
 
-Sob essa ótica, segue listados os riscos - bem como o plano de ação correspondente para mitigá-los - e as oportunidades identificadas pela equipe, ressaltando também como eles se enquadram na matriz e seus impactos relevantes sobre o projeto. A figura 3 mostra esses dados de maneira resumida e visual.
+&nbsp; &nbsp; &nbsp; &nbsp;Sob essa ótica, segue listados os riscos - bem como o plano de ação correspondente para mitigá-los - e as oportunidades identificadas pela equipe, ressaltando também como eles se enquadram na matriz e seus impactos relevantes sobre o projeto. A figura 3 mostra esses dados de maneira resumida e visual.
 
 <p align = "center">Figura 3: Matriz de risco</p>
 
@@ -306,13 +306,13 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
 
 ### 1.1.7. Objetivos, Metas e Indicadores (sprint 4)
 
-Os objetivos, as metas e os indicadores de medição foram criados com base na metodologia de metas SMART, a qual define que as metas devem ser Específicas, Mensuráveis, Atribuíveis, Realistas e Temporais. 
+&nbsp; &nbsp; &nbsp; &nbsp;Os objetivos, as metas e os indicadores de medição foram criados com base na metodologia de metas SMART, a qual define que as metas devem ser Específicas, Mensuráveis, Atribuíveis, Realistas e Temporais. 
 
-As metas serem Específicas dizem respeito ao o que será alcançado e quais os passos para que a concretização ocorra; em relação a Mensuráveis, elas abrangem os indicadores para medir a efetivação e o progresso; já Atribuíveis se referem aos responsáveis para a execução da meta; Realista está associado à possibilidade real de a meta ser concreta, ou seja, ser executável; por fim, Temporal se trata da definição de um prazo para atingir a meta.
+&nbsp; &nbsp; &nbsp; &nbsp;As metas serem Específicas dizem respeito ao o que será alcançado e quais os passos para que a concretização ocorra; em relação a Mensuráveis, elas abrangem os indicadores para medir a efetivação e o progresso; já Atribuíveis se referem aos responsáveis para a execução da meta; Realista está associado à possibilidade real de a meta ser concreta, ou seja, ser executável; por fim, Temporal se trata da definição de um prazo para atingir a meta.
 
-Antes de estruturarmos as metas seguindo o modelo SMART, construímo-las no modelo de OKRs (Objectives and Key Results), o qual corresponde a um método simples para criar alinhamento e engajamento em torno de metas mensuráveis. O intuito é definir uma meta qualitativa detalhada (Objectives) e algumas métricas quantitativas (Key Results).
+&nbsp; &nbsp; &nbsp; &nbsp;Antes de estruturarmos as metas seguindo o modelo SMART, construímo-las no modelo de OKRs (Objectives and Key Results), o qual corresponde a um método simples para criar alinhamento e engajamento em torno de metas mensuráveis. O intuito é definir uma meta qualitativa detalhada (Objectives) e algumas métricas quantitativas (Key Results).
 
-Nesse sentido, fizemos nossos OKRs (com auxílio da instrutora de liderança), os quais estão apresentados na figura 4 e descritos no texto que vem em seguida.
+&nbsp; &nbsp; &nbsp; &nbsp;Nesse sentido, fizemos nossos OKRs (com auxílio da instrutora de liderança), os quais estão apresentados na figura 4 e descritos no texto que vem em seguida.
 
 <p align = "center">Figura 4: OKRs</p>
 
