@@ -189,6 +189,7 @@ A matriz de risco consiste em uma ferramenta que auxilia na identificação e av
 Sob essa ótica, segue listados os riscos - bem como o plano de ação correspondente para mitigá-los - e as oportunidades identificadas pela equipe, ressaltando também como eles se enquadram na matriz e seus impactos relevantes sobre o projeto. A figura 3 mostra esses dados de maneira resumida e visual.
 
 <p align = "center">Figura 3: Matriz de risco</p>
+
 ![MatrizdeRisco](https://github.com/user-attachments/assets/e0e8eebb-9f85-470b-a2b3-1dd77247050f)
    Fonte: Tabela de "ferramentasdaqualidade.org"; adaptada pelos autores.
 
