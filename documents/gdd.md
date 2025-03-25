@@ -186,7 +186,11 @@ Ademais, é significativo pontuar como tal solução deve ser usada. Em linhas g
 
 A matriz de risco consiste em uma ferramenta que auxilia na identificação e avaliação de potenciais obstáculos que podem afetar o desenvolvimento e a conclusão de um projeto, assim como as possíveis oportunidades de elevar o escopo do projeto para uma esfera maior. Para isso, por intermédio de uma estrutura coluna x linha que relaciona probabilidade e impacto, a matriz quantifica e classifica os riscos e oportunidades, de modo a torná-los mais visíveis e, portanto, mais tangíveis para elaborar um plano de ação de modo a mitigar as ameaças e aproveitar as circunstâncias favoráveis. Dessa forma, a matriz de risco e oportunidades é útil para garantir que os esforços e os recursos sejam estrategicamente e adequadamente alocados e para maximizar as chances de sucesso do projeto. 
 
-Sob essa ótica, segue listados os riscos - bem como o plano de ação correspondente para mitigá-los - e as oportunidades identificadas pela equipe, ressaltando também como eles se enquadram na matriz e seus impactos relevantes sobre o projeto.
+Sob essa ótica, segue listados os riscos - bem como o plano de ação correspondente para mitigá-los - e as oportunidades identificadas pela equipe, ressaltando também como eles se enquadram na matriz e seus impactos relevantes sobre o projeto. A figura 3 mostra esses dados de maneira resumida e visual.
+
+<p align = "center">Figura 3: Matriz de risco</p>
+![MatrizdeRisco](https://github.com/user-attachments/assets/e0e8eebb-9f85-470b-a2b3-1dd77247050f)
+   Fonte: Tabela de "ferramentasdaqualidade.org"; adaptada pelos autores.
 
 ### Riscos
 
@@ -298,9 +302,6 @@ Sob essa ótica, segue listados os riscos - bem como o plano de ação correspon
    **Impacto:** Muito Alto, visto que tal aspecto aumentaria a visibilidade do projeto e lhe traria uma associação de peso com marcas já reconhecidas no ramo pet.
    
    **Probabilidade:** 10%, haja vista que a equipe não atingiu visibilidade pública de modo a gerar consolidação de parcerias com empresas do ramo pet.
-
-   ![MatrizdeRisco](https://github.com/user-attachments/assets/e0e8eebb-9f85-470b-a2b3-1dd77247050f)
-   Fonte: Tabela de "ferramentasdaqualidade.org"; adaptada pela equipe CatUp.
 
 ### 1.1.7. Objetivos, Metas e Indicadores (sprint 4)
 
