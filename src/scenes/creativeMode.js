@@ -35,6 +35,7 @@ export default class CreativeMode extends BasePhase{
         this.createPalette();
         this.bgMenu = this.add.image(this.width/2, this.height/2, 'bgVictory').setScale(this.width/580).setVisible(false);
         this.frameMenu = this.add.image(this.bgMenu.x, this.bgMenu.y, 'frame').setScale(this.width/700).setVisible(false);
+        this.targetKey = ''
     }
 
     createPalette() {
@@ -114,5 +115,9 @@ export default class CreativeMode extends BasePhase{
         this.splashesButtons.getChildren().forEach(button =>{
             button.setVisible(show);
         })
+    }
+
+    printMode(){
+
     }
 }
