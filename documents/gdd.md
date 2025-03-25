@@ -471,13 +471,12 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 ### 3.3.5. Trilha sonora (sprint 3)
 
-*Descreva a trilha sonora do jogo, indicando quais músicas serão utilizadas no mundo e nas fases. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes.*
+Este som será utilizado quando o botão de jogar (que direciona ao menu de seleção de níveis) for clicado. Dessa forma, esse som foi escolhido pelo fato de simular o som real de clique em um botão, indicando ao usuário que ele, de fato, clicou nele, estando no início do jogo por ser mais tradicional.
 
-*Exemplo de tabela*
-\# | titulo | ocorrência | autoria
---- | --- | --- | ---
-1 | tema de abertura | tela de início | própria
-2 | tema de combate | cena de combate com inimigos comuns | Hans Zimmer
+\# | titulo | ocorrência | autoria | Áudio
+--- | --- | --- | --- | ---
+1 | Som no botão "Jogar" | Quando o botão em questão for clicado | Pixabay | <a href = "https://drive.google.com/file/d/1hQFC5pVdqw617H8M5wLIWrMQGPIt92sz/view?usp=sharing"> Ouça o áudio clicando aqui!</a>
+2 | tema de combate | cena de combate com inimigos comuns | Hans Zimmer | 
 3 | ... 
 
 ## 3.4. Inventário e Bestiário (sprint 3)
