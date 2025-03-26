@@ -446,6 +446,10 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 <p align = 'center'>Fonte: autoria própria (2025).</p>
 
+<p align = 'center'>Figura 4 - Figura do rato mecânico (RonRonArte)</p><br>
+<div align = 'center'>
+	<img src = "
+
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 &nbsp; &nbsp; &nbsp; &nbsp;O RonRonArte contém inclusão em sua jogabilidade, uma vez que o jogador, em algumas fases, é convidado a conhecer mais sobre uma obra cujo autor pertence a um grupo sub-representado no universo artístico. 
