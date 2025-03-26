@@ -23,18 +23,8 @@ export default class CreativeMode extends BasePhase{
         this.height = this.scale.height;
 
         //A função create do modo criativo herda da função create da clase BasePhase
-        super.create();
+        super.create();       
         
-        this.pauseBtn.setDepth(20);
-
-        this.printBtn = this.add.image(this.width / 2, this.height * 0.08, 'buttonPrint')
-        .setDepth(20)
-        .setScale(this.width/400)
-        .setInteractive();
-        this.printBtn.on('pointerdown', () => {
-            this.printMode()
-        });
-
         this.createPalette();
     }
 
@@ -43,7 +33,17 @@ export default class CreativeMode extends BasePhase{
         .setScale(this.width / 9000)
         .setInteractive()
         .setDepth(20);
+
+        this.printBtn = this.add.image(this.width / 2, this.height * 0.08, 'buttonPrint')
+        .setDepth(20)
+        .setScale(this.width/400)
+        .setInteractive();
+        this.printBtn.on('pointerdown', () => {
+            this.printMode()
+        });
         
+        //this.createHoldButton([this.palette, this.printBtn])
+
         this.bgMenu = this.add.image(this.width/2, this.height/2, 'bgVictory')
         .setScale(this.width/580)
         .setVisible(false)
@@ -176,11 +176,11 @@ export default class CreativeMode extends BasePhase{
     printMode(){
         this.target.setVisible(false);
         this.palette.setVisible(false);
-        this.pauseBtn.setVisible(false);
+        this.btnDict[0].button.setVisible(false);
         this.printBtn.setVisible(false);
         this.soundTarget.pause()
 
-        this.printText = this.add.text(this.width/4, this.height/2, 'Tire um printscreen da tela!', {fontFamily:'Futura',fontSize:this.width/22, fill:'#000'});
+        this.printText = this.add.text(this.width/4, this.height/2, 'Tire um printscreen da tela!', {fontFamily:'Futura',fontSize:this.width/22, fill:'#000'}).setDepth(20);
 
         setTimeout(() => {
             this.printText.setVisible(false);
@@ -189,7 +189,7 @@ export default class CreativeMode extends BasePhase{
         setTimeout(() => {
             this.target.setVisible(true);
             this.palette.setVisible(true);
-            this.pauseBtn.setVisible(true);
+            this.btnDict[0].button.setVisible(true);
             this.printBtn.setVisible(true);
             this.soundTarget.play()
         }, 5000);

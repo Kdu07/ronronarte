@@ -119,27 +119,46 @@ export default class BasePhase extends Phaser.Scene {
         this.painting.setMask(this.mask);
     }
 
-    createHoldButton() {
-        this.hold = false;
+    createHoldButton(buttons=[]) {
+        let pauseBtn = this.add.image(this.width/40, this.height/18, 'pauseBtn')
+        .setScale(this.width/1000)
+        .setDepth(20)
+        .setInteractive();
 
+        this.buttons = buttons;
+        this.buttons.push(pauseBtn);
+        
+        this.btnDict = [];
         // Cria um botão de pause na tela
-        this.pauseBtn = this.add.image(this.width/40, this.height/18, 'pauseBtn').setScale(this.width/1000)
+        // this.pauseBtn = this.add.image(this.width/40, this.height/18, 'pauseBtn').setScale(this.width/1000)
         
         // Torna o botão de pause clicável
-        this.pauseBtn.setInteractive()
+        // this.pauseBtn.setInteractive()
 
-        this.spriteLoading = this.add.sprite(this.width/40, this.height/10, 'spriteLoading')
-        .setScale(this.width/8000)
-        .setInteractive()
-        .setVisible(false);
+        this.buttons.forEach((btn, i) => {            
+            let spriteLoading = this.add.sprite(this.width/40, this.height/10, 'spriteLoading')
+            .setScale(this.width/8000)
+            .setInteractive()
+            .setVisible(false);
+    
+            this.btnDict.push({
+                button: btn,
+                hold: false,
+                load: spriteLoading
+            })
+            //console.log(this.btnDict[i].button)
+            console.log(this.btnDict[i].hold)
+            console.log(this.btnDict[i].load)
 
-        // Cria o botão de pular o tutorial
-        this.pauseBtn.on('pointerdown', (pointer) => {
-            this.hold = true
-        });
 
-        this.pauseBtn.on('pointerup', (pointer) => {
-            this.hold = false
+            // Cria o botão de pular o tutorial
+            btn.on('pointerdown', () => {
+                this.btnDict[i].hold = true
+            });
+
+            btn.on('pointerup', () => {
+                this.btnDict[i].hold = false
+            });
         });
     }
 
@@ -149,7 +168,12 @@ export default class BasePhase extends Phaser.Scene {
             this.movement(this.target);  
         }
 
-        this.updateHoldButton()
+        this.updateHoldButton(() => {
+            this.soundPause.play({ volume: 0.5 });
+            this.soundTarget.stop();
+            this.scene.start("LevelSelect");
+            this.scene.stop(this.phaseKey);
+        })
     }
 
     // Função para contar o tempo no temporizador
@@ -158,20 +182,26 @@ export default class BasePhase extends Phaser.Scene {
         this.timerText.setText(this.elapsedSeconds);
     }
 
-    updateHoldButton(){
-        if (this.hold){
-            this.spriteLoading.setVisible(true);
-            this.spriteLoading.anims.play('SpriteLoading',true);
-
-            if (this.spriteLoading.anims.currentFrame.index == 5){
-                this.soundPause.play({ volume: 0.5 });
-                this.soundTarget.stop();
-                this.scene.start("LevelSelect");
-                this.scene.stop(this.phaseKey);
+    updateHoldButton(holdAction){
+        this.btnDict.forEach((btn, i) => {
+            if (btn.hold){
+                btn.load.setVisible(true);
+                btn.load.anims.play('SpriteLoading',true);
+    
+                if (btn.load.anims.currentFrame.index == 5){
+                    holdAction()
+                    
+                    /*
+                    this.soundPause.play({ volume: 0.5 });
+                    this.soundTarget.stop();
+                    this.scene.start("LevelSelect");
+                    this.scene.stop(this.phaseKey);
+                    */
+                }
+            }else{
+                btn.load.anims.stop().setFrame(0).setVisible(false);
             }
-        }else{
-            this.spriteLoading.anims.stop().setFrame(0).setVisible(false);
-        }
+        });
     }
 
     spawnTarget() {
@@ -420,12 +450,10 @@ export default class BasePhase extends Phaser.Scene {
         target.x += target.speedX * target.directionX;
         target.y += target.speedY * target.directionY; // Fim
         
-        /*
         console.log("Posição X" + target.x)
         console.log("Posição Y" + target.y)
         console.log("Velocidade X" + target.speedX)
         console.log("Velocidade Y" + target.speedY)
         console.log("------------------------------------")
-        */
     }
 }
