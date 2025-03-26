@@ -172,6 +172,7 @@ Exemplos:
 
 ### 1.1.4. Proposta de Valor (sprint 4)
 
+<p align = "center">Figura 3: Canva proposta de valor.</p>
 ![Canva](https://github.com/user-attachments/assets/e8911524-e037-4c68-9acb-9371fa7c52b9)
 
 
@@ -189,7 +190,7 @@ Exemplos:
 
 &nbsp; &nbsp; &nbsp; &nbsp;Sob essa ótica, segue listados os riscos - bem como o plano de ação correspondente para mitigá-los - e as oportunidades identificadas pela equipe, ressaltando também como eles se enquadram na matriz e seus impactos relevantes sobre o projeto. A figura 3 mostra esses dados de maneira resumida e visual.
 
-<p align = "center">Figura 3: Matriz de risco</p>
+<p align = "center">Figura 4: Matriz de risco</p>
 
 ![MatrizdeRisco](https://github.com/user-attachments/assets/6d8b846c-4bbf-4a6c-b44a-f4d68b49b665)
    Fonte: Tabela de "ferramentasdaqualidade.org", adaptada pelos autores.
@@ -315,7 +316,7 @@ Exemplos:
 
 &nbsp; &nbsp; &nbsp; &nbsp;Nesse sentido, fizemos nossos OKRs (com auxílio da instrutora de liderança), os quais estão apresentados na figura 4 e descritos no texto que vem em seguida.
 
-<p align = "center">Figura 4: OKRs</p>
+<p align = "center">Figura 5: OKRs</p>
 
 ![image](https://github.com/user-attachments/assets/e55c9777-5929-4b70-a3fc-d7b1fe223c86)
 
@@ -439,7 +440,7 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 ### 3.2.1. Controláveis
 &nbsp; &nbsp; &nbsp; &nbsp;No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador, haja vista que o intuito do jogo é justamente incentivar hábitos de caça ao gato por intermédio de figuras clicáveis na tela (no caso, spritesheets). Desse modo, o objetivo não é que o jogador controle algum personagem no game, mas sim que ele possa eliminá-lo no decorrer do jogo em troca de recompensas alimentícias, a fim de que seus instintos naturais sejam estimulados. Portanto, especificamente no escopo de RonRonArte, o player pode interpretar tal circunstância como um meio pelo qual ele realiza uma ação e, em troca, ganha algo, associando o atingimento de objetivos com as recompensas supracitadas. A partir disso, abaixo estão as spritesheets correspondentes ao que acima foi observado.
 
-<p align = 'center'>Figura 3 - Figura do pombo (RonRonArte)</p><br>
+<p align = 'center'>Figura 6 - Figura do pombo (RonRonArte)</p><br>
 <div align = 'center'>
   <img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/pombo.png?raw=true">
 </div><br>
@@ -448,7 +449,7 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 
 
-<p align = 'center'>Figura 4 - Figura do rato mecânico (RonRonArte)</p><br>
+<p align = 'center'>Figura 7 - Figura do rato mecânico (RonRonArte)</p><br>
 <div align = 'center'>
 	<img src = "https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/rat-spritesheet.png">
 </div><br>
@@ -457,7 +458,7 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 
 
-<p align = 'center'>Figura 5 - Figura da lagartixa (RonRonArte)</p><br>
+<p align = 'center'>Figura 8 - Figura da lagartixa (RonRonArte)</p><br>
 <div align = 'center'>
 	<img src = "https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/lagartixa-Sheet.png">
 </div><br>
@@ -482,7 +483,7 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 ### 3.3.4. Concept Art (sprint 2)
 &nbsp; &nbsp; &nbsp; &nbsp;Uma Concept Art é um fluxo de imagens que mostra as características e os elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo. Com base nisso, realizou-se uma Concept Art de RonRonArte, de maneira a explicitar quais são os seus principais itens visuais e de história.
 
-<p align = "center">Figura 4: Concept Art - RonRonArte</p>
+<p align = "center">Figura 9: Concept Art - RonRonArte</p>
 
 ![Concept Art - RonRonArte](https://github.com/user-attachments/assets/02076a74-0104-458c-9fb8-1428158ba6bd)
 
@@ -531,10 +532,12 @@ Este som será utilizado quando o botão de jogar (que direciona ao menu de sele
 --- | --- | --- | --- | --- | --- | ---
 1 | Pombo |![pombo](https://github.com/user-attachments/assets/a5622248-210c-4bab-b020-a67c1c3a113e)| Tutorial e Fase 1 | Voa em direção aléatoria para que o jogador tente acertá-lo | Ao atingido revela uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes. | Som de pombo
 2 | Rato Robótico |![alvo rato](https://github.com/user-attachments/assets/905b4948-8cce-4f84-946a-0f0f9d8e252c)| Fase 2 | Anda pela tela em direção aléatoria para que o jogador tente acertá-lo | Ao atingido revela uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes. | Som de rato
+3 | Lagartixa | ![lagartixa](https://github.com/user-attachments/assets/38d50908-28bb-48b6-b896-9516b90484cf) | Fase 4 | Anda pela tela em direção aleatória para que o jogador tente acertá-lo | Ao acertá-lo, deixará seu rabo cair e continuará correndo sem o rabo e mais rápido, fazendo com que seja necessário ser atingido novamente. Após ser atingido pela segunda vez, revelará uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes | Som de lagarto
+
 
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
-<p align ="center">Figura 5: diagrama de cenas - RonRonArte</p>
+<p align ="center">Figura 10: diagrama de cenas - RonRonArte</p>
 
 <img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/Diagrama%20de%20Cenas%20(2).png">
 <p align ="center">Fonte: autoria própria (2025).</p> <br>
@@ -651,7 +654,7 @@ Classes, métodos e atributos: ainda não implementados.
 
 &nbsp; &nbsp; &nbsp; &nbsp;Logo abaixo, estão registrados os prints das telas da primeira versão do jogo.
 
-<p align = "center">Figura 6: tela de início do jogo</p>
+<p align = "center">Figura 11: tela de início do jogo</p>
 
 ![tela de start RonRonArte](https://github.com/user-attachments/assets/30f3865b-5e98-49f1-906e-e886c33ee157)
 
@@ -659,7 +662,7 @@ Classes, métodos e atributos: ainda não implementados.
 
 
 
-<p align = "center">Figura 7: tela com a primeira cena</p>
+<p align = "center">Figura 12: tela com a primeira cena</p>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/a2107a97-8d01-4339-8469-bef594f42c61" width="300">
@@ -669,7 +672,7 @@ Classes, métodos e atributos: ainda não implementados.
 
 
 
-<p align = "center">Figura 8: tela da primeira cena com os splashes de tinta</p>
+<p align = "center">Figura 13: tela da primeira cena com os splashes de tinta</p>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/9581c99b-c61d-407d-bb58-b492f8a47998" width="300">
@@ -700,7 +703,7 @@ Eventuais dificuldades presentes no projeto:
 - Produção dos sprites/artes do jogo.
 
 Logo abaixo, estão as telas da versão básica do jogo.
-<p align = 'center'>Figura 9: tela de instruções</p>
+<p align = 'center'>Figura 14: tela de instruções</p>
 <div align = 'center'>
   <img width="935" alt="image" src="https://github.com/user-attachments/assets/7081f995-b960-4c10-84eb-42fedf96822f" />
 </div><br>
@@ -708,43 +711,43 @@ Logo abaixo, estão as telas da versão básica do jogo.
 <p align = 'center'>Fonte: autoria própria (2025).</p> <br>
 
 
-<p align = 'center'>Figura 10: tela de tutorial</p>
+<p align = 'center'>Figura 15: tela de tutorial</p>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/510f51b9-c320-4c1d-ab87-3690abf2d989" />
 </div><br>
 <p align = 'center'>Fonte: autoria própria (2025).</p><br>
 
 
-<p align = 'center'>Figura 11: tela do início das fases</p>
+<p align = 'center'>Figura 16: tela do início das fases</p>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/554c235d-a9b9-4f88-8729-2b6302444569" />
 </div><br>
 <p align = 'center'>Fonte: autoria própria (2025).</p> <br>
 
 
-<p align = 'center'>Figura 12: tela de pintura da fase 1</p>
+<p align = 'center'>Figura 17: tela de pintura da fase 1</p>
 <div align = 'center'>
   <img width="933" alt="image" src="https://github.com/user-attachments/assets/8f147d35-bbad-40ca-b773-183bf5c93b6d" />
 </div><br>
 <p align = 'center'>Fonte: autoria própria (2025).</p><br>
 
 
-<p align = 'center'>Figura 13: tela de vitória da fase 1</p>
+<p align = 'center'>Figura 18: tela de vitória da fase 1</p>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/1790cca4-9119-4d94-ac4f-9f7220c094aa" />
 </div><br>
 <p align = 'center'>Fonte: autoria própria (2025).</p><br>
 
 
-<p>Também está representada a modularização do código nas figuras 14 e 15.</p>
-<p align = 'center'>Figura 14: estrutura das pastas após a modularização do código</p>
+<p>Também está representada a modularização do código nas figuras 19 e 20.</p>
+<p align = 'center'>Figura 19: estrutura das pastas após a modularização do código</p>
 <div align = 'center'>
   <img width="30%" alt="image" src="https://github.com/user-attachments/assets/76b12c16-e454-40a5-80c3-d23deaa03a73"/>
 </div><br>
 <p align = 'center'>Fonte: autoria própria (2025).</p> <br> <br>
 
 
-<p align = 'center'>Figura 15: estrutura da versão básica do jogo (com importações de cenas phaser)</p>
+<p align = 'center'>Figura 20: estrutura da versão básica do jogo (com importações de cenas phaser)</p>
 <div align = 'center'>
   <img width="70%" alt="image" src="https://github.com/user-attachments/assets/a3d6a5f5-8cad-4108-906c-16fae2e00bf4"/>
 </div><br>
@@ -754,37 +757,46 @@ Logo abaixo, estão as telas da versão básica do jogo.
 
 &nbsp; &nbsp; &nbsp; &nbsp;No desenvolvimento intermediário do jogo, foram acrescentados mais itens ao game em relação à versão preliminar. Em termos de código, foi adicionada uma classe “basePhase”, que servirá de arquétipo para o desenvolvimento de todas as outras, parecido com um template. Já em termos de jogo, iniciou-se a implementação do modo criativo do game, que já possui sua principal característica implementada: a seleção de cores por parte do tutor em uma paleta na tela, a fim que seu gato produza suas próprias pinturas de modo personalizado. Por fim, adicionou-se um menu de seleção de níveis, no qual o tutor poderá escolher entre a fase de tutorial, as fases propostas ou o modo criativo.
 
-Figura 1: Parte do código da classe "basePhase"
+Figura 21: Parte do código da classe "basePhase"
 ![image](https://github.com/user-attachments/assets/83390710-7f10-4187-8cd2-be09a1f2bf78)
 
-Figura 2: Menu de seleção de cores do modo criativo: 
+Figura 22: Menu de seleção de cores do modo criativo: 
 ![image](https://github.com/user-attachments/assets/9e9e0d25-60c2-489e-8f7c-824716c41477)
 
-Figura 3: Modo criativo com splashs na tela:
+Figura 23: Modo criativo com splashs na tela:
 ![image](https://github.com/user-attachments/assets/5548a0db-fa8e-48ef-8f14-29c151f0af5b)
 
-Figura 3: Tela de seleção de níveis
+Figura 24: Tela de seleção de níveis
 ![image](https://github.com/user-attachments/assets/e1aa419d-1854-41b3-a25d-f77681b1f998)
 
 
 ## 4.4. Desenvolvimento final do MVP (sprint 4)
 
-Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, como a mudança do storytelling central do jogo e de suas fases, reformulação da tela de vitória, as pinturas definitivas foram definidas, assets sonoros foram definidos e implementados, e foram feitos alguns acabamentos para deixar o jogo mais polido. As novas artes determinadas para as fases de nosso jogo foram: "A Noiva", de Maria Auxiliadora; "Spoliarium" de Juan Luna; "J'aime la couleur" de Chéri Samba; "Aboriginal design, with Sturt's Pea" de Margaret Preston. (Figuras 1 a 4). A nova tela de vitória conta com uma pontuação (quantidade de pombos acertados) e uma contagem de tempo que juntos representam uma pontuação em formato de estrelas (Figura 5). 
+Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, como a mudança do storytelling central do jogo e de suas fases, reformulação da tela de vitória e modo criativo, as pinturas definitivas foram definidas, assets sonoros foram definidos e implementados, e foram feitos alguns acabamentos para deixar o jogo mais polido. As novas artes determinadas para as fases de nosso jogo foram: "A Noiva", de Maria Auxiliadora; "Spoliarium" de Juan Luna; "J'aime la couleur" de Chéri Samba; "Aboriginal design, with Sturt's Pea" de Margaret Preston. (Figuras 25 a 28). A nova tela de vitória conta com uma pontuação (quantidade de pombos acertados) e uma contagem de tempo que juntos representam uma pontuação em formato de estrelas (Figura 29). A reformulação do modo criativo conta com um novo botão para o tutor tirar print da obra de seu gato, além de um botão de paletas que permite que o tutor escolha diferentes paletas e formatos de pincel (Figuras 30 a 32).
 
-Figura 1: Tela com o quadro da fase 1:
+Figura 25: Tela com o quadro da fase 1:
 ![image](https://github.com/user-attachments/assets/2f68942c-cbfd-4ab6-92e9-59cde50d2dad)
 
-Figura 2: Tela com o quadro da fase 2:
+Figura 26: Tela com o quadro da fase 2:
 ![image](https://github.com/user-attachments/assets/2774d2d9-825f-4107-8c02-8a1398365807)
 
-Figura 3: Tela com o quadro da fase 3:
+Figura 27: Tela com o quadro da fase 3:
 ![image](https://github.com/user-attachments/assets/7f480025-fb30-4144-a4c4-1e52420935ac)
 
-Figura 4: Tela com o quadro da fase 4:
+Figura 28: Tela com o quadro da fase 4:
 ![image](https://github.com/user-attachments/assets/70e6fb38-d8b0-449b-8cea-679db402bc2b)
 
-Figura 5: Tela de vitória atualizada:
+Figura 29: Tela de vitória atualizada:
 ![image](https://github.com/user-attachments/assets/eca91e13-1d08-4410-bf98-29bda8787df9)
+
+Figura 30: Tela do modo criativo:
+![image](https://github.com/user-attachments/assets/697b9288-3389-429f-8731-20b201418641)
+
+Figura 31: Tela do modo criativo(2):
+![image](https://github.com/user-attachments/assets/3ca18bcf-9bfd-4c33-9762-8dceff3a37c9)
+
+Figura 32: Tela de seleção de paletas modo criativo:
+![image](https://github.com/user-attachments/assets/58eefa74-c00e-4645-b137-27ee1eb0fdaf)
 
 
 ## 4.5. Revisão do MVP (sprint 5)
