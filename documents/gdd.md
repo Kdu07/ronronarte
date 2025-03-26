@@ -320,20 +320,20 @@ Exemplos:
 
 <p align = "center">Fonte: material produzido pelos autores (2025).</p>
 
-Objetivo 1: Ter comunicação clara e eficiente entre os membros da equipe, de modo que todos permaneçam engajados.
+Objetivo 1: Entregar o melhor MVP possível com a proposta de melhorar a relação entre tutor e gato de maneira inovadora, através da arte.
+
+Key Results:
+- Aumentar a frequência das reviews em grupo das tasks de 0 para 1 vez por semana;
+- Cada membro completar ao menos uma task P por dia ou 1 task M a cada dois dias ou uma task G a cada 3 dias;
+- Aumentar a nota de todos os artefatos para, no mínimo, 9,0.
+
+Objetivo 2: Ter comunicação clara e eficiente entre os membros da equipe, de modo que todos permaneçam engajados.
 
 Key Results:
 - Ter, no máximo, duas faltas na daily por sprint;
 - Utilizar mais os canais de comunicação como Slack e Whatsapp para comunicar 100% das tasks feitas fora do horário de desenvolvimento do projeto e de reviews feitas individualmente;
 - Ter, no máximo, duas faltas no fechamento por sprint.
 
-
-Objetivo 2: Entregar o melhor MVP possível com a proposta de melhorar a relação entre tutor e gato de maneira inovadora, através da arte.
-
-Key Results:
-- Aumentar a frequência das reviews em grupo das tasks de 0 para 1 vez por semana;
-- Cada membro completar ao menos uma task P por dia ou 1 task M a cada dois dias ou uma task G a cada 3 dias;
-- Aumentar a nota de todos os artefatos para, no mínimo, 9,0.
 
 Além disso, seguem os objetivos estruturados no molde SMART: 
 
