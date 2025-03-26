@@ -106,7 +106,7 @@ export default class BasePhase extends Phaser.Scene {
         this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setDisplaySize(this.width, this.width/1.4);
         this.painting = this.add.image(this.width / 2, this.height / 2, this.backgroundKey).setDisplaySize(this.width/1.11, (this.width / 1.77)/1.37);
         this.frame = this.add.image(this.width / 2, this.height / 2, 'frame').setDisplaySize(this.width, this.height);
-        this.frameHitbox = this.frame.displayWidth / 20;
+        this.frameHitbox = this.frame.displayWidth / 30;
 
         // Torna o quadro visível
         this.painting.setAlpha(1);
@@ -234,8 +234,8 @@ export default class BasePhase extends Phaser.Scene {
         this.target.VyMin = 0; // Velocidade mínima no eixo y
 
         // Hitbox do pombo (usado para que não saia da tela)
-        this.target.hitboxWidth = this.target.width;
-        this.target.hitboxHeight = this.target.height;
+        this.target.hitboxWidth = this.target.width*this.width/400*0.4;
+        this.target.hitboxHeight = this.target.height*this.width/400*0.4;
 
         // Inicia a animação de voo do pombo
         this.target.play(this.animKey);
