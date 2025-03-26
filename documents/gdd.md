@@ -720,25 +720,39 @@ Logo abaixo, estão as telas da versão básica do jogo.
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
 
-&nbsp; &nbsp; &nbsp; &nbsp;No desenvolvimento intermediário do jogo, foram acrescentados mais itens ao game em relação à versão intermediária. Em termos de código, foi adicionada uma classe “basePhase”, que servirá de arquétipo para o desenvolvimento de todas as outras, parecido com um template. Já em termos de jogo, iniciou-se a implementação do modo criativo do game, que já possui sua principal característica implementada: a seleção de cores por parte do tutor em uma paleta na tela, a fim que seu gato produza suas próprias pinturas de modo personalizado. Por fim, adicionou-se um menu de seleção de níveis, no qual o tutor poderá escolher entre a fase de tutorial, as fases propostas ou o modo criativo.
+&nbsp; &nbsp; &nbsp; &nbsp;No desenvolvimento intermediário do jogo, foram acrescentados mais itens ao game em relação à versão preliminar. Em termos de código, foi adicionada uma classe “basePhase”, que servirá de arquétipo para o desenvolvimento de todas as outras, parecido com um template. Já em termos de jogo, iniciou-se a implementação do modo criativo do game, que já possui sua principal característica implementada: a seleção de cores por parte do tutor em uma paleta na tela, a fim que seu gato produza suas próprias pinturas de modo personalizado. Por fim, adicionou-se um menu de seleção de níveis, no qual o tutor poderá escolher entre a fase de tutorial, as fases propostas ou o modo criativo.
+
+Figura 1: Parte do código da classe "basePhase"
+![image](https://github.com/user-attachments/assets/83390710-7f10-4187-8cd2-be09a1f2bf78)
+
+Figura 2: Menu de seleção de cores do modo criativo: 
+![image](https://github.com/user-attachments/assets/9e9e0d25-60c2-489e-8f7c-824716c41477)
+
+Figura 3: Modo criativo com splashs na tela:
+![image](https://github.com/user-attachments/assets/5548a0db-fa8e-48ef-8f14-29c151f0af5b)
+
+Figura 3: Tela de seleção de níveis
+![image](https://github.com/user-attachments/assets/e1aa419d-1854-41b3-a25d-f77681b1f998)
+
 
 ## 4.4. Desenvolvimento final do MVP (sprint 4)
 
-Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, como a implementação do modo criativo, a mudança do storytelling central do jogo e de suas fases, reformulação da tela de vitória, as pinturas definitivas foram definidas, assets sonoros foram definidos e implementados, e foram feitos alguns acabamentos para deixar o jogo mais polido.  As novas artes determinadas para as fases de nosso jogo foram: "A Noiva", de Maria Auxiliadora; "Spoliarium" de Juan Luna; "J'aime la couleur" de Chéri Samba; "Aboriginal design, with Sturt's Pea" de Margaret Preston. (ilustrações de 1 a 4)
+Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, como a mudança do storytelling central do jogo e de suas fases, reformulação da tela de vitória, as pinturas definitivas foram definidas, assets sonoros foram definidos e implementados, e foram feitos alguns acabamentos para deixar o jogo mais polido. As novas artes determinadas para as fases de nosso jogo foram: "A Noiva", de Maria Auxiliadora; "Spoliarium" de Juan Luna; "J'aime la couleur" de Chéri Samba; "Aboriginal design, with Sturt's Pea" de Margaret Preston. (Figuras 1 a 4). A nova tela de vitória conta com uma pontuação (quantidade de pombos acertados) e uma contagem de tempo que juntos representam uma pontuação em formato de estrelas (Figura 5). 
 
 Figura 1: Tela com o quadro da fase 1:
-![image](https://github.com/user-attachments/assets/fb06e5a2-517e-4758-abbe-26e6497d367d)
+![image](https://github.com/user-attachments/assets/2f68942c-cbfd-4ab6-92e9-59cde50d2dad)
 
 Figura 2: Tela com o quadro da fase 2:
-![image](https://github.com/user-attachments/assets/d9a62cfe-7902-4334-ac1b-b0747329f2d9)
+![image](https://github.com/user-attachments/assets/2774d2d9-825f-4107-8c02-8a1398365807)
 
 Figura 3: Tela com o quadro da fase 3:
-![image](https://github.com/user-attachments/assets/51c422f3-c85e-4df6-8bfe-289c292d189d)
+![image](https://github.com/user-attachments/assets/7f480025-fb30-4144-a4c4-1e52420935ac)
 
 Figura 4: Tela com o quadro da fase 4:
-![image](https://github.com/user-attachments/assets/d706f2f9-e53b-4162-84e5-820a13cd59df)
+![image](https://github.com/user-attachments/assets/70e6fb38-d8b0-449b-8cea-679db402bc2b)
 
-
+Figura 5: Tela de vitória atualizada:
+![image](https://github.com/user-attachments/assets/eca91e13-1d08-4410-bf98-29bda8787df9)
 
 
 ## 4.5. Revisão do MVP (sprint 5)
