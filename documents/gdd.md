@@ -463,7 +463,8 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 <p align = "center">Figura 4: Concept Art - RonRonArte</p>
 
-![Concept Art - RonRonArte](https://github.com/user-attachments/assets/c83e725a-4a16-47f9-b950-1ee1616377ca)
+![Concept Art - RonRonArte](https://github.com/user-attachments/assets/02076a74-0104-458c-9fb8-1428158ba6bd)
+
 
 <p align = "center">Fonte: autoria própria (2025).</p> <br>
 
