@@ -8,11 +8,23 @@ export default class Menu extends Phaser.Scene{
     create() {
         // Cria imagens de background e botão jogar
         this.bgMenu = this.add.image(this.scale.width/2, this.scale.height/2, 'bgMenu').setDisplaySize(this.scale.width, this.scale.height);
-        this.startButton = this.add.image(this.scale.width/1.95, this.scale.height/2, 'startButton').setScale(this.scale.width/800).setInteractive({cursor: "pointer"});
+        this.startButton = this.add.sprite(this.scale.width/1.95, this.scale.height/2, 'buttonPlay').setScale(this.scale.width/800).setInteractive({cursor: "pointer"});
+        
+        this.anims.create({
+            key:'startButtonPress',
+            frames: this.anims.generateFrameNumbers('buttonPlay', {start: 0, end:1}),
+            frameRate: 10,
+            repeat: 0,
+        });
+
 
         // Quando o botão jogar for clicado direciona para o menu de seleção de níveis
         this.startButton.on("pointerdown", () => {
-            this.soundPlay = this.sound.add('soundPlayButton').play();
+            this.scale.startFullscreen(); // Coloca o jogo em tela cheia
+            this.startButton.play('startButtonPress')
+            this.startButton.once('animationcomplete', () => {
+                this.startButton.setFrame(0);
+            })
             
             this.scale.startFullscreen(); // Coloca o jogo em tela cheia
             

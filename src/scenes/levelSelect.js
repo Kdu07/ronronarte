@@ -15,12 +15,63 @@ export default class LevelSelect extends Phaser.Scene {
         this.selectPhase4 = this.add.image(this.scale.width*0.6, this.scale.height*0.75, 'selectPhase4').setScale(this.scale.width/1000).setInteractive();
 
         // Se o usuário selecionar a imagem que remete à primeira fase, ele será direcionado para a primeira fase
-        this.changeScene(this.selectTutorial, 'Tutorial');
-        this.changeScene(this.selectPhase1, 'Phase1');
-        this.changeScene(this.selectPhase2, 'Phase2');
-        this.changeScene(this.selectPhase3, 'Phase3');
-        this.changeScene(this.selectPhase4, 'Phase4');
-        this.changeScene(this.selectCriative, 'CreativeMode');
+        this.selectTutorial.on('pointerdown', () => {
+            this.scene.launch('OverlayScene'); // Lança a cena sobreposta
+            this.scene.bringToTop('OverlayScene');
+            this.selectTutorial.setScale(this.scale.width/3000);
+            this.time.delayedCall(1500, () => {
+                this.scene.start("Tutorial");
+            });
+        });
+        
+        this.selectPhase1.on('pointerdown', () => {
+            this.scene.launch('OverlayScene'); // Lança a cena sobreposta
+            this.scene.bringToTop('OverlayScene');
+            this.selectPhase1.setScale(this.scale.width/900);
+            this.time.delayedCall(1500, () => {
+                this.scene.start("Phase1");
+            });
+        });
+
+
+        this.selectPhase2.on('pointerdown', () => {
+            this.scene.launch('OverlayScene'); // Lança a cena sobreposta
+            this.scene.bringToTop('OverlayScene');
+            this.selectPhase2.setScale(this.scale.width/900);
+            this.time.delayedCall(1500, () => {
+                this.scene.start("Phase2");
+            });
+        });
+
+
+        this.selectPhase3.on('pointerdown', () => {
+            this.scene.launch('OverlayScene'); // Lança a cena sobreposta
+            this.scene.bringToTop('OverlayScene');
+            this.selectPhase3.setScale(this.scale.width/900);
+            this.time.delayedCall(1500, () => {
+                this.scene.start("Phase3");
+            });
+        });
+
+
+        this.selectPhase4.on('pointerdown', () => {
+            this.scene.launch('OverlayScene'); // Lança a cena sobreposta
+            this.scene.bringToTop('OverlayScene');
+            this.selectPhase4.setScale(this.scale.width/900);
+            this.time.delayedCall(1500, () => {
+                this.scene.start("Phase4");
+            });
+        });
+
+
+        this.selectCriative.on('pointerdown', () => {        
+            this.scene.launch('OverlayScene'); // Lança a cena sobreposta
+            this.scene.bringToTop('OverlayScene');
+            this.selectCriative.setScale(this.scale.width/3000);
+            this.time.delayedCall(1500, () => {
+                this.scene.start("CreativeMode");
+            }); 
+        });
     }; 
 
     changeScene(selectPhase, phaseKey) {
