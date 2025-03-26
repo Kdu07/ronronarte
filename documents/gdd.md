@@ -191,7 +191,7 @@ Exemplos:
 
 <p align = "center">Figura 3: Matriz de risco</p>
 
-![MatrizdeRisco](https://github.com/user-attachments/assets/e0e8eebb-9f85-470b-a2b3-1dd77247050f)
+![MatrizdeRisco](https://github.com/user-attachments/assets/6d8b846c-4bbf-4a6c-b44a-f4d68b49b665)
    Fonte: Tabela de "ferramentasdaqualidade.org", adaptada pelos autores.
 
 ### Riscos
