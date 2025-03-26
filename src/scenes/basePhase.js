@@ -218,19 +218,19 @@ export default class BasePhase extends Phaser.Scene {
         let posY = Phaser.Math.Between(100,this.height-100);
     
         // Adiciona o pombo e torna interativo
-        this.target = this.add.sprite(posX, posY, this.targetKey).setScale(5/*this.width/400*/);
+        this.target = this.add.sprite(posX, posY, this.targetKey).setScale(this.width/400);
         this.target.setInteractive();
     
         // Configura a velocidade aleatória do pombo e a direção inicial de movimento
-        this.target.speedX = Phaser.Math.Between(4, 5);
-        this.target.speedY = Phaser.Math.Between(1, 2);
+        this.target.speedX = Phaser.Math.Between(6, 9);
+        this.target.speedY = Phaser.Math.Between(2, 6);
         this.target.directionX = -1;
         this.target.directionY = 1;
 
         // Configura aceleração do pombo no eixo y
-        this.target.accelerationY = Phaser.Math.FloatBetween(0.02, 0.03);
+        this.target.accelerationY = Phaser.Math.FloatBetween(0.02, 0.08);
         this.target.t = 0; // Tempo inicial
-        this.target.VyMax = 5; // Velocidade máxima no eixo y
+        this.target.VyMax = 9; // Velocidade máxima no eixo y
         this.target.VyMin = 0; // Velocidade mínima no eixo y
 
         // Hitbox do pombo (usado para que não saia da tela)
@@ -293,7 +293,7 @@ export default class BasePhase extends Phaser.Scene {
                 this.scoreboard.setText(this.score + '/' + this.maxScore); // Atualiza o placar 
 
                 // Cria um splash no local do clique e revela a mesma área do quadro
-                this.splash = this.add.image(pointer.x, pointer.y, 'splashPhases').setScale(this.width/800);
+                this.splash = this.add.image(pointer.x, pointer.y, 'splashPhases').setScale(this.width/(200*this.maxScore));
                 this.splash.setAlpha(1);
                 this.revealMask.draw(this.splash, this.splash.x, this.splash.y);
                 this.splash.destroy(); //Remove o splash após liberar a área
