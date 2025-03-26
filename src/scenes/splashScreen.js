@@ -83,6 +83,7 @@ export default class SplashScreen extends Phaser.Scene {
         //Alvos
         this.load.spritesheet('pigeon', './assets/targets/pigeon.png', { frameWidth: 64, frameHeight:64 });
         this.load.spritesheet('rat', './assets/targets/rat.png', { frameWidth: 64, frameHeight:64 }); 
+        this.load.spritesheet('gecko', './assets/targets/gecko.png', { frameWidth: 64, frameHeight:64 });
         
         //Audios
         this.load.audio('soundClick', './assets/audios/soundClick.mp3');
@@ -111,6 +112,13 @@ export default class SplashScreen extends Phaser.Scene {
             frameRate: 15, // Quantidade de frames por segundo
             repeat: -1 // Define que a animação será contínua
         });
+
+        this.anims.create({
+            key: 'animGecko', // Nome da animação
+            frames: this.anims.generateFrameNumbers('gecko', {start:0, end:5}), 
+            frameRate: 7,
+            repeat: -1
+        })
 
         this.anims.create({
             key: 'SpriteLoading', // Nome da animação

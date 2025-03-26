@@ -9,8 +9,8 @@ export default class Phase4 extends BasePhase {
             "artistKey":"artist4",
             "textArtist":['Oceania...'],
             "textPainting":['Pintura...'],
-            "targetKey":"pigeon",
-            "animKey":"animPigeon",
+            "targetKey":"gecko",
+            "animKey":"animGecko",
             "soundKey":"soundGecko",
             "maxScore": 10
         }

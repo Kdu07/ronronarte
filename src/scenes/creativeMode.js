@@ -62,9 +62,9 @@ export default class CreativeMode extends BasePhase{
         ];
 
         // Array com tags dos alvos
-        this.targets = ['pigeon', 'rat'];
-        this.anims = ['animPigeon', 'animRat'];
-        this.sounds = ['soundPigeon','soundRat', '', 'soundGecko']
+        this.targets = ['pigeon', 'rat', 'gecko'];
+        this.anims = ['animPigeon', 'animRat','animGecko'];
+        this.sounds = ['soundPigeon','soundRat', 'soundGecko']
 
         // Splash selecionado (por padrão, começa no amarelo)
         this.selectedSplash = this.splashes[0][0];
@@ -175,7 +175,7 @@ export default class CreativeMode extends BasePhase{
     }
 
     printMode(){
-        this.target.setVisible(false);
+        this.target.destroy();
         this.palette.setVisible(false);
         this.btnDict[0].button.setVisible(false);
         this.printBtn.setVisible(false);
@@ -188,7 +188,8 @@ export default class CreativeMode extends BasePhase{
         }, 2000);
 
         setTimeout(() => {
-            this.target.setVisible(true);
+            this.spawnTarget();
+            this.target.setDepth(20);
             this.palette.setVisible(true);
             this.btnDict[0].button.setVisible(true);
             this.printBtn.setVisible(true);
