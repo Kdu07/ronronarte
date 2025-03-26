@@ -449,11 +449,5 @@ export default class BasePhase extends Phaser.Scene {
         // Nova posição do pombo = posição atual do pombo + velocidade do pombo * direção do pombo (-1,1)
         target.x += target.speedX * target.directionX;
         target.y += target.speedY * target.directionY; // Fim
-        
-        console.log("Posição X" + target.x)
-        console.log("Posição Y" + target.y)
-        console.log("Velocidade X" + target.speedX)
-        console.log("Velocidade Y" + target.speedY)
-        console.log("------------------------------------")
     }
 }
