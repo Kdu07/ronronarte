@@ -539,7 +539,7 @@ Este som será utilizado quando o botão de jogar (que direciona ao menu de sele
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 <p align ="center">Figura 10: diagrama de cenas - RonRonArte</p>
 
-<img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/Diagrama%20de%20Cenas%20(2).png">
+<img src="https://github.com/user-attachments/assets/a14b35af-f4f6-4a28-a54f-6a351e9922c7">
 <p align ="center">Fonte: autoria própria (2025).</p> <br>
 
 Caso queira ver o diagrama de cenas no Figma, [clique aqui](https://www.figma.com/design/M9iVkJjgLuhcVnC6v2aUAY/Diagrama-de-Cenas?node-id=0-1&p=f&t=fk8yJVrGBBaLzt2T-0)
