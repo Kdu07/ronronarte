@@ -21,13 +21,6 @@ export default class Phase2 extends BasePhase {
 
     // Configura a animação do pombo voando
     create(){
-        this.anims.create({
-            key: 'animRat', 
-            frames: this.anims.generateFrameNumbers('rat', { start: 0, end: 6 }), // Define os frames do spritesheet que serão usados
-            frameRate: 15, // Quantidade de frames por segundo
-            repeat: -1 // Define que a animação será contínua
-        });
-
         super.create();
     }
 

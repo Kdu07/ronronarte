@@ -27,18 +27,21 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('splashPaw3', './assets/splashs/splashPaw3.png');
         this.load.image('splashPaw4', './assets/splashs/splashPaw4.png');
         this.load.image('splashPaw5', './assets/splashs/splashPaw5.png');
+        this.load.image('splashPawRandom', './assets/splashs/splashPawRandom.png');
 
         this.load.image('splashHeart1', './assets/splashs/splashHeart1.png');
         this.load.image('splashHeart2', './assets/splashs/splashHeart2.png');
         this.load.image('splashHeart3', './assets/splashs/splashHeart3.png');
         this.load.image('splashHeart4', './assets/splashs/splashHeart4.png');
         this.load.image('splashHeart5', './assets/splashs/splashHeart5.png');
+        this.load.image('splashHeartRandom', './assets/splashs/splashHeartRandom.png');
 
         this.load.image('splashSplash1', './assets/splashs/splashSplash1.png');
         this.load.image('splashSplash2', './assets/splashs/splashSplash2.png');
         this.load.image('splashSplash3', './assets/splashs/splashSplash3.png');
         this.load.image('splashSplash4', './assets/splashs/splashSplash4.png');
         this.load.image('splashSplash5', './assets/splashs/splashSplash5.png');
+        this.load.image('splashSplashRandom', './assets/splashs/splashSplashRandom.png');
 
         //Botões
         this.load.image('selectTutorial', './assets/buttons/Select_Tutorial.png');
@@ -55,6 +58,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('continueBtn', './assets/buttons/botao_continuar_preto.png');
         this.load.spritesheet('spriteLoading', './assets/buttons/loading.png', {frameWidth: 292, frameHeight: 68.16});
         this.load.image('palette', './assets/buttons/paleta.png');
+        this.load.image('buttonPrint', './assets/buttons/buttonPrint.png');
 
         //Backgrounds
         this.load.image('bgMenu', './assets/backgrounds/expanded_startscreen.png');
@@ -95,6 +99,27 @@ export default class SplashScreen extends Phaser.Scene {
     }
 
     create(){    
+        this.anims.create({
+            key: 'animPigeon',
+            frames: this.anims.generateFrameNumbers('pigeon', { start: 0, end: 3 }), // Define os frames do spritesheet que serão usados
+            frameRate: 10, // Quantidade de frames por segundo
+            repeat: -1 // Define que a animação será contínua
+        });
+
+        this.anims.create({
+            key: 'animRat', 
+            frames: this.anims.generateFrameNumbers('rat', { start: 0, end: 6 }), // Define os frames do spritesheet que serão usados
+            frameRate: 15, // Quantidade de frames por segundo
+            repeat: -1 // Define que a animação será contínua
+        });
+
+        this.anims.create({
+            key: 'SpriteLoading', // Nome da animação
+            frames: this.anims.generateFrameNumbers('spriteLoading', {start:0, end:5}), 
+            frameRate: 3, 
+            repeat: 0
+        })
+        
         // Define e armezena a duração do fadeIn e do fadeOut
         let time1500 = 0; 
         let time3000 = 0;
