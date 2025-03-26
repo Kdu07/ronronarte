@@ -446,9 +446,25 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 <p align = 'center'>Fonte: autoria própria (2025).</p>
 
+
+
 <p align = 'center'>Figura 4 - Figura do rato mecânico (RonRonArte)</p><br>
 <div align = 'center'>
-	<img src = "
+	<img src = "https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/rat-spritesheet.png">
+</div><br>
+
+<p align = 'center'>Fonte: autoria própria (2025).</p>
+
+
+
+<p align = 'center'>Figura 5 - Figura da lagartixa (RonRonArte)</p><br>
+<div align = 'center'>
+	<img src = "https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/lagartixa-Sheet.png">
+</div><br>
+
+<p align = 'center'>Fonte: autoria própria (2025)</p>
+
+
 
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
