@@ -27,21 +27,20 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('splashPaw3', './assets/splashs/splashPaw3.png');
         this.load.image('splashPaw4', './assets/splashs/splashPaw4.png');
         this.load.image('splashPaw5', './assets/splashs/splashPaw5.png');
-        this.load.image('splashPawRandom', './assets/splashs/splashPawRandom.png');
 
         this.load.image('splashHeart1', './assets/splashs/splashHeart1.png');
         this.load.image('splashHeart2', './assets/splashs/splashHeart2.png');
         this.load.image('splashHeart3', './assets/splashs/splashHeart3.png');
         this.load.image('splashHeart4', './assets/splashs/splashHeart4.png');
         this.load.image('splashHeart5', './assets/splashs/splashHeart5.png');
-        this.load.image('splashHeartRandom', './assets/splashs/splashHeartRandom.png');
 
         this.load.image('splashSplash1', './assets/splashs/splashSplash1.png');
         this.load.image('splashSplash2', './assets/splashs/splashSplash2.png');
         this.load.image('splashSplash3', './assets/splashs/splashSplash3.png');
         this.load.image('splashSplash4', './assets/splashs/splashSplash4.png');
         this.load.image('splashSplash5', './assets/splashs/splashSplash5.png');
-        this.load.image('splashSplashRandom', './assets/splashs/splashSplashRandom.png');
+
+        this.load.image('splashRandom', './assets/splashs/splashRandom.png');
 
         //Botões
         this.load.image('selectTutorial', './assets/buttons/Select_Tutorial.png');
@@ -121,8 +120,8 @@ export default class SplashScreen extends Phaser.Scene {
         })
         
         // Define e armezena a duração do fadeIn e do fadeOut
-        let time1500 = 1500; 
-        let time3000 = 3000;
+        let time1500 = 0; 
+        let time3000 = 0;
 
         // Adiciona fade in na splash screen
         this.cameras.main.fadeIn(time1500, 0, 0, 0) // Aplica um efeito de fade-in que escurece a tela
@@ -135,7 +134,7 @@ export default class SplashScreen extends Phaser.Scene {
             // Aguarda o fadeOut antes de iniciar a próxima cena
             this.time.delayedCall(time1500, () => {
                 this.scene.stop('SplashScreen'); // Para a cena atual
-                this.scene.start('Menu'); // Inicia a cena Menu
+                this.scene.start('Phase1'); // Inicia a cena Menu
             }); 
         });
 

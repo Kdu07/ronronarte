@@ -56,7 +56,7 @@ export default class CreativeMode extends BasePhase{
 
         // Array com os splashes de tinta
         this.splashes = [
-            ['splashPaw1', 'splashPaw2', 'splashPaw3', 'splashPaw4', 'splashPaw5', 'splashPawRandom'],
+            ['splashPaw1', 'splashPaw2', 'splashPaw3', 'splashPaw4', 'splashPaw5', 'splashRandom'],
             ['splashSplash1', 'splashSplash2', 'splashSplash3', 'splashSplash4', 'splashSplash5'],
             ['splashHeart1', 'splashHeart2', 'splashHeart3', 'splashHeart4', 'splashHeart5']
         ];
@@ -133,9 +133,10 @@ export default class CreativeMode extends BasePhase{
                 this.target.destroy(); // Destrói o alvo
                 
                 //Cria um splash no local do clique
-                if (this.selectedSplash == 'splashPawRandom'){
-                    let rand = Phaser.Math.Between(0, 4);
-                    let randSplash = this.splashes[0][rand]
+                if (this.selectedSplash == 'splashRandom'){
+                    let rand1 = Phaser.Math.Between(0, 2);
+                    let rand2 = Phaser.Math.Between(0, 4);
+                    let randSplash = this.splashes[rand1][rand2]
 
                     this.splash = this.add.image(pointer.x, pointer.y, randSplash)
                     .setScale(this.width/400)

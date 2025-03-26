@@ -373,16 +373,16 @@ export default class BasePhase extends Phaser.Scene {
             let frameVictory = this.add.image(this.width / 2, this.height / 2, 'frame').setScale(this.width/900);
 
             // Cria os textos que mostram os pontos e a precisão do gato
-            this.scoreboard = this.add.text(bgVictory.x - bgVictory.width/3.5, bgVictory.y - bgVictory.height/9, 
+            this.scoreboard = this.add.text(bgVictory.x - bgVictory.displayWidth/7.5, bgVictory.y /*- bgVictory.displayHeight/10*/, 
                 'Pontos: ' + this.score + '/' + this.maxScore, 
                 {fontFamily:'Futura', fontSize: this.width/30, fill: '#000000' });
 
-            this.precisionText = this.add.text(bgVictory.x - bgVictory.width/2.7, bgVictory.y + bgVictory.height/6, 
+            this.precisionText = this.add.text(bgVictory.x - bgVictory.displayWidth/6, bgVictory.y + bgVictory.displayHeight/8, 
                 'Precisão: ' + Math.round(this.precision) + '%', 
                 {fontFamily:'Futura', fontSize: this.width/30, fill: '#000000' });
 
             // Cria e configura o botao para proxima fase
-            this.next = this.add.image(this.width/2, bgVictory.y + bgVictory.height/1.35, 'continueBtn')
+            this.next = this.add.image(this.width/2, bgVictory.y + bgVictory.displayHeight/2.7, 'continueBtn')
             .setInteractive() 
             .on('pointerdown', () => {
                 this.scene.start('Victory', this.phaseInfo);
@@ -394,7 +394,7 @@ export default class BasePhase extends Phaser.Scene {
             let starScale = this.width/5000;
 
             this.stars = setInterval(() => {
-                this.add.image((bgVictory.x - bgVictory.width*1.3) + ((i+1)*(starScale*550)), this.height/3, 'scoreStar')
+                this.add.image((bgVictory.x - bgVictory.displayWidth/1.8) + ((i+1)*(starScale*550)), this.height/3, 'scoreStar')
                 .setScale(starScale)
                 
                 this.soundStar.play()
