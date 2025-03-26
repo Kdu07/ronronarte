@@ -540,8 +540,7 @@ Este som será utilizado quando o botão de jogar (que direciona ao menu de sele
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 <p align ="center">Figura 10: diagrama de cenas - RonRonArte</p>
 
-
-![Diagrama de Cenas](https://github.com/user-attachments/assets/f8957c78-e582-473e-8a32-1cd81883c9d6)
+![Diagrama de Cenas](https://github.com/user-attachments/assets/dbdc2e28-dea7-485a-9158-c71a1a1eedac)
 
 <p align ="center">Fonte: autoria própria (2025).</p> <br>
 
