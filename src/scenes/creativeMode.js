@@ -9,7 +9,7 @@ export default class CreativeMode extends BasePhase{
             "textArtist":['Cheri...'],
             "textPainting":['Pintura...'],
             "targetKey":"pigeon",
-            "animKey":"flyPigeon",
+            "animKey":"animPigeon",
             "soundKey":"soundPigeon",
         }
         
@@ -21,50 +21,102 @@ export default class CreativeMode extends BasePhase{
         // Adiciona a borda e a paleta
         this.width = this.scale.width;
         this.height = this.scale.height;
-        this.bg = this.add.image(this.width/2, this.height/2, 'bgWhite').setScale(this.width/2500);
-        this.palette = this.add.image(this.width/1.065, this.height*0.11, 'palette').setScale(this.width/9000).setInteractive();
+
+        //A função create do modo criativo herda da função create da clase BasePhase
+        super.create();       
         
-        // Configura a animação para o pombo voar
-        this.anims.create({
-            key: 'flyPigeon',
-            frames: this.anims.generateFrameNumbers('pigeon', { start: 0, end: 3 }),
-            frameRate: 10,
-            repeat: -1
+        this.createPalette();
+    }
+
+    createPalette() {
+        this.palette = this.add.image(this.width / 1.065, this.height * 0.08, 'palette')
+        .setScale(this.width / 9000)
+        .setInteractive()
+        .setDepth(20);
+
+        this.printBtn = this.add.image(this.width / 2, this.height * 0.08, 'buttonPrint')
+        .setDepth(20)
+        .setScale(this.width/400)
+        .setInteractive();
+        this.printBtn.on('pointerdown', () => {
+            this.printMode()
         });
+        
+        //this.createHoldButton([this.palette, this.printBtn])
+
+        this.bgMenu = this.add.image(this.width/2, this.height/2, 'bgVictory')
+        .setScale(this.width/580)
+        .setVisible(false)
+        .setDepth(20);
+        
+        this.frameMenu = this.add.image(this.bgMenu.x, this.bgMenu.y, 'frame')
+        .setScale(this.width/700)
+        .setVisible(false)
+        .setDepth(20);
 
         // Array com os splashes de tinta
-        this.splashes = ['splash', 'pinkSplash', 'greenSplash', 'purpleSplash', 'blueSplash'];
+        this.splashes = [
+            ['splashPaw1', 'splashPaw2', 'splashPaw3', 'splashPaw4', 'splashPaw5', 'splashRandom'],
+            ['splashSplash1', 'splashSplash2', 'splashSplash3', 'splashSplash4', 'splashSplash5'],
+            ['splashHeart1', 'splashHeart2', 'splashHeart3', 'splashHeart4', 'splashHeart5']
+        ];
+
+        // Array com tags dos alvos
+        this.targets = ['pigeon', 'rat'];
+        this.anims = ['animPigeon', 'animRat'];
+        this.sounds = ['soundPigeon','soundRat', '', 'soundGecko']
 
         // Splash selecionado (por padrão, começa no amarelo)
-        this.selectedSplash = this.splashes[0];
+        this.selectedSplash = this.splashes[0][0];
 
         // Cria os botões de splash
         this.splashesButtons = this.add.group();
+
         // Configura as propriedades de botão para cada splash do arrey de splashes
-        this.splashes.forEach((splash, index) =>{ 
-            let splashButton = this.add.image(this.palette.x, this.palette.y + (this.height/6*(index+1)), splash)
-            .setInteractive()
-            .setScale(this.width/3500)
-            .setVisible(false)
-            .setDepth(20);
+        this.splashes.forEach((splash, c) => {
+            splash.forEach((splash, i) => {
+                let splashButton = this.add.image(
+                    this.bgMenu.x - this.bgMenu.displayWidth/2.4 + (this.bgMenu.displayWidth/6 * (i)), 
+                    this.bgMenu.y - this.bgMenu.displayHeight/3 + (this.bgMenu.displayHeight/5 * (c)), splash)
+                    .setInteractive()
+                    .setScale(this.width / 700)
+                    .setVisible(false)
+                    .setDepth(20);
 
-            splashButton.on('pointerdown', () =>{
-                this.selectedSplash = splash;
-                this.toggleSplashMenu(false);
-                console.log(this.selectedSplash)
+                splashButton.on('pointerdown', () => {
+                    this.selectedSplash = splash;
+                    this.toggleMenu(false);
+                    console.log(this.selectedSplash);
+                });
+
+                this.splashesButtons.add(splashButton);
             });
+        });
 
-            this.splashesButtons.add(splashButton);
-        })
+        this.targets.forEach((target, i) => {
+            let targetButton = this.add.image(
+                this.bgMenu.x - this.bgMenu.displayWidth/2.4 + (this.bgMenu.displayWidth/6 * (i)),
+                this.bgMenu.y - this.bgMenu.displayHeight/3.5 + (this.bgMenu.displayHeight/5 * (3)), target)
+                .setInteractive()
+                .setScale(this.width / 700)
+                .setVisible(false)
+                .setDepth(20);
 
-        //Quando a paleta é clicada, aparece um menu com os splashes que o tutor pode selecionar para o seu gato pintar
-        this.palette.on('pointerdown', ()=>{
-            let splashMenuIsVisible = this.splashesButtons.getChildren()[0].visible;
-            this.toggleSplashMenu(!splashMenuIsVisible);
-        })
+                targetButton.on('pointerdown', () => {
+                    this.targetKey = target;
+                    this.animKey = this.anims[i];
+                    this.soundKey = 'soundRat'//this.sounds[i];
+                    this.toggleMenu(false);
+                });
+
+            this.splashesButtons.add(targetButton);
+        });
         
-        //A função create do modo criativo herda da função create da clase BasePhase
-        super.create();
+        //Quando a paleta é clicada, aparece um menu com os splashes que o tutor pode selecionar para o seu gato pintar
+        this.palette.on('pointerdown', () => {            
+            let splashMenuIsVisible = this.splashesButtons.getChildren()[0].visible;
+            this.toggleMenu(!splashMenuIsVisible);
+        });
     }
 
     //A função update do modo criativo herda da função update da clase BasePhase
@@ -79,17 +131,68 @@ export default class CreativeMode extends BasePhase{
             if (this.target.getBounds().contains(pointer.x, pointer.y)) {
                 this.stopped = true; // Alvo para de se movimentar
                 this.target.destroy(); // Destrói o alvo
+                
                 //Cria um splash no local do clique
-                this.splash = this.add.image(pointer.x, pointer.y, this.selectedSplash).setScale(0.5);
+                if (this.selectedSplash == 'splashRandom'){
+                    let rand1 = Phaser.Math.Between(0, 2);
+                    let rand2 = Phaser.Math.Between(0, 4);
+                    let randSplash = this.splashes[rand1][rand2]
+
+                    this.splash = this.add.image(pointer.x, pointer.y, randSplash)
+                    .setScale(this.width/400)
+                    .setDepth(0.1);
+                }else{
+                    this.splash = this.add.image(pointer.x, pointer.y, this.selectedSplash)
+                    .setScale(this.width/400)
+                    .setDepth(0.1);
+                }
+                
+                
                 this.spawnTarget();
+                this.target.setDepth(20);
             }
         });
         
     }
     //Função que mostra e esconde os botões da paleta.
-    toggleSplashMenu(show){
+    toggleMenu(show){
         this.splashesButtons.getChildren().forEach(button =>{
             button.setVisible(show);
-        })
+        });
+
+        this.bgMenu.setVisible(show)
+        this.frameMenu.setVisible(show)
+
+        console.log('1')
+        if(show){
+            this.target.destroy();
+            this.soundTarget.pause()
+        } else{
+            this.spawnTarget();
+            this.target.setDepth(20);
+            this.soundTarget.play();
+        }
+    }
+
+    printMode(){
+        this.target.setVisible(false);
+        this.palette.setVisible(false);
+        this.btnDict[0].button.setVisible(false);
+        this.printBtn.setVisible(false);
+        this.soundTarget.pause()
+
+        this.printText = this.add.text(this.width/4, this.height/2, 'Tire um printscreen da tela!', {fontFamily:'Futura',fontSize:this.width/22, fill:'#000'}).setDepth(20);
+
+        setTimeout(() => {
+            this.printText.setVisible(false);
+        }, 2000);
+
+        setTimeout(() => {
+            this.target.setVisible(true);
+            this.palette.setVisible(true);
+            this.btnDict[0].button.setVisible(true);
+            this.printBtn.setVisible(true);
+            this.soundTarget.play()
+        }, 5000);
     }
 }
