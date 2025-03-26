@@ -172,7 +172,8 @@ Exemplos:
 
 ### 1.1.4. Proposta de Valor (sprint 4)
 
-*Posicione aqui o canvas de proposta de valor. Descreva os aspectos essenciais para a criação de valor da ideia do produto com o objetivo de ajudar a entender melhor a realidade do cliente e entregar uma solução que está alinhado com o que ele espera.*
+![Canva](https://github.com/user-attachments/assets/e8911524-e037-4c68-9acb-9371fa7c52b9)
+
 
 ### 1.1.5. Descrição da Solução Desenvolvida (sprint 4)
 
@@ -477,14 +478,15 @@ Este som será utilizado quando o botão de jogar (que direciona ao menu de sele
 \# | titulo | ocorrência | autoria | Áudio
 --- | --- | --- | --- | ---
 1 | Som no botão "Jogar" | Quando o botão em questão for clicado | Pixabay | <a href = "https://drive.google.com/file/d/1hQFC5pVdqw617H8M5wLIWrMQGPIt92sz/view?usp=sharing"> Ouça o áudio clicando aqui!</a>
-2 | Som 2: som nos botões "Pular tutorial" e "Continuar" | Quando o botão em questão for clicado | Pixabay | <a href = "https://drive.google.com/file/d/1CmhzvZDHqNDnyOqGY8DNLVBAR0uWa_cO/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+2 | Som nos botões "Pular tutorial" e "Continuar" | Quando o botão em questão for clicado | Pixabay | <a href = "https://drive.google.com/file/d/1CmhzvZDHqNDnyOqGY8DNLVBAR0uWa_cO/view?usp=sharing">Ouça o áudio clicando aqui!</a>
 3 | Som do splash de tinta | Quando o "splash" | Pixabay | <a href = "https://drive.google.com/file/d/1S7ec3bwp84ikFnf3YJEm72tkypAS9bdb/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-4 | Som 4: som para mostrar as estrelas na tela de vitória | Ocorre no momento em que as estrelas aparecem | Pixabay | <a href = "https://drive.google.com/file/d/1r70VpueBP2AjGqV6dJNRPWkxYdkcudnU/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-5 | Som 5: som do rato robô (alvo) | Quando o rato estiver na tela |  | <a href = "https://drive.google.com/file/d/1jG39sa7Sp_wuA251Blk7ZV649-BVRxDw/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-6 | Som 6: som habilitado quando os alvos do jogo são clicados | Assim que os alvos são clicados pelo gato | canal do YouTube chamado SOUNDS. Título do vídeo: EFEITO SONORO - GATO MIANDO | <a href = "https://drive.google.com/file/d/17g-krBlk81rTzi-duVFOyEfhnxH6XU7U/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-7 | Som 7: som para o botão de pause | Quando o botão em questão for clicado | Pixabay | <a href = "https://drive.google.com/file/d/1a9IE5oRrw8p2ieAZE3skzfCzye1Pfz_o/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-8 | Som 8: som do pombo (alvo) | Quando o pombo estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1zc9hjtwP67aTXE6p84U2f_sS9yQG1Fe5/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-9 | Som 9: som da lagartixa (alvo) | Quando o pombo estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1voUqdXlqM8OblkZLPvJhVY2d1bxRQalx/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+4 | Som para mostrar as estrelas na tela de vitória | Ocorre no momento em que as estrelas aparecem | Pixabay | <a href = "https://drive.google.com/file/d/1r70VpueBP2AjGqV6dJNRPWkxYdkcudnU/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+5 | Som do rato robô (alvo) | Quando o rato estiver na tela |  | <a href = "https://drive.google.com/file/d/1jG39sa7Sp_wuA251Blk7ZV649-BVRxDw/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+6 | Som habilitado quando os alvos do jogo são clicados | Assim que os alvos são clicados pelo gato | canal do YouTube chamado SOUNDS. Título do vídeo: EFEITO SONORO - GATO MIANDO | <a href = "https://drive.google.com/file/d/17g-krBlk81rTzi-duVFOyEfhnxH6XU7U/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+7 | Som para o botão de pause | Quando o botão em questão for clicado | Pixabay | <a href = "https://drive.google.com/file/d/1a9IE5oRrw8p2ieAZE3skzfCzye1Pfz_o/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+8 | Som do pombo (alvo) | Quando o pombo estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1zc9hjtwP67aTXE6p84U2f_sS9yQG1Fe5/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+9 | Som da lagartixa (alvo) | Quando a lagartixa estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1voUqdXlqM8OblkZLPvJhVY2d1bxRQalx/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+10 | Som da cobra | Quando a cobra estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1Kei3Ft5Esq5iGarGQCAaaRvGc-NcH3Jb/view?usp=sharing">Ouça o áudio clicando aqui!</a>
 
 ## 3.4. Inventário e Bestiário (sprint 3)
 
