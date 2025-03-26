@@ -539,7 +539,7 @@ Classes, atributos e métodos:
 
 <hr>
 
-- **Fase 1:**   
+- **Tutorial:**   
 A primeira fase do jogo serve como tutorial para o tutor, apresentando como deverá ser feita a recompensa para o gato ao alcançar o objetivo do jogo. Nessa tela, haverá uma maneira de pular a cena de tutorial caso o tutor já saiba ou não queira ver o tutorial.
 Classes, atributos, métodos e objetos:
 
@@ -549,10 +549,17 @@ Após passar pelo tutorial, o jogador será direcionado para uma tela de seleç�
  - Classes: SelectPhase
  - Atributos e métodos ainda não implementados.
 
+- **Fase 1:**   
+A primeira fase apresenta ao jogador a dinâmica principal do jogo, em que o gato, ao tocar em um animal "alvo" na tela (nessa fase em específico, será um pombo), preenche aos poucos o quadro de fundo, que revela uma obra de arte(nessa fase em específico, "A Noiva" de Maria Auxiliadora). Após preenchimento desse quadro, é exibido uma tela de vitória que apresenta a obra completa, uma foto de seu compositor, e a pontuação do gato e tempo de conclusão da fase.
+
+- Classes: ContempPhase;
+- Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
+- Métodos: create, update; spawnTarget; clickTarget; movement(target);
+
 <hr>
 
 - **Fase 2:**
-A segunda fase apresenta ao jogador a dinâmica principal do jogo, em que o gato, ao tocar em um animal "alvo" na tela (nessa fase em específico, será um pombo), preenche aos poucos o quadro de fundo, que revela uma obra de algum período da arte (nessa fase em específico, arte contemporânea). Após preenchimento desse quadro, é exibido uma tela de vitória que apresenta a obra completa, conjuntamente com um parágrafo explicativo sobre o artista e sua respectiva obra.
+A segunda fase apresenta ao jogador a dinâmica principal do jogo, em que o gato, ao tocar em um animal "alvo" na tela (nessa fase em específico, será um rato mecânico), preenche aos poucos o quadro de fundo, que revela uma obra de arte(nessa fase em específico, "Spoliarium" de Juan Luna). Após preenchimento desse quadro, é exibido uma tela de vitória que apresenta a obra completa, uma foto de seu compositor, e a pontuação do gato e tempo de conclusão da fase.
 
 - Classes: ContempPhase;
 - Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
@@ -561,11 +568,12 @@ A segunda fase apresenta ao jogador a dinâmica principal do jogo, em que o gato
 <hr>
 
 - **Texto pós-fase:**
-Essa cena apresentará um diálogo por texto que trará informações sobre o período da arte que será abordado na próxima fase, assim como um caminhar da história do jogo.
+Essa cena apresentará um diálogo por texto que trará informações sobre a arte abordada na fase e seu autor.
+
 Classes, atributos e métodos: Ainda não implementado
 
 - **Fase 3:** 
-A terceira fase apresentará ao jogador um cenário semelhante ao da fase 2, porém com foco em um período da arte diferente (nessa fase em específico, arte moderna). Nessa fase, o animal alvo apresentado será um animal característico do período em questão, sendo, nessa fase, um rato.
+A terceira fase apresentará ao jogador um cenário semelhante ao da fase 1 e 2, porém com foco em uma arte diferente (nessa fase em específico, "J'aime la couleur" de Chéri Samba). Nessa fase, o alvo será uma cobra.
 
 - Classes: ModernPhase;
 - Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
@@ -574,7 +582,7 @@ A terceira fase apresentará ao jogador um cenário semelhante ao da fase 2, por
 <hr>
 
 - **Fase 4:**
-A quarta fase apresentará ao jogador um cenário semelhante ao das outras fases, porém com foco em um período da arte diferente (nessa fase em específico, arte medieval). Nessa fase, o animal alvo apresentado será um animal característico do período em questão, sendo, nessa fase, um coelho. 
+A terceira fase apresentará ao jogador um cenário semelhante ao da fase 1, 2 e 3, porém com foco em uma arte diferente (nessa fase em específico, "Aboriginal design, with Sturt's Pea" de Margaret Preston.). Nessa fase, o alvo será uma lagartixa.
 
 - Classes: MedievalPhase;
 - Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
