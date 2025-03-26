@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/Intelihub/Template_M1/main/assets/inteli.png" width="200px">
+![image](https://github.com/user-attachments/assets/58c0087c-ca24-40c0-aa02-430a1a067d7e)<img src="https://raw.githubusercontent.com/Intelihub/Template_M1/main/assets/inteli.png" width="200px">
 
 
 # GDD - Game Design Document - Módulo 1 - Inteli
@@ -724,7 +724,11 @@ Logo abaixo, estão as telas da versão básica do jogo.
 
 ## 4.4. Desenvolvimento final do MVP (sprint 4)
 
-*Descreva e ilustre aqui o desenvolvimento da versão final do jogo, explicando brevemente o que foi entregue em termos de MVP. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e planos futuros.*
+Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, como a implementação do modo criativo, a mudança do storytelling central do jogo e de suas fases, reformulação da tela de vitória, as pinturas definitivas foram definidas, assets sonoros foram definidos e implementados, e foram feitos alguns acabamentos para deixar o jogo mais polido.  As novas artes determinadas para as fases de nosso jogo foram: "A Noiva", de Maria Auxiliadora; "Spoliarium" de Juan Luna; "J'aime la couleur" de Chéri Samba; "Aboriginal design, with Sturt's Pea" de Margaret Preston. (ilustrações de 1 a 4)
+
+Figura 1: Tela com o quadro da fase 1:
+![image](https://github.com/user-attachments/assets/fb06e5a2-517e-4758-abbe-26e6497d367d)
+
 
 ## 4.5. Revisão do MVP (sprint 5)
 
