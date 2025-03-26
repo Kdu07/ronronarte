@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/58c0087c-ca24-40c0-aa02-430a1a067d7e)<img src="https://raw.githubusercontent.com/Intelihub/Template_M1/main/assets/inteli.png" width="200px">
+<img src="https://raw.githubusercontent.com/Intelihub/Template_M1/main/assets/inteli.png" width="200px">
 
 
 # GDD - Game Design Document - Módulo 1 - Inteli
@@ -728,6 +728,17 @@ Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, co
 
 Figura 1: Tela com o quadro da fase 1:
 ![image](https://github.com/user-attachments/assets/fb06e5a2-517e-4758-abbe-26e6497d367d)
+
+Figura 2: Tela com o quadro da fase 2:
+![image](https://github.com/user-attachments/assets/d9a62cfe-7902-4334-ac1b-b0747329f2d9)
+
+Figura 3: Tela com o quadro da fase 3:
+![image](https://github.com/user-attachments/assets/51c422f3-c85e-4df6-8bfe-289c292d189d)
+
+Figura 4: Tela com o quadro da fase 4:
+![image](https://github.com/user-attachments/assets/d706f2f9-e53b-4162-84e5-820a13cd59df)
+
+
 
 
 ## 4.5. Revisão do MVP (sprint 5)
