@@ -34,6 +34,8 @@ export default class BasePhase extends Phaser.Scene {
         this.height = this.scale.height;
 
         this.score = 0;
+
+        this.soundTargetBoolean = true;
     
         // Se for uma fase completa
         if (this.completePhase){
@@ -182,7 +184,9 @@ export default class BasePhase extends Phaser.Scene {
         // Coeficiente para aceleração do alvo
         this.coeficient = 1;
 
-
+        if(this.soundTarget){
+            this.soundTarget.stop();
+        }
         //  Gerar uma posição aleatória dentro da área do quadro
         let posX = Phaser.Math.Between(50,this.width-50);
         let posY = Phaser.Math.Between(100,this.height-100);
@@ -211,13 +215,25 @@ export default class BasePhase extends Phaser.Scene {
         this.target.play(this.animKey);
 
         // Inicia o audio do alvo
-        this.soundTarget.play({ volume: 0.5, loop: true });
+        this.soundTargetBoolean = true;
+        if(this.soundTargetBoolean === true){
+            this.soundTarget.play({ volume: 0.5, loop: true });
+            this.soundTargetBoolean = false;
+        }
+        else{
+            this.soundTarget.stop();
+        }
     }
 
     // Função que confere se o pombo é clicado
     clickTarget(){        
         // Quando o mouse é clicado
         this.input.on('pointerdown', (pointer) => {
+            
+            if(this.soundTarget){
+                this.soundTarget.stop();
+                this.soundTargetBoolean = false;
+            }
             // Se o ponteiro está no do alvo
             if (this.target && this.target.getBounds().contains(pointer.x, pointer.y)) {
                 this.score+= 1; // Adiciona 1 ponto à pontuação
@@ -291,6 +307,10 @@ export default class BasePhase extends Phaser.Scene {
     }
 
     displayVictory() {
+        
+        if(this.soundTarget){
+            this.soundTarget.stop();
+        }
         // Armeza a precisão do usuário
         this.precision = this.score/this.totalClicks*100
         this.starScore = (this.elapsedSeconds+4)/this.score;
