@@ -7,6 +7,8 @@ export default class Tutorial extends Phaser.Scene {
     create(){
         this.textAdded = false; // Boolean para adicionar apenas uma vez o texto usando o update
         this.clicks = 0; // Contagem de clicks na tela
+        this.count = 0;
+        
         // Texto de tutorial organizado por elementos em lista
         this.tutorialTexts = [
             'Olá humano,\nbem-vindo ao RonRonarte!',
@@ -32,19 +34,39 @@ export default class Tutorial extends Phaser.Scene {
         // Adiciona o pombo como personagem e inicia a animação
         this.character = this.add.sprite(0, 0, 'pigeon').setScale(this.scale.width/400).setFlip(true, false);
         this.character.play('flyPigeon');
+
+        this.velX = 5;
+        this.velY = 0;
+        this.accelerationY = 0.02;
     }
 
     update(){
         // Confere se o personagem chegou no meio da tela
         if (this.character.x <= this.scale.width/2){
-            // Move o personagem em direção ao meio da tela
-            this.character.x += 10;
-            this.character.y += 3;
-        }else{
-            // O personagem está no meio da tela
+            this.count++;
+            this.velY += this.accelerationY;
             
+            this.character.x += this.velX;
+            this.character.y += this.velY;
+
+            console.log("------------------------------------")
+            console.log("Posição X: " + this.character.x)
+            console.log("Posição Y: " + this.character.y)
+            console.log("Velocidade X: " + this.velX)
+            console.log("Velocidade Y: " + this.velY)
+        }else{
             // Se o a caixa de texto e o texto ainda não foram adicionados
             if(!this.textAdded){
+                console.log("=====================================")
+                console.log("Posição Inicial X: " + 0)
+                console.log("Posição Inicial Y: " + 0)
+                console.log("Posição Final X: " + this.character.x)
+                console.log("Posição Final Y: " + this.character.y)
+                console.log("Velocidade Final X: " + this.velX)
+                console.log("Velocidade Final Y: " + this.velY)
+                console.log("Tempo total: " + this.count/60)
+                console.log("=====================================")
+                
                 // Adiciona os elementos
                 this.textBox = this.add.image(this.scale.width/2, this.scale.height/1.3, 'textBox').setScale(this.scale.width/800);
                 this.tutorialText = this.add.text(this.scale.width/8, this.scale.height/1.7, this.tutorialTexts[this.clicks], {fontSize: this.scale.width/33, fill:'#000'})
@@ -71,7 +93,7 @@ export default class Tutorial extends Phaser.Scene {
                     this.tutorialText.destroy();
                     
                     // Adiciona o splash 
-                    this.add.image(this.character.x, this.character.y, 'yellowSplash').setScale(this.scale.width/2500);
+                    this.add.image(this.character.x, this.character.y, 'splashTutorial').setScale(this.scale.width/2500);
                     
                     // Espera 1,5 segundos
                     this.time.delayedCall(1500, () => {

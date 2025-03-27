@@ -32,9 +32,4 @@ export default class LevelSelect extends Phaser.Scene {
             });
         });
     }
-
-    update() {
-
-    };
-
 }
