@@ -335,7 +335,7 @@ Objetivo 2: Ter comunicação clara e eficiente entre os membros da equipe, de m
 Key Results:
 - Ter, no máximo, duas faltas na daily por sprint;
 - Utilizar mais os canais de comunicação como Slack e Whatsapp para comunicar 100% das tasks feitas fora do horário de desenvolvimento do projeto e de reviews feitas individualmente;
-- Ter, no máximo, duas faltas no fechamento por sprint. <br>
+- Ter, no máximo, duas faltas no fechamento por sprint. <br><br><br>
 
 
 Além disso, seguem os objetivos estruturados no molde SMART: 
