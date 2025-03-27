@@ -53,7 +53,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('skipTutorialButton', './assets/buttons/botao_pular.png');
         this.load.image('optionsBtn', './assets/buttons/botao_opcoes_corr_preto.png');
         this.load.image('pauseBtn', './assets/buttons/pause.png');
-        this.load.image('buttonCriative', '/assets/buttons/botao_criativo.png');
+        this.load.image('buttonCriative', './assets/buttons/botao_criativo.png');
         this.load.image('continueBtn', './assets/buttons/botao_continuar_preto.png');
         this.load.spritesheet('spriteLoading', './assets/buttons/loading.png', {frameWidth: 292, frameHeight: 68.16});
         this.load.image('palette', './assets/buttons/paleta.png');
@@ -62,8 +62,8 @@ export default class SplashScreen extends Phaser.Scene {
         //Backgrounds
         this.load.image('bgMenu', './assets/backgrounds/expanded_startscreen.png');
         this.load.image('bgTutorial', './assets/backgrounds/larger_tiled_background.jpg');
-        this.load.image('screenCriative', 'assets/backgrounds/tela_branca.png');
-        this.load.image('selectBg', 'assets/backgrounds/textBoxFuncional.png');
+        this.load.image('screenCriative', './assets/backgrounds/tela_branca.png');
+        this.load.image('selectBg', './assets/backgrounds/textBoxFuncional.png');
         this.load.image('bgVictory', './assets/backgrounds/bgVictory.png');
         this.load.image('bgWhite', './assets/backgrounds/bgWhite.png');
         this.load.image('bgVictoryScene', './assets/backgrounds/bgVictoryScene.png');
@@ -76,9 +76,9 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('reward', './assets/misc/recompensa.png');
         this.load.image('catup', './assets/misc/catup.png');
         this.load.spritesheet('cat', './assets/misc/cat.png', { frameWidth: 64, frameHeight:64 });
-        this.load.image('teste', '/assets/misc/575x56.png');
-        this.load.image('scoreStar', '/assets/misc/scoreStar.png');
-        this.load.image('victoryTextBox', '/assets/misc/victoryTextBox.png');
+        this.load.image('teste', './assets/misc/575x56.png');
+        this.load.image('scoreStar', './assets/misc/scoreStar.png');
+        this.load.image('victoryTextBox', './assets/misc/victoryTextBox.png');
 
         //Alvos
         this.load.spritesheet('pigeon', './assets/targets/pigeon.png', { frameWidth: 64, frameHeight:64 });
