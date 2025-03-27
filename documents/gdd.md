@@ -194,7 +194,7 @@ Exemplos:
 <p align = "center">Figura 4: Matriz de risco</p>
 
 ![MatrizdeRisco](https://github.com/user-attachments/assets/6d8b846c-4bbf-4a6c-b44a-f4d68b49b665)
-   Fonte: Tabela de "ferramentasdaqualidade.org", adaptada pelos autores.
+   <p align = 'center'>Tabela de "ferramentasdaqualidade.org", adaptada pelos autores (2025).</p> <br><br> 
 
 ### Riscos
 
@@ -369,6 +369,7 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 ## 1.2. Requisitos do Projeto (sprints 1 e 2)
 Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por meios dos quais se busca explicitar, de maneira breve, lógica e sucinta, suas principais funcionalidades e aspectos, de acordo com o escopo vigente.  
 
+<p align = 'center'>Quadro 1: Requisitos do jogo RonRonArte</p> <br>
 \# | Requisitos  
 --- | ---
 1 | A tela inicial deve mostrar um botão “Jogar”, que, quando clicado, direciona o jogador às fases do jogo.
@@ -382,6 +383,8 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 9 | Ao final de cada fase, o jogador (gato) deve receber uma recompensa do tutor: petiscos ou ração.
 10 | O jogo será reproduzido em formato web direcionado para dispositivos móveis (smartphones e tablets).
 11 | Exibir som ao finalizar a fase para notificar o tutor e facilitar o entendimento do gato em relação à recompensa.
+
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br>
 
 ## 1.3. Público-alvo do Projeto (sprint 2)
 
@@ -496,7 +499,7 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 Este som será utilizado quando o botão de jogar (que direciona ao menu de seleção de níveis) for clicado. Dessa forma, esse som foi escolhido pelo fato de simular o som real de clique em um botão, indicando ao usuário que ele, de fato, clicou nele, estando no início do jogo por ser mais tradicional.
 
-<p align = 'center'>Quadro 1: trilha sonora</p>
+<p align = 'center'>Quadro 2: trilha sonora</p>
 
 \# | titulo | ocorrência | autoria | Áudio
 --- | --- | --- | --- | ---
@@ -517,7 +520,7 @@ Este som será utilizado quando o botão de jogar (que direciona ao menu de sele
 
 ### 3.4.1. Inventário 
 
-*Legenda da tabela*
+<p align = 'center'>Quadro 3: inventário do jogo RonRonArte</p> <br>
 \# | item |  | Como obter | Função | Efeito sonoro
 --- | --- | --- | --- | --- | ---
 1 | PawYellow |![splash_amarelo](https://github.com/user-attachments/assets/9e3c67ee-3614-4116-996f-c95e65b93ed0)| Conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo no modo criativo | Som de splash de tinta
@@ -531,7 +534,7 @@ Este som será utilizado quando o botão de jogar (que direciona ao menu de sele
 
 ### 3.4.2. Bestiário
 
-<p align = 'center'>Quadro 2: bestiário do jogo RonRonArte</p> <br>
+<p align = 'center'>Quadro 4: bestiário do jogo RonRonArte</p> <br>
 \# | Inimigo | Design | Ocorrências | Função | Impacto | Efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
 1 | Pombo |![pombo](https://github.com/user-attachments/assets/a5622248-210c-4bab-b020-a67c1c3a113e)| Tutorial e Fase 1 | Voa em direção aléatoria para que o jogador tente acertá-lo | Ao atingido revela uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes. | Som de pombo
