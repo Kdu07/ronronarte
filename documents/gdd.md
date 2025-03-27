@@ -523,6 +523,7 @@ Este som será utilizado quando o botão de jogar (que direciona ao menu de sele
 ### 3.4.1. Inventário 
 
 <p align = 'center'>Quadro 3: inventário do jogo RonRonArte</p> <br>
+
 \# | item |  | Como obter | Função | Efeito sonoro
 --- | --- | --- | --- | --- | ---
 1 | PawYellow |![splash_amarelo](https://github.com/user-attachments/assets/9e3c67ee-3614-4116-996f-c95e65b93ed0)| Conclusão do tutorial | Pintar o quadro onde o gato acerta o alvo no modo criativo | Som de splash de tinta
