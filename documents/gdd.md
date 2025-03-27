@@ -451,7 +451,7 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
   <img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/pombo.png?raw=true">
 </div><br>
 
-<p align = 'center'>Fonte: material produzido pelos autores (2025).</p>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br> <br>
 
 
 
@@ -460,7 +460,7 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 	<img src = "https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/rat-spritesheet.png">
 </div><br>
 
-<p align = 'center'>Fonte: material produzido pelos autores (2025).</p>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
 
@@ -469,7 +469,7 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 	<img src = "https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/lagartixa-Sheet.png">
 </div><br>
 
-<p align = 'center'>Fonte: material produzido pelos autores (2025).</p>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p><br><br>
 
 
 
