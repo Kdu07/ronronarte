@@ -335,7 +335,7 @@ Objetivo 2: Ter comunicação clara e eficiente entre os membros da equipe, de m
 Key Results:
 - Ter, no máximo, duas faltas na daily por sprint;
 - Utilizar mais os canais de comunicação como Slack e Whatsapp para comunicar 100% das tasks feitas fora do horário de desenvolvimento do projeto e de reviews feitas individualmente;
-- Ter, no máximo, duas faltas no fechamento por sprint.
+- Ter, no máximo, duas faltas no fechamento por sprint. <br>
 
 
 Além disso, seguem os objetivos estruturados no molde SMART: 
@@ -352,7 +352,7 @@ A. **Atribuível:** A responsabilidade desse objetivo contempla todos os membro
 
 R. **Relevante:** A equipe possui acesso a canais de comunicação eficientes como o Slack e o grupo de Whatsapp e momentos cedidos pela universidade para a eficiente organização e comunicação da equipe.
 
-T. **Oportuno:** Melhorar o prazo definido para melhorar a comunicação será a sprint review da sprint 4.
+T. **Oportuno:** Melhorar o prazo definido para melhorar a comunicação será a sprint review da sprint 4.  <br> <br>
 
 Nosso objetivo é entregar o melhor MVP possível ao parceiro até a sprint review da sprint 4 no dia 28 de março. Os membros da equipe vão alcançá-lo aumentando a frequência das reviews em grupo e priorizando a realização das suas tasks.
 
@@ -370,6 +370,7 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por meios dos quais se busca explicitar, de maneira breve, lógica e sucinta, suas principais funcionalidades e aspectos, de acordo com o escopo vigente.  
 
 <p align = 'center'>Quadro 1: Requisitos do jogo RonRonArte</p> <br>
+
 \# | Requisitos  
 --- | ---
 1 | A tela inicial deve mostrar um botão “Jogar”, que, quando clicado, direciona o jogador às fases do jogo.
