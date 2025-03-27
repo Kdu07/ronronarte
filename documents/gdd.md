@@ -538,6 +538,7 @@ Este som será utilizado quando o botão de jogar (que direciona ao menu de sele
 ### 3.4.2. Bestiário
 
 <p align = 'center'>Quadro 4: bestiário do jogo RonRonArte</p> <br>
+
 \# | Inimigo | Design | Ocorrências | Função | Impacto | Efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
 1 | Pombo |![pombo](https://github.com/user-attachments/assets/a5622248-210c-4bab-b020-a67c1c3a113e)| Tutorial e Fase 1 | Voa em direção aléatoria para que o jogador tente acertá-lo | Ao atingido revela uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes. | Som de pombo
