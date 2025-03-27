@@ -759,16 +759,20 @@ Logo abaixo, estão as telas da versão básica do jogo.
 
 &nbsp; &nbsp; &nbsp; &nbsp;No desenvolvimento intermediário do jogo, foram acrescentados mais itens ao game em relação à versão preliminar. Em termos de código, foi adicionada uma classe “basePhase”, que servirá de arquétipo para o desenvolvimento de todas as outras, parecido com um template. Já em termos de jogo, iniciou-se a implementação do modo criativo do game, que já possui sua principal característica implementada: a seleção de cores por parte do tutor em uma paleta na tela, a fim que seu gato produza suas próprias pinturas de modo personalizado. Por fim, adicionou-se um menu de seleção de níveis, no qual o tutor poderá escolher entre a fase de tutorial, as fases propostas ou o modo criativo.
 
-Figura 21: Parte do código da classe "basePhase"
+<p align = 'center'>Figura 21: Parte do código da classe "basePhase"</p> <br>
+
 ![image](https://github.com/user-attachments/assets/83390710-7f10-4187-8cd2-be09a1f2bf78)
 
-Figura 22: Menu de seleção de cores do modo criativo: 
+<p align = 'center'>Figura 22: Menu de seleção de cores do modo criativo</p>
+
 ![image](https://github.com/user-attachments/assets/9e9e0d25-60c2-489e-8f7c-824716c41477)
 
-Figura 23: Modo criativo com splashs na tela:
+<p align = 'center'>Figura 23: Modo criativo com splashes na tela</p>
+
 ![image](https://github.com/user-attachments/assets/5548a0db-fa8e-48ef-8f14-29c151f0af5b)
 
-Figura 24: Tela de seleção de níveis
+<p align = 'center'>Figura 24: Tela de seleção de níveis</p>
+
 ![image](https://github.com/user-attachments/assets/e1aa419d-1854-41b3-a25d-f77681b1f998)
 
 
@@ -776,28 +780,36 @@ Figura 24: Tela de seleção de níveis
 
 Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, como a mudança do storytelling central do jogo e de suas fases, reformulação da tela de vitória e modo criativo, as pinturas definitivas foram definidas, assets sonoros foram definidos e implementados, e foram feitos alguns acabamentos para deixar o jogo mais polido. As novas artes determinadas para as fases de nosso jogo foram: "A Noiva", de Maria Auxiliadora; "Spoliarium" de Juan Luna; "J'aime la couleur" de Chéri Samba; "Aboriginal design, with Sturt's Pea" de Margaret Preston. (Figuras 25 a 28). A nova tela de vitória conta com uma pontuação (quantidade de pombos acertados) e uma contagem de tempo que juntos representam uma pontuação em formato de estrelas (Figura 29). A reformulação do modo criativo conta com um novo botão para o tutor tirar print da obra de seu gato, além de um botão de paletas que permite que o tutor escolha diferentes paletas e formatos de pincel (Figuras 30 a 32).
 
-Figura 25: Tela com o quadro da fase 1:
+<p align = 'center'>Figura 25: Tela com o quadro da fase 1</p> <br>
+
 ![image](https://github.com/user-attachments/assets/2f68942c-cbfd-4ab6-92e9-59cde50d2dad)
 
-Figura 26: Tela com o quadro da fase 2:
+<p align = 'center'>Figura 26: Tela com o quadro da fase 2</p> <br>
+
 ![image](https://github.com/user-attachments/assets/2774d2d9-825f-4107-8c02-8a1398365807)
 
-Figura 27: Tela com o quadro da fase 3:
+<p align = 'center'>Figura 27: Tela com o quadro da fase 3</p> <br>
+
 ![image](https://github.com/user-attachments/assets/7f480025-fb30-4144-a4c4-1e52420935ac)
 
-Figura 28: Tela com o quadro da fase 4:
+<p align = 'center'>Figura 28: Tela com o quadro da fase 4</p> <br>
+
 ![image](https://github.com/user-attachments/assets/70e6fb38-d8b0-449b-8cea-679db402bc2b)
 
-Figura 29: Tela de vitória atualizada:
+<p align = 'center'>Figura 29: Tela de vitória atualizada</p> <br>
+
 ![image](https://github.com/user-attachments/assets/eca91e13-1d08-4410-bf98-29bda8787df9)
 
-Figura 30: Tela do modo criativo:
+<p align = 'center'>Figura 30: Tela do modo criativo:</p> <br>
+
 ![image](https://github.com/user-attachments/assets/697b9288-3389-429f-8731-20b201418641)
 
-Figura 31: Tela do modo criativo(2):
+<p align = 'center'>Figura 31: Tela do modo criativo(2):</p> <br>
+
 ![image](https://github.com/user-attachments/assets/3ca18bcf-9bfd-4c33-9762-8dceff3a37c9)
 
-Figura 32: Tela de seleção de paletas modo criativo:
+<p align = 'center'>Figura 32: Tela de seleção de paletas modo criativo</p> <br>
+
 ![image](https://github.com/user-attachments/assets/58eefa74-c00e-4645-b137-27ee1eb0fdaf)
 
 
