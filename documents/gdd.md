@@ -342,7 +342,7 @@ Além disso, seguem os objetivos estruturados no molde SMART:
 
 Objetivos:
 
-Nosso objetivo é fazer a comunicação entre os membros do grupo ser mais clara até o final da sprint review da quarta sprint no dia 28 de março. Todos os membros do grupo vão alcançá-lo dando mais atenção aos canais de comunicação e ao momento da daily.
+1)Nosso objetivo é fazer a comunicação entre os membros do grupo ser mais clara até o final da sprint review da quarta sprint no dia 28 de março. Todos os membros do grupo vão alcançá-lo dando mais atenção aos canais de comunicação e ao momento da daily.
 
 S. **Específico:** Ter comunicação clara e eficiente entre os membros da equipe, de modo que todos permaneçam engajados.
 
@@ -352,9 +352,10 @@ A. **Atribuível:** A responsabilidade desse objetivo contempla todos os membro
 
 R. **Relevante:** A equipe possui acesso a canais de comunicação eficientes como o Slack e o grupo de Whatsapp e momentos cedidos pela universidade para a eficiente organização e comunicação da equipe.
 
-T. **Oportuno:** Melhorar o prazo definido para melhorar a comunicação será a sprint review da sprint 4.  <br> <br>
+T. **Oportuno:** Melhorar o prazo definido para melhorar a comunicação será a sprint review da sprint 4.  <br> <br> <br>
 
-Nosso objetivo é entregar o melhor MVP possível ao parceiro até a sprint review da sprint 4 no dia 28 de março. Os membros da equipe vão alcançá-lo aumentando a frequência das reviews em grupo e priorizando a realização das suas tasks.
+
+2)Nosso objetivo é entregar o melhor MVP possível ao parceiro até a sprint review da sprint 4 no dia 28 de março. Os membros da equipe vão alcançá-lo aumentando a frequência das reviews em grupo e priorizando a realização das suas tasks.
 
 S. **Específico:** Entregar o melhor MVP possível com a proposta de melhorar a relação entre tutor e gato de maneira inovadora, através da arte.
 
