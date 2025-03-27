@@ -173,8 +173,9 @@ Exemplos:
 ### 1.1.4. Proposta de Valor (sprint 4)
 
 <p align = "center">Figura 3: Canva proposta de valor.</p>
-![Canva](https://github.com/user-attachments/assets/e8911524-e037-4c68-9acb-9371fa7c52b9)
 
+![Canva](https://github.com/user-attachments/assets/e8911524-e037-4c68-9acb-9371fa7c52b9)
+<p align = "center">Material feito pelos autores (2025).</p> <br>
 
 ### 1.1.5. Descrição da Solução Desenvolvida (sprint 4)
 
@@ -320,7 +321,7 @@ Exemplos:
 
 ![image](https://github.com/user-attachments/assets/e55c9777-5929-4b70-a3fc-d7b1fe223c86)
 
-<p align = "center">Fonte: material produzido pelos autores (2025).</p>
+<p align = "center">Fonte: material produzido pelos autores (2025), com auxílio da instrutora de liderança Ana Cristina dos Santos.</p>
 
 Objetivo 1: Entregar o melhor MVP possível com a proposta de melhorar a relação entre tutor e gato de maneira inovadora, através da arte.
 
@@ -445,7 +446,7 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
   <img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/pombo.png?raw=true">
 </div><br>
 
-<p align = 'center'>Fonte: autoria própria (2025).</p>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p>
 
 
 
@@ -454,7 +455,7 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 	<img src = "https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/rat-spritesheet.png">
 </div><br>
 
-<p align = 'center'>Fonte: autoria própria (2025).</p>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p>
 
 
 
@@ -463,7 +464,7 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 	<img src = "https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/lagartixa-Sheet.png">
 </div><br>
 
-<p align = 'center'>Fonte: autoria própria (2025)</p>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p>
 
 
 
@@ -487,15 +488,15 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 ![Concept - RonRonArte](https://github.com/user-attachments/assets/0347f013-bd82-4e7d-a2ac-f7aed9904ea2)
 
-
-
-<p align = "center">Fonte: autoria própria (2025).</p> <br>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p>
 
 &nbsp; &nbsp; &nbsp; &nbsp;Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.figma.com/proto/O28uXtCzHpYgGD5H7lxE97/Concept-Art---RonRonArte?content-scaling=fixed&kind=proto&node-id=15-4&page-id=0%3A1&scaling=scale-down) <br>
 
 ### 3.3.5. Trilha sonora (sprint 3)
 
 Este som será utilizado quando o botão de jogar (que direciona ao menu de seleção de níveis) for clicado. Dessa forma, esse som foi escolhido pelo fato de simular o som real de clique em um botão, indicando ao usuário que ele, de fato, clicou nele, estando no início do jogo por ser mais tradicional.
+
+<p align = 'center'>Quadro 1: trilha sonora</p>
 
 \# | titulo | ocorrência | autoria | Áudio
 --- | --- | --- | --- | ---
@@ -509,6 +510,8 @@ Este som será utilizado quando o botão de jogar (que direciona ao menu de sele
 8 | Som do pombo (alvo) | Quando o pombo estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1zc9hjtwP67aTXE6p84U2f_sS9yQG1Fe5/view?usp=sharing">Ouça o áudio clicando aqui!</a>
 9 | Som da lagartixa (alvo) | Quando a lagartixa estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1voUqdXlqM8OblkZLPvJhVY2d1bxRQalx/view?usp=sharing">Ouça o áudio clicando aqui!</a>
 10 | Som da cobra | Quando a cobra estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1Kei3Ft5Esq5iGarGQCAaaRvGc-NcH3Jb/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+
+<p align = 'center'>Fonte: quadro produzido pelos autores (2025), com base em áudios de Pixabay e YouTube.</p> <br>
 
 ## 3.4. Inventário e Bestiário (sprint 3)
 
@@ -524,17 +527,18 @@ Este som será utilizado quando o botão de jogar (que direciona ao menu de sele
 5 | PawPurple |![splash_roxo](https://github.com/user-attachments/assets/84cb3d4f-5870-4ea4-887f-74007bca7b6f)| Conclusão da fase 1 | Pintar o quadro onde o gato acerta o alvo no modo criativo | Som de splash de tinta
 5 | PawPink |![splash_rosa](https://github.com/user-attachments/assets/e8ff66bc-87a5-43b6-945d-e33d824fd6e5)| Conclusão da fase 1 | Pintar o quadro onde o gato acerta o alvo no modo criativo | Som de splash de tinta
 
-<p align ="center">Fonte: autoria própria (2025).</p> <br>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br>
 
 ### 3.4.2. Bestiário
 
-*Legenda da tabela*
+<p align = 'center'>Quadro 2: bestiário do jogo RonRonArte</p> <br>
 \# | Inimigo | Design | Ocorrências | Função | Impacto | Efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
 1 | Pombo |![pombo](https://github.com/user-attachments/assets/a5622248-210c-4bab-b020-a67c1c3a113e)| Tutorial e Fase 1 | Voa em direção aléatoria para que o jogador tente acertá-lo | Ao atingido revela uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes. | Som de pombo
 2 | Rato Robótico |![alvo rato](https://github.com/user-attachments/assets/905b4948-8cce-4f84-946a-0f0f9d8e252c)| Fase 2 | Anda pela tela em direção aléatoria para que o jogador tente acertá-lo | Ao atingido revela uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes. | Som de rato
 3 | Lagartixa | ![lagartixa](https://github.com/user-attachments/assets/38d50908-28bb-48b6-b896-9516b90484cf) | Fase 4 | Anda pela tela em direção aleatória para que o jogador tente acertá-lo | Ao acertá-lo, deixará seu rabo cair e continuará correndo sem o rabo e mais rápido, fazendo com que seja necessário ser atingido novamente. Após ser atingido pela segunda vez, revelará uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes | Som de lagarto
 
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br>
 
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
@@ -542,7 +546,8 @@ Este som será utilizado quando o botão de jogar (que direciona ao menu de sele
 
 ![Diagrama de Cenas](https://github.com/user-attachments/assets/dbdc2e28-dea7-485a-9158-c71a1a1eedac)
 
-<p align ="center">Fonte: autoria própria (2025).</p> <br>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br>
+
 
 Caso queira ver o diagrama de cenas no Figma, [clique aqui](https://www.figma.com/design/rFIpwHZ5IhQm0VkuvWoyGC/Diagrama-de-Cenas-(Copy)?node-id=0-1&t=VGODGl0yG330cyX7-1)
 
@@ -660,7 +665,7 @@ Classes, métodos e atributos: ainda não implementados.
 
 ![tela de start RonRonArte](https://github.com/user-attachments/assets/30f3865b-5e98-49f1-906e-e886c33ee157)
 
-<p align = "center">Fonte: autoria própria (2025). </p> <br> <br>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br>
 
 
 
@@ -670,7 +675,7 @@ Classes, métodos e atributos: ainda não implementados.
   <img src="https://github.com/user-attachments/assets/a2107a97-8d01-4339-8469-bef594f42c61" width="300">
 </div>
 
-<p align = "center">Fonte: autoria própria (2025). </p> <br> <br>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
 
@@ -680,7 +685,7 @@ Classes, métodos e atributos: ainda não implementados.
   <img src="https://github.com/user-attachments/assets/9581c99b-c61d-407d-bb58-b492f8a47998" width="300">
 </div>
 
-<p align = "center">Fonte: autoria própria (2025). </p> <br> <br>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
 
@@ -710,35 +715,35 @@ Logo abaixo, estão as telas da versão básica do jogo.
   <img width="935" alt="image" src="https://github.com/user-attachments/assets/7081f995-b960-4c10-84eb-42fedf96822f" />
 </div><br>
 
-<p align = 'center'>Fonte: autoria própria (2025).</p> <br>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
 <p align = 'center'>Figura 15: tela de tutorial</p>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/510f51b9-c320-4c1d-ab87-3690abf2d989" />
 </div><br>
-<p align = 'center'>Fonte: autoria própria (2025).</p><br>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
 <p align = 'center'>Figura 16: tela do início das fases</p>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/554c235d-a9b9-4f88-8729-2b6302444569" />
 </div><br>
-<p align = 'center'>Fonte: autoria própria (2025).</p> <br>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
 <p align = 'center'>Figura 17: tela de pintura da fase 1</p>
 <div align = 'center'>
   <img width="933" alt="image" src="https://github.com/user-attachments/assets/8f147d35-bbad-40ca-b773-183bf5c93b6d" />
 </div><br>
-<p align = 'center'>Fonte: autoria própria (2025).</p><br>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
 <p align = 'center'>Figura 18: tela de vitória da fase 1</p>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/1790cca4-9119-4d94-ac4f-9f7220c094aa" />
 </div><br>
-<p align = 'center'>Fonte: autoria própria (2025).</p><br>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
 <p>Também está representada a modularização do código nas figuras 19 e 20.</p>
@@ -746,14 +751,14 @@ Logo abaixo, estão as telas da versão básica do jogo.
 <div align = 'center'>
   <img width="30%" alt="image" src="https://github.com/user-attachments/assets/76b12c16-e454-40a5-80c3-d23deaa03a73"/>
 </div><br>
-<p align = 'center'>Fonte: autoria própria (2025).</p> <br> <br>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
 <p align = 'center'>Figura 20: estrutura da versão básica do jogo (com importações de cenas phaser)</p>
 <div align = 'center'>
   <img width="70%" alt="image" src="https://github.com/user-attachments/assets/a3d6a5f5-8cad-4108-906c-16fae2e00bf4"/>
 </div><br>
-<p align = 'center'>Fonte: autoria própria (2025).</p> <br>
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
 
@@ -762,18 +767,22 @@ Logo abaixo, estão as telas da versão básica do jogo.
 <p align = 'center'>Figura 21: Parte do código da classe "basePhase"</p> <br>
 
 ![image](https://github.com/user-attachments/assets/83390710-7f10-4187-8cd2-be09a1f2bf78)
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 <p align = 'center'>Figura 22: Menu de seleção de cores do modo criativo</p>
 
 ![image](https://github.com/user-attachments/assets/9e9e0d25-60c2-489e-8f7c-824716c41477)
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 <p align = 'center'>Figura 23: Modo criativo com splashes na tela</p>
 
 ![image](https://github.com/user-attachments/assets/5548a0db-fa8e-48ef-8f14-29c151f0af5b)
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 <p align = 'center'>Figura 24: Tela de seleção de níveis</p>
 
 ![image](https://github.com/user-attachments/assets/e1aa419d-1854-41b3-a25d-f77681b1f998)
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
 ## 4.4. Desenvolvimento final do MVP (sprint 4)
@@ -783,35 +792,42 @@ Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, co
 <p align = 'center'>Figura 25: Tela com o quadro da fase 1</p> <br>
 
 ![image](https://github.com/user-attachments/assets/2f68942c-cbfd-4ab6-92e9-59cde50d2dad)
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 <p align = 'center'>Figura 26: Tela com o quadro da fase 2</p> <br>
 
 ![image](https://github.com/user-attachments/assets/2774d2d9-825f-4107-8c02-8a1398365807)
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 <p align = 'center'>Figura 27: Tela com o quadro da fase 3</p> <br>
 
 ![image](https://github.com/user-attachments/assets/7f480025-fb30-4144-a4c4-1e52420935ac)
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 <p align = 'center'>Figura 28: Tela com o quadro da fase 4</p> <br>
 
 ![image](https://github.com/user-attachments/assets/70e6fb38-d8b0-449b-8cea-679db402bc2b)
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 <p align = 'center'>Figura 29: Tela de vitória atualizada</p> <br>
 
 ![image](https://github.com/user-attachments/assets/eca91e13-1d08-4410-bf98-29bda8787df9)
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 <p align = 'center'>Figura 30: Tela do modo criativo:</p> <br>
 
 ![image](https://github.com/user-attachments/assets/697b9288-3389-429f-8731-20b201418641)
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 <p align = 'center'>Figura 31: Tela do modo criativo(2):</p> <br>
 
 ![image](https://github.com/user-attachments/assets/3ca18bcf-9bfd-4c33-9762-8dceff3a37c9)
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 <p align = 'center'>Figura 32: Tela de seleção de paletas modo criativo</p> <br>
 
 ![image](https://github.com/user-attachments/assets/58eefa74-c00e-4645-b137-27ee1eb0fdaf)
-
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 ## 4.5. Revisão do MVP (sprint 5)
 
