@@ -10,7 +10,7 @@ export default class CreativeMode extends BasePhase{
             "textPainting":['Pintura...'],
             "targetKey":"pigeon",
             "animKey":"animPigeon",
-            "soundKey":"soundPigeon",
+            "soundKey":"soundPigeon"
         }
         
         // Configura a chave de classe e os assets da fase
@@ -93,7 +93,7 @@ export default class CreativeMode extends BasePhase{
                 targetButton.on('pointerdown', () => {
                     this.targetKey = target;
                     this.animKey = this.anims[i];
-                    this.soundKey = 'soundRat'//this.sounds[i];
+                    this.soundKey = this.sounds[i];
                     this.toggleMenu(false);
                 });
 
@@ -192,6 +192,11 @@ export default class CreativeMode extends BasePhase{
             // Se o ponteiro está no do alvo
             if (this.target.getBounds().contains(pointer.x, pointer.y)) {
                 this.stopped = true; // Alvo para de se movimentar
+
+                if(this.soundTarget){
+                    this.soundTarget.stop();
+                }
+
                 this.target.destroy(); // Destrói o alvo
                 
                 //Cria um splash no local do clique
