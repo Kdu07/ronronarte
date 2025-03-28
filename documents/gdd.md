@@ -182,11 +182,11 @@ Exemplos:
 
 <h3>PERFIL DO CLIENTE</h3>
 <h4>Tarefas do Cliente</h4>
-&nbsp; &nbsp; &nbsp; &nbsp;Neste tópico, deve-se observar o que o cliente já faz no seu dia a dia antes da proposta de solução, o que auxilia no entendimento de como é possível agir perante a problemática em questão (Pereira, 2024). A partir da definição supracitada e no contexto do jogo RonRonArte, o tutor de gatos efetua as seguintes tarefas:
+&nbsp; &nbsp; &nbsp; &nbsp;Neste tópico, deve-se observar o que o cliente já faz no seu dia a dia antes da proposta de solução, o que auxilia no entendimento de como é possível agir perante a problemática em questão (Pereira, 2024). A partir da definição supracitada e no contexto do jogo RonRonArte, o tutor de gatos efetua as seguintes tarefas: <br>
 <ul>
-	<li> <b>Investe dinheiro à parte com formas de entreter o gato: </b> a fim de promover diversão ao seu gato, o tutor compra brinquedos a ele, ou seja, são maneiras de entretenimento pagas; </li> <br>
-	<li><b>Sai de casa para passear e movimentar o gato:</b> para incentivar o gato a se movimentar e se entreter, o tutor precisa sair de casa com ele;</li> <br>
-	<li><b>Encontra formas ineficientes em entreter o gato, especialmente em relação a jogos:</b> os jogos disponíveis para gatos apenas exibem alvos na tela, sem proporcionar uma recompensa alimentícia, a qual estimularia o instinto de caça do animal.</li> <br>
+	<li> <b>Investe dinheiro à parte com formas de entreter o gato: </b> a fim de promover diversão ao seu gato, o tutor compra brinquedos a ele, ou seja, são maneiras de entretenimento pagas; </li>
+	<li><b>Sai de casa para passear e movimentar o gato:</b> para incentivar o gato a se movimentar e se entreter, o tutor precisa sair de casa com ele;</li> 
+	<li><b>Encontra formas ineficientes em entreter o gato, especialmente em relação a jogos:</b> os jogos disponíveis para gatos apenas exibem alvos na tela, sem proporcionar uma recompensa alimentícia, a qual estimularia o instinto de caça do animal.</li>
 </ul>
 
 <h4>Ganhos</h4>
