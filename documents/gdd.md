@@ -387,7 +387,7 @@ Exemplos:
 
 ![image](https://github.com/user-attachments/assets/e55c9777-5929-4b70-a3fc-d7b1fe223c86)
 
-<p align = "center">Fonte: material produzido pelos autores (2025), com auxílio da instrutora de liderança Ana Cristina dos Santos.</p>
+<p align = "center">Fonte: material produzido pelos autores (2025), com auxílio da instrutora de liderança Ana Cristina dos Santos.</p> <br> <br>
 
 Objetivo 1: Entregar o melhor MVP possível com a proposta de melhorar a relação entre tutor e gato de maneira inovadora, através da arte.
 
