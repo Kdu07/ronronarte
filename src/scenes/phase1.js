@@ -7,10 +7,10 @@ export default class Phase1 extends BasePhase {
             "completePhase":true,
             "backgroundKey":"painting1",
             "artistKey":"artist1",
-            "textArtist":['Michelangelo foi um renomado\nartista italiano do período\nrenascentista. Com formação\nhumanista e influenciado\npela arte clássica, pode-se\ndizer que ele foi um dos\nmaiores artistas do Ocidente'],
-            "textPainting":['A obra A criação de Adão fica\nno teto da Capela Sistina e\nrepresenta a passagem bíblica\nem que Deus dá origem à\nhumanidade. Realizado com a\ntécnica do afresco, o quadro\nexpressa harmonia, mistério\ne força divina.'],
+            "textArtist":['Maria Auxiliadora foi uma artista plástica \nbrasileira autodidata que começou suas \natividades artísticas já na juventude. Mesmo \nvítima do câncer, Maria nunca deixou de \npintar e, em sua carreira, trouxe visibilidade \naos elementos da cultura afro-brasileira.'],
+            "textPainting":['Com pintura a óleo e alto relevo, o quadro \n“Sem Título” faz referência ao candomblé, à umbanda \ne ao samba. Uma curiosidade é que a artista usou \ncabelo humano real na confecção do quadro, dando \ndimensão tátil e sensorial à pintura.'],
             "targetKey":"pigeon",
-            "animKey":"flyPigeon",
+            "animKey":"animPigeon",
             "soundKey":"soundPigeon",
             "maxScore": 3
         }
@@ -20,12 +20,6 @@ export default class Phase1 extends BasePhase {
     }
 
     create(){
-            this.anims.create({
-                key: 'flyPigeon',
-                frames: this.anims.generateFrameNumbers('pigeon', { start: 0, end: 3 }), // Define os frames do spritesheet que serão usados
-                frameRate: 10, // Quantidade de frames por segundo
-                repeat: -1 // Define que a animação será contínua
-            });
         // Chama o create da classe pai
         super.create();
     }

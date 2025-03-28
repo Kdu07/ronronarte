@@ -9,6 +9,7 @@ export default class Victory extends Phaser.Scene {
         this.textArtist = data.configDict['textArtist']
         this.textPainting = data.configDict['textPainting']
         this.targetKey = data.configDict['targetKey']
+        this.animKey = data.configDict['animKey']
         this.textArtist = data.configDict['textArtist']
         this.textPainting = data.configDict['textPainting']
         this.nextPhase = data.nextPhase
@@ -60,7 +61,8 @@ export default class Victory extends Phaser.Scene {
 
         // Adiciona o alvo da fase
         this.target = this.add.sprite(this.width/9, this.height/3.2, this.targetKey)
-            .setDisplaySize(this.width/4, this.width/4).setFlip(true,false);
+            .setDisplaySize(this.width/4.5, this.width/4.5).setFlip(true,false);
+        this.target.play(this.animKey);
 
         this.add.image(this.width/1.15, this.height/1.08, 'continueBtn')
         .setInteractive() 
@@ -73,9 +75,9 @@ export default class Victory extends Phaser.Scene {
 
     update(){
         this.input.on('pointerdown', (pointer) => {
-            console.log("X: " + this.width/pointer.x)
-            console.log("Y: " + this.height/pointer.y)
-            console.log('----------------------------------')
+            //console.log("X: " + this.width/pointer.x)
+            //console.log("Y: " + this.height/pointer.y)
+            //console.log('----------------------------------')
         })
     }
 }

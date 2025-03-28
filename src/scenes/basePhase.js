@@ -3,6 +3,7 @@ export default class BasePhase extends Phaser.Scene {
     constructor(phaseKey, configDict) {
         // Configura a chave de classe
         super(phaseKey);
+
         // Armazenamento dos parâmetros de key (usado para referenciar os assets)
         this.phases = ['Phase0', 'Phase1', 'Phase2', 'Phase3', 'Phase4', 'CreativeMode'];
         this.phaseKey = phaseKey;
@@ -18,7 +19,8 @@ export default class BasePhase extends Phaser.Scene {
         this.textPainting = configDict['textPainting'];
         this.maxScore = configDict['maxScore'];
 
-        this.nextPhase = this.phases[this.phases.indexOf(this.phaseKey) + 1]; // Define a próxima fase
+        // Define a próxima fase
+        this.nextPhase = this.phases[this.phases.indexOf(this.phaseKey) + 1]; 
         
         // Junta todas as variaveis a serem passadas para a próxima cena
         this.phaseInfo = {
@@ -33,7 +35,10 @@ export default class BasePhase extends Phaser.Scene {
         this.width = this.scale.width;
         this.height = this.scale.height;
 
+        // Define pontuação incial
         this.score = 0;
+
+        this.soundTargetBoolean = true;
     
         // Se for uma fase completa
         if (this.completePhase){
@@ -48,23 +53,24 @@ export default class BasePhase extends Phaser.Scene {
 
             // Adiciona o temporizador
             this.createTimer();
+            this.clickTargetComplete();
 
         }else{
             // Cria o background
             this.createBackground();
+            this.clickTarget();
         }
 
         // Adiciona som que toca quando o alvo é clicado
         this.soundClick = this.sound.add('soundClick');
-        this.soundTarget = this.sound.add(this.soundKey);
         this.soundPause = this.sound.add('soundPauseButton');
         this.soundStar = this.sound.add('soundStar')
 
         // Adiciona o botão de pause
-        this.createHoldButton();
+        this.createPauseButton();
         
         // Configura e adiciona o pombo na tela
-        this.spawnTarget();        
+        this.spawnTarget();    
     }
 
     createTimer() {
@@ -96,7 +102,7 @@ export default class BasePhase extends Phaser.Scene {
 
     createBackground(){
         // Cria a imagem do background
-        this.frame = this.add.image(this.width / 2, this.height / 2, this.backgroundKey).setDisplaySize(this.width, this.height);
+        this.frame = this.add.image(this.width / 2, this.height / 2, this.backgroundKey).setDisplaySize(this.width, this.height).setDepth(0);
         this.frameHitbox = 0;
     }
 
@@ -105,7 +111,7 @@ export default class BasePhase extends Phaser.Scene {
         this.bg = this.add.image(this.width / 2, this.height / 2, 'bgWhite').setDisplaySize(this.width, this.width/1.4);
         this.painting = this.add.image(this.width / 2, this.height / 2, this.backgroundKey).setDisplaySize(this.width/1.11, (this.width / 1.77)/1.37);
         this.frame = this.add.image(this.width / 2, this.height / 2, 'frame').setDisplaySize(this.width, this.height);
-        this.frameHitbox = this.frame.displayWidth / 35;
+        this.frameHitbox = this.frame.displayWidth / 30;
 
         // Torna o quadro visível
         this.painting.setAlpha(1);
@@ -118,44 +124,42 @@ export default class BasePhase extends Phaser.Scene {
         this.painting.setMask(this.mask);
     }
 
-    createHoldButton() {
-        this.hold = false;
-
-        // Cria um botão de pause na tela
-        this.pauseBtn = this.add.image(this.width/40, this.height/18, 'pauseBtn').setScale(this.width/1000)
+    // Cria e configura o botão de pause
+    createPauseButton() {
+        // Define que não está sendo pressionado
+        this.pauseHold = false;
         
-        // Torna o botão de pause clicável
-        this.pauseBtn.setInteractive()
+        // Adiciona o asset do botão na tela
+        this.pauseBtn = this.add.image(this.width/40, this.height/18, 'pauseBtn')
+        .setScale(this.width/1000)
+        .setDepth(20)
+        .setInteractive();
 
-        this.anims.create({
-            key: 'SpriteLoading', // Nome da animação
-            frames: this.anims.generateFrameNumbers('spriteLoading', {start:0, end:5}), 
-            frameRate: 3, 
-            repeat: 0
-        })
-
-        this.spriteLoading = this.add.sprite(this.width/40, this.height/10, 'spriteLoading')
+        // Adiciona o asset do carregamento na tela
+        this.pauseLoad = this.add.sprite(this.width/40, this.height/10, 'spriteLoading')
         .setScale(this.width/8000)
         .setInteractive()
         .setVisible(false);
+
+        // Quando o mouse clica o botão, define a variavel de segurar como true
+        this.pauseBtn.on('pointerdown', () => {
+            this.pauseHold = true
+        });
+
+        // Quando o mouse solta o botão, define a variavel de segurar como false
+        this.pauseBtn.on('pointerup', () => {
+            this.pauseHold = false
+        });
     }
 
     update(){
-        // Confere e ativa funcionalidades quando o pombo é clicado        
-        if(this.completePhase){
-            // Para a configuração de fase completa 
-            this.clickTargetComplete(); 
-        }else{
-            // Para a configuração de fase básica
-            this.clickTarget();
-        }
-
         // Só move o pombo se ele não foi clicado
         if (!this.stopped){ 
             this.movement(this.target);  
         }
 
-        this.updateHoldButton()
+        // Confere se o botão está sendo clicado
+        this.updatePauseButton()
     }
 
     // Função para contar o tempo no temporizador
@@ -164,38 +168,44 @@ export default class BasePhase extends Phaser.Scene {
         this.timerText.setText(this.elapsedSeconds);
     }
 
-    updateHoldButton(){
-        // Cria o botão de pular o tutorial
-        this.pauseBtn.on('pointerdown', (pointer) => {
-            this.hold = true
-        });
+    // Atualiza o botão de pause
+    updatePauseButton(){
+        // Se o botão está sendo segurado
+        if (this.pauseHold){
+            // Deixa o botão e o carregamento visíveis
+            this.pauseLoad.setVisible(true);
+            this.pauseLoad.anims.play('SpriteLoading',true);
 
-        this.pauseBtn.on('pointerup', (pointer) => {
-            this.hold = false
-        });
-        
-        if (this.hold){
-            this.spriteLoading.setVisible(true);
-            this.spriteLoading.anims.play('SpriteLoading',true);
-
-            if (this.spriteLoading.anims.currentFrame.index == 5){
+            // Se o sprite de carregamento chega no último frame
+            if (this.pauseLoad.anims.currentFrame.index == 5){
+                // Inicia o áudio do pause
                 this.soundPause.play({ volume: 0.5 });
+                
+                // Para o áudio do alvo
                 this.soundTarget.stop();
+                
+                // Troca para cena de level select
                 this.scene.start("LevelSelect");
                 this.scene.stop(this.phaseKey);
             }
         }else{
-            this.spriteLoading.anims.stop().setFrame(0).setVisible(false);
+            // Se o botão não está sendo segurado, reseta o carregamento
+            this.pauseLoad.anims.stop().setFrame(0).setVisible(false);
         }
     }
 
     spawnTarget() {
         // Inicia a movimentação do pombo
         this.stopped = false;
+        
+        // Configura o som do alvo
+        this.soundTarget = this.sound.add(this.soundKey);
+        if(this.soundTarget){
+            this.soundTarget.stop();
+        }
 
         // Coeficiente para aceleração do alvo
         this.coeficient = 1;
-
 
         //  Gerar uma posição aleatória dentro da área do quadro
         let posX = Phaser.Math.Between(50,this.width-50);
@@ -206,48 +216,62 @@ export default class BasePhase extends Phaser.Scene {
         this.target.setInteractive();
     
         // Configura a velocidade aleatória do pombo e a direção inicial de movimento
-        this.target.speedX = Phaser.Math.Between(6, 9);
-        this.target.speedY = Phaser.Math.Between(1, 2);
+        this.target.speedX = Phaser.Math.Between(5, 7);
+        this.target.speedY = Phaser.Math.Between(2, 6);
         this.target.directionX = -1;
         this.target.directionY = 1;
 
         // Configura aceleração do pombo no eixo y
-        this.target.accelerationY = Phaser.Math.FloatBetween(0.03, 0.07);
-        this.target.VyMax = 8; // Velocidade máxima no eixo y
+        this.target.accelerationY = Phaser.Math.FloatBetween(0.02, 0.06);
+        this.target.VyMax = 7; // Velocidade máxima no eixo y
         this.target.VyMin = 0; // Velocidade mínima no eixo y
 
         // Hitbox do pombo (usado para que não saia da tela)
-        this.target.hitboxWidth = 45;
-        this.target.hitboxHeight = 45;
+        this.target.hitboxWidth = this.target.width*this.width/400*0.4;
+        this.target.hitboxHeight = this.target.height*this.width/400*0.4;
 
         // Inicia a animação de voo do pombo
-        this.target.play(this.animKey); // Fim
+        this.target.play(this.animKey);
 
-        // Inicia o audio do alvo
-        this.soundTarget.play({ volume: 0.5, loop: true });
+        // Inicia o audio do alvo com cuidado para evitar bugs
+        this.soundTargetBoolean = true;
+        if(this.soundTargetBoolean === true){
+            this.soundTarget.play({ volume: 0.5, loop: true });
+            this.soundTargetBoolean = false;
+        }
+        else{
+            this.soundTarget.stop();
+        }
     }
 
     // Função que confere se o pombo é clicado
-    clickTarget(){
-        this.input.removeAllListeners('pointerdown'); // Ignora todos os cliques anteriores
-        
+    clickTarget(){        
         // Quando o mouse é clicado
         this.input.on('pointerdown', (pointer) => {
+            // Para o som do alvo
+            if(this.soundTarget){
+                this.soundTarget.stop();
+                this.soundTargetBoolean = false;
+            }
+            
             // Se o ponteiro está no do alvo
-            if (this.target.getBounds().contains(pointer.x, pointer.y)) {
+            if (this.target && this.target.getBounds().contains(pointer.x, pointer.y)) {
                 this.score+= 1; // Adiciona 1 ponto à pontuação
-
                 this.stopped = true; // Alvo para de se movimentar
-                this.target.destroy(); // Destrói o alvo
-                this.soundClick.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
+                
+                // Destrói o alvo
+                this.target.destroy();
+                this.target = null;
+                
+                this.soundClick.play({ volume: 0.5 }); // Toca o som configurado quando o alvo é clicado
                 this.time.delayedCall(1000, () => {
-                    this.soundClick.stop(); // Para o som do pombo após 1000ms (1s)
+                    this.soundClick.stop(); // Para o som do clique após 1000ms (1s)
                 });
                 
-                this.splash = this.add.image(pointer.x, pointer.y, 'yellowSplash').setScale(this.width/4000).setAlpha(0.6); // Cria um splash no local do clique
-                this.reward = this.add.image(this.width/2, this.height/2, 'reward').setScale(this.width/1200)
+                this.splash = this.add.image(pointer.x, pointer.y, 'splashTutorial').setScale(this.width/4000).setAlpha(0.6); // Cria um splash no local do clique
+                this.reward = this.add.image(this.width/2, this.height/2, 'reward').setScale(this.width/1200) // Aviso para recompensar o gato
                     
-                // Se o jogo não acabou, gera outro pombo
+                // Gera outro alvo
                 setTimeout(() => {
                     this.spawnTarget();
                     this.reward.destroy()
@@ -258,27 +282,30 @@ export default class BasePhase extends Phaser.Scene {
 
     // Função para quando o alvo é clicado
     clickTargetComplete() {
-        this.input.removeAllListeners('pointerdown'); // Ignora todos os cliques anteriores
-        // Quando o mouse é clicado
         this.input.on('pointerdown', (pointer) => {
+            // Contagem do total de cliques na tela
             this.totalClicks += 1;
+            
             // Se o ponteiro está no alvo
             if (this.target.getBounds().contains(pointer.x, pointer.y) && this.score < this.maxScore) {
                 this.stopped = true; // Alvo para de se movimentar
-                this.target.destroy(); // Remove o pombo da tela
-                this.soundTarget.stop();
                 
-                this.soundClick.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
-                /*
+                // Remove o alvo da tela
+                this.target.destroy();
+                this.target = null;
+
+                this.soundTarget.stop(); // Para o som do alvo
+                
+                this.soundClick.play({ volume: 0.5 }); // Toca o som configurado quando o alvo é clicado
                 this.time.delayedCall(1000, () => {
-                    this.soundClick.stop(); // Para o som do pombo após 1000ms (1s)
+                    this.soundClick.stop(); // Para o som de clique após 1000ms (1s)
                 });
-                */
+
                 this.score++; // Adiciona 1 ponto à pontuação
                 this.scoreboard.setText(this.score + '/' + this.maxScore); // Atualiza o placar 
 
                 // Cria um splash no local do clique e revela a mesma área do quadro
-                this.splash = this.add.image(pointer.x, pointer.y, 'splash').setScale(this.width/800);
+                this.splash = this.add.image(pointer.x, pointer.y, 'splashPhases').setScale(this.width/(200*this.maxScore));
                 this.splash.setAlpha(1);
                 this.revealMask.draw(this.splash, this.splash.x, this.splash.y);
                 this.splash.destroy(); //Remove o splash após liberar a área
@@ -293,9 +320,12 @@ export default class BasePhase extends Phaser.Scene {
                     // Adiciona a tela de vitória
                     this.displayVictory();                        
                 } else {
+                    // Se o jogo não acabou
+
+                    // Aviso para recompensar o gato
                     this.reward = this.add.image(this.width/2, this.height/2, 'reward').setScale(this.width/1200)
                     
-                    // Se o jogo não acabou, gera outro pombo
+                    // Gera um novo alvo
                     setTimeout(() => {
                         this.spawnTarget();
                         this.reward.destroy()
@@ -306,10 +336,15 @@ export default class BasePhase extends Phaser.Scene {
     }
 
     displayVictory() {
-        // Armeza a precisão do usuário
-        this.precision = this.score/this.totalClicks*100
-        this.starScore = (this.elapsedSeconds+4)/this.score;
+        if(this.soundTarget){
+            this.soundTarget.stop();
+        }
 
+        // Calcula a precisão do usuário
+        this.precision = this.score/this.totalClicks*100
+
+        // Calcula o número de estrelas de acordo com o tempo levado para acertar cada alvo
+        this.starScore = (this.elapsedSeconds+4)/this.score;
         if (this.starScore <= 10){
             this.starScore = 5;
         }else if(this.starScore <= 15){
@@ -321,8 +356,6 @@ export default class BasePhase extends Phaser.Scene {
         }else{
             this.starScore = 1;
         }
-
-        console.log(this.starScore)
 
         // Adiciona a frase de vitória
         setTimeout(() => {
@@ -360,16 +393,16 @@ export default class BasePhase extends Phaser.Scene {
             let frameVictory = this.add.image(this.width / 2, this.height / 2, 'frame').setScale(this.width/900);
 
             // Cria os textos que mostram os pontos e a precisão do gato
-            this.scoreboard = this.add.text(bgVictory.x - bgVictory.width/3.5, bgVictory.y - bgVictory.height/9, 
+            this.scoreboard = this.add.text(bgVictory.x - bgVictory.displayWidth/7.5, bgVictory.y /*- bgVictory.displayHeight/10*/, 
                 'Pontos: ' + this.score + '/' + this.maxScore, 
                 {fontFamily:'Futura', fontSize: this.width/30, fill: '#000000' });
 
-            this.precisionText = this.add.text(bgVictory.x - bgVictory.width/2.7, bgVictory.y + bgVictory.height/6, 
+            this.precisionText = this.add.text(bgVictory.x - bgVictory.displayWidth/6, bgVictory.y + bgVictory.displayHeight/8, 
                 'Precisão: ' + Math.round(this.precision) + '%', 
                 {fontFamily:'Futura', fontSize: this.width/30, fill: '#000000' });
 
             // Cria e configura o botao para proxima fase
-            this.next = this.add.image(this.width/2, bgVictory.y + bgVictory.height/1.35, 'continueBtn')
+            this.next = this.add.image(this.width/2, bgVictory.y + bgVictory.displayHeight/2.7, 'continueBtn')
             .setInteractive() 
             .on('pointerdown', () => {
                 this.scene.start('Victory', this.phaseInfo);
@@ -377,11 +410,11 @@ export default class BasePhase extends Phaser.Scene {
             })
             .setScale(this.width/800)
 
+            // Adiciona estrelas na primeira tela de vitória
             let i = 0;
             let starScale = this.width/5000;
-
             this.stars = setInterval(() => {
-                this.add.image((bgVictory.x - bgVictory.width*1.3) + ((i+1)*(starScale*550)), this.height/3, 'scoreStar')
+                this.add.image((bgVictory.x - bgVictory.displayWidth/1.8) + ((i+1)*(starScale*550)), this.height/3, 'scoreStar')
                 .setScale(starScale)
                 
                 this.soundStar.play()
@@ -418,13 +451,17 @@ export default class BasePhase extends Phaser.Scene {
             target.directionY = 1;
         }
 
-        // Atualiza velocidade no eixo y
-        target.speedY += (target.accelerationY * this.coeficient);//target.accelerationY * target.t;
+        // Atualiza velocidade no eixo y de acordo com a aceleração definida e o coeficiente de direção
+        target.speedY += (target.accelerationY * this.coeficient);
+        
+        // Se a velocidade atinge a velocidade máxima
         if (target.speedY >= target.VyMax) {
+            // Coeficiente de direção negativo (velocidade começa a diminuir)
             this.coeficient = -1;
         }
-        
+        // Se a velocidade atinge a velocidade mínima
         if (target.speedY <= target.VyMin) {
+            // Coeficiente de direção positivo (velocidade começa a aumentar)
             this.coeficient = 1;
         }
 
@@ -432,11 +469,5 @@ export default class BasePhase extends Phaser.Scene {
         // Nova posição do pombo = posição atual do pombo + velocidade do pombo * direção do pombo (-1,1)
         target.x += target.speedX * target.directionX;
         target.y += target.speedY * target.directionY; // Fim
-        
-        console.log("Posição X" + target.x)
-        console.log("Posição Y" + target.y)
-        console.log("Velocidade X" + target.speedX)
-        console.log("Velocidade Y" + target.speedY)
-        console.log("------------------------------------")
     }
 }

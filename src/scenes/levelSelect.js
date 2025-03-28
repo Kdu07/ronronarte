@@ -4,7 +4,6 @@ export default class LevelSelect extends Phaser.Scene {
         super("LevelSelect");
     }
     create() {
-
         // Cria as imagens presentes no menu de seleção de níveis
         this.selectBg = this.add.image(this.scale.width*0.5, this.scale.height*0.5, 'selectBg').setDisplaySize(this.scale.width, this.scale.height);
         this.selectTutorial = this.add.image(this.scale.width*0.18, this.scale.height*0.33, 'selectTutorial').setScale(this.scale.width/3200).setInteractive();
@@ -32,9 +31,4 @@ export default class LevelSelect extends Phaser.Scene {
             });
         });
     }
-
-    update() {
-
-    };
-
 }

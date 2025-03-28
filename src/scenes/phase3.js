@@ -7,11 +7,11 @@ export default class Phase3 extends BasePhase {
             "completePhase":true,
             "backgroundKey":"painting3",
             "artistKey":"artist3",
-            "textArtist":['Cheri...'],
-            "textPainting":['Pintura...'],
-            "targetKey":"pigeon",
-            "animKey":"flyPigeon",
-            "soundKey":"soundPigeon",
+            "textArtist":['Sem muito apoio, porém determinado a \nseguir carreira na arte, o artista africano \nChéri Samba foi pintor de letreiros \npublicitários, desenhista de histórias em \nquadrinhos e autor de pinturas com facetas \ncríticas.'],
+            "textPainting":['O quadro foi titulado como “J’aime la couleur” - \ntraduzido como “Eu amo a cor” - e caracteriza-se \ncomo um autorretrato do autor Chéri Samba, de modo \nque, conforme o artista, ele está presente dentro de seu \npróprio trabalho para relatar o que significa ser \num artista africano de sucesso no cenário mundial.'],
+            "targetKey":"snake",
+            "animKey":"animSnake",
+            "soundKey":"soundSnake",
             "maxScore": 7
         }
         
@@ -20,14 +20,6 @@ export default class Phase3 extends BasePhase {
     }
 
     create(){
-        // Configura a animação do pombo voando
-        this.anims.create({
-            key: 'flyPigeon',
-            frames: this.anims.generateFrameNumbers('pigeon', { start: 0, end: 3 }), // Define os frames do spritesheet que serão usados
-            frameRate: 10, // Quantidade de frames por segundo
-            repeat: -1 // Define que a animação será contínua
-        });
-
         // Chama o create da classe pai
         super.create();
     }

@@ -7,10 +7,10 @@ export default class Phase2 extends BasePhase {
             "completePhase":true,
             "backgroundKey":"painting2",
             "artistKey":"artist2",
-            "textArtist":['Juan...'],
-            "textPainting":['Pintura...'],
-            "targetKey":"pigeon",
-            "animKey":"flyPigeon",
+            "textArtist":['Juan Luna foi um artista e ativista político \nfilipino da Revolução Filipina. As pinturas \nque fez durante sua trajetória destacam-se \npelo seu simbolismo e retratam em grande \nparte, cenas literárias e históricas.'],
+            "textPainting":['O quadro “Spoliarium”  retrata gladiadores \nmoribundos em um circo romano.  A pintura foi \nenviada por Luna para a Exposição Nacional de \nBelas Artes em 1884 em Madri e recebeu medalha de \nouro.'],
+            "targetKey":"rat",
+            "animKey":"animRat",
             "soundKey":"soundRat",
             "maxScore": 5
         }
@@ -21,13 +21,6 @@ export default class Phase2 extends BasePhase {
 
     // Configura a animação do pombo voando
     create(){
-        this.anims.create({
-            key: 'animCat', 
-            frames: this.anims.generateFrameNumbers('cat', { start: 0, end: 3 }), // Define os frames do spritesheet que serão usados
-            frameRate: 10, // Quantidade de frames por segundo
-            repeat: -1 // Define que a animação será contínua
-        });
-
         super.create();
     }
 

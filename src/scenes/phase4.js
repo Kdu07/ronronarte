@@ -7,10 +7,10 @@ export default class Phase4 extends BasePhase {
             "completePhase":true,
             "backgroundKey":"painting4",
             "artistKey":"artist4",
-            "textArtist":['Oceania...'],
-            "textPainting":['Pintura...'],
-            "targetKey":"pigeon",
-            "animKey":"flyPigeon",
+            "textArtist":['Margaret Preston é uma das artistas mais \nimportantes para a arte da Austrália. Em sua \ntrajetória artística, Margaret buscou envolver \na cultura aborígene em suas obras, tornando \nsuas gravuras a maior expressão da arte \nmoderna australiana.'],
+            "textPainting":['O quadro tem como título “Design aborígene, com \nervilha de Sturt”, é datado de 1943, foi feito com corte \nde masonite colorido e foi tingido à mão com guache. \nNele, a autora retrata elementos da cultura australiana.'],
+            "targetKey":"gecko",
+            "animKey":"animGecko",
             "soundKey":"soundGecko",
             "maxScore": 10
         }
@@ -20,14 +20,6 @@ export default class Phase4 extends BasePhase {
     }
 
     create(){
-        // Configura a animação do pombo voando
-        this.anims.create({
-            key: 'flyPigeon',
-            frames: this.anims.generateFrameNumbers('pigeon', { start: 0, end: 3 }), // Define os frames do spritesheet que serão usados
-            frameRate: 10, // Quantidade de frames por segundo
-            repeat: -1 // Define que a animação será contínua
-        });
-
         // Chama o create da classe pai
         super.create();
     }
