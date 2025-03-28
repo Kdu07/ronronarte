@@ -564,8 +564,7 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 &nbsp; &nbsp; &nbsp; &nbsp;Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.figma.com/proto/O28uXtCzHpYgGD5H7lxE97/Concept-Art---RonRonArte?content-scaling=fixed&kind=proto&node-id=15-4&page-id=0%3A1&scaling=scale-down) <br>
 
 ### 3.3.5. Trilha sonora
-
-Este som será utilizado quando o botão de jogar (que direciona ao menu de seleção de níveis) for clicado. Dessa forma, esse som foi escolhido pelo fato de simular o som real de clique em um botão, indicando ao usuário que ele, de fato, clicou nele, estando no início do jogo por ser mais tradicional.
+A seguir, no quadro 2, estão elencados os elementos sonoros utilizados no jogo RonRonArte, escolhidos de acordo com a necessidade dos itens do game
 
 <p align = 'center'>Quadro 2: trilha sonora</p>
 
