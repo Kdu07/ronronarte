@@ -31,8 +31,11 @@ export default class Tutorial extends Phaser.Scene {
             repeat: -1 // Define que a animação será linear
         });
 
+        const posInitialX = 0;
+        const posInitialY = 0;
+
         // Adiciona o pombo como personagem e inicia a animação
-        this.character = this.add.sprite(0, 0, 'pigeon').setScale(this.scale.width/400).setFlip(true, false);
+        this.character = this.add.sprite(posInitialX, posInitialY, 'pigeon').setScale(this.scale.width/400).setFlip(true, false);
         this.character.play('flyPigeon');
 
         this.velX = 5;
