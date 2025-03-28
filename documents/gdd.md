@@ -394,7 +394,7 @@ Objetivo 1: Entregar o melhor MVP possível com a proposta de melhorar a relaç�
 Key Results:
 - Aumentar a frequência das reviews em grupo das tasks de 0 para 1 vez por semana;
 - Cada membro completar ao menos uma task P por dia ou 1 task M a cada dois dias ou uma task G a cada 3 dias;
-- Aumentar a nota de todos os artefatos para, no mínimo, 9,0.
+- Aumentar a nota de todos os artefatos para, no mínimo, 9,0. <br>
 
 Objetivo 2: Ter comunicação clara e eficiente entre os membros da equipe, de modo que todos permaneçam engajados.
 
