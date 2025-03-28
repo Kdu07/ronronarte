@@ -9,9 +9,9 @@ export default class Phase3 extends BasePhase {
             "artistKey":"artist3",
             "textArtist":['Sem muito apoio, porém determinado a \nseguir carreira na arte, o artista africano \nChéri Samba foi pintor de letreiros \npublicitários, desenhista de histórias em \nquadrinhos e autor de pinturas com facetas \ncríticas.'],
             "textPainting":['O quadro foi titulado como “J’aime la couleur” - \ntraduzido como “Eu amo a cor” - e caracteriza-se \ncomo um autorretrato do autor Chéri Samba, de modo \nque, conforme o artista, ele está presente dentro de seu \npróprio trabalho para relatar o que significa ser \num artista africano de sucesso no cenário mundial.'],
-            "targetKey":"pigeon",
-            "animKey":"animPigeon",
-            "soundKey":"soundPigeon",
+            "targetKey":"snake",
+            "animKey":"animSnake",
+            "soundKey":"soundSnake",
             "maxScore": 7
         }
         

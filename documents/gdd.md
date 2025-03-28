@@ -720,7 +720,106 @@ A fase especial apresentará ao jogador uma tela em branco com uma variedade de 
 
 ## 3.8. Implementação Matemática de Animação/Movimento
 
-*Descreva aqui a função que implementa a movimentação/animação de personagens ou elementos gráficos no seu jogo. Sua função deve se basear em alguma formulação matemática (e.g. fórmula de aceleração). A explicação do funcionamento desta função deve conter notação matemática formal de fórmulas/equações. Se necessário, crie subseções para sua descrição.*
+### 3.8.1. Parâmetros de entrada
+
+O elemento gráfico que tem o movimento modelado matematicamente é o pombo que translada da origem ao centro da tela na cena tutorial (botões para abrir a cena: Jogar >>> Tutorial). As posições \(x\) e \(y\) iniciais são definidas pelas variáveis `const posInitialX = 0` e `const posInitialY = 0` (linhas 36 e 37 do arquivo tutorial.js, respectivamente).
+
+### 3.8.2. Definição do tempo total da animação
+
+O tempo total da animação é definido implicitamente no código pelo número de quadros até o pombo chegar à posição final. Como o jogo roda a 60 FPS, o tempo decorrido  \(t\) pode ser estimado a partir da contagem de quadros em `this.count++` (linha 54 do arquivo tutorial.js), conforme a equação:
+
+$$
+t = \frac{count}{60}
+$$
+
+### 3.8.3. Modelagem matemática
+
+O movimento do pombo ocorre nos eixos \(x\) e \(y\) simultaneamente, sendo que no eixo \(x\) o movimento é uniforme (MU) e no eixo \(y\) o movimento é uniformemente variado (MUV). 
+
+#### 3.8.3.1 Movimentação no eixo \(x\) (MU)
+
+O deslocamento no eixo \(x\) ocorre com velocidade constante $v_x$ definida em `this.velX = 5` (linha 44 do arquivo tutorial.js), logo, o deslocamento é dado por:
+
+$$
+x(t) = x_i + v_x \cdot t
+$$
+
+Onde $x(t)$ é a posição \(x\) em função do tempo, $x_i$ é a posição $x$ inicial (no nosso caso, $x_i = 0$), $v_x$ é a velocidade horizontal e $t$ é o tempo em segundos. E com isso podemos calcular a posição final no eixo $x$.
+
+#### 3.8.3.2 Movimentação no eixo \(y\) (MUV)
+
+No eixo \(y\) o pombo parte do repouso, ou seja $v_0y = 0$ (definido por `this.velY = 0` na linha 45 do arquivo tutorial.js), e acelera com aceleração $a_y = 0.02$, definida em `this.accelerationY = 0.02` (linha 46 do arquivo tutorial.js). Dessa forma, a equação da posição \(y\) é:
+
+$$
+y(y) = y_i + a_y \cdot t^2 \cdot \frac{1}{2}
+$$
+
+Onde $y(t)$ é a posição $y$ em função do tempo, $y_i$ é a posição inicial (no nosso caso, $y_i = 0$), $a_y$ é a aceleração no eixo $y$, e $t$ é o tempo em segundos. E com isso podemos calcular a posição final no eixo $y$.
+
+### 3.8.4. Implementação no código
+
+A movimentação do pombo é atualizada a cada frame na função `update()`. E o código implementado reflete diretamente as equações modeladas:
+
+Dentro da função `create()` definimos os parâmetros:
+```javascript
+
+  // Início da implementação dos elementos matemáticos
+        // Define posição inicial
+        const posInitialX = 0;  
+        const posInitialY = 0;
+
+        // Adiciona o pombo como personagem e inicia a animação
+        this.character = this.add.sprite(posInitialX, posInitialY, 'pigeon').setScale(this.scale.width/400).setFlip(true, false);
+        this.character.play('flyPigeon');
+
+        // Define velocidade nos dois eixos e aceleração no eixo y
+        this.velX = 5;
+        this.velY = 0;
+        this.accelerationY = 0.02;
+
+```
+Dentro da função `update()` implementamos o movimento:
+```javascript
+  // Confere se o personagem chegou no meio da tela
+        if (this.character.x <= this.scale.width/2){
+            
+            // Implementação da aceleração no movimento
+            this.count++; // Conta execuções do update()
+            this.velY += this.accelerationY; // Atualiza velocidade no eixo y
+            
+            // Atualiza posição com base na velocidade
+            this.character.x += this.velX;
+            this.character.y += this.velY;
+
+            // Imprime informações no console
+            console.log("------------------------------------")
+            console.log("Posição X: " + this.character.x)
+            console.log("Posição Y: " + this.character.y)
+            console.log("Velocidade X: " + this.velX)
+            console.log("Velocidade Y: " + this.velY)
+        }else{
+            // Se a caixa de texto e o texto ainda não foram adicionados
+            if(!this.textAdded){
+                console.log("=====================================")
+                console.log("Posição Inicial X: " + 0)
+                console.log("Posição Inicial Y: " + 0)
+                console.log("Posição Final X: " + this.character.x)
+                console.log("Posição Final Y: " + this.character.y)
+                console.log("Velocidade Final X: " + this.velX)
+                console.log("Velocidade Final Y: " + this.velY)
+                console.log("Tempo total: " + this.count/60)
+                console.log("=====================================")
+                // Fim das implementações matemáticas
+
+                // Adiciona os elementos
+                this.textBox = this.add.image(this.scale.width/2, this.scale.height/1.3, 'textBox').setScale(this.scale.width/800);
+                this.tutorialText = this.add.text(this.scale.width/8, this.scale.height/1.7, this.tutorialTexts[this.clicks], {fontSize: this.scale.width/33, fill:'#000'})
+                this.textAdded = true; // Altera a flag para true
+            }
+        }
+
+```
+Além da implementação matemática, repare que executamos uma série de comandos `console.log()` imprimindo valores de posição e velocidade para validação da modelagem. Incluindo posição final, velocidade final nos dois eixos, e tempo total da animação quando o pombo atinge o centro da tela.
 
 # <a name="c4"></a>4. Desenvolvimento do Jogo
 
