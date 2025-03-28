@@ -899,6 +899,12 @@ Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, co
 ![image](https://github.com/user-attachments/assets/58eefa74-c00e-4645-b137-27ee1eb0fdaf)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
+<div align = 'center'> 
+<p align = 'center'> Figura 33: Arquivos do jogo atualizados.</p>
+	<img src = "https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/Captura%20de%20tela%202025-03-28%20193243.png">
+<p align = 'center'>Fonte: material produzido pelos autores(2025).</p> <br><br>
+</div>
+
 ## 4.5. Revisão do MVP (sprint 5)
 
 *Descreva e ilustre aqui o desenvolvimento dos refinamentos e revisões da versão final do jogo, explicando brevemente o que foi entregue em termos de MVP. Utilize prints de tela para ilustrar.*
