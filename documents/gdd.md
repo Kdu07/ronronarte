@@ -592,10 +592,12 @@ Após passar pelo tutorial, o jogador será direcionado para uma tela de seleç�
  - Classes: SelectPhase e extensão de BasePhase;
  - Atributos e métodos: create() e update().
 
+<hr>
+
 - **Fase 1:**   
 A primeira fase apresenta ao jogador a dinâmica principal do jogo, em que o gato, ao tocar em um animal "alvo" na tela (nessa fase em específico, será um pombo), preenche aos poucos o quadro de fundo, que revela uma obra de arte(nessa fase em específico, "Sem Título"(também conhecido como "A Noiva" de Maria Auxiliadora). Após preenchimento desse quadro, é exibido uma tela de vitória que apresenta a obra completa, uma foto de seu compositor, e a pontuação do gato e tempo de conclusão da fase.	
 
-- Classes: Phase1;
+- Classes: Phase1 e extensão de BasePhase;
 - Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
 - Métodos: create, update; spawnTarget; clickTarget; movement(target); createTimer(); updateTimer(); clickTargetComplete(); displayVictory(); createPauseButton(); createBackground(); createBackgroundComplete(); 
 
@@ -637,7 +639,7 @@ A tela de vitória apresenta a arte completa pintada pelo gato, conjuntamente co
 <hr>
 
 - **Criativo (Tela branca para pintura)**:
-A fase especial apresentará ao jogador uma tela em branco com uma variedade de opções de cores que podem ser escolhidas pelo tutor para seu gato pintar. Após escolhidas as cores, será necessário pressionar um botão para iniciar a fase. Após a iniciação da fase, um animal alvo passará pela tela atraindo a atenção do gato, que, ao acertar o alvo, pintará a região pressionada na tela branca de fundo.   
+A fase especial apresentará ao jogador uma tela em branco com uma variedade de opções de cores e formatos de pincel que podem ser escolhidas pelo tutor para seu gato pintar. Após escolhido a cor e o pincel, a fase começa. Após a iniciação da fase, um animal alvo passará pela tela atraindo a atenção do gato, que, ao acertar o alvo, pintará a região pressionada na tela branca de fundo.   
 
 - Classes: CriativeMode;
 - Atributos e métodos: create(); update(); clickTarget(); toggleSplashMenu(); this.width; this.height; this.bg; this.palette;
