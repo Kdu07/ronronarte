@@ -219,7 +219,7 @@ Exemplos:
 	<li><b>Jogo web focado em dispositivos móveis:</b> tal formato demanda menos processamento e é mais facilmente acessível, tanto por ser web quanto por ser voltado a dispositivos móveis, uma vez que, atualmente, o celular é mais difundido que os computadores (FGV, 2024);</li> <br>
 	<li><b>Jogo com sistema para o gato baseado na entrega feita pelo tutor, incentivando a participação de ambos:</b> o jogo incentiva, ao longo da jogabilidade, o tutor a recompensar seu gato com petiscos, o que cria uma dinâmica de interação entre ambos;</li> <br>
 	<li><b>Mecânica geral do jogo de toques na tela realizados pelo gato, com objetivo de acertar o alvo e medir a precisão do gato nessa atividade:</b> o jogo propicia uma dinâmica por meio da qual o gato toca na tela, a fim de que ele acerte os alvos que forem aparecendo. Sob esse contexto, há a medição da precisão dos toques do pet na tela, fator este que possibilita a avaliação das habilidades do gato de caçar e de interação dele com o jogo.</li> <br>
-</ul> <br> <br>
+</ul> <br>
 
 <h4>Criadores de ganhos</h4>
 &nbsp; &nbsp; &nbsp; &nbsp;Os criadores de ganhos identificam o que, de fato, será implementado para gerar satisfação ao cliente, estando diretamente conectados aos ganhos elencados no perfil do cliente (Pereira, 2024). Dessa forma, seguem os criadores de ganhos identificados no contexto do jogo RonRonArte:<br>
@@ -230,7 +230,7 @@ Exemplos:
 	<li><b>Mecânica na qual o gato pinta um quadro para que seu dono possa registrar e guardá-lo:</b> ligado ao ganho “Criação de memória afetiva com seu gato”, este criador de ganho se refere à possibilidade de criação de momentos de conexão entre tutor e gato. Isso porque o gato poderá fazer uma obra autoral no jogo, ao passo que o tutor poderá salvá-la. Logo, essa interação cria uma lembrança compartilhada entre ambos, consequência de um momento de entretenimento e diversão;</li> <br>
 	<li><b>Sistema de recompensas dadas ao gato pelo seu dono, melhorando a sua relação:</b> associado ao ganho “Melhorar a relação do tutor com seu gato”, esse criador de ganho preconiza o fornecimento de recompensas alimentícias do tutor ao seu gato durante o jogo. Por intermédio disso, há o compartilhamento da jogabilidade entre ambos, o que acarreta uma relação mais próxima entre os dois;</li> <br>
 	<li><b>Com recursos de toques na tela, o gato pode acertar o alvo, assim estimulando e treinando sua capacidade de caça:</b> relacionado ao ganho “Aprimorar a habilidade de caça do gato”, tal criador de ganho foca no incentivo dos hábitos de caça do gato, estimulando-o a tocar nos alvos que aparecem na tela como se ele estivesse pegando presas. Assim, isso fortalece a interação do pet com o jogo, bem como seus instintos naturais.</li> <br>
-</ul> <br> <br>
+</ul> <br>
 
 <h4>Aliviadores de dor</h4>
 &nbsp; &nbsp; &nbsp; &nbsp;Nos aliviadores de dor, ocorre a identificação do que pode suprir as dores anteriormente reconhecidas (Pereira, 2024). Sob essa ótica, a equipe determinou os seguintes aliviadores de dor:<br>
