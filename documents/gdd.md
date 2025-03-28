@@ -178,14 +178,25 @@ Exemplos:
 <p align = "center">Figura 3: Canva proposta de valor.</p>
 
 ![Canva](https://github.com/user-attachments/assets/e8911524-e037-4c68-9acb-9371fa7c52b9)
-<p align = "center">Material feito pelos autores (2025).</p> <br>
+<p align = "center">Material feito pelos autores (2025) com base modelo de negócios elaborado por Alexander Osterwalder, Yves Pigneur e Alan Smith.</p> <br>
 
 <h3>PERFIL DO CLIENTE</h3>
 <h4>Tarefas do Cliente</h4>
 &nbsp; &nbsp; &nbsp; &nbsp;Neste tópico, deve-se observar o que o cliente já faz no seu dia a dia antes da proposta de solução, o que auxilia no entendimento de como é possível agir perante a problemática em questão (Pereira, 2024). A partir da definição supracitada e no contexto do jogo RonRonArte, o tutor de gatos efetua as seguintes tarefas:
 - Investe dinheiro à parte com formas de entreter o gato: a fim de promover diversão ao seu gato, o tutor compra brinquedos a ele, ou seja, são maneiras de entretenimento pagas; <br> <br>
 - Sai de casa para passear e movimentar o gato: para incentivar o gato a se movimentar e se entreter, o tutor precisa sair de casa com ele; <br> <br>
-- Encontra formas ineficientes em entreter o gato, especialmente em relação a jogos: os jogos disponíveis para gatos apenas exibem alvos na tela, sem proporcionar uma recompensa alimentícia, a qual estimularia o instinto de caça do animal.
+- Encontra formas ineficientes em entreter o gato, especialmente em relação a jogos: os jogos disponíveis para gatos apenas exibem alvos na tela, sem proporcionar uma recompensa alimentícia, a qual estimularia o instinto de caça do animal. <br><br><br>
+
+<h4>Ganhos</h4>
+&nbsp; &nbsp; &nbsp; &nbsp;No segmento de ganhos, são elencados todos os benefícios esperados pelo cliente, ou seja, suas aspirações em relação ao seu contexto. Sendo assim, tal parte do Canvas Proposta de Valor foca naquilo que o cliente almeja alcançar dentro do escopo em questão. Além disso, essa seção possui uma relação direta com o segmento de criadores de ganhos, uma vez que cada benefício esperado deve ser viabilizado por um elemento correspondente, ou seja, todos os ganhos devem ter criadores de ganhos associados (Pereira, 2024). Com base nisso, foram identificados os seguintes ganhos no contexto da vigente proposta:
+- Design diferencial e atrativo: os tutores desejam uma interface que, de fato, seja atrativa e que tenha um diferencial em relação a dos outros jogos; <br> <br>
+- Enredo interessante: um storytelling envolvente que atraia os tutores, uma vez que são justamente eles que instalam e, posteriormente, abrem os jogos; <br> <br>
+- Produto que não necessite de dispositivos de alto processamento: desejo por uma solução que não precise de hardware tão avançado e que não demande muito armazenamento e nem grande complexidade; <br> <br>
+- Criação de memória afetiva com seu gato: solução que possibilite momentos de proximidade afetiva entre tutor e gato, levando o entretenimento a outro nível; <br> <br>
+- Melhorar a relação do tutor com seu gato: desejo por uma solução que gere entretenimento ao gato e ao tutor de maneira conjunta; <br> <br>
+- Aprimorar a habilidade de caça do gato: solução que possa propiciar o uso de recompensas alimentícias como fator de incentivo ao gato durante ao jogo, de modo que ele associe a caça no jogo com a obtenção de comida. <br> <br>
+
+
 
 ### 1.1.5. Descrição da Solução Desenvolvida 
 
