@@ -23,7 +23,7 @@
 ### Instrutores
 - <a href="https://www.linkedin.com/in/kizzyterra/?originalSubdomain=br">Kizzy Fernanda Terra Ferreira da Paz</a>
 - <a href="https://www.linkedin.com/in/henrique-mohallem-paiva-6854b460/?originalSubdomain=br">Henrique Mohallem Paiva</a> 
-- <a href="https://www.linkedin.com/in/victorbarq/">Bruna Mayer Costa</a> 
+- <a href="https://www.linkedin.com/in/">Bruna Mayer Costa</a> 
 - <a href="https://www.linkedin.com/in/egondaxbacher/">Egon Ferreira Daxbacher </a>
 - <a href="https://www.linkedin.com/in/anacristinadossantos/?originalSubdomain=br">Ana Cristina dos Santos</a> 
 
@@ -88,8 +88,9 @@ https://github.com/Inteli-College/2025-1A-T15-IN01-G03.git
   **4. Clique com o botão direito em "index.html" e selecione "Open with Live Server"**
 
 ## 🗃 Histórico de lançamentos
-* 0.3.0 - 14/03/2025 - 
-* 0.2.0 - 28/02/2025 - Segunda versão beta do jogo | 
+* 0.4.0 - 28/03/2025 - Desenvolvimento final do MVP e versão beta do jogo | Implementações e refinamentos finais.
+* 0.3.0 - 14/03/2025 - Terceira versão alpha do jogo | Desenvolvimento e implementação do modo criativo e menu de seleção de níveis.
+* 0.2.0 - 28/02/2025 - Segunda versão alpha do jogo | Implementação de novas funcionalidades e fases ao jogo.
 * 0.1.0 - 13/02/2025 - Primeira versão alpha do jogo para materialização da ideia.
     
 
