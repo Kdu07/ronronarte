@@ -270,7 +270,7 @@ Exemplos:
    
    **Probabilidade:** 50%, pois não é possível atribuir certeza em relação à acontecimentos catastróficos e imprevistos extremos na vida pessoal de cada membro.
    
-   **Plano de ação:** Fazer com que a organização e o planejamento da equipe seja flexível, ou seja, fazer com que tenha sempre uma margem para lidar com imprevistos para que, caso aconteça de um membro se ausentar, a equipe consiga se adaptar. 
+   **Plano de ação:** Fazer com que a organização e o planejamento da equipe seja flexível, ou seja, fazer com que tenha sempre uma margem para lidar com imprevistos para que, caso aconteça de um membro se ausentar, a equipe consiga se adaptar. <br>
 
 2. **Falta de habilidades técnicas necessárias**: Na equipe CatUp, a falta de habilidades técnicas é um problema válido de analisar, pois todos os membros encontram-se no primeiro módulo da faculdade e todos carragam uma bagagem de conhecimentos de programação similares, de forma que, não raro, para a eficiente implementação de funcionalidades do código do jogo Ronrart, é necessário ceder esforços e tempo para estudar a sua execução.
    
@@ -278,7 +278,7 @@ Exemplos:
    
    **Probabilidade:** 80%, visto que as habilidades do campo da programação - o qual correspondente à base do funcionando do jogo em si - exigem, sempre, conhecimentos da linguagem e da biblioteca utilizada. 
    
-   **Plano de ação:** Adiantar os estudos técnicos que a faculdade fornece, buscar outras fontes de conhecimento (como a internet ou livros) e solicitar auxílio da professora ou do monitor da área de programação para tarefas do código mais complexas que estivermos com dificuldade de executar.
+   **Plano de ação:** Adiantar os estudos técnicos que a faculdade fornece, buscar outras fontes de conhecimento (como a internet ou livros) e solicitar auxílio da professora ou do monitor da área de programação para tarefas do código mais complexas que estivermos com dificuldade de executar. <br>
 
 3. **Mudança drástica de escopo**: Configura-se como mudança drástica de escopo a ocasião em que o parceiro queira mudar, de maneira drástica, as principais funcionalidades e objetivos do projeto, ou a aprovação de regulamentações não esperadas que coloquem em risco a execução do escopo original do projeto.
    
@@ -287,7 +287,7 @@ Exemplos:
    **Probabilidade:** Em torno de 11 a 30%, pois, em relação ao parceiro, ele demonstrou interesse e flexibilidade ao definir o escopo, compreendendo o nível de conhecimento dos membros. Entretanto, ainda pode acontecer dele apresentar insatisfação ou mudar de ideia bruscamente, de forma a querer redefinir grande parte do desenvolvimento.
    Já sobre mudanças de regulamento, alterações que impossibilitem a entrega do projeto são muito improváveis, considerando principalmente que a aprovação e aplicação de mutações legislativas exigem muito tempo para serem efetivadas.
    
-   **Plano de ação:** Manter comunicação clara com o parceiro, em especial nas Sprints Reviews.
+   **Plano de ação:** Manter comunicação clara com o parceiro, em especial nas Sprints Reviews. <br>
 
 4. **Partes interessadas desenvolvem expectativas imprecisas sobre o jogo**: O parceiro pode criar expectativas irrealistas em relação ao entregável, como desejar implemantações que não cabem na grade curricular da equipe no período das 5 sprints. 
    
@@ -295,7 +295,7 @@ Exemplos:
    
    **Probabilidade:** Entre 31% e 50%, pois apesar de compreensível, o parceiro demonstrou interesse no desenvolvimento de implementos que não são viáveis no momento acadêmico da equipe.
    
-   **Plano de ação:** Explicar e sempre deixar claro ao parceiro exatamente o que é possível desenvolver, assim como não prometer implementos sem a certeza de que será possível implementá-lo, tendo em mente as habilidades técnicas que serão aprendidas neste módulo. Além disso, dar ênfase às expectativas que são possíveis executar.
+   **Plano de ação:** Explicar e sempre deixar claro ao parceiro exatamente o que é possível desenvolver, assim como não prometer implementos sem a certeza de que será possível implementá-lo, tendo em mente as habilidades técnicas que serão aprendidas neste módulo. Além disso, dar ênfase às expectativas que são possíveis executar. <br>
 
 5. **Baixo engajamento dos membros com o projeto**: Pode acontecer de, por excesso de atividades ou compromissos extracurriculares, membros da equipe desviarem sua atenção das suas responsabilidades no projeto. 
    
@@ -303,7 +303,7 @@ Exemplos:
    
    **Probabilidade:** 31 a 50%, pois apesar do projeto dever ocupar um nível de prioridade na rotina dos membros, não é raro superestimar o quanto é possível  responsabilizar-se em atividades extracurriculares que podem consumir muito tempo e esforço, de modo que as terefas do projeto ficam desprezadas.
    
-   **Plano de ação:** Incentivar os membros que estão menos engajados e mais sobrecarregados com outras atividades a desenvolver uma rotina saudável que respeite suas obrigações dentro do projeto, assim como deixar claro sua importância para o desenvolvimento de toda a equipe.
+   **Plano de ação:** Incentivar os membros que estão menos engajados e mais sobrecarregados com outras atividades a desenvolver uma rotina saudável que respeite suas obrigações dentro do projeto, assim como deixar claro sua importância para o desenvolvimento de toda a equipe. <br>
 
 6. **Não conseguir realizar efetivamente os testes**: Por "realizar efetivamente os testes" entende-se testar o jogo com tutores e gatos de variadas idades e rotinas, de modo a cumprir com todos os passos do "casos de teste" definido. A problemática se revela quando esses testes não são possíveis de serem aplicados, por falta de tempo ou por falta de voluntários, por exemplo.
    
@@ -311,7 +311,7 @@ Exemplos:
    
    **Probabilidade:** Entre 11 a 30%, pois desde a primeira sprint o parceiro se disponibilizou e se mostrou motivado para realizar os testes, assim como a faculdade também se propôs a auxiliar nesse feito. Entretanto, é possível de acontecer impedimentos como não entregar um protótipo testável à tempo.
    
-   **Plano de ação:** Priorizar a produção de um jogo testável dentro do prazo estabelecido e cobrar o parceiro de reazliar seus testes, conforme combinado.
+   **Plano de ação:** Priorizar a produção de um jogo testável dentro do prazo estabelecido e cobrar o parceiro de reazliar seus testes, conforme combinado. <br>
 
 7. **Conflitos entre a equipe** : De conflitos entre a equipe considera-se quaisquer desacordos ou desentendimentos, como opiniões divergentes sobre como uma tarefa deve ser implementada ou em casos de tarefas mal executadas ou atrasadas.
    
@@ -319,7 +319,7 @@ Exemplos:
    
    **Probabilidade:** De 51% a 70%, haja vista que o grupo é composto por indivíduos diversos e, por isso, é comum que suas perspectivas sejam divergentes. 
    
-   **Plano de ação:** Cada membro deve sempre atualizar o andamento da sua tarefa à equipe e optar pela comunicação não violenta.
+   **Plano de ação:** Cada membro deve sempre atualizar o andamento da sua tarefa à equipe e optar pela comunicação não violenta. <br>
 
 8. **A equipe não entregar o jogo adaptado para todos os tipos de dispositivos solicitados pelo parceiro** : Em razão da insciência dos membros e da complexidade de promover a adaptabilidade de algumas funcionalidades do jogo em dispositivos diversos, é possível que a equipe não entregue a experiência da jogabilidade em sua completude em todos os dispositivo solicitados, de modo que funcione efetimente somente pelo celular ou somente pelo tablet. 
    
@@ -327,7 +327,7 @@ Exemplos:
    
    **Probabilidade:** 51% a 70%, em função da complexidade de implementar responsividade ao jogo com a linguagem e com a biblioteca utilizada no código. 
    
-   **Plano de ação:** Estudar mais como fazer essa adaptabilidade em todas as funcionalidades e explicar ao parceiro a dificuldade dessa tarefa.
+   **Plano de ação:** Estudar mais como fazer essa adaptabilidade em todas as funcionalidades e explicar ao parceiro a dificuldade dessa tarefa. <br>
 
 9. **Atrasos ou ausência de membros na daily** : Dado as responsabilidades dos membros em atividades extras, é possível que haja demora em chegar para os horários da daily ou até mesmo a ausência nela. 
    
@@ -335,7 +335,7 @@ Exemplos:
    
    **Probabilidade:** 31% a 50%, pois não é raro acontecer de um membro se perder em seus horários e atrasar para chegar na daily, especialmente em razão de todos estarem no primeiro módulo, ainda em período de adaptação. 
    
-   **Plano de ação:** 5 minutos antes da daily, como forma de mitigar a problemática, é válido o ScrumMaster ou os outros membros mandarem mensagem no grupo de Whatsapp e no Slack solicitando que todos os membros retornem para a sala e, se necessário, marcando também os membros que ainda não estiverem no local. Ademais, comunicar os membros que estiverem atrasando ou se ausentando da daily sobre a importância desse momento para o desenvolvimento do projeto e sugerir formas de ajudar a lembrá-lo de chegar no horário, como colocar um despertador.
+   **Plano de ação:** 5 minutos antes da daily, como forma de mitigar a problemática, é válido o ScrumMaster ou os outros membros mandarem mensagem no grupo de Whatsapp e no Slack solicitando que todos os membros retornem para a sala e, se necessário, marcando também os membros que ainda não estiverem no local. Ademais, comunicar os membros que estiverem atrasando ou se ausentando da daily sobre a importância desse momento para o desenvolvimento do projeto e sugerir formas de ajudar a lembrá-lo de chegar no horário, como colocar um despertador. <br>
 
 10. **Falta de materiais úteis fornecidos pelo parceiro** : Pode acontecer do parceiro esquecer de enviar materias úteis para o desenvolvimento de alguma parte do projeto, como arquivos relacionados ao negócio ou informações dos requisitos. 
    
@@ -343,7 +343,7 @@ Exemplos:
    
    	**Probabilidade:** de 11% a 30%, pois embora o parceiro seja uma figura pública com uma agenda cheia, o instrutor e o coordenador do curso estão sempre mantendo contato com ele.
    
-   	**Plano de ação:** Comunicar o instrutor para que, se necessário, cobre o parceiro de enviar os materiais necessários. 
+   	**Plano de ação:** Comunicar o instrutor para que, se necessário, cobre o parceiro de enviar os materiais necessários. <br>
 
 11. **Projeto não finalizado após 10 semanas:** : Existe a possibilidade de, por consequencia da não intervenção para mitigar os possíveis riscos, por motivos de atrasos, ou imprevistos na equipe, o projeto não ser finalizado em sua completude até a quinta sprint.
     
@@ -351,7 +351,7 @@ Exemplos:
    
    	**Probabilidade:** 1% a 10%, pois mesmo que não seja possível entregar o projeto de modo a atingir todas as expectativas, ao menos o MVP é mais provável de ser entregue.
    
-   	**Plano de ação:** Organizar as atividades derivadas das User Stories nas sprints, de forma que seja possível entregá-las com, ao menos uma pequena margem de antecedência.
+   	**Plano de ação:** Organizar as atividades derivadas das User Stories nas sprints, de forma que seja possível entregá-las com, ao menos uma pequena margem de antecedência. <br> <br>
 
 ### Oportunidades
 
