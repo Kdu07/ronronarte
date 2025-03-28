@@ -183,21 +183,31 @@ Exemplos:
 <h3>PERFIL DO CLIENTE</h3>
 <h4>Tarefas do Cliente</h4>
 &nbsp; &nbsp; &nbsp; &nbsp;Neste tópico, deve-se observar o que o cliente já faz no seu dia a dia antes da proposta de solução, o que auxilia no entendimento de como é possível agir perante a problemática em questão (Pereira, 2024). A partir da definição supracitada e no contexto do jogo RonRonArte, o tutor de gatos efetua as seguintes tarefas:
-- Investe dinheiro à parte com formas de entreter o gato: a fim de promover diversão ao seu gato, o tutor compra brinquedos a ele, ou seja, são maneiras de entretenimento pagas; <br> <br>
-- Sai de casa para passear e movimentar o gato: para incentivar o gato a se movimentar e se entreter, o tutor precisa sair de casa com ele; <br> <br>
-- Encontra formas ineficientes em entreter o gato, especialmente em relação a jogos: os jogos disponíveis para gatos apenas exibem alvos na tela, sem proporcionar uma recompensa alimentícia, a qual estimularia o instinto de caça do animal. <br><br><br>
+<ul>
+	<li>Investe dinheiro à parte com formas de entreter o gato: a fim de promover diversão ao seu gato, o tutor compra brinquedos a ele, ou seja, são maneiras de entretenimento pagas; </li> <br> <br>
+	<li>Sai de casa para passear e movimentar o gato: para incentivar o gato a se movimentar e se entreter, o tutor precisa sair de casa com ele;</li> <br> <br>
+	<li>Encontra formas ineficientes em entreter o gato, especialmente em relação a jogos: os jogos disponíveis para gatos apenas exibem alvos na tela, sem proporcionar uma recompensa alimentícia, a qual estimularia o instinto de caça do animal.</li> <br> <br>
+</ul>
 
 <h4>Ganhos</h4>
 &nbsp; &nbsp; &nbsp; &nbsp;No segmento de ganhos, são elencados todos os benefícios esperados pelo cliente, ou seja, suas aspirações em relação ao seu contexto. Sendo assim, tal parte do Canvas Proposta de Valor foca naquilo que o cliente almeja alcançar dentro do escopo em questão. Além disso, essa seção possui uma relação direta com o segmento de criadores de ganhos, uma vez que cada benefício esperado deve ser viabilizado por um elemento correspondente, ou seja, todos os ganhos devem ter criadores de ganhos associados (Pereira, 2024). Com base nisso, foram identificados os seguintes ganhos no contexto da vigente proposta:
-- Design diferencial e atrativo: os tutores desejam uma interface que, de fato, seja atrativa e que tenha um diferencial em relação a dos outros jogos; <br> <br>
-- Enredo interessante: um storytelling envolvente que atraia os tutores, uma vez que são justamente eles que instalam e, posteriormente, abrem os jogos; <br> <br>
-- Produto que não necessite de dispositivos de alto processamento: desejo por uma solução que não precise de hardware tão avançado e que não demande muito armazenamento e nem grande complexidade; <br> <br>
-- Criação de memória afetiva com seu gato: solução que possibilite momentos de proximidade afetiva entre tutor e gato, levando o entretenimento a outro nível; <br> <br>
-- Melhorar a relação do tutor com seu gato: desejo por uma solução que gere entretenimento ao gato e ao tutor de maneira conjunta; <br> <br>
-- Aprimorar a habilidade de caça do gato: solução que possa propiciar o uso de recompensas alimentícias como fator de incentivo ao gato durante ao jogo, de modo que ele associe a caça no jogo com a obtenção de comida. <br> <br>
+<ul>
+	<li>Design diferencial e atrativo: os tutores desejam uma interface que, de fato, seja atrativa e que tenha um diferencial em relação a dos outros jogos;</li> <br> <br>
+	<li>Enredo interessante: um storytelling envolvente que atraia os tutores, uma vez que são justamente eles que instalam e, posteriormente, abrem os jogos; </li> <br> <br>
+	<li>Produto que não necessite de dispositivos de alto processamento: desejo por uma solução que não precise de hardware tão avançado e que não demande muito armazenamento e nem grande complexidade;</li> <br> <br>
+	<li>Criação de memória afetiva com seu gato: solução que possibilite momentos de proximidade afetiva entre tutor e gato, levando o entretenimento a outro nível;</li> <br> <br>
+	<li>Melhorar a relação do tutor com seu gato: desejo por uma solução que gere entretenimento ao gato e ao tutor de maneira conjunta;</li> <br> <br>
+	<li>Aprimorar a habilidade de caça do gato: solução que possa propiciar o uso de recompensas alimentícias como fator de incentivo ao gato durante ao jogo, de modo que ele associe a caça no jogo com a obtenção de comida.</li> <br> <br>
+</ul>
 
-
-
+<h4>Dores</h4>
+&nbsp; &nbsp; &nbsp; &nbsp;No segmento de dores, há a definição daquilo com que o cliente sofre, em  decorrência da falta de uma solução efetiva ao seu problema. Assim, essa seção mostra as angústias do cliente, que devem ser aliviadas (Pereira, 2024). De modo análogo à relação ganhos-criadores de ganho, as dores possuem aliviadores de dores correspondentes, como em uma função matemática que envolve duas variáveis dependentes entre si. Sob esse prisma, nota-se as seguintes dores sentidas pelo cliente do vigente trabalho:
+<ul>
+	<li>Jogos não interessantes aos gatos: os jogos para gatos já existentes não estimulam adequadamente o gato durante a jogabilidade, sendo monótonos;</li> <br> <br>
+	<li>Os jogos não consideram o ponto de vista dos tutores: os jogos para gatos já presentes no mercado não levam em conta o ponto de vista dos tutores de modo significativo, ignorando suas necessidades e preferências;</li> <br> <br>
+	<li>Jogos sem foco na relação tutor-gato: os jogos convencionais para gatos levam em consideração o entretenimento isolado do gato, sem uma participação efetiva do tutor nesse processo;</li> <br> <br>
+	<li>Necessidade de investimento extra em formas de entreter o felino: os tutores investem em maneiras pagas de entretenimento aos seus gatos. Desse modo, há a busca por alternativas gratuitas.</li> <br> <br>
+</ul>
 ### 1.1.5. Descrição da Solução Desenvolvida 
 
 &nbsp; &nbsp; &nbsp; &nbsp;O problema a ser resolvido está diretamente relacionado à demanda de jogos para gatos. Nesse sentido, o cerne da questão está no fato de que as atuais propostas de tais ferramentas, embora procurem estimular os instintos naturais de caça do gato, contam com uma similaridade forte e pouco diferencial entre si, como o próprio representante da Dr. Pet, chamado Alexandre Rossi, mencionou em encontros presenciais com as equipes de desenvolvimento. Além disso, ele mencionou que não há uma interação direta entre tutor e gato, o que pode acarretar ansiedade no pet, visto que ele sente falta de seu tutor. Ademais, nesses games, não há previsão de recompensas dadas pelo tutor ao gato durante o momento de jogabilidade. Portanto, a situação supracitada gera monotonia ao pet e não leva em consideração a interação afetiva entre gato e tutor, uma vez que centra seu foco no ato de jogar por jogar.<br><br>
