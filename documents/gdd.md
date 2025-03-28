@@ -180,6 +180,13 @@ Exemplos:
 ![Canva](https://github.com/user-attachments/assets/e8911524-e037-4c68-9acb-9371fa7c52b9)
 <p align = "center">Material feito pelos autores (2025).</p> <br>
 
+<h3>PERFIL DO CLIENTE</h3>
+<h4>Tarefas do Cliente</h4>
+&nbsp; &nbsp; &nbsp; &nbsp;Neste tópico, deve-se observar o que o cliente já faz no seu dia a dia antes da proposta de solução, o que auxilia no entendimento de como é possível agir perante a problemática em questão (Pereira, 2024). A partir da definição supracitada e no contexto do jogo RonRonArte, o tutor de gatos efetua as seguintes tarefas:
+- Investe dinheiro à parte com formas de entreter o gato: a fim de promover diversão ao seu gato, o tutor compra brinquedos a ele, ou seja, são maneiras de entretenimento pagas; <br> <br>
+- Sai de casa para passear e movimentar o gato: para incentivar o gato a se movimentar e se entreter, o tutor precisa sair de casa com ele; <br> <br>
+- Encontra formas ineficientes em entreter o gato, especialmente em relação a jogos: os jogos disponíveis para gatos apenas exibem alvos na tela, sem proporcionar uma recompensa alimentícia, a qual estimularia o instinto de caça do animal.
+
 ### 1.1.5. Descrição da Solução Desenvolvida 
 
 &nbsp; &nbsp; &nbsp; &nbsp;O problema a ser resolvido está diretamente relacionado à demanda de jogos para gatos. Nesse sentido, o cerne da questão está no fato de que as atuais propostas de tais ferramentas, embora procurem estimular os instintos naturais de caça do gato, contam com uma similaridade forte e pouco diferencial entre si, como o próprio representante da Dr. Pet, chamado Alexandre Rossi, mencionou em encontros presenciais com as equipes de desenvolvimento. Além disso, ele mencionou que não há uma interação direta entre tutor e gato, o que pode acarretar ansiedade no pet, visto que ele sente falta de seu tutor. Ademais, nesses games, não há previsão de recompensas dadas pelo tutor ao gato durante o momento de jogabilidade. Portanto, a situação supracitada gera monotonia ao pet e não leva em consideração a interação afetiva entre gato e tutor, uma vez que centra seu foco no ato de jogar por jogar.<br><br>
