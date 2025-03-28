@@ -857,6 +857,12 @@ Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, co
 7 | Fase 1 em curso e volume do dispositível audível | Gato bater no alvo da fase 1 | É revelado parte de um quadro a cada acerto do gato no alvo e é emitido um estímulo sonoro
 8 | Gato abateu o alvo três vezes | Esperar 6 segundos | O jogo direciona para a tela de vitória e é emitido um estímulo sonoro
 9 | Cena do modo criativo | Selecionar tinta na paleta de tintas | Ao clicar no alvo, a tinta selecionada é pintda na tela
+10| Cena de fase do jogo | Gato bater no mesmo alvo repetidas vezes | Apenas uma batida é contabilizada
+11| Cena de level select | Tutor clicar no botão repetidas vezes | Direciona para a cena correta, com transição e sem bugs
+12| Fase do jogo | Ao inciar e durante a fase | Alvo se movimenta dentro do quadro, e possui velocidade constante no eixo x e variada no eixo y
+13| Cenas com botões de segurar (tutorial, fases, criativo) | Tocar nos botões da cena | Cancela o carregamento do botão e não realiza a funcionalidade do botão
+14| Cenas com botões de segurar (tutorial, fases, criativo) | Pressionar e segurar os botões da cena | Realiza a funcionalidade correta do botão
+15| Modo criativo | Clicar e segurar o botão de print representado por uma câmera | Aviso para tirar uma printscreen seguido de remoção dos elementos extras ao quadro da tela
 
 ## 5.2. Testes de jogabilidade (playtests) (sprint 4)
 
