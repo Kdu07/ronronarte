@@ -184,24 +184,24 @@ Exemplos:
 <h4>Tarefas do Cliente</h4>
 &nbsp; &nbsp; &nbsp; &nbsp;Neste tópico, deve-se observar o que o cliente já faz no seu dia a dia antes da proposta de solução, o que auxilia no entendimento de como é possível agir perante a problemática em questão (Pereira, 2024). A partir da definição supracitada e no contexto do jogo RonRonArte, o tutor de gatos efetua as seguintes tarefas: <br>
 <ul>
-	<li> <b>Investe dinheiro à parte com formas de entreter o gato: </b> a fim de promover diversão ao seu gato, o tutor compra brinquedos a ele, ou seja, são maneiras de entretenimento pagas; </li>
-	<li><b>Sai de casa para passear e movimentar o gato:</b> para incentivar o gato a se movimentar e se entreter, o tutor precisa sair de casa com ele;</li> 
-	<li><b>Encontra formas ineficientes em entreter o gato, especialmente em relação a jogos:</b> os jogos disponíveis para gatos apenas exibem alvos na tela, sem proporcionar uma recompensa alimentícia, a qual estimularia o instinto de caça do animal.</li>
+	<li> <b>Investe dinheiro à parte com formas de entreter o gato: </b> a fim de promover diversão ao seu gato, o tutor compra brinquedos a ele, ou seja, são maneiras de entretenimento pagas; </li><br>
+	<li><b>Sai de casa para passear e movimentar o gato:</b> para incentivar o gato a se movimentar e se entreter, o tutor precisa sair de casa com ele;</li> <br>
+	<li><b>Encontra formas ineficientes em entreter o gato, especialmente em relação a jogos:</b> os jogos disponíveis para gatos apenas exibem alvos na tela, sem proporcionar uma recompensa alimentícia, a qual estimularia o instinto de caça do animal.</li><br>
 </ul>
 
 <h4>Ganhos</h4>
-&nbsp; &nbsp; &nbsp; &nbsp;No segmento de ganhos, são elencados todos os benefícios esperados pelo cliente, ou seja, suas aspirações em relação ao seu contexto. Sendo assim, tal parte do Canvas Proposta de Valor foca naquilo que o cliente almeja alcançar dentro do escopo em questão. Além disso, essa seção possui uma relação direta com o segmento de criadores de ganhos, uma vez que cada benefício esperado deve ser viabilizado por um elemento correspondente, ou seja, todos os ganhos devem ter criadores de ganhos associados (Pereira, 2024). Com base nisso, foram identificados os seguintes ganhos no contexto da vigente proposta:
+&nbsp; &nbsp; &nbsp; &nbsp;No segmento de ganhos, são elencados todos os benefícios esperados pelo cliente, ou seja, suas aspirações em relação ao seu contexto. Sendo assim, tal parte do Canvas Proposta de Valor foca naquilo que o cliente almeja alcançar dentro do escopo em questão. Além disso, essa seção possui uma relação direta com o segmento de criadores de ganhos, uma vez que cada benefício esperado deve ser viabilizado por um elemento correspondente, ou seja, todos os ganhos devem ter criadores de ganhos associados (Pereira, 2024). Com base nisso, foram identificados os seguintes ganhos no contexto da vigente proposta:<br>
 <ul>
 	<li><b>Design diferencial e atrativo:</b> os tutores desejam uma interface que, de fato, seja atrativa e que tenha um diferencial em relação a dos outros jogos;</li> <br>
 	<li><b>Enredo interessante:</b>um storytelling envolvente que atraia os tutores, uma vez que são justamente eles que instalam e, posteriormente, abrem os jogos; </li> <br>
-	<li><b>Produto que não necessite de dispositivos de alto processamento:</b> desejo por uma solução que não precise de hardware tão avançado e que não demande muito armazenamento e nem grande complexidade;</li> <br> <br>
+	<li><b>Produto que não necessite de dispositivos de alto processamento:</b> desejo por uma solução que não precise de hardware tão avançado e que não demande muito armazenamento e nem grande complexidade;</li> <br>
 	<li><b>Criação de memória afetiva com seu gato:</b> solução que possibilite momentos de proximidade afetiva entre tutor e gato, levando o entretenimento a outro nível;</li> <br> 
 	<li><b>Melhorar a relação do tutor com seu gato:</b> desejo por uma solução que gere entretenimento ao gato e ao tutor de maneira conjunta;</li> <br>
 	<li><b>Aprimorar a habilidade de caça do gato:</b> solução que possa propiciar o uso de recompensas alimentícias como fator de incentivo ao gato durante ao jogo, de modo que ele associe a caça no jogo com a obtenção de comida.</li> <br>
 </ul>
 
 <h4>Dores</h4>
-&nbsp; &nbsp; &nbsp; &nbsp;No segmento de dores, há a definição daquilo com que o cliente sofre, em  decorrência da falta de uma solução efetiva ao seu problema. Assim, essa seção mostra as angústias do cliente, que devem ser aliviadas (Pereira, 2024). De modo análogo à relação ganhos-criadores de ganho, as dores possuem aliviadores de dores correspondentes, como em uma função matemática que envolve duas variáveis dependentes entre si. Sob esse prisma, nota-se as seguintes dores sentidas pelo cliente do vigente trabalho:
+&nbsp; &nbsp; &nbsp; &nbsp;No segmento de dores, há a definição daquilo com que o cliente sofre, em  decorrência da falta de uma solução efetiva ao seu problema. Assim, essa seção mostra as angústias do cliente, que devem ser aliviadas (Pereira, 2024). De modo análogo à relação ganhos-criadores de ganho, as dores possuem aliviadores de dores correspondentes, como em uma função matemática que envolve duas variáveis dependentes entre si. Sob esse prisma, nota-se as seguintes dores sentidas pelo cliente do vigente trabalho:<br>
 <ul>
 	<li><b>Jogos não interessantes aos gatos:</b> os jogos para gatos já existentes não estimulam adequadamente o gato durante a jogabilidade, sendo monótonos;</li> <br>
 	<li><b>Os jogos não consideram o ponto de vista dos tutores:</b> os jogos para gatos já presentes no mercado não levam em conta o ponto de vista dos tutores de modo significativo, ignorando suas necessidades e preferências;</li> <br>
@@ -214,7 +214,7 @@ Exemplos:
 &nbsp; &nbsp; &nbsp; &nbsp;A partir da identificação do perfil do cliente, é necessário mapear o melhor caminho pelo qual suas necessidades serão atendidas. Desse modo, estão explicitados os criadores de ganho, aliviadores de dor e os produtos e serviços propostos pela solução deste projeto, a fim de atingir o objetivo supracitado. <br>
 
 <h4>Produtos e serviços</h4>
-&nbsp; &nbsp; &nbsp; &nbsp;No segmento de produtos e serviços, há a identificação daquilo que deve ser entregue ao cliente, por intermédio de funcionalidades definidas e claras (Pereira, 2024). A partir de tal definição, é concebível mencionar, no escopo do jogo RonRonArte, os produtos e serviços subsequentes:
+&nbsp; &nbsp; &nbsp; &nbsp;No segmento de produtos e serviços, há a identificação daquilo que deve ser entregue ao cliente, por intermédio de funcionalidades definidas e claras (Pereira, 2024). A partir de tal definição, é concebível mencionar, no escopo do jogo RonRonArte, os produtos e serviços subsequentes:<br>
 <ul>
 	<li><b>Jogo web focado em dispositivos móveis:</b> tal formato demanda menos processamento e é mais facilmente acessível, tanto por ser web quanto por ser voltado a dispositivos móveis, uma vez que, atualmente, o celular é mais difundido que os computadores (FGV, 2024);</li> <br>
 	<li><b>Jogo com sistema para o gato baseado na entrega feita pelo tutor, incentivando a participação de ambos:</b> o jogo incentiva, ao longo da jogabilidade, o tutor a recompensar seu gato com petiscos, o que cria uma dinâmica de interação entre ambos;</li> <br>
@@ -222,7 +222,7 @@ Exemplos:
 </ul> <br> <br>
 
 <h4>Criadores de ganhos</h4>
-&nbsp; &nbsp; &nbsp; &nbsp;Os criadores de ganhos identificam o que, de fato, será implementado para gerar satisfação ao cliente, estando diretamente conectados aos ganhos elencados no perfil do cliente (Pereira, 2024). Dessa forma, seguem os criadores de ganhos identificados no contexto do jogo RonRonArte:
+&nbsp; &nbsp; &nbsp; &nbsp;Os criadores de ganhos identificam o que, de fato, será implementado para gerar satisfação ao cliente, estando diretamente conectados aos ganhos elencados no perfil do cliente (Pereira, 2024). Dessa forma, seguem os criadores de ganhos identificados no contexto do jogo RonRonArte:<br>
 <ul>
 	<li><b>Design mais desenvolvido e atraente ao gato e ao dono:</b> esse criador de ganho está associado ao ganho “Design diferencial e atrativo”. Isso porque o foco do jogo RonRonArte é propiciar um design agradável aos jogadores e coerente com a história do game, visto que ela se refere à arte;</li> <br>
 	<li>História para chamar atenção do tutor: ao contrário de jogos convencionais, este jogo foca em um storytelling atrativo, que envolve a difusão de obras de arte realizadas por artistas não tão conhecidos. Logo, este criador de ganho está associado ao ganho “Enredo interessante”;</li> <br>
@@ -233,7 +233,7 @@ Exemplos:
 </ul> <br> <br>
 
 <h4>Aliviadores de dor</h4>
-&nbsp; &nbsp; &nbsp; &nbsp;Nos aliviadores de dor, ocorre a identificação do que pode suprir as dores anteriormente reconhecidas (Pereira, 2024). Sob essa ótica, a equipe determinou os seguintes aliviadores de dor:
+&nbsp; &nbsp; &nbsp; &nbsp;Nos aliviadores de dor, ocorre a identificação do que pode suprir as dores anteriormente reconhecidas (Pereira, 2024). Sob essa ótica, a equipe determinou os seguintes aliviadores de dor:<br>
 <ul>
 	<li><b>Efeitos sonoros e alvos atrativos aos gatos:</b> associado à dor “Jogos não interessantes aos gatos”, esse aliviador de dor busca justamente utilizar sons e alvos atrativos aos gatos para que o jogo não fique monótono, sendo estimulante aos jogadores; </li> <br>
 	<li> <b>Jogo agrada aos tutores por via de uma história temática do jogo e formas de interação dele no jogo:</b> associado à dor “Os jogos não consideram o ponto de vista dos tutores”, tal aliviador de dor efetiva sua função analgésica por meio da consolidação de uma história atraente no jogo ao tutor (relacionada à arte), bem como pela possibilidade dele também atuar no game, fornecendo recompensas ao seu gato;</li> <br>
