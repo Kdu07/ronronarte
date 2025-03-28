@@ -567,14 +567,16 @@ Caso queira ver o diagrama de cenas no Figma, [clique aqui](https://www.figma.co
 - **Tela inicial (Splash Screen):**
 A primeira cena do jogo conta com uma splash screen (cena exibida ao abrir o jogo) que apresenta o nome de nossa equipe em um fundo preto.
 
-Classes, atributos e métodos: classe "SplashScreen", métodos: preload e create.
+- Classes: SplashScreen;
+- métodos e atributos: preload() e create();
 
 <hr>
 
 - **Tela de start:** 
 A tela de start conta com uma imagem de fundo gerada por IA que apresenta elementos do storytelling do jogo como um portal, pinturas emolduradas e um gato. Além disso, há também um botão de "JOGAR", que ao ser pressionado redireciona para a tela de primeira fase do jogo.
 
-Classes, atributos e métodos:
+- Classes: Menu;
+- Atributos e métodos: create() e resizeGame();
 
 <hr>
 
@@ -608,11 +610,6 @@ A segunda fase apresenta ao jogador a dinâmica principal do jogo, em que o gato
 
 <hr>
 
-- **Texto pós-fase:**
-Essa cena apresentará um diálogo por texto que trará informações sobre a arte abordada na fase e seu autor.
-
-Classes, atributos e métodos: Ainda não implementado
-
 - **Fase 3:** 
 A terceira fase apresentará ao jogador um cenário semelhante ao da fase 1 e 2, porém com foco em uma arte diferente (nessa fase em específico, "J'aime la couleur" de Chéri Samba). Nessa fase, o alvo será uma cobra.
 
@@ -631,14 +628,13 @@ A terceira fase apresentará ao jogador um cenário semelhante ao da fase 1, 2 e
 
 <hr>      
 
-- **Fase 5:** 
-A quinta fase apresentará ao jogador um cenário semelhante ao das outras fases, porém com foco em um período da arte diferente (nessa fase em específico, arte rupestre). Nessa fase o animal alvo apresentado será um animal característico do período em questão, sendo, nessa fase, uma mosca.
+- **Texto pós-fase:**
+A tela de vitória apresenta a arte completa pintada pelo gato, conjuntamente com uma representação visual do autor original da obra. Abaixo há uma breve descrição sobre o contexto da arte e seu artista.
 
-- Classes: AncientPhase;
-- Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
-- Métodos: create, update; spawnTarget; clickTarget; movement(target);
+- Classes: Victory;
+- Atributos e métodos: this.artistKey; this.backgroundKey; this.textArtist; this.textPainting; this.targetKey; this.nextPhase; init(data); create(); update();
 
-<hr>      
+<hr>
 
 - **Criativo (Tela branca para pintura)**:
 A fase especial apresentará ao jogador uma tela em branco com uma variedade de opções de cores que podem ser escolhidas pelo tutor para seu gato pintar. Após escolhidas as cores, será necessário pressionar um botão para iniciar a fase. Após a iniciação da fase, um animal alvo passará pela tela atraindo a atenção do gato, que, ao acertar o alvo, pintará a região pressionada na tela branca de fundo.   
@@ -646,10 +642,6 @@ A fase especial apresentará ao jogador uma tela em branco com uma variedade de 
 Classes, métodos e atributos: ainda não implementados.
 
 <hr>
-
-- **Tela de vitória:** A tela de vitória apresenta a arte completa pintada pelo gato, conjuntamente com uma representação visual do autor original da obra. Abaixo há uma breve descrição sobre o contexto da arte e seu artista. Além disso, há uma “métrica” acerca do desempenho do gato, representado em estrelas e % de acerto.
-
-Classes, métodos e atributos: ainda não implementados.
 
 ## 3.6. Regras do jogo (sprint 3)
 &nbsp; &nbsp; &nbsp; &nbsp;No mundo de RonRonArte, o gato precisa atingir com toques na tela os alvos (animaizinhos) que aparecem na tela e se movem por ela, completando as fases que são obras de arte dos mais diversos períodos artísticos. A partir disso, ele receberá pontos e, se ele fizer todos os pontos, o tutor será incentivado a dar petiscos ao seu pet, a fim de que ele associe essa ação com a recompensa alimentícia. Além disso, são desbloqueados tintas e formatos diferentes que o tutor pode selecionar no modo criativo, nesse modo o gato poderá criar suas próprias pinturas. Logo, há a intersecção entre os instintos naturais de caça do gato, arte e alimentação animal.
