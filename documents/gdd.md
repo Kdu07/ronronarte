@@ -171,6 +171,9 @@ Exemplos:
 <hr>
 
 ### 1.1.4. Proposta de Valor 
+&nbsp; &nbsp; &nbsp; &nbsp;Conforme Pereira (2024), o modelo de negócios denominado “Canvas de Proposta de Valor”, criado por Alexander Osterwalder, Yves Pigneur e Alan Smith, é uma ferramenta que visa garantir que o produto esteja conforme as necessidades do cliente, trazendo a ele ganhos e solucionando suas dores, estruturando como um serviço agregar-lhe-á valor. Para tanto, esse instrumento parte do uso de dois blocos do Business Model Canvas, sendo eles: “Customer Segment” (Segmento de Cliente) e “Value Proposition” (Proposta de Valor). <br> <br>
+&nbsp; &nbsp; &nbsp; &nbsp;Nesse sentido, o Canvas Proposta de Valor é divido em dois lados. O lado direito se refere ao perfil que o cliente apresenta, demonstrando as suas tarefas, as suas dores e os seus ganhos. Já o lado esquerdo consiste na  proposta de valor que deve ser entregue ao cliente, a qual abrange produtos e serviços, criadores de ganhos e aliviadores de dor (é o mapa de valor) (Pereira, 2024).<br> <br>
+&nbsp; &nbsp; &nbsp; &nbsp;Portanto, é significativo descrever o conceito geral de cada um desses tópicos, trazendo suas relações e como cada um impacta o outro, seja direta ou indiretamente. Logo, os elementos inerentes ao Canvas Proposta de Valor da solução proposta pelo vigente projeto estão abordados nos tópicos subsequentes, a começar pelo perfil do cliente. Além disso, a figura 3 indica tais elementos de modo visual: <br> <br>
 
 <p align = "center">Figura 3: Canva proposta de valor.</p>
 
