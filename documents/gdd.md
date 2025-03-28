@@ -441,7 +441,7 @@ As mecânicas do jogo RonRonArte são simples e de fácil entendimento. A mecân
 
 ### 3.8.1. Parâmetros de entrada
 
-O elemento gráfico que tem o movimento modelado matematicamente o pombo que translada da origem ao centro da tela. As posições \(x\) e \(y\) iniciais ão definidas pelas variáveis `const posInitialX = 0` e `const posInitialY = 0` (linhas 36 e 37 do arquivo tutorial.js, respectivamente).
+O elemento gráfico que tem o movimento modelado matematicamente é o pombo que translada da origem ao centro da tela na cena tutorial (botões para abrir a cena: Jogar >>> Tutorial). As posições \(x\) e \(y\) iniciais são definidas pelas variáveis `const posInitialX = 0` e `const posInitialY = 0` (linhas 36 e 37 do arquivo tutorial.js, respectivamente).
 
 ### 3.8.2. Definição do tempo total da animação
 
