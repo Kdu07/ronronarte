@@ -44,7 +44,7 @@
 
 
 
-#### 1.1.1.1. Modelo de 5 Forças de Porter (sprint 2)
+#### 1.1.1.1. Modelo de 5 Forças de Porter 
 
 &nbsp; &nbsp; &nbsp; &nbsp;De acordo com o livro de Magretta (2019), que detalha o estudos de Michael Porter, o modelo das 5 Forças de Porter é um framework de análise setorial que permite entender o nível de competitividade de um mercado. O modelo apresenta 5 critérios: Rivalidade entre concorrentes, poder de negociação dos fornecedores, poder de negociação dos compradores, ameaça de novos entrantes e ameaça de produtos substitutos, e avaliamo a força de cada um deles e como eles influenciam a competitividade do setor em análise. O modelo determina que, quanto maior uma força for, maior o poder de ação ela tem sobre um negócio.
 
@@ -97,7 +97,7 @@ Exemplos:
 - Vídeos educacionais no Youtube, Instagram e outras plataformas.
 
 
-### 1.1.2. Análise SWOT (sprint 2)
+### 1.1.2. Análise SWOT 
 
 &nbsp; &nbsp; &nbsp; &nbsp;A Análise SWOT é uma ferramenta estratégica usada para avaliar a posição de uma empresa, projeto ou indivíduo, considerando fatores internos e externos. Ela é dividida em quatro componentes: Forças (Strengths), que são os pontos fortes internos; Fraquezas (Weaknesses), que representam os desafios internos; Oportunidades (Opportunities), que são fatores externos positivos que podem ser aproveitados; e Ameaças (Threats), que são riscos externos que podem impactar negativamente. Essa análise ajuda na tomada de decisões e no desenvolvimento de estratégias mais eficazes.
 
@@ -150,7 +150,7 @@ Exemplos:
 
 <hr>
 
-### 1.1.3. Missão / Visão / Valores (sprint 2)
+### 1.1.3. Missão / Visão / Valores 
 
 ## Missão:
 
@@ -170,14 +170,14 @@ Exemplos:
 
 <hr>
 
-### 1.1.4. Proposta de Valor (sprint 4)
+### 1.1.4. Proposta de Valor 
 
 <p align = "center">Figura 3: Canva proposta de valor.</p>
 
 ![Canva](https://github.com/user-attachments/assets/e8911524-e037-4c68-9acb-9371fa7c52b9)
 <p align = "center">Material feito pelos autores (2025).</p> <br>
 
-### 1.1.5. Descrição da Solução Desenvolvida (sprint 4)
+### 1.1.5. Descrição da Solução Desenvolvida 
 
 &nbsp; &nbsp; &nbsp; &nbsp;O problema a ser resolvido está diretamente relacionado à demanda de jogos para gatos. Nesse sentido, o cerne da questão está no fato de que as atuais propostas de tais ferramentas, embora procurem estimular os instintos naturais de caça do gato, contam com uma similaridade forte e pouco diferencial entre si. Além disso, não há uma interação direta entre tutor e gato, o que pode acarretar ansiedade no pet, visto que ele sente falta de seu tutor. Ademais, nesses games, não há previsão de recompensas dadas pelo tutor ao gato durante o momento de jogabilidade. Portanto, a situação supracitada gera monotonia ao pet e não leva em consideração a interação afetiva entre gato e tutor, uma vez que centra seu foco no ato de jogar por jogar. <br> <br>
 &nbsp; &nbsp; &nbsp; &nbsp;Sob esse viés, faz-se necessário criar uma proposta que solucione a problemática supracitada. Nessa perspectiva, concebeu-se um jogo que concilia os instintos naturais de caça do gato (por meio de recompensas alimentícias) com interação gato-tutor dentro desse contexto, de modo a estimular tanto o pet quanto seu tutor, de maneira que nesse momento sejam geradas diversão e proximidade entre ambos. Logo, a ideia é aproximar o gato do tutor e vice-versa, além de fornecer uma melhor experiência de usuário aos dois jogadores, resolvendo a dor que até então foi passada como escopo para a solução. 
@@ -185,7 +185,7 @@ Exemplos:
 &nbsp; &nbsp; &nbsp; &nbsp;Assim, no que se refere à solução proposta, um de seus benefícios é uma interação mais próxima entre gato e tutor, de modo mais afetivo. Além disso,  menciona-se como outro benefício do jogo o incentivo mais contundente aos hábitos de caça dos gatos, por meio de recompensas alimentícias dadas pelo tutor ao pet. Dessa forma, tais benefícios incluem tanto gato e tutor, a fim de que sua relação seja aprofundada. 
 
 
-### 1.1.6. Matriz de Riscos (sprint 4)
+### 1.1.6. Matriz de Riscos 
 
 &nbsp; &nbsp; &nbsp; &nbsp;A matriz de risco consiste em uma ferramenta que auxilia na identificação e avaliação de potenciais obstáculos que podem afetar o desenvolvimento e a conclusão de um projeto, assim como as possíveis oportunidades de elevar o escopo do projeto para uma esfera maior. Para isso, por intermédio de uma estrutura coluna x linha que relaciona probabilidade e impacto, a matriz quantifica e classifica os riscos e oportunidades, de modo a torná-los mais visíveis e, portanto, mais tangíveis para elaborar um plano de ação de modo a mitigar as ameaças e aproveitar as circunstâncias favoráveis. Dessa forma, a matriz de risco e oportunidades é útil para garantir que os esforços e os recursos sejam estrategicamente e adequadamente alocados e para maximizar as chances de sucesso do projeto. 
 
@@ -307,7 +307,7 @@ Exemplos:
    
    **Probabilidade:** 10%, haja vista que a equipe não atingiu visibilidade pública de modo a gerar consolidação de parcerias com empresas do ramo pet.
 
-### 1.1.7. Objetivos, Metas e Indicadores (sprint 4)
+### 1.1.7. Objetivos, Metas e Indicadores 
 
 &nbsp; &nbsp; &nbsp; &nbsp;Os objetivos, as metas e os indicadores de medição foram criados com base na metodologia de metas SMART, a qual define que as metas devem ser Específicas, Mensuráveis, Atribuíveis, Realistas e Temporais. 
 
@@ -367,7 +367,7 @@ R. **Relevante:** A equipe possui recursos como aulas e professores das áreas d
 
 T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint review da sprint 4.
 
-## 1.2. Requisitos do Projeto (sprints 1 e 2)
+## 1.2. Requisitos do Projeto 
 Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por meios dos quais se busca explicitar, de maneira breve, lógica e sucinta, suas principais funcionalidades e aspectos, de acordo com o escopo vigente.  
 
 <p align = 'center'>Quadro 1: Requisitos do jogo RonRonArte</p> <br>
@@ -388,36 +388,36 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br>
 
-## 1.3. Público-alvo do Projeto (sprint 2)
+## 1.3. Público-alvo do Projeto 
 
 &nbsp; &nbsp; &nbsp; &nbsp;Em linhas gerais, o público-alvo do jogo RonRonArte se concentra em gatos domésticos e seus respectivos tutores. Nesse sentido, é válido destacar que, de acordo com o Censo Pet IPB (2022), o número de gatos vem crescendo ao longo dos últimos anos nos lares brasileiros, saltando de uma população de 25,6 milhões em 2020 para 27,1 milhões de indivíduos em 2021, com uma estimativa de 2,5% de crescimento médio anual. A título de comparação, essa pesquisa também mostrou que o percentual da quantidade de cães, maior contingente de pets do Brasil, foi inferior no mesmo período: 4%. Ademais, nota-se que as adoções dos felinos representam 65% do total, o que demonstra o crescimento de tutores desses animais. Portanto, é possível observar o aumento da preferência das pessoas pela adoção de gatos no país.
   
 &nbsp; &nbsp; &nbsp; &nbsp;Além disso, os gatos domésticos, na ausência de seus tutores, passam por momentos de instabilidade emocional. Segundo um estudo publicado na Universidade do Estado de Oregon, 64,3% desses pets sentem muita falta de seus donos quando estes não estão por perto (PETZ, 2023). Tal dado evidencia a necessidade de promover uma interação mais profunda e divertida entre ambos os grupos, uma vez que ambos se apegam um ao outro. Dessa forma, um jogo com o escopo supracitado surge como alternativa à situação mencionada.
 
 
-# <a name="c2"></a>2. Visão Geral do Jogo (sprint 2)
+# <a name="c2"></a>2. Visão Geral do Jogo 
 
-## 2.1. Objetivos do Jogo (sprint 2)
+## 2.1. Objetivos do Jogo
 
 &nbsp; &nbsp; &nbsp; &nbsp;O objetivo do jogo é fortalecer o laço entre tutor e gato, enquanto ensina uma nova forma de se divertir com o seu pet. O objetivo do gato é eliminar todos os animais da tela num determinado período de tempo. Já o objetivo do tutor é o de aprender e exercer a mecânica de recompensar seu pet ao alcançar seu determinado objetivo delimitado entre as fases. Ademais, nosso jogo contemplará um modo de jogo alternativo em que o gato poderá "pintar" uma tela em branco, produzindo sua própria obra de arte.
 
-## 2.2. Características do Jogo (sprint 2)
+## 2.2. Características do Jogo
 
-### 2.2.1. Gênero do Jogo (sprint 2)
+### 2.2.1. Gênero do Jogo
 
 &nbsp; &nbsp; &nbsp; &nbsp;O jogo se encaixa principalmente no gênero Arcade, pois é um jogo rápido e simples, com a mecânica principal sendo a de tocar na tela para "capturar" algo.
 
-### 2.2.2. Plataforma do Jogo (sprint 2)
+### 2.2.2. Plataforma do Jogo
 
 &nbsp; &nbsp; &nbsp; &nbsp;O jogo será desenvolvido para _smartphones e tablets_, com reprodução através da web, sem a necessidade de instalação de aplicativos externos.
 
 &nbsp; &nbsp; &nbsp; &nbsp;Navegadores compatíveis: Google Chrome, Microsoft Edge, Mozilla Firefox.
 
-### 2.2.3. Número de jogadores (sprint 2)
+### 2.2.3. Número de jogadores
 
 &nbsp; &nbsp; &nbsp; &nbsp;O jogo foi desenvolvido para ser uma experiência interativa entre o gato e seu tutor (2 jogadores), sendo majoritaria a participação do gato ao "caçar" os animais que aparecem nas fases, e a do tutor em recompensar o gato e acompanhar a história da arte conforme avança pelos níveis. 
 
-### 2.2.4. Títulos semelhantes e inspirações (sprint 2)
+### 2.2.4. Títulos semelhantes e inspirações
 
 &nbsp; &nbsp; &nbsp; &nbsp;Nosso jogo teve como inspiração outros títulos de jogos para gato, como:
 
@@ -433,15 +433,15 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 *Ex. cada partida dura até 15 minutos*
 
-# <a name="c3"></a>3. Game Design (sprints 2 e 3)
+# <a name="c3"></a>3. Game Design
 
-## 3.1. Enredo do Jogo (sprints 2 e 3)
+## 3.1. Enredo do Jogo
 
 &nbsp; &nbsp; &nbsp; &nbsp;Nós seres humanos, em algum momento de nossas vidas, pensamos no conceito de viagem no tempo. Um conceito interessante, desconhecido, e um tanto assutador. Entretanto, já imaginou se fosse possível viajar no tempo com o seu pet?
 &nbsp; &nbsp; &nbsp; &nbsp;Pois é esse o enredo de RonRonArte, uma viagem no tempo com o seu gato! Mas não é uma viagem no tempo qualquer, é uma viagem pelos diferentes períodos da arte, passando por arte contemporânea, arte moderna, arte medieval, e arte rupestre.
 &nbsp; &nbsp; &nbsp; &nbsp;Acompanhe seu pet nessa jornada e aprenda um pouco mais sobre a história da arte enquanto se diverte com seu amigo felino!
 
-## 3.2. Personagens (sprints 2 e 3)
+## 3.2. Personagens
 
 ### 3.2.1. Controláveis
 &nbsp; &nbsp; &nbsp; &nbsp;No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador, haja vista que o intuito do jogo é justamente incentivar hábitos de caça ao gato por intermédio de figuras clicáveis na tela (no caso, spritesheets). Desse modo, o objetivo não é que o jogador controle algum personagem no game, mas sim que ele possa eliminá-lo no decorrer do jogo em troca de recompensas alimentícias, a fim de que seus instintos naturais sejam estimulados. Portanto, especificamente no escopo de RonRonArte, o player pode interpretar tal circunstância como um meio pelo qual ele realiza uma ação e, em troca, ganha algo, associando o atingimento de objetivos com as recompensas supracitadas. A partir disso, abaixo estão as spritesheets correspondentes ao que acima foi observado.
@@ -477,16 +477,16 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 &nbsp; &nbsp; &nbsp; &nbsp;O RonRonArte contém inclusão em sua jogabilidade, uma vez que o jogador, em algumas fases, é convidado a conhecer mais sobre uma obra cujo autor pertence a um grupo sub-representado no universo artístico. 
 
-## 3.3. Mundo do jogo (sprints 2 e 3)
+## 3.3. Mundo do jogo
 
-### 3.3.1. Locações Principais e/ou Mapas (sprints 2 e 3)
+### 3.3.1. Locações Principais e/ou Mapas
 
 &nbsp; &nbsp; &nbsp; &nbsp;O jogo vem de uma viagem mágica no mundo da arte, coletando quadros de pintores que não receberam o devido reconhecimento de diversas nacionalidades que o jogador, o gato, visitará. Essa aventura será possível por meio de um portal, fantasioso, que servirá para o jogador poder acessar as fases. Os momentos históricos serão representados por animais que são presentes no cotidiano do período apresentado e pintores e artes pertencentes a cada respectiva época, por exemplo, o quadro da Maria Auxiliadora (quadro presente até o momento). O jogo não segue uma história linear, entretanto, o fluxo de fases segue, sendo um level liberado após o outro.
 
-### 3.3.2. Navegação pelo mundo (sprints 2 e 3)
+### 3.3.2. Navegação pelo mundo
 &nbsp; &nbsp; &nbsp; &nbsp;O jogador, sendo um gato, atravessará as fases atreves de um portal que o levará para épocas distintas e importantes para o conhecimento artístico da pintura. Com o passar das fases, elas se tornam selecionáveis a preferir do dono do gato, em que depois que o botão de “jogar”, poderá selecionar somente clicando com o dedo no botão referente a fase que for preferível a ser jogada.
 
-### 3.3.4. Concept Art (sprint 2)
+### 3.3.4. Concept Art
 &nbsp; &nbsp; &nbsp; &nbsp;Uma Concept Art é um fluxo de imagens que mostra as características e os elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo. Com base nisso, realizou-se uma Concept Art de RonRonArte, de maneira a explicitar quais são os seus principais itens visuais e de história.
 
 <p align = "center">Figura 9: Concept Art - RonRonArte</p>
@@ -497,7 +497,7 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 &nbsp; &nbsp; &nbsp; &nbsp;Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.figma.com/proto/O28uXtCzHpYgGD5H7lxE97/Concept-Art---RonRonArte?content-scaling=fixed&kind=proto&node-id=15-4&page-id=0%3A1&scaling=scale-down) <br>
 
-### 3.3.5. Trilha sonora (sprint 3)
+### 3.3.5. Trilha sonora
 
 Este som será utilizado quando o botão de jogar (que direciona ao menu de seleção de níveis) for clicado. Dessa forma, esse som foi escolhido pelo fato de simular o som real de clique em um botão, indicando ao usuário que ele, de fato, clicou nele, estando no início do jogo por ser mais tradicional.
 
@@ -518,7 +518,7 @@ Este som será utilizado quando o botão de jogar (que direciona ao menu de sele
 
 <p align = 'center'>Fonte: quadro produzido pelos autores (2025), com base em áudios de Pixabay e YouTube.</p> <br>
 
-## 3.4. Inventário e Bestiário (sprint 3)
+## 3.4. Inventário e Bestiário
 
 ### 3.4.1. Inventário 
 
@@ -548,7 +548,7 @@ Este som será utilizado quando o botão de jogar (que direciona ao menu de sele
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br>
 
 
-## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
+## 3.5. Gameflow (Diagrama de cenas)
 <p align ="center">Figura 10: diagrama de cenas - RonRonArte</p>
 
 ![Diagrama de Cenas](https://github.com/user-attachments/assets/dbdc2e28-dea7-485a-9158-c71a1a1eedac)
@@ -646,20 +646,20 @@ A fase especial apresentará ao jogador uma tela em branco com uma variedade de 
 
 <hr>
 
-## 3.6. Regras do jogo (sprint 3)
+## 3.6. Regras do jogo
 &nbsp; &nbsp; &nbsp; &nbsp;No mundo de RonRonArte, o gato precisa atingir com toques na tela os alvos (animaizinhos) que aparecem na tela e se movem por ela, completando as fases que são obras de arte dos mais diversos períodos artísticos. A partir disso, ele receberá pontos e, se ele fizer todos os pontos, o tutor será incentivado a dar petiscos ao seu pet, a fim de que ele associe essa ação com a recompensa alimentícia. Além disso, são desbloqueados tintas e formatos diferentes que o tutor pode selecionar no modo criativo, nesse modo o gato poderá criar suas próprias pinturas. Logo, há a intersecção entre os instintos naturais de caça do gato, arte e alimentação animal.
 
-## 3.7. Mecânicas do jogo (sprint 3)
+## 3.7. Mecânicas do jogo
 
 &nbsp; &nbsp; &nbsp; &nbsp;As mecânicas do jogo RonRonArte são simples e de fácil entendimento. A mecânica de touch funciona quando o jogador acerta o alvo, e assim, revelando parte de uma pintura, essa parte revelada será localizada próxima ao ponto de contato do gato com a tela. No modo criativo segue-se uma mecânica parecida, alterando apenas o resultado dela, em que após a ação de clicar e acertar o alvo na tela o jogador irá pintar um quadro em branco, dessa forma, pintando um quadro de autoria do próprio jogador. Ademais, há também a presença de alvos que chamam a atenção do gato na tela, cujo movimento é randomizado e começa numa posição aleatória fora da tela, instigando a percepção e instinto de caça do gato. Nosso jogo conta também com um tutorial, cujo objetivo é fazer com que o tutor entenda como participar na gameplay com o seu gato e como recompensá-lo. Além disso, o modo tutorial serve também para ensinar ao gato como ele deve "jogar", ensinando a principal mecânica de toque na tela. Esse modo tutorial é infinito e pode ser cancelado pelo tutor a qualquer momento, fazendo com que, dessa maneira, o jogo seja acessível a todos os tipos de gatos, pois, cada um pode levar o tempo que for necessário para seu aprendizado.
 
-## 3.8. Implementação Matemática de Animação/Movimento (sprint 3)
+## 3.8. Implementação Matemática de Animação/Movimento
 
 *Descreva aqui a função que implementa a movimentação/animação de personagens ou elementos gráficos no seu jogo. Sua função deve se basear em alguma formulação matemática (e.g. fórmula de aceleração). A explicação do funcionamento desta função deve conter notação matemática formal de fórmulas/equações. Se necessário, crie subseções para sua descrição.*
 
 # <a name="c4"></a>4. Desenvolvimento do Jogo
 
-## 4.1. Desenvolvimento preliminar do jogo (sprint 1)
+## 4.1. Desenvolvimento preliminar do jogo
 
 &nbsp; &nbsp; &nbsp; &nbsp;Em linhas gerais, a primeira versão do jogo “RonRonArte” conta com uma tela inicial, que contempla o botão “Jogar”. Sob essa perspectiva, criou-se a primeira cena do jogo, a qual é ativada quando o botão supracitado é clicado. Nela, sprites de animais aparecem randomicamente na tela, de maneira que o jogador (gato) seja incentivado a pressioná-los. Nesse sentido, é válido mencionar que, quando essas imagens animadas são clicadas, são liberados splashes de tinta com forma de patinha de gato, funcionalidade que nas próximas versões será refinada, a fim de que o jogador produza pinturas de acordo com os splashes. Portanto, objetiva-se ir além do convencional (apenas cliques na tela), por intermédio de dinâmicas atrelada à arte.  
 
@@ -698,7 +698,7 @@ A fase especial apresentará ao jogador uma tela em branco com uma variedade de 
 
 &nbsp; &nbsp; &nbsp; &nbsp;Portanto, como próximos passos, notam-se os subsequentes: habilitação de personalização de fase pelo tutor (por meio da qual ele poderá selecionar a quantidade de animais que aparecem na tela), criação de um menu de opções funcional e elaboração de uma tela bônus para pintura por parte do gato. 
 
-## 4.2. Desenvolvimento básico do jogo (sprint 2)
+## 4.2. Desenvolvimento básico do jogo
 
 &nbsp; &nbsp; &nbsp; &nbsp;A partir da versão preliminar do jogo, realizou-se o desenvolvimento básico do game. Nele, foi acrescentado uma splash screen (com o nome da equipe), a fim de dar mais fluidez à experiência do usuário. Além disso, foi implementado um novo background na tela de início (gerada por IA), uma vez que o adicionado na primeira versão foi utilizado com objetivos de teste. Ademais, a tela de start conta com um botão que direciona ao tutorial do RonRonArte, nessa tela haverá disponível um botão para pular o tutorial caso o tutor já tenha o feito ou não queira o fazer, e, após o avanço do tutorial o jogador será redirecionado para a tela de primeira fase do jogo. Além disso, a idealização das fases já foi concluida, restando agora a implementação. Por fim, é válido mencionar que se iniciou a modularização do código, tendo sido refeitas as linhas de código em programação orientada a objetos. Conjunto a isso, houve a programação das sprites da tela de vitória, além da criação do contador de acertos para verificação do desempenho do jogador em sua gameplay. 
 
@@ -764,7 +764,7 @@ Logo abaixo, estão as telas da versão básica do jogo.
 </div><br>
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
+## 4.3. Desenvolvimento intermediário do jogo
 
 &nbsp; &nbsp; &nbsp; &nbsp;No desenvolvimento intermediário do jogo, foram acrescentados mais itens ao game em relação à versão preliminar. Em termos de código, foi adicionada uma classe “basePhase”, que servirá de arquétipo para o desenvolvimento de todas as outras, parecido com um template. Já em termos de jogo, iniciou-se a implementação do modo criativo do game, que já possui sua principal característica implementada: a seleção de cores por parte do tutor em uma paleta na tela, a fim que seu gato produza suas próprias pinturas de modo personalizado. Por fim, adicionou-se um menu de seleção de níveis, no qual o tutor poderá escolher entre a fase de tutorial, as fases propostas ou o modo criativo.
 
@@ -789,7 +789,7 @@ Logo abaixo, estão as telas da versão básica do jogo.
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
-## 4.4. Desenvolvimento final do MVP (sprint 4)
+## 4.4. Desenvolvimento final do MVP
 
 Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, como a mudança do storytelling central do jogo e de suas fases, reformulação da tela de vitória e modo criativo, as pinturas definitivas foram definidas, assets sonoros foram definidos e implementados, e foram feitos alguns acabamentos para deixar o jogo mais polido. As novas artes determinadas para as fases de nosso jogo foram: "A Noiva", de Maria Auxiliadora; "Spoliarium" de Juan Luna; "J'aime la couleur" de Chéri Samba; "Aboriginal design, with Sturt's Pea" de Margaret Preston. (Figuras 25 a 28). A nova tela de vitória conta com uma pontuação (quantidade de pombos acertados) e uma contagem de tempo que juntos representam uma pontuação em formato de estrelas (Figura 29). A reformulação do modo criativo conta com um novo botão para o tutor tirar print da obra de seu gato, além de um botão de paletas que permite que o tutor escolha diferentes paletas e formatos de pincel (Figuras 30 a 32).
 
@@ -839,9 +839,9 @@ Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, co
 
 # <a name="c5"></a>5. Testes
 
-## 5.1. Casos de Teste (sprints 2 a 4)
+## 5.1. Casos de Teste
 
-## 5.1. Casos de Teste (sprints 2 a 4)
+## 5.1. Casos de Teste
 
 \# | pré-condição | descrição do teste | pós-condição 
 --- | --- | --- | --- 
