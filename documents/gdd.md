@@ -580,29 +580,31 @@ Classes, atributos e métodos:
 
 - **Tutorial:**   
 A primeira fase do jogo serve como tutorial para o tutor, apresentando como deverá ser feita a recompensa para o gato ao alcançar o objetivo do jogo. Nessa tela, haverá uma maneira de pular a cena de tutorial caso o tutor já saiba ou não queira ver o tutorial.
-Classes, atributos, métodos e objetos:
+
+- Classes: Phase0 e extensão de BasePhase;
+- Atributos e métodos: create(), update()
 
 - Tela de seleção de níveis
 Após passar pelo tutorial, o jogador será direcionado para uma tela de seleção de níveis, onde poderá (caso já estiver desbloqueado) escolher a "fase" que gostaria de jogar.
 
- - Classes: SelectPhase
- - Atributos e métodos ainda não implementados.
+ - Classes: SelectPhase e extensão de BasePhase;
+ - Atributos e métodos: create() e update().
 
 - **Fase 1:**   
-A primeira fase apresenta ao jogador a dinâmica principal do jogo, em que o gato, ao tocar em um animal "alvo" na tela (nessa fase em específico, será um pombo), preenche aos poucos o quadro de fundo, que revela uma obra de arte(nessa fase em específico, "A Noiva" de Maria Auxiliadora). Após preenchimento desse quadro, é exibido uma tela de vitória que apresenta a obra completa, uma foto de seu compositor, e a pontuação do gato e tempo de conclusão da fase.
+A primeira fase apresenta ao jogador a dinâmica principal do jogo, em que o gato, ao tocar em um animal "alvo" na tela (nessa fase em específico, será um pombo), preenche aos poucos o quadro de fundo, que revela uma obra de arte(nessa fase em específico, "Sem Título"(também conhecido como "A Noiva" de Maria Auxiliadora). Após preenchimento desse quadro, é exibido uma tela de vitória que apresenta a obra completa, uma foto de seu compositor, e a pontuação do gato e tempo de conclusão da fase.	
 
-- Classes: ContempPhase;
+- Classes: Phase1;
 - Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
-- Métodos: create, update; spawnTarget; clickTarget; movement(target);
+- Métodos: create, update; spawnTarget; clickTarget; movement(target); createTimer(); updateTimer(); clickTargetComplete(); displayVictory(); createPauseButton(); createBackground(); createBackgroundComplete(); 
 
 <hr>
 
 - **Fase 2:**
 A segunda fase apresenta ao jogador a dinâmica principal do jogo, em que o gato, ao tocar em um animal "alvo" na tela (nessa fase em específico, será um rato mecânico), preenche aos poucos o quadro de fundo, que revela uma obra de arte(nessa fase em específico, "Spoliarium" de Juan Luna). Após preenchimento desse quadro, é exibido uma tela de vitória que apresenta a obra completa, uma foto de seu compositor, e a pontuação do gato e tempo de conclusão da fase.
 
-- Classes: ContempPhase;
-- Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
-- Métodos: create, update; spawnTarget; clickTarget; movement(target);
+- Classes: Phase2 e extensão de BasePhase;
+- Atributos: width (largura do jogo), height (altura do jogo), backgroundKey (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
+- Métodos: create, update; spawnTarget; clickTarget; movement(target); createTimer(); updateTimer(); clickTargetComplete(); displayVictory(); createPauseButton(); createBackground(); createBackgroundComplete(); 
 
 <hr>
 
@@ -614,18 +616,18 @@ Classes, atributos e métodos: Ainda não implementado
 - **Fase 3:** 
 A terceira fase apresentará ao jogador um cenário semelhante ao da fase 1 e 2, porém com foco em uma arte diferente (nessa fase em específico, "J'aime la couleur" de Chéri Samba). Nessa fase, o alvo será uma cobra.
 
-- Classes: ModernPhase;
+- Classes: Phase3 e extensão de BasePhase;
 - Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
-- Métodos: create, update; spawnTarget; clickTarget; movement(target);
+- Métodos: create, update; spawnTarget; clickTarget; movement(target); createTimer(); updateTimer(); clickTargetComplete(); displayVictory(); createPauseButton(); createBackground(); createBackgroundComplete(); 
 
 <hr>
 
 - **Fase 4:**
 A terceira fase apresentará ao jogador um cenário semelhante ao da fase 1, 2 e 3, porém com foco em uma arte diferente (nessa fase em específico, "Aboriginal design, with Sturt's Pea" de Margaret Preston.). Nessa fase, o alvo será uma lagartixa.
 
-- Classes: MedievalPhase;
+- Classes: Phase4 e extensão de BasePhase;
 - Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
-- Métodos: create, update; spawnTarget; clickTarget; movement(target);
+- Métodos: create, update; spawnTarget; clickTarget; movement(target); createTimer(); updateTimer(); clickTargetComplete(); displayVictory(); createPauseButton(); createBackground(); createBackgroundComplete(); 
 
 <hr>      
 
@@ -638,7 +640,7 @@ A quinta fase apresentará ao jogador um cenário semelhante ao das outras fases
 
 <hr>      
 
-- **Fase especial (Tela branca para pintura)**:
+- **Criativo (Tela branca para pintura)**:
 A fase especial apresentará ao jogador uma tela em branco com uma variedade de opções de cores que podem ser escolhidas pelo tutor para seu gato pintar. Após escolhidas as cores, será necessário pressionar um botão para iniciar a fase. Após a iniciação da fase, um animal alvo passará pela tela atraindo a atenção do gato, que, ao acertar o alvo, pintará a região pressionada na tela branca de fundo.   
 
 Classes, métodos e atributos: ainda não implementados.
