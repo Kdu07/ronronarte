@@ -253,14 +253,14 @@ Exemplos:
 
 ### 1.1.6. Matriz de Riscos 
 
-&nbsp; &nbsp; &nbsp; &nbsp;A matriz de risco consiste em uma ferramenta que auxilia na identificação e avaliação de potenciais obstáculos que podem afetar o desenvolvimento e a conclusão de um projeto, assim como as possíveis oportunidades de elevar o escopo do projeto para uma esfera maior. Para isso, por intermédio de uma estrutura coluna x linha que relaciona probabilidade e impacto, a matriz quantifica e classifica os riscos e oportunidades, de modo a torná-los mais visíveis e, portanto, mais tangíveis para elaborar um plano de ação de modo a mitigar as ameaças e aproveitar as circunstâncias favoráveis. Dessa forma, a matriz de risco e oportunidades é útil para garantir que os esforços e os recursos sejam estrategicamente e adequadamente alocados e para maximizar as chances de sucesso do projeto. 
+&nbsp; &nbsp; &nbsp; &nbsp;A matriz de risco consiste em uma ferramenta que auxilia na identificação e avaliação de potenciais obstáculos que podem afetar o desenvolvimento e a conclusão de um projeto, assim como as possíveis oportunidades de elevar o escopo do projeto para uma esfera maior. Para isso, por intermédio de uma estrutura coluna x linha que relaciona probabilidade e impacto, a matriz quantifica e classifica os riscos e oportunidades, de modo a torná-los mais visíveis e, portanto, mais tangíveis para elaborar um plano de ação de modo a mitigar as ameaças e aproveitar as circunstâncias favoráveis (Napoleão, 2020). É significativo ressaltar que há justamente essa relação entre impacto e probabilidade porque risco = impacto * probabilidade. Dessa forma, a matriz de risco e oportunidades é útil para garantir que os esforços e os recursos sejam estrategicamente e adequadamente alocados e para maximizar as chances de sucesso do projeto. 
 
 &nbsp; &nbsp; &nbsp; &nbsp;Sob essa ótica, segue listados os riscos - bem como o plano de ação correspondente para mitigá-los - e as oportunidades identificadas pela equipe, ressaltando também como eles se enquadram na matriz e seus impactos relevantes sobre o projeto. A figura 3 mostra esses dados de maneira resumida e visual.
 
 <p align = "center">Figura 4: Matriz de risco</p>
 
 ![MatrizdeRisco](https://github.com/user-attachments/assets/6d8b846c-4bbf-4a6c-b44a-f4d68b49b665)
-   <p align = 'center'>Tabela de "ferramentasdaqualidade.org", adaptada pelos autores (2025).</p> <br><br> 
+   <p align = 'center'>Tabela de Napoleão (2020), adaptada pelos autores (2025).</p> <br><br> 
 
 ### Riscos
 
@@ -375,11 +375,11 @@ Exemplos:
 
 ### 1.1.7. Objetivos, Metas e Indicadores 
 
-&nbsp; &nbsp; &nbsp; &nbsp;Os objetivos, as metas e os indicadores de medição foram criados com base na metodologia de metas SMART, a qual define que as metas devem ser Específicas, Mensuráveis, Atribuíveis, Realistas e Temporais. 
+&nbsp; &nbsp; &nbsp; &nbsp;Os objetivos, as metas e os indicadores de medição foram criados com base na metodologia de metas SMART, a qual define que as metas devem ser Específicas, Mensuráveis, Atribuíveis, Realistas e Temporais (Rocha, 2025). 
 
-&nbsp; &nbsp; &nbsp; &nbsp;As metas serem Específicas dizem respeito ao o que será alcançado e quais os passos para que a concretização ocorra; em relação a Mensuráveis, elas abrangem os indicadores para medir a efetivação e o progresso; já Atribuíveis se referem aos responsáveis para a execução da meta; Realista está associado à possibilidade real de a meta ser concreta, ou seja, ser executável; por fim, Temporal se trata da definição de um prazo para atingir a meta.
+&nbsp; &nbsp; &nbsp; &nbsp;As metas serem Específicas dizem respeito ao o que será alcançado e quais os passos para que a concretização ocorra; em relação a Mensuráveis, elas abrangem os indicadores para medir a efetivação e o progresso; já Atribuíveis se referem aos responsáveis para a execução da meta; Realista está associado à possibilidade real de a meta ser concreta, ou seja, ser executável; por fim, Temporal se trata da definição de um prazo para atingir a meta (Rocha, 2025).
 
-&nbsp; &nbsp; &nbsp; &nbsp;Antes de estruturarmos as metas seguindo o modelo SMART, construímo-las no modelo de OKRs (Objectives and Key Results), o qual corresponde a um método simples para criar alinhamento e engajamento em torno de metas mensuráveis. O intuito é definir uma meta qualitativa detalhada (Objectives) e algumas métricas quantitativas (Key Results).
+&nbsp; &nbsp; &nbsp; &nbsp;Antes de estruturarmos as metas seguindo o modelo SMART, construímo-las no modelo de OKRs (Objectives and Key Results), o qual corresponde a um método simples para criar alinhamento e engajamento em torno de metas mensuráveis. O intuito é definir uma meta qualitativa detalhada (Objectives) e algumas métricas quantitativas (Key Results) (Gothelf, 2020).
 
 &nbsp; &nbsp; &nbsp; &nbsp;Nesse sentido, fizemos nossos OKRs (com auxílio da instrutora de liderança), os quais estão apresentados na figura 4 e descritos no texto que vem em seguida.
 
@@ -966,13 +966,19 @@ O que poderia melhorar no jogo? | A responsividade do personagem aos controles, 
 
 FGV. Pesquisa revela que Brasil tem 480 milhões de dispositivos digitais em uso, sendo 2,2 por habitante. [S. l.], 27 jun. 2024. Disponível em: https://portal.fgv.br/noticias/pesquisa-revela-brasil-tem-480-milhoes-dispositivos-digitais-uso-sendo-22-habitante. Acesso em: 28 mar. 2025.
 
+GOTHELF, Jeff. Use OKRs para definir metas para equipes, não para indivíduos. [S. l.], 17 dez. 2020. Disponível em: https://hbr.org/2020/12/use-okrs-to-set-goals-for-teams-not-individuals?language=pt. Acesso em: 24 mar. 2025.
+
 INSTITUTO PET BRASIL. Censo Pet IPB: com alta recorde de 6% em um ano, gatos lideram crescimento de animais de estimação no Brasil. 2022. Disponível em: https://institutopetbrasil.com/fique-por-dentro/amor-pelos-animais-impulsiona-os-negocios-2-2/ Acesso em: 18 fev. 2025. <br>
 
 MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia. Rio de Janeiro: Alta Books, 2019. 1 recurso online. ISBN 9788550805047. Disponível em: https://integrada.minhabiblioteca.com.br/books/9788550805047. Acesso em: 28 fev. 2025.
 
+NAPOLEÃO, Bianca Minetto. Matriz de Riscos (Matriz de Probabilidade e Impacto). [S. l.], 26 jun. 2019. Disponível em: https://ferramentasdaqualidade.org/matriz-de-riscos-matriz-de-probabilidade-e-impacto/. Acesso em: 20 mar. 2025.
+
 PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Disponível em: https://businessmodelanalyst.com/pt/value-proposition-canvas/. Acesso em: 27 mar. 2025.
 
 PETZ. Gato tem sentimento? O que e como eles sentem?. [S. l.], 6 ago. 2023. Disponível em: https://www.petz.com.br/blog/pets/gatos/gato-tem-sentimento/. Acesso em: 18 fev. 2025.
+
+ROCHA, Thiago. Metas SMART: entenda o que são e aprenda a definir as suas: Metas SMART devem ser específicas, mensuráveis, atribuíveis, realistas e temporais, auxiliando empresas a determinar objetivos de maneira mais inteligente.. [S. l.], 6 fev. 2025. Disponível em: https://www.rdstation.com/blog/vendas/metas-smart/. Acesso em: 24 mar. 2025.
 
 SOLLITTO, André. Por que brasileiros têm preferido escolher gatos como companheiros do lar. Veja, 2022.
 Disponível em: https://veja.abril.com.br/comportamento/por-que-brasileiros-tem-preferido-escolher-gatos-como-companheiros-do-lar/. Acesso em: 18 fev. 2025.
