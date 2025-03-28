@@ -128,8 +128,8 @@ export default class SplashScreen extends Phaser.Scene {
         })
         
         // Define e armezena a duração do fadeIn e do fadeOut
-        let time1500 = 0; 
-        let time3000 = 0;
+        let time1500 = 1500; 
+        let time3000 = 3000;
 
         // Adiciona fade in na splash screen
         this.cameras.main.fadeIn(time1500, 0, 0, 0) // Aplica um efeito de fade-in que escurece a tela
@@ -142,7 +142,7 @@ export default class SplashScreen extends Phaser.Scene {
             // Aguarda o fadeOut antes de iniciar a próxima cena
             this.time.delayedCall(time1500, () => {
                 this.scene.stop('SplashScreen'); // Para a cena atual
-                this.scene.start('Phase4'); // Inicia a cena Menu
+                this.scene.start('Menu'); // Inicia a cena Menu
             }); 
         });
 
