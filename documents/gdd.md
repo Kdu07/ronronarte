@@ -570,13 +570,13 @@ A seguir, no quadro 2, estão elencados os elementos sonoros utilizados no jogo 
 
 \# | titulo | ocorrência | autoria | Áudio
 --- | --- | --- | --- | ---
-1 | Som no botão "Jogar" | Quando o botão em questão for clicado | Pixabay | <a href = "https://drive.google.com/file/d/1hQFC5pVdqw617H8M5wLIWrMQGPIt92sz/view?usp=sharing"> Ouça o áudio clicando aqui!</a>
-2 | Som nos botões "Pular tutorial" e "Continuar" | Quando o botão em questão for clicado | Pixabay | <a href = "https://drive.google.com/file/d/1CmhzvZDHqNDnyOqGY8DNLVBAR0uWa_cO/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-3 | Som do splash de tinta | Quando o "splash" | Pixabay | <a href = "https://drive.google.com/file/d/1S7ec3bwp84ikFnf3YJEm72tkypAS9bdb/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-4 | Som para mostrar as estrelas na tela de vitória | Ocorre no momento em que as estrelas aparecem | Pixabay | <a href = "https://drive.google.com/file/d/1r70VpueBP2AjGqV6dJNRPWkxYdkcudnU/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-5 | Som do rato robô (alvo) | Quando o rato estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1jG39sa7Sp_wuA251Blk7ZV649-BVRxDw/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+1 | Som no botão "Jogar" | Quando o botão "Jogar" for clicado | Pixabay | <a href = "https://drive.google.com/file/d/1hQFC5pVdqw617H8M5wLIWrMQGPIt92sz/view?usp=sharing"> Ouça o áudio clicando aqui!</a>
+2 | Som nos botões "Pular tutorial" e "Continuar" | Quando os botões "Pular tutorial" e "Continuar" forem clicados | Pixabay | <a href = "https://drive.google.com/file/d/1CmhzvZDHqNDnyOqGY8DNLVBAR0uWa_cO/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+3 | Som do splash de tinta | Quando o alvo é clicado no modo criativo | Pixabay | <a href = "https://drive.google.com/file/d/1gPphHf9Bf2M0zXkBwolhKrlN3duKKy8_/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+4 | Som para mostrar as estrelas na tela de vitória | Ocorre no momento em que as estrelas aparecem na tela de vitória | Pixabay | <a href = "https://drive.google.com/file/d/1NM3CxClvEKvMXpHizAcq2G0tPYu9GMcY/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+5 | Som do rato robô (alvo) | Quando o rato estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1uTRUH26MD3fgOZTo6HSk6UJkQJMfEGqm/view?usp=sharing">Ouça o áudio clicando aqui!</a>
 6 | Som habilitado quando os alvos do jogo são clicados | Assim que os alvos são clicados pelo gato | canal do YouTube chamado SOUNDS. Título do vídeo: EFEITO SONORO - GATO MIANDO | <a href = "https://drive.google.com/file/d/17g-krBlk81rTzi-duVFOyEfhnxH6XU7U/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-7 | Som para o botão de pause | Quando o botão em questão for clicado | Pixabay | <a href = "https://drive.google.com/file/d/1a9IE5oRrw8p2ieAZE3skzfCzye1Pfz_o/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+7 | Som para o botão de pause | Quando o botão de pause for clicado | Pixabay | <a href = "https://drive.google.com/file/d/1a9IE5oRrw8p2ieAZE3skzfCzye1Pfz_o/view?usp=sharing">Ouça o áudio clicando aqui!</a>
 8 | Som do pombo (alvo) | Quando o pombo estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1zc9hjtwP67aTXE6p84U2f_sS9yQG1Fe5/view?usp=sharing">Ouça o áudio clicando aqui!</a>
 9 | Som da lagartixa (alvo) | Quando a lagartixa estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1voUqdXlqM8OblkZLPvJhVY2d1bxRQalx/view?usp=sharing">Ouça o áudio clicando aqui!</a>
 10 | Som da cobra | Quando a cobra estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1Kei3Ft5Esq5iGarGQCAaaRvGc-NcH3Jb/view?usp=sharing">Ouça o áudio clicando aqui!</a>
