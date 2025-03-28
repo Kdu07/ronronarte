@@ -10,7 +10,7 @@ export default class CreativeMode extends BasePhase{
             "textPainting":['Pintura...'],
             "targetKey":"pigeon",
             "animKey":"animPigeon",
-            "soundKey":"soundPigeon",
+            "soundKey":"soundPigeon"
         }
         
         // Configura a chave de classe e os assets da fase
@@ -29,21 +29,9 @@ export default class CreativeMode extends BasePhase{
     }
 
     createPalette() {
-        this.palette = this.add.image(this.width / 1.065, this.height * 0.08, 'palette')
-        .setScale(this.width / 9000)
-        .setInteractive()
-        .setDepth(20);
-
-        this.printBtn = this.add.image(this.width / 2, this.height * 0.08, 'buttonPrint')
-        .setDepth(20)
-        .setScale(this.width/400)
-        .setInteractive();
-        this.printBtn.on('pointerdown', () => {
-            this.printMode()
-        });
+        this.createPaletteButton();
+        this.createPrintButton();
         
-        //this.createHoldButton([this.palette, this.printBtn])
-
         this.bgMenu = this.add.image(this.width/2, this.height/2, 'bgVictory')
         .setScale(this.width/580)
         .setVisible(false)
@@ -72,7 +60,7 @@ export default class CreativeMode extends BasePhase{
         // Cria os botões de splash
         this.splashesButtons = this.add.group();
 
-        // Configura as propriedades de botão para cada splash do arrey de splashes
+        // Configura as propriedades de botão para cada splash do array de splashes
         this.splashes.forEach((splash, c) => {
             splash.forEach((splash, i) => {
                 let splashButton = this.add.image(
@@ -105,23 +93,97 @@ export default class CreativeMode extends BasePhase{
                 targetButton.on('pointerdown', () => {
                     this.targetKey = target;
                     this.animKey = this.anims[i];
-                    this.soundKey = 'soundRat'//this.sounds[i];
+                    this.soundKey = this.sounds[i];
                     this.toggleMenu(false);
                 });
 
             this.splashesButtons.add(targetButton);
         });
+    }
+
+    createPaletteButton(){
+        this.paletteHold = false;
         
-        //Quando a paleta é clicada, aparece um menu com os splashes que o tutor pode selecionar para o seu gato pintar
-        this.palette.on('pointerdown', () => {            
-            let splashMenuIsVisible = this.splashesButtons.getChildren()[0].visible;
-            this.toggleMenu(!splashMenuIsVisible);
+        this.paletteBtn = this.add.image(this.width / 1.065, this.height * 0.08, 'palette')
+        .setScale(this.width / 9000)
+        .setInteractive()
+        .setDepth(20);
+      
+        this.paletteLoad = this.add.sprite(this.paletteBtn.x, this.paletteBtn.y + this.paletteBtn.displayHeight/2, 'spriteLoading')
+        .setScale(this.width/8000)
+        .setInteractive()
+        .setVisible(false);
+
+        this.paletteBtn.on('pointerdown', () => {
+            this.paletteHold = true
+        });
+
+        this.paletteBtn.on('pointerup', () => {
+            this.paletteHold = false
         });
     }
 
+    createPrintButton(){
+        this.printHold = false;
+        
+        this.printBtn = this.add.image(this.width / 2, this.height * 0.08, 'buttonPrint')
+        .setDepth(20)
+        .setScale(this.width/400)
+        .setInteractive();
+      
+        this.printLoad = this.add.sprite(this.printBtn.x, this.printBtn.y + this.printBtn.displayHeight/1.5, 'spriteLoading')
+        .setScale(this.width/8000)
+        .setInteractive()
+        .setVisible(false);
+
+        this.printBtn.on('pointerdown', () => {
+            this.printHold = true
+        });
+
+        this.printBtn.on('pointerup', () => {
+            this.printHold = false
+        });
+        
+    }
+        
     //A função update do modo criativo herda da função update da clase BasePhase
     update(){
         super.update();
+        this.updatePaletteButton();
+        this.updatePrintButton();
+    }
+
+    updatePaletteButton(){
+        if (this.paletteHold){
+            this.paletteLoad.setVisible(true);
+            this.paletteLoad.anims.play('SpriteLoading',true);
+
+            if (this.paletteLoad.anims.currentFrame.index == 5){
+                this.paletteLoad.anims.stop().setFrame(0).setVisible(false);
+                this.paletteHold = false;
+
+                let splashMenuIsVisible = this.splashesButtons.getChildren()[0].visible;
+                this.toggleMenu(!splashMenuIsVisible);
+            }
+        }else{
+            this.paletteLoad.anims.stop().setFrame(0).setVisible(false);
+        }
+    }
+
+    updatePrintButton(){
+        if (this.printHold){
+            this.printLoad.setVisible(true);
+            this.printLoad.anims.play('SpriteLoading',true);
+
+            if (this.printLoad.anims.currentFrame.index == 5){
+                this.printLoad.anims.stop().setFrame(0).setVisible(false);
+                this.printHold = false;
+
+                this.printMode();
+            }
+        }else{
+            this.printLoad.anims.stop().setFrame(0).setVisible(false);
+        }
     }
 
     clickTarget(){
@@ -130,6 +192,11 @@ export default class CreativeMode extends BasePhase{
             // Se o ponteiro está no do alvo
             if (this.target.getBounds().contains(pointer.x, pointer.y)) {
                 this.stopped = true; // Alvo para de se movimentar
+
+                if(this.soundTarget){
+                    this.soundTarget.stop();
+                }
+
                 this.target.destroy(); // Destrói o alvo
                 
                 //Cria um splash no local do clique
@@ -176,8 +243,8 @@ export default class CreativeMode extends BasePhase{
 
     printMode(){
         this.target.destroy();
-        this.palette.setVisible(false);
-        this.btnDict[0].button.setVisible(false);
+        this.paletteBtn.setVisible(false);
+        this.pauseBtn.setVisible(false);
         this.printBtn.setVisible(false);
         this.soundTarget.pause()
 
@@ -190,8 +257,8 @@ export default class CreativeMode extends BasePhase{
         setTimeout(() => {
             this.spawnTarget();
             this.target.setDepth(20);
-            this.palette.setVisible(true);
-            this.btnDict[0].button.setVisible(true);
+            this.paletteBtn.setVisible(true);
+            this.pauseBtn.setVisible(true);
             this.printBtn.setVisible(true);
             this.soundTarget.play()
         }, 5000);

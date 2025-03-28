@@ -62,7 +62,7 @@ export default class BasePhase extends Phaser.Scene {
         this.soundStar = this.sound.add('soundStar')
 
         // Adiciona o botão de pause
-        this.createHoldButton();
+        this.createPauseButton();
         
         // Configura e adiciona o pombo na tela
         this.spawnTarget();    
@@ -119,46 +119,27 @@ export default class BasePhase extends Phaser.Scene {
         this.painting.setMask(this.mask);
     }
 
-    createHoldButton(buttons=[]) {
-        let pauseBtn = this.add.image(this.width/40, this.height/18, 'pauseBtn')
+    createPauseButton() {
+        this.pauseHold = false;
+        
+        this.pauseBtn = this.add.image(this.width/40, this.height/18, 'pauseBtn')
         .setScale(this.width/1000)
         .setDepth(20)
         .setInteractive();
 
-        this.buttons = buttons;
-        this.buttons.push(pauseBtn);
-        
-        this.btnDict = [];
-        // Cria um botão de pause na tela
-        // this.pauseBtn = this.add.image(this.width/40, this.height/18, 'pauseBtn').setScale(this.width/1000)
-        
-        // Torna o botão de pause clicável
-        // this.pauseBtn.setInteractive()
+                
+        this.pauseLoad = this.add.sprite(this.width/40, this.height/10, 'spriteLoading')
+        .setScale(this.width/8000)
+        .setInteractive()
+        .setVisible(false);
 
-        this.buttons.forEach((btn, i) => {            
-            let spriteLoading = this.add.sprite(this.width/40, this.height/10, 'spriteLoading')
-            .setScale(this.width/8000)
-            .setInteractive()
-            .setVisible(false);
     
-            this.btnDict.push({
-                button: btn,
-                hold: false,
-                load: spriteLoading
-            })
-            //console.log(this.btnDict[i].button)
-            console.log(this.btnDict[i].hold)
-            console.log(this.btnDict[i].load)
+        this.pauseBtn.on('pointerdown', () => {
+            this.pauseHold = true
+        });
 
-
-            // Cria o botão de pular o tutorial
-            btn.on('pointerdown', () => {
-                this.btnDict[i].hold = true
-            });
-
-            btn.on('pointerup', () => {
-                this.btnDict[i].hold = false
-            });
+        this.pauseBtn.on('pointerup', () => {
+            this.pauseHold = false
         });
     }
 
@@ -168,12 +149,7 @@ export default class BasePhase extends Phaser.Scene {
             this.movement(this.target);  
         }
 
-        this.updateHoldButton(() => {
-            this.soundPause.play({ volume: 0.5 });
-            this.soundTarget.stop();
-            this.scene.start("LevelSelect");
-            this.scene.stop(this.phaseKey);
-        })
+        this.updatePauseButton()
     }
 
     // Função para contar o tempo no temporizador
@@ -182,26 +158,20 @@ export default class BasePhase extends Phaser.Scene {
         this.timerText.setText(this.elapsedSeconds);
     }
 
-    updateHoldButton(holdAction){
-        this.btnDict.forEach((btn, i) => {
-            if (btn.hold){
-                btn.load.setVisible(true);
-                btn.load.anims.play('SpriteLoading',true);
-    
-                if (btn.load.anims.currentFrame.index == 5){
-                    holdAction()
-                    
-                    /*
-                    this.soundPause.play({ volume: 0.5 });
-                    this.soundTarget.stop();
-                    this.scene.start("LevelSelect");
-                    this.scene.stop(this.phaseKey);
-                    */
-                }
-            }else{
-                btn.load.anims.stop().setFrame(0).setVisible(false);
+    updatePauseButton(){
+        if (this.pauseHold){
+            this.pauseLoad.setVisible(true);
+            this.pauseLoad.anims.play('SpriteLoading',true);
+
+            if (this.pauseLoad.anims.currentFrame.index == 5){
+                this.soundPause.play({ volume: 0.5 });
+                this.soundTarget.stop();
+                this.scene.start("LevelSelect");
+                this.scene.stop(this.phaseKey);
             }
-        });
+        }else{
+            this.pauseLoad.anims.stop().setFrame(0).setVisible(false);
+        }
     }
 
     spawnTarget() {
@@ -222,15 +192,15 @@ export default class BasePhase extends Phaser.Scene {
         this.target.setInteractive();
     
         // Configura a velocidade aleatória do pombo e a direção inicial de movimento
-        this.target.speedX = Phaser.Math.Between(6, 9);
+        this.target.speedX = Phaser.Math.Between(5, 7);
         this.target.speedY = Phaser.Math.Between(2, 6);
         this.target.directionX = -1;
         this.target.directionY = 1;
 
         // Configura aceleração do pombo no eixo y
-        this.target.accelerationY = Phaser.Math.FloatBetween(0.02, 0.08);
+        this.target.accelerationY = Phaser.Math.FloatBetween(0.02, 0.06);
         this.target.t = 0; // Tempo inicial
-        this.target.VyMax = 9; // Velocidade máxima no eixo y
+        this.target.VyMax = 7; // Velocidade máxima no eixo y
         this.target.VyMin = 0; // Velocidade mínima no eixo y
 
         // Hitbox do pombo (usado para que não saia da tela)
@@ -449,11 +419,5 @@ export default class BasePhase extends Phaser.Scene {
         // Nova posição do pombo = posição atual do pombo + velocidade do pombo * direção do pombo (-1,1)
         target.x += target.speedX * target.directionX;
         target.y += target.speedY * target.directionY; // Fim
-        
-        console.log("Posição X" + target.x)
-        console.log("Posição Y" + target.y)
-        console.log("Velocidade X" + target.speedX)
-        console.log("Velocidade Y" + target.speedY)
-        console.log("------------------------------------")
     }
 }

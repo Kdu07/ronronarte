@@ -61,7 +61,7 @@ export default class Victory extends Phaser.Scene {
 
         // Adiciona o alvo da fase
         this.target = this.add.sprite(this.width/9, this.height/3.2, this.targetKey)
-            .setDisplaySize(this.width/4, this.width/4).setFlip(true,false);
+            .setDisplaySize(this.width/4.5, this.width/4.5).setFlip(true,false);
         this.target.play(this.animKey);
 
         this.add.image(this.width/1.15, this.height/1.08, 'continueBtn')
