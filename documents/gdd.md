@@ -573,7 +573,8 @@ Non-Playable Characters ou, como são mais conhecidos, os NPCs, são personagens
 
 <p align = "center">Figura 9: Concept Art - RonRonArte</p>
 
-![Concept - RonRonArte](https://github.com/user-attachments/assets/0347f013-bd82-4e7d-a2ac-f7aed9904ea2)
+![Untitled (1)](https://github.com/user-attachments/assets/7c89a7f7-7194-4e4f-9d52-2042f123cf9f)
+
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p>
 
