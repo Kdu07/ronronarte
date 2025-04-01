@@ -78,6 +78,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.spritesheet('cat', './assets/misc/cat.png', { frameWidth: 64, frameHeight:64 });
         this.load.image('scoreStar', './assets/misc/scoreStar.png');
         this.load.image('victoryTextBox', './assets/misc/victoryTextBox.png');
+        this.load.image('rotate', './assets/misc/rotate.png');
 
         //Alvos
         this.load.spritesheet('pigeon', './assets/targets/pigeon.png', { frameWidth: 64, frameHeight:64 });
@@ -141,24 +142,25 @@ export default class SplashScreen extends Phaser.Scene {
 
         // Adiciona fade in na splash screen
         this.cameras.main.fadeIn(time1500, 0, 0, 0) // Aplica um efeito de fade-in que escurece a tela
-        this.add.image(this.scale.width/2, this.scale.height/2,'catup').setScale(1.0);
+        this.add.image(this.scale.width/2, this.scale.height/2,'catup').setScale(this.scale.width/700);
 
         // Adiciona fade out na splash screen depois de 3 segundos
         this.time.delayedCall(time3000, () => {
-            this.cameras.main.fadeOut(time1500, 0, 0, 0); // Aplica um efeito de fade-out que escurece a tela
-            
-            // Aguarda o fadeOut antes de iniciar a próxima cena
-            this.time.delayedCall(time1500, () => {
-                this.scene.stop('SplashScreen'); // Para a cena atual
-                this.scene.start('Menu'); // Inicia a cena Menu
-            }); 
+            if (window.innerWidth < window.innerHeight){
+                this.add.text(this.scale.width/16, this.scale.height*0.75,
+                    '                              Para iniciar o jogo, \nvire seu dispositivo na horizontal e recarregue a página', 
+                    {fontFamily:'Futura', fontSize:this.scale.width/25, fill:'#FFFFFF'})
+                this.add.image(this.scale.width/2, this.scale.height/8,'rotate').setScale(this.scale.width/1500);
+            }else{
+                // Aguarda o fadeOut antes de iniciar a próxima cena
+                this.time.delayedCall(time1500, () => {
+                    this.scene.stop('SplashScreen'); // Para a cena atual
+                    this.scene.start('Menu'); // Inicia a cena Menu
+                });
+    
+                this.cameras.main.fadeOut(time1500, 0, 0, 0); // Aplica um efeito de fade-out que escurece a tela
+            } 
         });
-
-        if (this.isPortrait){
-            this.add.text(this.scale.width/3.2, this.scale.height*0.83, 
-                'Para uma melhor experiência, \nvire seu celular na horizontal', 
-                {fontFamily:'Futura', fontSize:this.scale.width/30, fill:'#FFFFFF'})
-        }
     }
 
     resizeGame() {
