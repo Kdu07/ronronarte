@@ -139,7 +139,8 @@ export default class BasePhase extends Phaser.Scene {
         this.pauseLoad = this.add.sprite(this.width/40, this.height/10, 'spriteLoading')
         .setScale(this.width/8000)
         .setInteractive()
-        .setVisible(false);
+        .setVisible(false)
+        .setDepth(20);
 
         // Quando o mouse clica o botão, define a variavel de segurar como true
         this.pauseBtn.on('pointerdown', () => {

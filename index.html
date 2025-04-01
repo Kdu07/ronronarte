@@ -8,6 +8,15 @@
     <!-- Phaser -->
     <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js"></script>
+    <style media='screen' type='text/css'>
+        @font-face {
+          font-family: font1;
+          src: url('./fonts/bubble.ttf');
+          font-weight:400;
+          font-weight:normal;
+        }
+  </style>
+  <div style="font-family:font1; position:absolute; left:-1000px; visibility:hidden;">.</div>
 </head>
 <body>
 <script type='module'>
@@ -36,7 +45,8 @@
         scale: {
             mode: Phaser.Scale.FIT,  // Mantém a proporção 2:1
             autoCenter: Phaser.Scale.CENTER_BOTH, // Centraliza o jogo na tela
-            fullscreenTarget: document.documentElement // Define o alvo para tela cheia
+            fullscreenTarget: document.documentElement, // Define o alvo para tela cheia
+            orientation: Phaser.Scale.LANDSCAPE
         }
     };
 

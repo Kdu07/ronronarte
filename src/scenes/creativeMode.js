@@ -132,7 +132,8 @@ export default class CreativeMode extends BasePhase{
         this.paletteLoad = this.add.sprite(this.paletteBtn.x, this.paletteBtn.y + this.paletteBtn.displayHeight/2, 'spriteLoading')
         .setScale(this.width/8000)
         .setInteractive()
-        .setVisible(false);
+        .setVisible(false)
+        .setDepth(20);
 
         // Quando o mouse clica o botão, define a variavel de segurar como true
         this.paletteBtn.on('pointerdown', () => {
@@ -160,7 +161,8 @@ export default class CreativeMode extends BasePhase{
         this.printLoad = this.add.sprite(this.printBtn.x, this.printBtn.y + this.printBtn.displayHeight/1.5, 'spriteLoading')
         .setScale(this.width/8000)
         .setInteractive()
-        .setVisible(false);
+        .setVisible(false)
+        .setDepth(20);
 
         // Quando o mouse clica o botão, define a variavel de segurar como true
         this.printBtn.on('pointerdown', () => {
@@ -313,7 +315,7 @@ export default class CreativeMode extends BasePhase{
         // Desativa o aviso após 2 segundos
         setTimeout(() => {
             this.printText.setVisible(false);
-        }, 2000);
+        }, 2500);
 
         // Retorna os elementos à tela após 5 segundos
         setTimeout(() => {
@@ -323,6 +325,6 @@ export default class CreativeMode extends BasePhase{
             this.pauseBtn.setVisible(true);
             this.printBtn.setVisible(true);
             this.soundTarget.play()
-        }, 5000);
+        }, 6000);
     }
 }

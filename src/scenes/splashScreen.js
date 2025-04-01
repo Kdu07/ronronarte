@@ -124,7 +124,7 @@ export default class SplashScreen extends Phaser.Scene {
 
         this.anims.create({
             key: 'animSnake', // Nome da animação
-            frames: this.anims.generateFrameNumbers('snake', {start:0, end:0}), 
+            frames: this.anims.generateFrameNumbers('snake', {start:0, end:6}), 
             frameRate: 7,
             repeat: -1
         })
@@ -149,7 +149,7 @@ export default class SplashScreen extends Phaser.Scene {
             if (window.innerWidth < window.innerHeight){
                 this.add.text(this.scale.width/16, this.scale.height*0.75,
                     '                              Para iniciar o jogo, \nvire seu dispositivo na horizontal e recarregue a página', 
-                    {fontFamily:'Futura', fontSize:this.scale.width/25, fill:'#FFFFFF'})
+                    {fontFamily:'font1', fontSize:this.scale.width/25, fill:'#FFFFFF'})
                 this.add.image(this.scale.width/2, this.scale.height/8,'rotate').setScale(this.scale.width/1500);
             }else{
                 // Aguarda o fadeOut antes de iniciar a próxima cena
