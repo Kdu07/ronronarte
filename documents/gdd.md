@@ -514,9 +514,14 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 ### 3.2.1. Controláveis
 &nbsp; &nbsp; &nbsp; &nbsp;No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador, haja vista que o intuito do jogo é justamente incentivar hábitos de caça ao gato por intermédio de figuras clicáveis na tela (no caso, spritesheets). Desse modo, o objetivo não é que o jogador controle algum personagem no game, mas sim que ele possa eliminá-lo no decorrer do jogo em troca de recompensas alimentícias, a fim de que seus instintos naturais sejam estimulados. Portanto, especificamente no escopo de RonRonArte, o player pode interpretar tal circunstância como um meio pelo qual ele realiza uma ação e, em troca, ganha algo, associando o atingimento de objetivos com as recompensas supracitadas. A partir disso, abaixo estão as spritesheets correspondentes ao que acima foi observado.
 
+## 3.2.2 Non-Playable Characters (NPC)
+Non-Playable Characters ou, como são mais conhecidos, os NPCs, são personagens que não são controláveis pelo jogador ou qualquer outro participante, mas sim pela própria máquina que executa o jogo. Abaixo temos os NPCs do jogo RonRonArte:
+
 <p align = 'center'>Figura 6 - Figura do pombo (RonRonArte)</p><br>
 <div align = 'center'>
-  <img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/pombo.png?raw=true">
+	
+  ![pigeon](https://github.com/user-attachments/assets/218bb91d-3467-4cf6-bf3d-c2de778c5d50)
+
 </div><br>
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br> <br>
@@ -540,6 +545,15 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p><br><br>
 
 
+
+<p align = 'center'>Figura 8 - Figura da cobra-coral (RonRonArte)</p><br>
+<div align = 'center'>
+	
+ ![snake](https://github.com/user-attachments/assets/5b9326b7-3d57-4fc2-aad8-c67f222f900c)
+
+ </div><br>
+
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p><br><br>
 
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
@@ -576,12 +590,12 @@ A seguir, no quadro 2, estão elencados os elementos sonoros utilizados no jogo 
 2 | Som nos botões "Pular tutorial" e "Continuar" | Quando os botões "Pular tutorial" e "Continuar" forem clicados | Pixabay | <a href = "https://drive.google.com/file/d/1CmhzvZDHqNDnyOqGY8DNLVBAR0uWa_cO/view?usp=sharing">Ouça o áudio clicando aqui!</a>
 3 | Som do splash de tinta | Quando o alvo é clicado no modo criativo | Pixabay | <a href = "https://drive.google.com/file/d/1gPphHf9Bf2M0zXkBwolhKrlN3duKKy8_/view?usp=sharing">Ouça o áudio clicando aqui!</a>
 4 | Som para mostrar as estrelas na tela de vitória | Ocorre no momento em que as estrelas aparecem na tela de vitória | Pixabay | <a href = "https://drive.google.com/file/d/1NM3CxClvEKvMXpHizAcq2G0tPYu9GMcY/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-5 | Som do rato robô (alvo) | Quando o rato estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1uTRUH26MD3fgOZTo6HSk6UJkQJMfEGqm/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-6 | Som habilitado quando os alvos do jogo são clicados | Assim que os alvos são clicados pelo gato | canal do YouTube chamado SOUNDS. Título do vídeo: EFEITO SONORO - GATO MIANDO | <a href = "https://drive.google.com/file/d/17g-krBlk81rTzi-duVFOyEfhnxH6XU7U/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-7 | Som para o botão de pause | Quando o botão de pause for clicado | Pixabay | <a href = "https://drive.google.com/file/d/1a9IE5oRrw8p2ieAZE3skzfCzye1Pfz_o/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-8 | Som do pombo (alvo) | Quando o pombo estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1zc9hjtwP67aTXE6p84U2f_sS9yQG1Fe5/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-9 | Som da lagartixa (alvo) | Quando a lagartixa estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1voUqdXlqM8OblkZLPvJhVY2d1bxRQalx/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-10 | Som da cobra | Quando a cobra estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1Kei3Ft5Esq5iGarGQCAaaRvGc-NcH3Jb/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+5 | Som habilitado quando os alvos do jogo são clicados | Assim que os alvos são clicados pelo gato | canal do YouTube chamado SOUNDS. Título do vídeo: EFEITO SONORO - GATO MIANDO | <a href = "https://drive.google.com/file/d/17g-krBlk81rTzi-duVFOyEfhnxH6XU7U/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+6 | Som para o botão de pause | Quando o botão de pause for clicado | Pixabay | <a href = "https://drive.google.com/file/d/1a9IE5oRrw8p2ieAZE3skzfCzye1Pfz_o/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+7 | Som do pombo (alvo) | Quando o pombo estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1zc9hjtwP67aTXE6p84U2f_sS9yQG1Fe5/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+8 | Som do rato robô (alvo) | Quando o rato estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1uTRUH26MD3fgOZTo6HSk6UJkQJMfEGqm/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+9 | Som da cobra | Quando a cobra estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1Kei3Ft5Esq5iGarGQCAaaRvGc-NcH3Jb/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+10 | Som da lagartixa (alvo) | Quando a lagartixa estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1voUqdXlqM8OblkZLPvJhVY2d1bxRQalx/view?usp=sharing">Ouça o áudio clicando aqui!</a>
 
 <p align = 'center'>Fonte: quadro produzido pelos autores (2025), com base em áudios de Pixabay e YouTube.</p> <br>
 
@@ -608,11 +622,10 @@ A seguir, no quadro 2, estão elencados os elementos sonoros utilizados no jogo 
 
 \# | Inimigo | Design | Ocorrências | Função | Impacto | Efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
-1 | Pombo |![pombo](https://github.com/user-attachments/assets/a5622248-210c-4bab-b020-a67c1c3a113e)| Tutorial e Fase 1 | Voa em direção aléatoria para que o jogador tente acertá-lo | Ao atingido revela uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes. | Som de pombo
-2 | Rato Robótico |![alvo rato](https://github.com/user-attachments/assets/905b4948-8cce-4f84-946a-0f0f9d8e252c)| Fase 2 | Anda pela tela em direção aléatoria para que o jogador tente acertá-lo | Ao atingido revela uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes. | Som de rato
-3 | Lagartixa | ![lagartixa](https://github.com/user-attachments/assets/38d50908-28bb-48b6-b896-9516b90484cf) | Fase 4 | Anda pela tela em direção aleatória para que o jogador tente acertá-lo | Ao acertá-lo, deixará seu rabo cair e continuará correndo sem o rabo e mais rápido, fazendo com que seja necessário ser atingido novamente. Após ser atingido pela segunda vez, revelará uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes | Som de lagarto
-
-<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br>
+1 | Pombo |![pombo](https://github.com/user-attachments/assets/a5622248-210c-4bab-b020-a67c1c3a113e)| Tutorial e Fase 1 | Voa em direção aléatoria para que o jogador tente acertá-lo | Ao atingido revela uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes. | <a href = "https://drive.google.com/file/d/1zc9hjtwP67aTXE6p84U2f_sS9yQG1Fe5/view?usp=sharing">Som do pombo</a>
+2 | Rato Robótico |![alvo rato](https://github.com/user-attachments/assets/905b4948-8cce-4f84-946a-0f0f9d8e252c)| Fase 2 | Anda pela tela em direção aléatoria para que o jogador tente acertá-lo | Ao atingido revela uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes. | <a href = "https://drive.google.com/file/d/1uTRUH26MD3fgOZTo6HSk6UJkQJMfEGqm/view?usp=sharing">Som da engrenagem</a>
+3 | Cobra-Coral | ![Snake (2)](https://github.com/user-attachments/assets/98cce8ef-3ddf-4d25-863a-bb38aea14def) | Fase 3 | Anda pela tela em direção aleatória para que o jogador tente acertá-lo | Ao atingido revela uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes. |  <a href = "https://drive.google.com/file/d/1Kei3Ft5Esq5iGarGQCAaaRvGc-NcH3Jb/view?usp=sharing">Som da cobra</a>
+4 | Lagartixa | ![lagartixa](https://github.com/user-attachments/assets/38d50908-28bb-48b6-b896-9516b90484cf) | Fase 4 | Anda pela tela em direção aleatória para que o jogador tente acertá-lo | Ao acertá-lo, deixará seu rabo cair e continuará correndo sem o rabo e mais rápido, fazendo com que seja necessário ser atingido novamente. Após ser atingido pela segunda vez, revelará uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes | <a href = "https://drive.google.com/file/d/1voUqdXlqM8OblkZLPvJhVY2d1bxRQalx/view?usp=sharing">Som da lagartixa</a>
 
 
 ## 3.5. Gameflow (Diagrama de cenas)
