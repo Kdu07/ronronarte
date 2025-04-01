@@ -656,7 +656,7 @@ A primeira fase do jogo serve como tutorial para o tutor, apresentando como deve
 - **Tela de seleção de níveis:**
 Após passar pelo tutorial, o jogador será direcionado para uma tela de seleção de níveis, onde poderá (caso já estiver desbloqueado) escolher a "fase" que gostaria de jogar.
 
- - Classes: SelectPhase e extensão de BasePhase;
+ - Classes: SelectPhase;
  - Atributos e métodos: create() e update().
 
 <hr>
