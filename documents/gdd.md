@@ -616,7 +616,8 @@ A seguir, no quadro 2, estão elencados os elementos sonoros utilizados no jogo 
 ## 3.5. Gameflow (Diagrama de cenas)
 <p align ="center">Figura 10: diagrama de cenas - RonRonArte</p>
 
-![Diagrama de Cenas](https://github.com/user-attachments/assets/dbdc2e28-dea7-485a-9158-c71a1a1eedac)
+
+![Diagrama de Cenas (4)](https://github.com/user-attachments/assets/bc3cf626-7a2b-4ea4-ae68-f9e452fce3ca)
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br>
 
