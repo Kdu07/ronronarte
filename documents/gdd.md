@@ -1056,20 +1056,20 @@ Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, co
 
 *Descreva nesta seção as sessões de teste/entrevista com diferentes jogadores. Registre cada teste conforme o template a seguir.*
 
-Perguntas | Entrevistado 1 | Entrevistado 2 | Entrevistado 3 | Entrevistado 1
---- | ---
-Você tem um gato? | Sim |
+\# | Perguntas | Entrevistado 1 | Entrevistado 2 | Entrevistado 3 | Entrevistado 4
+--- | --- | --- | --- | --- 
+Você tem um gato? | Sim | Sim | Sim | Sim
 Já possuía experiência com jogos para gatos? | Sim, jogos de matar formigas | Não | Não | Sim, 4 gatos
 Jogo manteu proporção correta na tela do usuário? | Sim | Não | Sim, jogos de matar formigas | Não
 Entendeu as regras e mecânicas do jogo? | Sim | Sim | Sim | Não
 Entendeu, facilmente, os textos de instruções? | SIm | Sim | Sim | Sim (Achou o texto muito longo) | Sim
-Entendeu, de forma intuitiva, que os botões devem ser pressionados por um tempo para mudarem de cena?| Sim | Sim | Sim, mas os botões estão pequenos. | Não (porém quando entendeu, não teve mais dúvidas em outros botões) |
-As disposições dos textos agradaram visualmente? | Mais ou menos, alguns textos estão para fora e um pouco desformadas. | As vezes a explicação do quadro foi muito longa | Fonte boa, mas falta formatação. | Legal, porém texto está fora da tela
-O tempo para tirar print foi suficiente para o usuário tirar o print no modo criativo? | Sim | Sim | Sim 
-Apresentou dificuldades? | Sim, os botões e alguns textos estão muito pequenos | Não | Sim
-Nota de 0 a 10 que deu para o jogo | 10,0 | 9,5 | 7,0
-O que mais gostou no jogo? | Criatividade, especialmente na parte de criação dos quadros autorais dos gatos | Paleta do modo criativo | Criatividade com gatos
-O que poderia melhorar no jogo? | Nada | Colocar mais quadros, diversificar mais | Interface de seleção de níveis (mais intuitivo) e Tutorial mais claro
+Entendeu, de forma intuitiva, que os botões devem ser pressionados por um tempo para mudarem de cena?| Sim | Sim | Sim, mas os botões estão pequenos. | Não (porém quando entendeu, não teve mais dúvidas em outros botões) 
+As disposições dos textos agradaram visualmente? | Mais ou menos, alguns textos estão para fora e um pouco desformadas. | As vezes a explicação do quadro foi muito longa | Fonte boa, mas falta formatação. | Legal, porém texto está fora da tela 
+O tempo para tirar print foi suficiente para o usuário tirar o print no modo criativo? | Sim | Sim | Sim | Sim
+Apresentou dificuldades? | Sim, os botões e alguns textos estão muito pequenos | Não | Sim | Não
+Nota de 0 a 10 que deu para o jogo | 10,0 | 9,5 | 7,0 | 8,0
+O que mais gostou no jogo? | Criatividade, especialmente na parte de criação dos quadros autorais dos gatos | Paleta do modo criativo | Criatividade com gatos | Modo Criativo
+O que poderia melhorar no jogo? | Nada | Colocar mais quadros, diversificar mais | Interface de seleção de níveis (mais intuitivo) e Tutorial mais claro | Botões muito pequenos, melhor indicador do tempo
 
 ### 5.2.2 Melhorias
 
