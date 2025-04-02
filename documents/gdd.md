@@ -1058,14 +1058,18 @@ Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, co
 
 Nome | João Jonas (use nomes fictícios)
 --- | ---
-Já possuía experiência prévia com games? | sim, é um jogador casual
-Conseguiu iniciar o jogo? | sim
-Entendeu as regras e mecânicas do jogo? | entendeu as regras, mas sobre as mecânicas, apenas as essenciais, não explorou os comandos complexos
-Conseguiu progredir no jogo? | sim, sem dificuldades  
-Apresentou dificuldades? | Não, conseguiu jogar com facilidade e afirmou ser fácil
-Que nota deu ao jogo? | 9.0
-O que gostou no jogo? | Gostou  de como o jogo vai ficando mais difícil ao longo do tempo sem deixar de ser divertido
-O que poderia melhorar no jogo? | A responsividade do personagem aos controles, disse que havia um pouco de atraso desde o momento do comando até a resposta do personagem
+Você tem um gato? | 
+Já possuía experiência com jogos para gatos? | 
+Jogo manteu proporção correta na tela do usuário? | 
+Entendeu as regras e mecânicas do jogo? |  
+Entendeu, facilmente, os textos de instruções? | 
+Entendeu, de forma intuitiva, que os botões devem ser pressionados por um tempo para mudarem de cena?| 
+As disposições dos textos agradaram visualmente? | 
+O tempo para tirar print foi suficiente para o usuário tirar o print no modo criativo? | 
+Apresentou dificuldades? |
+Nota de 0 a 10 que deu para o jogo |
+O que mais gostou no jogo? |
+O que poderia melhorar no jogo? |
 
 ### 5.2.2 Melhorias
 
