@@ -79,6 +79,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('scoreStar', './assets/misc/scoreStar.png');
         this.load.image('victoryTextBox', './assets/misc/victoryTextBox.png');
         this.load.image('rotate', './assets/misc/rotate.png');
+        this.load.image('circle', './assets/misc/circle.png');
 
         //Alvos
         this.load.spritesheet('pigeon', './assets/targets/pigeon.png', { frameWidth: 64, frameHeight:64 });
@@ -147,9 +148,9 @@ export default class SplashScreen extends Phaser.Scene {
         // Adiciona fade out na splash screen depois de 3 segundos
         this.time.delayedCall(time3000, () => {
             if (window.innerWidth < window.innerHeight){
-                this.add.text(this.scale.width/16, this.scale.height*0.75,
+                this.add.text(this.scale.width/14, this.scale.height*0.8,
                     '                              Para iniciar o jogo, \nvire seu dispositivo na horizontal e recarregue a página', 
-                    {fontFamily:'font1', fontSize:this.scale.width/25, fill:'#FFFFFF'})
+                    {fontFamily:'font1', fontSize:this.scale.width/30, fill:'#FFFFFF'})
                 this.add.image(this.scale.width/2, this.scale.height/8,'rotate').setScale(this.scale.width/1500);
             }else{
                 // Aguarda o fadeOut antes de iniciar a próxima cena

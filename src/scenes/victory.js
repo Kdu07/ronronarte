@@ -43,10 +43,10 @@ export default class Victory extends Phaser.Scene {
     
             
         this.add.text(this.width/4.5, this.height/1.8, this.textPainting, 
-            {fontFamily:'Futura', fontSize:this.width/60, fill:'#000'});
+            {fontFamily:'font1', fontSize:this.width/60, fill:'#000'});
     
         this.add.text(this.width/1.52, this.height/1.8, this.textArtist, 
-            {fontFamily:'Futura', fontSize:this.width/60, fill:'#000'});
+            {fontFamily:'font1', fontSize:this.width/60, fill:'#000'});
                 
         
         // Adiciona o gato

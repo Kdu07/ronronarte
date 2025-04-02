@@ -48,8 +48,8 @@ export default class BasePhase extends Phaser.Scene {
             this.createBackgroundComplete();
             
             // Adiciona o placar
-            this.scoreboard = this.add.text(this.width/2, this.height*0.001, this.score + '/' + this.maxScore, 
-                {fontFamily:'Futura', fontSize:this.width/22, fill:'#FFF'})
+            this.scoreboard = this.add.text(this.width/2.1, this.height*0.01, this.score + '|' + this.maxScore, 
+                {fontFamily:'font1', fontSize:this.width/25, fill:'#FFF'})
 
             // Adiciona o temporizador
             this.createTimer();
@@ -81,8 +81,8 @@ export default class BasePhase extends Phaser.Scene {
         this.elapsedSeconds = 0;
         
         // Cria o texto do temporizador
-        this.timerText = this.add.text(this.width/1.1, this.height*0.001, '0', 
-        { fontFamily:'Futura',fontSize:this.width/22, fill:'#FFF'});
+        this.timerText = this.add.text(this.width/1.1, this.height*0.01, '0', 
+        { fontFamily:'font1',fontSize:this.width/25, fill:'#FFF'});
 
         // Cria o evento do temporizador e guarda a referência
         this.timerEvent = this.time.addEvent({
@@ -213,18 +213,19 @@ export default class BasePhase extends Phaser.Scene {
         let posY = Phaser.Math.Between(100,this.height-100);
     
         // Adiciona o pombo e torna interativo
-        this.target = this.add.sprite(posX, posY, this.targetKey).setScale(this.width/400);
-        this.target.setInteractive();
+        this.target = this.add.sprite(posX, posY, this.targetKey).setScale(this.width/400).setInteractive();
     
         // Configura a velocidade aleatória do pombo e a direção inicial de movimento
-        this.target.speedX = Phaser.Math.Between(5, 7);
-        this.target.speedY = Phaser.Math.Between(2, 6);
+        let speedK = this.width/400; // Coeficiente para a velocidade ser responsiva
+        
+        this.target.speedX = Phaser.Math.Between(speedK*1, speedK*1.5);
+        this.target.speedY = Phaser.Math.Between(speedK*1, speedK*1.5);
         this.target.directionX = -1;
         this.target.directionY = 1;
 
         // Configura aceleração do pombo no eixo y
-        this.target.accelerationY = Phaser.Math.FloatBetween(0.02, 0.06);
-        this.target.VyMax = 7; // Velocidade máxima no eixo y
+        this.target.accelerationY = Phaser.Math.FloatBetween(speedK*0.015, speedK*0.008);
+        this.target.VyMax = speedK*1.1; // Velocidade máxima no eixo y
         this.target.VyMin = 0; // Velocidade mínima no eixo y
 
         // Hitbox do pombo (usado para que não saia da tela)
@@ -284,57 +285,69 @@ export default class BasePhase extends Phaser.Scene {
     // Função para quando o alvo é clicado
     clickTargetComplete() {
         this.input.on('pointerdown', (pointer) => {
-            // Contagem do total de cliques na tela
-            this.totalClicks += 1;
-            
-            // Se o ponteiro está no alvo
-            if (this.target.getBounds().contains(pointer.x, pointer.y) && this.score < this.maxScore) {
-                this.stopped = true; // Alvo para de se movimentar
+            if(this.target != null){
+                // Contagem do total de cliques na tela
+                this.totalClicks += 1;
                 
-                // Remove o alvo da tela
-                this.target.destroy();
-                this.target = null;
-
-                this.soundTarget.stop(); // Para o som do alvo
-                
-                this.soundClick.play({ volume: 0.5 }); // Toca o som configurado quando o alvo é clicado
-                this.time.delayedCall(1000, () => {
-                    this.soundClick.stop(); // Para o som de clique após 1000ms (1s)
-                });
-
-                this.score++; // Adiciona 1 ponto à pontuação
-                this.scoreboard.setText(this.score + '/' + this.maxScore); // Atualiza o placar 
-
-                // Cria um splash no local do clique e revela a mesma área do quadro
-                this.splash = this.add.image(pointer.x, pointer.y, 'splashPhases').setScale(this.width/(200*this.maxScore));
-                this.splash.setAlpha(1);
-                this.revealMask.draw(this.splash, this.splash.x, this.splash.y);
-                this.splash.destroy(); //Remove o splash após liberar a área
-                this.painting.setAlpha(0.6);
-
-                // Se a pontuação atingiu a pontuação máxima
-                if (this.score >= this.maxScore) {
-                    // Revela o quadro inteiro
-                    this.painting.setMask();
-                    this.painting.setAlpha(1);
-
-                    // Adiciona a tela de vitória
-                    this.displayVictory();                        
-                } else {
-                    // Se o jogo não acabou
-
-                    // Aviso para recompensar o gato
-                    this.reward = this.add.image(this.width/2, this.height/2, 'reward').setScale(this.width/1200)
+                // Se o ponteiro está no alvo
+                if (this.target.getBounds().contains(pointer.x, pointer.y) && this.score < this.maxScore) {
+                    this.stopped = true; // Alvo para de se movimentar
                     
-                    // Gera um novo alvo
-                    setTimeout(() => {
-                        this.spawnTarget();
-                        this.reward.destroy()
-                    }, 4000);
-                };
+                    this.circle = this.add.image(pointer.x, pointer.y, 'circle').setScale(this.width/1200)
+
+                    // Remove o alvo da tela
+                    this.target.destroy();
+                    this.target = null;
+
+                    this.soundTarget.stop(); // Para o som do alvo
+                    
+                    this.soundClick.play({ volume: 0.5 }); // Toca o som configurado quando o alvo é clicado
+                    this.time.delayedCall(1000, () => {
+                        this.soundClick.stop(); // Para o som de clique após 1000ms (1s)
+                    });
+
+                    this.score++; // Adiciona 1 ponto à pontuação
+                    this.scoreboard.setText(this.score + '|' + this.maxScore); // Atualiza o placar 
+
+                    // Cria um splash no local do clique e revela a mesma área do quadro
+                    this.splash = this.add.image(pointer.x, pointer.y, 'splashPhases').setScale(this.width/(200*this.maxScore));
+                    this.splash.setAlpha(1);
+                    this.revealMask.draw(this.splash, this.splash.x, this.splash.y);
+                    this.splash.destroy(); //Remove o splash após liberar a área
+                    this.painting.setAlpha(0.6);
+
+                    // Se a pontuação atingiu a pontuação máxima
+                    if (this.score >= this.maxScore) {
+                        // Revela o quadro inteiro
+                        this.painting.setMask();
+                        this.painting.setAlpha(1);
+
+                        // Adiciona a tela de vitória
+                        this.displayVictory();                        
+                    } else {
+                        // Se o jogo não acabou
+
+                        // Aviso para recompensar o gato
+                        this.time.delayedCall(200, () => {
+                            this.reward = this.add.image(this.width/2, this.height/2, 'reward').setScale(this.width/1200);
+                        });
+                    };
+                } 
+            }
+            
+        });
+
+        // Configura clique para sair do aviso de recompensa
+        this.input.on('pointerdown', () => {
+            if(this.reward != null){
+                this.spawnTarget();
+                this.reward.destroy();
+                this.reward = null;
+                this.circle.destroy()
             }
         });
     }
+
 
     displayVictory() {
         if(this.soundTarget){
@@ -346,13 +359,13 @@ export default class BasePhase extends Phaser.Scene {
 
         // Calcula o número de estrelas de acordo com o tempo levado para acertar cada alvo
         this.starScore = (this.elapsedSeconds+4)/this.score;
-        if (this.starScore <= 10){
+        if (this.starScore <= 15){
             this.starScore = 5;
-        }else if(this.starScore <= 15){
-            this.starScore = 4;
         }else if(this.starScore <= 20){
-            this.starScore = 3;
+            this.starScore = 4;
         }else if(this.starScore <= 30){
+            this.starScore = 3;
+        }else if(this.starScore <= 45){
             this.starScore = 2;
         }else{
             this.starScore = 1;
@@ -361,7 +374,7 @@ export default class BasePhase extends Phaser.Scene {
         // Adiciona a frase de vitória
         setTimeout(() => {
             // Cria a imagem da tela de vitória
-            let phrase = this.add.image(this.painting.x / 0.95, this.painting.y / 1.1, 'phrase').setScale(0.8);
+            let phrase = this.add.image(this.painting.x / 0.95, this.painting.y / 1.1, 'phrase').setScale(this.width/100);
             phrase.alpha = 0; // Inicialmente, deixa a frase de vitória invisível (para dar o efeito de fade-in)
             // Cria o efeito de fade-in
             this.tweens.add({
@@ -394,13 +407,13 @@ export default class BasePhase extends Phaser.Scene {
             let frameVictory = this.add.image(this.width / 2, this.height / 2, 'frame').setScale(this.width/900);
 
             // Cria os textos que mostram os pontos e a precisão do gato
-            this.scoreboard = this.add.text(bgVictory.x - bgVictory.displayWidth/7.5, bgVictory.y /*- bgVictory.displayHeight/10*/, 
-                'Pontos: ' + this.score + '/' + this.maxScore, 
-                {fontFamily:'Futura', fontSize: this.width/30, fill: '#000000' });
+            this.scoreboard = this.add.text(bgVictory.x - bgVictory.displayWidth/4.3, bgVictory.y /*- bgVictory.displayHeight/10*/, 
+                'Pontos: ' + this.score + '|' + this.maxScore, 
+                {fontFamily:'font1', fontSize: this.width/30, fill: '#000000' });
 
-            this.precisionText = this.add.text(bgVictory.x - bgVictory.displayWidth/6, bgVictory.y + bgVictory.displayHeight/8, 
+            this.precisionText = this.add.text(bgVictory.x - bgVictory.displayWidth/3.2, bgVictory.y + bgVictory.displayHeight/8, 
                 'Precisão: ' + Math.round(this.precision) + '%', 
-                {fontFamily:'Futura', fontSize: this.width/30, fill: '#000000' });
+                {fontFamily:'font1', fontSize: this.width/30, fill: '#000000' });
 
             // Cria e configura o botao para proxima fase
             this.next = this.add.image(this.width/2, bgVictory.y + bgVictory.displayHeight/2.7, 'continueBtn')
@@ -409,7 +422,7 @@ export default class BasePhase extends Phaser.Scene {
                 this.scene.start('Victory', this.phaseInfo);
                 this.scene.stop(this.phaseKey); // Para a fase atual
             })
-            .setScale(this.width/800)
+            .setScale(this.width/650)
 
             // Adiciona estrelas na primeira tela de vitória
             let i = 0;
