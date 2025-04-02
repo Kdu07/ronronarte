@@ -67,6 +67,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('bgVictory', './assets/backgrounds/bgVictory.png');
         this.load.image('bgWhite', './assets/backgrounds/bgWhite.png');
         this.load.image('bgVictoryScene', './assets/backgrounds/bgVictoryScene.png');
+        this.load.image('newBgMenu', './assets/backgrounds/newBackground.png');
 
         //Misc
         this.load.image('textArtistBox', './assets/misc/textArtistBox.png');
@@ -97,7 +98,9 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.audio('soundSplash', './assets/audios/soundSplash.mp3');
         this.load.audio('soundStar', './assets/audios/soundStar.mp3');
         this.load.audio('soundSnake', './assets/audios/soundSnake.mp3');
-        
+
+        //Imagens da tela de créditos
+        this.load.image('logoInteli','./assets/logoInteli.png');
     }
 
     create(){    
