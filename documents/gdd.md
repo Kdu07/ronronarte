@@ -1085,11 +1085,9 @@ O que poderia melhorar no jogo?| Nada | Colocar mais quadros, diversificar mais 
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros (sprint 5)
 
-*Escreva de que formas a solução do jogo atingiu os objetivos descritos na seção 1 deste documento. Indique pontos fortes e pontos a melhorar de maneira geral.*
-
-*Relacione os pontos de melhorias evidenciados nos testes com plano de ações para serem implementadas no jogo. O grupo não precisa implementá-las, pode deixar registrado aqui o plano para futuros desenvolvimentos.*
-
-*Relacione também quaisquer ideias que o grupo tenha para melhorias futuras*
+Consoante os resultados dos testes que a equipe realizou, o Ronronarte teve êxito em cumprir os objetivos declarados na seção 2.1, principalmente no que tange a fortalecer o laço entre tutor e gato, já que a dinâmica de pintura e de caça do jogo impactou, de fato, o emocional dos tutores e, paralelamente, entreteu os gatos. Nos testes de guerrilha, foi notório o entusiasmo dos voluntários com o modo criativo e a exploração da temática artística no jogo, o qual configura-se um dos principais diferenciais do Ronronarte, quando comparados aos demais jogos do mercado.
+No entanto, foi perceptível nos testes de usabilidade que o jogo apresenta dificuldades de se adequar totalmente em todos os tipos de dispositivos e, em razão de precisar ser aberto em uma página Web, em algumas ocasiões, o gato bate em espaços da tela que direcionam para fora do jogo. Tal problemática pode ser solucionada com o desenvolvimento de um aplicativo do Ronronarte - por intermédio da continuidade da parceria com a Dr.Pet e do estímulo financeiro da empresa. 
+Além disso, como melhoria, a equipe CatUp idealiza a construção de um dispenser com arduíno para automatizar o ato de dar a recompensa para o gato e também permitir que o gato jogue o Ronronarte, mesmo se seu tutor estiver distante. Para tal efeito, será necessário o auxílio financeiro do parceiro para a disponibilidade dos recursos de hardware e da assistência da universidade para proporcionar aulas com os conhecimentos técnicos basilares para a construção do dispenser. 
 
 # <a name="c7"></a>7. Referências (sprint 5)
 
