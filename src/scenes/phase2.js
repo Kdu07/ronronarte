@@ -4,7 +4,7 @@ import BasePhase from "./basePhase.js";
 export default class Phase2 extends BasePhase {
     constructor() {
         let configDict = {
-            "completePhase":true,
+            "completePhase": true,
             "backgroundKey":"painting2",
             "artistKey":"artist2",
             "textArtist":['Juan...'],

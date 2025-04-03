@@ -89,8 +89,9 @@ export default class Phase0 extends BasePhase {
                 this.time.delayedCall(1000, () => {
                     this.soundContinue.stop(); // Para o som do pombo após 1000ms (1s)
                 });
-                this.scene.start("Phase1");
+                this.scene.resume('Select');
                 this.scene.stop(this.phaseKey);
+                this.scene.get('Select2');
             }
         }else{
             this.spriteLoading1.anims.stop().setFrame(0).setVisible(false);

@@ -1,4 +1,5 @@
 // Classe de cena a ser exportada
+
 export default class SplashScreen extends Phaser.Scene {
     constructor(){
         // Configura a chave de classe
@@ -59,6 +60,16 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('palette', './assets/buttons/paleta.png');
         this.load.spritesheet('buttonPlay', './assets/buttons/spritesheet-play.png', {frameWidth: 128, frameHeight: 64});
         this.load.image('buttonPrint', './assets/buttons/buttonPrint.png');
+        this.load.image('criativeBlocked', './assets/buttons/criativeBlocked.png');
+        this.load.image('tutorialButton', './assets/buttons/tutorialButton.png');
+        this.load.image('phase1Unlocked', './assets/buttons/phase1Unlocked.png');
+        this.load.image('phase1Blocked', './assets/buttons/phase1Blocked.png');
+        this.load.image('phase2Blocked', './assets/buttons/phase2Blocked.png');
+        this.load.image('phase3Blocked', './assets/buttons/phase3Blocked.png');
+        this.load.image('phase4Blocked', './assets/buttons/phase4Blocked.png');
+        this.load.image('phase4Unlocked', './assets/buttons/phase4Unlocked.png');
+        this.load.image('phase3Unlocked', './assets/buttons/phase3Unlocked.png');
+        this.load.image('phase2Unlocked', './assets/buttons/phase2Unlocked.png');
 
         //Backgrounds
         this.load.image('bgMenu', './assets/backgrounds/expanded_startscreen.png');
@@ -137,6 +148,20 @@ export default class SplashScreen extends Phaser.Scene {
                 this.scene.stop('SplashScreen'); // Para a cena atual
                 this.scene.start('Menu'); // Inicia a cena Menu
             }); 
+            if (window.innerWidth < window.innerHeight){
+                this.add.text(this.scale.width/16, this.scale.height*0.75,
+                    '                              Para iniciar o jogo, \nvire seu dispositivo na horizontal e recarregue a página', 
+                    {fontFamily:'font1', fontSize:this.scale.width/25, fill:'#FFFFFF'})
+                this.add.image(this.scale.width/2, this.scale.height/8,'rotate').setScale(this.scale.width/1500);
+            }else{
+                // Aguarda o fadeOut antes de iniciar a próxima cena
+                this.time.delayedCall(time1500, () => {
+                    this.scene.stop('SplashScreen'); // Para a cena atual
+                    this.scene.start('Select2'); // Inicia a cena Menu
+                });
+    
+                this.cameras.main.fadeOut(time1500, 0, 0, 0); // Aplica um efeito de fade-out que escurece a tela
+            } 
         });
 
         if (this.isPortrait){
