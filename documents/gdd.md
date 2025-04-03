@@ -774,7 +774,7 @@ Onde $x(t)$ é a posição \(x\) em função do tempo, $x_i$ é a posição $x$ 
 No eixo \(y\) o pombo parte do repouso, ou seja $v_0y = 0$ (definido por `this.velY = 0` na linha 45 do arquivo tutorial.js), e acelera com aceleração $a_y = 0.02$, definida em `this.accelerationY = 0.02` (linha 46 do arquivo tutorial.js). Dessa forma, a equação da posição \(y\) é:
 
 $$
-y(y) = y_i + a_y \cdot t^2 \cdot \frac{1}{2}
+y(t) = y_i + a_y \cdot t^2 \cdot \frac{1}{2}
 $$
 
 Onde $y(t)$ é a posição $y$ em função do tempo, $y_i$ é a posição inicial (no nosso caso, $y_i = 0$), $a_y$ é a aceleração no eixo $y$, e $t$ é o tempo em segundos. E com isso podemos calcular a posição final no eixo $y$.
