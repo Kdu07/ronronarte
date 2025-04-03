@@ -21,7 +21,7 @@ export default class Tutorial extends Phaser.Scene {
             'Está pronto para a aventura?\n\nClique no pombo para começar o jogo!']
         
         // Adiciona background
-        let bg = this.add.image(this.scale.width/2, this.scale.height/2, 'bgTutorial').setInteractive();
+        let bg = this.add.image(this.scale.width / 2, this.scale.height / 2, 'bgTutorial').setDisplaySize(this.scale.width, this.scale.height).setDepth(0);
         
         // Configura a animação de voo do personagem
         this.anims.create({

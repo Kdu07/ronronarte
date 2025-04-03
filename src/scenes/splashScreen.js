@@ -81,6 +81,8 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('victoryTextBox', './assets/misc/victoryTextBox.png');
         this.load.image('rotate', './assets/misc/rotate.png');
         this.load.image('circle', './assets/misc/circle.png');
+        this.load.image('logoInteli','./assets/misc/logoInteli.png');
+        this.load.image('drPet','./assets/misc/drPet.png');
 
         //Alvos
         this.load.spritesheet('pigeon', './assets/targets/pigeon.png', { frameWidth: 64, frameHeight:64 });
@@ -98,10 +100,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.audio('soundRat', './assets/audios/soundRat.mp3');
         this.load.audio('soundSplash', './assets/audios/soundSplash.mp3');
         this.load.audio('soundStar', './assets/audios/soundStar.mp3');
-        this.load.audio('soundSnake', './assets/audios/soundSnake.mp3');
-
-        //Imagens da tela de créditos
-        this.load.image('logoInteli','./assets/logoInteli.png');
+        this.load.audio('soundSnake', './assets/audios/soundSnake.mp3');        
     }
 
     create(){    
@@ -141,8 +140,8 @@ export default class SplashScreen extends Phaser.Scene {
         })
         
         // Define e armezena a duração do fadeIn e do fadeOut
-        let time1500 = 1500; 
-        let time3000 = 3000;
+        let time1500 = 0; 
+        let time3000 = 0;
 
         // Adiciona fade in na splash screen
         this.cameras.main.fadeIn(time1500, 0, 0, 0) // Aplica um efeito de fade-in que escurece a tela

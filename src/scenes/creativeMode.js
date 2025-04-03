@@ -129,8 +129,8 @@ export default class CreativeMode extends BasePhase{
         .setDepth(20);
       
         // Adiciona o asset do carregamento na tela
-        this.paletteLoad = this.add.sprite(this.paletteBtn.x, this.paletteBtn.y + this.paletteBtn.displayHeight/2, 'spriteLoading')
-        .setScale(this.width/8000)
+        this.paletteLoad = this.add.sprite(this.paletteBtn.x - this.paletteBtn.displayWidth*1.5, this.paletteBtn.y, 'spriteLoading')
+        .setScale(this.width/4000)
         .setInteractive()
         .setVisible(false)
         .setDepth(20);
@@ -158,8 +158,8 @@ export default class CreativeMode extends BasePhase{
         .setInteractive();
       
         // Adiciona o asset do carregamento na tela
-        this.printLoad = this.add.sprite(this.printBtn.x, this.printBtn.y + this.printBtn.displayHeight/1.5, 'spriteLoading')
-        .setScale(this.width/8000)
+        this.printLoad = this.add.sprite(this.printBtn.x + this.printBtn.displayWidth*1.5, this.printBtn.y, 'spriteLoading')
+        .setScale(this.width/4000)
         .setInteractive()
         .setVisible(false)
         .setDepth(20);

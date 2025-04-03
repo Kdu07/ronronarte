@@ -7,8 +7,12 @@ export default class Menu extends Phaser.Scene{
 
     create() {
         // Cria imagens de background e botão jogar
-        this.bgMenu = this.add.image(this.scale.width/2, this.scale.height/2, 'bgMenu').setDisplaySize(this.scale.width, this.scale.height);
-        this.startButton = this.add.image(this.scale.width/1.95, this.scale.height/2, 'startButton').setScale(this.scale.width/800).setInteractive({cursor: "pointer"});
+        this.bgMenu = this.add.image(this.scale.width/2, this.scale.height/2, 'bgMenu')
+        .setDisplaySize(this.scale.width, this.scale.height);
+        
+        this.startButton = this.add.image(this.scale.width/1.95, this.scale.height/2, 'startButton')
+        .setScale(this.scale.width/400)
+        .setInteractive({cursor: "pointer"});
 
         // Quando o botão jogar for clicado direciona para o menu de seleção de níveis
         this.startButton.on("pointerdown", () => {
