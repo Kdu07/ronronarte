@@ -235,47 +235,49 @@ export default class CreativeMode extends BasePhase{
     clickTarget(){
         // Quando o mouse é clicado
         this.input.on('pointerdown', (pointer) => {
-            // Se o ponteiro está no do alvo
-            if (this.target.getBounds().contains(pointer.x, pointer.y)) {
-                this.stopped = true; // Alvo para de se movimentar
-
-                // Para o som do alvo
-                if(this.soundTarget){
-                    this.soundTarget.stop();
-                }
-
-                this.soundSplash.play({ volume: 0.5 }); // Toca o som configurado quando o alvo é clicado
-                this.time.delayedCall(1000, () => {
-                    this.soundSplash.stop(); // Para o som do clique após 1000ms (1s)
-                });
-
-                this.target.destroy(); // Destrói o alvo
+            if(this.target != null){
                 
-                // Cria um splash no local do clique
-                // Se o splash selecionado foi o aleatório
-                if (this.selectedSplash == 'splashRandom'){
-                    // Seleciona um splash com base em índices aleatórios
-                    let rand1 = Phaser.Math.Between(0, 2);
-                    let rand2 = Phaser.Math.Between(0, 4);
-                    let randSplash = this.splashes[rand1][rand2]
+                // Se o ponteiro está no do alvo
+                if (this.target.getBounds().contains(pointer.x, pointer.y)) {
+                    this.stopped = true; // Alvo para de se movimentar
 
-                    // Adiciona o splash selecionado na tela
-                    this.splash = this.add.image(pointer.x, pointer.y, randSplash)
-                    .setScale(this.width/400)
-                    .setDepth(0.1);
-                }else{
-                    // Adiciona o splash selecionado na tela
-                    this.splash = this.add.image(pointer.x, pointer.y, this.selectedSplash)
-                    .setScale(this.width/400)
-                    .setDepth(0.1);
+                    // Para o som do alvo
+                    if(this.soundTarget){
+                        this.soundTarget.stop();
+                    }
+
+                    this.soundSplash.play({ volume: 0.5 }); // Toca o som configurado quando o alvo é clicado
+                    this.time.delayedCall(1000, () => {
+                        this.soundSplash.stop(); // Para o som do clique após 1000ms (1s)
+                    });
+
+                    this.target.destroy(); // Destrói o alvo
+                    
+                    // Cria um splash no local do clique
+                    // Se o splash selecionado foi o aleatório
+                    if (this.selectedSplash == 'splashRandom'){
+                        // Seleciona um splash com base em índices aleatórios
+                        let rand1 = Phaser.Math.Between(0, 2);
+                        let rand2 = Phaser.Math.Between(0, 4);
+                        let randSplash = this.splashes[rand1][rand2]
+
+                        // Adiciona o splash selecionado na tela
+                        this.splash = this.add.image(pointer.x, pointer.y, randSplash)
+                        .setScale(this.width/400)
+                        .setDepth(0.1);
+                    }else{
+                        // Adiciona o splash selecionado na tela
+                        this.splash = this.add.image(pointer.x, pointer.y, this.selectedSplash)
+                        .setScale(this.width/400)
+                        .setDepth(0.1);
+                    }
+                    
+                    // Adiciona um novo alvo
+                    this.spawnTarget();
+                    this.target.setDepth(20);
                 }
-                
-                // Adiciona um novo alvo
-                this.spawnTarget();
-                this.target.setDepth(20);
             }
         });
-        
     }
 
     // Função que mostra e esconde os botões da paleta
@@ -304,6 +306,8 @@ export default class CreativeMode extends BasePhase{
     printMode(){
         // Deixa invisível todos os elementos que não devem aparecer na print
         this.target.destroy();
+        this.target = null
+        this.stopped = true
         this.paletteBtn.setVisible(false);
         this.pauseBtn.setVisible(false);
         this.printBtn.setVisible(false);

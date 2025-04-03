@@ -67,7 +67,6 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('bgVictory', './assets/backgrounds/bgVictory.png');
         this.load.image('bgWhite', './assets/backgrounds/bgWhite.png');
         this.load.image('bgVictoryScene', './assets/backgrounds/bgVictoryScene.png');
-        this.load.image('newBgMenu', './assets/backgrounds/newBackground.png');
 
         //Misc
         this.load.image('textArtistBox', './assets/misc/textArtistBox.png');
