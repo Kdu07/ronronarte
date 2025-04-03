@@ -1,34 +1,59 @@
+import { completedPhases } from './splashScreen.js';
+
 export default class LevelSelect extends Phaser.Scene {
     constructor() {
-        // Configura a chave de classe
         super("LevelSelect");
+
     }
     create() {
-        // Cria as imagens presentes no menu de seleção de níveis
+
+        //background
         this.selectBg = this.add.image(this.scale.width*0.5, this.scale.height*0.5, 'selectBg').setDisplaySize(this.scale.width, this.scale.height);
-        this.selectTutorial = this.add.image(this.scale.width*0.18, this.scale.height*0.33, 'selectTutorial').setScale(this.scale.width/3200).setInteractive();
-        this.selectCriative = this.add.image(this.scale.width*0.18, this.scale.height*0.67, 'selectCriative').setScale(this.scale.width/3200).setInteractive();
-        this.selectPhase1 = this.add.image(this.scale.width*0.6, this.scale.height*0.25, 'selectPhase1').setScale(this.scale.width/1000).setInteractive();
-        this.selectPhase2 = this.add.image(this.scale.width*0.6, this.scale.height*0.42, 'selectPhase2').setScale(this.scale.width/1000).setInteractive();
-        this.selectPhase3 = this.add.image(this.scale.width*0.6, this.scale.height*0.58, 'selectPhase3').setScale(this.scale.width/1000).setInteractive();
-        this.selectPhase4 = this.add.image(this.scale.width*0.6, this.scale.height*0.75, 'selectPhase4').setScale(this.scale.width/1000).setInteractive();
+    
 
-        // Se o usuário selecionar a imagem que remete à primeira fase, ele será direcionado para a primeira fase
-        this.changeScene(this.selectTutorial, 'Tutorial');
-        this.changeScene(this.selectPhase1, 'Phase1');
-        this.changeScene(this.selectPhase2, 'Phase2');
-        this.changeScene(this.selectPhase3, 'Phase3');
-        this.changeScene(this.selectPhase4, 'Phase4');
-        this.changeScene(this.selectCriative, 'CreativeMode');
-    }; 
+        // botões bloqueados       
+        this.buttonTutorial = this.add.image(this.scale.width*0.53, this.scale.height*0.33, 'tutorialButton').setDisplaySize(this.scale.width, this.scale.height).setScale(2.3).setInteractive();
+        this.buttonCreative = this.add.image(this.scale.width*0.77, this.scale.height*0.33, 'criativeBlocked').setDisplaySize(this.scale.width, this.scale.height).setScale(2.3);
+        this.buttonPhase1 = this.add.image(this.scale.width*0.20, this.scale.height*0.66, 'phase1Blocked').setDisplaySize(this.scale.width, this.scale.height).setScale(3.0)
+        this.buttonPhase2 = this.add.image(this.scale.width*0.40, this.scale.height*0.66, 'phase2Blocked').setDisplaySize(this.scale.width, this.scale.height).setScale(3.0);
+        this.buttonPhase3 = this.add.image(this.scale.width*0.60, this.scale.height*0.66, 'phase3Blocked').setDisplaySize(this.scale.width, this.scale.height).setScale(3.0);
+        this.buttonPhase4 = this.add.image(this.scale.width*0.80, this.scale.height*0.66, 'phase4Blocked').setDisplaySize(this.scale.width, this.scale.height).setScale(3.0);
+        
+        console.log(completedPhases)
 
-    changeScene(selectPhase, phaseKey) {
-        selectPhase.on('pointerdown', () => {
-            this.scene.launch('OverlayScene'); // Lança a cena sobreposta
-            this.scene.bringToTop('OverlayScene');
-            this.time.delayedCall(1000, () => {
-                this.scene.start(phaseKey);
-            });
+        // botões desbloqueados 
+       // this.buttonPhase1Unlocked = this.add.image(this.scale.width*0.20, this.scale.height*0.66, 'phase1Unlocked').setDisplaySize(this.scale.width, this.scale.height).setScale(3.0).setVisible(false);
+       // this.buttonPhase2Unlocked = this.add.image(this.scale.width*0.40, this.scale.height*0.66, 'phase2Unlocked').setDisplaySize(this.scale.width, this.scale.height).setScale(3.0).setVisible(false);
+       // this.buttonPhase3Unlocked = this.add.image(this.scale.width*0.60, this.scale.height*0.66, 'phase3Unlocked').setDisplaySize(this.scale.wdith, this.scale.height).setScale(3.0).setVisible(false);
+       // this.buttonPhase4Unlocked = this.add.image(this.scale.width*0.80, this.scale.height*0.66, 'phase4Unlocked').setDisplaySize(this.scale.width, this.scale.height).setScale(3.0).setVisible(false);
+    
+        // se o botão do tutorial for clicado
+        this.buttonTutorial.on('pointerdown', () => {
+            this.scene.stop('LevelSelect')
+            this.scene.start('Tutorial');
         });
+
+        this.buttonPhase1.on('pointerdown', () => {
+            this.secene.start('Phase1');
+        });
+
+        if(completedPhases['Tutorial']){
+            // Libera o botão da fase 1 e criativo
+        }
+        if(completedPhases['Phase1']){
+            // Libera o botão da fase 2
+        }
+        if(completedPhases['Phase2']){
+
+        }
+        if(completedPhases['Phase3']){
+
+        }
+        if(completedPhases['Phase4']){
+
+        }
     }
+
+    
+ 
 }

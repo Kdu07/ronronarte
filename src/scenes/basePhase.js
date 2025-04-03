@@ -1,3 +1,5 @@
+import { completedPhases } from './splashScreen.js';
+
 // Classe de cena a ser exportada
 export default class BasePhase extends Phaser.Scene {
     constructor(phaseKey, configDict) {
@@ -343,6 +345,8 @@ export default class BasePhase extends Phaser.Scene {
     }
 
     displayVictory() {
+        completedPhases[this.phaseKey] = true
+        
         if(this.soundTarget){
             this.soundTarget.stop();
         }

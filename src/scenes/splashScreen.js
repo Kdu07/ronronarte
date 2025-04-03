@@ -1,3 +1,5 @@
+export var completedPhases = { Tutorial: false, Phase1: false, Phase2: false, Phase3: false, Phase4: false};
+
 // Classe de cena a ser exportada
 export default class SplashScreen extends Phaser.Scene {
     constructor(){
@@ -58,6 +60,16 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.spritesheet('spriteLoading', './assets/buttons/loading.png', {frameWidth: 292, frameHeight: 68.16});
         this.load.image('palette', './assets/buttons/paleta.png');
         this.load.image('buttonPrint', './assets/buttons/buttonPrint.png');
+        this.load.image('criativeBlocked', './assets/buttons/criativeBlocked.png');
+        this.load.image('tutorialButton', './assets/buttons/tutorialButton.png');
+        this.load.image('phase1Unlocked', './assets/buttons/phase1Unlocked.png');
+        this.load.image('phase1Blocked', './assets/buttons/phase1Blocked.png');
+        this.load.image('phase2Blocked', './assets/buttons/phase2Blocked.png');
+        this.load.image('phase3Blocked', './assets/buttons/phase3Blocked.png');
+        this.load.image('phase4Blocked', './assets/buttons/phase4Blocked.png');
+        this.load.image('phase4Unlocked', './assets/buttons/phase4Unlocked.png');
+        this.load.image('phase3Unlocked', './assets/buttons/phase3Unlocked.png');
+        this.load.image('phase2Unlocked', './assets/buttons/phase2Unlocked.png');
 
         //Backgrounds
         this.load.image('bgMenu', './assets/backgrounds/expanded_startscreen.png');
