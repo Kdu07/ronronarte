@@ -442,17 +442,21 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 \# | Requisitos  
 --- | ---
-1 | A tela inicial deve mostrar um botão “Jogar”, que, quando clicado, direciona o jogador às fases do jogo.
-2 | Nas fases, o jogador (gato) deve clicar nos animais que aparecerem na tela para eliminá-los.
-3 | As cores que o gato enxerga com mais facilidade serão usadas nos animais que ele precisa bater e as cores que são mais dificultosas de ver serão usadas no background. Dessa forma, a emissão de mais estímulo visual junto com a movimentação do alvo pela tela, potencializa o interesse do gato em abater os alvos.
-4 | O gato percebe que eliminou o alvo por meio de um aviso sonoro e o efeito de splash na tela.
-5 | No modo criativo, ao clicar na tela, o jogador (gato) consegue pintá-la.
-6 | No modo de fases, ao clicar na tela, o jogador (gato) vai revelando uma pintura de um período da história da arte.
-7 | Devem ser disponibilizados botões de hud na tela, ativados apenas quando clicados e pressionados em seguida (para que o gato não os ative sem querer).
-8 | No modo criativo, as pinturas do gato serão guardadas em uma biblioteca de imagens disponibilizada no jogo para acesso do tutor.
-9 | Ao final de cada fase, o jogador (gato) deve receber uma recompensa do tutor: petiscos ou ração.
-10 | O jogo será reproduzido em formato web direcionado para dispositivos móveis (smartphones e tablets).
-11 | Exibir som ao finalizar a fase para notificar o tutor e facilitar o entendimento do gato em relação à recompensa.
+1 | O jogo será reproduzido em formato web direcionado para dispositivos móveis (smartphones e tablets).
+2 | O jogo deve ter uma cena de tutorial, onde o tutor receberá instruções sobre como funcionam as mecânicas do jogo, e sobre como estimular e recompensar o gato.
+3 | O jogo deve ter uma cena de menu de seleção de fases e modos, onde será possível acessar as fases que foram desbloqueadas, o modo tutorial, e o modo criativo.
+4 | A tela inicial deve mostrar um botão “Jogar”, que, quando clicado, direciona o jogador ao menu de seleção de fases e modos de jogo.
+5 | Nas fases, o jogador (gato) deve clicar nos animais que aparecerem na tela para eliminá-los.
+6 | Os alvos devem reproduzir sons para manter a atenção do gato no jogo.
+7 | As cores que o gato enxerga com mais facilidade serão usadas nos animais que ele precisa bater e as cores que são mais dificultosas de ver serão usadas no background. Dessa forma, a emissão de mais estímulo visual junto com a movimentação do alvo pela tela, potencializa o interesse do gato em abater os alvos.
+8 | O gato percebe que eliminou o alvo por meio de um aviso sonoro e o efeito de splash na tela.
+9 | Após eliminar o alvo, é exibida uma região na tela (pata) onde o tutor deverá posicionar o petisco para recompensar o gato.
+10 | No modo criativo, ao clicar na tela, o jogador (gato) consegue pintá-la.
+11 | No modo criativo, o tutor possui o modo print, que pode ser iniciado com um botão, para registrar a obra do gato.
+12 | No modo de fases, ao clicar na tela, o jogador (gato) vai revelando uma pintura de um artista de um continente diferente.
+13 | Devem ser disponibilizados botões de hud (botões de retornar ao menu, seleção de paletas e pincéis e tirar print) na tela, ativados apenas quando clicados e pressionados em seguida (para que o gato não os ative sem querer).
+14 | Exibir som ao acertar o alvo para notificar o tutor e facilitar o entendimento do gato em relação à recompensa.
+
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br>
 
