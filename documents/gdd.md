@@ -1053,6 +1053,9 @@ Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, co
 ## 5.2. Testes de jogabilidade (playtests) (sprint 4)
 
 ### 5.2.1 Registros de testes
+
+### 5.2.1.1: Registro dos testes de guerrilha
+
 Perguntas | Entrevistado 1 | Entrevistado 2 | Entrevistado 3 | Entrevistado 4 | Entrevistado 5 | Entrevistado 6 | Entrevistado 7
 --- | --- | --- | --- | --- | --- | --- | --- 
 Você tem um gato? | Sim | Não | Não | Sim, 4 gatos | SIm | Não |Sim 
@@ -1067,6 +1070,10 @@ Apresentou dificuldades? | Sim, os botões e alguns textos estão muito pequenos
 Nota de 0 a 10 que deu para o jogo | 10,0 | 9,5 | 8,0 | 7,0 | 9.5 | 7.0 | 9.5
 O que mais gostou no jogo? | Criatividade, especialmente na parte de criação dos quadros autorais dos gatos | Paleta do modo criativo | Modo criativo | A exploração da criatividade dos gatos | Spritesheet da lagartixa | Spritesheet do pombo | O modo criativo 
 O que poderia melhorar no jogo?| Nada | Colocar mais quadros, diversificar mais | Botões muito pequenos, melhor indicador do tempo | Interface de seleção de níveis ser mais intuitivo e o Tutorial ser mais claro | Aumentar a escrita e o tamanho dos alvos | Mudar o Menu, pois é pequeno e pode ser menos intuitivo, assim como os botões. Retirar o temporizador e passar a pontuação para o canto, mexer na estética do botão de modo a destaca-lo mais e juntaa-lo com a borda do quadro | Aumentar o tamanho dos botões
+
+### 5.2.1.2: Registro dos testes com público-alvo
+
+### 5.2.1.3: Análise das respostas e principais conclusões
 
 ### 5.2.2 Melhorias
 
