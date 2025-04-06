@@ -7,33 +7,52 @@ export default class Select2 extends Phaser.Scene {
 
         //background
         this.selectBg = this.add.image(this.scale.width*0.5, this.scale.height*0.5, 'selectBg').setDisplaySize(this.scale.width, this.scale.height);
-    
+     
+       
+        this.button1Phase = this.add.image(this.scale.width*0.2, this.scale.height*0.67, 'phase1Button').setScale(this.scale.width/10050);
+        this.squareFrame = this.add.image(this.scale.width*0.2, this.scale.height*0.67, 'squareFrame').setScale(this.scale.width/450);
+        this.textPhase1 = this.add.text(this.scale.width*0.165, this.scale.height*0.49, 'Fase 1:', {
+        fontFamily: 'Pixelify Sans',
+        fontSize:'32px',
+        color: '#000000'
+    } );
+        this.textAlvo1 = this.add.text(this.scale.width*0.16, this.scale.height*0.81, 'Alvos: 3', {
+            fontFamily: 'Pixelify Sans', 
+            fontSize: '32px',
+            color:'#000000'
+        });
 
-        // botões bloqueados       
-        this.buttonTutorial = this.add.image(this.scale.width*0.53, this.scale.height*0.33, 'tutorialButton').setDisplaySize(this.scale.width, this.scale.height).setScale(2.3).setInteractive();
-        this.buttonCreative = this.add.image(this.scale.width*0.77, this.scale.height*0.33, 'criativeBlocked').setDisplaySize(this.scale.width, this.scale.height).setScale(2.3);
-        this.buttonPhase1 = this.add.image(this.scale.width*0.20, this.scale.height*0.66, 'phase1Blocked').setDisplaySize(this.scale.width, this.scale.height).setScale(3.0)
-        this.buttonPhase2 = this.add.image(this.scale.width*0.40, this.scale.height*0.66, 'phase2Blocked').setDisplaySize(this.scale.width, this.scale.height).setScale(3.0);
-        this.buttonPhase3 = this.add.image(this.scale.width*0.60, this.scale.height*0.66, 'phase3Blocked').setDisplaySize(this.scale.width, this.scale.height).setScale(3.0);
-        this.buttonPhase4 = this.add.image(this.scale.width*0.80, this.scale.height*0.66, 'phase4Blocked').setDisplaySize(this.scale.width, this.scale.height).setScale(3.0);
+
         
-        // botões desbloqueados 
-       // this.buttonPhase1Unlocked = this.add.image(this.scale.width*0.20, this.scale.height*0.66, 'phase1Unlocked').setDisplaySize(this.scale.width, this.scale.height).setScale(3.0).setVisible(false);
-       // this.buttonPhase2Unlocked = this.add.image(this.scale.width*0.40, this.scale.height*0.66, 'phase2Unlocked').setDisplaySize(this.scale.width, this.scale.height).setScale(3.0).setVisible(false);
-       // this.buttonPhase3Unlocked = this.add.image(this.scale.width*0.60, this.scale.height*0.66, 'phase3Unlocked').setDisplaySize(this.scale.wdith, this.scale.height).setScale(3.0).setVisible(false);
-       // this.buttonPhase4Unlocked = this.add.image(this.scale.width*0.80, this.scale.height*0.66, 'phase4Unlocked').setDisplaySize(this.scale.width, this.scale.height).setScale(3.0).setVisible(false);
-    
-        // se o botão do tutorial for clicado
-        this.buttonTutorial.on('pointerdown', () => {
-            this.scene.pause('Select2')
-            this.scene.start('Phase0');
-            this.buttonPhase1.setTexture('phase1Unlocked');
-            this.buttonPhase1.setInteractive();
+
+        this.textAlvo2 = this.add.text(this.scale.width*0.36, this.scale.height*0.81, 'Alvos: 5', {
+            fontFamily: 'Pixelify Sans', 
+            fontSize: '32px',
+            color:'#000000'
         });
 
-        this.buttonPhase1.on('pointerdown', () => {
-            this.secene.start('Phase1');
+
+        
+        this.textAlvo3 = this.add.text(this.scale.width*0.565, this.scale.height*0.81, 'Alvos: 7', {
+            fontFamily: 'Pixelify Sans', 
+            fontSize: '32px',
+            color:'#000000'
         });
+
+
+
+        this.button4Phase = this.add.image(this.scale.width*0.8, this.scale.height*0.67, 'phase4Button').setScale(this.scale.width/3450);
+        this.squareFrame = this.add.image(this.scale.width*0.8, this.scale.height*0.67, 'squareFrame').setScale(this.scale.width/450);
+        this.textPhase4 = this.add.text(this.scale.width*0.765, this.scale.height*0.49, 'Fase 4:', {
+            fontFamily: 'Pixelify Sans',
+            fontSize:'32px',
+            color: '#000000'
+        } );
+        this.textAlvo4 = this.add.text(this.scale.width*0.76, this.scale.height*0.81, 'Alvos: 10', {
+            fontFamily: 'Pixelify Sans', 
+            fontSize:'32px',
+            color: '#000000'
+        })
 
     
     }

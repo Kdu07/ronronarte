@@ -52,7 +52,6 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('selectPhase4', './assets/buttons/Select_Phase4.png');
         this.load.image('startButton', './assets/buttons/botao_start_preto.png');
         this.load.image('skipTutorialButton', './assets/buttons/botao_pular.png');
-        this.load.image('optionsBtn', './assets/buttons/botao_opcoes_corr_preto.png');
         this.load.image('pauseBtn', './assets/buttons/pause.png');
         this.load.image('buttonCriative', '/assets/buttons/botao_criativo.png');
         this.load.image('continueBtn', './assets/buttons/botao_continuar_preto.png');
@@ -91,6 +90,9 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('teste', '/assets/misc/575x56.png');
         this.load.image('scoreStar', '/assets/misc/scoreStar.png');
         this.load.image('victoryTextBox', '/assets/misc/victoryTextBox.png');
+        this.load.image('squareFrame', './assets/misc/moldura_quadradoo.png');
+        this.load.image('phase1Button', './assets/misc/phase1Button.png');
+        this.load.image('phase4Button', './assets/misc/phase4Button.png');
 
         //Alvos
         this.load.spritesheet('pigeon', './assets/targets/pigeon.png', { frameWidth: 64, frameHeight:64 });
