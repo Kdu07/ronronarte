@@ -1,4 +1,5 @@
 import BasePhase from "./basePhase.js";
+import { completedPhases } from './splashScreen.js';
 
 // Classe de cena a ser exportada
 export default class Phase0 extends BasePhase {
@@ -85,6 +86,7 @@ export default class Phase0 extends BasePhase {
             this.spriteLoading1.anims.play('SpriteLoading',true);
 
             if (this.spriteLoading1.anims.currentFrame.index == 5){
+                completedPhases['Tutorial'] = true
                 this.soundContinue.play({ volume: 0.5 }); 
                 this.time.delayedCall(1000, () => {
                     this.soundContinue.stop();
@@ -92,6 +94,7 @@ export default class Phase0 extends BasePhase {
                 this.soundTarget.stop();
                 this.scene.start("Phase1");
                 this.scene.stop(this.phaseKey);
+                this.scene.get('Select2');
             }
         }else{
             this.spriteLoading1.anims.stop().setFrame(0).setVisible(false);

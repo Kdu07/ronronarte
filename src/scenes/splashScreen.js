@@ -1,4 +1,7 @@
+export var completedPhases = { Tutorial: false, Phase1: false, Phase2: false, Phase3: false, Phase4: false, CreativeMode: false};
+
 // Classe de cena a ser exportada
+
 export default class SplashScreen extends Phaser.Scene {
     constructor(){
         // Configura a chave de classe
@@ -51,13 +54,25 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('selectPhase4', './assets/buttons/Select_Phase4.png');
         this.load.image('startButton', './assets/buttons/botao_start_preto.png');
         this.load.image('skipTutorialButton', './assets/buttons/botao_pular.png');
-        this.load.image('optionsBtn', './assets/buttons/botao_opcoes_corr_preto.png');
         this.load.image('pauseBtn', './assets/buttons/pause.png');
         this.load.image('buttonCriative', './assets/buttons/botao_criativo.png');
         this.load.image('continueBtn', './assets/buttons/botao_continuar_preto.png');
         this.load.spritesheet('spriteLoading', './assets/buttons/loading.png', {frameWidth: 292, frameHeight: 68.16});
         this.load.image('palette', './assets/buttons/paleta.png');
+        this.load.spritesheet('buttonPlay', './assets/buttons/spritesheet-play.png', {frameWidth: 128, frameHeight: 64});
         this.load.image('buttonPrint', './assets/buttons/buttonPrint.png');
+        this.load.image('tutorialButton', './assets/buttons/tutorialButtonBlue.png');
+        this.load.image('phase1Button', './assets/misc/phase1Button.png');
+        this.load.image('phase2Button', './assets/buttons/phase2Button.png');
+        this.load.image('phase3Button', './assets/buttons/phase3Button.png');
+        this.load.image('phase4Button', './assets/misc/phase4Button.png');
+        this.load.image('phase1ButtonBW', './assets/buttons/phase1Button_bw.png');
+        this.load.image('phase2ButtonBW', './assets/buttons/phase2Button_bw.png');
+        this.load.image('phase3ButtonBW', './assets/buttons/phase3Button_bw.png');
+        this.load.image('phase4ButtonBW', './assets/buttons/phase4Button_bw.png');
+        this.load.image('criativeButton', './assets/buttons/criativeButton.png');
+        this.load.image('criativeButtonBW', './assets/buttons/criativeButton_bw.png');
+
 
         //Backgrounds
         this.load.image('bgMenu', './assets/backgrounds/expanded_startscreen.png');
@@ -76,12 +91,17 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('reward', './assets/misc/recompensa.png');
         this.load.image('catup', './assets/misc/catup.png');
         this.load.spritesheet('cat', './assets/misc/cat.png', { frameWidth: 64, frameHeight:64 });
+        this.load.image('scoreStar', '/assets/misc/scoreStar.png');
+        this.load.image('victoryTextBox', '/assets/misc/victoryTextBox.png');
+        this.load.image('squareFrame', './assets/misc/moldura_quadradoo.png');
         this.load.image('scoreStar', './assets/misc/scoreStar.png');
         this.load.image('victoryTextBox', './assets/misc/victoryTextBox.png');
         this.load.image('rotate', './assets/misc/rotate.png');
         this.load.image('circle', './assets/misc/circle.png');
         this.load.image('logoInteli','./assets/misc/logoInteli.png');
         this.load.image('drPet','./assets/misc/drPet.png');
+        this.load.image('frameBW', './assets/misc/moldura_bw.png');
+        this.load.image('lock', './assets/misc/lock.png');
 
         //Alvos
         this.load.spritesheet('pigeon', './assets/targets/pigeon.png', { frameWidth: 64, frameHeight:64 });
