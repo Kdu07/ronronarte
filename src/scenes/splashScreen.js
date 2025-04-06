@@ -1,3 +1,5 @@
+export var completedPhases = { Tutorial: false, Phase1: false, Phase2: false, Phase3: false, Phase4: false};
+
 // Classe de cena a ser exportada
 
 export default class SplashScreen extends Phaser.Scene {
@@ -53,7 +55,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('startButton', './assets/buttons/botao_start_preto.png');
         this.load.image('skipTutorialButton', './assets/buttons/botao_pular.png');
         this.load.image('pauseBtn', './assets/buttons/pause.png');
-        this.load.image('buttonCriative', '/assets/buttons/botao_criativo.png');
+        this.load.image('buttonCriative', './assets/buttons/botao_criativo.png');
         this.load.image('continueBtn', './assets/buttons/botao_continuar_preto.png');
         this.load.spritesheet('spriteLoading', './assets/buttons/loading.png', {frameWidth: 292, frameHeight: 68.16});
         this.load.image('palette', './assets/buttons/paleta.png');
@@ -73,8 +75,8 @@ export default class SplashScreen extends Phaser.Scene {
         //Backgrounds
         this.load.image('bgMenu', './assets/backgrounds/expanded_startscreen.png');
         this.load.image('bgTutorial', './assets/backgrounds/larger_tiled_background.jpg');
-        this.load.image('screenCriative', 'assets/backgrounds/tela_branca.png');
-        this.load.image('selectBg', 'assets/backgrounds/textBoxFuncional.png');
+        this.load.image('screenCriative', './assets/backgrounds/tela_branca.png');
+        this.load.image('selectBg', './assets/backgrounds/textBoxFuncional.png');
         this.load.image('bgVictory', './assets/backgrounds/bgVictory.png');
         this.load.image('bgWhite', './assets/backgrounds/bgWhite.png');
         this.load.image('bgVictoryScene', './assets/backgrounds/bgVictoryScene.png');
@@ -93,10 +95,18 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('squareFrame', './assets/misc/moldura_quadradoo.png');
         this.load.image('phase1Button', './assets/misc/phase1Button.png');
         this.load.image('phase4Button', './assets/misc/phase4Button.png');
+        this.load.image('scoreStar', './assets/misc/scoreStar.png');
+        this.load.image('victoryTextBox', './assets/misc/victoryTextBox.png');
+        this.load.image('rotate', './assets/misc/rotate.png');
+        this.load.image('circle', './assets/misc/circle.png');
+        this.load.image('logoInteli','./assets/misc/logoInteli.png');
+        this.load.image('drPet','./assets/misc/drPet.png');
 
         //Alvos
         this.load.spritesheet('pigeon', './assets/targets/pigeon.png', { frameWidth: 64, frameHeight:64 });
         this.load.spritesheet('rat', './assets/targets/rat.png', { frameWidth: 64, frameHeight:64 }); 
+        this.load.spritesheet('gecko', './assets/targets/gecko.png', { frameWidth: 64, frameHeight:64 });
+        this.load.spritesheet('snake', './assets/targets/snake.png', { frameWidth: 64, frameHeight:64 });
         
         //Audios
         this.load.audio('soundClick', './assets/audios/soundClick.mp3');
@@ -108,7 +118,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.audio('soundRat', './assets/audios/soundRat.mp3');
         this.load.audio('soundSplash', './assets/audios/soundSplash.mp3');
         this.load.audio('soundStar', './assets/audios/soundStar.mp3');
-        
+        this.load.audio('soundSnake', './assets/audios/soundSnake.mp3');        
     }
 
     create(){    
@@ -121,10 +131,24 @@ export default class SplashScreen extends Phaser.Scene {
 
         this.anims.create({
             key: 'animRat', 
-            frames: this.anims.generateFrameNumbers('rat', { start: 0, end: 6 }), // Define os frames do spritesheet que serão usados
+            frames: this.anims.generateFrameNumbers('rat', {start: 0, end: 6}), // Define os frames do spritesheet que serão usados
             frameRate: 15, // Quantidade de frames por segundo
             repeat: -1 // Define que a animação será contínua
         });
+
+        this.anims.create({
+            key: 'animGecko', // Nome da animação
+            frames: this.anims.generateFrameNumbers('gecko', {start:0, end:5}), 
+            frameRate: 7,
+            repeat: -1
+        })
+
+        this.anims.create({
+            key: 'animSnake', // Nome da animação
+            frames: this.anims.generateFrameNumbers('snake', {start:0, end:6}), 
+            frameRate: 7,
+            repeat: -1
+        })
 
         this.anims.create({
             key: 'SpriteLoading', // Nome da animação
@@ -139,21 +163,14 @@ export default class SplashScreen extends Phaser.Scene {
 
         // Adiciona fade in na splash screen
         this.cameras.main.fadeIn(time1500, 0, 0, 0) // Aplica um efeito de fade-in que escurece a tela
-        this.add.image(this.scale.width/2, this.scale.height/2,'catup').setScale(1.0);
+        this.add.image(this.scale.width/2, this.scale.height/2,'catup').setScale(this.scale.width/700);
 
         // Adiciona fade out na splash screen depois de 3 segundos
         this.time.delayedCall(time3000, () => {
-            this.cameras.main.fadeOut(time1500, 0, 0, 0); // Aplica um efeito de fade-out que escurece a tela
-            
-            // Aguarda o fadeOut antes de iniciar a próxima cena
-            this.time.delayedCall(time1500, () => {
-                this.scene.stop('SplashScreen'); // Para a cena atual
-                this.scene.start('Menu'); // Inicia a cena Menu
-            }); 
             if (window.innerWidth < window.innerHeight){
-                this.add.text(this.scale.width/16, this.scale.height*0.75,
+                this.add.text(this.scale.width/14, this.scale.height*0.8,
                     '                              Para iniciar o jogo, \nvire seu dispositivo na horizontal e recarregue a página', 
-                    {fontFamily:'font1', fontSize:this.scale.width/25, fill:'#FFFFFF'})
+                    {fontFamily:'font1', fontSize:this.scale.width/30, fill:'#FFFFFF'})
                 this.add.image(this.scale.width/2, this.scale.height/8,'rotate').setScale(this.scale.width/1500);
             }else{
                 // Aguarda o fadeOut antes de iniciar a próxima cena
@@ -165,12 +182,6 @@ export default class SplashScreen extends Phaser.Scene {
                 this.cameras.main.fadeOut(time1500, 0, 0, 0); // Aplica um efeito de fade-out que escurece a tela
             } 
         });
-
-        if (this.isPortrait){
-            this.add.text(this.scale.width/3.2, this.scale.height*0.83, 
-                'Para uma melhor experiência, \nvire seu celular na horizontal', 
-                {fontFamily:'Futura', fontSize:this.scale.width/30, fill:'#FFFFFF'})
-        }
     }
 
     resizeGame() {

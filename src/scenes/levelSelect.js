@@ -1,35 +1,18 @@
-
-
-
+import { completedPhases } from './splashScreen.js';
 
 export default class LevelSelect extends Phaser.Scene {
     constructor() {
-        // Configura a chave de classe
         super("LevelSelect");
 
-       this.unlockedPhases = {
-            "Tutorial": true,
-            "CriativeMode": false,
-            "Phase0": false,
-            "Phase1": false,
-            "Phase2": false,
-            "Phase3": false,
-            "Phase4": false
-        };
     }
 
 
 
     create() {
 
-        // Cria as imagens presentes no menu de seleção de níveis
+        //background
         this.selectBg = this.add.image(this.scale.width*0.5, this.scale.height*0.5, 'selectBg').setDisplaySize(this.scale.width, this.scale.height);
-        this.selectTutorial = this.add.image(this.scale.width*0.18, this.scale.height*0.33, 'selectTutorial').setScale(this.scale.width/3200).setInteractive();
-        this.selectCriative = this.add.image(this.scale.width*0.18, this.scale.height*0.67, 'selectCriative').setScale(this.scale.width/3200).setInteractive();
-        this.selectPhase1 = this.add.image(this.scale.width*0.6, this.scale.height*0.25, 'selectPhase1').setScale(this.scale.width/1000).setInteractive();
-        this.selectPhase2 = this.add.image(this.scale.width*0.6, this.scale.height*0.42, 'selectPhase2').setScale(this.scale.width/1000).setInteractive();
-        this.selectPhase3 = this.add.image(this.scale.width*0.6, this.scale.height*0.58, 'selectPhase3').setScale(this.scale.width/1000).setInteractive();
-        this.selectPhase4 = this.add.image(this.scale.width*0.6, this.scale.height*0.75, 'selectPhase4').setScale(this.scale.width/1000).setInteractive();
+    
 
         // Se o usuário selecionar a imagem que remete à primeira fase, ele será direcionado para a primeira fase
         this.changeScene(this.selectTutorial, 'Tutorial');
@@ -57,10 +40,28 @@ export default class LevelSelect extends Phaser.Scene {
                 this.scene.start(phaseKey);
             });
         });
+
+        this.buttonPhase1.on('pointerdown', () => {
+            this.secene.start('Phase1');
+        });
+
+        if(completedPhases['Tutorial']){
+            // Libera o botão da fase 1 e criativo
+        }
+        if(completedPhases['Phase1']){
+            // Libera o botão da fase 2
+        }
+        if(completedPhases['Phase2']){
+
+        }
+        if(completedPhases['Phase3']){
+
+        }
+        if(completedPhases['Phase4']){
+
+        }
     }
 
-    update() {
-
-    };
-
+    
+ 
 }

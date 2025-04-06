@@ -42,7 +42,7 @@ export default class OverlayScene extends Phaser.Scene {
             });
         });
 
-        // Aguarda todos os splashes serem criados antes de escondê-los
+        // Deixa invisível todos os splashes após 1,3 segundos
         this.time.delayedCall(1300, () => {
             this.EndSplashes();
         });

@@ -35,18 +35,24 @@ export default class Victory extends Phaser.Scene {
             .setDisplaySize(this.width/numA, this.width/numA);
 
         
-        this.add.image(this.painting.x, this.height / 1.5, "victoryTextBox")
+        this.paintingTextBox = this.add.image(this.painting.x, this.height / 1.5, "victoryTextBox")
             .setDisplaySize(this.width/2.5, this.height/numP);
         
-        this.add.image(this.artist.x, this.height / 1.5, "victoryTextBox")
+        this.artistTextBox = this.add.image(this.artist.x, this.height / 1.5, "victoryTextBox")
             .setDisplaySize(this.width/3, this.width/numA);
     
             
-        this.add.text(this.width/4.5, this.height/1.8, this.textPainting, 
-            {fontFamily:'Futura', fontSize:this.width/60, fill:'#000'});
+        this.add.text(this.width/4.5, this.height/1.8, this.textPainting, {
+            fontFamily:'font1', 
+            fontSize:this.width/85, 
+            fill:'#000', 
+            wordWrap: { width: this.paintingTextBox.displayWidth - this.paintingTextBox.displayWidth/15, useAdvancedWrap: true }});
     
-        this.add.text(this.width/1.52, this.height/1.8, this.textArtist, 
-            {fontFamily:'Futura', fontSize:this.width/60, fill:'#000'});
+        this.add.text(this.width/1.52, this.height/1.8, this.textArtist, {
+            fontFamily:'font1', 
+            fontSize:this.width/85, 
+            fill:'#000', 
+            wordWrap: { width: this.artistTextBox.displayWidth - this.artistTextBox.displayWidth/15, useAdvancedWrap: true }});
                 
         
         // Adiciona o gato
@@ -61,23 +67,25 @@ export default class Victory extends Phaser.Scene {
 
         // Adiciona o alvo da fase
         this.target = this.add.sprite(this.width/9, this.height/3.2, this.targetKey)
-            .setDisplaySize(this.width/4, this.width/4).setFlip(true,false);
+            .setDisplaySize(this.width/4.5, this.width/4.5).setFlip(true,false);
         this.target.play(this.animKey);
 
         this.add.image(this.width/1.15, this.height/1.08, 'continueBtn')
         .setInteractive() 
         .on('pointerdown', () => {
             this.scene.stop(this.phaseKey); // Para a fase atual
-            this.scene.start(this.nextPhase);
+            this.scene.start('LevelSelect');
         })
         .setScale(this.width/500)
-    }
 
-    update(){
-        this.input.on('pointerdown', (pointer) => {
-            //console.log("X: " + this.width/pointer.x)
-            //console.log("Y: " + this.height/pointer.y)
-            //console.log('----------------------------------')
-        })
+        if (this.nextPhase ==  'CreativeMode'){
+            this.add.image(this.width/10, this.height/1.08, 'continueBtn')
+            .setInteractive() 
+            .on('pointerdown', () => {
+                this.scene.stop(this.phaseKey); // Para a fase atual
+                this.scene.start('CreditsScreen'); // Inicia os créditos
+            })
+            .setScale(this.width/500)
+        }
     }
 }

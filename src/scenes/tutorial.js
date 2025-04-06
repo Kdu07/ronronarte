@@ -7,6 +7,8 @@ export default class Tutorial extends Phaser.Scene {
     create(){
         this.textAdded = false; // Boolean para adicionar apenas uma vez o texto usando o update
         this.clicks = 0; // Contagem de clicks na tela
+        this.count = 0;
+        
         // Texto de tutorial organizado por elementos em lista
         this.tutorialTexts = [
             'Olá humano,\nbem-vindo ao RonRonarte!',
@@ -19,7 +21,7 @@ export default class Tutorial extends Phaser.Scene {
             'Está pronto para a aventura?\n\nClique no pombo para começar o jogo!']
         
         // Adiciona background
-        let bg = this.add.image(this.scale.width/2, this.scale.height/2, 'bgTutorial').setInteractive();
+        let bg = this.add.image(this.scale.width / 2, this.scale.height / 2, 'bgTutorial').setDisplaySize(this.scale.width, this.scale.height).setDepth(0);
         
         // Configura a animação de voo do personagem
         this.anims.create({
@@ -29,27 +31,59 @@ export default class Tutorial extends Phaser.Scene {
             repeat: -1 // Define que a animação será linear
         });
 
+        // Início da implementação dos elementos matemáticos
+        // Define posição inicial
+        const posInitialX = 0;  
+        const posInitialY = 0;
+
         // Adiciona o pombo como personagem e inicia a animação
-        this.character = this.add.sprite(0, 0, 'pigeon').setScale(this.scale.width/400).setFlip(true, false);
+        this.character = this.add.sprite(posInitialX, posInitialY, 'pigeon').setScale(this.scale.width/400).setFlip(true, false);
         this.character.play('flyPigeon');
+
+        // Define velocidade nos dois eixos e aceleração no eixo y
+        this.velX = 5;
+        this.velY = 0;
+        this.accelerationY = 0.02;
     }
 
     update(){
         // Confere se o personagem chegou no meio da tela
         if (this.character.x <= this.scale.width/2){
-            // Move o personagem em direção ao meio da tela
-            this.character.x += 10;
-            this.character.y += 3;
-        }else{
-            // O personagem está no meio da tela
             
+            // Implementação da aceleração no movimento
+            this.count++; // Conta execuções do update()
+            this.velY += this.accelerationY; // Atualiza velocidade no eixo y
+            
+            // Atualiza posição com base na velocidade
+            this.character.x += this.velX;
+            this.character.y += this.velY;
+
+            // Imprime informações no console
+            console.log("------------------------------------")
+            console.log("Posição X: " + this.character.x)
+            console.log("Posição Y: " + this.character.y)
+            console.log("Velocidade X: " + this.velX)
+            console.log("Velocidade Y: " + this.velY)
+        }else{
             // Se o a caixa de texto e o texto ainda não foram adicionados
             if(!this.textAdded){
+                console.log("=====================================")
+                console.log("Posição Inicial X: " + 0)
+                console.log("Posição Inicial Y: " + 0)
+                console.log("Posição Final X: " + this.character.x)
+                console.log("Posição Final Y: " + this.character.y)
+                console.log("Velocidade Final X: " + this.velX)
+                console.log("Velocidade Final Y: " + this.velY)
+                console.log("Tempo total: " + this.count/60)
+                console.log("=====================================")
+                // Fim das implementações matemáticas
+
                 // Adiciona os elementos
                 this.textBox = this.add.image(this.scale.width/2, this.scale.height/1.3, 'textBox').setScale(this.scale.width/800);
                 this.tutorialText = this.add.text(this.scale.width/8, this.scale.height/1.7, this.tutorialTexts[this.clicks], {fontSize: this.scale.width/33, fill:'#000'})
                 this.textAdded = true; // Altera a flag para true
             }
+            
 
             this.input.removeAllListeners('pointerdown'); // Ignora todos os cliques anteriores
             // Quando o mouse é clicado
