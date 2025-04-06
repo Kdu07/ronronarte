@@ -1,4 +1,4 @@
-export var completedPhases = { Tutorial: false, Phase1: false, Phase2: false, Phase3: false, Phase4: false};
+export var completedPhases = { Tutorial: false, Phase1: false, Phase2: false, Phase3: false, Phase4: false, CreativeMode: false};
 
 // Classe de cena a ser exportada
 
@@ -61,16 +61,18 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('palette', './assets/buttons/paleta.png');
         this.load.spritesheet('buttonPlay', './assets/buttons/spritesheet-play.png', {frameWidth: 128, frameHeight: 64});
         this.load.image('buttonPrint', './assets/buttons/buttonPrint.png');
-        this.load.image('criativeBlocked', './assets/buttons/criativeBlocked.png');
-        this.load.image('tutorialButton', './assets/buttons/tutorialButton.png');
-        this.load.image('phase1Unlocked', './assets/buttons/phase1Unlocked.png');
-        this.load.image('phase1Blocked', './assets/buttons/phase1Blocked.png');
-        this.load.image('phase2Blocked', './assets/buttons/phase2Blocked.png');
-        this.load.image('phase3Blocked', './assets/buttons/phase3Blocked.png');
-        this.load.image('phase4Blocked', './assets/buttons/phase4Blocked.png');
-        this.load.image('phase4Unlocked', './assets/buttons/phase4Unlocked.png');
-        this.load.image('phase3Unlocked', './assets/buttons/phase3Unlocked.png');
-        this.load.image('phase2Unlocked', './assets/buttons/phase2Unlocked.png');
+        this.load.image('tutorialButton', './assets/buttons/tutorialButtonBlue.png');
+        this.load.image('phase1Button', './assets/misc/phase1Button.png');
+        this.load.image('phase2Button', './assets/buttons/phase2Button.png');
+        this.load.image('phase3Button', './assets/buttons/phase3Button.png');
+        this.load.image('phase4Button', './assets/misc/phase4Button.png');
+        this.load.image('phase1ButtonBW', './assets/buttons/phase1Button_bw.png');
+        this.load.image('phase2ButtonBW', './assets/buttons/phase2Button_bw.png');
+        this.load.image('phase3ButtonBW', './assets/buttons/phase3Button_bw.png');
+        this.load.image('phase4ButtonBW', './assets/buttons/phase4Button_bw.png');
+        this.load.image('criativeButton', './assets/buttons/criativeButton.png');
+        this.load.image('criativeButtonBW', './assets/buttons/criativeButton_bw.png');
+
 
         //Backgrounds
         this.load.image('bgMenu', './assets/backgrounds/expanded_startscreen.png');
@@ -89,18 +91,17 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('reward', './assets/misc/recompensa.png');
         this.load.image('catup', './assets/misc/catup.png');
         this.load.spritesheet('cat', './assets/misc/cat.png', { frameWidth: 64, frameHeight:64 });
-        this.load.image('teste', '/assets/misc/575x56.png');
         this.load.image('scoreStar', '/assets/misc/scoreStar.png');
         this.load.image('victoryTextBox', '/assets/misc/victoryTextBox.png');
         this.load.image('squareFrame', './assets/misc/moldura_quadradoo.png');
-        this.load.image('phase1Button', './assets/misc/phase1Button.png');
-        this.load.image('phase4Button', './assets/misc/phase4Button.png');
         this.load.image('scoreStar', './assets/misc/scoreStar.png');
         this.load.image('victoryTextBox', './assets/misc/victoryTextBox.png');
         this.load.image('rotate', './assets/misc/rotate.png');
         this.load.image('circle', './assets/misc/circle.png');
         this.load.image('logoInteli','./assets/misc/logoInteli.png');
         this.load.image('drPet','./assets/misc/drPet.png');
+        this.load.image('frameBW', './assets/misc/moldura_bw.png');
+        this.load.image('lock', './assets/misc/lock.png');
 
         //Alvos
         this.load.spritesheet('pigeon', './assets/targets/pigeon.png', { frameWidth: 64, frameHeight:64 });
@@ -176,7 +177,7 @@ export default class SplashScreen extends Phaser.Scene {
                 // Aguarda o fadeOut antes de iniciar a próxima cena
                 this.time.delayedCall(time1500, () => {
                     this.scene.stop('SplashScreen'); // Para a cena atual
-                    this.scene.start('Select2'); // Inicia a cena Menu
+                    this.scene.start('Menu'); // Inicia a cena Menu
                 });
     
                 this.cameras.main.fadeOut(time1500, 0, 0, 0); // Aplica um efeito de fade-out que escurece a tela

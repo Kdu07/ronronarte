@@ -179,7 +179,7 @@ export default class BasePhase extends Phaser.Scene {
                 this.soundTarget.stop();
                 
                 // Troca para cena de level select
-                this.scene.start("Select2");
+                this.scene.start("Select");
                 this.scene.stop(this.phaseKey);
             }
         }else{
