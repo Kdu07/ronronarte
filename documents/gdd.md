@@ -1030,8 +1030,6 @@ Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, co
 
 ## 5.1. Casos de Teste
 
-## 5.1. Casos de Teste
-
 \# | pré-condição | descrição do teste | pós-condição 
 --- | --- | --- | --- 
 1 | Jogo mantém proporção correta na tela | Abrir o jogo, navegar entre os menus e as fases | Imagens e textos visíveis e tela clicável
