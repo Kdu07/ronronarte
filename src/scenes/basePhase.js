@@ -1,3 +1,5 @@
+import { completedPhases } from './splashScreen.js';
+
 // Classe de cena a ser exportada
 export default class BasePhase extends Phaser.Scene {
     constructor(phaseKey, configDict) {
@@ -27,6 +29,7 @@ export default class BasePhase extends Phaser.Scene {
             configDict: configDict, 
             nextPhase: this.nextPhase
         };
+        
         
     }
 
@@ -72,6 +75,8 @@ export default class BasePhase extends Phaser.Scene {
         // Configura e adiciona o pombo na tela
         this.spawnTarget();    
     }
+
+
 
     createTimer() {
         this.timerOn = true;
@@ -174,7 +179,7 @@ export default class BasePhase extends Phaser.Scene {
                 this.soundTarget.stop();
                 
                 // Troca para cena de level select
-                this.scene.start("LevelSelect");
+                this.scene.start("Select");
                 this.scene.stop(this.phaseKey);
             }
         }else{
@@ -343,6 +348,8 @@ export default class BasePhase extends Phaser.Scene {
     }
 
     displayVictory() {
+        completedPhases[this.phaseKey] = true
+        
         if(this.soundTarget){
             this.soundTarget.stop();
         }

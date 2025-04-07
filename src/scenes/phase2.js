@@ -4,7 +4,7 @@ import BasePhase from "./basePhase.js";
 export default class Phase2 extends BasePhase {
     constructor() {
         let configDict = {
-            "completePhase":true,
+            "completePhase": true,
             "backgroundKey":"painting2",
             "artistKey":"artist2",
             "textArtist":['Juan Luna foi um artista e ativista político filipino da Revolução Filipina. \n\nAs pinturas que fez durante sua trajetória destacam-se pelo seu simbolismo e retratam em grande parte, cenas literárias e históricas.'],
