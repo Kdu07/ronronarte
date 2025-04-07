@@ -102,6 +102,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('drPet','./assets/misc/drPet.png');
         this.load.image('frameBW', './assets/misc/moldura_bw.png');
         this.load.image('lock', './assets/misc/lock.png');
+        this.load.image('takeAPrintScreen', './assets/misc/takeAPrintScreen.png');
 
         //Alvos
         this.load.spritesheet('pigeon', './assets/targets/pigeon.png', { frameWidth: 64, frameHeight:64 });
