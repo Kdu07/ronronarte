@@ -73,7 +73,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('textBox', './assets/misc/textBox.png');
         this.load.image('frame', './assets/misc/frame.png');
         this.load.image('phrase', './assets/misc/frase.png');
-        this.load.image('reward', './assets/misc/recompensa.png');
+        this.load.image('reward', './assets/misc/rewardText.png');
         this.load.image('catup', './assets/misc/catup.png');
         this.load.spritesheet('cat', './assets/misc/cat.png', { frameWidth: 64, frameHeight:64 });
         this.load.image('scoreStar', './assets/misc/scoreStar.png');
@@ -152,7 +152,7 @@ export default class SplashScreen extends Phaser.Scene {
                 this.add.text(this.scale.width/14, this.scale.height*0.8,
                     '                              Para iniciar o jogo, \nvire seu dispositivo na horizontal e recarregue a página', 
                     {fontFamily:'font1', fontSize:this.scale.width/30, fill:'#FFFFFF'})
-                this.add.image(this.scale.width/2, this.scale.height/8,'rotate').setScale(this.scale.width/1500);
+                this.add.image(this.scale.width/2, this.scale.height/8,'rotate').setScale(this.scale.width/1200);
             }else{
                 // Aguarda o fadeOut antes de iniciar a próxima cena
                 this.time.delayedCall(time1500, () => {
