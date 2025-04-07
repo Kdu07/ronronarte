@@ -36,7 +36,7 @@
     import CreativeMode from "./src/scenes/creativeMode.js"
     import BasePhase from "./src/scenes/basePhase.js"
     import Victory from "./src/scenes/victory.js"
-    import Select from "./src/scenes/levelselect.js"
+    import Select2 from "./src/scenes/levelSelect.js"
     import CreditsScreen from "./src/scenes/creditsScreen.js"
 
     // Configurações do Phaser
@@ -44,7 +44,7 @@
         type: Phaser.AUTO,
         width: 1600, // Largura base (2:1)
         height: 800, // Altura base (2:1)
-        scene: [SplashScreen, Menu, Tutorial, Phase0, OverlayScene, Phase1, Phase2, Phase3, Phase4, Select, CreativeMode, Victory, CreditsScreen], // Cenas do jogo
+        scene: [SplashScreen, Menu, Tutorial, Phase0, OverlayScene, Phase1, Phase2, Phase3, Phase4, Select2, CreativeMode, Victory, CreditsScreen], // Cenas do jogo
         pixelArt: true,
         scale: {
             mode: Phaser.Scale.FIT,  // Mantém a proporção 2:1

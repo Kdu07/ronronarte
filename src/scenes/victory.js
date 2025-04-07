@@ -74,7 +74,7 @@ export default class Victory extends Phaser.Scene {
         .setInteractive() 
         .on('pointerdown', () => {
             this.scene.stop(this.phaseKey); // Para a fase atual
-            this.scene.start('LevelSelect');
+            this.scene.start('Select');
         })
         .setScale(this.width/500)
 

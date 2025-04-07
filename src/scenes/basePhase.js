@@ -141,7 +141,7 @@ export default class BasePhase extends Phaser.Scene {
 
         // Quando o mouse solta o botão, define a variavel de segurar como false
         this.pauseBtn.on('pointerup', () => {
-            this.pauseHold = false
+            this.pauseHold = false;
         });
     }
 
@@ -264,20 +264,25 @@ export default class BasePhase extends Phaser.Scene {
                     this.splash = this.add.image(pointer.x, pointer.y, 'splashTutorial').setScale(this.width/4000).setAlpha(0.6); // Cria um splash no local do clique
                     this.time.delayedCall(200, () => {
                         this.reward = this.add.image(this.width/2, this.height/2, 'reward').setScale(this.width/1200);
+                        this.skipRewardText = this.add.image(this.width/2, this.height/1.5, 'continueBtn').setScale(this.width/600).setInteractive();
+                        
+                        // Configura clique para sair do aviso de recompensa
+                        this.skipRewardText.on('pointerdown', () => {
+                            if(this.reward != null){
+                                this.spawnTarget();
+                                this.reward.destroy();
+                                this.skipRewardText.destroy();
+                                this.reward = null;
+                                this.skipRewardText = null;
+                                this.timerOn = true
+                            }
+                        });
                     });
                 }
             }
         });
 
-        // Configura clique para sair do aviso de recompensa
-        this.input.on('pointerdown', () => {
-            if(this.reward != null){
-                this.spawnTarget();
-                this.reward.destroy();
-                this.reward = null;
-                this.circle.destroy()
-            }
-        });
+        
     }
 
     // Função para quando o alvo é clicado
@@ -326,26 +331,28 @@ export default class BasePhase extends Phaser.Scene {
                         // Aviso para recompensar o gato
                         this.time.delayedCall(100, () => {
                             this.reward = this.add.image(this.width/2, this.height/2, 'reward').setScale(this.width/1200);
+                            this.skipRewardText = this.add.image(this.width/2, this.height/1.5, 'continueBtn').setScale(this.width/600).setInteractive();
                             this.timerOn = false
+
+                            // Clique para encerrar o aviso de recompensa
+                            this.skipRewardText.on('pointerdown', () => {
+                                if(this.reward != null){
+                                    this.spawnTarget();
+                                    this.reward.destroy();
+                                    this.skipRewardText.destroy();
+                                    this.reward = null;
+                                    this.skipRewardText = null;
+                                    this.timerOn = true
+                                }
+                            });
                         });
                     };
                 } 
             }
             
         });
-
-        // Clique para encerrar o aviso de recompensa
-        this.input.on('pointerdown', () => {
-            if(this.reward != null){
-                this.spawnTarget();
-
-                this.reward.destroy();
-                this.reward = null;
-                
-                this.timerOn = true
-            }
-        });
     }
+    
 
     displayVictory() {
         completedPhases[this.phaseKey] = true
