@@ -68,7 +68,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('phase4Button', './assets/misc/phase4Button.png');
         this.load.image('phase1ButtonBW', './assets/buttons/phase1Button_bw.png');
         this.load.image('phase2ButtonBW', './assets/buttons/phase2Button_bw.png');
-        this.load.image('phase3ButtonBW', './assets/buttons/phase3Button_bw.png');
+        this.load.image('phase3ButtonBW', './assets/buttons/phase3button_bw.png');
         this.load.image('phase4ButtonBW', './assets/buttons/phase4Button_bw.png');
         this.load.image('criativeButton', './assets/buttons/criativeButton.png');
         this.load.image('criativeButtonBW', './assets/buttons/criativeButton_bw.png');
