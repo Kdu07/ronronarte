@@ -731,7 +731,7 @@ A fase especial apresentará ao jogador uma tela em branco com uma variedade de 
 <hr>
 
 ## 3.6. Regras do jogo
-&nbsp; &nbsp; &nbsp; &nbsp;No mundo de RonRonArte, o gato precisa atingir com toques na tela os alvos (animaizinhos) que aparecem na tela e se movem por ela, completando as fases que são obras de arte dos mais diversos períodos artísticos. A partir disso, ele receberá pontos e, se ele fizer todos os pontos, o tutor será incentivado a dar petiscos ao seu pet, a fim de que ele associe essa ação com a recompensa alimentícia. Além disso, são desbloqueados tintas e formatos diferentes que o tutor pode selecionar no modo criativo, nesse modo o gato poderá criar suas próprias pinturas. Logo, há a intersecção entre os instintos naturais de caça do gato, arte e alimentação animal.
+&nbsp; &nbsp; &nbsp; &nbsp;No mundo de RonRonArte, o gato precisa atingir os alvos (figuras de animais) com toques na tela, os quais aparecem e se movem nela. A partir disso, ele receberá pontos e, a cada toque do pet, o tutor será incentivado a dar petiscos a ele, a fim de que ele associe essa ação com a recompensa alimentícia. Além disso, são desbloqueados tintas e formatos diferentes que o tutor pode selecionar no modo criativo, nesse modo o gato poderá criar suas próprias pinturas. Logo, há a intersecção entre os instintos naturais de caça do gato, arte e alimentação animal.
 
 ## 3.7. Mecânicas do jogo
 
