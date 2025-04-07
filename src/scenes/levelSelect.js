@@ -7,6 +7,8 @@ export default class Select2 extends Phaser.Scene {
 
     }
     create() {
+        //this.buttonScale = this.scale.width/???
+        //this.lockScale = this.scale.width/???
 
         //background
         this.selectBg = this.add.image(this.scale.width*0.5, this.scale.height*0.5, 'selectBg').setDisplaySize(this.scale.width, this.scale.height);
