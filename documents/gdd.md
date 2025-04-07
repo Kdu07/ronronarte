@@ -1078,10 +1078,11 @@ O que poderia melhorar no jogo?| Nada | Colocar mais quadros, diversificar mais 
 ### 5.2.1.2: Registro dos testes com público-alvo
 
 ### 5.2.1.3: Análise das respostas e principais conclusões
+Em relação aos testes de guerrilha, foi notório o agrado dos potenciais usuários com o modo criativo e com a abordagem da temática artística no jogo, assim como foi evidente o sucesso dos spritesheets dos alvos. Nesse teste, foi possível também validar a intuitividade das regras do jogo e das instruções do tutorial, os botões e a suficiência do tempo de tirar print do quadro no modo criativo. No entanto, foi possível concluir que a disposição e o tamanho dos textos não tiveram êxito, haja vista que pouco mais de 85% dos entrevistados relataram algum problema nesse aspecto. 
+Sobre o jogo em geral, a média aritmética das notas atribuídas pelos voluntários foi de 8,6, o que revela uma conclusão positiva no tangente à jogabilidade do Ronronarte.
 
 ### 5.2.2 Melhorias
-
-*Descreva nesta seção um plano de melhorias sobre o jogo, com base nos resultados dos testes de jogabilidade*
+Com base nos testes de jogabilidade, a equipe CatUp tem como plano de melhorias aumentar o tamanho dos botões, dos alvos e dos textos - haja vista todos os entrevistados no teste de guerrilha relataram algum desconforto com esses itens -, assim como retirar o temporizador e passar a pontuação para o canto da tela, conforme a sugestão do entrevistado 6. Ademais, em razão da distração dos gatos no teste de usabilidade com o som de miar ao acertar os alvos, a equipe entende que é imprescindível alterar o efeito sonoro para uma frequência mais aguda. 
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros (sprint 5)
 
