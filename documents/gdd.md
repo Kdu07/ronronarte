@@ -501,7 +501,7 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 ### 2.2.5. Tempo estimado de jogo (sprint 5)
 
-Visto que cada gato tem uma agilidade de aprendizagem individual, o modo de tutorial não tem limite de tempo, de modo que o tutor tenha autonomia e flexibilidade para ensinar a dinâmica ao pet no seu tempo. De maneira similar, para que o Ronronarte tenha rejogabilidade, o modo criativo também é infinito, e o tutor pode tirar o print da tela no momento em que preferir. Já o tempo de conclusão das fases varia de acordo com a performance do gato, porém a equipe estima ser possível concluí-las em 10 minutos.
+&nbsp; &nbsp; &nbsp; &nbsp;Visto que cada gato tem uma agilidade de aprendizagem individual, o modo de tutorial não tem limite de tempo, de modo que o tutor tenha autonomia e flexibilidade para ensinar a dinâmica ao pet no seu tempo. De maneira similar, para que o Ronronarte tenha rejogabilidade, o modo criativo também é infinito, e o tutor pode tirar o print da tela no momento em que preferir. Já o tempo de conclusão das fases varia de acordo com a performance do gato, porém a equipe estima ser possível concluí-las em 30 minutos.
 
 # <a name="c3"></a>3. Game Design
 
