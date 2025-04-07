@@ -58,7 +58,7 @@
 
 #### 1. Rivalidade entre os concorrentes:
 
-&nbsp; &nbsp; &nbsp; &nbsp;Essa força avalia o nível de competição dentro de um setor e seu impacto na lucratividade das empresas. Uma rivalidade intensa ocorre quando há muitos concorrentes de tamanho semelhante, crescimento lento do mercado, produtos pouco diferenciados ou altos custos fixos, levando a disputas agressivas de preços, marketing e inovação (Magretta, 2019). Nesse sentido, faz-se necessário analisar esse aspecto no que tange à marca Dr. Pet:
+&nbsp; &nbsp; &nbsp; &nbsp;Essa força avalia o nível de competição dentro de um setor e seu impacto na lucratividade das empresas. Uma rivalidade intensa ocorre quando há muitos concorrentes de tamanho semelhante, crescimento lento do mercado, produtos pouco diferenciados ou altos custos fixos, levando a disputas agressivas de preços, marketing e inovação (Magretta, 2019).
 
 - A marca Dr. Pet encontra poucos concorrentes diretos no setor de educação pet e entretenimento pela televisão, com apenas alguns exemplos de personalidades que abordam o mesmo assunto. Já no setor de vendas de livros e cursos para adestramento a marca possui concorrência com algumas plataformas como hotmart;
 
@@ -66,7 +66,7 @@
 
 #### 2. Ameaça de novos entrantes:
 
-&nbsp; &nbsp; &nbsp; &nbsp;Essa força avalia o quanto a entrada de novas empresas pode afetar a competitividade e a lucratividade de um setor. Se houver poucas barreiras de entrada, como baixos custos iniciais, acesso fácil a canais de distribuição e pouca regulamentação, novos concorrentes podem surgir rapidamente, aumentando a competição e pressionando preços e margens de lucro para baixo.
+&nbsp; &nbsp; &nbsp; &nbsp;A ameaça de novos entrantes avalia o quanto a entrada de novas empresas pode afetar a competitividade e a lucratividade de um setor (Magretta, 2019). Se houver poucas barreiras de entrada, como baixos custos iniciais, acesso fácil a canais de distribuição e pouca regulamentação, novos concorrentes podem surgir rapidamente, aumentando a competição e pressionando preços e margens de lucro para baixo.
 
 - Principais barreiras: Visibilidade na mídia, persona comunicativa e carismática;
 - Impacto potencial: Crescimento no setor de educação pet;
@@ -80,7 +80,7 @@
 
 #### 4. Poder de barganha dos clientes:
 
-&nbsp; &nbsp; &nbsp; &nbsp;Essa força avalia a influência dos consumidores sobre as empresas do setor. Quando os clientes têm muitas opções, produtos pouco diferenciados ou baixo custo de troca, eles podem exigir preços mais baixos, melhor qualidade e melhores serviços, reduzindo a lucratividade das empresas. Esse poder aumenta quando compram em grandes volumes ou têm acesso fácil a informações sobre preços e concorrentes. Por outro lado, quando há poucos clientes, produtos exclusivos ou alta dependência da empresa, o poder de barganha dos consumidores diminui, permitindo que a empresa mantenha margens mais elevadas.
+&nbsp; &nbsp; &nbsp; &nbsp;Essa força avalia a influência dos consumidores sobre as empresas do setor. Quando os clientes têm muitas opções, produtos pouco diferenciados ou baixo custo de troca, eles podem exigir preços mais baixos, melhor qualidade e melhores serviços, reduzindo a lucratividade das empresas (Magretta, 2019). Esse poder aumenta quando compram em grandes volumes ou têm acesso fácil a informações sobre preços e concorrentes. Por outro lado, quando há poucos clientes, produtos exclusivos ou alta dependência da empresa, o poder de barganha dos consumidores diminui, permitindo que a empresa mantenha margens mais elevadas.
 
 &nbsp; &nbsp; &nbsp; &nbsp;O poder de barganha dos clientes é considerado alto, pois há o fácil acesso a conteúdos similares por preços similares ou inferiores.
 
@@ -91,7 +91,7 @@ Exemplos:
 
 #### 5. Ameaça de produtos ou serviços substitutos:
 
-&nbsp; &nbsp; &nbsp; &nbsp;Essa força avalia o risco de os consumidores optarem por soluções alternativas que atendam às mesmas necessidades. Essa ameaça é alta quando há substitutos de qualidade, com preços mais baixos ou vantagens superiores, pressionando as empresas a reduzirem preços ou inovarem para manter sua base de clientes. Se os custos de troca forem baixos e os consumidores perceberem benefícios significativos nos substitutos, a competitividade do setor diminui. Por outro lado, quando há poucas alternativas viáveis ou altos custos de mudança, essa ameaça se reduz, favorecendo as empresas estabelecidas.
+&nbsp; &nbsp; &nbsp; &nbsp;Essa força avalia o risco de os consumidores optarem por soluções alternativas que atendam às mesmas necessidades (Magretta, 2019). Essa ameaça é alta quando há substitutos de qualidade, com preços mais baixos ou vantagens superiores, pressionando as empresas a reduzirem preços ou inovarem para manter sua base de clientes. Se os custos de troca forem baixos e os consumidores perceberem benefícios significativos nos substitutos, a competitividade do setor diminui. Por outro lado, quando há poucas alternativas viáveis ou altos custos de mudança, essa ameaça se reduz, favorecendo as empresas estabelecidas.
 
 Exemplos:
 - Cães ou outros pets robóticos: Robôs deste tipo dispensam o conteúdo do Dr. Pet porque dispensam adestramento;
