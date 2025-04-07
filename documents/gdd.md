@@ -507,9 +507,7 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 ## 3.1. Enredo do Jogo
 
-&nbsp; &nbsp; &nbsp; &nbsp;Nós seres humanos, em algum momento de nossas vidas, pensamos no conceito de viagem no tempo. Um conceito interessante, desconhecido, e um tanto assutador. Entretanto, já imaginou se fosse possível viajar no tempo com o seu pet?
-&nbsp; &nbsp; &nbsp; &nbsp;Pois é esse o enredo de RonRonArte, uma viagem no tempo com o seu gato! Mas não é uma viagem no tempo qualquer, é uma viagem pelos diferentes períodos da arte, passando por arte contemporânea, arte moderna, arte medieval, e arte rupestre.
-&nbsp; &nbsp; &nbsp; &nbsp;Acompanhe seu pet nessa jornada e aprenda um pouco mais sobre a história da arte enquanto se diverte com seu amigo felino!
+&nbsp; &nbsp; &nbsp; &nbsp;Nós seres humanos, em algum momento de nossas vidas, pensamos no conceito de viagem no tempo. Um conceito interessante, desconhecido, e um tanto assutador. Entretanto, já imaginou se fosse possível viajar no tempo com o seu pet?Pois é esse o enredo de RonRonArte, uma viagem no tempo com o seu gato! Mas não é uma viagem no tempo qualquer, é uma viagem pelos diferentes períodos da arte, passando por arte contemporânea, arte moderna, arte medieval, e arte rupestre. Acompanhe seu pet nessa jornada e aprenda um pouco mais sobre a história da arte enquanto se diverte com seu amigo felino!
 
 ## 3.2. Personagens
 
@@ -517,7 +515,7 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 &nbsp; &nbsp; &nbsp; &nbsp;No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador, haja vista que o intuito do jogo é justamente incentivar hábitos de caça ao gato por intermédio de figuras clicáveis na tela (no caso, spritesheets). Desse modo, o objetivo não é que o jogador controle algum personagem no game, mas sim que ele possa eliminá-lo no decorrer do jogo em troca de recompensas alimentícias, a fim de que seus instintos naturais sejam estimulados. Portanto, especificamente no escopo de RonRonArte, o player pode interpretar tal circunstância como um meio pelo qual ele realiza uma ação e, em troca, ganha algo, associando o atingimento de objetivos com as recompensas supracitadas. A partir disso, abaixo estão as spritesheets correspondentes ao que acima foi observado.
 
 ## 3.2.2 Non-Playable Characters (NPC)
-Non-Playable Characters ou, como são mais conhecidos, os NPCs, são personagens que não são controláveis pelo jogador ou qualquer outro participante, mas sim pela própria máquina que executa o jogo. Abaixo temos os NPCs do jogo RonRonArte:
+&nbsp; &nbsp; &nbsp; &nbsp;Non-Playable Characters ou, como são mais conhecidos, os NPCs, são personagens que não são controláveis pelo jogador ou qualquer outro participante, mas sim pela própria máquina que executa o jogo. Abaixo temos os NPCs do jogo RonRonArte:
 
 <p align = 'center'>Figura 6 - Figura do pombo (RonRonArte)</p><br>
 <div align = 'center'>
