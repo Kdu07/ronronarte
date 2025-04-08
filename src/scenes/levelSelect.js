@@ -7,8 +7,8 @@ export default class Select2 extends Phaser.Scene {
 
     }
     create() {
-        //this.buttonScale = this.scale.width/???
-        //this.lockScale = this.scale.width/???
+        this.buttonScale = this.scale.width/10050;
+        this.lockScale = this.scale.width/900;
 
         //background
         this.selectBg = this.add.image(this.scale.width*0.5, this.scale.height*0.5, 'selectBg').setDisplaySize(this.scale.width, this.scale.height);
@@ -26,17 +26,17 @@ export default class Select2 extends Phaser.Scene {
         this.criativeButtonBlocked = this.add.image(this.scale.width*0.762, this.scale.height*0.33, 'criativeButtonBW')
         .setScale(this.scale.width/1500);
         this.lockCriative = this.add.image(this.scale.width*.762, this.scale.height*0.33, 'lock')
-        .setScale(this.scale.width/900);
+        .setScale(this.lockScale);
 
         // adiciona os botões e textos da fase 1 (tanto bloqueados quanto desbloqueados)
         this.button1PhaseBlocked = this.add.image(this.scale.width*0.2, this.scale.height*0.67, 'phase1ButtonBW')
-        .setScale(this.scale.width/10050);
+        .setScale(this.buttonScale);
         this.frameBW1 = this.add.image(this.scale.width*0.2, this.scale.height*0.67, 'frameBW')
         .setScale(this.scale.width/450);
         this.lock1 = this.add.image(this.scale.width*0.2, this.scale.height*0.67, 'lock')
-        .setScale(this.scale.width/900)
+        .setScale(this.lockScale)
         this.button1Phase = this.add.image(this.scale.width*0.2, this.scale.height*0.67, 'phase1Button').setVisible(false)
-        .setScale(this.scale.width/10050)
+        .setScale(this.buttonScale)
         this.squareFrame1 = this.add.image(this.scale.width*0.2, this.scale.height*0.67, 'squareFrame').setVisible(false)
         .setScale(this.scale.width/450)
 
@@ -57,7 +57,7 @@ export default class Select2 extends Phaser.Scene {
         this.frameBW2 = this.add.image(this.scale.width*0.4, this.scale.height*0.67, 'frameBW')
         .setScale(this.scale.width/450);
         this.lock2 = this.add.image(this.scale.width*0.4, this.scale.height*0.67, 'lock')
-        .setScale(this.scale.width/900)
+        .setScale(this.lockScale)
         this.button2Phase = this.add.image(this.scale.width*0.4, this.scale.height*0.67, 'phase2Button').setVisible(false)
         .setScale(this.scale.width/5150)
         this.squareFrame2 = this.add.image(this.scale.width*0.4, this.scale.height*0.67, 'squareFrame').setVisible(false)
@@ -80,7 +80,7 @@ export default class Select2 extends Phaser.Scene {
         this.frameBW3 = this.add.image(this.scale.width*0.6, this.scale.height*0.67, 'frameBW')
         .setScale(this.scale.width/450);
         this.lock3 = this.add.image(this.scale.width*0.6, this.scale.height*0.67, 'lock')
-        .setScale(this.scale.width/900)
+        .setScale(this.lockScale)
         this.button3Phase = this.add.image(this.scale.width*0.6, this.scale.height*0.67, 'phase3Button').setVisible(false)
         .setScale(this.scale.width/14500)
         this.squareFrame3 = this.add.image(this.scale.width*0.6, this.scale.height*0.67, 'squareFrame').setVisible(false)
@@ -103,7 +103,7 @@ export default class Select2 extends Phaser.Scene {
         this.frameBW4 = this.add.image(this.scale.width*0.8, this.scale.height*0.67, 'frameBW')
         .setScale(this.scale.width/450);
         this.lock4 = this.add.image(this.scale.width*0.8, this.scale.height*0.67, 'lock')
-        .setScale(this.scale.width/900)
+        .setScale(this.lockScale)
         this.button4Phase = this.add.image(this.scale.width*0.8, this.scale.height*0.67, 'phase4Button').setVisible(false)
         .setScale(this.scale.width/3450)
         this.squareFrame4 = this.add.image(this.scale.width*0.8, this.scale.height*0.67, 'squareFrame').setVisible(false)
