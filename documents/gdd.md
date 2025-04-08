@@ -977,7 +977,7 @@ Logo abaixo, estão as telas da versão básica do jogo.
 
 ## 4.4. Desenvolvimento final do MVP
 
-Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, como a mudança do storytelling central do jogo e de suas fases, reformulação da tela de vitória e modo criativo, as pinturas definitivas foram definidas, assets sonoros foram definidos e implementados, e foram feitos alguns acabamentos para deixar o jogo mais polido. As novas artes determinadas para as fases de nosso jogo foram: "A Noiva", de Maria Auxiliadora; "Spoliarium" de Juan Luna; "J'aime la couleur" de Chéri Samba; "Aboriginal design, with Sturt's Pea" de Margaret Preston. (Figuras 25 a 28). A nova tela de vitória conta com uma pontuação (quantidade de pombos acertados) e uma contagem de tempo que juntos representam uma pontuação em formato de estrelas (Figura 29). A reformulação do modo criativo conta com um novo botão para o tutor tirar print da obra de seu gato, além de um botão de paletas que permite que o tutor escolha diferentes paletas e formatos de pincel (Figuras 30 a 32). Por fim, os arquivos do jogo atualizados estão demonstrados na figura 33.
+&nbsp; &nbsp; &nbsp; &nbsp;Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, como a mudança do storytelling central do jogo e de suas fases, reformulação da tela de vitória e modo criativo, as pinturas definitivas foram definidas, assets sonoros foram definidos e implementados, e foram feitos alguns acabamentos para deixar o jogo mais polido. As novas artes determinadas para as fases de nosso jogo foram: "A Noiva", de Maria Auxiliadora; "Spoliarium" de Juan Luna; "J'aime la couleur" de Chéri Samba; "Aboriginal design, with Sturt's Pea" de Margaret Preston. (Figuras 25 a 28). A nova tela de vitória conta com uma pontuação (quantidade de pombos acertados) e uma contagem de tempo que juntos representam uma pontuação em formato de estrelas (Figura 29). A reformulação do modo criativo conta com um novo botão para o tutor tirar print da obra de seu gato, além de um botão de paletas que permite que o tutor escolha diferentes paletas e formatos de pincel (Figuras 30 a 32). Por fim, os arquivos do jogo atualizados estão demonstrados na figura 33.
 
 <p align = 'center'>Figura 25: Tela com o quadro da fase 1</p> <br>
 
@@ -1035,6 +1035,10 @@ Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, co
 
 <p align = 'center'>Quadro 5: casos de teste</p>
 
+&nbsp; &nbsp; &nbsp; &nbsp;De acordo com Schwering (2023), caso de teste consiste em um conjunto de ações sequenciais que têm como objetivo verificar e validar a eficiência de um software. Desse modo, ele possibilita averiguar se um software está funcionando como o desejado e planejado, por meio do estabelecimento de pré-condições, descrições dos testes e pós-condições. Portanto, tal abordagem foi utilizada no jogo RonRonArte (quadro 5), a fim de assegurar que o game esteja operando conforme seus requisitos, especificados na seção 1.2 deste documento.
+
+<p align = 'center'>Quadro 5: caso de teste do jogo RonRonArte</p>
+
 \# | pré-condição | descrição do teste | pós-condição 
 --- | --- | --- | --- 
 1 | Jogo mantém proporção correta na tela | Abrir o jogo, navegar entre os menus e as fases | Imagens e textos visíveis e tela clicável
@@ -1060,6 +1064,8 @@ Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, co
 ### 5.2.1 Registros de testes
 
 ### 5.2.1.1: Registro dos testes de guerrilha
+
+&nbsp; &nbsp; &nbsp; &nbsp;Segundo Kawakami (2021), um teste de guerrilha consiste em verificar e validar um produto com eventuais usuários por meio da abordagem destes em locais públicos, sem um combinado prévio de testes com eles. Logo, os pesquisadores convidam essas pessoas para participar desse processo, porém sem obrigá-las. A título de comparação, algumas pesquisas eleitorais e até mesmo sessões de degustação de alimentos em supermercados se enquadram nessa categoria de testagem. Nesse sentido, dentre suas vantagens estão a rapidez e o baixo custo, além de uma abrangência considerável de perfis de usuários a realizarem essa atividade. Dessa forma, efetuou-se o teste supracitado no contexto do jogo RonRonArte (quadro 6), com o objetivo de coletar feedbacks e possíveis melhorias a serem feitas.
 
 <p align = 'center'>Quadro 6: testes de guerrilha</p>
 
@@ -1103,6 +1109,8 @@ GOTHELF, Jeff. Use OKRs para definir metas para equipes, não para indivíduos. 
 
 INSTITUTO PET BRASIL. Censo Pet IPB: com alta recorde de 6% em um ano, gatos lideram crescimento de animais de estimação no Brasil. 2022. Disponível em: https://institutopetbrasil.com/fique-por-dentro/amor-pelos-animais-impulsiona-os-negocios-2-2/ Acesso em: 18 fev. 2025. <br>
 
+KAWAKAMI, Guto. Teste de Guerrilha: recebendo feedbacks de forma rápida e com baixo custo. [S. l.], 29 dez. 2021. Disponível em: https://brasil.uxdesign.cc/teste-de-guerrilha-recebendo-feedbacks-de-forma-r%C3%A1pida-e-com-baixo-custo-466a18d88386. Acesso em: 8 abr. 2025.
+
 MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia. Rio de Janeiro: Alta Books, 2019. 1 recurso online. ISBN 9788550805047. Disponível em: https://integrada.minhabiblioteca.com.br/books/9788550805047. Acesso em: 28 fev. 2025.
 
 MIKOS, Ana Luzia. Julho Dourado alerta tutores sobre cuidados com os pets: Lei estadual reforça conscientização sobre importância da vacinação nos animais de estimação.. [S. l.], 1 jul. 2024. Disponível em: https://www.assembleia.pr.leg.br/comunicacao/noticias/julho-dourado-alerta-tutores-sobre-cuidados-com-os-pets. Acesso em: 7 abr. 2025.
@@ -1114,6 +1122,8 @@ PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Di
 PETZ. Gato tem sentimento? O que e como eles sentem?. [S. l.], 6 ago. 2023. Disponível em: https://www.petz.com.br/blog/pets/gatos/gato-tem-sentimento/. Acesso em: 18 fev. 2025.
 
 ROCHA, Thiago. Metas SMART: entenda o que são e aprenda a definir as suas: Metas SMART devem ser específicas, mensuráveis, atribuíveis, realistas e temporais, auxiliando empresas a determinar objetivos de maneira mais inteligente.. [S. l.], 6 fev. 2025. Disponível em: https://www.rdstation.com/blog/vendas/metas-smart/. Acesso em: 24 mar. 2025.
+
+SCHWERING, Ramona. Como definir casos de teste e prioridades. [S. l.], 9 ago. 2023. Disponível em: https://web.dev/articles/ta-test-cases?hl=pt-br. Acesso em: 8 abr. 2025.
 
 SOLLITTO, André. Por que brasileiros têm preferido escolher gatos como companheiros do lar. Veja, 2022.
 Disponível em: https://veja.abril.com.br/comportamento/por-que-brasileiros-tem-preferido-escolher-gatos-como-companheiros-do-lar/. Acesso em: 18 fev. 2025.
