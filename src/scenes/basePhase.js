@@ -129,7 +129,7 @@ export default class BasePhase extends Phaser.Scene {
 
         // Adiciona o asset do carregamento na tela
         this.pauseLoad = this.add.sprite(this.pauseBtn.x + this.pauseBtn.displayWidth*1.5, this.pauseBtn.y, 'spriteLoading')
-        .setScale(this.width/4000)
+        .setScale(this.width/200)
         .setInteractive()
         .setVisible(false)
         .setDepth(20);

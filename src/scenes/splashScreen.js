@@ -57,7 +57,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('pauseBtn', './assets/buttons/pause.png');
         this.load.image('buttonCriative', './assets/buttons/botao_criativo.png');
         this.load.image('continueBtn', './assets/buttons/botao_continuar_preto.png');
-        this.load.spritesheet('spriteLoading', './assets/buttons/loading.png', {frameWidth: 292, frameHeight: 68.16});
+        this.load.spritesheet('spriteLoading', './assets/buttons/loading.png', {frameWidth: 32, frameHeight: 32});
         this.load.image('palette', './assets/buttons/paleta.png');
         this.load.spritesheet('buttonPlay', './assets/buttons/spritesheet-play.png', {frameWidth: 128, frameHeight: 64});
         this.load.image('buttonPrint', './assets/buttons/buttonPrint.png');

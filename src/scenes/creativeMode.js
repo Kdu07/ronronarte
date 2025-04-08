@@ -130,7 +130,7 @@ export default class CreativeMode extends BasePhase{
       
         // Adiciona o asset do carregamento na tela
         this.paletteLoad = this.add.sprite(this.paletteBtn.x - this.paletteBtn.displayWidth*1.5, this.paletteBtn.y, 'spriteLoading')
-        .setScale(this.width/4000)
+        .setScale(this.width/200)
         .setInteractive()
         .setVisible(false)
         .setDepth(20);
@@ -159,7 +159,7 @@ export default class CreativeMode extends BasePhase{
       
         // Adiciona o asset do carregamento na tela
         this.printLoad = this.add.sprite(this.printBtn.x + this.printBtn.displayWidth*1.5, this.printBtn.y, 'spriteLoading')
-        .setScale(this.width/4000)
+        .setScale(this.width/200)
         .setInteractive()
         .setVisible(false)
         .setDepth(20);

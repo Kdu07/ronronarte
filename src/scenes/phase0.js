@@ -66,7 +66,7 @@ export default class Phase0 extends BasePhase {
         })
 
         this.spriteLoading1 = this.add.sprite(this.continueBtn.x - this.continueBtn.displayWidth, this.continueBtn.y, 'spriteLoading')
-        .setScale(this.width/4000)
+        .setScale(this.width/200)
         .setInteractive()
         .setVisible(false);
     }

@@ -23,7 +23,7 @@ export default class Menu extends Phaser.Scene{
             this.scale.startFullscreen(); // Coloca o jogo em tela cheia
             
             setTimeout(() => {
-                this.resizeGame();
+                this.fullscreenGame();
                 this.scene.start('Select') // Direciona para a tela de seleção de níveis
                 this.scene.stop('Menu') // Para o menu
             }, 500);
@@ -32,7 +32,7 @@ export default class Menu extends Phaser.Scene{
         
     };
 
-    resizeGame() {
+    fullscreenGame() {
         document.addEventListener('DOMContentLoaded', function() {
             const fullscreenButton = this.startButton
             let isFullscreen = false;
