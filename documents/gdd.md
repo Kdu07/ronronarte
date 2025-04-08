@@ -634,6 +634,7 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 &nbsp; &nbsp; &nbsp; &nbsp;O diagrama de cenas é uma representação visual do caminhar do jogo ao longo de suas telas e cenas. Essa ferramenta apresenta como o design será feito, como as classes, objetos, atributos e métodos são realizados, facilitando a compreensão das funcionalidades. Nesse sentido, o diagrama de cenas do jogo RonRonArte está apresentado na figura 10.
 
 <p align ="center">Figura 10: diagrama de cenas - RonRonArte</p>
+
 ![Diagrama de Cenas (4)](https://github.com/user-attachments/assets/bc3cf626-7a2b-4ea4-ae68-f9e452fce3ca)
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br> <br>
