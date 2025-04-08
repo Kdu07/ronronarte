@@ -512,7 +512,7 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 &nbsp; &nbsp; &nbsp; &nbsp;No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador, haja vista que o intuito do jogo é justamente incentivar hábitos de caça ao gato por intermédio de figuras clicáveis na tela. Desse modo, o objetivo não é que o jogador controle algum personagem no game, mas sim que ele possa eliminá-lo no decorrer do jogo em troca de recompensas alimentícias, a fim de que seus instintos naturais sejam estimulados. Portanto, especificamente no escopo de RonRonArte, o player pode interpretar tal circunstância como um meio pelo qual ele realiza uma ação e, em troca, ganha algo, associando o alcance de tais objetivos com as recompensas supracitadas. A partir disso, abaixo estão as figuras correspondentes ao que acima foi observado.
 
 ## 3.2.2 Non-Playable Characters (NPC)
-&nbsp; &nbsp; &nbsp; &nbsp;Non-Playable Characters ou, como são mais conhecidos, os NPCs, são personagens que não são controláveis pelo jogador ou qualquer outro participante, mas sim pela própria máquina que executa o jogo. Nas figuras 6, 7, 8 e 9 a seguir, temos os NPCs do jogo RonRonArte:
+&nbsp; &nbsp; &nbsp; &nbsp;Non-Playable Characters (NPCs) são personagens que não são controláveis pelo jogador ou qualquer outro participante, mas sim pela própria máquina que executa o jogo (Folter, 2022). Com base nisso, as figuras 6, 7, 8 e 9 a seguir demonstram os NPCs do jogo RonRonArte:
 
 <p align = 'center'>Figura 6 - Figura do pombo (RonRonArte)</p><br>
 <div align = 'center'>
@@ -567,7 +567,7 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 &nbsp; &nbsp; &nbsp; &nbsp;O jogador, sendo um gato, atravessará as fases atreves de um portal que o levará para épocas distintas e importantes para o conhecimento artístico da pintura. Com o passar das fases, elas se tornam selecionáveis a preferir do dono do gato, em que depois que o botão de “jogar”, poderá selecionar somente clicando com o dedo no botão referente a fase que for preferível a ser jogada.
 
 ### 3.3.3. Concept Art
-&nbsp; &nbsp; &nbsp; &nbsp;Uma Concept Art é o conceito visual das características e dos elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo. Com base nisso, realizou-se uma Concept Art de RonRonArte, de maneira a explicitar quais são os seus principais itens visuais e de história.
+&nbsp; &nbsp; &nbsp; &nbsp;Uma Concept Art é o conceito visual das características e dos elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo (EBAC, 2023). Com base nisso, realizou-se uma Concept Art de RonRonArte, de maneira a explicitar quais são os seus principais itens visuais e de história.
 
 <p align = "center">Figura 9: Concept Art - RonRonArte</p>
 
@@ -579,7 +579,7 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 &nbsp; &nbsp; &nbsp; &nbsp;Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.figma.com/proto/O28uXtCzHpYgGD5H7lxE97/Concept-Art---RonRonArte?content-scaling=fixed&kind=proto&node-id=15-4&page-id=0%3A1&scaling=scale-down) <br>
 
 ### 3.3.5. Trilha sonora
-A seguir, no quadro 2, estão elencados os elementos sonoros utilizados no jogo RonRonArte, escolhidos de acordo com a necessidade dos itens do game.
+&nbsp; &nbsp; &nbsp; &nbsp;A seguir, no quadro 2, estão elencados os elementos sonoros utilizados no jogo RonRonArte, escolhidos de acordo com a necessidade dos itens do game.
 
 <p align = 'center'>Quadro 2: trilha sonora</p>
 
@@ -1099,7 +1099,11 @@ Além disso, como melhoria, a equipe CatUp idealiza a construção de um dispens
 # <a name="c7"></a>7. Referências (sprint 5)
 CASAROTTO, Camila. Como fazer análise SWOT ou FOFA: confira o passo a passo completo com as melhores dicas. [S. l.], 20 dez. 2019. Disponível em: https://rockcontent.com/br/blog/como-fazer-uma-analise-swot/. Acesso em: 8 abr. 2025.
 
+EBAC. Concept Art: uma imagem vale mais que mil palavras. [S. l.], 2 jun. 2023. Disponível em: https://ebaconline.com.br/blog/concept-art-uma-imagem-vale-mais-que-mil-palavras. Acesso em: 8 abr. 2025.
+
 FGV. Pesquisa revela que Brasil tem 480 milhões de dispositivos digitais em uso, sendo 2,2 por habitante. [S. l.], 27 jun. 2024. Disponível em: https://portal.fgv.br/noticias/pesquisa-revela-brasil-tem-480-milhoes-dispositivos-digitais-uso-sendo-22-habitante. Acesso em: 28 mar. 2025.
+
+FOLTER, Rodrigo. O que é NPC?. [S. l.], 10 set. 2022. Disponível em: https://canaltech.com.br/games/o-que-e-npc/. Acesso em: 8 abr. 2025.
 
 GOTHELF, Jeff. Use OKRs para definir metas para equipes, não para indivíduos. [S. l.], 17 dez. 2020. Disponível em: https://hbr.org/2020/12/use-okrs-to-set-goals-for-teams-not-individuals?language=pt. Acesso em: 24 mar. 2025.
 
