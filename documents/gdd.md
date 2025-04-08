@@ -101,7 +101,7 @@ Exemplos:
 
 ### 1.1.2. Análise SWOT 
 
-&nbsp; &nbsp; &nbsp; &nbsp;A Análise SWOT é uma ferramenta estratégica usada para avaliar a posição de uma empresa, projeto ou indivíduo, considerando fatores internos e externos. Ela é dividida em quatro componentes: Forças (Strengths), que são os pontos fortes internos; Fraquezas (Weaknesses), que representam os desafios internos; Oportunidades (Opportunities), que são fatores externos positivos que podem ser aproveitados; e Ameaças (Threats), que são riscos externos que podem impactar negativamente. Essa análise ajuda na tomada de decisões e no desenvolvimento de estratégias mais eficazes.
+&nbsp; &nbsp; &nbsp; &nbsp;A análise SWOT (também conhecida como análise FOFA) é uma ferramenta estratégica usada para avaliar a posição de uma empresa, projeto ou indivíduo, considerando fatores internos e externos. Nesse sentido, ela é dividida em quatro componentes: forças (strengths), que são os pontos fortes internos; fraquezas (weaknesses), que representam os desafios internos; oportunidades (opportunities), que são fatores externos positivos que podem ser aproveitados; e ameaças (threats), que são riscos externos que podem impactar negativamente (Casarotto, 2019). Essa análise ajuda na tomada de decisões e no desenvolvimento de estratégias mais eficazes. Dessa forma, concebeu-se a análise SWOT da empresa Dr. Pet (figura 2), a fim de modelá-la com base nos fatores supracitados.
 
 <p align = "center">Figura 2: Análise SWOT</p>
 
@@ -112,7 +112,7 @@ Exemplos:
 
 ## Strengths:
 
-&nbsp; &nbsp; &nbsp; &nbsp;A seção de strenghts destaca os pontos fortes internos de uma organização, projeto ou indivíduo, ou seja, os aspectos que oferecem vantagem competitiva. Isso inclui recursos, habilidades, expertise, reputação, tecnologia, cultura organizacional e diferenciais que impulsionam o sucesso. 
+&nbsp; &nbsp; &nbsp; &nbsp;A seção de forças (strenghts) destaca os pontos fortes internos de uma organização, projeto ou indivíduo, ou seja, os aspectos que oferecem vantagem competitiva (Casarotto, 2019). Tal definição abrange recursos, habilidades, expertise, reputação, tecnologia, cultura organizacional e diferenciais que impulsionam o sucesso. Desse modo, é possível mencionar as forças subsequentes inerentes à empresa Dr. Pet:
 
   - Alta visibilidade na mídia;
 
@@ -122,9 +122,9 @@ Exemplos:
 
 ## Weaknesses:
 
-&nbsp; &nbsp; &nbsp; &nbsp;A seção de Weaknesses identifica os pontos fracos internos que podem prejudicar o desempenho de uma organização, projeto ou indivíduo. Isso inclui limitações em recursos, falta de expertise, baixa eficiência, problemas estruturais, dependência de terceiros ou falhas operacionais.
+&nbsp; &nbsp; &nbsp; &nbsp;A seção de fraquezas (weaknesses) identifica os pontos fracos internos que podem prejudicar o desempenho de uma organização, projeto ou indivíduo (Casarotto, 2019). A partir disso, são exemplos de fraquezas limitações em recursos, falta de expertise, baixa eficiência, problemas estruturais, dependência de terceiros ou falhas operacionais. Assim, nota-se as seguintes fraquezas no que tange à empresa Dr. Pet:
 
-  - A marca Dr. Pet está relacionada a apenas uma pessoa, pode se confundir com o seu representante, Alexandre Rossi;
+  - A marca Dr. Pet está relacionada a apenas uma pessoa, podendo se confundir com o seu representante: Alexandre Rossi;
 
   - Nichado em cães;
 
@@ -132,7 +132,7 @@ Exemplos:
 
 ## Opportunities:
 
-&nbsp; &nbsp; &nbsp; &nbsp;A seção de Opportunities analisa fatores externos positivos que podem ser explorados para crescimento e vantagem competitiva. Isso inclui tendências de mercado, avanços tecnológicos, mudanças regulatórias favoráveis, novas demandas dos consumidores ou parcerias estratégicas.
+&nbsp; &nbsp; &nbsp; &nbsp;A seção de oportunidades (opportunities) analisa fatores externos positivos que podem ser explorados para crescimento e vantagem competitiva de uma empresa ou projeto, por exemplo (Casarotto, 2019). Dessa maneira, configuram-se como exemplos de oportunidades tendências de mercado, avanços tecnológicos, mudanças regulatórias favoráveis, novas demandas dos consumidores ou parcerias estratégicas. Sob essa perspectiva, pontua-se as seguintes oportunidades referentes à empresa Dr. Pet: 
 
   - Venda de produtos próprios com a marca Dr. Pet;
 
@@ -140,7 +140,7 @@ Exemplos:
 
 ## Threats:
 
-&nbsp; &nbsp; &nbsp; &nbsp;A seção de Threats identifica os fatores externos que podem representar riscos para a organização, projeto ou indivíduo. Isso inclui concorrência acirrada, crises econômicas, mudanças regulatórias desfavoráveis, inovações disruptivas ou instabilidade política. 
+&nbsp; &nbsp; &nbsp; &nbsp;A seção de ameaças (threats) identifica os fatores externos que podem representar riscos para a organização, projeto ou indivíduo (Casarotto, 2019). Dentre possíveis ameaças estão: concorrência acirrada, crises econômicas, mudanças regulatórias desfavoráveis, inovações disruptivas ou instabilidade política. Com base nisso, identifica-se as ameaças subsequentes no que se refere à empresa Dr. Pet: 
 
   - Rescisão de contratos com emissoras de televisão;
 
@@ -1102,6 +1102,7 @@ No entanto, foi perceptível nos testes de usabilidade que o jogo apresenta difi
 Além disso, como melhoria, a equipe CatUp idealiza a construção de um dispenser com arduíno para automatizar o ato de dar a recompensa para o gato e também permitir que o gato jogue o Ronronarte, mesmo se seu tutor estiver distante. Para tal efeito, será necessário o auxílio financeiro do parceiro para a disponibilidade dos recursos de hardware e da assistência da universidade para proporcionar aulas com os conhecimentos técnicos basilares para a construção do dispenser. 
 
 # <a name="c7"></a>7. Referências (sprint 5)
+CASAROTTO, Camila. Como fazer análise SWOT ou FOFA: confira o passo a passo completo com as melhores dicas. [S. l.], 20 dez. 2019. Disponível em: https://rockcontent.com/br/blog/como-fazer-uma-analise-swot/. Acesso em: 8 abr. 2025.
 
 FGV. Pesquisa revela que Brasil tem 480 milhões de dispositivos digitais em uso, sendo 2,2 por habitante. [S. l.], 27 jun. 2024. Disponível em: https://portal.fgv.br/noticias/pesquisa-revela-brasil-tem-480-milhoes-dispositivos-digitais-uso-sendo-22-habitante. Acesso em: 28 mar. 2025.
 
