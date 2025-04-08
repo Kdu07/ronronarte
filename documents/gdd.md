@@ -1030,8 +1030,6 @@ Logo abaixo, estão as telas da versão básica do jogo.
 
 ## 5.1. Casos de Teste
 
-<p align = 'center'>Quadro 5: casos de teste</p>
-
 &nbsp; &nbsp; &nbsp; &nbsp;De acordo com Schwering (2023), caso de teste consiste em um conjunto de ações sequenciais que têm como objetivo verificar e validar a eficiência de um software. Desse modo, ele possibilita averiguar se um software está funcionando como o desejado e planejado, por meio do estabelecimento de pré-condições, descrições dos testes e pós-condições. Portanto, tal abordagem foi utilizada no jogo RonRonArte (quadro 5), a fim de assegurar que o game esteja operando conforme seus requisitos, especificados na seção 1.2 deste documento.
 
 <p align = 'center'>Quadro 5: caso de teste do jogo RonRonArte</p>
