@@ -440,7 +440,7 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 \# | Requisitos  
 --- | ---
 1 | O jogo será reproduzido em formato web direcionado para dispositivos móveis (smartphones e tablets).
-2 | O jogo deve ter uma cena de tutorial, onde o tutor receberá instruções sobre como funcionam as mecânicas do jogo, e sobre como estimular e recompensar o gato.
+2 | O jogo deve ter uma cena de tutorial, onde o tutor receberá instruções sobre como funcionam as mecânicas do jogo, e como estimular e recompensar o gato.
 3 | O jogo deve ter uma cena de menu de seleção de fases e modos, onde será possível acessar as fases que foram desbloqueadas, o modo tutorial, e o modo criativo.
 4 | A tela inicial deve mostrar um botão “Jogar”, que, quando clicado, direciona o jogador ao menu de seleção de fases e modos de jogo.
 5 | Nas fases, o jogador (gato) deve clicar nos animais que aparecerem na tela para eliminá-los.
@@ -512,7 +512,7 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 &nbsp; &nbsp; &nbsp; &nbsp;No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador, haja vista que o intuito do jogo é justamente incentivar hábitos de caça ao gato por intermédio de figuras clicáveis na tela. Desse modo, o objetivo não é que o jogador controle algum personagem no game, mas sim que ele possa eliminá-lo no decorrer do jogo em troca de recompensas alimentícias, a fim de que seus instintos naturais sejam estimulados. Portanto, especificamente no escopo de RonRonArte, o player pode interpretar tal circunstância como um meio pelo qual ele realiza uma ação e, em troca, ganha algo, associando o alcance de tais objetivos com as recompensas supracitadas. A partir disso, abaixo estão as figuras correspondentes ao que acima foi observado.
 
 ## 3.2.2 Non-Playable Characters (NPC)
-&nbsp; &nbsp; &nbsp; &nbsp;Non-Playable Characters ou, como são mais conhecidos, os NPCs, são personagens que não são controláveis pelo jogador ou qualquer outro participante, mas sim pela própria máquina que executa o jogo. Abaixo temos os NPCs do jogo RonRonArte:
+&nbsp; &nbsp; &nbsp; &nbsp;Non-Playable Characters ou, como são mais conhecidos, os NPCs, são personagens que não são controláveis pelo jogador ou qualquer outro participante, mas sim pela própria máquina que executa o jogo. Nas figuras 6, 7, 8 e 9 a seguir, temos os NPCs do jogo RonRonArte:
 
 <p align = 'center'>Figura 6 - Figura do pombo (RonRonArte)</p><br>
 <div align = 'center'>
@@ -543,7 +543,7 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 
 
 
-<p align = 'center'>Figura 8 - Figura da cobra-coral (RonRonArte)</p><br>
+<p align = 'center'>Figura 9 - Figura da cobra-coral (RonRonArte)</p><br>
 <div align = 'center'>
 	
  ![snake](https://github.com/user-attachments/assets/5b9326b7-3d57-4fc2-aad8-c67f222f900c)
@@ -566,8 +566,8 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 ### 3.3.2. Navegação pelo mundo
 &nbsp; &nbsp; &nbsp; &nbsp;O jogador, sendo um gato, atravessará as fases atreves de um portal que o levará para épocas distintas e importantes para o conhecimento artístico da pintura. Com o passar das fases, elas se tornam selecionáveis a preferir do dono do gato, em que depois que o botão de “jogar”, poderá selecionar somente clicando com o dedo no botão referente a fase que for preferível a ser jogada.
 
-### 3.3.4. Concept Art
-&nbsp; &nbsp; &nbsp; &nbsp;Uma Concept Art é um fluxo de imagens que mostra as características e os elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo. Com base nisso, realizou-se uma Concept Art de RonRonArte, de maneira a explicitar quais são os seus principais itens visuais e de história.
+### 3.3.3. Concept Art
+&nbsp; &nbsp; &nbsp; &nbsp;Uma Concept Art é o conceito visual das características e dos elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo. Com base nisso, realizou-se uma Concept Art de RonRonArte, de maneira a explicitar quais são os seus principais itens visuais e de história.
 
 <p align = "center">Figura 9: Concept Art - RonRonArte</p>
 
@@ -1076,7 +1076,7 @@ As disposições dos textos agradaram visualmente? | Mais ou menos, alguns texto
 O tempo para tirar print foi suficiente para o usuário tirar o print no modo criativo? | SIm | Sim | Sim | Sim | Sim | Sim | Sim
 Apresentou dificuldades? | Sim, os botões e alguns textos estão muito pequenos | Não | Não | Sim | Não | Não | Apenas com os botões
 Nota de 0 a 10 que deu para o jogo | 10,0 | 9,5 | 8,0 | 7,0 | 9.5 | 7.0 | 9.5
-O que mais gostou no jogo? | Criatividade, especialmente na parte de criação dos quadros autorais dos gatos | Paleta do modo criativo | Modo criativo | A exploração da criatividade dos gatos | Spritesheet da lagartixa | Spritesheet do pombo | O modo criativo 
+O que mais gostou no jogo? | Criatividade, especialmente na parte de criação dos quadros autorais dos gatos | Paleta do modo criativo | Modo criativo | A exploração da criatividade dos gatos | Imagem da lagartixa | Imagem do pombo | O modo criativo 
 O que poderia melhorar no jogo?| Nada | Colocar mais quadros, diversificar mais | Botões muito pequenos, melhor indicador do tempo | Interface de seleção de níveis ser mais intuitivo e o Tutorial ser mais claro | Aumentar a escrita e o tamanho dos alvos | Mudar o Menu, pois é pequeno e pode ser menos intuitivo, assim como os botões. Retirar o temporizador e passar a pontuação para o canto, mexer na estética do botão de modo a destaca-lo mais e juntaa-lo com a borda do quadro | Aumentar o tamanho dos botões
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p>
@@ -1084,7 +1084,7 @@ O que poderia melhorar no jogo?| Nada | Colocar mais quadros, diversificar mais 
 ### 5.2.1.2: Registro dos testes com público-alvo
 
 ### 5.2.1.3: Análise das respostas e principais conclusões
-&nbsp; &nbsp; &nbsp; &nbsp;Em relação aos testes de guerrilha, foi notório o agrado dos potenciais usuários com o modo criativo e com a abordagem da temática artística no jogo, assim como foi evidente o sucesso dos spritesheets dos alvos. Nesse teste, foi possível também validar a intuitividade das regras do jogo e das instruções do tutorial, o clicar dos botões e a suficiência do tempo de tirar print do quadro no modo criativo. No entanto, foi possível concluir que a disposição e o tamanho dos textos não tiveram êxito, haja vista que pouco mais de 85% dos entrevistados relataram algum problema nesse aspecto. 
+&nbsp; &nbsp; &nbsp; &nbsp;Em relação aos testes de guerrilha, foi notório o agrado dos potenciais usuários com o modo criativo e com a abordagem da temática artística no jogo, assim como foi evidente o sucesso das imagens dos alvos. Nesse teste, foi possível também validar a intuitividade das regras do jogo e das instruções do tutorial, o clicar dos botões e a suficiência do tempo de tirar print do quadro no modo criativo. No entanto, foi possível concluir que a disposição e o tamanho dos textos não tiveram êxito, haja vista que pouco mais de 85% dos entrevistados relataram algum problema nesse aspecto. 
 Sobre o jogo em geral, a média aritmética das notas atribuídas pelos voluntários foi de 8,6, o que revela uma conclusão positiva no tangente à jogabilidade do Ronronarte.
 
 ### 5.2.2 Melhorias
