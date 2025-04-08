@@ -21,7 +21,7 @@ export default class Tutorial extends Phaser.Scene {
             'Está pronto para a aventura?\n\nClique no pombo para começar o jogo!']
         
         // Adiciona background
-        let bg = this.add.image(this.scale.width/2, this.scale.height/2, 'bgTutorial').setInteractive();
+        let bg = this.add.image(this.scale.width / 2, this.scale.height / 2, 'bgTutorial').setDisplaySize(this.scale.width, this.scale.height).setDepth(0);
         
         // Configura a animação de voo do personagem
         this.anims.create({
@@ -80,7 +80,7 @@ export default class Tutorial extends Phaser.Scene {
 
                 // Adiciona os elementos
                 this.textBox = this.add.image(this.scale.width/2, this.scale.height/1.3, 'textBox').setScale(this.scale.width/800);
-                this.tutorialText = this.add.text(this.scale.width/8, this.scale.height/1.7, this.tutorialTexts[this.clicks], {fontSize: this.scale.width/33, fill:'#000'})
+                this.tutorialText = this.add.text(this.scale.width/8, this.scale.height/1.7, this.tutorialTexts[this.clicks], {fontFamily:'font1', fontSize: this.scale.width/33, fill:'#000'})
                 this.textAdded = true; // Altera a flag para true
             }
             
