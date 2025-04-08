@@ -40,10 +40,7 @@
 ## 1.1. Plano Estratégico do Projeto
 
 ### 1.1.1. Contexto da indústria 
-&nbsp; &nbsp; &nbsp; &nbsp;Conhecer o contexto da indústria de um cliente é basilar para a realização de um projeto de sucesso, uma vez que tal abordagem possibilita tomadas de decisões estratégicas ao longo de todo o processo de desenvolvimento. Nesse sentido, é significativo pontuar o escopo da Dr.Pet - empresa parceira do jogo referente a esta documentação. Para isso, primeiramente, convém contextualizar o setor de pets.
-
-&nbsp; &nbsp; &nbsp; &nbsp;Diante disso, é válido destacar que as tendências do mercado pet são de crescimento e de ampliação. Nesse sentido, um dos argumentos que sustentam esse fato é uma pesquisa da Comissão de Animais de Companhia (COMAC), feita em 2022, a qual revela que 56% dos domicílios brasileiros têm pelo menos um cão ou gato, ou seja, a abundância de público desse setor é significativamente alta (Mikos, 2024). Paralelamente, é notório que a maior convivência dos donos com seus pets durante a pandemia do covid-19 fez com que os serviços e produtos desse setor ganhassem, diferentemente da maioria das outras áreas, mais visibilidade e importância com a quarentena. Assim, de forma mais específica, é possível especular tendências principalmente no que tange à alimentação, ao entretenimento e ao veterinário, haja vista que os laços entre dono e pet são reforçados no cenário hodierno - conforme supracitado - e esses aspectos tornam-se mais necessários. 
-
+&nbsp; &nbsp; &nbsp; &nbsp;É válido destacar que as tendências do mercado pet são de crescimento e de ampliação. Nesse sentido, um dos argumentos que sustentam esse fato é uma pesquisa da Comissão de Animais de Companhia (COMAC), feita em 2022, a qual revela que 56% dos domicílios brasileiros têm pelo menos um cão ou gato, ou seja, a abundância de público desse setor é significativamente alta (Mikos, 2024). Paralelamente, é notório que a maior convivência dos donos com seus pets durante a pandemia do covid-19 fez com que os serviços e produtos desse setor ganhassem, diferentemente da maioria das outras áreas, mais visibilidade e importância com a quarentena. Assim, de forma mais específica, é possível prever tendências principalmente no que tange à alimentação, ao entretenimento e ao veterinário, haja vista que os laços entre dono e pet são reforçados no cenário hodierno - conforme supracitado - e esses aspectos tornam-se mais necessários. 
 &nbsp; &nbsp; &nbsp; &nbsp;Posto isso, é válido destacar a atuação da Dr.Pet nesse setor. A empresa faz parte do mercado de serviços para pets no Brasil, sendo voltada à educação e ao entretenimento de tutores, cães e gatos, por intermédio de cursos online e livros voltados a essa temática. Ademais, outra vertente adotada por ela é a aparição de seu fundador (Alexandre Rossi) em programas de televisão, de modo a divulgar conteúdos inerentes à empresa e a pets de modo geral, além da utilização das redes sociais para tal efeito. Portanto, a marca atua com veemência no cenário descrito.
 
 #### 1.1.1.1. Modelo de 5 Forças de Porter 
@@ -558,7 +555,7 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 &nbsp; &nbsp; &nbsp; &nbsp; O RonRonArte contém inclusão em seu enredo, uma vez que o jogador, nas fases, é convidado a conhecer mais sobre uma obra cujo autor não é tão conhecido como outros já amplamente difundidos na mídia e na sociedade. Os critérios utilizados para a escolha dos quadros foram a representatividade dos autores, haja vista que cada um deles se enquadra em um grupo sub-representado no universo artístico, levando em conta gênero, cor e nacionalidade. Nesse sentido, os argumentos que sustentam o critério supracitado são as seguintes pesquisas que a equipe encontrou: uma pesquisa de 2022 da ONG "National Museum of Women in the Arts" (NMWA), revela que entre 2008 e 2020, apenas 11% das aquisições e 14,9% das exposições em 31 museus representativos dos EUA foram de obras de artistas mulheres. Por isso, a importância da inclusão de Maria Auxiliadora e Margaret Preston; o projeto “Negrestudo: mapeamento de artistas representados pelas galerias de arte de São Paulo”, liderado por Alan Ariê, mostra que dos 619 nomes levantados pela pesquisa, apenas 46 pessoas não são brancas. Destas, 27 são pessoas negras e apenas 14 são pessoas asiáticas, o que justifica, dessa forma, a inclusão de Juan Luna e de Chéri Samba. 
-Além disso, a equipe CatUp fez questão de aumentar o tamanho dos botões e dos textos que estão contidos no jogo, visando incluir os tutores e gatos mais idosos, ou com a visão menos favorecida, assim como para que os tutores que não possuem um dispositivo grande como tablet ou notebook touch possam ter uma experiência equivalente aos demais.
+&nbsp; &nbsp; &nbsp; &nbsp;Além disso, a equipe CatUp fez questão de aumentar o tamanho dos botões e dos textos que estão contidos no jogo, visando incluir os tutores e gatos mais idosos, ou com a visão menos favorecida, assim como para que os tutores que não possuem um dispositivo grande como tablet ou notebook touch possam ter uma experiência equivalente aos demais.
 
 ## 3.3. Mundo do jogo
 
@@ -648,7 +645,7 @@ Caso queira ver o diagrama de cenas no Figma, [clique aqui](https://www.figma.co
 <hr>
 
 - **Tela inicial (Splash Screen):**
-A primeira cena do jogo conta com uma splash screen (cena exibida ao abrir o jogo) que apresenta o nome de nossa equipe em um fundo preto.
+&nbsp; &nbsp; &nbsp; &nbsp;A primeira cena do jogo conta com uma splash screen (cena exibida ao abrir o jogo) que apresenta o nome de nossa equipe em um fundo preto.
 
 - Classes: SplashScreen;
 - Atributos e métodos: preload() e create();
@@ -656,7 +653,7 @@ A primeira cena do jogo conta com uma splash screen (cena exibida ao abrir o jog
 <hr>
 
 - **Tela de start:** 
-A tela de start conta com uma imagem de fundo gerada por IA que apresenta elementos do storytelling do jogo como um portal, pinturas emolduradas e um gato. Além disso, há também um botão de "JOGAR", que ao ser pressionado redireciona para a tela de primeira fase do jogo.
+&nbsp; &nbsp; &nbsp; &nbsp;A tela de start conta com uma imagem de fundo gerada por IA que apresenta elementos do storytelling do jogo como um portal, pinturas emolduradas e um gato. Além disso, há também um botão de "JOGAR", que ao ser pressionado redireciona para a tela de primeira fase do jogo.
 
 - Classes: Menu;
 - Atributos e métodos: create() e resizeGame();
@@ -664,7 +661,7 @@ A tela de start conta com uma imagem de fundo gerada por IA que apresenta elemen
 <hr>
 
 - **Tutorial:**   
-A primeira fase do jogo serve como tutorial para o tutor, apresentando como deverá ser feita a recompensa para o gato ao alcançar o objetivo do jogo. Nessa tela, haverá uma maneira de pular a cena de tutorial caso o tutor já saiba ou não queira ver o tutorial.
+&nbsp; &nbsp; &nbsp; &nbsp;A primeira fase do jogo serve como tutorial para o tutor, apresentando como deverá ser feita a recompensa para o gato ao alcançar o objetivo do jogo. Nessa tela, haverá uma maneira de pular a cena de tutorial caso o tutor já saiba ou não queira ver o tutorial.
 
 - Classes: Phase0 e extensão de BasePhase;
 - Atributos e métodos: create(), update()
@@ -672,7 +669,7 @@ A primeira fase do jogo serve como tutorial para o tutor, apresentando como deve
 <hr>
 
 - **Tela de seleção de níveis:**
-Após passar pelo tutorial, o jogador será direcionado para uma tela de seleção de níveis, onde poderá (caso já estiver desbloqueado) escolher a "fase" que gostaria de jogar.
+&nbsp; &nbsp; &nbsp; &nbsp;Após passar pelo tutorial, o jogador será direcionado para uma tela de seleção de níveis, onde poderá (caso já estiver desbloqueado) escolher a "fase" que gostaria de jogar.
 
  - Classes: SelectPhase;
  - Atributos e métodos: create() e update().
@@ -680,7 +677,7 @@ Após passar pelo tutorial, o jogador será direcionado para uma tela de seleç�
 <hr>
 
 - **Fase 1:**   
-A primeira fase apresenta ao jogador a dinâmica principal do jogo, em que o gato, ao tocar em um animal "alvo" na tela (nessa fase em específico, será um pombo), preenche aos poucos o quadro de fundo, que revela uma obra de arte(nessa fase em específico, "Sem Título"(também conhecido como "A Noiva" de Maria Auxiliadora). Após preenchimento desse quadro, é exibido uma tela de vitória que apresenta a obra completa, uma foto de seu compositor, e a pontuação do gato e tempo de conclusão da fase.	
+&nbsp; &nbsp; &nbsp; &nbsp;A primeira fase apresenta ao jogador a dinâmica principal do jogo, em que o gato, ao tocar em um animal "alvo" na tela (nessa fase em específico, será um pombo), preenche aos poucos o quadro de fundo, que revela uma obra de arte(nessa fase em específico, "Sem Título"(também conhecido como "A Noiva" de Maria Auxiliadora). Após preenchimento desse quadro, é exibido uma tela de vitória que apresenta a obra completa, uma foto de seu compositor, e a pontuação do gato e tempo de conclusão da fase.	
 
 - Classes: Phase1 e extensão de BasePhase;
 - Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
@@ -689,7 +686,7 @@ A primeira fase apresenta ao jogador a dinâmica principal do jogo, em que o gat
 <hr>
 
 - **Fase 2:**
-A segunda fase apresenta ao jogador a dinâmica principal do jogo, em que o gato, ao tocar em um animal "alvo" na tela (nessa fase em específico, será um rato mecânico), preenche aos poucos o quadro de fundo, que revela uma obra de arte(nessa fase em específico, "Spoliarium" de Juan Luna). Após preenchimento desse quadro, é exibido uma tela de vitória que apresenta a obra completa, uma foto de seu compositor, e a pontuação do gato e tempo de conclusão da fase.
+&nbsp; &nbsp; &nbsp; &nbsp;A segunda fase apresenta ao jogador a dinâmica principal do jogo, em que o gato, ao tocar em um animal "alvo" na tela (nessa fase em específico, será um rato mecânico), preenche aos poucos o quadro de fundo, que revela uma obra de arte(nessa fase em específico, "Spoliarium" de Juan Luna). Após preenchimento desse quadro, é exibido uma tela de vitória que apresenta a obra completa, uma foto de seu compositor, e a pontuação do gato e tempo de conclusão da fase.
 
 - Classes: Phase2 e extensão de BasePhase;
 - Atributos e métodos: width (largura do jogo), height (altura do jogo), backgroundKey (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
@@ -698,7 +695,7 @@ A segunda fase apresenta ao jogador a dinâmica principal do jogo, em que o gato
 <hr>
 
 - **Fase 3:** 
-A terceira fase apresentará ao jogador um cenário semelhante ao da fase 1 e 2, porém com foco em uma arte diferente (nessa fase em específico, "J'aime la couleur" de Chéri Samba). Nessa fase, o alvo será uma cobra.
+&nbsp; &nbsp; &nbsp; &nbsp;A terceira fase apresentará ao jogador um cenário semelhante ao da fase 1 e 2, porém com foco em uma arte diferente (nessa fase em específico, "J'aime la couleur" de Chéri Samba). Nessa fase, o alvo será uma cobra.
 
 - Classes: Phase3 e extensão de BasePhase;
 - Atributos e métodos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
@@ -707,7 +704,7 @@ A terceira fase apresentará ao jogador um cenário semelhante ao da fase 1 e 2,
 <hr>
 
 - **Fase 4:**
-A terceira fase apresentará ao jogador um cenário semelhante ao da fase 1, 2 e 3, porém com foco em uma arte diferente (nessa fase em específico, "Aboriginal design, with Sturt's Pea" de Margaret Preston.). Nessa fase, o alvo será uma lagartixa.
+&nbsp; &nbsp; &nbsp; &nbsp;A terceira fase apresentará ao jogador um cenário semelhante ao da fase 1, 2 e 3, porém com foco em uma arte diferente (nessa fase em específico, "Aboriginal design, with Sturt's Pea" de Margaret Preston.). Nessa fase, o alvo será uma lagartixa.
 
 - Classes: Phase4 e extensão de BasePhase;
 - Atributos e métodos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
@@ -716,7 +713,7 @@ A terceira fase apresentará ao jogador um cenário semelhante ao da fase 1, 2 e
 <hr>      
 
 - **Texto pós-fase:**
-A tela de vitória apresenta a arte completa pintada pelo gato, conjuntamente com uma representação visual do autor original da obra. Abaixo há uma breve descrição sobre o contexto da arte e seu artista.
+&nbsp; &nbsp; &nbsp; &nbsp;A tela de vitória apresenta a arte completa pintada pelo gato, conjuntamente com uma representação visual do autor original da obra. Abaixo há uma breve descrição sobre o contexto da arte e seu artista.
 
 - Classes: Victory;
 - Atributos e métodos: this.artistKey; this.backgroundKey; this.textArtist; this.textPainting; this.targetKey; this.nextPhase; init(data); create(); update();
@@ -724,7 +721,7 @@ A tela de vitória apresenta a arte completa pintada pelo gato, conjuntamente co
 <hr>
 
 - **Criativo (Tela branca para pintura)**:
-A fase especial apresentará ao jogador uma tela em branco com uma variedade de opções de cores e formatos de pincel que podem ser escolhidas pelo tutor para seu gato pintar. Após escolhido a cor e o pincel, a fase começa. Após a iniciação da fase, um animal alvo passará pela tela atraindo a atenção do gato, que, ao acertar o alvo, pintará a região pressionada na tela branca de fundo.   
+&nbsp; &nbsp; &nbsp; &nbsp;A fase especial apresentará ao jogador uma tela em branco com uma variedade de opções de cores e formatos de pincel que podem ser escolhidas pelo tutor para seu gato pintar. Após escolhido a cor e o pincel, a fase começa. Após a iniciação da fase, um animal alvo passará pela tela atraindo a atenção do gato, que, ao acertar o alvo, pintará a região pressionada na tela branca de fundo.   
 
 - Classes: CriativeMode;
 - Atributos e métodos: create(); update(); clickTarget(); toggleSplashMenu(); this.width; this.height; this.bg; this.palette;
@@ -1052,7 +1049,7 @@ Logo abaixo, estão as telas da versão básica do jogo.
 9 | Cena do modo criativo | Selecionar tinta na paleta de tintas | Ao clicar no alvo, a tinta selecionada é pintda na tela
 10| Cena de fase do jogo | Gato bater no mesmo alvo repetidas vezes | Apenas uma batida é contabilizada
 11| Cena de level select | Tutor clicar no botão repetidas vezes | Direciona para a cena correta, com transição e sem bugs
-12| Fase do jogo | Ao inciar e durante a fase | Alvo se movimenta dentro do quadro, e possui velocidade constante no eixo x e variada no eixo y
+12| Alvo abatido pelo gato na fase| Assim que o tutor clicar em continuar depois de recompensar seu gato | Noco alvo se movimenta dentro do quadro, e possui velocidade constante no eixo x e variada no eixo y
 13| Cenas com botões de segurar (tutorial, fases, criativo) | Tocar nos botões da cena | Cancela o carregamento do botão e não realiza a funcionalidade do botão
 14| Cenas com botões de segurar (tutorial, fases, criativo) | Pressionar e segurar os botões da cena | Realiza a funcionalidade correta do botão
 15| Modo criativo | Clicar e segurar o botão de print representado por uma câmera | Aviso para tirar uma printscreen seguido de remoção dos elementos extras ao quadro da tela
@@ -1089,15 +1086,15 @@ O que poderia melhorar no jogo?| Nada | Colocar mais quadros, diversificar mais 
 ### 5.2.1.2: Registro dos testes com público-alvo
 
 ### 5.2.1.3: Análise das respostas e principais conclusões
-Em relação aos testes de guerrilha, foi notório o agrado dos potenciais usuários com o modo criativo e com a abordagem da temática artística no jogo, assim como foi evidente o sucesso dos spritesheets dos alvos. Nesse teste, foi possível também validar a intuitividade das regras do jogo e das instruções do tutorial, o clicar dos botões e a suficiência do tempo de tirar print do quadro no modo criativo. No entanto, foi possível concluir que a disposição e o tamanho dos textos não tiveram êxito, haja vista que pouco mais de 85% dos entrevistados relataram algum problema nesse aspecto. 
+&nbsp; &nbsp; &nbsp; &nbsp;Em relação aos testes de guerrilha, foi notório o agrado dos potenciais usuários com o modo criativo e com a abordagem da temática artística no jogo, assim como foi evidente o sucesso dos spritesheets dos alvos. Nesse teste, foi possível também validar a intuitividade das regras do jogo e das instruções do tutorial, o clicar dos botões e a suficiência do tempo de tirar print do quadro no modo criativo. No entanto, foi possível concluir que a disposição e o tamanho dos textos não tiveram êxito, haja vista que pouco mais de 85% dos entrevistados relataram algum problema nesse aspecto. 
 Sobre o jogo em geral, a média aritmética das notas atribuídas pelos voluntários foi de 8,6, o que revela uma conclusão positiva no tangente à jogabilidade do Ronronarte.
 
 ### 5.2.2 Melhorias
-Com base nos testes de jogabilidade, a equipe CatUp tem como plano de melhorias aumentar o tamanho dos botões, dos alvos e dos textos - haja vista todos os entrevistados no teste de guerrilha relataram algum desconforto com esses itens -, assim como retirar o temporizador e passar a pontuação para o canto da tela, conforme a sugestão do entrevistado 6. Ademais, em razão da distração dos gatos no teste de usabilidade com o som de miar ao acertar os alvos, a equipe entende que é imprescindível alterar o efeito sonoro para uma frequência mais aguda. 
+&nbsp; &nbsp; &nbsp; &nbsp;Com base nos testes de jogabilidade, a equipe CatUp tem como plano de melhorias aumentar o tamanho dos botões, dos alvos e dos textos - haja vista todos os entrevistados no teste de guerrilha relataram algum desconforto com esses itens -, assim como retirar o temporizador e passar a pontuação para o canto da tela, conforme a sugestão do entrevistado 6. Ademais, em razão da distração dos gatos no teste de usabilidade com o som de miar ao acertar os alvos, a equipe entende que é imprescindível alterar o efeito sonoro para uma frequência mais aguda. 
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros (sprint 5)
 
-Consoante os resultados dos testes que a equipe realizou, o Ronronarte teve êxito em cumprir os objetivos declarados na seção 2.1, principalmente no que tange a fortalecer o laço entre tutor e gato, já que a dinâmica de pintura e de caça do jogo impactou, de fato, o emocional dos tutores e, paralelamente, entreteu os gatos. Nos testes de guerrilha, foi notório o entusiasmo dos voluntários com o modo criativo e a exploração da temática artística no jogo, o qual configura-se um dos principais diferenciais do Ronronarte, quando comparados aos demais jogos do mercado.
+&nbsp; &nbsp; &nbsp; &nbsp;Consoante os resultados dos testes que a equipe realizou, o Ronronarte teve êxito em cumprir os objetivos declarados na seção 2.1, principalmente no que tange a fortalecer o laço entre tutor e gato, já que a dinâmica de pintura e de caça do jogo impactou, de fato, o emocional dos tutores e, paralelamente, entreteu os gatos. Nos testes de guerrilha, foi notório o entusiasmo dos voluntários com o modo criativo e a exploração da temática artística no jogo, o qual configura-se um dos principais diferenciais do Ronronarte, quando comparados aos demais jogos do mercado.
 No entanto, foi perceptível nos testes de usabilidade que o jogo apresenta dificuldades de se adequar totalmente em todos os tipos de dispositivos e, em razão de precisar ser aberto em uma página Web, em algumas ocasiões, o gato bate em espaços da tela que direcionam para fora do jogo. Tal problemática pode ser solucionada com o desenvolvimento de um aplicativo do Ronronarte - por intermédio da continuidade da parceria com a Dr.Pet e do estímulo financeiro da empresa. 
 Além disso, como melhoria, a equipe CatUp idealiza a construção de um dispenser com arduíno para automatizar o ato de dar a recompensa para o gato e também permitir que o gato jogue o Ronronarte, mesmo se seu tutor estiver distante. Para tal efeito, será necessário o auxílio financeiro do parceiro para a disponibilidade dos recursos de hardware e da assistência da universidade para proporcionar aulas com os conhecimentos técnicos basilares para a construção do dispenser. 
 
