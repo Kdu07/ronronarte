@@ -433,7 +433,7 @@ R. **Relevante:** A equipe possui recursos como aulas e professores das áreas d
 T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint review da sprint 4.
 
 ## 1.2. Requisitos do Projeto 
-Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por meios dos quais se busca explicitar, de maneira breve, lógica e sucinta, suas principais funcionalidades e aspectos, de acordo com o escopo vigente.  
+&nbsp; &nbsp; &nbsp; &nbsp;Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por meios dos quais se busca explicitar, de maneira breve, lógica e sucinta, suas principais funcionalidades e aspectos, de acordo com o escopo vigente (descrito no TAPI).  
 
 <p align = 'center'>Quadro 1: Requisitos do jogo RonRonArte</p> <br>
 
