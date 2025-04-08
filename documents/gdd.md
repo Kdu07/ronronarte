@@ -45,7 +45,7 @@
 
 #### 1.1.1.1. Modelo de 5 Forças de Porter 
 
-&nbsp; &nbsp; &nbsp; &nbsp;De acordo com o livro de Magretta (2019), que detalha o estudos de Michael Porter, o modelo das 5 Forças de Porter é um framework de análise setorial que permite entender o nível de competitividade de um mercado. O modelo apresenta 5 critérios: Rivalidade entre concorrentes, poder de negociação dos fornecedores, poder de negociação dos compradores, ameaça de novos entrantes e ameaça de produtos substitutos, e avaliamo a força de cada um deles e como eles influenciam a competitividade do setor em análise. O modelo determina que, quanto maior uma força for, maior o poder de ação ela tem sobre um negócio.
+&nbsp; &nbsp; &nbsp; &nbsp;De acordo com o livro de Magretta (2019), que detalha os estudos de Michael Porter, o modelo das 5 Forças de Porter é um framework de análise setorial que permite entender o nível de competitividade de um mercado. O modelo apresenta 5 critérios: rivalidade entre concorrentes, poder de negociação dos fornecedores, poder de negociação dos compradores, ameaça de novos entrantes e ameaça de produtos substitutos, e avaliamo a força de cada um deles e como eles influenciam a competitividade do setor em análise. O modelo determina que, quanto maior uma força for, maior o poder de ação ela tem sobre um negócio. Desse modo, a figura 1 mostra tal análise aplicada ao setor pet.
 
 <p align = "center">Figura 1: modelo de 5 forças de Porter</p>
 
@@ -433,7 +433,7 @@ R. **Relevante:** A equipe possui recursos como aulas e professores das áreas d
 T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint review da sprint 4.
 
 ## 1.2. Requisitos do Projeto 
-&nbsp; &nbsp; &nbsp; &nbsp;Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por meios dos quais se busca explicitar, de maneira breve, lógica e sucinta, suas principais funcionalidades e aspectos, de acordo com o escopo vigente (descrito no TAPI).  
+&nbsp; &nbsp; &nbsp; &nbsp;Logo abaixo (quadro 1), estão listados os requisitos do projeto do jogo "RonRonArte", por meios dos quais se busca explicitar, de maneira breve, lógica e sucinta, suas principais funcionalidades e aspectos, de acordo com o escopo vigente (descrito no TAPI).  
 
 <p align = 'center'>Quadro 1: Requisitos do jogo RonRonArte</p> <br>
 
@@ -496,7 +496,7 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 
 &nbsp; &nbsp; &nbsp; &nbsp;Nosso jogo visa mesclar mecânicas presentes nesses outros jogos com uma identidade visual própria, buscando uma experiência interativa e divertida para gato e tutor.
 
-### 2.2.5. Tempo estimado de jogo (sprint 5)
+### 2.2.5. Tempo estimado de jogo
 
 &nbsp; &nbsp; &nbsp; &nbsp;Visto que cada gato tem uma agilidade de aprendizagem individual, o modo de tutorial não tem limite de tempo, de modo que o tutor tenha autonomia e flexibilidade para ensinar a dinâmica ao pet no seu tempo. De maneira similar, para que o Ronronarte tenha rejogabilidade, o modo criativo também é infinito, e o tutor pode tirar o print da tela no momento em que preferir. Já o tempo de conclusão das fases varia de acordo com a performance do gato, porém a equipe estima ser possível concluí-las em 30 minutos.
 
@@ -509,10 +509,10 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 ## 3.2. Personagens
 
 ### 3.2.1. Controláveis
-&nbsp; &nbsp; &nbsp; &nbsp;No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador, haja vista que o intuito do jogo é justamente incentivar hábitos de caça ao gato por intermédio de figuras clicáveis na tela. Desse modo, o objetivo não é que o jogador controle algum personagem no game, mas sim que ele possa eliminá-lo no decorrer do jogo em troca de recompensas alimentícias, a fim de que seus instintos naturais sejam estimulados. Portanto, especificamente no escopo de RonRonArte, o player pode interpretar tal circunstância como um meio pelo qual ele realiza uma ação e, em troca, ganha algo, associando o alcance de tais objetivos com as recompensas supracitadas. A partir disso, abaixo estão as figuras correspondentes ao que acima foi observado.
+&nbsp; &nbsp; &nbsp; &nbsp;No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador, haja vista que o intuito do jogo é justamente incentivar hábitos de caça ao gato por intermédio de figuras clicáveis na tela. Desse modo, o objetivo não é que o jogador controle algum personagem no game, mas sim que ele possa eliminá-lo no decorrer do jogo em troca de recompensas alimentícias, a fim de que seus instintos naturais sejam estimulados. Portanto, especificamente no escopo de RonRonArte, o player pode interpretar tal circunstância como um meio pelo qual ele realiza uma ação e, em troca, ganha algo, associando o alcance de tais objetivos com as recompensas supracitadas.
 
 ## 3.2.2 Non-Playable Characters (NPC)
-&nbsp; &nbsp; &nbsp; &nbsp;Non-Playable Characters (NPCs) são personagens que não são controláveis pelo jogador ou qualquer outro participante, mas sim pela própria máquina que executa o jogo (Folter, 2022). Com base nisso, as figuras 6, 7, 8 e 9 a seguir demonstram os NPCs do jogo RonRonArte:
+&nbsp; &nbsp; &nbsp; &nbsp;Non-Playable Characters (NPCs) são personagens que não são controláveis pelo jogador ou qualquer outro participante, mas sim pela própria máquina que executa o jogo (Folter, 2022). Com base nisso, as figuras 6, 7, 8 e 9  demonstram os NPCs do jogo RonRonArte:
 
 <p align = 'center'>Figura 6 - Figura do pombo (RonRonArte)</p><br>
 <div align = 'center'>
@@ -567,9 +567,9 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 &nbsp; &nbsp; &nbsp; &nbsp;O jogador, sendo um gato, atravessará as fases atreves de um portal que o levará para épocas distintas e importantes para o conhecimento artístico da pintura. Com o passar das fases, elas se tornam selecionáveis a preferir do dono do gato, em que depois que o botão de “jogar”, poderá selecionar somente clicando com o dedo no botão referente a fase que for preferível a ser jogada.
 
 ### 3.3.3. Concept Art
-&nbsp; &nbsp; &nbsp; &nbsp;Uma Concept Art é o conceito visual das características e dos elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo (EBAC, 2023). Com base nisso, realizou-se uma Concept Art de RonRonArte, de maneira a explicitar quais são os seus principais itens visuais e de história.
+&nbsp; &nbsp; &nbsp; &nbsp;Uma Concept Art é o conceito visual das características e dos elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo (EBAC, 2023). Com base nisso, realizou-se uma Concept Art de RonRonArte (figura 10) de maneira a explicitar quais são os seus principais itens visuais e de história.
 
-<p align = "center">Figura 9: Concept Art - RonRonArte</p>
+<p align = "center">Figura 10: Concept Art - RonRonArte</p>
 
 ![Untitled (1)](https://github.com/user-attachments/assets/7c89a7f7-7194-4e4f-9d52-2042f123cf9f)
 
@@ -631,9 +631,9 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 
 #### Diagrama de cenas:
 
-&nbsp; &nbsp; &nbsp; &nbsp;O diagrama de cenas é uma representação visual do caminhar do jogo ao longo de suas telas e cenas. Essa ferramenta apresenta como o design será feito, como as classes, objetos, atributos e métodos são realizados, facilitando a compreensão das funcionalidades. Nesse sentido, o diagrama de cenas do jogo RonRonArte está apresentado na figura 10.
+&nbsp; &nbsp; &nbsp; &nbsp;O diagrama de cenas é uma representação visual do caminhar do jogo ao longo de suas telas e cenas. Essa ferramenta apresenta como o design será feito, como as classes, objetos, atributos e métodos são realizados, facilitando a compreensão das funcionalidades. Nesse sentido, o diagrama de cenas do jogo RonRonArte está apresentado na figura 11.
 
-<p align ="center">Figura 10: diagrama de cenas - RonRonArte</p>
+<p align ="center">Figura 11: diagrama de cenas - RonRonArte</p>
 
 ![Diagrama de Cenas (4)](https://github.com/user-attachments/assets/bc3cf626-7a2b-4ea4-ae68-f9e452fce3ca)
 
@@ -848,9 +848,9 @@ Além da implementação matemática, repare que executamos uma série de comand
 
 &nbsp; &nbsp; &nbsp; &nbsp;Em linhas gerais, a primeira versão do jogo “RonRonArte” conta com uma tela inicial, que contempla o botão “Jogar”. Sob essa perspectiva, criou-se a primeira cena do jogo, a qual é ativada quando o botão supracitado é clicado. Nela, sprites de animais aparecem randomicamente na tela, de maneira que o jogador (gato) seja incentivado a pressioná-los. Nesse sentido, é válido mencionar que, quando essas imagens animadas são clicadas, são liberados splashes de tinta com forma de patinha de gato, funcionalidade que nas próximas versões será refinada, a fim de que o jogador produza pinturas de acordo com os splashes. Portanto, objetiva-se ir além do convencional (apenas cliques na tela), por intermédio de dinâmicas atrelada à arte.  
 
-&nbsp; &nbsp; &nbsp; &nbsp;Logo abaixo, estão registrados os prints das telas da primeira versão do jogo.
+&nbsp; &nbsp; &nbsp; &nbsp;Logo abaixo (figuras 12, 13 e 14), estão registrados os prints das telas da primeira versão do jogo.
 
-<p align = "center">Figura 11: tela de início do jogo</p>
+<p align = "center">Figura 12: tela de início do jogo</p>
 
 ![tela de start RonRonArte](https://github.com/user-attachments/assets/30f3865b-5e98-49f1-906e-e886c33ee157)
 
@@ -858,7 +858,7 @@ Além da implementação matemática, repare que executamos uma série de comand
 
 
 
-<p align = "center">Figura 12: tela com a primeira cena</p>
+<p align = "center">Figura 13: tela com a primeira cena</p>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/a2107a97-8d01-4339-8469-bef594f42c61" width="300">
@@ -868,7 +868,7 @@ Além da implementação matemática, repare que executamos uma série de comand
 
 
 
-<p align = "center">Figura 13: tela da primeira cena com os splashes de tinta</p>
+<p align = "center">Figura 14: tela da primeira cena com os splashes de tinta</p>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/9581c99b-c61d-407d-bb58-b492f8a47998" width="300">
@@ -898,8 +898,8 @@ Eventuais dificuldades presentes no projeto:
 - Gestão de tempo;
 - Produção dos sprites/artes do jogo.
 
-Logo abaixo, estão as telas da versão básica do jogo.
-<p align = 'center'>Figura 14: tela de instruções</p>
+Logo abaixo (figuras 15, 16, 17, 18 e 19), estão as telas da versão básica do jogo.
+<p align = 'center'>Figura 15: tela de instruções</p>
 <div align = 'center'>
   <img width="935" alt="image" src="https://github.com/user-attachments/assets/7081f995-b960-4c10-84eb-42fedf96822f" />
 </div><br>
@@ -907,43 +907,43 @@ Logo abaixo, estão as telas da versão básica do jogo.
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
-<p align = 'center'>Figura 15: tela de tutorial</p>
+<p align = 'center'>Figura 16: tela de tutorial</p>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/510f51b9-c320-4c1d-ab87-3690abf2d989" />
 </div><br>
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
-<p align = 'center'>Figura 16: tela do início das fases</p>
+<p align = 'center'>Figura 17: tela do início das fases</p>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/554c235d-a9b9-4f88-8729-2b6302444569" />
 </div><br>
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
-<p align = 'center'>Figura 17: tela de pintura da fase 1</p>
+<p align = 'center'>Figura 18: tela de pintura da fase 1</p>
 <div align = 'center'>
   <img width="933" alt="image" src="https://github.com/user-attachments/assets/8f147d35-bbad-40ca-b773-183bf5c93b6d" />
 </div><br>
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
-<p align = 'center'>Figura 18: tela de vitória da fase 1</p>
+<p align = 'center'>Figura 19: tela de vitória da fase 1</p>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/1790cca4-9119-4d94-ac4f-9f7220c094aa" />
 </div><br>
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
-<p>Também está representada a modularização do código nas figuras 19 e 20.</p>
-<p align = 'center'>Figura 19: estrutura das pastas após a modularização do código</p>
+<p>Também está representada a modularização do código nas figuras 20 e 21.</p>
+<p align = 'center'>Figura 20: estrutura das pastas após a modularização do código</p>
 <div align = 'center'>
   <img width="30%" alt="image" src="https://github.com/user-attachments/assets/76b12c16-e454-40a5-80c3-d23deaa03a73"/>
 </div><br>
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
-<p align = 'center'>Figura 20: estrutura da versão básica do jogo (com importações de cenas phaser)</p>
+<p align = 'center'>Figura 21: estrutura da versão básica do jogo (com importações de cenas phaser)</p>
 <div align = 'center'>
   <img width="70%" alt="image" src="https://github.com/user-attachments/assets/a3d6a5f5-8cad-4108-906c-16fae2e00bf4"/>
 </div><br>
@@ -951,24 +951,24 @@ Logo abaixo, estão as telas da versão básica do jogo.
 
 ## 4.3. Desenvolvimento intermediário do jogo
 
-&nbsp; &nbsp; &nbsp; &nbsp;No desenvolvimento intermediário do jogo, foram acrescentados mais itens ao game em relação à versão preliminar. Em termos de código, foi adicionada uma classe “basePhase”, que servirá de arquétipo para o desenvolvimento de todas as outras, parecido com um template. Já em termos de jogo, iniciou-se a implementação do modo criativo do game, que já possui sua principal característica implementada: a seleção de cores por parte do tutor em uma paleta na tela, a fim que seu gato produza suas próprias pinturas de modo personalizado. Por fim, adicionou-se um menu de seleção de níveis, no qual o tutor poderá escolher entre a fase de tutorial, as fases propostas ou o modo criativo.
+&nbsp; &nbsp; &nbsp; &nbsp;No desenvolvimento intermediário do jogo, foram acrescentados mais itens ao game em relação à versão preliminar. Em termos de código, foi adicionada uma classe “basePhase” (figura 22), que servirá de arquétipo para o desenvolvimento de todas as outras, parecido com um template. Já em termos de jogo, iniciou-se a implementação do modo criativo do game (figura 24), que já possui sua principal característica implementada: a seleção de cores por parte do tutor em uma paleta na tela (figura 23), a fim que seu gato produza suas próprias pinturas de modo personalizado. Por fim, adicionou-se um menu de seleção de níveis (figura 25), no qual o tutor poderá escolher entre a fase de tutorial, as fases propostas ou o modo criativo.
 
-<p align = 'center'>Figura 21: Parte do código da classe "basePhase"</p> <br>
+<p align = 'center'>Figura 22: Parte do código da classe "basePhase"</p> <br>
 
 ![image](https://github.com/user-attachments/assets/83390710-7f10-4187-8cd2-be09a1f2bf78)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 22: Menu de seleção de cores do modo criativo</p>
+<p align = 'center'>Figura 23: Menu de seleção de cores do modo criativo</p>
 
 ![image](https://github.com/user-attachments/assets/9e9e0d25-60c2-489e-8f7c-824716c41477)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 23: Modo criativo com splashes na tela</p>
+<p align = 'center'>Figura 24: Modo criativo com splashes na tela</p>
 
 ![image](https://github.com/user-attachments/assets/5548a0db-fa8e-48ef-8f14-29c151f0af5b)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 24: Tela de seleção de níveis</p>
+<p align = 'center'>Figura 25: Tela de seleção de níveis</p>
 
 ![image](https://github.com/user-attachments/assets/e1aa419d-1854-41b3-a25d-f77681b1f998)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
@@ -976,55 +976,55 @@ Logo abaixo, estão as telas da versão básica do jogo.
 
 ## 4.4. Desenvolvimento final do MVP
 
-&nbsp; &nbsp; &nbsp; &nbsp;Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, como a mudança do storytelling central do jogo e de suas fases, reformulação da tela de vitória e modo criativo, as pinturas definitivas foram definidas, assets sonoros foram definidos e implementados, e foram feitos alguns acabamentos para deixar o jogo mais polido. As novas artes determinadas para as fases de nosso jogo foram: "A Noiva", de Maria Auxiliadora; "Spoliarium" de Juan Luna; "J'aime la couleur" de Chéri Samba; "Aboriginal design, with Sturt's Pea" de Margaret Preston. (Figuras 25 a 28). A nova tela de vitória conta com uma pontuação (quantidade de pombos acertados) e uma contagem de tempo que juntos representam uma pontuação em formato de estrelas (Figura 29). A reformulação do modo criativo conta com um novo botão para o tutor tirar print da obra de seu gato, além de um botão de paletas que permite que o tutor escolha diferentes paletas e formatos de pincel (Figuras 30 a 32). Por fim, os arquivos do jogo atualizados estão demonstrados na figura 33.
+&nbsp; &nbsp; &nbsp; &nbsp;Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, como a mudança do storytelling central do jogo e de suas fases, reformulação da tela de vitória e modo criativo, as pinturas definitivas foram definidas, assets sonoros foram definidos e implementados, e foram feitos alguns acabamentos para deixar o jogo mais polido. As novas artes determinadas para as fases de nosso jogo foram: "A Noiva", de Maria Auxiliadora; "Spoliarium" de Juan Luna; "J'aime la couleur" de Chéri Samba; "Aboriginal design, with Sturt's Pea" de Margaret Preston. (Figuras 26 a 29). A nova tela de vitória conta com uma pontuação (quantidade de pombos acertados) e uma contagem de tempo que juntos representam uma pontuação em formato de estrelas (Figura 30). A reformulação do modo criativo conta com um novo botão para o tutor tirar print da obra de seu gato, além de um botão de paletas que permite que o tutor escolha diferentes paletas e formatos de pincel (Figuras 31 a 33). Por fim, os arquivos do jogo atualizados estão demonstrados na figura 34.
 
-<p align = 'center'>Figura 25: Tela com o quadro da fase 1</p> <br>
+<p align = 'center'>Figura 26: Tela com o quadro da fase 1</p> <br>
 
 ![image](https://github.com/user-attachments/assets/2f68942c-cbfd-4ab6-92e9-59cde50d2dad)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 26: Tela com o quadro da fase 2</p> <br>
+<p align = 'center'>Figura 27: Tela com o quadro da fase 2</p> <br>
 
 ![image](https://github.com/user-attachments/assets/2774d2d9-825f-4107-8c02-8a1398365807)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 27: Tela com o quadro da fase 3</p> <br>
+<p align = 'center'>Figura 28: Tela com o quadro da fase 3</p> <br>
 
 ![image](https://github.com/user-attachments/assets/7f480025-fb30-4144-a4c4-1e52420935ac)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 28: Tela com o quadro da fase 4</p> <br>
+<p align = 'center'>Figura 29: Tela com o quadro da fase 4</p> <br>
 
 ![image](https://github.com/user-attachments/assets/70e6fb38-d8b0-449b-8cea-679db402bc2b)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 29: Tela de vitória atualizada</p> <br>
+<p align = 'center'>Figura 30: Tela de vitória atualizada</p> <br>
 
 ![image](https://github.com/user-attachments/assets/eca91e13-1d08-4410-bf98-29bda8787df9)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 30: Tela do modo criativo:</p> <br>
+<p align = 'center'>Figura 31: Tela do modo criativo:</p> <br>
 
 ![image](https://github.com/user-attachments/assets/697b9288-3389-429f-8731-20b201418641)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 31: Tela do modo criativo(2):</p> <br>
+<p align = 'center'>Figura 32: Tela do modo criativo(2):</p> <br>
 
 ![image](https://github.com/user-attachments/assets/3ca18bcf-9bfd-4c33-9762-8dceff3a37c9)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 32: Tela de seleção de paletas modo criativo</p> <br>
+<p align = 'center'>Figura 33: Tela de seleção de paletas modo criativo</p> <br>
 
 ![image](https://github.com/user-attachments/assets/58eefa74-c00e-4645-b137-27ee1eb0fdaf)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 <div align = 'center'> 
-<p align = 'center'> Figura 33: Arquivos do jogo atualizados.</p>
+<p align = 'center'> Figura 34: Arquivos do jogo atualizados.</p>
 	<img src = "https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/Captura%20de%20tela%202025-03-28%20193243.png">
 <p align = 'center'>Fonte: material produzido pelos autores(2025).</p> <br><br>
 </div>
 
-## 4.5. Revisão do MVP (sprint 5)
+## 4.5. Revisão do MVP
 
 *Descreva e ilustre aqui o desenvolvimento dos refinamentos e revisões da versão final do jogo, explicando brevemente o que foi entregue em termos de MVP. Utilize prints de tela para ilustrar.*
 
@@ -1056,7 +1056,7 @@ Logo abaixo, estão as telas da versão básica do jogo.
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p>
 
-## 5.2. Testes de jogabilidade (playtests) (sprint 4)
+## 5.2. Testes de jogabilidade (playtests)
 
 ### 5.2.1 Registros de testes
 
@@ -1098,7 +1098,7 @@ Sobre o jogo em geral, a média aritmética das notas atribuídas pelos voluntá
 No entanto, foi perceptível nos testes de usabilidade que o jogo apresenta dificuldades de se adequar totalmente em todos os tipos de dispositivos e, em razão de precisar ser aberto em uma página Web, em algumas ocasiões, o gato bate em espaços da tela que direcionam para fora do jogo. Tal problemática pode ser solucionada com o desenvolvimento de um aplicativo do Ronronarte - por intermédio da continuidade da parceria com a Dr.Pet e do estímulo financeiro da empresa. 
 Além disso, como melhoria, a equipe CatUp idealiza a construção de um dispenser com arduíno para automatizar o ato de dar a recompensa para o gato e também permitir que o gato jogue o Ronronarte, mesmo se seu tutor estiver distante. Para tal efeito, será necessário o auxílio financeiro do parceiro para a disponibilidade dos recursos de hardware e da assistência da universidade para proporcionar aulas com os conhecimentos técnicos basilares para a construção do dispenser. 
 
-# <a name="c7"></a>7. Referências (sprint 5)
+# <a name="c7"></a>7. Referências
 CASAROTTO, Camila. Como fazer análise SWOT ou FOFA: confira o passo a passo completo com as melhores dicas. [S. l.], 20 dez. 2019. Disponível em: https://rockcontent.com/br/blog/como-fazer-uma-analise-swot/. Acesso em: 8 abr. 2025.
 
 EBAC. Concept Art: uma imagem vale mais que mil palavras. [S. l.], 2 jun. 2023. Disponível em: https://ebaconline.com.br/blog/concept-art-uma-imagem-vale-mais-que-mil-palavras. Acesso em: 8 abr. 2025.
