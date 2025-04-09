@@ -24,7 +24,7 @@ export default class Menu extends Phaser.Scene{
             
             setTimeout(() => {
                 this.fullscreenGame();
-                this.scene.start('Select') // Direciona para a tela de seleção de níveis
+                this.scene.start('LevelSelect') // Direciona para a tela de seleção de níveis
                 this.scene.stop('Menu') // Para o menu
             }, 500);
         });

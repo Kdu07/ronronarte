@@ -56,12 +56,6 @@ export default class Victory extends Phaser.Scene {
                 
         
         // Adiciona o gato
-        this.anims.create({
-            key: 'animCat',
-            frames: this.anims.generateFrameNumbers('cat', { start: 0, end: 3 }), // Define os frames do spritesheet que serão usados 
-            frameRate: 10, // Define o número de frames por segundos
-            repeat: -1 // Define a animação como contínua
-        });
         this.cat = this.add.sprite(this.width/10, this.height/1.38, 'cat').setScale(this.width/150).setFlip(true,false);
         this.cat.play('animCat');
 
@@ -74,7 +68,7 @@ export default class Victory extends Phaser.Scene {
         .setInteractive() 
         .on('pointerdown', () => {
             this.scene.stop(this.phaseKey); // Para a fase atual
-            this.scene.start('Select');
+            this.scene.start('LevelSelect');
         })
         .setScale(this.width/500)
 

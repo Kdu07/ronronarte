@@ -179,7 +179,7 @@ export default class BasePhase extends Phaser.Scene {
                 this.soundTarget.stop();
                 
                 // Troca para cena de level select
-                this.scene.start("Select");
+                this.scene.start("LevelSelect");
                 this.scene.stop(this.phaseKey);
             }
         }else{
@@ -378,37 +378,10 @@ export default class BasePhase extends Phaser.Scene {
             this.starScore = 1;
         }
         
-        /*
-        // Adiciona a frase de vitória
-        setTimeout(() => {
-            
-            // Cria a imagem da tela de vitória
-            let phrase = this.add.image(this.painting.x / 0.95, this.painting.y / 1.1, 'phrase').setScale(this.width/100);
-            phrase.alpha = 0; // Inicialmente, deixa a frase de vitória invisível (para dar o efeito de fade-in)
-            // Cria o efeito de fade-in
-            this.tweens.add({
-                targets: phrase,
-                alpha: 1, // Torna a frase de vitória visível
-                duration: 500, // Tempo da aparecimento da frase de vitória de meio segundo
-                ease: 'Linear', // Define que a transição será linear
-                scale: 0.81, // Aumenta um pouco a escala para potencializar o efeito de entrada da frase
-                onComplete: () => {
-                    this.tweens.add({
-                        targets: phrase,
-                        alpha: 0.8, // Diminui a opacidade para 80%
-                        duration: 1000, // Tempo da aparecimento da frase de vitória de 1 segundo
-                        scale: 0.6, // Diminui a escala para potencializar o efeito de entrada da frase
-                        ease: 'Linear' // Define que a transição será linear
-                    });
-                }
-            }, 1000);
-        }, 300);
-        */
-
         // Trava o evento do temporizador
         this.timerOn = false
 
-        // Adiciona tela de vitória depois de 5,3 segundos 
+        // Adiciona tela de vitória depois de 3 segundos 
         setTimeout(() => {
             // Cria o background da tela de vitória
             let bgVictory = this.add.image(this.width / 2, this.height / 2, 'bgVictory').setDisplaySize(this.width/1.7, this.height/1.7);

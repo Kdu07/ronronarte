@@ -92,7 +92,7 @@ export default class Phase0 extends BasePhase {
                     this.soundContinue.stop();
                 });
                 this.soundTarget.stop();
-                this.scene.start("Phase1");
+                this.scene.start("LevelSelect");
                 this.scene.stop(this.phaseKey);
                 this.scene.get('Select2');
             }
