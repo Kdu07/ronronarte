@@ -103,6 +103,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('frameBW', './assets/misc/moldura_bw.png');
         this.load.image('lock', './assets/misc/lock.png');
         this.load.image('takeAPrintScreen', './assets/misc/takeAPrintScreen.png');
+        this.load.image('catFood', './assets/misc/catFood.png');
 
         //Alvos
         this.load.spritesheet('pigeon', './assets/targets/pigeon.png', { frameWidth: 64, frameHeight:64 });
@@ -159,6 +160,13 @@ export default class SplashScreen extends Phaser.Scene {
             repeat: 0
         })
         
+        this.anims.create({
+            key: 'animCat',
+            frames: this.anims.generateFrameNumbers('cat', { start: 0, end: 3 }), // Define os frames do spritesheet que serão usados 
+            frameRate: 10, // Define o número de frames por segundos
+            repeat: -1 // Define a animação como contínua
+        })
+
         // Define e armezena a duração do fadeIn e do fadeOut
         let time1500 = 1500; 
         let time3000 = 3000;

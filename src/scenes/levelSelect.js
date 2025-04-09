@@ -1,9 +1,8 @@
 import { completedPhases } from './splashScreen.js';
 
-
-export default class Select2 extends Phaser.Scene {
+export default class LevelSelect extends Phaser.Scene {
     constructor() {
-        super("Select");
+        super("LevelSelect");
 
     }
     create() {
