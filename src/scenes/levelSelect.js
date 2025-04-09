@@ -40,12 +40,12 @@ export default class LevelSelect extends Phaser.Scene {
         .setScale(this.scale.width/450)
 
         this.textPhase1 = this.add.text(this.scale.width*0.17, this.scale.height*0.49, 'Fase 1:', {
-            fontFamily: 'Pixelify Sans',
-            fontSize:'32px',
+            fontFamily: 'font1',
+            fontSize:this.scale.width/40,
             color: '#000000'
         });
         this.textAlvo1 = this.add.text(this.scale.width*0.165, this.scale.height*0.81, 'Alvos: 3', {
-            fontFamily: 'Pixelify Sans', 
+            fontFamily: 'font1', 
             fontSize: '32px',
             color:'#000000'
         });

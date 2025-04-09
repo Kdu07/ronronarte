@@ -177,7 +177,8 @@ export default class BasePhase extends Phaser.Scene {
                 
                 // Para o áudio do alvo
                 this.soundTarget.stop();
-                
+                this.playStar = false
+
                 // Troca para cena de level select
                 this.scene.start("LevelSelect");
                 this.scene.stop(this.phaseKey);
@@ -400,6 +401,7 @@ export default class BasePhase extends Phaser.Scene {
             this.next = this.add.image(this.width/2, bgVictory.y + bgVictory.displayHeight/2.7, 'continueBtn')
             .setInteractive() 
             .on('pointerdown', () => {
+                this.playStar = false
                 this.scene.start('Victory', this.phaseInfo);
                 this.scene.stop(this.phaseKey); // Para a fase atual
             })
@@ -408,12 +410,14 @@ export default class BasePhase extends Phaser.Scene {
             // Adiciona estrelas na primeira tela de vitória
             let i = 0;
             let starScale = this.width/5000;
+            this.playStar = true
             this.stars = setInterval(() => {
                 this.add.image((bgVictory.x - bgVictory.displayWidth/1.8) + ((i+1)*(starScale*550)), this.height/3, 'scoreStar')
                 .setScale(starScale)
+                if(this.playStar){
+                    this.soundStar.play()
+                }
                 
-                this.soundStar.play()
-
                 i++;
                 
                 if (i === this.starScore){

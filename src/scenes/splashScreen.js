@@ -179,8 +179,11 @@ export default class SplashScreen extends Phaser.Scene {
         this.time.delayedCall(time3000, () => {
             if (window.innerWidth < window.innerHeight){
                 this.add.text(this.scale.width/14, this.scale.height*0.8,
-                    '                              Para iniciar o jogo, \nvire seu dispositivo na horizontal e recarregue a página', 
-                    {fontFamily:'font1', fontSize:this.scale.width/30, fill:'#FFFFFF'})
+                    'Vire seu dispositivo na horizontal e recarregue a página', {
+                    fontFamily:'font1',
+                    fontSize:this.scale.width/30,
+                    fill:'#FFFFFF',
+                    wordWrap: { width: this.scale.width/1.1, useAdvancedWrap: true }})
                 this.add.image(this.scale.width/2, this.scale.height/8,'rotate').setScale(this.scale.width/1200);
             }else{
                 // Aguarda o fadeOut antes de iniciar a próxima cena

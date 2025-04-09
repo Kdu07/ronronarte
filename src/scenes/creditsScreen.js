@@ -51,6 +51,18 @@ export default class CreditsScreen extends Phaser.Scene {
         let logoInteliHorizontalPosition = this.width / 2 - imageSpacing;
         let drPetHorizontalPosition = this.width / 2 + imageSpacing;
         this.add.image(logoInteliHorizontalPosition, verticalPosition, 'logoInteli').setDepth(20).setScale(0.3);
-        this.add.image(drPetHorizontalPosition, verticalPosition, 'drPet').setDepth(20).setScale(0.3); 
+        this.add.image(drPetHorizontalPosition, verticalPosition, 'drPet').setDepth(20).setScale(0.3);
+
+        this.soundPause = this.sound.add('soundPauseButton');
+        
+        this.pauseBtn = this.add.image(this.width/40, this.height/18, 'pauseBtn')
+        .setInteractive({cursor: "pointer"})
+        .setScale(this.scale.width/550)
+
+        this.pauseBtn.on("pointerdown", () => {
+            this.soundPlay = this.sound.add('soundPlayButton').play();
+            this.scene.start('LevelSelect') // Direciona para a tela de seleção de níveis
+            this.scene.stop('CreditsScreen') // Para o menu
+        });
     }
 }
