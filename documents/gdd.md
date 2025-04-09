@@ -999,13 +999,54 @@ Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, co
 
 <div align = 'center'> 
 <p align = 'center'> Figura 33: Arquivos do jogo atualizados.</p>
-	<img src = "https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/Captura%20de%20tela%202025-03-28%20193243.png">
+	
+![levelSelect](https://github.com/user-attachments/assets/829d1377-aa46-4ebf-b2e5-5ce5dfea4057)
 <p align = 'center'>Fonte: material produzido pelos autores(2025).</p> <br><br>
 </div>
 
 ## 4.5. Revisão do MVP (sprint 5)
 
-*Descreva e ilustre aqui o desenvolvimento dos refinamentos e revisões da versão final do jogo, explicando brevemente o que foi entregue em termos de MVP. Utilize prints de tela para ilustrar.*
+<div align = 'center'>
+<p align = 'center'> Figura 34: Nova tela de seleção de nível.</p>
+	<img src = "https://github.com/user-attachments/assets/652c5072-32f1-477c-b300-957661f59f52">
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+</div>
+
+<div align = 'center'>
+<p align = 'center'> Figura 35: Tela de tutorial atualizada.</p>
+
+![telaTutorial](https://github.com/user-attachments/assets/f2c2d7e8-c637-477a-9de3-b86a4cd36ccf)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+</div>
+
+<div align = 'center'>
+<p align = 'center'> Figura 36: Tela de uma das fases com design atualizado.</p>
+
+![organizaçãoBotões](https://github.com/user-attachments/assets/e8ea1481-b909-4e57-bd2b-829bcf505f0b)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+</div>
+
+<div align = 'center'>
+<p align = 'center'> Figura 37: Texto de instrução para o print atualizado.</p>
+
+![telaPrint](https://github.com/user-attachments/assets/1f02a8cc-6ea6-4a13-a081-75f0cc992bda)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+</div>
+
+<div align = 'center'>
+<p align = 'center'> Figura 38: Spritesheet da cobra</p>
+
+![cobra](https://github.com/user-attachments/assets/20b06ca5-989d-438c-9203-81254fa656a6)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+</div>
+
+<div align = 'center'>
+<p align = 'center'> Figura 39: Texto de instrução para a recompensa atualizado.</p>
+
+![textoRecompensa](https://github.com/user-attachments/assets/50290b43-89fa-4af5-a1c3-10fcc77eb7d6)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+</div>
+
 
 # <a name="c5"></a>5. Testes
 
