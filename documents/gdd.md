@@ -1026,7 +1026,11 @@ Logo abaixo (figuras 15, 16, 17, 18 e 19), estão as telas da versão básica do
 
 ## 4.5. Revisão do MVP
 
-*Descreva e ilustre aqui o desenvolvimento dos refinamentos e revisões da versão final do jogo, explicando brevemente o que foi entregue em termos de MVP. Utilize prints de tela para ilustrar.*
+Nesta etapa de refinamento do jogo, tivemos diversos pontos de melhoria no design e experiência do usuário e funcionamento do jogo, como a interface da tela de seleção de fases do nosso jogo, que agora, além de mais intuitiva e visualmente agradável, conta com uma lógica de desbloqueio de fases, de modo que se faz necessário passar pelo tutorial antes de acessar outros modos de jogo.
+
+Sobre as fases: alteramos o texto de instrução do tutorial, adcionamos o botão de "avançar", que leva do tutorial para a primeia fase, atualizamos o som emitido ao abater um alvo, adicionamos um sprite autoral de criatura da segunda fase, a cobra coral, alteramos as informações exibidas na tela (agora exibimos apenas um contador de alvos), atualizamos as fontes de todos os textos do jogo de modo a deixá-los mais coerentes com a estética do jogo, e os botões para tocar e segurar estão totalmente funcionais.
+
+E por fim, adicionamos uma tela de créditos que possui um botão correspondente na última fase, uma mensagem na primeira tela que sugere utilizar o dispositivo na horizontal para jogar, e consertamos "bugs" do modo criativo.
 
 # <a name="c5"></a>5. Testes
 
