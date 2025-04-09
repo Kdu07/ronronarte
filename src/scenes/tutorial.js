@@ -119,21 +119,23 @@ export default class Tutorial extends Phaser.Scene {
             }
 
             // Se o clique foi no personagem E todos os textos do tutorial foram mostrados
-            if (this.character.getBounds().contains(pointer.x, pointer.y) && this.clicks == this.tutorialTexts.length - 1){
-                // Destrói alguns elementos
-                this.character.destroy();
-                this.textBox.destroy();
-                this.tutorialText.destroy();
-                
-                // Adiciona o splash 
-                this.add.image(this.character.x, this.character.y, 'splashTutorial').setScale(this.scale.width/2500);
-                
-                // Espera 1,5 segundos
-                this.time.delayedCall(1500, () => {
-                    // Começa a próxima cena e finaliza essa
-                    this.scene.start('Phase0');
-                    this.scene.stop('Tutorial');
-                });
+            if(this.character != null){
+                if (this.character.getBounds().contains(pointer.x, pointer.y) && this.clicks == this.tutorialTexts.length - 1){
+                    // Destrói alguns elementos
+                    this.character.destroy();
+                    this.textBox.destroy();
+                    this.tutorialText.destroy();
+                    
+                    // Adiciona o splash 
+                    this.add.image(this.character.x, this.character.y, 'splashTutorial').setScale(this.scale.width/2500);
+                    
+                    // Espera 1,5 segundos
+                    this.time.delayedCall(1500, () => {
+                        // Começa a próxima cena e finaliza essa
+                        this.scene.start('Phase0');
+                        this.scene.stop('Tutorial');
+                    });
+                }
             }
         });
     }
