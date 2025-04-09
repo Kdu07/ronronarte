@@ -28,6 +28,7 @@ export default class Tutorial extends Phaser.Scene {
 
         this.addPigeon = false;
         this.character = null;
+        this.characterMove = true;
 
         setTimeout(() => {
             this.textBox = this.add.image(this.scale.width/2, this.scale.height/1.3, 'textBox')
@@ -39,10 +40,11 @@ export default class Tutorial extends Phaser.Scene {
                 wordWrap: { width: this.textBox.displayWidth - this.textBox.displayWidth/2.4, useAdvancedWrap: true }
             });
         }, 500);
+
+        this.textDisplay()
     }
 
     update(){
-        this.textDisplay()
         this.pigeonAnimation()     
     }
 
@@ -79,7 +81,7 @@ export default class Tutorial extends Phaser.Scene {
                 console.log("Posição Y: " + this.character.y)
                 console.log("Velocidade X: " + this.velX)
                 console.log("Velocidade Y: " + this.velY)
-            }else{
+            }else if(this.characterMove){
                 console.log("=====================================")
                 console.log("Posição Inicial X: " + 0)
                 console.log("Posição Inicial Y: " + 0)
@@ -89,6 +91,8 @@ export default class Tutorial extends Phaser.Scene {
                 console.log("Velocidade Final Y: " + this.velY)
                 console.log("Tempo total: " + this.count/60)
                 console.log("=====================================")
+
+                this.characterMove = false
                 // Fim das implementações matemáticas
             }
         }

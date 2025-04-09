@@ -173,7 +173,7 @@ export default class BasePhase extends Phaser.Scene {
             // Se o sprite de carregamento chega no último frame
             if (this.pauseLoad.anims.currentFrame.index == 5){
                 // Inicia o áudio do pause
-                this.soundPause.play({ volume: 0.5 });
+                this.soundPause.play({ volume: 0.2 });
                 
                 // Para o áudio do alvo
                 this.soundTarget.stop();
@@ -207,10 +207,11 @@ export default class BasePhase extends Phaser.Scene {
         let posY = Phaser.Math.Between(100,this.height-100);
     
         // Adiciona o pombo e torna interativo
-        this.target = this.add.sprite(posX, posY, this.targetKey).setScale(this.width/400).setInteractive();
+        this.target = this.add.sprite(posX, posY, this.targetKey).setScale(this.width/350).setInteractive();
     
+        let coef = this.width/400 
         // Configura a velocidade aleatória do pombo e a direção inicial de movimento
-        let speedK = this.width/400; // Coeficiente para a velocidade ser responsiva
+        let speedK = coef//this.width/200; // Coeficiente para a velocidade ser responsiva
         
         this.target.speedX = Phaser.Math.Between(speedK*1, speedK*1.5);
         this.target.speedY = Phaser.Math.Between(speedK*1, speedK*1.5);
@@ -218,8 +219,9 @@ export default class BasePhase extends Phaser.Scene {
         this.target.directionY = 1;
 
         // Configura aceleração do pombo no eixo y
-        this.target.accelerationY = Phaser.Math.FloatBetween(speedK*0.015, speedK*0.008);
-        this.target.VyMax = speedK*1.1; // Velocidade máxima no eixo y
+        let accK = coef/400 //this.width/70000; // Coeficiente para a aceleração ser responsiva
+        this.target.accelerationY = Phaser.Math.FloatBetween(accK*1, accK*1.5);
+        this.target.VyMax = accK*300; // Velocidade máxima no eixo y
         this.target.VyMin = 0; // Velocidade mínima no eixo y
 
         // Hitbox do pombo (usado para que não saia da tela)
@@ -257,7 +259,7 @@ export default class BasePhase extends Phaser.Scene {
                     
                     this.soundTarget.stop();
 
-                    this.soundClick.play({ volume: 0.5 }); // Toca o som configurado quando o alvo é clicado
+                    this.soundClick.play({ volume: 0.3 }); // Toca o som configurado quando o alvo é clicado
                     this.time.delayedCall(1000, () => {
                         this.soundClick.stop(); // Para o som do clique após 1000ms (1s)
                     });
@@ -303,7 +305,7 @@ export default class BasePhase extends Phaser.Scene {
 
                     this.soundTarget.stop(); // Para o som do alvo
                     
-                    this.soundClick.play({ volume: 0.5 }); // Toca o som configurado quando o alvo é clicado
+                    this.soundClick.play({ volume: 0.3 }); // Toca o som configurado quando o alvo é clicado
                     this.time.delayedCall(1000, () => {
                         this.soundClick.stop(); // Para o som de clique após 1000ms (1s)
                     });
@@ -415,7 +417,7 @@ export default class BasePhase extends Phaser.Scene {
                 this.add.image((bgVictory.x - bgVictory.displayWidth/1.8) + ((i+1)*(starScale*550)), this.height/3, 'scoreStar')
                 .setScale(starScale)
                 if(this.playStar){
-                    this.soundStar.play()
+                    this.soundStar.play({ volume: 0.3 })
                 }
                 
                 i++;

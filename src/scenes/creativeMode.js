@@ -28,7 +28,7 @@ export default class CreativeMode extends BasePhase{
         // Cria as funcionalidades únicas do modo criativo
         this.createPalette();
 
-        this.soundSplash = this.sound.add('soundSplash')
+        this.soundSplash = this.sound.add('soundClick')
     }
 
     createPalette() {

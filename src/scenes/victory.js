@@ -73,7 +73,7 @@ export default class Victory extends Phaser.Scene {
         .setScale(this.width/500)
 
         if (this.nextPhase ==  'CreativeMode'){
-            this.add.image(this.width/10, this.height/1.08, 'continueBtn')
+            this.add.image(this.width/10, this.height/1.08, 'creditsBtn')
             .setInteractive() 
             .on('pointerdown', () => {
                 this.scene.stop(this.phaseKey); // Para a fase atual

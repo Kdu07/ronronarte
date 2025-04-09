@@ -39,14 +39,14 @@ export default class LevelSelect extends Phaser.Scene {
         this.squareFrame1 = this.add.image(this.scale.width*0.2, this.scale.height*0.67, 'squareFrame').setVisible(false)
         .setScale(this.scale.width/450)
 
-        this.textPhase1 = this.add.text(this.scale.width*0.17, this.scale.height*0.49, 'Fase 1:', {
+        this.add.text(this.button1PhaseBlocked.x - this.button1PhaseBlocked.displayWidth/3, this.scale.height*0.49, 'Fase 1:', {
             fontFamily: 'font1',
-            fontSize:this.scale.width/40,
+            fontSize:this.scale.width/60,
             color: '#000000'
         });
-        this.textAlvo1 = this.add.text(this.scale.width*0.165, this.scale.height*0.81, 'Alvos: 3', {
+        this.add.text(this.button1PhaseBlocked.x - this.button1PhaseBlocked.displayWidth/2.3, this.scale.height*0.81, 'Alvos: 3', {
             fontFamily: 'font1', 
-            fontSize: '32px',
+            fontSize: this.scale.width/60,
             color:'#000000'
         });
 
@@ -62,14 +62,14 @@ export default class LevelSelect extends Phaser.Scene {
         this.squareFrame2 = this.add.image(this.scale.width*0.4, this.scale.height*0.67, 'squareFrame').setVisible(false)
         .setScale(this.scale.width/450)
 
-        this.textPhase1 = this.add.text(this.scale.width*0.37, this.scale.height*0.49, 'Fase 2:', {
-            fontFamily: 'Pixelify Sans',
-            fontSize:'32px',
+        this.add.text(this.button2PhaseBlocked.x - this.button2PhaseBlocked.displayWidth/3, this.scale.height*0.49, 'Fase 2:', {
+            fontFamily: 'font1', 
+            fontSize: this.scale.width/60,
             color: '#000000'
         });
-        this.textAlvo2 = this.add.text(this.scale.width*0.36, this.scale.height*0.81, 'Alvos: 5', {
-            fontFamily: 'Pixelify Sans', 
-            fontSize: '32px',
+        this.add.text(this.button2PhaseBlocked.x - this.button2PhaseBlocked.displayWidth/2.5, this.scale.height*0.81, 'Alvos: 5', {
+            fontFamily: 'font1', 
+            fontSize: this.scale.width/60,
             color:'#000000'
         });
 
@@ -85,14 +85,14 @@ export default class LevelSelect extends Phaser.Scene {
         this.squareFrame3 = this.add.image(this.scale.width*0.6, this.scale.height*0.67, 'squareFrame').setVisible(false)
         .setScale(this.scale.width/450)
 
-        this.textPhase1 = this.add.text(this.scale.width*0.57, this.scale.height*0.49, 'Fase 3:', {
-            fontFamily: 'Pixelify Sans',
-            fontSize:'32px',
+        this.add.text(this.button3PhaseBlocked.x - this.button3PhaseBlocked.displayWidth/3, this.scale.height*0.49, 'Fase 3:', {
+            fontFamily: 'font1', 
+            fontSize: this.scale.width/60,
             color: '#000000'
         } );
-        this.textAlvo3 = this.add.text(this.scale.width*0.565, this.scale.height*0.81, 'Alvos: 7', {
-            fontFamily: 'Pixelify Sans', 
-            fontSize: '32px',
+        this.add.text(this.button3PhaseBlocked.x - this.button3PhaseBlocked.displayWidth/2.3, this.scale.height*0.81, 'Alvos: 7', {
+            fontFamily: 'font1', 
+            fontSize: this.scale.width/60,
             color:'#000000'
         });
 
@@ -108,14 +108,14 @@ export default class LevelSelect extends Phaser.Scene {
         this.squareFrame4 = this.add.image(this.scale.width*0.8, this.scale.height*0.67, 'squareFrame').setVisible(false)
         .setScale(this.scale.width/450)
 
-        this.textPhase4 = this.add.text(this.scale.width*0.765, this.scale.height*0.49, 'Fase 4:', {
-            fontFamily: 'Pixelify Sans',
-            fontSize:'32px',
+        this.add.text(this.button4PhaseBlocked.x - this.button4PhaseBlocked.displayWidth/3, this.scale.height*0.49, 'Fase 4:', {
+            fontFamily: 'font1', 
+            fontSize: this.scale.width/60,
             color: '#000000'
         } );
-        this.textAlvo4 = this.add.text(this.scale.width*0.76, this.scale.height*0.81, 'Alvos: 10', {
-            fontFamily: 'Pixelify Sans', 
-            fontSize:'32px',
+        this.add.text(this.button4PhaseBlocked.x - this.button4PhaseBlocked.displayWidth/2.3, this.scale.height*0.81, 'Alvos: 10', {
+            fontFamily: 'font1', 
+            fontSize: this.scale.width/60,
             color: '#000000'
         })
 
