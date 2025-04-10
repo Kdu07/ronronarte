@@ -24,7 +24,7 @@ export default class Menu extends Phaser.Scene{
             this.scale.startFullscreen();
 
             setTimeout(() => {
-                
+                resizeGame()
             }, 1000);
 
             this.scene.stop('Menu') // Para o menu
