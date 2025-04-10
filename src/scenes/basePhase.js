@@ -209,7 +209,7 @@ export default class BasePhase extends Phaser.Scene {
         // Adiciona o pombo e torna interativo
         this.target = this.add.sprite(posX, posY, this.targetKey).setScale(this.width/350).setInteractive();
     
-        let coef = this.width/400 
+        let coef = this.width/80 
         // Configura a velocidade aleatória do pombo e a direção inicial de movimento
         let speedK = coef//this.width/200; // Coeficiente para a velocidade ser responsiva
         
@@ -219,7 +219,7 @@ export default class BasePhase extends Phaser.Scene {
         this.target.directionY = 1;
 
         // Configura aceleração do pombo no eixo y
-        let accK = coef/400 //this.width/70000; // Coeficiente para a aceleração ser responsiva
+        let accK = coef/220 //this.width/70000; // Coeficiente para a aceleração ser responsiva
         this.target.accelerationY = Phaser.Math.FloatBetween(accK*1, accK*1.5);
         this.target.VyMax = accK*300; // Velocidade máxima no eixo y
         this.target.VyMin = 0; // Velocidade mínima no eixo y
