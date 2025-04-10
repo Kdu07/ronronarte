@@ -9,20 +9,20 @@ export default class CreditsScreen extends Phaser.Scene {
         this.height = this.scale.height;
 
         // Espaçamento entre os elementos da tela de créditos.
-        const spacing = 50;
+        const spacing = this.height/30;
         let verticalPosition = this.height / 4;
 
         // Título com o texto "CRÉDITOS".
-        this.title = this.add.text(this.width / 2, verticalPosition/3, "Créditos")
+        this.title = this.add.text(this.width / 2, verticalPosition / 3, "Créditos")
             .setOrigin(0.5).setDepth(20)
-            .setStyle({color: '#FFFFFF', fontSize: '2rem', fontFamily: 'font1', fontStyle: 'bold'});
+            .setStyle({color: '#FFFFFF', fontSize: this.width/50, fontFamily: 'font1', fontStyle: 'bold'});
         
         verticalPosition += spacing * 1.5;
 
         // Título com o nome da equipe.
         this.teamName = this.add.text(this.width / 2, verticalPosition/2, "Equipe CatUp")
         .setOrigin(0.5).setDepth(20)
-        .setStyle({ color: '#FFFFFF', fontSize: '1.75rem', fontFamily:'font1', fontWeight: 'bold'});
+        .setStyle({ color: '#FFFFFF', fontSize: this.width/60, fontFamily:'font1', fontWeight: 'bold'});
         
         verticalPosition += spacing;
 
@@ -34,21 +34,21 @@ export default class CreditsScreen extends Phaser.Scene {
         names.forEach(name => {
             this.add.text(this.width / 2, verticalPosition/1.5, name)
             .setOrigin(0.5).setDepth(20)
-            .setStyle({ color: '#FFFFFF', fontSize: '1.5rem', fontFamily: 'font1'});
-            verticalPosition += spacing * 0.8;
+            .setStyle({ color: '#FFFFFF', fontSize: this.width/80, fontFamily: 'font1'});
+            verticalPosition += spacing * 1.4;
         });
 
-        verticalPosition += spacing * 0.5;
+        verticalPosition += spacing * 0.3;
 
         // Texto escrito "Parcerias".
         this.textRealization = this.add.text(this.width/2, verticalPosition/1.2, "PARCERIAS")
         .setOrigin(0.5).setDepth(20)
-        .setStyle({ color: '#FFFFFF', fontSize: '2rem', fontFamily: 'font1', fontStyle: 'bold'});
+        .setStyle({ color: '#FFFFFF', fontSize: this.width/60, fontFamily: 'font1', fontStyle: 'bold'});
 
         verticalPosition += spacing;
 
         // Ajustando posicionamento das imagens das logos do Inteli e da Dr.Pet, adicionando-as na tela.
-        const imageSpacing = 300; 
+        const imageSpacing = this.width/7; 
         let logoInteliHorizontalPosition = this.width / 2 - imageSpacing;
         let drPetHorizontalPosition = this.width / 2 + imageSpacing;
         this.add.image(logoInteliHorizontalPosition, verticalPosition, 'logoInteli').setDepth(20).setScale(this.width/6000);
