@@ -6,6 +6,7 @@ export default class LevelSelect extends Phaser.Scene {
 
     }
     create() {
+        this.scale.startFullscreen();
         this.buttonScale = this.scale.width/10050;
         this.lockScale = this.scale.width/900;
 
