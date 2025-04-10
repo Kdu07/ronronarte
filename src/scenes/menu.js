@@ -1,4 +1,3 @@
-import { completedPhases } from './splashScreen.js';
 import { resizeGame } from './splashScreen.js'
 
 
@@ -9,8 +8,7 @@ export default class Menu extends Phaser.Scene{
         super('Menu');
     }
 
-    create() {
-        resizeGame(this.game);        
+    create() {       
         // Cria imagens de background e botão jogar
         this.bgMenu = this.add.image(this.scale.width/2, this.scale.height/2, 'bgMenu')
         .setDisplaySize(this.scale.width, this.scale.height);
@@ -23,13 +21,7 @@ export default class Menu extends Phaser.Scene{
         this.startButton.on("pointerdown", () => {
             this.soundPlay = this.sound.add('soundPlayButton').play();
             // Coloca o jogo em tela cheia
-            this.scale.startFullscreen();
-
-            
-            setTimeout(() => {
-                resizeGame(this.game)
-            }, 1000);
-            
+            this.scale.startFullscreen();            
 
             setTimeout(() => {
                 this.scene.stop('Menu') // Para o menu
