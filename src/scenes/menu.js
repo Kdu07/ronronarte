@@ -20,10 +20,10 @@ export default class Menu extends Phaser.Scene{
         // Quando o botão jogar for clicado direciona para o menu de seleção de níveis
         this.startButton.on("pointerdown", () => {
             this.soundPlay = this.sound.add('soundPlayButton').play();
+            // Coloca o jogo em tela cheia
+            this.scale.startFullscreen();
 
-            setTimeout(() => {
-                // Coloca o jogo em tela cheia
-                this.scale.startFullscreen();
+            setTimeout(() => {    
                 this.scene.start('LevelSelect') // Direciona para a tela de seleção de níveis
                 this.scene.stop('Menu') // Para o menu
             }, 500);
