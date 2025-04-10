@@ -1261,7 +1261,7 @@ Logo abaixo (figuras 15, 16, 17, 18 e 19), estão as telas da versão básica do
 ## 5.2. Testes de jogabilidade (playtests)
 
 ### 5.2.1 Registros de testes
-&nbsp; &nbsp; &nbsp; &nbsp; A fim de verificar se o jogo RonRonArte foi está, de fato, com os requisitos levantados em funcionamento adequado, realizou-se teste de guerrilha no Inteli, teste de usabilidade no Ronron Café e teste com o público-alvo, por intermédio de um formulário do Google, conforme as seções 5.2.1.1 e 5.2.1.2 e 5.2.1.3
+&nbsp; &nbsp; &nbsp; &nbsp; A fim de verificar se o jogo RonRonArte está, de fato, com os requisitos levantados em funcionamento adequado, realizou-se teste de guerrilha no Inteli, teste de usabilidade no Ronron Café e teste com o público-alvo, por intermédio de um formulário do Google, conforme as seções 5.2.1.1 e 5.2.1.2 e 5.2.1.3
 
 ### 5.2.1.1: Registro dos testes de guerrilha
 
