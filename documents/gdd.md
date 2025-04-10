@@ -572,8 +572,7 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 
 <p align = "center">Figura 10: Concept Art - RonRonArte</p>
 
-![Untitled (1)](https://github.com/user-attachments/assets/7c89a7f7-7194-4e4f-9d52-2042f123cf9f)
-
+![Concept](https://github.com/user-attachments/assets/495bcea6-76b6-4b16-ae6e-ad703ccb8509)
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p>
 
