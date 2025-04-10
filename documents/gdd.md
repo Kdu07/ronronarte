@@ -1149,12 +1149,26 @@ Logo abaixo (figuras 15, 16, 17, 18 e 19), estão as telas da versão básica do
 
 ## 4.5. Revisão do MVP
 
-&nbsp; &nbsp; &nbsp; &nbsp;Nesta etapa de refinamento do jogo, houve diversos pontos de melhoria no design e experiência do usuário e funcionamento do jogo, como a interface da tela de seleção de modos de jogo, que agora, além de mais intuitiva e visualmente agradável, conta com uma lógica de desbloqueio de fases, de modo que se faz necessário passar pelo tutorial antes de acessar outros modos de jogo.
+&nbsp; &nbsp; &nbsp; &nbsp;Nesta etapa de refinamento do jogo, houve diversos pontos de melhoria no design, experiência do usuário e funcionamento do jogo, como a interface da tela de seleção de modos de jogo, que agora, além de mais intuitiva e visualmente agradável, conta com uma lógica de desbloqueio de fases, de modo que faz-se necessário passar pelo tutorial antes de acessar outros modos de jogo.
 
-&nbsp; &nbsp; &nbsp; &nbsp;Sobre as fases: foi alterado o plano de fundo e o texto de instrução do tutorial, adicionou-se o botão de "avançar", que leva do tutorial para a primeia fase, atualizou-se o som emitido ao abater um alvo, colocou-se um sprite autoral de criatura da segunda fase, a cobra coral, alteramos as informações exibidas na tela (agora exibimos apenas um contador de alvos), atualizamos as fontes de todos os textos do jogo de modo a deixá-los mais coerentes com a estética do jogo, e os botões para tocar e segurar estão totalmente funcionais.
+&nbsp; &nbsp; &nbsp; &nbsp;Sendo assim, seguem listados os refinamentos do MVP (Produto Mínimo Viável) que a equipe realizou: 
 
-&nbsp; &nbsp; &nbsp; &nbsp;E por fim, adicionamos uma tela de créditos que possui um botão correspondente na última fase, uma mensagem na primeira tela que sugere utilizar o dispositivo na horizontal para jogar, e consertamos "bugs" do modo criativo.
-
+<ul>
+<li>Adição de lógica de desbloqueamento de fases;</li>
+<li>Alteração do plano de fundo do tutorial;</li>
+<li>Alteração do texto de instrução do tutorial;</li>
+<li>Adição do botão "Avançar", o qual leva do tutorial para a primeira fase;</li>
+<li>Atualização do efeito sonoro emitido quando o gato acerta o alvo;</li>
+<li>Adição de sprite autoral de alvo da segunda fase (cobra coral);</li>
+<li>Alteração das informações exibidas nas fases (eliminação do tempo e exibição apenas do contador de alvos abatidos)</li>
+<li>Atualização da fonte de todos os textos do jogo, de modo a deixá-los mais coerentes com a estética do jogo;</li>
+<li>Refinamento dos botões de tocar e segurar, de forma a deixá-los totalmente funcionais;</li>
+<li>Adição de tela de créditos que possui um botão correspondente na última fase;</li>
+<li>Adição de mensagem na primeira tela que sugere utilizar o dispositivo na horizontal para jogar;</li>
+<li>Eliminação de "bugs" do modo criativo.</li>
+<li>Escurecimento da cor do sprite do alvo pombo;</li>
+<li>Aumento de 2 segundos no tempo de tirar print no modo criativo.</li>
+</ul>
 <div align = 'center'>
 <p align = 'center'> Figura 34: Nova tela de seleção de modos de jogo.</p>
 	<img src = "https://github.com/user-attachments/assets/652c5072-32f1-477c-b300-957661f59f52">
@@ -1361,9 +1375,9 @@ O que poderia melhorar no jogo?| Nada | Colocar mais quadros, diversificar mais 
 
 
 ### 5.2.2 Melhorias
-&nbsp; &nbsp; &nbsp; &nbsp;Com base nos testes de jogabilidade, a equipe CatUp tem como plano de melhorias aumentar o tamanho dos botões, dos alvos e dos textos - haja vista que todos os entrevistados no teste de guerrilha relataram algum desconforto com esses itens -, assim como retirar o temporizador e passar a pontuação para o canto da tela, conforme a sugestão do entrevistado 6 no teste de guerrilha. Ademais, em razão da distração dos gatos no teste de usabilidade com o som de miado ao acertar os alvos, a equipe vai alterar o efeito sonoro para uma frequência mais aguda. 
+&nbsp; &nbsp; &nbsp; &nbsp;Com base nos testes de jogabilidade, a equipe CatUp tem como plano de melhorias aumentar o tamanho dos botões, dos alvos e dos textos - haja vista que todos os entrevistados no teste de guerrilha relataram algum desconforto com esses itens -, assim como retirar o temporizador e passar a pontuação para o canto da tela, conforme a sugestão do entrevistado 6 no teste de guerrilha. Ademais, em razão da distração dos gatos no teste de usabilidade com o som de miado ao acertar os alvos, a equipe vai alterar o efeito sonoro para uma frequência mais aguda.
 
-&nbsp; &nbsp; &nbsp; &nbsp;Já a partir dos testes com o público alvo foi possível identificar como pontos de melhorias o aumento do tempo de tirar print do quadro no modo criativo e planejar a potencialização da responsividade em trabalhos futuros - já que tal incremento não poderá ser feito até o final da Sprint 5, haja vista o curto período de tempo para entregar o MVP do projeto ao parceiro e a complexidade técnica do aperfeiçoamento.
+&nbsp; &nbsp; &nbsp; &nbsp;Já a partir dos testes com o público alvo foi possível identificar como pontos de melhorias o aumento do tempo de tirar print do quadro no modo criativo, adicionando mais 2 segundos, e planejar a potencialização da responsividade em trabalhos futuros - já que tal incremento não poderá ser feito até o final da Sprint 5, haja vista o curto período de tempo para entregar o MVP do projeto ao parceiro e a complexidade técnica do aperfeiçoamento. Ademais, devido a sugestão de melhoria no formulário que o pombo poderia ser de uma cor mais chamativa, pois o cinza no azul não atraiu atenção ao gato do voluntário, a equipe escurecerá a cor do sprite do alvo pombo. 
 
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros (sprint 5)
