@@ -150,16 +150,17 @@ Exemplos:
 <hr>
 
 ### 1.1.3. Missão / Visão / Valores 
+&nbsp; &nbsp; &nbsp; &nbsp; Em linhas gerais, missão se refere à razão de existir de uma empresa ou negócio. A visão é o que essa empresa ou negócio aspira a ser. Por fim, os valores são princípios que norteiam o trabalho de uma companhia ou negócio (TOTVS, 2024). Sob essa perspectiva, menciona-se a missão, a visão e os valores de RonRonArte.
 
-## Missão:
+#### Missão:
 
 &nbsp; &nbsp; &nbsp; &nbsp;Contribuir para a educação pet em casa através da divulgação de conteúdo informativo nas redes sociais e venda de cursos e mentorias, com recursos que promovem a integração de tutores.
 
-## Visão:
+#### Visão:
 
 &nbsp; &nbsp; &nbsp; &nbsp;Ser referência no mercado pet focando na educação, oferecendo um serviço personalizado e exclusivo, e construir uma comunidade de tutores que compartilham experiências e aprendizados com seus pets e sobre eles também.
 
-## Valores:
+#### Valores:
 
 - Respeito aos animais (A marca Dr. Pet educa os tutores, promovendo amor e carinho entre os animais e as pessoas);
 
@@ -1425,6 +1426,8 @@ SCHWERING, Ramona. Como definir casos de teste e prioridades. [S. l.], 9 ago. 20
 
 SOLLITTO, André. Por que brasileiros têm preferido escolher gatos como companheiros do lar. Veja, 2022.
 Disponível em: https://veja.abril.com.br/comportamento/por-que-brasileiros-tem-preferido-escolher-gatos-como-companheiros-do-lar/. Acesso em: 18 fev. 2025.
+
+TOTVS. Entenda o que são missão, visão e valores e como defini-los. [S. l.], 27 fev. 2024. Disponível em: https://www.totvs.com/blog/gestao-para-recursos-humanos/missao-visao-e-valores/. Acesso em: 10 abr. 2025.
 
 
 
