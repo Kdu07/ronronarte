@@ -561,10 +561,10 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 
 ### 3.3.1. Locações Principais e/ou Mapas
 
-&nbsp; &nbsp; &nbsp; &nbsp;O jogo vem de uma viagem mágica no mundo da arte, coletando quadros de pintores que não receberam o devido reconhecimento de diversas nacionalidades que o jogador, o gato, visitará. Essa aventura será possível por meio de um portal, fantasioso, que servirá para o jogador poder acessar as fases. Os momentos históricos serão representados por animais que são presentes no cotidiano do período apresentado e pintores e artes pertencentes a cada respectiva época, por exemplo, o quadro da Maria Auxiliadora (quadro presente até o momento). O jogo não segue uma história linear, entretanto, o fluxo de fases segue, sendo um level liberado após o outro.
+&nbsp; &nbsp; &nbsp; &nbsp;Apesar de não haver mapas, o Ronronarte dispõe da dinâmica de desbloqueamento de fases. Cada fase do Ronronarte se situa em um contexto artístico, onde a localização dos personagens é um quadro, sob o qual a pintura dele precisa ser liberada com os toques do gato nos alvos. No modo criativo, o local do jogo é um quadro em branco, onde o próprio gato, ao abater os alvos, produz uma pintura com as tintas disponibilizadas. Já o tutorial se passa no céu, em um clima entardecido.
 
 ### 3.3.2. Navegação pelo mundo
-&nbsp; &nbsp; &nbsp; &nbsp;O jogador, sendo um gato, atravessará as fases atreves de um portal que o levará para épocas distintas e importantes para o conhecimento artístico da pintura. Com o passar das fases, elas se tornam selecionáveis a preferir do dono do gato, em que depois que o botão de “jogar”, poderá selecionar somente clicando com o dedo no botão referente a fase que for preferível a ser jogada.
+&nbsp; &nbsp; &nbsp; &nbsp;O gato e seu tutor vão explorar o universo artístico por meio do conhecimento de quatro pinturas, cada uma de um continente diferente. Em cada fase, o gato vai abater um alvo diferente - instigando seus instintos de caça - e liberar a imagem de um quadro, de forma que, após completá-la, o tutor encontrará informações sobre a obra e seu respectivo autor
 
 ### 3.3.3. Concept Art
 &nbsp; &nbsp; &nbsp; &nbsp;Uma Concept Art é o conceito visual das características e dos elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo (EBAC, 2023). Com base nisso, realizou-se uma Concept Art de RonRonArte (figura 10) de maneira a explicitar quais são os seus principais itens visuais e de história.
