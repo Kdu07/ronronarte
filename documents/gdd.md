@@ -655,7 +655,7 @@ Caso queira ver o diagrama de cenas no Figma, [clique aqui](https://www.figma.co
 <hr>
 
 - **Tela de start:** 
-&nbsp; &nbsp; &nbsp; &nbsp;A tela de start conta com uma imagem de fundo gerada por IA que apresenta elementos do storytelling do jogo como um portal, pinturas emolduradas e um gato. Além disso, há também um botão de "JOGAR", que ao ser pressionado redireciona para a tela de primeira fase do jogo.
+&nbsp; &nbsp; &nbsp; &nbsp;A tela de start conta com uma imagem de fundo que apresenta elementos do storytelling do jogo como um portal, pinturas emolduradas e um gato. Além disso, há também um botão de "JOGAR", que ao ser pressionado redireciona para a tela de primeira fase do jogo.
 
 - Classes: Menu;
 - Atributos e métodos: create() e resizeGame();
