@@ -489,13 +489,13 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 
 ### 2.2.4. Títulos semelhantes e inspirações
 
-&nbsp; &nbsp; &nbsp; &nbsp;Nosso jogo teve como inspiração outros títulos de jogos para gato, como:
+&nbsp; &nbsp; &nbsp; &nbsp;O jogo RonRonArte teve como inspiração outros títulos de jogos para gato, como:
 
-&nbsp; &nbsp; &nbsp; &nbsp;Paint for Cats: Jogo cuja principal mecânica é ser um "jogo de pintar" para gatos, em que um rato colorido atravessa a tela com o intuito do gato bater na tela tentando o acertar. Ao acertá-lo, deixa um "splash" de tinta em formato de pata na tela.
+&nbsp; &nbsp; &nbsp; &nbsp;Paint for Cats: jogo cuja principal mecânica é ser um "jogo de pintar" para gatos, em que um rato colorido atravessa a tela com o intuito do gato bater na tela tentando o acertar. Ao acertá-lo, deixa um "splash" de tinta em formato de pata na tela.
 
-&nbsp; &nbsp; &nbsp; &nbsp;Games for Cats: Jogo em que o gato deve acertar um animal correndo pela tela. Contempla diferentes tipos de animais com diferentes características e níveis de dificuldade.
+&nbsp; &nbsp; &nbsp; &nbsp;Games for Cats: jogo em que o gato deve acertar um animal correndo pela tela. Contempla diferentes tipos de animais com diferentes características e níveis de dificuldade.
 
-&nbsp; &nbsp; &nbsp; &nbsp;Nosso jogo visa mesclar mecânicas presentes nesses outros jogos com uma identidade visual própria, buscando uma experiência interativa e divertida para gato e tutor.
+&nbsp; &nbsp; &nbsp; &nbsp;O jogo RonRonArte visa mesclar mecânicas presentes nesses outros jogos com uma identidade visual própria, buscando uma experiência interativa e divertida para gato e tutor.
 
 ### 2.2.5. Tempo estimado de jogo
 
@@ -733,12 +733,12 @@ Caso queira ver o diagrama de cenas no Figma, [clique aqui](https://www.figma.co
 
 ## 3.6. Regras do jogo
 &nbsp; &nbsp; &nbsp; &nbsp; As regras do Ronronarte constituem o gato atingir com um toque os alvos (figuras de animais) que aparecem e se movem na tela e, em cada acerto dele, o tutor recompensará o seu pet com um petisco. Desse modo, é possível o gato associar o abater de alvos com a recompensa alimentícia. 
-Ademais, no modo criativo, as regras permanecem sendo o abater de alvos. No entanto, nesse modo, o gato poderá criar suas próprias pinturas, pois a cada abate um splash de tinta é jogado na tela. O alvo, as cores e as formas dos splashes podem ser determinadas pelo tutor no próprio modo criativo e, quando preferir, o usuário pode tirar um print da pintura que seu pet produziu. Logo, há a intersecção entre os instintos de caça do gato, da arte e da alimentação animal.
+&nbsp; &nbsp; &nbsp; &nbsp;Ademais, no modo criativo, as regras permanecem sendo o abater de alvos. No entanto, nesse modo, o gato poderá criar suas próprias pinturas, pois a cada abate um splash de tinta é jogado na tela. O alvo, as cores e as formas dos splashes podem ser determinadas pelo tutor no próprio modo criativo e, quando preferir, o usuário pode tirar um print da pintura que seu pet produziu. Logo, há a intersecção entre os instintos de caça do gato, da arte e da alimentação animal.
 
 ## 3.7. Mecânicas do jogo
 
 &nbsp; &nbsp; &nbsp; &nbsp; As mecânicas do jogo Ronronarte são simples e de fácil entendimento. A mecânica de touch funciona quando o gato acerta o alvo, revelando parte de um quadro, de modo que essa parte revelada seja localizada próxima ao ponto de contato do gato com a tela. No modo criativo, segue-se uma mecânica parecida, alterando apenas o resultado dela, em que, após a ação de clicar e acertar o alvo na tela, o gato irá pintar um quadro em branco. Ademais, há também a presença de alvos que chamam a atenção do gato na tela, cujo movimento é randomizado e começa numa posição dentro da tela, instigando a percepção e instinto de caça do gato.
-O Ronronarte conta também com um tutorial, cujo objetivo é fazer com que o tutor entenda como participar do gameplay com o seu gato e como recompensá-lo. Além disso, o modo tutorial serve também para ensinar ao gato como ele deve jogar, ensinando-o a mecânica de toque na tela, associando com a recompensa. Vale salientar também que o tutorial é infinito, de forma que o tutor tem autonomia para decidir quando é o momento ideal para começar a jogar as fases com seu gato, com base no aprendizado dele.
+&nbsp; &nbsp; &nbsp; &nbsp;O Ronronarte conta também com um tutorial, cujo objetivo é fazer com que o tutor entenda como participar do gameplay com o seu gato e como recompensá-lo. Além disso, o modo tutorial serve também para ensinar ao gato como ele deve jogar, ensinando-o a mecânica de toque na tela, associando com a recompensa. Vale salientar também que o tutorial é infinito, de forma que o tutor tem autonomia para decidir quando é o momento ideal para começar a jogar as fases com seu gato, com base no aprendizado dele.
 
 ## 3.8. Implementação Matemática de Animação/Movimento
 
@@ -746,31 +746,31 @@ O Ronronarte conta também com um tutorial, cujo objetivo é fazer com que o tut
 ### 3.8.1. Parâmetros de entrada
 
 
-O elemento gráfico que tem o movimento modelado matematicamente é o pombo que translada da origem ao centro da tela na cena tutorial (botões para abrir a cena: Jogar >>> Tutorial). As posições \(x\) e \(y\) iniciais são definidas pelas variáveis `const posInitialX = 0` e `const posInitialY = 0` (linhas 36 e 37 do arquivo tutorial.js, respectivamente). Ou seja, a posição inicial é dada por $(0\ \text{pixels}, 0\ \text{pixels})$. E a posição final é dada por $(x_f, y_f)$ com $x_f = \frac{larguraJogo}{2}$ (no código, larguraJogo é `this.scale.width`) e $y_f$ é calculado via MUV.
+&nbsp; &nbsp; &nbsp; &nbsp;O elemento gráfico que tem o movimento modelado matematicamente é o pombo que translada da origem ao centro da tela na cena tutorial (botões para abrir a cena: Jogar >>> Tutorial). As posições \(x\) e \(y\) iniciais são definidas pelas variáveis `const posInitialX = 0` e `const posInitialY = 0` (linhas 36 e 37 do arquivo tutorial.js, respectivamente). Ou seja, a posição inicial é dada por $(0\ \text{pixels}, 0\ \text{pixels})$. E a posição final é dada por $(x_f, y_f)$ com $x_f = \frac{larguraJogo}{2}$ (no código, larguraJogo é `this.scale.width`) e $y_f$ é calculado via MUV.
 
 
 ### 3.8.2. Definição do tempo total da animação
 
 
-O tempo total da animação é definido implicitamente no código pelo número de quadros até o pombo chegar à posição final. Como o jogo roda a 60 FPS, o tempo decorrido  \(t\) pode ser estimado a partir da contagem de quadros em `this.count++` (linha 54 do arquivo tutorial.js), conforme a equação:
+&nbsp; &nbsp; &nbsp; &nbsp;O tempo total da animação é definido implicitamente no código pelo número de quadros até o pombo chegar à posição final. Como o jogo roda a 60 FPS, o tempo decorrido  \(t\) pode ser estimado a partir da contagem de quadros em `this.count++` (linha 54 do arquivo tutorial.js), conforme a equação:
 
 
 $$
 t = \frac{count}{60}
 $$
 
-Com $count$ em frames. Dessa forma, nossas equações que seriam em função do tempo $t$, serão em função de $count$.
+&nbsp; &nbsp; &nbsp; &nbsp;Com $count$ em frames. Dessa forma, nossas equações que seriam em função do tempo $t$, serão em função de $count$.
 
 ### 3.8.3. Modelagem matemática
 
 
-O movimento do pombo ocorre nos eixos \(x\) e \(y\) simultaneamente, sendo que no eixo \(x\) o movimento é uniforme (MU) e no eixo \(y\) o movimento é uniformemente variado (MUV).
+&nbsp; &nbsp; &nbsp; &nbsp;O movimento do pombo ocorre nos eixos \(x\) e \(y\) simultaneamente, sendo que no eixo \(x\) o movimento é uniforme (MU) e no eixo \(y\) o movimento é uniformemente variado (MUV).
 
 
 #### 3.8.3.1 Movimentação no eixo \(x\) (MU)
 
 
-O deslocamento no eixo \(x\) ocorre com velocidade constante $v_x$ definida em `this.velX = 5` (linha 44 do arquivo tutorial.js), logo, o deslocamento é dado por:
+&nbsp; &nbsp; &nbsp; &nbsp;O deslocamento no eixo \(x\) ocorre com velocidade constante $v_x$ definida em `this.velX = 5` (linha 44 do arquivo tutorial.js), logo, o deslocamento é dado por:
 
 
 $$
@@ -778,10 +778,10 @@ x(t) = x_i + v_x \cdot t
 $$
 
 
-Onde $x(t)$ é a posição \(x\) em função do tempo, $x_i$ é a posição $x$ inicial (no nosso caso, $x_i = 0$), $v_x$ é a velocidade horizontal e $t$ é o tempo em segundos. E com isso podemos calcular a posição final no eixo $x$.
+&nbsp; &nbsp; &nbsp; &nbsp;Onde $x(t)$ é a posição \(x\) em função do tempo, $x_i$ é a posição $x$ inicial (no nosso caso, $x_i = 0$), $v_x$ é a velocidade horizontal e $t$ é o tempo em segundos. E com isso podemos calcular a posição final no eixo $x$.
 
 
-E $v_x$ é representada pela equação:
+&nbsp; &nbsp; &nbsp; &nbsp;E $v_x$ é representada pela equação:
 
 
 $$
@@ -789,7 +789,7 @@ v_x = v_0 + a \cdot t
 $$
 
 
-Com $a = 0$ (MU) e $v_0 = 5$:
+&nbsp; &nbsp; &nbsp; &nbsp;Com $a = 0$ (MU) e $v_0 = 5$:
 
 
 $$
@@ -797,7 +797,7 @@ v_x = 5 + 0 \cdot t
 $$
 
 
-Portanto:
+&nbsp; &nbsp; &nbsp; &nbsp;Portanto:
 
 
 $$
@@ -808,7 +808,7 @@ $$
 #### 3.8.3.2 Movimentação no eixo \(y\) (MUV)
 
 
-No eixo \(y\) o pombo parte do repouso, ou seja $v_0y = 0$ (definido por `this.velY = 0` na linha 45 do arquivo tutorial.js), e acelera com aceleração $a_y = 0.02$, definida em `this.accelerationY = 0.02` (linha 46 do arquivo tutorial.js). Dessa forma, a equação da posição \(y\) é:
+&nbsp; &nbsp; &nbsp; &nbsp;No eixo \(y\) o pombo parte do repouso, ou seja $v_0y = 0$ (definido por `this.velY = 0` na linha 45 do arquivo tutorial.js), e acelera com aceleração $a_y = 0.02$, definida em `this.accelerationY = 0.02` (linha 46 do arquivo tutorial.js). Dessa forma, a equação da posição \(y\) é:
 
 
 $$
@@ -816,7 +816,7 @@ y(t) = y_i + a_y \cdot t^2 \cdot \frac{1}{2}
 $$
 
 
-Onde $y(t)$ é a posição $y$ em função do tempo, $y_i$ é a posição inicial (no nosso caso, $y_i = 0$), $a_y$ é a aceleração no eixo $y$:
+&nbsp; &nbsp; &nbsp; &nbsp;Onde $y(t)$ é a posição $y$ em função do tempo, $y_i$ é a posição inicial (no nosso caso, $y_i = 0$), $a_y$ é a aceleração no eixo $y$:
 
 
 $$
@@ -830,10 +830,10 @@ e $t$ é o tempo em segundos. E com isso podemos calcular a posição final no e
 ### 3.8.4. Exemplo Numérico
 
 
-Dadas as equações supracitadas, tomamos $(x_0, y_0) = (0, 0)$, $v_0x = 5$, $v_0y = 0$, $a = 0.02$, $x_f = \frac{larguraJogo}{2}$ e calcularemos a posição final do pombo.
+&nbsp; &nbsp; &nbsp; &nbsp;Dadas as equações supracitadas, tomamos $(x_0, y_0) = (0, 0)$, $v_0x = 5$, $v_0y = 0$, $a = 0.02$, $x_f = \frac{larguraJogo}{2}$ e calcularemos a posição final do pombo.
 
 
-Primeiramente determinamos o tempo total do movimento utilizando a equação da posição final no eixo $x$, e como nossa movimentação é atualizada por frame, escreveremos as equações em função dos frames e utilizaremos a relação $t = \frac{count}{60}$ para determinarmos o tempo (Neste exemplo tomaremos $largura Jogo = 1540$):
+&nbsp; &nbsp; &nbsp; &nbsp;Primeiramente, determina-se o tempo total do movimento utilizando a equação da posição final no eixo $x$, e como a movimentação é atualizada por frame, escreve-se as equações em função dos frames e utiliza-se a relação $t = \frac{count}{60}$ para determinarmos o tempo (neste exemplo, tem-se $largura Jogo = 1540$):
 
 
 $$
@@ -865,7 +865,7 @@ t = 2.5667\ \text{segundos}
 $$
 
 
-Agora utilizamos o tempo em segundos para determinar a posição final no eixo $y$:
+&nbsp; &nbsp; &nbsp; &nbsp;Agora, utiliza-se o tempo em segundos para determinar a posição final no eixo $y$:
 
 
 $$
@@ -888,7 +888,7 @@ $$
 y_f = 237.16\ \text{pixels}
 $$
 
-Assim, concluímos que a posição final do pombo será $(770\ \text{pixels}, 237\ \text{pixels})$.
+&nbsp; &nbsp; &nbsp; &nbsp;Assim, conclui-se que a posição final do pombo será $(770\ \text{pixels}, 237\ \text{pixels})$.
 
 
 ### 3.8.5. Implementação no código
@@ -919,7 +919,7 @@ Dentro da função `create()` definimos os parâmetros:
 
 
 ```
-Dentro da função `update()` implementamos o movimento:
+Dentro da função `update()` implementa-se o movimento:
 ```javascript
   // Confere se o personagem chegou no meio da tela
         if (this.character.x <= this.scale.width/2){
@@ -963,7 +963,7 @@ Dentro da função `update()` implementamos o movimento:
 
 
 ```
-Além da implementação matemática, repare que executamos uma série de comandos `console.log()` imprimindo valores de posição e velocidade para validação da modelagem. Incluindo posição final, velocidade final nos dois eixos, e tempo total da animação quando o pombo atinge o centro da tela.
+&nbsp; &nbsp; &nbsp; &nbsp;Além da implementação matemática, repare que são executados uma série de comandos `console.log()` imprimindo valores de posição e velocidade para validação da modelagem. Incluindo posição final, velocidade final nos dois eixos, e tempo total da animação quando o pombo atinge o centro da tela.
 
 
 # <a name="c4"></a>4. Desenvolvimento do Jogo
