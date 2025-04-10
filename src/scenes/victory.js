@@ -4,6 +4,7 @@ export default class Victory extends Phaser.Scene {
     }
 
     init(data){
+        // Define os atributos de informações da fase com base no dicionário passado
         this.artistKey = data.configDict['artistKey']
         this.backgroundKey = data.configDict['backgroundKey']
         this.textArtist = data.configDict['textArtist']
@@ -16,32 +17,36 @@ export default class Victory extends Phaser.Scene {
     }
 
     create() {
+        // Facilita a escrita da variável para o tamanho da tela
         this.width = this.scale.width;
         this.height = this.scale.height;
         
+        // Background
         this.bg = this.add.image(this.scale.width/2, this.scale.height/2, 'bgVictoryScene')
         .setDisplaySize(this.scale.width, this.scale.height)
 
+        // Quadro e borda
         let numP = 2.6;
         this.painting = this.add.image(this.width / 2.5, this.height / 3.5, this.backgroundKey)
             .setDisplaySize(this.width/numP, this.height/numP);
         this.add.image(this.painting.x, this.painting.y, "frame")
             .setDisplaySize(this.width/numP, this.height/numP);
         
+        // Artista e borda
         let numA = numP*2;
         this.artist = this.add.image(this.width / 1.24, this.height / 3.5, this.artistKey)
             .setDisplaySize(this.width/numA, this.width/numA);
         this.add.image(this.artist.x, this.artist.y, "frame")
             .setDisplaySize(this.width/numA, this.width/numA);
 
-        
+        // Caixa de Textos
         this.paintingTextBox = this.add.image(this.painting.x, this.height / 1.5, "victoryTextBox")
             .setDisplaySize(this.width/2.5, this.height/numP);
         
         this.artistTextBox = this.add.image(this.artist.x, this.height / 1.5, "victoryTextBox")
             .setDisplaySize(this.width/3, this.width/numA);
     
-            
+        // Textos
         this.add.text(this.width/4.5, this.height/1.8, this.textPainting, {
             fontFamily:'font1', 
             fontSize:this.width/85, 
@@ -64,6 +69,7 @@ export default class Victory extends Phaser.Scene {
             .setDisplaySize(this.width/4.5, this.width/4.5).setFlip(true,false);
         this.target.play(this.animKey);
 
+        // Botão de continuar
         this.add.image(this.width/1.15, this.height/1.08, 'continueBtn')
         .setInteractive() 
         .on('pointerdown', () => {
@@ -72,7 +78,9 @@ export default class Victory extends Phaser.Scene {
         })
         .setScale(this.width/500)
 
+        // Se está na fase 4
         if (this.nextPhase ==  'CreativeMode'){
+            // Adiciona botão de créditos
             this.add.image(this.width/10, this.height/1.08, 'creditsBtn')
             .setInteractive() 
             .on('pointerdown', () => {

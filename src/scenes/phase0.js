@@ -72,7 +72,7 @@ export default class Phase0 extends BasePhase {
     }
 
     updateContinueButton(){
-        // Cria o botão de pular o tutorial
+        // Cria o botão de segurar de pular o tutorial
         this.continueBtn.on('pointerdown', (pointer) => {
             this.hold1 = true
         });

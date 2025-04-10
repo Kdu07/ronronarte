@@ -13,8 +13,8 @@ export default class Tutorial extends Phaser.Scene {
         this.tutorialTexts = [
             'Olá humano, bem-vindo ao RonRonArte!',
             'Seu gato está prestes a embarcar em uma jornada artística!\n\nPara ensiná-lo a jogar, siga estas instruções:',
-            'Prepare o petisco favorito do seu gato para despertar interesse.\n\nNo ínicio, recompense seu gato por todos os toques na tela.',
-            'Quando perceber que seu gato aprendeu a bater na tela,\n\nentregue o petisco apenas quando ele acertar o alvo',
+            'Prepare o petisco favorito do seu gato para despertar interesse.\n\nNo ínicio, recompense seu gato por todos os toques, colocando o petisco na tela.',
+            'Quando perceber que seu gato aprendeu a bater na tela, espere ele acertar o alvo. \n\nDepois coloque o petisco na patinha que será exibida no jogo.',
             'Se divirta e descubra diferentes modos de jogo a medida que avança com seu pet!',
             'Esse é meu amigo pombo, ele e outros bichinhos servirão de alvos para o seu gato',
             'Está pronto para a aventura?\n\nClique no pombo para começar o jogo!']
@@ -35,7 +35,7 @@ export default class Tutorial extends Phaser.Scene {
             .setScale(this.scale.width/800);
             this.tutorialText = this.add.text(this.scale.width/8, this.scale.height/1.7, this.tutorialTexts[this.clicks], {
                 fontFamily:'font1', 
-                fontSize: this.scale.width/35, 
+                fontSize: this.scale.width/40, 
                 fill:'#000',
                 wordWrap: { width: this.textBox.displayWidth - this.textBox.displayWidth/2.4, useAdvancedWrap: true }
             });
