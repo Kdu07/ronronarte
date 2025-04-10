@@ -23,13 +23,16 @@ export default class Menu extends Phaser.Scene{
             // Coloca o jogo em tela cheia
             this.scale.startFullscreen();
             
+            /*
             setTimeout(() => {
                 resizeGame()
             }, 1000);
+            */
 
             setTimeout(() => {
-                this.scene.stop('Menu') // Para o menu
                 this.scene.start('LevelSelect') // Direciona para a tela de seleção de níveis
+                resizeGame();
+                this.scene.stop('Menu') // Para o menu
             }, 1000);
         });
     };
