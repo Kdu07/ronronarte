@@ -35,27 +35,27 @@ export default class Victory extends Phaser.Scene {
             .setDisplaySize(this.width/numA, this.width/numA);
 
         
-        this.add.image(this.painting.x, this.height / 1.5, "victoryTextBox")
+        this.paintingTextBox = this.add.image(this.painting.x, this.height / 1.5, "victoryTextBox")
             .setDisplaySize(this.width/2.5, this.height/numP);
         
-        this.add.image(this.artist.x, this.height / 1.5, "victoryTextBox")
+        this.artistTextBox = this.add.image(this.artist.x, this.height / 1.5, "victoryTextBox")
             .setDisplaySize(this.width/3, this.width/numA);
     
             
-        this.add.text(this.width/4.5, this.height/1.8, this.textPainting, 
-            {fontFamily:'Futura', fontSize:this.width/60, fill:'#000'});
+        this.add.text(this.width/4.5, this.height/1.8, this.textPainting, {
+            fontFamily:'font1', 
+            fontSize:this.width/85, 
+            fill:'#000', 
+            wordWrap: { width: this.paintingTextBox.displayWidth - this.paintingTextBox.displayWidth/15, useAdvancedWrap: true }});
     
-        this.add.text(this.width/1.52, this.height/1.8, this.textArtist, 
-            {fontFamily:'Futura', fontSize:this.width/60, fill:'#000'});
+        this.add.text(this.width/1.52, this.height/1.8, this.textArtist, {
+            fontFamily:'font1', 
+            fontSize:this.width/85, 
+            fill:'#000', 
+            wordWrap: { width: this.artistTextBox.displayWidth - this.artistTextBox.displayWidth/15, useAdvancedWrap: true }});
                 
         
         // Adiciona o gato
-        this.anims.create({
-            key: 'animCat',
-            frames: this.anims.generateFrameNumbers('cat', { start: 0, end: 3 }), // Define os frames do spritesheet que serão usados 
-            frameRate: 10, // Define o número de frames por segundos
-            repeat: -1 // Define a animação como contínua
-        });
         this.cat = this.add.sprite(this.width/10, this.height/1.38, 'cat').setScale(this.width/150).setFlip(true,false);
         this.cat.play('animCat');
 
@@ -68,16 +68,18 @@ export default class Victory extends Phaser.Scene {
         .setInteractive() 
         .on('pointerdown', () => {
             this.scene.stop(this.phaseKey); // Para a fase atual
-            this.scene.start(this.nextPhase);
+            this.scene.start('LevelSelect');
         })
         .setScale(this.width/500)
-    }
 
-    update(){
-        this.input.on('pointerdown', (pointer) => {
-            //console.log("X: " + this.width/pointer.x)
-            //console.log("Y: " + this.height/pointer.y)
-            //console.log('----------------------------------')
-        })
+        if (this.nextPhase ==  'CreativeMode'){
+            this.add.image(this.width/10, this.height/1.08, 'creditsBtn')
+            .setInteractive() 
+            .on('pointerdown', () => {
+                this.scene.stop(this.phaseKey); // Para a fase atual
+                this.scene.start('CreditsScreen'); // Inicia os créditos
+            })
+            .setScale(this.width/500)
+        }
     }
 }
