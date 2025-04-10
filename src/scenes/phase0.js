@@ -1,4 +1,5 @@
 import BasePhase from "./basePhase.js";
+import { completedPhases } from './splashScreen.js';
 
 // Classe de cena a ser exportada
 export default class Phase0 extends BasePhase {
@@ -52,7 +53,7 @@ export default class Phase0 extends BasePhase {
         this.hold1 = false;
 
         // Cria um botão de pause na tela
-        this.continueBtn = this.add.image(this.width/1.05, this.height/27, 'continueBtn').setScale(this.width/1100)
+        this.continueBtn = this.add.image(this.width/1.12, this.height/20, 'advanceBtn').setScale(this.width/600)
         
         // Torna o botão de pause clicável
         this.continueBtn.setInteractive()
@@ -64,14 +65,14 @@ export default class Phase0 extends BasePhase {
             repeat: 0
         })
 
-        this.spriteLoading1 = this.add.sprite(this.width/1.05, this.height/12, 'spriteLoading')
-        .setScale(this.width/8000)
+        this.spriteLoading1 = this.add.sprite(this.continueBtn.x - this.continueBtn.displayWidth, this.continueBtn.y, 'spriteLoading')
+        .setScale(this.width/200)
         .setInteractive()
         .setVisible(false);
     }
 
     updateContinueButton(){
-        // Cria o botão de pular o tutorial
+        // Cria o botão de segurar de pular o tutorial
         this.continueBtn.on('pointerdown', (pointer) => {
             this.hold1 = true
         });
@@ -85,12 +86,15 @@ export default class Phase0 extends BasePhase {
             this.spriteLoading1.anims.play('SpriteLoading',true);
 
             if (this.spriteLoading1.anims.currentFrame.index == 5){
-                this.soundContinue.play({ volume: 0.5 }); // Toca o som de pombo quando o pombo é clicado
+                completedPhases['Tutorial'] = true
+                this.soundContinue.play({ volume: 0.5 }); 
                 this.time.delayedCall(1000, () => {
-                    this.soundContinue.stop(); // Para o som do pombo após 1000ms (1s)
+                    this.soundContinue.stop();
                 });
-                this.scene.start("Phase1");
+                this.soundTarget.stop();
+                this.scene.start("LevelSelect");
                 this.scene.stop(this.phaseKey);
+                this.scene.get('Select2');
             }
         }else{
             this.spriteLoading1.anims.stop().setFrame(0).setVisible(false);

@@ -28,7 +28,7 @@ export default class CreativeMode extends BasePhase{
         // Cria as funcionalidades únicas do modo criativo
         this.createPalette();
 
-        this.soundSplash = this.sound.add('soundSplash')
+        this.soundSplash = this.sound.add('soundClick')
     }
 
     createPalette() {
@@ -129,10 +129,11 @@ export default class CreativeMode extends BasePhase{
         .setDepth(20);
       
         // Adiciona o asset do carregamento na tela
-        this.paletteLoad = this.add.sprite(this.paletteBtn.x, this.paletteBtn.y + this.paletteBtn.displayHeight/2, 'spriteLoading')
-        .setScale(this.width/8000)
+        this.paletteLoad = this.add.sprite(this.paletteBtn.x - this.paletteBtn.displayWidth*1.5, this.paletteBtn.y, 'spriteLoading')
+        .setScale(this.width/200)
         .setInteractive()
-        .setVisible(false);
+        .setVisible(false)
+        .setDepth(20);
 
         // Quando o mouse clica o botão, define a variavel de segurar como true
         this.paletteBtn.on('pointerdown', () => {
@@ -157,10 +158,11 @@ export default class CreativeMode extends BasePhase{
         .setInteractive();
       
         // Adiciona o asset do carregamento na tela
-        this.printLoad = this.add.sprite(this.printBtn.x, this.printBtn.y + this.printBtn.displayHeight/1.5, 'spriteLoading')
-        .setScale(this.width/8000)
+        this.printLoad = this.add.sprite(this.printBtn.x + this.printBtn.displayWidth*1.5, this.printBtn.y, 'spriteLoading')
+        .setScale(this.width/200)
         .setInteractive()
-        .setVisible(false);
+        .setVisible(false)
+        .setDepth(20);
 
         // Quando o mouse clica o botão, define a variavel de segurar como true
         this.printBtn.on('pointerdown', () => {
@@ -233,47 +235,49 @@ export default class CreativeMode extends BasePhase{
     clickTarget(){
         // Quando o mouse é clicado
         this.input.on('pointerdown', (pointer) => {
-            // Se o ponteiro está no do alvo
-            if (this.target.getBounds().contains(pointer.x, pointer.y)) {
-                this.stopped = true; // Alvo para de se movimentar
-
-                // Para o som do alvo
-                if(this.soundTarget){
-                    this.soundTarget.stop();
-                }
-
-                this.soundSplash.play({ volume: 0.5 }); // Toca o som configurado quando o alvo é clicado
-                this.time.delayedCall(1000, () => {
-                    this.soundSplash.stop(); // Para o som do clique após 1000ms (1s)
-                });
-
-                this.target.destroy(); // Destrói o alvo
+            if(this.target != null){
                 
-                // Cria um splash no local do clique
-                // Se o splash selecionado foi o aleatório
-                if (this.selectedSplash == 'splashRandom'){
-                    // Seleciona um splash com base em índices aleatórios
-                    let rand1 = Phaser.Math.Between(0, 2);
-                    let rand2 = Phaser.Math.Between(0, 4);
-                    let randSplash = this.splashes[rand1][rand2]
+                // Se o ponteiro está no do alvo
+                if (this.target.getBounds().contains(pointer.x, pointer.y)) {
+                    this.stopped = true; // Alvo para de se movimentar
 
-                    // Adiciona o splash selecionado na tela
-                    this.splash = this.add.image(pointer.x, pointer.y, randSplash)
-                    .setScale(this.width/400)
-                    .setDepth(0.1);
-                }else{
-                    // Adiciona o splash selecionado na tela
-                    this.splash = this.add.image(pointer.x, pointer.y, this.selectedSplash)
-                    .setScale(this.width/400)
-                    .setDepth(0.1);
+                    // Para o som do alvo
+                    if(this.soundTarget){
+                        this.soundTarget.stop();
+                    }
+
+                    this.soundSplash.play({ volume: 0.3 }); // Toca o som configurado quando o alvo é clicado
+                    this.time.delayedCall(1000, () => {
+                        this.soundSplash.stop(); // Para o som do clique após 1000ms (1s)
+                    });
+
+                    this.target.destroy(); // Destrói o alvo
+                    
+                    // Cria um splash no local do clique
+                    // Se o splash selecionado foi o aleatório
+                    if (this.selectedSplash == 'splashRandom'){
+                        // Seleciona um splash com base em índices aleatórios
+                        let rand1 = Phaser.Math.Between(0, 2);
+                        let rand2 = Phaser.Math.Between(0, 4);
+                        let randSplash = this.splashes[rand1][rand2]
+
+                        // Adiciona o splash selecionado na tela
+                        this.splash = this.add.image(pointer.x, pointer.y, randSplash)
+                        .setScale(this.width/400)
+                        .setDepth(0.1);
+                    }else{
+                        // Adiciona o splash selecionado na tela
+                        this.splash = this.add.image(pointer.x, pointer.y, this.selectedSplash)
+                        .setScale(this.width/400)
+                        .setDepth(0.1);
+                    }
+                    
+                    // Adiciona um novo alvo
+                    this.spawnTarget();
+                    this.target.setDepth(20);
                 }
-                
-                // Adiciona um novo alvo
-                this.spawnTarget();
-                this.target.setDepth(20);
             }
         });
-        
     }
 
     // Função que mostra e esconde os botões da paleta
@@ -302,18 +306,21 @@ export default class CreativeMode extends BasePhase{
     printMode(){
         // Deixa invisível todos os elementos que não devem aparecer na print
         this.target.destroy();
+        this.target = null
+        this.stopped = true
         this.paletteBtn.setVisible(false);
         this.pauseBtn.setVisible(false);
         this.printBtn.setVisible(false);
         this.soundTarget.pause()
 
         // Adiciona na tela um aviso para tirar um printscreen
-        this.printText = this.add.text(this.width/4, this.height/2, 'Tire um printscreen da tela!', {fontFamily:'Futura',fontSize:this.width/22, fill:'#000'}).setDepth(20);
+        this.printText = this.add.image(this.width/2, this.height/2, 'takeAPrintScreen').setDepth(20)
+        .setScale(this.width/1000);
 
         // Desativa o aviso após 2 segundos
         setTimeout(() => {
             this.printText.setVisible(false);
-        }, 2000);
+        }, 2500);
 
         // Retorna os elementos à tela após 5 segundos
         setTimeout(() => {
@@ -323,6 +330,6 @@ export default class CreativeMode extends BasePhase{
             this.pauseBtn.setVisible(true);
             this.printBtn.setVisible(true);
             this.soundTarget.play()
-        }, 5000);
+        }, 8000);
     }
 }

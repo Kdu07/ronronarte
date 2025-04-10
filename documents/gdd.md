@@ -35,18 +35,17 @@
 <br>
 
 
-# <a name="c1"></a>1. Introdução (sprints 1 a 4)
+# <a name="c1"></a>1. Introdução 
 
 ## 1.1. Plano Estratégico do Projeto
 
-### 1.1.1. Contexto da indústria (sprint 2)
-&nbsp; &nbsp; &nbsp; &nbsp;Conhecer o contexto da indústria de um cliente é basilar para a realização de um projeto de sucesso, uma vez que tal abordagem possibilita tomadas de decisões estratégicas ao longo de todo processo de desenvolvimento. Nesse sentido, é significativo pontuar o escopo da empresa parceira do jogo refernte a esta documentação: Dr. Pet. Ela faz parte do mercado de serviços para pets no Brasil, sendo voltada à educação e ao entretenimento de tutores, cães e gatos, por intermédio de cursos online e livros voltados à essa temática. Ademais, outra vertente adotada por ela é a aparição de seu fundador (Alexandre Rossi) em programas de televisão, de modo a divulgar conteúdos inerentes à empresa e a pets de um modo geral, além da utilização das redes sociais para tal. Portanto, a marca atua com veemência no cenário supracitado.
-
-
+### 1.1.1. Contexto da indústria 
+&nbsp; &nbsp; &nbsp; &nbsp;É válido destacar que as tendências do mercado pet são de crescimento e de ampliação. Nesse sentido, um dos argumentos que sustentam esse fato é uma pesquisa da Comissão de Animais de Companhia (COMAC), feita em 2022, a qual revela que 56% dos domicílios brasileiros têm pelo menos um cão ou gato, ou seja, a abundância de público desse setor é significativamente alta (Mikos, 2024). Paralelamente, é notório que a maior convivência dos donos com seus pets durante a pandemia do covid-19 fez com que os serviços e produtos desse setor ganhassem, diferentemente da maioria das outras áreas, mais visibilidade e importância com a quarentena. Assim, de forma mais específica, é possível prever tendências principalmente no que tange à alimentação, ao entretenimento e ao veterinário, haja vista que os laços entre dono e pet são reforçados no cenário hodierno - conforme supracitado - e esses aspectos tornam-se mais necessários. <br> <br>
+&nbsp; &nbsp; &nbsp; &nbsp;Posto isso, é válido destacar a atuação da Dr.Pet nesse setor. A empresa faz parte do mercado de serviços para pets no Brasil, sendo voltada à educação e ao entretenimento de tutores, cães e gatos, por intermédio de cursos online e livros voltados a essa temática. Ademais, outra vertente adotada por ela é a aparição de seu fundador (Alexandre Rossi) em programas de televisão, de modo a divulgar conteúdos inerentes à empresa e a pets de modo geral, além da utilização das redes sociais para tal efeito. Portanto, a marca atua com veemência no cenário descrito.
 
 #### 1.1.1.1. Modelo de 5 Forças de Porter 
 
-&nbsp; &nbsp; &nbsp; &nbsp;De acordo com o livro de Magretta (2019), que detalha o estudos de Michael Porter, o modelo das 5 Forças de Porter é um framework de análise setorial que permite entender o nível de competitividade de um mercado. O modelo apresenta 5 critérios: Rivalidade entre concorrentes, poder de negociação dos fornecedores, poder de negociação dos compradores, ameaça de novos entrantes e ameaça de produtos substitutos, e avaliamo a força de cada um deles e como eles influenciam a competitividade do setor em análise. O modelo determina que, quanto maior uma força for, maior o poder de ação ela tem sobre um negócio.
+&nbsp; &nbsp; &nbsp; &nbsp;De acordo com o livro de Magretta (2019), que detalha os estudos de Michael Porter, o modelo das 5 Forças de Porter é um framework de análise setorial que permite entender o nível de competitividade de um mercado. O modelo apresenta 5 critérios: rivalidade entre concorrentes, poder de negociação dos fornecedores, poder de negociação dos compradores, ameaça de novos entrantes e ameaça de produtos substitutos, e avaliamo a força de cada um deles e como eles influenciam a competitividade do setor em análise. O modelo determina que, quanto maior uma força for, maior o poder de ação ela tem sobre um negócio. Desse modo, a figura 1 mostra tal análise aplicada ao setor pet.
 
 <p align = "center">Figura 1: modelo de 5 forças de Porter</p>
 
@@ -56,7 +55,7 @@
 
 #### 1. Rivalidade entre os concorrentes:
 
-&nbsp; &nbsp; &nbsp; &nbsp;Essa força avalia o nível de competição dentro de um setor e seu impacto na lucratividade das empresas. Uma rivalidade intensa ocorre quando há muitos concorrentes de tamanho semelhante, crescimento lento do mercado, produtos pouco diferenciados ou altos custos fixos, levando a disputas agressivas de preços, marketing e inovação.
+&nbsp; &nbsp; &nbsp; &nbsp;Essa força avalia o nível de competição dentro de um setor e seu impacto na lucratividade das empresas. Uma rivalidade intensa ocorre quando há muitos concorrentes de tamanho semelhante, crescimento lento do mercado, produtos pouco diferenciados ou altos custos fixos, levando a disputas agressivas de preços, marketing e inovação (Magretta, 2019).
 
 - A marca Dr. Pet encontra poucos concorrentes diretos no setor de educação pet e entretenimento pela televisão, com apenas alguns exemplos de personalidades que abordam o mesmo assunto. Já no setor de vendas de livros e cursos para adestramento a marca possui concorrência com algumas plataformas como hotmart;
 
@@ -64,21 +63,21 @@
 
 #### 2. Ameaça de novos entrantes:
 
-&nbsp; &nbsp; &nbsp; &nbsp;Essa força avalia o quanto a entrada de novas empresas pode afetar a competitividade e a lucratividade de um setor. Se houver poucas barreiras de entrada, como baixos custos iniciais, acesso fácil a canais de distribuição e pouca regulamentação, novos concorrentes podem surgir rapidamente, aumentando a competição e pressionando preços e margens de lucro para baixo.
+&nbsp; &nbsp; &nbsp; &nbsp;A ameaça de novos entrantes avalia o quanto a entrada de novas empresas pode afetar a competitividade e a lucratividade de um setor (Magretta, 2019). Se houver poucas barreiras de entrada, como baixos custos iniciais, acesso fácil a canais de distribuição e pouca regulamentação, novos concorrentes podem surgir rapidamente, aumentando a competição e pressionando preços e margens de lucro para baixo.
 
 - Principais barreiras: Visibilidade na mídia, persona comunicativa e carismática;
 - Impacto potencial: Crescimento no setor de educação pet;
 
 #### 3. Poder de barganha dos fornecedores:
 
-&nbsp; &nbsp; &nbsp; &nbsp;Essa força examina a influência que os fornecedores exercem sobre as empresas do setor. Se houver poucos fornecedores, produtos insubstituíveis ou altos custos de troca, eles podem impor preços elevados, prazos rígidos e condições desfavoráveis, reduzindo a lucratividade das empresas compradoras. Já quando há muitos fornecedores, produtos padronizados e facilidade de substituição, o poder de barganha diminui, permitindo que as empresas negociem melhores condições. A dependência de matérias-primas específicas ou tecnologia exclusiva também pode aumentar a força dos fornecedores no mercado.
+&nbsp; &nbsp; &nbsp; &nbsp;Essa força examina a influência que os fornecedores exercem sobre as empresas do setor (Magretta, 2019). Se houver poucos fornecedores, produtos insubstituíveis ou altos custos de troca, eles podem impor preços elevados, prazos rígidos e condições desfavoráveis, reduzindo a lucratividade das empresas compradoras . Já quando há muitos fornecedores, produtos padronizados e facilidade de substituição, o poder de barganha diminui, permitindo que as empresas negociem melhores condições. Nesse sentido, a dependência de matérias-primas específicas ou tecnologia exclusiva também pode aumentar a força dos fornecedores no mercado.
 
 - Impacto: No caso de rescisão contratual com a emissora, haveria uma redução no alcance do Dr. Pet ao público;
 - Alternativas de fornecimento: Outras plataformas para vender cursos, outras emissoras de programas de televisão.
 
 #### 4. Poder de barganha dos clientes:
 
-&nbsp; &nbsp; &nbsp; &nbsp;Essa força avalia a influência dos consumidores sobre as empresas do setor. Quando os clientes têm muitas opções, produtos pouco diferenciados ou baixo custo de troca, eles podem exigir preços mais baixos, melhor qualidade e melhores serviços, reduzindo a lucratividade das empresas. Esse poder aumenta quando compram em grandes volumes ou têm acesso fácil a informações sobre preços e concorrentes. Por outro lado, quando há poucos clientes, produtos exclusivos ou alta dependência da empresa, o poder de barganha dos consumidores diminui, permitindo que a empresa mantenha margens mais elevadas.
+&nbsp; &nbsp; &nbsp; &nbsp;Essa força avalia a influência dos consumidores sobre as empresas do setor. Quando os clientes têm muitas opções, produtos pouco diferenciados ou baixo custo de troca, eles podem exigir preços mais baixos, melhor qualidade e melhores serviços, reduzindo a lucratividade das empresas (Magretta, 2019). Esse poder aumenta quando compram em grandes volumes ou têm acesso fácil a informações sobre preços e concorrentes. Por outro lado, quando há poucos clientes, produtos exclusivos ou alta dependência da empresa, o poder de barganha dos consumidores diminui, permitindo que a empresa mantenha margens mais elevadas.
 
 &nbsp; &nbsp; &nbsp; &nbsp;O poder de barganha dos clientes é considerado alto, pois há o fácil acesso a conteúdos similares por preços similares ou inferiores.
 
@@ -89,7 +88,7 @@ Exemplos:
 
 #### 5. Ameaça de produtos ou serviços substitutos:
 
-&nbsp; &nbsp; &nbsp; &nbsp;Essa força avalia o risco de os consumidores optarem por soluções alternativas que atendam às mesmas necessidades. Essa ameaça é alta quando há substitutos de qualidade, com preços mais baixos ou vantagens superiores, pressionando as empresas a reduzirem preços ou inovarem para manter sua base de clientes. Se os custos de troca forem baixos e os consumidores perceberem benefícios significativos nos substitutos, a competitividade do setor diminui. Por outro lado, quando há poucas alternativas viáveis ou altos custos de mudança, essa ameaça se reduz, favorecendo as empresas estabelecidas.
+&nbsp; &nbsp; &nbsp; &nbsp;Essa força avalia o risco de os consumidores optarem por soluções alternativas que atendam às mesmas necessidades (Magretta, 2019). Essa ameaça é alta quando há substitutos de qualidade, com preços mais baixos ou vantagens superiores, pressionando as empresas a reduzirem preços ou inovarem para manter sua base de clientes. Se os custos de troca forem baixos e os consumidores perceberem benefícios significativos nos substitutos, a competitividade do setor diminui. Por outro lado, quando há poucas alternativas viáveis ou altos custos de mudança, essa ameaça se reduz, favorecendo as empresas estabelecidas.
 
 Exemplos:
 - Cães ou outros pets robóticos: Robôs deste tipo dispensam o conteúdo do Dr. Pet porque dispensam adestramento;
@@ -99,7 +98,7 @@ Exemplos:
 
 ### 1.1.2. Análise SWOT 
 
-&nbsp; &nbsp; &nbsp; &nbsp;A Análise SWOT é uma ferramenta estratégica usada para avaliar a posição de uma empresa, projeto ou indivíduo, considerando fatores internos e externos. Ela é dividida em quatro componentes: Forças (Strengths), que são os pontos fortes internos; Fraquezas (Weaknesses), que representam os desafios internos; Oportunidades (Opportunities), que são fatores externos positivos que podem ser aproveitados; e Ameaças (Threats), que são riscos externos que podem impactar negativamente. Essa análise ajuda na tomada de decisões e no desenvolvimento de estratégias mais eficazes.
+&nbsp; &nbsp; &nbsp; &nbsp;A análise SWOT (também conhecida como análise FOFA) é uma ferramenta estratégica usada para avaliar a posição de uma empresa, projeto ou indivíduo, considerando fatores internos e externos. Nesse sentido, ela é dividida em quatro componentes: forças (strengths), que são os pontos fortes internos; fraquezas (weaknesses), que representam os desafios internos; oportunidades (opportunities), que são fatores externos positivos que podem ser aproveitados; e ameaças (threats), que são riscos externos que podem impactar negativamente (Casarotto, 2019). Essa análise ajuda na tomada de decisões e no desenvolvimento de estratégias mais eficazes. Dessa forma, concebeu-se a análise SWOT da empresa Dr. Pet (figura 2), a fim de modelá-la com base nos fatores supracitados.
 
 <p align = "center">Figura 2: Análise SWOT</p>
 
@@ -110,7 +109,7 @@ Exemplos:
 
 ## Strengths:
 
-&nbsp; &nbsp; &nbsp; &nbsp;A seção de strenghts destaca os pontos fortes internos de uma organização, projeto ou indivíduo, ou seja, os aspectos que oferecem vantagem competitiva. Isso inclui recursos, habilidades, expertise, reputação, tecnologia, cultura organizacional e diferenciais que impulsionam o sucesso. 
+&nbsp; &nbsp; &nbsp; &nbsp;A seção de forças (strenghts) destaca os pontos fortes internos de uma organização, projeto ou indivíduo, ou seja, os aspectos que oferecem vantagem competitiva (Casarotto, 2019). Tal definição abrange recursos, habilidades, expertise, reputação, tecnologia, cultura organizacional e diferenciais que impulsionam o sucesso. Desse modo, é possível mencionar as forças subsequentes inerentes à empresa Dr. Pet:
 
   - Alta visibilidade na mídia;
 
@@ -120,9 +119,9 @@ Exemplos:
 
 ## Weaknesses:
 
-&nbsp; &nbsp; &nbsp; &nbsp;A seção de Weaknesses identifica os pontos fracos internos que podem prejudicar o desempenho de uma organização, projeto ou indivíduo. Isso inclui limitações em recursos, falta de expertise, baixa eficiência, problemas estruturais, dependência de terceiros ou falhas operacionais.
+&nbsp; &nbsp; &nbsp; &nbsp;A seção de fraquezas (weaknesses) identifica os pontos fracos internos que podem prejudicar o desempenho de uma organização, projeto ou indivíduo (Casarotto, 2019). A partir disso, são exemplos de fraquezas limitações em recursos, falta de expertise, baixa eficiência, problemas estruturais, dependência de terceiros ou falhas operacionais. Assim, nota-se as seguintes fraquezas no que tange à empresa Dr. Pet:
 
-  - A marca Dr. Pet está relacionada a apenas uma pessoa, pode se confundir com o seu representante, Alexandre Rossi;
+  - A marca Dr. Pet está relacionada a apenas uma pessoa, podendo se confundir com o seu representante: Alexandre Rossi;
 
   - Nichado em cães;
 
@@ -130,7 +129,7 @@ Exemplos:
 
 ## Opportunities:
 
-&nbsp; &nbsp; &nbsp; &nbsp;A seção de Opportunities analisa fatores externos positivos que podem ser explorados para crescimento e vantagem competitiva. Isso inclui tendências de mercado, avanços tecnológicos, mudanças regulatórias favoráveis, novas demandas dos consumidores ou parcerias estratégicas.
+&nbsp; &nbsp; &nbsp; &nbsp;A seção de oportunidades (opportunities) analisa fatores externos positivos que podem ser explorados para crescimento e vantagem competitiva de uma empresa ou projeto, por exemplo (Casarotto, 2019). Dessa maneira, configuram-se como exemplos de oportunidades tendências de mercado, avanços tecnológicos, mudanças regulatórias favoráveis, novas demandas dos consumidores ou parcerias estratégicas. Sob essa perspectiva, pontua-se as seguintes oportunidades referentes à empresa Dr. Pet: 
 
   - Venda de produtos próprios com a marca Dr. Pet;
 
@@ -138,7 +137,7 @@ Exemplos:
 
 ## Threats:
 
-&nbsp; &nbsp; &nbsp; &nbsp;A seção de Threats identifica os fatores externos que podem representar riscos para a organização, projeto ou indivíduo. Isso inclui concorrência acirrada, crises econômicas, mudanças regulatórias desfavoráveis, inovações disruptivas ou instabilidade política. 
+&nbsp; &nbsp; &nbsp; &nbsp;A seção de ameaças (threats) identifica os fatores externos que podem representar riscos para a organização, projeto ou indivíduo (Casarotto, 2019). Dentre possíveis ameaças estão: concorrência acirrada, crises econômicas, mudanças regulatórias desfavoráveis, inovações disruptivas ou instabilidade política. Com base nisso, identifica-se as ameaças subsequentes no que se refere à empresa Dr. Pet: 
 
   - Rescisão de contratos com emissoras de televisão;
 
@@ -170,7 +169,7 @@ Exemplos:
 
 <hr>
 
-### 1.1.4. Proposta de Valor 
+### 1.1.4. Proposta de Valor
 &nbsp; &nbsp; &nbsp; &nbsp;Conforme Pereira (2024), o modelo de negócios denominado “Canvas de Proposta de Valor”, criado por Alexander Osterwalder, Yves Pigneur e Alan Smith, é uma ferramenta que visa garantir que o produto esteja conforme as necessidades do cliente, trazendo a ele ganhos e solucionando suas dores, estruturando como um serviço agregar-lhe-á valor. Para tanto, esse instrumento parte do uso de dois blocos do Business Model Canvas, sendo eles: “Customer Segment” (Segmento de Cliente) e “Value Proposition” (Proposta de Valor). <br> <br>
 &nbsp; &nbsp; &nbsp; &nbsp;Nesse sentido, o Canvas Proposta de Valor é divido em dois lados. O lado direito se refere ao perfil que o cliente apresenta, demonstrando as suas tarefas, as suas dores e os seus ganhos. Já o lado esquerdo consiste na  proposta de valor que deve ser entregue ao cliente, a qual abrange produtos e serviços, criadores de ganhos e aliviadores de dor (é o mapa de valor) (Pereira, 2024).<br> <br>
 &nbsp; &nbsp; &nbsp; &nbsp;Portanto, é significativo descrever o conceito geral de cada um desses tópicos, trazendo suas relações e como cada um impacta o outro, seja direta ou indiretamente. Logo, os elementos inerentes ao Canvas Proposta de Valor da solução proposta pelo vigente projeto estão abordados nos tópicos subsequentes, a começar pelo perfil do cliente. Além disso, a figura 3 indica tais elementos de modo visual: <br> <br>
@@ -434,23 +433,27 @@ R. **Relevante:** A equipe possui recursos como aulas e professores das áreas d
 T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint review da sprint 4.
 
 ## 1.2. Requisitos do Projeto 
-Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por meios dos quais se busca explicitar, de maneira breve, lógica e sucinta, suas principais funcionalidades e aspectos, de acordo com o escopo vigente.  
+&nbsp; &nbsp; &nbsp; &nbsp;Logo abaixo (quadro 1), estão listados os requisitos do projeto do jogo "RonRonArte", por meios dos quais se busca explicitar, de maneira breve, lógica e sucinta, suas principais funcionalidades e aspectos, de acordo com o escopo vigente (descrito no TAPI).  
 
 <p align = 'center'>Quadro 1: Requisitos do jogo RonRonArte</p> <br>
 
 \# | Requisitos  
 --- | ---
-1 | A tela inicial deve mostrar um botão “Jogar”, que, quando clicado, direciona o jogador às fases do jogo.
-2 | Nas fases, o jogador (gato) deve clicar nos animais que aparecerem na tela para eliminá-los.
-3 | As cores que o gato enxerga com mais facilidade serão usadas nos animais que ele precisa bater e as cores que são mais dificultosas de ver serão usadas no background. Dessa forma, a emissão de mais estímulo visual junto com a movimentação do alvo pela tela, potencializa o interesse do gato em abater os alvos.
-4 | O gato percebe que eliminou o alvo por meio de um aviso sonoro e o efeito de splash na tela.
-5 | No modo criativo, ao clicar na tela, o jogador (gato) consegue pintá-la.
-6 | No modo de fases, ao clicar na tela, o jogador (gato) vai revelando uma pintura de um período da história da arte.
-7 | Devem ser disponibilizados botões de hud na tela, ativados apenas quando clicados e pressionados em seguida (para que o gato não os ative sem querer).
-8 | No modo criativo, as pinturas do gato serão guardadas em uma biblioteca de imagens disponibilizada no jogo para acesso do tutor.
-9 | Ao final de cada fase, o jogador (gato) deve receber uma recompensa do tutor: petiscos ou ração.
-10 | O jogo será reproduzido em formato web direcionado para dispositivos móveis (smartphones e tablets).
-11 | Exibir som ao finalizar a fase para notificar o tutor e facilitar o entendimento do gato em relação à recompensa.
+1 | O jogo será reproduzido em formato web direcionado para dispositivos móveis (smartphones e tablets).
+2 | O jogo deve ter uma cena de tutorial, onde o tutor receberá instruções sobre como funcionam as mecânicas do jogo, e como estimular e recompensar o gato.
+3 | O jogo deve ter uma cena de menu de seleção de fases e modos, onde será possível acessar as fases que foram desbloqueadas, o modo tutorial, e o modo criativo.
+4 | A tela inicial deve mostrar um botão “Jogar”, que, quando clicado, direciona o jogador ao menu de seleção de fases e modos de jogo.
+5 | Nas fases, o jogador (gato) deve clicar nos animais que aparecerem na tela para eliminá-los.
+6 | Os alvos devem reproduzir sons para manter a atenção do gato no jogo.
+7 | As cores que o gato enxerga com mais facilidade serão usadas nos animais que ele precisa bater e as cores que são mais dificultosas de ver serão usadas no background. Dessa forma, a emissão de mais estímulo visual junto com a movimentação do alvo pela tela, potencializa o interesse do gato em abater os alvos.
+8 | O gato percebe que eliminou o alvo por meio de um aviso sonoro e o efeito de splash na tela.
+9 | Após eliminar o alvo, é exibida uma região na tela (pata) onde o tutor deverá posicionar o petisco para recompensar o gato.
+10 | No modo criativo, ao clicar na tela, o jogador (gato) consegue pintá-la.
+11 | No modo criativo, o tutor possui o modo print, que pode ser iniciado com um botão, para registrar a obra do gato.
+12 | No modo de fases, ao clicar na tela, o jogador (gato) vai revelando uma pintura de um artista de um continente diferente.
+13 | Devem ser disponibilizados botões de hud (botões de retornar ao menu, seleção de paletas e pincéis e tirar print) na tela, ativados apenas quando clicados e pressionados em seguida (para que o gato não os ative sem querer).
+14 | Exibir som ao acertar o alvo para notificar o tutor e facilitar o entendimento do gato em relação à recompensa.
+
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br>
 
@@ -493,28 +496,29 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 &nbsp; &nbsp; &nbsp; &nbsp;Nosso jogo visa mesclar mecânicas presentes nesses outros jogos com uma identidade visual própria, buscando uma experiência interativa e divertida para gato e tutor.
 
-### 2.2.5. Tempo estimado de jogo (sprint 5)
+### 2.2.5. Tempo estimado de jogo
 
-*Ex. O jogo pode ser concluído em 3 horas passando por todas as fases.*
-
-*Ex. cada partida dura até 15 minutos*
+&nbsp; &nbsp; &nbsp; &nbsp;Visto que cada gato tem uma agilidade de aprendizagem individual, o modo de tutorial não tem limite de tempo, de modo que o tutor tenha autonomia e flexibilidade para ensinar a dinâmica ao pet no seu tempo. De maneira similar, para que o Ronronarte tenha rejogabilidade, o modo criativo também é infinito, e o tutor pode tirar o print da tela no momento em que preferir. Já o tempo de conclusão das fases varia de acordo com a performance do gato, porém a equipe estima ser possível concluí-las em 30 minutos.
 
 # <a name="c3"></a>3. Game Design
 
 ## 3.1. Enredo do Jogo
 
-&nbsp; &nbsp; &nbsp; &nbsp;Nós seres humanos, em algum momento de nossas vidas, pensamos no conceito de viagem no tempo. Um conceito interessante, desconhecido, e um tanto assutador. Entretanto, já imaginou se fosse possível viajar no tempo com o seu pet?
-&nbsp; &nbsp; &nbsp; &nbsp;Pois é esse o enredo de RonRonArte, uma viagem no tempo com o seu gato! Mas não é uma viagem no tempo qualquer, é uma viagem pelos diferentes períodos da arte, passando por arte contemporânea, arte moderna, arte medieval, e arte rupestre.
-&nbsp; &nbsp; &nbsp; &nbsp;Acompanhe seu pet nessa jornada e aprenda um pouco mais sobre a história da arte enquanto se diverte com seu amigo felino!
+&nbsp; &nbsp; &nbsp; &nbsp; O enredo do Ronronarte é baseado na arte, no qual o usuário, ao avançar as fases, tem a oportunidade de conhecer uma obra artística sem muita visibilidade e seu respectivo autor. Vale mencionar que cada quadro pertence a um continente e contexto diferente, de modo que a experiência artística do jogador ao jogar o Ronronarte seja diversificada. Acompanhe seu pet nessa jornada e aprenda um pouco mais sobre a história da arte enquanto se diverte com seu amigo felino!
 
 ## 3.2. Personagens
 
 ### 3.2.1. Controláveis
-&nbsp; &nbsp; &nbsp; &nbsp;No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador, haja vista que o intuito do jogo é justamente incentivar hábitos de caça ao gato por intermédio de figuras clicáveis na tela (no caso, spritesheets). Desse modo, o objetivo não é que o jogador controle algum personagem no game, mas sim que ele possa eliminá-lo no decorrer do jogo em troca de recompensas alimentícias, a fim de que seus instintos naturais sejam estimulados. Portanto, especificamente no escopo de RonRonArte, o player pode interpretar tal circunstância como um meio pelo qual ele realiza uma ação e, em troca, ganha algo, associando o atingimento de objetivos com as recompensas supracitadas. A partir disso, abaixo estão as spritesheets correspondentes ao que acima foi observado.
+&nbsp; &nbsp; &nbsp; &nbsp;No que tange ao jogo RonRonArte, não há personagens controláveis pelo jogador, haja vista que o intuito do jogo é justamente incentivar hábitos de caça ao gato por intermédio de figuras clicáveis na tela. Desse modo, o objetivo não é que o jogador controle algum personagem no game, mas sim que ele possa eliminá-lo no decorrer do jogo em troca de recompensas alimentícias, a fim de que seus instintos naturais sejam estimulados. Portanto, especificamente no escopo de RonRonArte, o player pode interpretar tal circunstância como um meio pelo qual ele realiza uma ação e, em troca, ganha algo, associando o alcance de tais objetivos com as recompensas supracitadas.
+
+## 3.2.2 Non-Playable Characters (NPC)
+&nbsp; &nbsp; &nbsp; &nbsp;Non-Playable Characters (NPCs) são personagens que não são controláveis pelo jogador ou qualquer outro participante, mas sim pela própria máquina que executa o jogo (Folter, 2022). Com base nisso, as figuras 6, 7, 8 e 9  demonstram os NPCs do jogo RonRonArte:
 
 <p align = 'center'>Figura 6 - Figura do pombo (RonRonArte)</p><br>
 <div align = 'center'>
-  <img src="https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/pombo.png?raw=true">
+	
+  ![pigeon](https://github.com/user-attachments/assets/218bb91d-3467-4cf6-bf3d-c2de778c5d50)
+
 </div><br>
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br> <br>
@@ -539,32 +543,43 @@ Logo abaixo, estão listados os requisitos do projeto do jogo "RonRonArte", por 
 
 
 
+<p align = 'center'>Figura 9 - Figura da cobra-coral (RonRonArte)</p><br>
+<div align = 'center'>
+	
+ ![snake](https://github.com/user-attachments/assets/5b9326b7-3d57-4fc2-aad8-c67f222f900c)
+
+ </div><br>
+
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p><br><br>
+
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
-&nbsp; &nbsp; &nbsp; &nbsp;O RonRonArte contém inclusão em sua jogabilidade, uma vez que o jogador, em algumas fases, é convidado a conhecer mais sobre uma obra cujo autor pertence a um grupo sub-representado no universo artístico. 
+&nbsp; &nbsp; &nbsp; &nbsp; O RonRonArte contém inclusão em seu enredo, uma vez que o jogador, nas fases, é convidado a conhecer mais sobre uma obra cujo autor não é tão conhecido como outros já amplamente difundidos na mídia e na sociedade. Os critérios utilizados para a escolha dos quadros foram a representatividade dos autores, haja vista que cada um deles se enquadra em um grupo sub-representado no universo artístico, levando em conta gênero, cor e nacionalidade. Nesse sentido, os argumentos que sustentam o critério supracitado são as seguintes pesquisas que a equipe encontrou: uma pesquisa de 2022 da ONG "National Museum of Women in the Arts" (NMWA), revela que entre 2008 e 2020, apenas 11% das aquisições e 14,9% das exposições em 31 museus representativos dos EUA foram de obras de artistas mulheres. Por isso, a importância da inclusão de Maria Auxiliadora e Margaret Preston; o projeto “Negrestudo: mapeamento de artistas representados pelas galerias de arte de São Paulo”, liderado por Alan Ariê, mostra que dos 619 nomes levantados pela pesquisa, apenas 46 pessoas não são brancas. Destas, 27 são pessoas negras e apenas 14 são pessoas asiáticas, o que justifica, dessa forma, a inclusão de Juan Luna e de Chéri Samba. 
+&nbsp; &nbsp; &nbsp; &nbsp;Além disso, a equipe CatUp fez questão de aumentar o tamanho dos botões e dos textos que estão contidos no jogo, visando incluir os tutores e gatos mais idosos, ou com a visão menos favorecida, assim como para que os tutores que não possuem um dispositivo grande como tablet ou notebook touch possam ter uma experiência equivalente aos demais.
 
 ## 3.3. Mundo do jogo
 
 ### 3.3.1. Locações Principais e/ou Mapas
 
-&nbsp; &nbsp; &nbsp; &nbsp;O jogo vem de uma viagem mágica no mundo da arte, coletando quadros de pintores que não receberam o devido reconhecimento de diversas nacionalidades que o jogador, o gato, visitará. Essa aventura será possível por meio de um portal, fantasioso, que servirá para o jogador poder acessar as fases. Os momentos históricos serão representados por animais que são presentes no cotidiano do período apresentado e pintores e artes pertencentes a cada respectiva época, por exemplo, o quadro da Maria Auxiliadora (quadro presente até o momento). O jogo não segue uma história linear, entretanto, o fluxo de fases segue, sendo um level liberado após o outro.
+&nbsp; &nbsp; &nbsp; &nbsp;Apesar de não haver mapas, o Ronronarte dispõe da dinâmica de desbloqueamento de fases. Cada fase do Ronronarte se situa em um contexto artístico, onde a localização dos personagens é um quadro, sob o qual a pintura dele precisa ser liberada com os toques do gato nos alvos. No modo criativo, o local do jogo é um quadro em branco, onde o próprio gato, ao abater os alvos, produz uma pintura com as tintas disponibilizadas. Já o tutorial se passa no céu, em um clima entardecido.
 
 ### 3.3.2. Navegação pelo mundo
-&nbsp; &nbsp; &nbsp; &nbsp;O jogador, sendo um gato, atravessará as fases atreves de um portal que o levará para épocas distintas e importantes para o conhecimento artístico da pintura. Com o passar das fases, elas se tornam selecionáveis a preferir do dono do gato, em que depois que o botão de “jogar”, poderá selecionar somente clicando com o dedo no botão referente a fase que for preferível a ser jogada.
+&nbsp; &nbsp; &nbsp; &nbsp;O gato e seu tutor vão explorar o universo artístico por meio do conhecimento de quatro pinturas, cada uma de um continente diferente. Em cada fase, o gato vai abater um alvo diferente - instigando seus instintos de caça - e liberar a imagem de um quadro, de forma que, após completá-la, o tutor encontrará informações sobre a obra e seu respectivo autor
 
-### 3.3.4. Concept Art
-&nbsp; &nbsp; &nbsp; &nbsp;Uma Concept Art é um fluxo de imagens que mostra as características e os elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo. Com base nisso, realizou-se uma Concept Art de RonRonArte, de maneira a explicitar quais são os seus principais itens visuais e de história.
+### 3.3.3. Concept Art
+&nbsp; &nbsp; &nbsp; &nbsp;Uma Concept Art é o conceito visual das características e dos elementos gerais de um jogo, animação ou filme, com cenários e personagens, por exemplo (EBAC, 2023). Com base nisso, realizou-se uma Concept Art de RonRonArte (figura 10) de maneira a explicitar quais são os seus principais itens visuais e de história.
 
-<p align = "center">Figura 9: Concept Art - RonRonArte</p>
+<p align = "center">Figura 10: Concept Art - RonRonArte</p>
 
-![Concept - RonRonArte](https://github.com/user-attachments/assets/0347f013-bd82-4e7d-a2ac-f7aed9904ea2)
+![Untitled (1)](https://github.com/user-attachments/assets/7c89a7f7-7194-4e4f-9d52-2042f123cf9f)
+
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p>
 
 &nbsp; &nbsp; &nbsp; &nbsp;Caso queira acessar a Concept Art com as animações, [clique aqui](https://www.figma.com/proto/O28uXtCzHpYgGD5H7lxE97/Concept-Art---RonRonArte?content-scaling=fixed&kind=proto&node-id=15-4&page-id=0%3A1&scaling=scale-down) <br>
 
 ### 3.3.5. Trilha sonora
-A seguir, no quadro 2, estão elencados os elementos sonoros utilizados no jogo RonRonArte, escolhidos de acordo com a necessidade dos itens do game.
+&nbsp; &nbsp; &nbsp; &nbsp;A seguir, no quadro 2, estão elencados os elementos sonoros utilizados no jogo RonRonArte, escolhidos de acordo com a necessidade dos itens do game.
 
 <p align = 'center'>Quadro 2: trilha sonora</p>
 
@@ -574,12 +589,12 @@ A seguir, no quadro 2, estão elencados os elementos sonoros utilizados no jogo 
 2 | Som nos botões "Pular tutorial" e "Continuar" | Quando os botões "Pular tutorial" e "Continuar" forem clicados | Pixabay | <a href = "https://drive.google.com/file/d/1CmhzvZDHqNDnyOqGY8DNLVBAR0uWa_cO/view?usp=sharing">Ouça o áudio clicando aqui!</a>
 3 | Som do splash de tinta | Quando o alvo é clicado no modo criativo | Pixabay | <a href = "https://drive.google.com/file/d/1gPphHf9Bf2M0zXkBwolhKrlN3duKKy8_/view?usp=sharing">Ouça o áudio clicando aqui!</a>
 4 | Som para mostrar as estrelas na tela de vitória | Ocorre no momento em que as estrelas aparecem na tela de vitória | Pixabay | <a href = "https://drive.google.com/file/d/1NM3CxClvEKvMXpHizAcq2G0tPYu9GMcY/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-5 | Som do rato robô (alvo) | Quando o rato estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1uTRUH26MD3fgOZTo6HSk6UJkQJMfEGqm/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-6 | Som habilitado quando os alvos do jogo são clicados | Assim que os alvos são clicados pelo gato | canal do YouTube chamado SOUNDS. Título do vídeo: EFEITO SONORO - GATO MIANDO | <a href = "https://drive.google.com/file/d/17g-krBlk81rTzi-duVFOyEfhnxH6XU7U/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-7 | Som para o botão de pause | Quando o botão de pause for clicado | Pixabay | <a href = "https://drive.google.com/file/d/1a9IE5oRrw8p2ieAZE3skzfCzye1Pfz_o/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-8 | Som do pombo (alvo) | Quando o pombo estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1zc9hjtwP67aTXE6p84U2f_sS9yQG1Fe5/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-9 | Som da lagartixa (alvo) | Quando a lagartixa estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1voUqdXlqM8OblkZLPvJhVY2d1bxRQalx/view?usp=sharing">Ouça o áudio clicando aqui!</a>
-10 | Som da cobra | Quando a cobra estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1Kei3Ft5Esq5iGarGQCAaaRvGc-NcH3Jb/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+5 | Som habilitado quando os alvos do jogo são clicados | Assim que os alvos são clicados pelo gato | Efeito sonoro autoral | <a href = "https://drive.google.com/file/d/1kcXTfjEXiIWgY_H2c529S0CgIIIhZAA8/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+6 | Som para o botão de pause | Quando o botão de pause for clicado | Pixabay | <a href = "https://drive.google.com/file/d/1a9IE5oRrw8p2ieAZE3skzfCzye1Pfz_o/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+7 | Som do pombo (alvo) | Quando o pombo estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1zc9hjtwP67aTXE6p84U2f_sS9yQG1Fe5/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+8 | Som do rato robô (alvo) | Quando o rato estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1uTRUH26MD3fgOZTo6HSk6UJkQJMfEGqm/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+9 | Som da cobra | Quando a cobra estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1Kei3Ft5Esq5iGarGQCAaaRvGc-NcH3Jb/view?usp=sharing">Ouça o áudio clicando aqui!</a>
+10 | Som da lagartixa (alvo) | Quando a lagartixa estiver na tela | Pixabay | <a href = "https://drive.google.com/file/d/1voUqdXlqM8OblkZLPvJhVY2d1bxRQalx/view?usp=sharing">Ouça o áudio clicando aqui!</a>
 
 <p align = 'center'>Fonte: quadro produzido pelos autores (2025), com base em áudios de Pixabay e YouTube.</p> <br>
 
@@ -606,31 +621,33 @@ A seguir, no quadro 2, estão elencados os elementos sonoros utilizados no jogo 
 
 \# | Inimigo | Design | Ocorrências | Função | Impacto | Efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
-1 | Pombo |![pombo](https://github.com/user-attachments/assets/a5622248-210c-4bab-b020-a67c1c3a113e)| Tutorial e Fase 1 | Voa em direção aléatoria para que o jogador tente acertá-lo | Ao atingido revela uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes. | Som de pombo
-2 | Rato Robótico |![alvo rato](https://github.com/user-attachments/assets/905b4948-8cce-4f84-946a-0f0f9d8e252c)| Fase 2 | Anda pela tela em direção aléatoria para que o jogador tente acertá-lo | Ao atingido revela uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes. | Som de rato
-3 | Lagartixa | ![lagartixa](https://github.com/user-attachments/assets/38d50908-28bb-48b6-b896-9516b90484cf) | Fase 4 | Anda pela tela em direção aleatória para que o jogador tente acertá-lo | Ao acertá-lo, deixará seu rabo cair e continuará correndo sem o rabo e mais rápido, fazendo com que seja necessário ser atingido novamente. Após ser atingido pela segunda vez, revelará uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes | Som de lagarto
-
-<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br>
+1 | Pombo |![pombo](https://github.com/user-attachments/assets/a5622248-210c-4bab-b020-a67c1c3a113e)| Tutorial e Fase 1 | Voa em direção aléatoria para que o jogador tente acertá-lo | Ao atingido revela uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes. | <a href = "https://drive.google.com/file/d/1zc9hjtwP67aTXE6p84U2f_sS9yQG1Fe5/view?usp=sharing">Som do pombo</a>
+2 | Rato Robótico |![alvo rato](https://github.com/user-attachments/assets/905b4948-8cce-4f84-946a-0f0f9d8e252c)| Fase 2 | Anda pela tela em direção aléatoria para que o jogador tente acertá-lo | Ao atingido revela uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes. | <a href = "https://drive.google.com/file/d/1uTRUH26MD3fgOZTo6HSk6UJkQJMfEGqm/view?usp=sharing">Som da engrenagem</a>
+3 | Cobra-Coral | ![Snake (2)](https://github.com/user-attachments/assets/98cce8ef-3ddf-4d25-863a-bb38aea14def) | Fase 3 | Anda pela tela em direção aleatória para que o jogador tente acertá-lo | Ao atingido revela uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes. |  <a href = "https://drive.google.com/file/d/1Kei3Ft5Esq5iGarGQCAaaRvGc-NcH3Jb/view?usp=sharing">Som da cobra</a>
+4 | Lagartixa | ![lagartixa](https://github.com/user-attachments/assets/38d50908-28bb-48b6-b896-9516b90484cf) | Fase 4 | Anda pela tela em direção aleatória para que o jogador tente acertá-lo | Ao acertá-lo, deixará seu rabo cair e continuará correndo sem o rabo e mais rápido, fazendo com que seja necessário ser atingido novamente. Após ser atingido pela segunda vez, revelará uma parte do quadro, caso esteja no modo história. No modo criativo, pinta uma tela em branco com os splashes | <a href = "https://drive.google.com/file/d/1voUqdXlqM8OblkZLPvJhVY2d1bxRQalx/view?usp=sharing">Som da lagartixa</a>
 
 
 ## 3.5. Gameflow (Diagrama de cenas)
-<p align ="center">Figura 10: diagrama de cenas - RonRonArte</p>
 
-![Diagrama de Cenas](https://github.com/user-attachments/assets/dbdc2e28-dea7-485a-9158-c71a1a1eedac)
+#### Diagrama de cenas:
 
-<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br>
+&nbsp; &nbsp; &nbsp; &nbsp;O diagrama de cenas é uma representação visual do caminhar do jogo ao longo de suas telas e cenas. Essa ferramenta apresenta como o design será feito, como as classes, objetos, atributos e métodos são realizados, facilitando a compreensão das funcionalidades. Nesse sentido, o diagrama de cenas do jogo RonRonArte está apresentado na figura 11.
+
+<p align ="center">Figura 11: diagrama de cenas - RonRonArte</p>
+
+![Diagrama de Cenas (4)](https://github.com/user-attachments/assets/bc3cf626-7a2b-4ea4-ae68-f9e452fce3ca)
+
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br> <br>
 
 
 Caso queira ver o diagrama de cenas no Figma, [clique aqui](https://www.figma.com/design/rFIpwHZ5IhQm0VkuvWoyGC/Diagrama-de-Cenas-(Copy)?node-id=0-1&t=VGODGl0yG330cyX7-1)
 
-#### Diagrama de cenas:
 
-&nbsp; &nbsp; &nbsp; &nbsp;O diagrama de cenas é uma representação visual do caminhar do jogo ao longo de suas telas e cenas. Essa ferramenta apresenta como o design será feito, como as classes, objetos, atributos e métodos são realizados, facilitando a compreensão das funcionalidades.
 
 <hr>
 
 - **Tela inicial (Splash Screen):**
-A primeira cena do jogo conta com uma splash screen (cena exibida ao abrir o jogo) que apresenta o nome de nossa equipe em um fundo preto.
+&nbsp; &nbsp; &nbsp; &nbsp;A primeira cena do jogo conta com uma splash screen (cena exibida ao abrir o jogo) que apresenta o nome de nossa equipe em um fundo preto.
 
 - Classes: SplashScreen;
 - Atributos e métodos: preload() e create();
@@ -638,7 +655,7 @@ A primeira cena do jogo conta com uma splash screen (cena exibida ao abrir o jog
 <hr>
 
 - **Tela de start:** 
-A tela de start conta com uma imagem de fundo gerada por IA que apresenta elementos do storytelling do jogo como um portal, pinturas emolduradas e um gato. Além disso, há também um botão de "JOGAR", que ao ser pressionado redireciona para a tela de primeira fase do jogo.
+&nbsp; &nbsp; &nbsp; &nbsp;A tela de start conta com uma imagem de fundo gerada por IA que apresenta elementos do storytelling do jogo como um portal, pinturas emolduradas e um gato. Além disso, há também um botão de "JOGAR", que ao ser pressionado redireciona para a tela de primeira fase do jogo.
 
 - Classes: Menu;
 - Atributos e métodos: create() e resizeGame();
@@ -646,21 +663,23 @@ A tela de start conta com uma imagem de fundo gerada por IA que apresenta elemen
 <hr>
 
 - **Tutorial:**   
-A primeira fase do jogo serve como tutorial para o tutor, apresentando como deverá ser feita a recompensa para o gato ao alcançar o objetivo do jogo. Nessa tela, haverá uma maneira de pular a cena de tutorial caso o tutor já saiba ou não queira ver o tutorial.
+&nbsp; &nbsp; &nbsp; &nbsp;A primeira fase do jogo serve como tutorial para o tutor, apresentando como deverá ser feita a recompensa para o gato ao alcançar o objetivo do jogo. Nessa tela, haverá uma maneira de pular a cena de tutorial caso o tutor já saiba ou não queira ver o tutorial.
 
 - Classes: Phase0 e extensão de BasePhase;
 - Atributos e métodos: create(), update()
 
-- Tela de seleção de níveis
-Após passar pelo tutorial, o jogador será direcionado para uma tela de seleção de níveis, onde poderá (caso já estiver desbloqueado) escolher a "fase" que gostaria de jogar.
+<hr>
 
- - Classes: SelectPhase e extensão de BasePhase;
+- **Tela de seleção de níveis:**
+&nbsp; &nbsp; &nbsp; &nbsp;Após passar pelo tutorial, o jogador será direcionado para uma tela de seleção de níveis, onde poderá (caso já estiver desbloqueado) escolher a "fase" que gostaria de jogar.
+
+ - Classes: SelectPhase;
  - Atributos e métodos: create() e update().
 
 <hr>
 
 - **Fase 1:**   
-A primeira fase apresenta ao jogador a dinâmica principal do jogo, em que o gato, ao tocar em um animal "alvo" na tela (nessa fase em específico, será um pombo), preenche aos poucos o quadro de fundo, que revela uma obra de arte(nessa fase em específico, "Sem Título"(também conhecido como "A Noiva" de Maria Auxiliadora). Após preenchimento desse quadro, é exibido uma tela de vitória que apresenta a obra completa, uma foto de seu compositor, e a pontuação do gato e tempo de conclusão da fase.	
+&nbsp; &nbsp; &nbsp; &nbsp;A primeira fase apresenta ao jogador a dinâmica principal do jogo, em que o gato, ao tocar em um animal "alvo" na tela (nessa fase em específico, será um pombo), preenche aos poucos o quadro de fundo, que revela uma obra de arte(nessa fase em específico, "Sem Título"(também conhecido como "A Noiva" de Maria Auxiliadora). Após preenchimento desse quadro, é exibido uma tela de vitória que apresenta a obra completa, uma foto de seu compositor, e a pontuação do gato e tempo de conclusão da fase.	
 
 - Classes: Phase1 e extensão de BasePhase;
 - Atributos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
@@ -669,7 +688,7 @@ A primeira fase apresenta ao jogador a dinâmica principal do jogo, em que o gat
 <hr>
 
 - **Fase 2:**
-A segunda fase apresenta ao jogador a dinâmica principal do jogo, em que o gato, ao tocar em um animal "alvo" na tela (nessa fase em específico, será um rato mecânico), preenche aos poucos o quadro de fundo, que revela uma obra de arte(nessa fase em específico, "Spoliarium" de Juan Luna). Após preenchimento desse quadro, é exibido uma tela de vitória que apresenta a obra completa, uma foto de seu compositor, e a pontuação do gato e tempo de conclusão da fase.
+&nbsp; &nbsp; &nbsp; &nbsp;A segunda fase apresenta ao jogador a dinâmica principal do jogo, em que o gato, ao tocar em um animal "alvo" na tela (nessa fase em específico, será um rato mecânico), preenche aos poucos o quadro de fundo, que revela uma obra de arte(nessa fase em específico, "Spoliarium" de Juan Luna). Após preenchimento desse quadro, é exibido uma tela de vitória que apresenta a obra completa, uma foto de seu compositor, e a pontuação do gato e tempo de conclusão da fase.
 
 - Classes: Phase2 e extensão de BasePhase;
 - Atributos e métodos: width (largura do jogo), height (altura do jogo), backgroundKey (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
@@ -678,7 +697,7 @@ A segunda fase apresenta ao jogador a dinâmica principal do jogo, em que o gato
 <hr>
 
 - **Fase 3:** 
-A terceira fase apresentará ao jogador um cenário semelhante ao da fase 1 e 2, porém com foco em uma arte diferente (nessa fase em específico, "J'aime la couleur" de Chéri Samba). Nessa fase, o alvo será uma cobra.
+&nbsp; &nbsp; &nbsp; &nbsp;A terceira fase apresentará ao jogador um cenário semelhante ao da fase 1 e 2, porém com foco em uma arte diferente (nessa fase em específico, "J'aime la couleur" de Chéri Samba). Nessa fase, o alvo será uma cobra.
 
 - Classes: Phase3 e extensão de BasePhase;
 - Atributos e métodos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
@@ -687,7 +706,7 @@ A terceira fase apresentará ao jogador um cenário semelhante ao da fase 1 e 2,
 <hr>
 
 - **Fase 4:**
-A terceira fase apresentará ao jogador um cenário semelhante ao da fase 1, 2 e 3, porém com foco em uma arte diferente (nessa fase em específico, "Aboriginal design, with Sturt's Pea" de Margaret Preston.). Nessa fase, o alvo será uma lagartixa.
+&nbsp; &nbsp; &nbsp; &nbsp;A terceira fase apresentará ao jogador um cenário semelhante ao da fase 1, 2 e 3, porém com foco em uma arte diferente (nessa fase em específico, "Aboriginal design, with Sturt's Pea" de Margaret Preston.). Nessa fase, o alvo será uma lagartixa.
 
 - Classes: Phase4 e extensão de BasePhase;
 - Atributos e métodos: width (largura do jogo), height (altura do jogo), bg (background), score (pontuação atual), maxScore (pontuação máxima da fase), scoreboard (placar), parado (boolean para referenciar se o alvo deve se movimentar), posX (posição incial do alvo no eixo X), posY (posição incial do alvo no eixo Y), splash (imagem do splash que é adicionado na tela), target (alvo do jogo), target.velocidadeX, target.velocidadeY, target.direcaoX, target.direcaoY, target.hitboxWidth, target.hitboxHeight;
@@ -696,7 +715,7 @@ A terceira fase apresentará ao jogador um cenário semelhante ao da fase 1, 2 e
 <hr>      
 
 - **Texto pós-fase:**
-A tela de vitória apresenta a arte completa pintada pelo gato, conjuntamente com uma representação visual do autor original da obra. Abaixo há uma breve descrição sobre o contexto da arte e seu artista.
+&nbsp; &nbsp; &nbsp; &nbsp;A tela de vitória apresenta a arte completa pintada pelo gato, conjuntamente com uma representação visual do autor original da obra. Abaixo há uma breve descrição sobre o contexto da arte e seu artista.
 
 - Classes: Victory;
 - Atributos e métodos: this.artistKey; this.backgroundKey; this.textArtist; this.textPainting; this.targetKey; this.nextPhase; init(data); create(); update();
@@ -704,7 +723,7 @@ A tela de vitória apresenta a arte completa pintada pelo gato, conjuntamente co
 <hr>
 
 - **Criativo (Tela branca para pintura)**:
-A fase especial apresentará ao jogador uma tela em branco com uma variedade de opções de cores e formatos de pincel que podem ser escolhidas pelo tutor para seu gato pintar. Após escolhido a cor e o pincel, a fase começa. Após a iniciação da fase, um animal alvo passará pela tela atraindo a atenção do gato, que, ao acertar o alvo, pintará a região pressionada na tela branca de fundo.   
+&nbsp; &nbsp; &nbsp; &nbsp;A fase especial apresentará ao jogador uma tela em branco com uma variedade de opções de cores e formatos de pincel que podem ser escolhidas pelo tutor para seu gato pintar. Após escolhido a cor e o pincel, a fase começa. Após a iniciação da fase, um animal alvo passará pela tela atraindo a atenção do gato, que, ao acertar o alvo, pintará a região pressionada na tela branca de fundo.   
 
 - Classes: CriativeMode;
 - Atributos e métodos: create(); update(); clickTarget(); toggleSplashMenu(); this.width; this.height; this.bg; this.palette;
@@ -712,84 +731,206 @@ A fase especial apresentará ao jogador uma tela em branco com uma variedade de 
 <hr>
 
 ## 3.6. Regras do jogo
-&nbsp; &nbsp; &nbsp; &nbsp;No mundo de RonRonArte, o gato precisa atingir com toques na tela os alvos (animaizinhos) que aparecem na tela e se movem por ela, completando as fases que são obras de arte dos mais diversos períodos artísticos. A partir disso, ele receberá pontos e, se ele fizer todos os pontos, o tutor será incentivado a dar petiscos ao seu pet, a fim de que ele associe essa ação com a recompensa alimentícia. Além disso, são desbloqueados tintas e formatos diferentes que o tutor pode selecionar no modo criativo, nesse modo o gato poderá criar suas próprias pinturas. Logo, há a intersecção entre os instintos naturais de caça do gato, arte e alimentação animal.
+&nbsp; &nbsp; &nbsp; &nbsp; As regras do Ronronarte constituem o gato atingir com um toque os alvos (figuras de animais) que aparecem e se movem na tela e, em cada acerto dele, o tutor recompensará o seu pet com um petisco. Desse modo, é possível o gato associar o abater de alvos com a recompensa alimentícia. 
+Ademais, no modo criativo, as regras permanecem sendo o abater de alvos. No entanto, nesse modo, o gato poderá criar suas próprias pinturas, pois a cada abate um splash de tinta é jogado na tela. O alvo, as cores e as formas dos splashes podem ser determinadas pelo tutor no próprio modo criativo e, quando preferir, o usuário pode tirar um print da pintura que seu pet produziu. Logo, há a intersecção entre os instintos de caça do gato, da arte e da alimentação animal.
 
 ## 3.7. Mecânicas do jogo
 
-&nbsp; &nbsp; &nbsp; &nbsp;As mecânicas do jogo RonRonArte são simples e de fácil entendimento. A mecânica de touch funciona quando o jogador acerta o alvo, e assim, revelando parte de uma pintura, essa parte revelada será localizada próxima ao ponto de contato do gato com a tela. No modo criativo segue-se uma mecânica parecida, alterando apenas o resultado dela, em que após a ação de clicar e acertar o alvo na tela o jogador irá pintar um quadro em branco, dessa forma, pintando um quadro de autoria do próprio jogador. Ademais, há também a presença de alvos que chamam a atenção do gato na tela, cujo movimento é randomizado e começa numa posição aleatória fora da tela, instigando a percepção e instinto de caça do gato. Nosso jogo conta também com um tutorial, cujo objetivo é fazer com que o tutor entenda como participar na gameplay com o seu gato e como recompensá-lo. Além disso, o modo tutorial serve também para ensinar ao gato como ele deve "jogar", ensinando a principal mecânica de toque na tela. Esse modo tutorial é infinito e pode ser cancelado pelo tutor a qualquer momento, fazendo com que, dessa maneira, o jogo seja acessível a todos os tipos de gatos, pois, cada um pode levar o tempo que for necessário para seu aprendizado.
+&nbsp; &nbsp; &nbsp; &nbsp; As mecânicas do jogo Ronronarte são simples e de fácil entendimento. A mecânica de touch funciona quando o gato acerta o alvo, revelando parte de um quadro, de modo que essa parte revelada seja localizada próxima ao ponto de contato do gato com a tela. No modo criativo, segue-se uma mecânica parecida, alterando apenas o resultado dela, em que, após a ação de clicar e acertar o alvo na tela, o gato irá pintar um quadro em branco. Ademais, há também a presença de alvos que chamam a atenção do gato na tela, cujo movimento é randomizado e começa numa posição dentro da tela, instigando a percepção e instinto de caça do gato.
+O Ronronarte conta também com um tutorial, cujo objetivo é fazer com que o tutor entenda como participar do gameplay com o seu gato e como recompensá-lo. Além disso, o modo tutorial serve também para ensinar ao gato como ele deve jogar, ensinando-o a mecânica de toque na tela, associando com a recompensa. Vale salientar também que o tutorial é infinito, de forma que o tutor tem autonomia para decidir quando é o momento ideal para começar a jogar as fases com seu gato, com base no aprendizado dele.
 
 ## 3.8. Implementação Matemática de Animação/Movimento
 
+
 ### 3.8.1. Parâmetros de entrada
 
-O elemento gráfico que tem o movimento modelado matematicamente é o pombo que translada da origem ao centro da tela na cena tutorial (botões para abrir a cena: Jogar >>> Tutorial). As posições \(x\) e \(y\) iniciais são definidas pelas variáveis `const posInitialX = 0` e `const posInitialY = 0` (linhas 36 e 37 do arquivo tutorial.js, respectivamente).
+
+O elemento gráfico que tem o movimento modelado matematicamente é o pombo que translada da origem ao centro da tela na cena tutorial (botões para abrir a cena: Jogar >>> Tutorial). As posições \(x\) e \(y\) iniciais são definidas pelas variáveis `const posInitialX = 0` e `const posInitialY = 0` (linhas 36 e 37 do arquivo tutorial.js, respectivamente). Ou seja, a posição inicial é dada por $(0\ \text{pixels}, 0\ \text{pixels})$. E a posição final é dada por $(x_f, y_f)$ com $x_f = \frac{larguraJogo}{2}$ (no código, larguraJogo é `this.scale.width`) e $y_f$ é calculado via MUV.
+
 
 ### 3.8.2. Definição do tempo total da animação
 
+
 O tempo total da animação é definido implicitamente no código pelo número de quadros até o pombo chegar à posição final. Como o jogo roda a 60 FPS, o tempo decorrido  \(t\) pode ser estimado a partir da contagem de quadros em `this.count++` (linha 54 do arquivo tutorial.js), conforme a equação:
+
 
 $$
 t = \frac{count}{60}
 $$
 
+Com $count$ em frames. Dessa forma, nossas equações que seriam em função do tempo $t$, serão em função de $count$.
+
 ### 3.8.3. Modelagem matemática
 
-O movimento do pombo ocorre nos eixos \(x\) e \(y\) simultaneamente, sendo que no eixo \(x\) o movimento é uniforme (MU) e no eixo \(y\) o movimento é uniformemente variado (MUV). 
+
+O movimento do pombo ocorre nos eixos \(x\) e \(y\) simultaneamente, sendo que no eixo \(x\) o movimento é uniforme (MU) e no eixo \(y\) o movimento é uniformemente variado (MUV).
+
 
 #### 3.8.3.1 Movimentação no eixo \(x\) (MU)
 
+
 O deslocamento no eixo \(x\) ocorre com velocidade constante $v_x$ definida em `this.velX = 5` (linha 44 do arquivo tutorial.js), logo, o deslocamento é dado por:
+
 
 $$
 x(t) = x_i + v_x \cdot t
 $$
 
+
 Onde $x(t)$ é a posição \(x\) em função do tempo, $x_i$ é a posição $x$ inicial (no nosso caso, $x_i = 0$), $v_x$ é a velocidade horizontal e $t$ é o tempo em segundos. E com isso podemos calcular a posição final no eixo $x$.
+
+
+E $v_x$ é representada pela equação:
+
+
+$$
+v_x = v_0 + a \cdot t
+$$
+
+
+Com $a = 0$ (MU) e $v_0 = 5$:
+
+
+$$
+v_x = 5 + 0 \cdot t
+$$
+
+
+Portanto:
+
+
+$$
+v_x = 5 (pixels/frame)
+$$
+
 
 #### 3.8.3.2 Movimentação no eixo \(y\) (MUV)
 
+
 No eixo \(y\) o pombo parte do repouso, ou seja $v_0y = 0$ (definido por `this.velY = 0` na linha 45 do arquivo tutorial.js), e acelera com aceleração $a_y = 0.02$, definida em `this.accelerationY = 0.02` (linha 46 do arquivo tutorial.js). Dessa forma, a equação da posição \(y\) é:
 
+
 $$
-y(y) = y_i + a_y \cdot t^2 \cdot \frac{1}{2}
+y(t) = y_i + a_y \cdot t^2 \cdot \frac{1}{2}
 $$
 
-Onde $y(t)$ é a posição $y$ em função do tempo, $y_i$ é a posição inicial (no nosso caso, $y_i = 0$), $a_y$ é a aceleração no eixo $y$, e $t$ é o tempo em segundos. E com isso podemos calcular a posição final no eixo $y$.
 
-### 3.8.4. Implementação no código
+Onde $y(t)$ é a posição $y$ em função do tempo, $y_i$ é a posição inicial (no nosso caso, $y_i = 0$), $a_y$ é a aceleração no eixo $y$:
+
+
+$$
+a = 0.02 (pixels/frame^2)
+$$
+
+
+e $t$ é o tempo em segundos. E com isso podemos calcular a posição final no eixo $y$. 
+
+
+### 3.8.4. Exemplo Numérico
+
+
+Dadas as equações supracitadas, tomamos $(x_0, y_0) = (0, 0)$, $v_0x = 5$, $v_0y = 0$, $a = 0.02$, $x_f = \frac{larguraJogo}{2}$ e calcularemos a posição final do pombo.
+
+
+Primeiramente determinamos o tempo total do movimento utilizando a equação da posição final no eixo $x$, e como nossa movimentação é atualizada por frame, escreveremos as equações em função dos frames e utilizaremos a relação $t = \frac{count}{60}$ para determinarmos o tempo (Neste exemplo tomaremos $largura Jogo = 1540$):
+
+
+$$
+x_f = x_0 + v_0x \cdot t
+$$
+
+$$
+\frac{1540}{2} = 0 + 5 \cdot (count)
+$$
+
+$$
+770 = 5 \cdot (count)
+$$
+
+$$
+count = \frac{770}{5}
+$$
+
+$$
+count = 154\ \text{frames}
+$$
+
+$$
+t = \frac{154}{60}
+$$
+
+$$
+t = 2.5667\ \text{segundos}
+$$
+
+
+Agora utilizamos o tempo em segundos para determinar a posição final no eixo $y$:
+
+
+$$
+y_f = y_0 + v_0y \cdot t + a \cdot t^2 \cdot \frac{1}{2}
+$$
+
+$$
+y_f = 0 + 0 + 0.02 \cdot (count)^2 \cdot \frac{1}{2}
+$$
+
+$$
+y_f = \frac{0.02 \cdot (154)^2}{2}
+$$
+
+$$
+y_f = 0.01 \cdot 23716 
+$$
+
+$$
+y_f = 237.16\ \text{pixels}
+$$
+
+Assim, concluímos que a posição final do pombo será $(770\ \text{pixels}, 237\ \text{pixels})$.
+
+
+### 3.8.5. Implementação no código
+
 
 A movimentação do pombo é atualizada a cada frame na função `update()`. E o código implementado reflete diretamente as equações modeladas:
 
+
 Dentro da função `create()` definimos os parâmetros:
 ```javascript
+
 
   // Início da implementação dos elementos matemáticos
         // Define posição inicial
         const posInitialX = 0;  
         const posInitialY = 0;
 
+
         // Adiciona o pombo como personagem e inicia a animação
         this.character = this.add.sprite(posInitialX, posInitialY, 'pigeon').setScale(this.scale.width/400).setFlip(true, false);
         this.character.play('flyPigeon');
+
 
         // Define velocidade nos dois eixos e aceleração no eixo y
         this.velX = 5;
         this.velY = 0;
         this.accelerationY = 0.02;
 
+
 ```
 Dentro da função `update()` implementamos o movimento:
 ```javascript
   // Confere se o personagem chegou no meio da tela
         if (this.character.x <= this.scale.width/2){
-            
+           
             // Implementação da aceleração no movimento
             this.count++; // Conta execuções do update()
             this.velY += this.accelerationY; // Atualiza velocidade no eixo y
-            
+           
             // Atualiza posição com base na velocidade
             this.character.x += this.velX;
             this.character.y += this.velY;
+
 
             // Imprime informações no console
             console.log("------------------------------------")
@@ -811,6 +952,7 @@ Dentro da função `update()` implementamos o movimento:
                 console.log("=====================================")
                 // Fim das implementações matemáticas
 
+
                 // Adiciona os elementos
                 this.textBox = this.add.image(this.scale.width/2, this.scale.height/1.3, 'textBox').setScale(this.scale.width/800);
                 this.tutorialText = this.add.text(this.scale.width/8, this.scale.height/1.7, this.tutorialTexts[this.clicks], {fontSize: this.scale.width/33, fill:'#000'})
@@ -818,8 +960,10 @@ Dentro da função `update()` implementamos o movimento:
             }
         }
 
+
 ```
 Além da implementação matemática, repare que executamos uma série de comandos `console.log()` imprimindo valores de posição e velocidade para validação da modelagem. Incluindo posição final, velocidade final nos dois eixos, e tempo total da animação quando o pombo atinge o centro da tela.
+
 
 # <a name="c4"></a>4. Desenvolvimento do Jogo
 
@@ -827,9 +971,9 @@ Além da implementação matemática, repare que executamos uma série de comand
 
 &nbsp; &nbsp; &nbsp; &nbsp;Em linhas gerais, a primeira versão do jogo “RonRonArte” conta com uma tela inicial, que contempla o botão “Jogar”. Sob essa perspectiva, criou-se a primeira cena do jogo, a qual é ativada quando o botão supracitado é clicado. Nela, sprites de animais aparecem randomicamente na tela, de maneira que o jogador (gato) seja incentivado a pressioná-los. Nesse sentido, é válido mencionar que, quando essas imagens animadas são clicadas, são liberados splashes de tinta com forma de patinha de gato, funcionalidade que nas próximas versões será refinada, a fim de que o jogador produza pinturas de acordo com os splashes. Portanto, objetiva-se ir além do convencional (apenas cliques na tela), por intermédio de dinâmicas atrelada à arte.  
 
-&nbsp; &nbsp; &nbsp; &nbsp;Logo abaixo, estão registrados os prints das telas da primeira versão do jogo.
+&nbsp; &nbsp; &nbsp; &nbsp;Logo abaixo (figuras 12, 13 e 14), estão registrados os prints das telas da primeira versão do jogo.
 
-<p align = "center">Figura 11: tela de início do jogo</p>
+<p align = "center">Figura 12: tela de início do jogo</p>
 
 ![tela de start RonRonArte](https://github.com/user-attachments/assets/30f3865b-5e98-49f1-906e-e886c33ee157)
 
@@ -837,7 +981,7 @@ Além da implementação matemática, repare que executamos uma série de comand
 
 
 
-<p align = "center">Figura 12: tela com a primeira cena</p>
+<p align = "center">Figura 13: tela com a primeira cena</p>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/a2107a97-8d01-4339-8469-bef594f42c61" width="300">
@@ -847,7 +991,7 @@ Além da implementação matemática, repare que executamos uma série de comand
 
 
 
-<p align = "center">Figura 13: tela da primeira cena com os splashes de tinta</p>
+<p align = "center">Figura 14: tela da primeira cena com os splashes de tinta</p>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/9581c99b-c61d-407d-bb58-b492f8a47998" width="300">
@@ -877,8 +1021,8 @@ Eventuais dificuldades presentes no projeto:
 - Gestão de tempo;
 - Produção dos sprites/artes do jogo.
 
-Logo abaixo, estão as telas da versão básica do jogo.
-<p align = 'center'>Figura 14: tela de instruções</p>
+Logo abaixo (figuras 15, 16, 17, 18 e 19), estão as telas da versão básica do jogo.
+<p align = 'center'>Figura 15: tela de instruções</p>
 <div align = 'center'>
   <img width="935" alt="image" src="https://github.com/user-attachments/assets/7081f995-b960-4c10-84eb-42fedf96822f" />
 </div><br>
@@ -886,43 +1030,43 @@ Logo abaixo, estão as telas da versão básica do jogo.
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
-<p align = 'center'>Figura 15: tela de tutorial</p>
+<p align = 'center'>Figura 16: tela de tutorial</p>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/510f51b9-c320-4c1d-ab87-3690abf2d989" />
 </div><br>
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
-<p align = 'center'>Figura 16: tela do início das fases</p>
+<p align = 'center'>Figura 17: tela do início das fases</p>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/554c235d-a9b9-4f88-8729-2b6302444569" />
 </div><br>
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
-<p align = 'center'>Figura 17: tela de pintura da fase 1</p>
+<p align = 'center'>Figura 18: tela de pintura da fase 1</p>
 <div align = 'center'>
   <img width="933" alt="image" src="https://github.com/user-attachments/assets/8f147d35-bbad-40ca-b773-183bf5c93b6d" />
 </div><br>
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
-<p align = 'center'>Figura 18: tela de vitória da fase 1</p>
+<p align = 'center'>Figura 19: tela de vitória da fase 1</p>
 <div align = 'center'>
   <img width="932" alt="image" src="https://github.com/user-attachments/assets/1790cca4-9119-4d94-ac4f-9f7220c094aa" />
 </div><br>
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
-<p>Também está representada a modularização do código nas figuras 19 e 20.</p>
-<p align = 'center'>Figura 19: estrutura das pastas após a modularização do código</p>
+<p>Também está representada a modularização do código nas figuras 20 e 21.</p>
+<p align = 'center'>Figura 20: estrutura das pastas após a modularização do código</p>
 <div align = 'center'>
   <img width="30%" alt="image" src="https://github.com/user-attachments/assets/76b12c16-e454-40a5-80c3-d23deaa03a73"/>
 </div><br>
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
-<p align = 'center'>Figura 20: estrutura da versão básica do jogo (com importações de cenas phaser)</p>
+<p align = 'center'>Figura 21: estrutura da versão básica do jogo (com importações de cenas phaser)</p>
 <div align = 'center'>
   <img width="70%" alt="image" src="https://github.com/user-attachments/assets/a3d6a5f5-8cad-4108-906c-16fae2e00bf4"/>
 </div><br>
@@ -930,24 +1074,24 @@ Logo abaixo, estão as telas da versão básica do jogo.
 
 ## 4.3. Desenvolvimento intermediário do jogo
 
-&nbsp; &nbsp; &nbsp; &nbsp;No desenvolvimento intermediário do jogo, foram acrescentados mais itens ao game em relação à versão preliminar. Em termos de código, foi adicionada uma classe “basePhase”, que servirá de arquétipo para o desenvolvimento de todas as outras, parecido com um template. Já em termos de jogo, iniciou-se a implementação do modo criativo do game, que já possui sua principal característica implementada: a seleção de cores por parte do tutor em uma paleta na tela, a fim que seu gato produza suas próprias pinturas de modo personalizado. Por fim, adicionou-se um menu de seleção de níveis, no qual o tutor poderá escolher entre a fase de tutorial, as fases propostas ou o modo criativo.
+&nbsp; &nbsp; &nbsp; &nbsp;No desenvolvimento intermediário do jogo, foram acrescentados mais itens ao game em relação à versão preliminar. Em termos de código, foi adicionada uma classe “basePhase” (figura 22), que servirá de arquétipo para o desenvolvimento de todas as outras, parecido com um template. Já em termos de jogo, iniciou-se a implementação do modo criativo do game (figura 24), que já possui sua principal característica implementada: a seleção de cores por parte do tutor em uma paleta na tela (figura 23), a fim que seu gato produza suas próprias pinturas de modo personalizado. Por fim, adicionou-se um menu de seleção de níveis (figura 25), no qual o tutor poderá escolher entre a fase de tutorial, as fases propostas ou o modo criativo.
 
-<p align = 'center'>Figura 21: Parte do código da classe "basePhase"</p> <br>
+<p align = 'center'>Figura 22: Parte do código da classe "basePhase"</p> <br>
 
 ![image](https://github.com/user-attachments/assets/83390710-7f10-4187-8cd2-be09a1f2bf78)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 22: Menu de seleção de cores do modo criativo</p>
+<p align = 'center'>Figura 23: Menu de seleção de cores do modo criativo</p>
 
 ![image](https://github.com/user-attachments/assets/9e9e0d25-60c2-489e-8f7c-824716c41477)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 23: Modo criativo com splashes na tela</p>
+<p align = 'center'>Figura 24: Modo criativo com splashes na tela</p>
 
 ![image](https://github.com/user-attachments/assets/5548a0db-fa8e-48ef-8f14-29c151f0af5b)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 24: Tela de seleção de níveis</p>
+<p align = 'center'>Figura 25: Tela de seleção de níveis</p>
 
 ![image](https://github.com/user-attachments/assets/e1aa419d-1854-41b3-a25d-f77681b1f998)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
@@ -955,63 +1099,110 @@ Logo abaixo, estão as telas da versão básica do jogo.
 
 ## 4.4. Desenvolvimento final do MVP
 
-Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, como a mudança do storytelling central do jogo e de suas fases, reformulação da tela de vitória e modo criativo, as pinturas definitivas foram definidas, assets sonoros foram definidos e implementados, e foram feitos alguns acabamentos para deixar o jogo mais polido. As novas artes determinadas para as fases de nosso jogo foram: "A Noiva", de Maria Auxiliadora; "Spoliarium" de Juan Luna; "J'aime la couleur" de Chéri Samba; "Aboriginal design, with Sturt's Pea" de Margaret Preston. (Figuras 25 a 28). A nova tela de vitória conta com uma pontuação (quantidade de pombos acertados) e uma contagem de tempo que juntos representam uma pontuação em formato de estrelas (Figura 29). A reformulação do modo criativo conta com um novo botão para o tutor tirar print da obra de seu gato, além de um botão de paletas que permite que o tutor escolha diferentes paletas e formatos de pincel (Figuras 30 a 32). Por fim, os arquivos do jogo atualizados estão demonstrados na figura 33.
+&nbsp; &nbsp; &nbsp; &nbsp;Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, como a mudança do storytelling central do jogo e de suas fases, reformulação da tela de vitória e modo criativo, as pinturas definitivas foram definidas, assets sonoros foram definidos e implementados, e foram feitos alguns acabamentos para deixar o jogo mais polido. As novas artes determinadas para as fases de nosso jogo foram: "A Noiva", de Maria Auxiliadora; "Spoliarium" de Juan Luna; "J'aime la couleur" de Chéri Samba; "Aboriginal design, with Sturt's Pea" de Margaret Preston. (Figuras 26 a 29). A nova tela de vitória conta com uma pontuação (quantidade de pombos acertados) e uma contagem de tempo que juntos representam uma pontuação em formato de estrelas (Figura 30). A reformulação do modo criativo conta com um novo botão para o tutor tirar print da obra de seu gato, além de um botão de paletas que permite que o tutor escolha diferentes paletas e formatos de pincel (Figuras 31 a 33). Por fim, os arquivos do jogo atualizados estão demonstrados na figura 34.
 
-<p align = 'center'>Figura 25: Tela com o quadro da fase 1</p> <br>
+<p align = 'center'>Figura 26: Tela com o quadro da fase 1</p> <br>
 
 ![image](https://github.com/user-attachments/assets/2f68942c-cbfd-4ab6-92e9-59cde50d2dad)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 26: Tela com o quadro da fase 2</p> <br>
+<p align = 'center'>Figura 27: Tela com o quadro da fase 2</p> <br>
 
 ![image](https://github.com/user-attachments/assets/2774d2d9-825f-4107-8c02-8a1398365807)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 27: Tela com o quadro da fase 3</p> <br>
+<p align = 'center'>Figura 28: Tela com o quadro da fase 3</p> <br>
 
 ![image](https://github.com/user-attachments/assets/7f480025-fb30-4144-a4c4-1e52420935ac)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 28: Tela com o quadro da fase 4</p> <br>
+<p align = 'center'>Figura 29: Tela com o quadro da fase 4</p> <br>
 
 ![image](https://github.com/user-attachments/assets/70e6fb38-d8b0-449b-8cea-679db402bc2b)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 29: Tela de vitória atualizada</p> <br>
+<p align = 'center'>Figura 30: Tela de vitória atualizada</p> <br>
 
 ![image](https://github.com/user-attachments/assets/eca91e13-1d08-4410-bf98-29bda8787df9)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 30: Tela do modo criativo:</p> <br>
+<p align = 'center'>Figura 31: Tela do modo criativo:</p> <br>
 
 ![image](https://github.com/user-attachments/assets/697b9288-3389-429f-8731-20b201418641)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 31: Tela do modo criativo(2):</p> <br>
+<p align = 'center'>Figura 32: Tela do modo criativo(2):</p> <br>
 
 ![image](https://github.com/user-attachments/assets/3ca18bcf-9bfd-4c33-9762-8dceff3a37c9)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 32: Tela de seleção de paletas modo criativo</p> <br>
+<p align = 'center'>Figura 33: Tela de seleção de paletas modo criativo</p> <br>
 
 ![image](https://github.com/user-attachments/assets/58eefa74-c00e-4645-b137-27ee1eb0fdaf)
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 <div align = 'center'> 
-<p align = 'center'> Figura 33: Arquivos do jogo atualizados.</p>
+<p align = 'center'> Figura 34: Arquivos do jogo atualizados.</p>
 	<img src = "https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/Captura%20de%20tela%202025-03-28%20193243.png">
 <p align = 'center'>Fonte: material produzido pelos autores(2025).</p> <br><br>
 </div>
 
-## 4.5. Revisão do MVP (sprint 5)
+## 4.5. Revisão do MVP
 
-*Descreva e ilustre aqui o desenvolvimento dos refinamentos e revisões da versão final do jogo, explicando brevemente o que foi entregue em termos de MVP. Utilize prints de tela para ilustrar.*
+Nesta etapa de refinamento do jogo, tivemos diversos pontos de melhoria no design e experiência do usuário e funcionamento do jogo, como a interface da tela de seleção de modos de jogo, que agora, além de mais intuitiva e visualmente agradável, conta com uma lógica de desbloqueio de fases, de modo que se faz necessário passar pelo tutorial antes de acessar outros modos de jogo.
+
+Sobre as fases: alteramos o plano de fundo e o texto de instrução do tutorial, adcionamos o botão de "avançar", que leva do tutorial para a primeia fase, atualizamos o som emitido ao abater um alvo, adicionamos um sprite autoral de criatura da segunda fase, a cobra coral, alteramos as informações exibidas na tela (agora exibimos apenas um contador de alvos), atualizamos as fontes de todos os textos do jogo de modo a deixá-los mais coerentes com a estética do jogo, e os botões para tocar e segurar estão totalmente funcionais.
+
+E por fim, adicionamos uma tela de créditos que possui um botão correspondente na última fase, uma mensagem na primeira tela que sugere utilizar o dispositivo na horizontal para jogar, e consertamos "bugs" do modo criativo.
+
+<div align = 'center'>
+<p align = 'center'> Figura 34: Nova tela de seleção de modos de jogo.</p>
+	<img src = "https://github.com/user-attachments/assets/652c5072-32f1-477c-b300-957661f59f52">
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+</div>
+
+<div align = 'center'>
+<p align = 'center'> Figura 35: Tela de tutorial atualizada.</p>
+
+![telaTutorial](https://github.com/user-attachments/assets/f2c2d7e8-c637-477a-9de3-b86a4cd36ccf)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+</div>
+
+<div align = 'center'>
+<p align = 'center'> Figura 36: Tela de uma das fases com design atualizado.</p>
+
+![organizaçãoBotões](https://github.com/user-attachments/assets/e8ea1481-b909-4e57-bd2b-829bcf505f0b)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+</div>
+
+<div align = 'center'>
+<p align = 'center'> Figura 37: Texto de instrução para o print atualizado.</p>
+
+![telaPrint](https://github.com/user-attachments/assets/1f02a8cc-6ea6-4a13-a081-75f0cc992bda)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+</div>
+
+<div align = 'center'>
+<p align = 'center'> Figura 38: Spritesheet da cobra</p>
+
+![cobra](https://github.com/user-attachments/assets/20b06ca5-989d-438c-9203-81254fa656a6)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+</div>
+
+<div align = 'center'>
+<p align = 'center'> Figura 39: Texto de instrução para a recompensa atualizado.</p>
+
+![textoRecompensa](https://github.com/user-attachments/assets/50290b43-89fa-4af5-a1c3-10fcc77eb7d6)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+</div>
 
 # <a name="c5"></a>5. Testes
 
 ## 5.1. Casos de Teste
 
-## 5.1. Casos de Teste
+&nbsp; &nbsp; &nbsp; &nbsp;De acordo com Schwering (2023), caso de teste consiste em um conjunto de ações sequenciais que têm como objetivo verificar e validar a eficiência de um software. Desse modo, ele possibilita averiguar se um software está funcionando como o desejado e planejado, por meio do estabelecimento de pré-condições, descrições dos testes e pós-condições. Portanto, tal abordagem foi utilizada no jogo RonRonArte (quadro 5), a fim de assegurar que o game esteja operando conforme seus requisitos, especificados na seção 1.2 deste documento.
+
+<p align = 'center'>Quadro 5: caso de teste do jogo RonRonArte</p>
 
 \# | pré-condição | descrição do teste | pós-condição 
 --- | --- | --- | --- 
@@ -1026,49 +1217,73 @@ Nessa etapa de desenvolvimento final do MVP, foram feitas diversas mudanças, co
 9 | Cena do modo criativo | Selecionar tinta na paleta de tintas | Ao clicar no alvo, a tinta selecionada é pintda na tela
 10| Cena de fase do jogo | Gato bater no mesmo alvo repetidas vezes | Apenas uma batida é contabilizada
 11| Cena de level select | Tutor clicar no botão repetidas vezes | Direciona para a cena correta, com transição e sem bugs
-12| Fase do jogo | Ao inciar e durante a fase | Alvo se movimenta dentro do quadro, e possui velocidade constante no eixo x e variada no eixo y
+12| Alvo abatido pelo gato na fase| Assim que o tutor clicar em continuar depois de recompensar seu gato | Noco alvo se movimenta dentro do quadro, e possui velocidade constante no eixo x e variada no eixo y
 13| Cenas com botões de segurar (tutorial, fases, criativo) | Tocar nos botões da cena | Cancela o carregamento do botão e não realiza a funcionalidade do botão
 14| Cenas com botões de segurar (tutorial, fases, criativo) | Pressionar e segurar os botões da cena | Realiza a funcionalidade correta do botão
 15| Modo criativo | Clicar e segurar o botão de print representado por uma câmera | Aviso para tirar uma printscreen seguido de remoção dos elementos extras ao quadro da tela
 
-## 5.2. Testes de jogabilidade (playtests) (sprint 4)
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p>
+
+## 5.2. Testes de jogabilidade (playtests)
 
 ### 5.2.1 Registros de testes
 
-*Descreva nesta seção as sessões de teste/entrevista com diferentes jogadores. Registre cada teste conforme o template a seguir.*
+### 5.2.1.1: Registro dos testes de guerrilha
 
-Nome | João Jonas (use nomes fictícios)
---- | ---
-Já possuía experiência prévia com games? | sim, é um jogador casual
-Conseguiu iniciar o jogo? | sim
-Entendeu as regras e mecânicas do jogo? | entendeu as regras, mas sobre as mecânicas, apenas as essenciais, não explorou os comandos complexos
-Conseguiu progredir no jogo? | sim, sem dificuldades  
-Apresentou dificuldades? | Não, conseguiu jogar com facilidade e afirmou ser fácil
-Que nota deu ao jogo? | 9.0
-O que gostou no jogo? | Gostou  de como o jogo vai ficando mais difícil ao longo do tempo sem deixar de ser divertido
-O que poderia melhorar no jogo? | A responsividade do personagem aos controles, disse que havia um pouco de atraso desde o momento do comando até a resposta do personagem
+&nbsp; &nbsp; &nbsp; &nbsp;Segundo Kawakami (2021), um teste de guerrilha consiste em verificar e validar um produto com eventuais usuários por meio da abordagem destes em locais públicos, sem um combinado prévio de testes com eles. Logo, os pesquisadores convidam essas pessoas para participar desse processo, porém sem obrigá-las. A título de comparação, algumas pesquisas eleitorais e até mesmo sessões de degustação de alimentos em supermercados se enquadram nessa categoria de testagem. Nesse sentido, dentre suas vantagens estão a rapidez e o baixo custo, além de uma abrangência considerável de perfis de usuários a realizarem essa atividade. Dessa forma, efetuou-se o teste supracitado no contexto do jogo RonRonArte (quadro 6), com o objetivo de coletar feedbacks e possíveis melhorias a serem feitas.
+
+<p align = 'center'>Quadro 6: testes de guerrilha</p>
+
+Perguntas | Entrevistado 1 | Entrevistado 2 | Entrevistado 3 | Entrevistado 4 | Entrevistado 5 | Entrevistado 6 | Entrevistado 7
+--- | --- | --- | --- | --- | --- | --- | --- 
+Você tem um gato? | Sim | Não | Não | Sim, 4 gatos | SIm | Não |Sim 
+Já possuía experiência com jogos para gatos? | Sim, jogos de matar formigas | Não | Sim, jogos de matar formigas | Não | Sim, jogo com baratas | Não | Não
+Jogo manteu proporção correta na tela do usuário? | Sim | Sim | Sim | Não | Sim | Não | Sim
+Entendeu as regras e mecânicas do jogo? | Sim | Sim | Sim | Sim | Sim | SIm | Sim, mas a tela de fases não está intuitiva
+Entendeu, facilmente, os textos de instruções? | SIm | SIm | Sim, mas achou o texto muito longo | Sim | Sim | Pulou os textos | Sim
+Entendeu, de forma intuitiva, que os botões devem ser pressionados por um tempo para mudarem de cena? | Sim | Sim | Sim, mas os botões estão pequenos | Não, porém quando entendeu, não teve mais dúvidas em outros botões | Não | Mais ou menos, precisou de um "clique teste” | Não
+As disposições dos textos agradaram visualmente? | Mais ou menos, alguns textos estão para fora e um pouco desformadas | As vezes a explicação do quadro foi muito longa | Fonte boa, mas falta formatação | Legal, porém texto está fora da tela | Não, as letras estão muito pequenas | O texto do menu estava pequeno e difícil de ler | Sim
+O tempo para tirar print foi suficiente para o usuário tirar o print no modo criativo? | SIm | Sim | Sim | Sim | Sim | Sim | Sim
+Apresentou dificuldades? | Sim, os botões e alguns textos estão muito pequenos | Não | Não | Sim | Não | Não | Apenas com os botões
+Nota de 0 a 10 que deu para o jogo | 10,0 | 9,5 | 8,0 | 7,0 | 9.5 | 7.0 | 9.5
+O que mais gostou no jogo? | Criatividade, especialmente na parte de criação dos quadros autorais dos gatos | Paleta do modo criativo | Modo criativo | A exploração da criatividade dos gatos | Imagem da lagartixa | Imagem do pombo | O modo criativo 
+O que poderia melhorar no jogo?| Nada | Colocar mais quadros, diversificar mais | Botões muito pequenos, melhor indicador do tempo | Interface de seleção de níveis ser mais intuitivo e o Tutorial ser mais claro | Aumentar a escrita e o tamanho dos alvos | Mudar o Menu, pois é pequeno e pode ser menos intuitivo, assim como os botões. Retirar o temporizador e passar a pontuação para o canto, mexer na estética do botão de modo a destaca-lo mais e juntaa-lo com a borda do quadro | Aumentar o tamanho dos botões
+
+<p align = 'center'>Fonte: material produzido pelos autores (2025).</p>
+
+### 5.2.1.2: Registro dos testes com público-alvo
+
+### 5.2.1.3: Análise das respostas e principais conclusões
+&nbsp; &nbsp; &nbsp; &nbsp;Em relação aos testes de guerrilha, foi notório o agrado dos potenciais usuários com o modo criativo e com a abordagem da temática artística no jogo, assim como foi evidente o sucesso das imagens dos alvos. Nesse teste, foi possível também validar a intuitividade das regras do jogo e das instruções do tutorial, o clicar dos botões e a suficiência do tempo de tirar print do quadro no modo criativo. No entanto, foi possível concluir que a disposição e o tamanho dos textos não tiveram êxito, haja vista que pouco mais de 85% dos entrevistados relataram algum problema nesse aspecto. 
+Sobre o jogo em geral, a média aritmética das notas atribuídas pelos voluntários foi de 8,6, o que revela uma conclusão positiva no tangente à jogabilidade do Ronronarte.
 
 ### 5.2.2 Melhorias
-
-*Descreva nesta seção um plano de melhorias sobre o jogo, com base nos resultados dos testes de jogabilidade*
+&nbsp; &nbsp; &nbsp; &nbsp;Com base nos testes de jogabilidade, a equipe CatUp tem como plano de melhorias aumentar o tamanho dos botões, dos alvos e dos textos - haja vista todos os entrevistados no teste de guerrilha relataram algum desconforto com esses itens -, assim como retirar o temporizador e passar a pontuação para o canto da tela, conforme a sugestão do entrevistado 6. Ademais, em razão da distração dos gatos no teste de usabilidade com o som de miar ao acertar os alvos, a equipe entende que é imprescindível alterar o efeito sonoro para uma frequência mais aguda. 
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros (sprint 5)
 
-*Escreva de que formas a solução do jogo atingiu os objetivos descritos na seção 1 deste documento. Indique pontos fortes e pontos a melhorar de maneira geral.*
+&nbsp; &nbsp; &nbsp; &nbsp;Consoante os resultados dos testes que a equipe realizou, o Ronronarte teve êxito em cumprir os objetivos declarados na seção 2.1, principalmente no que tange a fortalecer o laço entre tutor e gato, já que a dinâmica de pintura e de caça do jogo impactou, de fato, o emocional dos tutores e, paralelamente, entreteu os gatos. Nos testes de guerrilha, foi notório o entusiasmo dos voluntários com o modo criativo e a exploração da temática artística no jogo, o qual configura-se um dos principais diferenciais do Ronronarte, quando comparados aos demais jogos do mercado.
+No entanto, foi perceptível nos testes de usabilidade que o jogo apresenta dificuldades de se adequar totalmente em todos os tipos de dispositivos e, em razão de precisar ser aberto em uma página Web, em algumas ocasiões, o gato bate em espaços da tela que direcionam para fora do jogo. Tal problemática pode ser solucionada com o desenvolvimento de um aplicativo do Ronronarte - por intermédio da continuidade da parceria com a Dr.Pet e do estímulo financeiro da empresa. 
+Além disso, como melhoria, a equipe CatUp idealiza a construção de um dispenser com arduíno para automatizar o ato de dar a recompensa para o gato e também permitir que o gato jogue o Ronronarte, mesmo se seu tutor estiver distante. Para tal efeito, será necessário o auxílio financeiro do parceiro para a disponibilidade dos recursos de hardware e da assistência da universidade para proporcionar aulas com os conhecimentos técnicos basilares para a construção do dispenser. 
 
-*Relacione os pontos de melhorias evidenciados nos testes com plano de ações para serem implementadas no jogo. O grupo não precisa implementá-las, pode deixar registrado aqui o plano para futuros desenvolvimentos.*
+# <a name="c7"></a>7. Referências
+CASAROTTO, Camila. Como fazer análise SWOT ou FOFA: confira o passo a passo completo com as melhores dicas. [S. l.], 20 dez. 2019. Disponível em: https://rockcontent.com/br/blog/como-fazer-uma-analise-swot/. Acesso em: 8 abr. 2025.
 
-*Relacione também quaisquer ideias que o grupo tenha para melhorias futuras*
-
-# <a name="c7"></a>7. Referências (sprint 5)
+EBAC. Concept Art: uma imagem vale mais que mil palavras. [S. l.], 2 jun. 2023. Disponível em: https://ebaconline.com.br/blog/concept-art-uma-imagem-vale-mais-que-mil-palavras. Acesso em: 8 abr. 2025.
 
 FGV. Pesquisa revela que Brasil tem 480 milhões de dispositivos digitais em uso, sendo 2,2 por habitante. [S. l.], 27 jun. 2024. Disponível em: https://portal.fgv.br/noticias/pesquisa-revela-brasil-tem-480-milhoes-dispositivos-digitais-uso-sendo-22-habitante. Acesso em: 28 mar. 2025.
+
+FOLTER, Rodrigo. O que é NPC?. [S. l.], 10 set. 2022. Disponível em: https://canaltech.com.br/games/o-que-e-npc/. Acesso em: 8 abr. 2025.
 
 GOTHELF, Jeff. Use OKRs para definir metas para equipes, não para indivíduos. [S. l.], 17 dez. 2020. Disponível em: https://hbr.org/2020/12/use-okrs-to-set-goals-for-teams-not-individuals?language=pt. Acesso em: 24 mar. 2025.
 
 INSTITUTO PET BRASIL. Censo Pet IPB: com alta recorde de 6% em um ano, gatos lideram crescimento de animais de estimação no Brasil. 2022. Disponível em: https://institutopetbrasil.com/fique-por-dentro/amor-pelos-animais-impulsiona-os-negocios-2-2/ Acesso em: 18 fev. 2025. <br>
 
+KAWAKAMI, Guto. Teste de Guerrilha: recebendo feedbacks de forma rápida e com baixo custo. [S. l.], 29 dez. 2021. Disponível em: https://brasil.uxdesign.cc/teste-de-guerrilha-recebendo-feedbacks-de-forma-r%C3%A1pida-e-com-baixo-custo-466a18d88386. Acesso em: 8 abr. 2025.
+
 MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia. Rio de Janeiro: Alta Books, 2019. 1 recurso online. ISBN 9788550805047. Disponível em: https://integrada.minhabiblioteca.com.br/books/9788550805047. Acesso em: 28 fev. 2025.
+
+MIKOS, Ana Luzia. Julho Dourado alerta tutores sobre cuidados com os pets: Lei estadual reforça conscientização sobre importância da vacinação nos animais de estimação.. [S. l.], 1 jul. 2024. Disponível em: https://www.assembleia.pr.leg.br/comunicacao/noticias/julho-dourado-alerta-tutores-sobre-cuidados-com-os-pets. Acesso em: 7 abr. 2025.
 
 NAPOLEÃO, Bianca Minetto. Matriz de Riscos (Matriz de Probabilidade e Impacto). [S. l.], 26 jun. 2019. Disponível em: https://ferramentasdaqualidade.org/matriz-de-riscos-matriz-de-probabilidade-e-impacto/. Acesso em: 20 mar. 2025.
 
@@ -1077,6 +1292,8 @@ PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Di
 PETZ. Gato tem sentimento? O que e como eles sentem?. [S. l.], 6 ago. 2023. Disponível em: https://www.petz.com.br/blog/pets/gatos/gato-tem-sentimento/. Acesso em: 18 fev. 2025.
 
 ROCHA, Thiago. Metas SMART: entenda o que são e aprenda a definir as suas: Metas SMART devem ser específicas, mensuráveis, atribuíveis, realistas e temporais, auxiliando empresas a determinar objetivos de maneira mais inteligente.. [S. l.], 6 fev. 2025. Disponível em: https://www.rdstation.com/blog/vendas/metas-smart/. Acesso em: 24 mar. 2025.
+
+SCHWERING, Ramona. Como definir casos de teste e prioridades. [S. l.], 9 ago. 2023. Disponível em: https://web.dev/articles/ta-test-cases?hl=pt-br. Acesso em: 8 abr. 2025.
 
 SOLLITTO, André. Por que brasileiros têm preferido escolher gatos como companheiros do lar. Veja, 2022.
 Disponível em: https://veja.abril.com.br/comportamento/por-que-brasileiros-tem-preferido-escolher-gatos-como-companheiros-do-lar/. Acesso em: 18 fev. 2025.
