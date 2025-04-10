@@ -314,7 +314,8 @@ export default class CreativeMode extends BasePhase{
         this.soundTarget.pause()
 
         // Adiciona na tela um aviso para tirar um printscreen
-        this.printText = this.add.image(this.width/2, this.height/2, 'takeAPrintScreen').setDepth(20);
+        this.printText = this.add.image(this.width/2, this.height/2, 'takeAPrintScreen').setDepth(20)
+        .setScale(this.width/1000);
 
         // Desativa o aviso após 2 segundos
         setTimeout(() => {
