@@ -20,73 +20,15 @@ export default class Menu extends Phaser.Scene{
         // Quando o botão jogar for clicado direciona para o menu de seleção de níveis
         this.startButton.on("pointerdown", () => {
             this.soundPlay = this.sound.add('soundPlayButton').play();
-            this.scale.startFullscreen(); // Coloca o jogo em tela cheia
-            
+
             setTimeout(() => {
-                this.fullscreenGame();
+                // Coloca o jogo em tela cheia
+                this.scale.startFullscreen();
                 this.scene.start('LevelSelect') // Direciona para a tela de seleção de níveis
                 this.scene.stop('Menu') // Para o menu
             }, 500);
         });
-
-        
     };
-
-    fullscreenGame() {
-        document.addEventListener('DOMContentLoaded', function() {
-            const fullscreenButton = this.startButton
-            let isFullscreen = false;
-            
-            // Verifica se o navegador suporta a API de tela cheia
-            if (!document.fullscreenEnabled && !document.webkitFullscreenEnabled && 
-                !document.mozFullScreenEnabled && !document.msFullscreenEnabled) {
-                fullscreenButton.textContent = 'Tela cheia não suportada';
-                fullscreenButton.disabled = true;
-                return;
-            }
-            
-            fullscreenButton.addEventListener('click', toggleFullscreen);
-            
-            // Detecta mudanças no modo tela cheia
-            document.addEventListener('fullscreenchange', updateButton);
-            document.addEventListener('webkitfullscreenchange', updateButton);
-            document.addEventListener('mozfullscreenchange', updateButton);
-            document.addEventListener('MSFullscreenChange', updateButton);
-            
-            function toggleFullscreen() {
-                if (!isFullscreen) {
-                    // Entrar em tela cheia
-                    if (document.documentElement.requestFullscreen) {
-                        document.documentElement.requestFullscreen();
-                    } else if (document.documentElement.webkitRequestFullscreen) {
-                        document.documentElement.webkitRequestFullscreen();
-                    } else if (document.documentElement.mozRequestFullScreen) {
-                        document.documentElement.mozRequestFullScreen();
-                    } else if (document.documentElement.msRequestFullscreen) {
-                        document.documentElement.msRequestFullscreen();
-                    }
-                } else {
-                    // Sair da tela cheia
-                    if (document.exitFullscreen) {
-                        document.exitFullscreen();
-                    } else if (document.webkitExitFullscreen) {
-                        document.webkitExitFullscreen();
-                    } else if (document.mozCancelFullScreen) {
-                        document.mozCancelFullScreen();
-                    } else if (document.msExitFullscreen) {
-                        document.msExitFullscreen();
-                    }
-                }
-            }
-            
-            function updateButton() {
-                isFullscreen = !!(document.fullscreenElement || document.webkitFullscreenElement || 
-                                 document.mozFullScreenElement || document.msFullscreenElement);
-                
-                fullscreenButton.textContent = isFullscreen ? 'Sair da Tela Cheia' : 'Ativar Tela Cheia';
-            }
-        });
-    }
 }
 
 
