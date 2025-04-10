@@ -208,10 +208,10 @@ export default class BasePhase extends Phaser.Scene {
         let posX = Phaser.Math.Between(50,this.width-50);
         let posY = Phaser.Math.Between(100,this.height-100);
     
-        // Adiciona o pombo e torna interativo
+        // Adiciona o alvo e torna interativo
         this.target = this.add.sprite(posX, posY, this.targetKey).setScale(this.width/300).setInteractive();
      
-        // Configura a velocidade aleatória do pombo e a direção inicial de movimento
+        // Configura a velocidade aleatória do alvo e a direção inicial de movimento
         let speedK = this.width/95 // Coeficiente de velocidade responsiva
         
         this.target.speedX = Phaser.Math.Between(speedK*1, speedK*1.5);
@@ -219,7 +219,7 @@ export default class BasePhase extends Phaser.Scene {
         this.target.directionX = -1;
         this.target.directionY = 1;
 
-        // Configura aceleração do pombo no eixo y
+        // Configura aceleração do alvo no eixo y
         let accK = speedK/220 // Aceleração proporcional ao coeficiente de velocidade inicial
         
         this.target.accelerationY = Phaser.Math.FloatBetween(accK*1, accK*1.5);
@@ -227,11 +227,11 @@ export default class BasePhase extends Phaser.Scene {
         this.target.VyMax = accK*300; // Velocidade máxima no eixo y
         this.target.VyMin = 0; // Velocidade mínima no eixo y
 
-        // Hitbox do pombo (usado para que não saia da tela)
+        // Hitbox do alvo (usado para que não saia da tela)
         this.target.hitboxWidth = this.target.width*this.width/400*0.4;
         this.target.hitboxHeight = this.target.height*this.width/400*0.4;
 
-        // Inicia a animação de voo do pombo
+        // Inicia a animação de voo do alvo
         this.target.play(this.animKey);
 
         // Inicia o audio do alvo com cuidado para evitar bugs

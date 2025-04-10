@@ -9,25 +9,26 @@ export default class LevelSelect extends Phaser.Scene {
         this.buttonScale = this.scale.width/10050;
         this.lockScale = this.scale.width/900;
 
-        //background
+        // Background
         this.selectBg = this.add.image(this.scale.width*0.5, this.scale.height*0.5, 'selectBg').setDisplaySize(this.scale.width, this.scale.height);
      
 
         this.splashCentral = this.add.image(this.scale.width*0.5, this.scale.height*0.33, 'splashTutorial')
         .setScale(this.scale.width/3500);
-        // adiciona botão de tutorial
+        
+        // Adiciona botão de tutorial
         this.tutorialButton = this.add.image(this.scale.width*0.237, this.scale.height*0.33, 'tutorialButton').setInteractive()
         .setScale(this.scale.width/1500);
 
-        // adiciona o botão do modo Criativo
-        this.criativeButton = this.add.image(this.scale.width*0.762, this.scale.height*0.33, 'criativeButton').setVisible(false)
+        // Adiciona o botão do Modo Criativo
+        this.creativeButton = this.add.image(this.scale.width*0.762, this.scale.height*0.33, 'creativeButton').setVisible(false)
         .setScale(this.scale.width/1500);
-        this.criativeButtonBlocked = this.add.image(this.scale.width*0.762, this.scale.height*0.33, 'criativeButtonBW')
+        this.creativeButtonBlocked = this.add.image(this.scale.width*0.762, this.scale.height*0.33, 'creativeButtonBW')
         .setScale(this.scale.width/1500);
-        this.lockCriative = this.add.image(this.scale.width*.762, this.scale.height*0.33, 'lock')
+        this.lockCreative = this.add.image(this.scale.width*.762, this.scale.height*0.33, 'lock')
         .setScale(this.lockScale);
 
-        // adiciona os botões e textos da fase 1 (tanto bloqueados quanto desbloqueados)
+        // Adiciona os botões e textos da fase 1 (tanto bloqueados quanto desbloqueados)
         this.button1PhaseBlocked = this.add.image(this.scale.width*0.2, this.scale.height*0.67, 'phase1ButtonBW')
         .setScale(this.buttonScale);
         this.frameBW1 = this.add.image(this.scale.width*0.2, this.scale.height*0.67, 'frameBW')
@@ -59,7 +60,7 @@ export default class LevelSelect extends Phaser.Scene {
             this.scene.start('Phase1');
         })
 
-        // adiciona os botões e textos da fase 2 (tanto bloqueados quanto desbloqueados)
+        // Adiciona os botões e textos da fase 2 (tanto bloqueados quanto desbloqueados)
         this.button2PhaseBlocked = this.add.image(this.scale.width*0.4, this.scale.height*0.67, 'phase2ButtonBW')
         .setScale(this.scale.width/5150);
         this.frameBW2 = this.add.image(this.scale.width*0.4, this.scale.height*0.67, 'frameBW')
@@ -82,7 +83,7 @@ export default class LevelSelect extends Phaser.Scene {
             color:'#000000'
         });
 
-        // adiciona os botões e textos da fase 3 (tanto bloqueados quanto desbloqueados)
+        // Adiciona os botões e textos da fase 3 (tanto bloqueados quanto desbloqueados)
         this.button3PhaseBlocked = this.add.image(this.scale.width*0.6, this.scale.height*0.67, 'phase3ButtonBW')
         .setScale(this.scale.width/14500);
         this.frameBW3 = this.add.image(this.scale.width*0.6, this.scale.height*0.67, 'frameBW')
@@ -105,7 +106,7 @@ export default class LevelSelect extends Phaser.Scene {
             color:'#000000'
         });
 
-        // adiciona os botões e textos da fase 4 (tanto bloqueados quanto desbloqueados)
+        // Adiciona os botões e textos da fase 4 (tanto bloqueados quanto desbloqueados)
         this.button4PhaseBlocked = this.add.image(this.scale.width*0.8, this.scale.height*0.67, 'phase4ButtonBW')
         .setScale(this.scale.width/3450);
         this.frameBW4 = this.add.image(this.scale.width*0.8, this.scale.height*0.67, 'frameBW')
@@ -128,17 +129,17 @@ export default class LevelSelect extends Phaser.Scene {
             color: '#000000'
         })
 
-        // torna o botão de tutorial clicável e redireciona para a cena de tutorial quando clicado
+        // Torna o botão de tutorial clicável e redireciona para a cena de tutorial quando clicado
         this.tutorialButton.on('pointerdown', () => {
             this.scene.start('Tutorial');
         })
 
-        // implementação da lógica de liberação das fases (caso tal fase = completa, então libera o botão clicável e colorido da fase seguinte)
+        // Implementação da lógica de liberação das fases (caso tal fase = completa, então libera o botão clicável e colorido da fase seguinte)
         if(completedPhases['Tutorial']){
-            this.criativeButtonBlocked.setVisible(false);
-            this.lockCriative.setVisible(false);
-            this.criativeButton.setVisible(true).setInteractive();
-            this.criativeButton.on('pointerdown', () => {
+            this.creativeButtonBlocked.setVisible(false);
+            this.lockCreative.setVisible(false);
+            this.creativeButton.setVisible(true).setInteractive();
+            this.creativeButton.on('pointerdown', () => {
                 this.scene.start('CreativeMode');
             })
         } 
@@ -151,6 +152,13 @@ export default class LevelSelect extends Phaser.Scene {
             this.button2Phase.setVisible(true).setInteractive();
             this.button2Phase.on('pointerdown', () => {
                 this.scene.start('Phase2');
+            })
+
+            this.creativeButtonBlocked.setVisible(false);
+            this.lockCreative.setVisible(false);
+            this.creativeButton.setVisible(true).setInteractive();
+            this.creativeButton.on('pointerdown', () => {
+                this.scene.start('CreativeMode');
             })
         }
         

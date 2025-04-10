@@ -1,6 +1,3 @@
-import { resizeGame } from './splashScreen.js'
-
-
 // Classe de cena a ser exportada
 export default class Menu extends Phaser.Scene{
     constructor(){

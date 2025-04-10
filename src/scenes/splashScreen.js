@@ -1,5 +1,7 @@
+// Dicionário de fases completas exportado
 export var completedPhases = { Tutorial: false, Phase1: false, Phase2: false, Phase3: false, Phase4: false, CreativeMode: false};
 
+// Função exportada de ajustar tamanho do jogo
 export function resizeGame(game) {
     // Armazenam as dimensões da janela do navegador
     let width = window.innerWidth; 
@@ -63,7 +65,7 @@ export default class SplashScreen extends Phaser.Scene {
 
         //Botões
         this.load.image('selectTutorial', './assets/buttons/Select_Tutorial.png');
-        this.load.image('selectCriative', './assets/buttons/Select_Criativo.png');
+        this.load.image('selectCreative', './assets/buttons/Select_Criativo.png');
         this.load.image('selectPhase1', './assets/buttons/Select_Phase1.png');
         this.load.image('selectPhase2', './assets/buttons/Select_Phase2.png');
         this.load.image('selectPhase3', './assets/buttons/Select_Phase3.png');
@@ -71,7 +73,7 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('startButton', './assets/buttons/botao_start_preto.png');
         this.load.image('skipTutorialButton', './assets/buttons/botao_pular.png');
         this.load.image('pauseBtn', './assets/buttons/pause.png');
-        this.load.image('buttonCriative', './assets/buttons/botao_criativo.png');
+        this.load.image('buttonCreative', './assets/buttons/botao_criativo.png');
         this.load.image('continueBtn', './assets/buttons/botao_continuar_preto.png');
         this.load.spritesheet('spriteLoading', './assets/buttons/loading.png', {frameWidth: 32, frameHeight: 32});
         this.load.image('palette', './assets/buttons/paleta.png');
@@ -86,8 +88,8 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.image('phase2ButtonBW', './assets/buttons/phase2Button_bw.png');
         this.load.image('phase3ButtonBW', './assets/buttons/phase3button_bw.png');
         this.load.image('phase4ButtonBW', './assets/buttons/phase4Button_bw.png');
-        this.load.image('criativeButton', './assets/buttons/criativeButton.png');
-        this.load.image('criativeButtonBW', './assets/buttons/criativeButton_bw.png');
+        this.load.image('creativeButton', './assets/buttons/creativeButton.png');
+        this.load.image('creativeButtonBW', './assets/buttons/creativeButton_bw.png');
         this.load.image('advanceBtn', './assets/buttons/advanceBtn.png');
         this.load.image('creditsBtn', './assets/buttons/creditsBtn.png');
 
@@ -95,7 +97,7 @@ export default class SplashScreen extends Phaser.Scene {
         //Backgrounds
         this.load.image('bgMenu', './assets/backgrounds/bgMenu.png');
         this.load.image('bgTutorial', './assets/backgrounds/larger_tiled_background.jpg');
-        this.load.image('screenCriative', './assets/backgrounds/tela_branca.png');
+        this.load.image('screenCreative', './assets/backgrounds/tela_branca.png');
         this.load.image('selectBg', './assets/backgrounds/textBoxFuncional.png');
         this.load.image('bgVictory', './assets/backgrounds/bgVictory.png');
         this.load.image('bgWhite', './assets/backgrounds/bgWhite.png');
