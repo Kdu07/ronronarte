@@ -17,9 +17,6 @@ export function resizeGame(game) {
     game.scale.resize(width, height);
 }
 
-// Evento para redimensionar o jogo mantendo 2:1
-window.addEventListener('resize', resizeGame);
-
 // Classe de cena a ser exportada
 export default class SplashScreen extends Phaser.Scene {
     constructor(){
@@ -145,7 +142,12 @@ export default class SplashScreen extends Phaser.Scene {
         this.load.audio('soundSnake', './assets/audios/soundSnake.mp3');        
     }
 
-    create(){    
+    create(){
+        // Evento para redimensionar o jogo mantendo 2:1
+        window.addEventListener('resize', resizeGame(this.game));
+
+        resizeGame(this.game)
+
         this.anims.create({
             key: 'animPigeon',
             frames: this.anims.generateFrameNumbers('pigeon', { start: 0, end: 3 }), // Define os frames do spritesheet que serão usados
