@@ -1151,7 +1151,7 @@ Logo abaixo (figuras 15, 16, 17, 18 e 19), estão as telas da versão básica do
 
 &nbsp; &nbsp; &nbsp; &nbsp;Nesta etapa de refinamento do jogo, houve diversos pontos de melhoria no design, experiência do usuário e funcionamento do jogo, como a interface da tela de seleção de modos de jogo, que agora, além de mais intuitiva e visualmente agradável, conta com uma lógica de desbloqueio de fases, de modo que faz-se necessário passar pelo tutorial antes de acessar outros modos de jogo.
 
-&nbsp; &nbsp; &nbsp; &nbsp;Sendo assim, seguem listados os refinamentos do MVP (Produto Mínimo Viável) que a equipe realizou: 
+&nbsp; &nbsp; &nbsp; &nbsp;Sendo assim, seguem listados os refinamentos do MVP (Produto Mínimo Viável) que a equipe realizou, além da representação visual dessas mudanças (figuras 34 a 40): 
 
 <ul>
 <li>Adição de lógica de desbloqueamento de fases;</li>
@@ -1277,7 +1277,7 @@ O que poderia melhorar no jogo?| Nada | Colocar mais quadros, diversificar mais 
 ### 5.2.1.2: Registro dos testes com público-alvo
 &nbsp; &nbsp; &nbsp; &nbsp;Para realizar o teste com o público alvo (tutores e seus gatos), a equipe CatUp produziu um formulário do Google que resultou em 9 respostas. As perguntas do formulário foram elaboradas com o objetivo de validar funcionalidades do jogo (intuitividade do tutorial e dos botões, visual e proporção dos textos e efeitos sonoros escolhidos), assim como verificar a responsividade em diversos dispositivos e compreender, efetivamente, a resposta emocional dos tutores (Aesthetic no Ronronarte), a interação do tutor e do gato com a jogabilidade e como o gato interage com os elementos do jogo. 
 
-&nbsp; &nbsp; &nbsp; &nbsp;Assim, seguem as imagens dos resultados obtidos no formulário (figuras 40 a 57):
+&nbsp; &nbsp; &nbsp; &nbsp;Assim, seguem as imagens dos resultados obtidos no formulário (figuras 41 a 58):
 
 <p align = 'center'>Figura 41: pergunta 1 </p>
 
