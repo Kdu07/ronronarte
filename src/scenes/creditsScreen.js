@@ -9,7 +9,7 @@ export default class CreditsScreen extends Phaser.Scene {
         this.height = this.scale.height;
 
         // Espaçamento entre os elementos da tela de créditos.
-        const spacing = 50;
+        const spacing = this.height/20;
         let verticalPosition = this.height / 4;
 
         // Título com o texto "CRÉDITOS".
@@ -48,7 +48,7 @@ export default class CreditsScreen extends Phaser.Scene {
         verticalPosition += spacing;
 
         // Ajustando posicionamento das imagens das logos do Inteli e da Dr.Pet, adicionando-as na tela.
-        const imageSpacing = 300; 
+        const imageSpacing = this.width/7; 
         let logoInteliHorizontalPosition = this.width / 2 - imageSpacing;
         let drPetHorizontalPosition = this.width / 2 + imageSpacing;
         this.add.image(logoInteliHorizontalPosition, verticalPosition, 'logoInteli').setDepth(20).setScale(this.width/6000);
