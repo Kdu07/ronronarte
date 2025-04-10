@@ -1178,7 +1178,7 @@ Logo abaixo (figuras 15, 16, 17, 18 e 19), estão as telas da versão básica do
 <div align = 'center'>
 <p align = 'center'> Figura 35: Tela de tutorial atualizada.</p>
 
-![telaTutorial](https://github.com/user-attachments/assets/f2c2d7e8-c637-477a-9de3-b86a4cd36ccf)
+![telaTutorial](https://github.com/user-attachments/assets/9b223d25-ad50-4335-a7ff-f77ecc6ad86d)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 </div>
 
@@ -1209,6 +1209,14 @@ Logo abaixo (figuras 15, 16, 17, 18 e 19), estão as telas da versão básica do
 ![textoRecompensa](https://github.com/user-attachments/assets/50290b43-89fa-4af5-a1c3-10fcc77eb7d6)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 </div>
+
+<div align = 'center'>
+<p align = 'center'> Figura 40: Sprite do pombo escurecido.</p>
+
+![pomboEscurecido](https://github.com/user-attachments/assets/298198f3-a7e1-41f5-bf07-94ef138e08b2)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+</div>
+
 
 # <a name="c5"></a>5. Testes
 
