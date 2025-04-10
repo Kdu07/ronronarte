@@ -1265,7 +1265,7 @@ Logo abaixo (figuras 15, 16, 17, 18 e 19), estão as telas da versão básica do
 
 ### 5.2.1.1: Registro dos testes de guerrilha
 
-&nbsp; &nbsp; &nbsp; &nbsp;Segundo Kawakami (2021), um teste de guerrilha consiste em verificar e validar um produto com eventuais usuários por meio da abordagem destes em locais públicos, sem um combinado prévio de testes com eles. Logo, os pesquisadores convidam essas pessoas para participar desse processo, porém sem obrigá-las. A título de comparação, algumas pesquisas eleitorais e até mesmo sessões de degustação de alimentos em supermercados se enquadram nessa categoria de testagem. Nesse sentido, dentre suas vantagens estão a rapidez e o baixo custo, além de uma abrangência considerável de perfis de usuários a realizarem essa atividade. Dessa forma, efetuou-se o teste supracitado no contexto do jogo RonRonArte (quadro 6), com o objetivo de coletar feedbacks e possíveis melhorias a serem feitas.
+&nbsp; &nbsp; &nbsp; &nbsp;Segundo Kawakami (2021), um teste de guerrilha consiste em verificar e validar um produto com eventuais usuários por meio da abordagem destes em locais públicos, sem um combinado prévio de testes com eles. Logo, os pesquisadores convidam essas pessoas para participar desse processo, porém sem obrigá-las. A título de comparação, algumas pesquisas eleitorais e até mesmo sessões de degustação de alimentos em supermercados se enquadram nessa categoria de testagem. Nesse sentido, dentre suas vantagens estão a rapidez e o baixo custo, além de uma abrangência considerável de perfis de usuários a realizarem essa atividade. Dessa forma, efetuou-se o teste supracitado no contexto do jogo RonRonArte (quadro 6), no Inteli, durante a aula de UX, no dia 02/04/2025, com o objetivo de coletar feedbacks e possíveis melhorias a serem feitas. O teste foi feito com estudantes e funcionários da instituição, em um dispositivo celular. 
 
 <p align = 'center'>Quadro 6: testes de guerrilha</p>
 
@@ -1287,7 +1287,7 @@ O que poderia melhorar no jogo?| Nada | Colocar mais quadros, diversificar mais 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p>
 
 ### 5.2.1.2: Registro dos testes de usabilidade
-&nbsp; &nbsp; &nbsp; &nbsp;Uma das membros da equipe CatUp - <a href="https://www.linkedin.com/in/nicolli-venino-santana-b84341254 utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Nicolli Venino Santana</a> - realizou testes com gatos na cafeteria Ronron Café em São Paulo. Durante os testes, foi possível verificar que o efeito sonoro de miado emitido após o abate de um alvo dispersou os gatos do jogo, levando a equipe a alterar o som. Ademais, concluiu-se que quanto mais rápido o alvo se move na tela, mais o gato fica interessado em abatê-lo. 
+&nbsp; &nbsp; &nbsp; &nbsp;Uma das membros da equipe CatUp - <a href="https://www.linkedin.com/in/nicolli-venino-santana-b84341254 utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Nicolli Venino Santana</a> - realizou testes com gatos na cafeteria Ronron Café em São Paulo, no dia 02/04/2025. Os testes foram realizados em um dispositivo celular e, durante o processo, foi possível verificar que o efeito sonoro de miado emitido após o abate de um alvo dispersou os gatos do jogo, levando a equipe a alterar o som. Ademais, concluiu-se que quanto mais rápido o alvo se move na tela, mais o gato fica interessado em abatê-lo. 
 
 Segue, abaixo, uma imagem do teste de usabilidade:
 
