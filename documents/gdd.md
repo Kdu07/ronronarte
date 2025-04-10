@@ -1427,9 +1427,3 @@ SOLLITTO, André. Por que brasileiros têm preferido escolher gatos como companh
 Disponível em: https://veja.abril.com.br/comportamento/por-que-brasileiros-tem-preferido-escolher-gatos-como-companheiros-do-lar/. Acesso em: 18 fev. 2025.
 
 TOTVS. Entenda o que são missão, visão e valores e como defini-los. [S. l.], 27 fev. 2024. Disponível em: https://www.totvs.com/blog/gestao-para-recursos-humanos/missao-visao-e-valores/. Acesso em: 10 abr. 2025.
-
-
-
-# <a name="c8"></a>Anexos
-
-*Inclua aqui quaisquer complementos para seu projeto, como diagramas, imagens, tabelas etc. Organize em sub-tópicos utilizando headings menores (use ## ou ### para isso)*
