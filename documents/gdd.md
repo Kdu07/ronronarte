@@ -525,9 +525,12 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 
 
 <p align = 'center'>Figura 7 - Figura do rato mecânico (RonRonArte)</p><br>
+
 <div align = 'center'>
-	<img src = "https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/rat-spritesheet.png">
-</div><br>
+	
+![rat-spritesheet 1](https://github.com/user-attachments/assets/fac3f4f0-7569-4e42-b5db-f50ec26ddb80)
+
+ </div><br>
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
@@ -535,8 +538,11 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 
 <p align = 'center'>Figura 8 - Figura da lagartixa (RonRonArte)</p><br>
 <div align = 'center'>
-	<img src = "https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/lagartixa-Sheet.png">
-</div><br>
+	
+![lagartixa-Sheet](https://github.com/user-attachments/assets/93c002f3-86d3-407d-a512-8dfbe7817cb0)
+
+
+ </div><br>
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p><br><br>
 
