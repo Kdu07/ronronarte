@@ -722,11 +722,19 @@ Caso queira ver o diagrama de cenas no Figma, [clique aqui](https://www.figma.co
 
 <hr>
 
-- **Criativo (Tela branca para pintura)**:
+- **Criativo (Tela branca para pintura):**
 &nbsp; &nbsp; &nbsp; &nbsp;A fase especial apresentará ao jogador uma tela em branco com uma variedade de opções de cores e formatos de pincel que podem ser escolhidas pelo tutor para seu gato pintar. Após escolhido a cor e o pincel, a fase começa. Após a iniciação da fase, um animal alvo passará pela tela atraindo a atenção do gato, que, ao acertar o alvo, pintará a região pressionada na tela branca de fundo.   
 
-- Classes: CriativeMode;
+- Classes: CreativeMode;
 - Atributos e métodos: create(); update(); clickTarget(); toggleSplashMenu(); this.width; this.height; this.bg; this.palette;
+
+<hr>
+
+-  **Créditos:**
+&nbsp; &nbsp; &nbsp; &nbsp;A tela de créditos apresenta o nome da equipe e dos integrantes, o nome da instituição e do parceiro.
+
+- Classes: CreditsScreen
+- Atributos e métodos: this.title, this.teamName, this.textRealization, this.soundPause, create()
 
 <hr>
 
