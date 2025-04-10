@@ -9,7 +9,7 @@ export default class CreditsScreen extends Phaser.Scene {
         this.height = this.scale.height;
 
         // Espaçamento entre os elementos da tela de créditos.
-        const spacing = this.height/40;
+        const spacing = this.height/30;
         let verticalPosition = this.height / 4;
 
         // Título com o texto "CRÉDITOS".
@@ -34,8 +34,8 @@ export default class CreditsScreen extends Phaser.Scene {
         names.forEach(name => {
             this.add.text(this.width / 2, verticalPosition/1.5, name)
             .setOrigin(0.5).setDepth(20)
-            .setStyle({ color: '#FFFFFF', fontSize: this.width/110, fontFamily: 'font1'});
-            verticalPosition += spacing * 1.2;
+            .setStyle({ color: '#FFFFFF', fontSize: this.width/80, fontFamily: 'font1'});
+            verticalPosition += spacing * 1.4;
         });
 
         verticalPosition += spacing * 0.3;
