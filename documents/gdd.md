@@ -559,7 +559,7 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
-&nbsp; &nbsp; &nbsp; &nbsp; O RonRonArte contém inclusão em seu enredo, uma vez que o jogador, nas fases, é convidado a conhecer mais sobre uma obra cujo autor não é tão conhecido como outros já amplamente difundidos na mídia e na sociedade. Os critérios utilizados para a escolha dos quadros foram a representatividade dos autores, haja vista que cada um deles se enquadra em um grupo sub-representado no universo artístico, levando em conta gênero, cor e nacionalidade. Nesse sentido, os argumentos que sustentam o critério supracitado são as seguintes pesquisas que a equipe encontrou: uma pesquisa de 2022 da ONG "National Museum of Women in the Arts" (NMWA), revela que entre 2008 e 2020, apenas 11% das aquisições e 14,9% das exposições em 31 museus representativos dos EUA foram de obras de artistas mulheres. Por isso, a importância da inclusão de Maria Auxiliadora e Margaret Preston; o projeto “Negrestudo: mapeamento de artistas representados pelas galerias de arte de São Paulo”, liderado por Alan Ariê, mostra que dos 619 nomes levantados pela pesquisa, apenas 46 pessoas não são brancas. Destas, 27 são pessoas negras e apenas 14 são pessoas asiáticas, o que justifica, dessa forma, a inclusão de Juan Luna e de Chéri Samba. 
+&nbsp; &nbsp; &nbsp; &nbsp; O RonRonArte contém inclusão em seu enredo, uma vez que o jogador, nas fases, é convidado a conhecer mais sobre uma obra cujo autor não é tão conhecido como outros já amplamente difundidos na mídia e na sociedade. Os critérios utilizados para a escolha dos quadros foram a representatividade dos autores, haja vista que cada um deles se enquadra em um grupo sub-representado no universo artístico, levando em conta gênero, cor e nacionalidade. Nesse sentido, os argumentos que sustentam o critério supracitado são as seguintes pesquisas que a equipe encontrou: uma pesquisa de 2022 da ONG "National Museum of Women in the Arts", revela que entre 2008 e 2020, apenas 11% das aquisições e 14,9% das exposições em 31 museus representativos dos EUA foram de obras de artistas mulheres (NMWA, 2022). Por isso, a importância da inclusão de Maria Auxiliadora e Margaret Preston; o projeto “Negrestudo: mapeamento de artistas representados pelas galerias de arte de São Paulo”, liderado por Alan Ariê, mostra que dos 619 nomes levantados pela pesquisa, apenas 46 pessoas não são brancas (Ariê, 2020). Destas, 27 são pessoas negras e apenas 14 são pessoas asiáticas, o que justifica, dessa forma, a inclusão de Juan Luna e de Chéri Samba. 
 &nbsp; &nbsp; &nbsp; &nbsp;Além disso, a equipe CatUp fez questão de aumentar o tamanho dos botões e dos textos que estão contidos no jogo, visando incluir os tutores e gatos mais idosos, ou com a visão menos favorecida, assim como para que os tutores que não possuem um dispositivo grande como tablet ou notebook touch possam ter uma experiência equivalente aos demais.
 
 ## 3.3. Mundo do jogo
@@ -1420,6 +1420,9 @@ No entanto, foi perceptível nos testes de usabilidade que o jogo apresenta difi
 Além disso, como melhoria, a equipe CatUp idealiza a construção de um dispenser com arduíno para automatizar o ato de dar a recompensa para o gato e também permitir que o gato jogue o Ronronarte, mesmo se seu tutor estiver distante. Para tal efeito, será necessário o auxílio financeiro do parceiro para a disponibilidade dos recursos de hardware e da assistência da universidade para proporcionar aulas com os conhecimentos técnicos basilares para a construção do dispenser. 
 
 # <a name="c7"></a>7. Referências
+
+ARIÊ, Alan. NEGRESTUDO: MAPEAMENTO DE ARTISTAS REPRESENTADES PELAS GALERIAS DE ARTE DE SÃO PAULO. [S. l.], 8 out. 2020. Disponível em: https://projetoafro.com/editorial/artigo/negrestudo-mapeamento-artistas-representades-pelas-galerias-de-arte-de-sao-paulo/. Acesso em: 10 abr. 2025.
+
 CASAROTTO, Camila. Como fazer análise SWOT ou FOFA: confira o passo a passo completo com as melhores dicas. [S. l.], 20 dez. 2019. Disponível em: https://rockcontent.com/br/blog/como-fazer-uma-analise-swot/. Acesso em: 8 abr. 2025.
 
 EBAC. Concept Art: uma imagem vale mais que mil palavras. [S. l.], 2 jun. 2023. Disponível em: https://ebaconline.com.br/blog/concept-art-uma-imagem-vale-mais-que-mil-palavras. Acesso em: 8 abr. 2025.
@@ -1439,6 +1442,8 @@ MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e es
 MIKOS, Ana Luzia. Julho Dourado alerta tutores sobre cuidados com os pets: Lei estadual reforça conscientização sobre importância da vacinação nos animais de estimação.. [S. l.], 1 jul. 2024. Disponível em: https://www.assembleia.pr.leg.br/comunicacao/noticias/julho-dourado-alerta-tutores-sobre-cuidados-com-os-pets. Acesso em: 7 abr. 2025.
 
 NAPOLEÃO, Bianca Minetto. Matriz de Riscos (Matriz de Probabilidade e Impacto). [S. l.], 26 jun. 2019. Disponível em: https://ferramentasdaqualidade.org/matriz-de-riscos-matriz-de-probabilidade-e-impacto/. Acesso em: 20 mar. 2025.
+
+NMWA. Get the Facts: Learn about gender inequity in the arts with some eye-opening facts.. [S. l.], 2022. Disponível em: https://nmwa.org/support/advocacy/get-facts/. Acesso em: 10 abr. 2025.
 
 PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Disponível em: https://businessmodelanalyst.com/pt/value-proposition-canvas/. Acesso em: 27 mar. 2025.
 
