@@ -13,7 +13,7 @@ export default class Menu extends Phaser.Scene{
         this.bgMenu = this.add.image(this.scale.width/2, this.scale.height/2, 'bgMenu')
         .setDisplaySize(this.scale.width, this.scale.height);
         
-        this.startButton = this.add.image(this.scale.width/1.95, this.scale.height/2, 'startButton')
+        this.startButton = this.add.image(this.scale.width/1.92, this.scale.height/1.8, 'startButton')
         .setScale(this.scale.width/400)
         .setInteractive({cursor: "pointer"});
 

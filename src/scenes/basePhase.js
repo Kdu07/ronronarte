@@ -56,11 +56,15 @@ export default class BasePhase extends Phaser.Scene {
 
             // Adiciona o temporizador
             this.createTimer();
+
+            // Adiciona funcionalidade de clique no alvo
             this.clickTargetComplete();
 
         }else{
             // Cria o background
             this.createBackground();
+
+            // Adiciona funcionalidade de clique no alvo
             this.clickTarget();
         }
 
@@ -75,8 +79,6 @@ export default class BasePhase extends Phaser.Scene {
         // Configura e adiciona o pombo na tela
         this.spawnTarget();    
     }
-
-
 
     createTimer() {
         this.timerOn = true;
@@ -207,11 +209,10 @@ export default class BasePhase extends Phaser.Scene {
         let posY = Phaser.Math.Between(100,this.height-100);
     
         // Adiciona o pombo e torna interativo
-        this.target = this.add.sprite(posX, posY, this.targetKey).setScale(this.width/350).setInteractive();
-    
-        let coef = this.width/80 
+        this.target = this.add.sprite(posX, posY, this.targetKey).setScale(this.width/300).setInteractive();
+     
         // Configura a velocidade aleatória do pombo e a direção inicial de movimento
-        let speedK = coef//this.width/200; // Coeficiente para a velocidade ser responsiva
+        let speedK = this.width/80 // Coeficiente de velocidade responsiva
         
         this.target.speedX = Phaser.Math.Between(speedK*1, speedK*1.5);
         this.target.speedY = Phaser.Math.Between(speedK*1, speedK*1.5);
@@ -219,8 +220,10 @@ export default class BasePhase extends Phaser.Scene {
         this.target.directionY = 1;
 
         // Configura aceleração do pombo no eixo y
-        let accK = coef/220 //this.width/70000; // Coeficiente para a aceleração ser responsiva
+        let accK = speedK/220 // Aceleração proporcional ao coeficiente de velocidade inicial
+        
         this.target.accelerationY = Phaser.Math.FloatBetween(accK*1, accK*1.5);
+        
         this.target.VyMax = accK*300; // Velocidade máxima no eixo y
         this.target.VyMin = 0; // Velocidade mínima no eixo y
 
@@ -257,14 +260,17 @@ export default class BasePhase extends Phaser.Scene {
                     this.target.destroy();
                     this.target = null;
                     
+                    // Para o som do alvo
                     this.soundTarget.stop();
 
-                    this.soundClick.play({ volume: 0.3 }); // Toca o som configurado quando o alvo é clicado
+                    // Toca o som configurado quando o alvo é clicado por 1 segundo
+                    this.soundClick.play({ volume: 0.3 }); 
                     this.time.delayedCall(1000, () => {
-                        this.soundClick.stop(); // Para o som do clique após 1000ms (1s)
+                        this.soundClick.stop();
                     });
                     
-                    this.splash = this.add.image(pointer.x, pointer.y, 'splashTutorial').setScale(this.width/4000).setAlpha(0.6); // Cria um splash no local do clique
+                    // Adiciona splash e texto de recompensa
+                    this.splash = this.add.image(pointer.x, pointer.y, 'splashTutorial').setScale(this.width/2500).setAlpha(0.8); // Cria um splash no local do clique
                     this.time.delayedCall(200, () => {
                         this.reward = this.add.image(this.width/2, this.height/2, 'reward').setScale(this.width/1200);
                         this.skipRewardText = this.add.image(this.width/2, this.height/1.5, 'continueBtn').setScale(this.width/600).setInteractive();
@@ -305,9 +311,10 @@ export default class BasePhase extends Phaser.Scene {
 
                     this.soundTarget.stop(); // Para o som do alvo
                     
-                    this.soundClick.play({ volume: 0.3 }); // Toca o som configurado quando o alvo é clicado
+                    // Toca o som configurado quando o alvo é clicado
+                    this.soundClick.play({ volume: 0.3 }); 
                     this.time.delayedCall(1000, () => {
-                        this.soundClick.stop(); // Para o som de clique após 1000ms (1s)
+                        this.soundClick.stop();
                     });
 
                     this.score++; // Adiciona 1 ponto à pontuação
@@ -330,7 +337,6 @@ export default class BasePhase extends Phaser.Scene {
                         this.displayVictory();                        
                     } else {
                         // Se o jogo não acabou
-
                         // Aviso para recompensar o gato
                         this.time.delayedCall(100, () => {
                             this.reward = this.add.image(this.width/2, this.height/2, 'reward').setScale(this.width/1200);
@@ -352,10 +358,8 @@ export default class BasePhase extends Phaser.Scene {
                     };
                 } 
             }
-            
         });
     }
-    
 
     displayVictory() {
         completedPhases[this.phaseKey] = true
@@ -469,6 +473,6 @@ export default class BasePhase extends Phaser.Scene {
         // Move no eixo X e Y de acordo com a velocidade e direção
         // Nova posição do pombo = posição atual do pombo + velocidade do pombo * direção do pombo (-1,1)
         target.x += target.speedX * target.directionX;
-        target.y += target.speedY * target.directionY; // Fim
+        target.y += target.speedY * target.directionY;
     }
 }

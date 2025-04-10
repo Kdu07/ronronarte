@@ -50,6 +50,15 @@ export default class LevelSelect extends Phaser.Scene {
             color:'#000000'
         });
 
+        this.frameBW1.setVisible(false);
+        this.button1PhaseBlocked.setVisible(false);
+        this.lock1.setVisible(false);
+        this.squareFrame1.setVisible(true);
+        this.button1Phase.setVisible(true).setInteractive();
+        this.button1Phase.on('pointerdown', () => {
+            this.scene.start('Phase1');
+        })
+
         // adiciona os botões e textos da fase 2 (tanto bloqueados quanto desbloqueados)
         this.button2PhaseBlocked = this.add.image(this.scale.width*0.4, this.scale.height*0.67, 'phase2ButtonBW')
         .setScale(this.scale.width/5150);
@@ -126,19 +135,11 @@ export default class LevelSelect extends Phaser.Scene {
 
         // implementação da lógica de liberação das fases (caso tal fase = completa, então libera o botão clicável e colorido da fase seguinte)
         if(completedPhases['Tutorial']){
-            this.frameBW1.setVisible(false);
-            this.button1PhaseBlocked.setVisible(false);
-            this.lock1.setVisible(false);
             this.criativeButtonBlocked.setVisible(false);
             this.lockCriative.setVisible(false);
             this.criativeButton.setVisible(true).setInteractive();
             this.criativeButton.on('pointerdown', () => {
                 this.scene.start('CreativeMode');
-            })
-            this.squareFrame1.setVisible(true); 
-            this.button1Phase.setVisible(true).setInteractive();
-            this.button1Phase.on('pointerdown', () => {
-                this.scene.start('Phase1');
             })
         } 
 

@@ -246,7 +246,7 @@ export default class CreativeMode extends BasePhase{
                         this.soundTarget.stop();
                     }
 
-                    this.soundSplash.play({ volume: 0.5 }); // Toca o som configurado quando o alvo é clicado
+                    this.soundSplash.play({ volume: 0.3 }); // Toca o som configurado quando o alvo é clicado
                     this.time.delayedCall(1000, () => {
                         this.soundSplash.stop(); // Para o som do clique após 1000ms (1s)
                     });
@@ -330,6 +330,6 @@ export default class CreativeMode extends BasePhase{
             this.pauseBtn.setVisible(true);
             this.printBtn.setVisible(true);
             this.soundTarget.play()
-        }, 6000);
+        }, 8000);
     }
 }
