@@ -30,8 +30,6 @@
 
 [7. Referências](#c7)
 
-[Anexos](#c8)
-
 <br>
 
 
@@ -150,16 +148,17 @@ Exemplos:
 <hr>
 
 ### 1.1.3. Missão / Visão / Valores 
+&nbsp; &nbsp; &nbsp; &nbsp; Em linhas gerais, missão se refere à razão de existir de uma empresa ou negócio. A visão é o que essa empresa ou negócio aspira a ser. Por fim, os valores são princípios que norteiam o trabalho de uma companhia ou negócio (TOTVS, 2024). Sob essa perspectiva, menciona-se a missão, a visão e os valores de RonRonArte.
 
-## Missão:
+#### Missão:
 
 &nbsp; &nbsp; &nbsp; &nbsp;Contribuir para a educação pet em casa através da divulgação de conteúdo informativo nas redes sociais e venda de cursos e mentorias, com recursos que promovem a integração de tutores.
 
-## Visão:
+#### Visão:
 
 &nbsp; &nbsp; &nbsp; &nbsp;Ser referência no mercado pet focando na educação, oferecendo um serviço personalizado e exclusivo, e construir uma comunidade de tutores que compartilham experiências e aprendizados com seus pets e sobre eles também.
 
-## Valores:
+#### Valores:
 
 - Respeito aos animais (A marca Dr. Pet educa os tutores, promovendo amor e carinho entre os animais e as pessoas);
 
@@ -488,13 +487,13 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 
 ### 2.2.4. Títulos semelhantes e inspirações
 
-&nbsp; &nbsp; &nbsp; &nbsp;Nosso jogo teve como inspiração outros títulos de jogos para gato, como:
+&nbsp; &nbsp; &nbsp; &nbsp;O jogo RonRonArte teve como inspiração outros títulos de jogos para gato, como:
 
-&nbsp; &nbsp; &nbsp; &nbsp;Paint for Cats: Jogo cuja principal mecânica é ser um "jogo de pintar" para gatos, em que um rato colorido atravessa a tela com o intuito do gato bater na tela tentando o acertar. Ao acertá-lo, deixa um "splash" de tinta em formato de pata na tela.
+&nbsp; &nbsp; &nbsp; &nbsp;Paint for Cats: jogo cuja principal mecânica é ser um "jogo de pintar" para gatos, em que um rato colorido atravessa a tela com o intuito do gato bater na tela tentando o acertar. Ao acertá-lo, deixa um "splash" de tinta em formato de pata na tela.
 
-&nbsp; &nbsp; &nbsp; &nbsp;Games for Cats: Jogo em que o gato deve acertar um animal correndo pela tela. Contempla diferentes tipos de animais com diferentes características e níveis de dificuldade.
+&nbsp; &nbsp; &nbsp; &nbsp;Games for Cats: jogo em que o gato deve acertar um animal correndo pela tela. Contempla diferentes tipos de animais com diferentes características e níveis de dificuldade.
 
-&nbsp; &nbsp; &nbsp; &nbsp;Nosso jogo visa mesclar mecânicas presentes nesses outros jogos com uma identidade visual própria, buscando uma experiência interativa e divertida para gato e tutor.
+&nbsp; &nbsp; &nbsp; &nbsp;O jogo RonRonArte visa mesclar mecânicas presentes nesses outros jogos com uma identidade visual própria, buscando uma experiência interativa e divertida para gato e tutor.
 
 ### 2.2.5. Tempo estimado de jogo
 
@@ -526,9 +525,12 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 
 
 <p align = 'center'>Figura 7 - Figura do rato mecânico (RonRonArte)</p><br>
+
 <div align = 'center'>
-	<img src = "https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/rat-spritesheet.png">
-</div><br>
+	
+![rat-spritesheet 1](https://github.com/user-attachments/assets/fac3f4f0-7569-4e42-b5db-f50ec26ddb80)
+
+ </div><br>
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
@@ -536,8 +538,11 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 
 <p align = 'center'>Figura 8 - Figura da lagartixa (RonRonArte)</p><br>
 <div align = 'center'>
-	<img src = "https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/main/assets/lagartixa-Sheet.png">
-</div><br>
+	
+![lagartixa-Sheet](https://github.com/user-attachments/assets/93c002f3-86d3-407d-a512-8dfbe7817cb0)
+
+
+ </div><br>
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p><br><br>
 
@@ -554,7 +559,7 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
-&nbsp; &nbsp; &nbsp; &nbsp; O RonRonArte contém inclusão em seu enredo, uma vez que o jogador, nas fases, é convidado a conhecer mais sobre uma obra cujo autor não é tão conhecido como outros já amplamente difundidos na mídia e na sociedade. Os critérios utilizados para a escolha dos quadros foram a representatividade dos autores, haja vista que cada um deles se enquadra em um grupo sub-representado no universo artístico, levando em conta gênero, cor e nacionalidade. Nesse sentido, os argumentos que sustentam o critério supracitado são as seguintes pesquisas que a equipe encontrou: uma pesquisa de 2022 da ONG "National Museum of Women in the Arts" (NMWA), revela que entre 2008 e 2020, apenas 11% das aquisições e 14,9% das exposições em 31 museus representativos dos EUA foram de obras de artistas mulheres. Por isso, a importância da inclusão de Maria Auxiliadora e Margaret Preston; o projeto “Negrestudo: mapeamento de artistas representados pelas galerias de arte de São Paulo”, liderado por Alan Ariê, mostra que dos 619 nomes levantados pela pesquisa, apenas 46 pessoas não são brancas. Destas, 27 são pessoas negras e apenas 14 são pessoas asiáticas, o que justifica, dessa forma, a inclusão de Juan Luna e de Chéri Samba. 
+&nbsp; &nbsp; &nbsp; &nbsp; O RonRonArte contém inclusão em seu enredo, uma vez que o jogador, nas fases, é convidado a conhecer mais sobre uma obra cujo autor não é tão conhecido como outros já amplamente difundidos na mídia e na sociedade. Os critérios utilizados para a escolha dos quadros foram a representatividade dos autores, haja vista que cada um deles se enquadra em um grupo sub-representado no universo artístico, levando em conta gênero, cor e nacionalidade. Nesse sentido, os argumentos que sustentam o critério supracitado são as seguintes pesquisas que a equipe encontrou: uma pesquisa de 2022 da ONG "National Museum of Women in the Arts", revela que entre 2008 e 2020, apenas 11% das aquisições e 14,9% das exposições em 31 museus representativos dos EUA foram de obras de artistas mulheres (NMWA, 2022). Por isso, a importância da inclusão de Maria Auxiliadora e Margaret Preston; o projeto “Negrestudo: mapeamento de artistas representados pelas galerias de arte de São Paulo”, liderado por Alan Ariê, mostra que dos 619 nomes levantados pela pesquisa, apenas 46 pessoas não são brancas (Ariê, 2020). Destas, 27 são pessoas negras e apenas 14 são pessoas asiáticas, o que justifica, dessa forma, a inclusão de Juan Luna e de Chéri Samba. 
 &nbsp; &nbsp; &nbsp; &nbsp;Além disso, a equipe CatUp fez questão de aumentar o tamanho dos botões e dos textos que estão contidos no jogo, visando incluir os tutores e gatos mais idosos, ou com a visão menos favorecida, assim como para que os tutores que não possuem um dispositivo grande como tablet ou notebook touch possam ter uma experiência equivalente aos demais.
 
 ## 3.3. Mundo do jogo
@@ -571,8 +576,7 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 
 <p align = "center">Figura 10: Concept Art - RonRonArte</p>
 
-![Untitled (1)](https://github.com/user-attachments/assets/7c89a7f7-7194-4e4f-9d52-2042f123cf9f)
-
+![Concept](https://github.com/user-attachments/assets/495bcea6-76b6-4b16-ae6e-ad703ccb8509)
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p>
 
@@ -635,7 +639,7 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 
 <p align ="center">Figura 11: diagrama de cenas - RonRonArte</p>
 
-![Diagrama de Cenas (4)](https://github.com/user-attachments/assets/bc3cf626-7a2b-4ea4-ae68-f9e452fce3ca)
+![Diagrama de Cenas (4)](https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/6af248fdc0bbb9fc66ed9af5f16fe7b475d4eaac/assets/diagrama%20de%20cenas%20-%20ronronartef.png)
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br> <br>
 
@@ -655,7 +659,7 @@ Caso queira ver o diagrama de cenas no Figma, [clique aqui](https://www.figma.co
 <hr>
 
 - **Tela de start:** 
-&nbsp; &nbsp; &nbsp; &nbsp;A tela de start conta com uma imagem de fundo gerada por IA que apresenta elementos do storytelling do jogo como um portal, pinturas emolduradas e um gato. Além disso, há também um botão de "JOGAR", que ao ser pressionado redireciona para a tela de primeira fase do jogo.
+&nbsp; &nbsp; &nbsp; &nbsp;A tela de start conta com uma imagem de fundo que apresenta elementos do storytelling do jogo como um portal, pinturas emolduradas e um gato. Além disso, há também um botão de "JOGAR", que ao ser pressionado redireciona para a tela de primeira fase do jogo.
 
 - Classes: Menu;
 - Atributos e métodos: create() e resizeGame();
@@ -722,22 +726,30 @@ Caso queira ver o diagrama de cenas no Figma, [clique aqui](https://www.figma.co
 
 <hr>
 
-- **Criativo (Tela branca para pintura)**:
+- **Criativo (Tela branca para pintura):**
 &nbsp; &nbsp; &nbsp; &nbsp;A fase especial apresentará ao jogador uma tela em branco com uma variedade de opções de cores e formatos de pincel que podem ser escolhidas pelo tutor para seu gato pintar. Após escolhido a cor e o pincel, a fase começa. Após a iniciação da fase, um animal alvo passará pela tela atraindo a atenção do gato, que, ao acertar o alvo, pintará a região pressionada na tela branca de fundo.   
 
-- Classes: CriativeMode;
+- Classes: CreativeMode;
 - Atributos e métodos: create(); update(); clickTarget(); toggleSplashMenu(); this.width; this.height; this.bg; this.palette;
+
+<hr>
+
+-  **Créditos:**
+&nbsp; &nbsp; &nbsp; &nbsp;A tela de créditos apresenta o nome da equipe e dos integrantes, o nome da instituição e do parceiro.
+
+- Classes: CreditsScreen
+- Atributos e métodos: this.title, this.teamName, this.textRealization, this.soundPause, create()
 
 <hr>
 
 ## 3.6. Regras do jogo
 &nbsp; &nbsp; &nbsp; &nbsp; As regras do Ronronarte constituem o gato atingir com um toque os alvos (figuras de animais) que aparecem e se movem na tela e, em cada acerto dele, o tutor recompensará o seu pet com um petisco. Desse modo, é possível o gato associar o abater de alvos com a recompensa alimentícia. 
-Ademais, no modo criativo, as regras permanecem sendo o abater de alvos. No entanto, nesse modo, o gato poderá criar suas próprias pinturas, pois a cada abate um splash de tinta é jogado na tela. O alvo, as cores e as formas dos splashes podem ser determinadas pelo tutor no próprio modo criativo e, quando preferir, o usuário pode tirar um print da pintura que seu pet produziu. Logo, há a intersecção entre os instintos de caça do gato, da arte e da alimentação animal.
+&nbsp; &nbsp; &nbsp; &nbsp;Ademais, no modo criativo, as regras permanecem sendo o abater de alvos. No entanto, nesse modo, o gato poderá criar suas próprias pinturas, pois a cada abate um splash de tinta é jogado na tela. O alvo, as cores e as formas dos splashes podem ser determinadas pelo tutor no próprio modo criativo e, quando preferir, o usuário pode tirar um print da pintura que seu pet produziu. Logo, há a intersecção entre os instintos de caça do gato, da arte e da alimentação animal.
 
 ## 3.7. Mecânicas do jogo
 
 &nbsp; &nbsp; &nbsp; &nbsp; As mecânicas do jogo Ronronarte são simples e de fácil entendimento. A mecânica de touch funciona quando o gato acerta o alvo, revelando parte de um quadro, de modo que essa parte revelada seja localizada próxima ao ponto de contato do gato com a tela. No modo criativo, segue-se uma mecânica parecida, alterando apenas o resultado dela, em que, após a ação de clicar e acertar o alvo na tela, o gato irá pintar um quadro em branco. Ademais, há também a presença de alvos que chamam a atenção do gato na tela, cujo movimento é randomizado e começa numa posição dentro da tela, instigando a percepção e instinto de caça do gato.
-O Ronronarte conta também com um tutorial, cujo objetivo é fazer com que o tutor entenda como participar do gameplay com o seu gato e como recompensá-lo. Além disso, o modo tutorial serve também para ensinar ao gato como ele deve jogar, ensinando-o a mecânica de toque na tela, associando com a recompensa. Vale salientar também que o tutorial é infinito, de forma que o tutor tem autonomia para decidir quando é o momento ideal para começar a jogar as fases com seu gato, com base no aprendizado dele.
+&nbsp; &nbsp; &nbsp; &nbsp;O Ronronarte conta também com um tutorial, cujo objetivo é fazer com que o tutor entenda como participar do gameplay com o seu gato e como recompensá-lo. Além disso, o modo tutorial serve também para ensinar ao gato como ele deve jogar, ensinando-o a mecânica de toque na tela, associando com a recompensa. Vale salientar também que o tutorial é infinito, de forma que o tutor tem autonomia para decidir quando é o momento ideal para começar a jogar as fases com seu gato, com base no aprendizado dele.
 
 ## 3.8. Implementação Matemática de Animação/Movimento
 
@@ -745,31 +757,31 @@ O Ronronarte conta também com um tutorial, cujo objetivo é fazer com que o tut
 ### 3.8.1. Parâmetros de entrada
 
 
-O elemento gráfico que tem o movimento modelado matematicamente é o pombo que translada da origem ao centro da tela na cena tutorial (botões para abrir a cena: Jogar >>> Tutorial). As posições \(x\) e \(y\) iniciais são definidas pelas variáveis `const posInitialX = 0` e `const posInitialY = 0` (linhas 36 e 37 do arquivo tutorial.js, respectivamente). Ou seja, a posição inicial é dada por $(0\ \text{pixels}, 0\ \text{pixels})$. E a posição final é dada por $(x_f, y_f)$ com $x_f = \frac{larguraJogo}{2}$ (no código, larguraJogo é `this.scale.width`) e $y_f$ é calculado via MUV.
+&nbsp; &nbsp; &nbsp; &nbsp;O elemento gráfico que tem o movimento modelado matematicamente é o pombo que translada da origem ao centro da tela na cena tutorial (botões para abrir a cena: Jogar >>> Tutorial). As posições \(x\) e \(y\) iniciais são definidas pelas variáveis `const posInitialX = 0` e `const posInitialY = 0` (linhas 36 e 37 do arquivo tutorial.js, respectivamente). Ou seja, a posição inicial é dada por $(0\ \text{pixels}, 0\ \text{pixels})$. E a posição final é dada por $(x_f, y_f)$ com $x_f = \frac{larguraJogo}{2}$ (no código, larguraJogo é `this.scale.width`) e $y_f$ é calculado via MUV.
 
 
 ### 3.8.2. Definição do tempo total da animação
 
 
-O tempo total da animação é definido implicitamente no código pelo número de quadros até o pombo chegar à posição final. Como o jogo roda a 60 FPS, o tempo decorrido  \(t\) pode ser estimado a partir da contagem de quadros em `this.count++` (linha 54 do arquivo tutorial.js), conforme a equação:
+&nbsp; &nbsp; &nbsp; &nbsp;O tempo total da animação é definido implicitamente no código pelo número de quadros até o pombo chegar à posição final. Como o jogo roda a 60 FPS, o tempo decorrido  \(t\) pode ser estimado a partir da contagem de quadros em `this.count++` (linha 54 do arquivo tutorial.js), conforme a equação:
 
 
 $$
 t = \frac{count}{60}
 $$
 
-Com $count$ em frames. Dessa forma, nossas equações que seriam em função do tempo $t$, serão em função de $count$.
+&nbsp; &nbsp; &nbsp; &nbsp;Com $count$ em frames. Dessa forma, nossas equações que seriam em função do tempo $t$, serão em função de $count$.
 
 ### 3.8.3. Modelagem matemática
 
 
-O movimento do pombo ocorre nos eixos \(x\) e \(y\) simultaneamente, sendo que no eixo \(x\) o movimento é uniforme (MU) e no eixo \(y\) o movimento é uniformemente variado (MUV).
+&nbsp; &nbsp; &nbsp; &nbsp;O movimento do pombo ocorre nos eixos \(x\) e \(y\) simultaneamente, sendo que no eixo \(x\) o movimento é uniforme (MU) e no eixo \(y\) o movimento é uniformemente variado (MUV).
 
 
 #### 3.8.3.1 Movimentação no eixo \(x\) (MU)
 
 
-O deslocamento no eixo \(x\) ocorre com velocidade constante $v_x$ definida em `this.velX = 5` (linha 44 do arquivo tutorial.js), logo, o deslocamento é dado por:
+&nbsp; &nbsp; &nbsp; &nbsp;O deslocamento no eixo \(x\) ocorre com velocidade constante $v_x$ definida em `this.velX = 5` (linha 44 do arquivo tutorial.js), logo, o deslocamento é dado por:
 
 
 $$
@@ -777,10 +789,10 @@ x(t) = x_i + v_x \cdot t
 $$
 
 
-Onde $x(t)$ é a posição \(x\) em função do tempo, $x_i$ é a posição $x$ inicial (no nosso caso, $x_i = 0$), $v_x$ é a velocidade horizontal e $t$ é o tempo em segundos. E com isso podemos calcular a posição final no eixo $x$.
+&nbsp; &nbsp; &nbsp; &nbsp;Onde $x(t)$ é a posição \(x\) em função do tempo, $x_i$ é a posição $x$ inicial (no nosso caso, $x_i = 0$), $v_x$ é a velocidade horizontal e $t$ é o tempo em segundos. E com isso podemos calcular a posição final no eixo $x$.
 
 
-E $v_x$ é representada pela equação:
+&nbsp; &nbsp; &nbsp; &nbsp;E $v_x$ é representada pela equação:
 
 
 $$
@@ -788,7 +800,7 @@ v_x = v_0 + a \cdot t
 $$
 
 
-Com $a = 0$ (MU) e $v_0 = 5$:
+&nbsp; &nbsp; &nbsp; &nbsp;Com $a = 0$ (MU) e $v_0 = 5$:
 
 
 $$
@@ -796,7 +808,7 @@ v_x = 5 + 0 \cdot t
 $$
 
 
-Portanto:
+&nbsp; &nbsp; &nbsp; &nbsp;Portanto:
 
 
 $$
@@ -807,7 +819,7 @@ $$
 #### 3.8.3.2 Movimentação no eixo \(y\) (MUV)
 
 
-No eixo \(y\) o pombo parte do repouso, ou seja $v_0y = 0$ (definido por `this.velY = 0` na linha 45 do arquivo tutorial.js), e acelera com aceleração $a_y = 0.02$, definida em `this.accelerationY = 0.02` (linha 46 do arquivo tutorial.js). Dessa forma, a equação da posição \(y\) é:
+&nbsp; &nbsp; &nbsp; &nbsp;No eixo \(y\) o pombo parte do repouso, ou seja $v_0y = 0$ (definido por `this.velY = 0` na linha 45 do arquivo tutorial.js), e acelera com aceleração $a_y = 0.02$, definida em `this.accelerationY = 0.02` (linha 46 do arquivo tutorial.js). Dessa forma, a equação da posição \(y\) é:
 
 
 $$
@@ -815,7 +827,7 @@ y(t) = y_i + a_y \cdot t^2 \cdot \frac{1}{2}
 $$
 
 
-Onde $y(t)$ é a posição $y$ em função do tempo, $y_i$ é a posição inicial (no nosso caso, $y_i = 0$), $a_y$ é a aceleração no eixo $y$:
+&nbsp; &nbsp; &nbsp; &nbsp;Onde $y(t)$ é a posição $y$ em função do tempo, $y_i$ é a posição inicial (no nosso caso, $y_i = 0$), $a_y$ é a aceleração no eixo $y$:
 
 
 $$
@@ -829,10 +841,10 @@ e $t$ é o tempo em segundos. E com isso podemos calcular a posição final no e
 ### 3.8.4. Exemplo Numérico
 
 
-Dadas as equações supracitadas, tomamos $(x_0, y_0) = (0, 0)$, $v_0x = 5$, $v_0y = 0$, $a = 0.02$, $x_f = \frac{larguraJogo}{2}$ e calcularemos a posição final do pombo.
+&nbsp; &nbsp; &nbsp; &nbsp;Dadas as equações supracitadas, tomamos $(x_0, y_0) = (0, 0)$, $v_0x = 5$, $v_0y = 0$, $a = 0.02$, $x_f = \frac{larguraJogo}{2}$ e calcularemos a posição final do pombo.
 
 
-Primeiramente determinamos o tempo total do movimento utilizando a equação da posição final no eixo $x$, e como nossa movimentação é atualizada por frame, escreveremos as equações em função dos frames e utilizaremos a relação $t = \frac{count}{60}$ para determinarmos o tempo (Neste exemplo tomaremos $largura Jogo = 1540$):
+&nbsp; &nbsp; &nbsp; &nbsp;Primeiramente, determina-se o tempo total do movimento utilizando a equação da posição final no eixo $x$, e como a movimentação é atualizada por frame, escreve-se as equações em função dos frames e utiliza-se a relação $t = \frac{count}{60}$ para determinarmos o tempo (neste exemplo, tem-se $largura Jogo = 1540$):
 
 
 $$
@@ -864,7 +876,7 @@ t = 2.5667\ \text{segundos}
 $$
 
 
-Agora utilizamos o tempo em segundos para determinar a posição final no eixo $y$:
+&nbsp; &nbsp; &nbsp; &nbsp;Agora, utiliza-se o tempo em segundos para determinar a posição final no eixo $y$:
 
 
 $$
@@ -887,7 +899,7 @@ $$
 y_f = 237.16\ \text{pixels}
 $$
 
-Assim, concluímos que a posição final do pombo será $(770\ \text{pixels}, 237\ \text{pixels})$.
+&nbsp; &nbsp; &nbsp; &nbsp;Assim, conclui-se que a posição final do pombo será $(770\ \text{pixels}, 237\ \text{pixels})$.
 
 
 ### 3.8.5. Implementação no código
@@ -918,7 +930,7 @@ Dentro da função `create()` definimos os parâmetros:
 
 
 ```
-Dentro da função `update()` implementamos o movimento:
+Dentro da função `update()` implementa-se o movimento:
 ```javascript
   // Confere se o personagem chegou no meio da tela
         if (this.character.x <= this.scale.width/2){
@@ -962,7 +974,7 @@ Dentro da função `update()` implementamos o movimento:
 
 
 ```
-Além da implementação matemática, repare que executamos uma série de comandos `console.log()` imprimindo valores de posição e velocidade para validação da modelagem. Incluindo posição final, velocidade final nos dois eixos, e tempo total da animação quando o pombo atinge o centro da tela.
+&nbsp; &nbsp; &nbsp; &nbsp;Além da implementação matemática, repare que são executados uma série de comandos `console.log()` imprimindo valores de posição e velocidade para validação da modelagem. Incluindo posição final, velocidade final nos dois eixos, e tempo total da animação quando o pombo atinge o centro da tela.
 
 
 # <a name="c4"></a>4. Desenvolvimento do Jogo
@@ -1149,52 +1161,74 @@ Logo abaixo (figuras 15, 16, 17, 18 e 19), estão as telas da versão básica do
 
 ## 4.5. Revisão do MVP
 
-Nesta etapa de refinamento do jogo, tivemos diversos pontos de melhoria no design e experiência do usuário e funcionamento do jogo, como a interface da tela de seleção de modos de jogo, que agora, além de mais intuitiva e visualmente agradável, conta com uma lógica de desbloqueio de fases, de modo que se faz necessário passar pelo tutorial antes de acessar outros modos de jogo.
+&nbsp; &nbsp; &nbsp; &nbsp;Nesta etapa de refinamento do jogo, houve diversos pontos de melhoria no design, experiência do usuário e funcionamento do jogo, como a interface da tela de seleção de modos de jogo, que agora, além de mais intuitiva e visualmente agradável, conta com uma lógica de desbloqueio de fases, de modo que faz-se necessário passar pelo tutorial antes de acessar outros modos de jogo.
 
-Sobre as fases: alteramos o plano de fundo e o texto de instrução do tutorial, adcionamos o botão de "avançar", que leva do tutorial para a primeia fase, atualizamos o som emitido ao abater um alvo, adicionamos um sprite autoral de criatura da segunda fase, a cobra coral, alteramos as informações exibidas na tela (agora exibimos apenas um contador de alvos), atualizamos as fontes de todos os textos do jogo de modo a deixá-los mais coerentes com a estética do jogo, e os botões para tocar e segurar estão totalmente funcionais.
+&nbsp; &nbsp; &nbsp; &nbsp;Sendo assim, seguem listados os refinamentos do MVP (Produto Mínimo Viável) que a equipe realizou, além da representação visual dessas mudanças (figuras 35 a 41): 
 
-E por fim, adicionamos uma tela de créditos que possui um botão correspondente na última fase, uma mensagem na primeira tela que sugere utilizar o dispositivo na horizontal para jogar, e consertamos "bugs" do modo criativo.
-
+<ul>
+<li>Adição de lógica de desbloqueamento de fases;</li>
+<li>Alteração do plano de fundo do tutorial;</li>
+<li>Alteração do texto de instrução do tutorial;</li>
+<li>Adição do botão "Avançar", o qual leva do tutorial para a primeira fase;</li>
+<li>Atualização do efeito sonoro emitido quando o gato acerta o alvo;</li>
+<li>Adição de sprite autoral de alvo da segunda fase (cobra coral);</li>
+<li>Alteração das informações exibidas nas fases (eliminação do tempo e exibição apenas do contador de alvos abatidos)</li>
+<li>Atualização da fonte de todos os textos do jogo, de modo a deixá-los mais coerentes com a estética do jogo;</li>
+<li>Refinamento dos botões de tocar e segurar, de forma a deixá-los totalmente funcionais;</li>
+<li>Adição de tela de créditos que possui um botão correspondente na última fase;</li>
+<li>Adição de mensagem na primeira tela que sugere utilizar o dispositivo na horizontal para jogar;</li>
+<li>Eliminação de "bugs" do modo criativo.</li>
+<li>Escurecimento da cor do sprite do alvo pombo;</li>
+<li>Aumento de 2 segundos no tempo de tirar print no modo criativo.</li>
+</ul>
 <div align = 'center'>
-<p align = 'center'> Figura 34: Nova tela de seleção de modos de jogo.</p>
+<p align = 'center'> Figura 35: Nova tela de seleção de modos de jogo.</p>
 	<img src = "https://github.com/user-attachments/assets/652c5072-32f1-477c-b300-957661f59f52">
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 </div>
 
 <div align = 'center'>
-<p align = 'center'> Figura 35: Tela de tutorial atualizada.</p>
+<p align = 'center'> Figura 36: Tela de tutorial atualizada.</p>
 
-![telaTutorial](https://github.com/user-attachments/assets/f2c2d7e8-c637-477a-9de3-b86a4cd36ccf)
+![telaTutorial](https://github.com/user-attachments/assets/9b223d25-ad50-4335-a7ff-f77ecc6ad86d)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 </div>
 
 <div align = 'center'>
-<p align = 'center'> Figura 36: Tela de uma das fases com design atualizado.</p>
+<p align = 'center'> Figura 37: Tela de uma das fases com design atualizado.</p>
 
 ![organizaçãoBotões](https://github.com/user-attachments/assets/e8ea1481-b909-4e57-bd2b-829bcf505f0b)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 </div>
 
 <div align = 'center'>
-<p align = 'center'> Figura 37: Texto de instrução para o print atualizado.</p>
+<p align = 'center'> Figura 38: Texto de instrução para o print atualizado.</p>
 
 ![telaPrint](https://github.com/user-attachments/assets/1f02a8cc-6ea6-4a13-a081-75f0cc992bda)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 </div>
 
 <div align = 'center'>
-<p align = 'center'> Figura 38: Spritesheet da cobra</p>
+<p align = 'center'> Figura 39: Spritesheet da cobra</p>
 
 ![cobra](https://github.com/user-attachments/assets/20b06ca5-989d-438c-9203-81254fa656a6)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 </div>
 
 <div align = 'center'>
-<p align = 'center'> Figura 39: Texto de instrução para a recompensa atualizado.</p>
+<p align = 'center'> Figura 40: Texto de instrução para a recompensa atualizado.</p>
 
 ![textoRecompensa](https://github.com/user-attachments/assets/50290b43-89fa-4af5-a1c3-10fcc77eb7d6)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 </div>
+
+<div align = 'center'>
+<p align = 'center'> Figura 41: Sprite do pombo escurecido.</p>
+
+![pomboEscurecido](https://github.com/user-attachments/assets/298198f3-a7e1-41f5-bf07-94ef138e08b2)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+</div>
+
 
 # <a name="c5"></a>5. Testes
 
@@ -1227,10 +1261,11 @@ E por fim, adicionamos uma tela de créditos que possui um botão correspondente
 ## 5.2. Testes de jogabilidade (playtests)
 
 ### 5.2.1 Registros de testes
+&nbsp; &nbsp; &nbsp; &nbsp; A fim de verificar se o jogo RonRonArte está, de fato, com os requisitos levantados em funcionamento adequado, realizou-se teste de guerrilha no Inteli, teste de usabilidade no Ronron Café e teste com o público-alvo, por intermédio de um formulário do Google, conforme as seções 5.2.1.1 e 5.2.1.2 e 5.2.1.3
 
 ### 5.2.1.1: Registro dos testes de guerrilha
 
-&nbsp; &nbsp; &nbsp; &nbsp;Segundo Kawakami (2021), um teste de guerrilha consiste em verificar e validar um produto com eventuais usuários por meio da abordagem destes em locais públicos, sem um combinado prévio de testes com eles. Logo, os pesquisadores convidam essas pessoas para participar desse processo, porém sem obrigá-las. A título de comparação, algumas pesquisas eleitorais e até mesmo sessões de degustação de alimentos em supermercados se enquadram nessa categoria de testagem. Nesse sentido, dentre suas vantagens estão a rapidez e o baixo custo, além de uma abrangência considerável de perfis de usuários a realizarem essa atividade. Dessa forma, efetuou-se o teste supracitado no contexto do jogo RonRonArte (quadro 6), com o objetivo de coletar feedbacks e possíveis melhorias a serem feitas.
+&nbsp; &nbsp; &nbsp; &nbsp;Segundo Kawakami (2021), um teste de guerrilha consiste em verificar e validar um produto com eventuais usuários por meio da abordagem destes em locais públicos, sem um combinado prévio de testes com eles. Logo, os pesquisadores convidam essas pessoas para participar desse processo, porém sem obrigá-las. A título de comparação, algumas pesquisas eleitorais e até mesmo sessões de degustação de alimentos em supermercados se enquadram nessa categoria de testagem. Nesse sentido, dentre suas vantagens estão a rapidez e o baixo custo, além de uma abrangência considerável de perfis de usuários a realizarem essa atividade. Dessa forma, efetuou-se o teste supracitado no contexto do jogo RonRonArte (quadro 6), no Inteli, durante a aula de UX, no dia 02/04/2025, com o objetivo de coletar feedbacks e possíveis melhorias a serem feitas. O teste foi feito com estudantes e funcionários da instituição, em um dispositivo celular. 
 
 <p align = 'center'>Quadro 6: testes de guerrilha</p>
 
@@ -1251,14 +1286,132 @@ O que poderia melhorar no jogo?| Nada | Colocar mais quadros, diversificar mais 
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p>
 
-### 5.2.1.2: Registro dos testes com público-alvo
+### 5.2.1.2: Registro dos testes de usabilidade
+&nbsp; &nbsp; &nbsp; &nbsp;Uma das membros da equipe CatUp - <a href="https://www.linkedin.com/in/nicolli-venino-santana-b84341254 utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Nicolli Venino Santana</a> - realizou testes com gatos na cafeteria Ronron Café em São Paulo, no dia 02/04/2025. Os testes foram realizados em um dispositivo celular e, durante o processo, foi possível verificar que o efeito sonoro de miado emitido após o abate de um alvo dispersou os gatos do jogo, levando a equipe a alterar o som. Ademais, concluiu-se que quanto mais rápido o alvo se move na tela, mais o gato fica interessado em abatê-lo. 
 
-### 5.2.1.3: Análise das respostas e principais conclusões
-&nbsp; &nbsp; &nbsp; &nbsp;Em relação aos testes de guerrilha, foi notório o agrado dos potenciais usuários com o modo criativo e com a abordagem da temática artística no jogo, assim como foi evidente o sucesso das imagens dos alvos. Nesse teste, foi possível também validar a intuitividade das regras do jogo e das instruções do tutorial, o clicar dos botões e a suficiência do tempo de tirar print do quadro no modo criativo. No entanto, foi possível concluir que a disposição e o tamanho dos textos não tiveram êxito, haja vista que pouco mais de 85% dos entrevistados relataram algum problema nesse aspecto. 
-Sobre o jogo em geral, a média aritmética das notas atribuídas pelos voluntários foi de 8,6, o que revela uma conclusão positiva no tangente à jogabilidade do Ronronarte.
+Segue, abaixo, uma imagem do teste de usabilidade (figura 42):
+
+ <p align = 'center'>Figura 42: teste no Ronron Café.</p> <br><br>
+
+<div align = "center"> 
+	
+![testeUsabilidade](https://github.com/user-attachments/assets/30015946-5385-4994-8299-8d1f5f667d5f)
+</div>
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+### 5.2.1.3: Registro dos testes com público-alvo
+&nbsp; &nbsp; &nbsp; &nbsp;Para realizar o teste com o público alvo (tutores e seus gatos), a equipe CatUp produziu um formulário do Google que resultou em 9 respostas. As perguntas do formulário foram elaboradas com o objetivo de validar funcionalidades do jogo (intuitividade do tutorial e dos botões, visual e proporção dos textos e efeitos sonoros escolhidos), assim como verificar a responsividade em diversos dispositivos e compreender, efetivamente, a resposta emocional dos tutores (Aesthetic no Ronronarte), a interação do tutor e do gato com a jogabilidade e como o gato interage com os elementos do jogo. 
+
+&nbsp; &nbsp; &nbsp; &nbsp;Assim, seguem as imagens dos resultados obtidos no formulário (figuras 43 a 60):
+
+<p align = 'center'>Figura 43: pergunta 1 </p>
+
+![Você tem um gato?](https://github.com/user-attachments/assets/344830c4-993f-4607-8369-6f5f9d169435)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+ <p align = 'center'>Figura 44: pergunta 2 </p>
+ 
+![Você já possuía experiência com jogos para gatos?](https://github.com/user-attachments/assets/1b2592ba-7d7c-4374-88d2-0573d8ebcfd8)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+ <p align = 'center'>Figura 45: pergunta 3 </p>
+ 
+![O jogo manteve a proporção correta na tela do seu dispositivo?](https://github.com/user-attachments/assets/e9d682f6-0a14-4a30-b788-6ab537fcb18d)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+ <p align = 'center'>Figura 46: pergunta 4 </p>
+ 
+![No tutorial, você entendeu, facilmente, os textos de instruções?](https://github.com/user-attachments/assets/d8be2b35-6d68-4481-a2c3-587f62f42f79)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+ <p align = 'center'>Figura 47: pergunta 5 </p>
+ 
+![Você entendeu, de forma intuitiva, que os botões devem ser pressionados por um tempo para mudarem de cena?](https://github.com/user-attachments/assets/e7977680-f62c-420f-9141-71a00b091594)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+ <p align = 'center'>Figura 48: pergunta 6 </p>
+ 
+![As disposições dos textos da tela de vitória te agradaram visualmente?](https://github.com/user-attachments/assets/0b676afd-b41d-4754-9aeb-2ea3d95dbb1d)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+ <p align = 'center'>Figura 49: pergunta 7 </p>
+ 
+![O tempo para tirar print foi suficiente para você tirar o print no modo criativo?](https://github.com/user-attachments/assets/af66014a-a955-49d9-b0a3-1a75f8129705)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+ <p align = 'center'>Figura 50: pergunta 8 </p>
+ 
+![Seu gato conseguiu associar a recompensa com o abater de alvos?](https://github.com/user-attachments/assets/63a86c1e-812f-4b42-8a59-bf7543f58aa0)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+ <p align = 'center'>Figura 51: pergunta 9 </p>
+ 
+![Informe qual foi a precisão dele em cada fase do jogo](https://github.com/user-attachments/assets/846fbd49-5d47-4b60-8cca-df6f8c9c5120)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+ <p align = 'center'>Figura 52: pergunta 10 </p>
+ 
+![Quanto tempo, aproximadamente, seu gato manteve atenção no jogo?](https://github.com/user-attachments/assets/48562f6c-0a49-4c1e-82c0-3e23536296ad)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+ <p align = 'center'>Figura 53: pergunta 11 </p>
+ 
+![Disserte como o gato reagiu aos efeitos sonoros. Ele apresentou alguma reação de resistência ou de susto?1](https://github.com/user-attachments/assets/46babf93-6077-4798-be9f-2cbcc4a80dff)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+
+ <p align = 'center'>Figura 54: pergunta 12 </p>
+ 
+![A progressão de dificuldade entre as fases foi perceptível?](https://github.com/user-attachments/assets/1451fb5b-5357-44dc-abf2-046b7d3d9012)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+  <p align = 'center'>Figura 55: pergunta 13 </p>
+  
+![Jogo apresentou algum erro?](https://github.com/user-attachments/assets/fcaf6da5-7a6f-40f7-8ee5-e5d9b92917a1)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+<p align = 'center'>Figura 56: pergunta 14 </p>
+   
+![Você apresentou dificuldades?](https://github.com/user-attachments/assets/5ae430e7-6b01-4239-af8f-1ce1943d6849)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+<p align = 'center'>Figura 57: pergunta 15 </p>
+
+![Nota](https://github.com/user-attachments/assets/219860b6-107c-49e2-b6ce-6fc0d7fd606d)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+<p align = 'center'>Figura 58: pergunta 16 </p>
+
+![Recomendação](https://github.com/user-attachments/assets/bc293d46-33b3-4059-808c-4496069d34aa)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+ 
+<p align = 'center'>Figura 59: pergunta 17 </p>
+
+![ O que você mais gostou no jogo?](https://github.com/user-attachments/assets/86901a20-de7e-4d3b-be05-83f0a9584f03)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+<p align = 'center'>Figura 60: pergunta 18 </p>
+
+![O que poderia melhorar no jogo?](https://github.com/user-attachments/assets/d514a24f-cfbb-4c6f-9354-943dc6f979cc)
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+### 5.2.1.4: Análise das respostas e principais conclusões
+&nbsp; &nbsp; &nbsp; &nbsp;Em relação aos testes de guerrilha, foi notório o agrado dos potenciais usuários com o modo criativo e com a abordagem da temática artística no jogo, assim como foi evidente o sucesso das imagens dos alvos. Nesse teste, foi possível também validar a intuitividade das regras do jogo e das instruções do tutorial, o clicar nos botões e a suficiência do tempo de tirar print do quadro no modo criativo. No entanto, foi possível concluir que a disposição e o tamanho dos textos não tiveram êxito, haja vista que pouco mais de 85% dos entrevistados relataram algum problema nesse aspecto. Sobre o jogo em geral, a média aritmética das notas atribuídas nesse teste pelos voluntários foi de 8,6, o que revela uma conclusão positiva no tangente à jogabilidade do Ronronarte.
+
+&nbsp; &nbsp; &nbsp; &nbsp;Já sobre o teste com o público alvo, ou seja, com gatos e tutores, obteve-se 9 respostas e, dessas, 77,8% afirmaram ter um ou mais gatos e 66,7% afirmaram não ter experiência com jogos para gatos. Com esse teste, pode-se validar a intuitividade do tutorial e dos botões (87,5% dos voluntários afirmaram entender o tutorial com facilidade e 77,8% entenderam facilmente que deveriam pressionar os botões por um tempo para que ele direcionasse para outra cena), assim como o agrado visual dos textos da tela de vitória, haja vista que 88,9% dos usuários que testaram o Ronronarte nesse teste assinalaram a alternativa que validava esse aspecto. 
+
+&nbsp; &nbsp; &nbsp; &nbsp;Ademais, 50% afirmaram que o jogo apresentou responsividade na tela do dispositivo e 50% afirmaram que não, de modo que foi possível verificar que o jogo não mantém proporção correta em todos os dispositivos e essa funcionalidade deve ser implementada no futuro. De maneira similar, 50% afirmaram que o tempo de tirar print no modo criativo foi suficiente e os outros 50% disseram que, embora o tempo tenha sido suficiente, poderia ser estendido. Com essa informação, conclui-se que é necessário aumentar o tempo de tirar print, a fim de atender a necessidade de um maior número de usuários.
+
+&nbsp; &nbsp; &nbsp; &nbsp;Já no tangente à interação do gato com o Ronronarte, mais de 50% dos pets não conseguiram associar a recompensa com o abate de alvos e perderam o foco com facilidade (o tempo máximo de foco dos gatos que participaram dos testes foi de 10 minutos). Sobre a reação dos gatos com os efeitos sonoros, 1 dos voluntários não incluiu comentários, 1 afirmou que o gato não expressou reações com esse aspecto, 6 incluíram comentários positivos que validam os sons escolhidos pela equipe e 1 afirmou que o gato se assustou - porém não incluiu demais detalhes - e dos 6 voluntários que responderam a questão sobre dificuldades, 33,3% afirmaram que a dificuldade foi a falta de motivação do gato e os demais não apresentaram dificuldades.
+
+&nbsp; &nbsp; &nbsp; &nbsp;Por fim, a equipe recebeu feedbacks positivos quanto à criatividade do Ronronarte, validando a temática artística explorada. Nesse sentido, vale mencionar também que média aritmética das notas dadas ao Ronronarte nesse teste foi de 7,0 e, em uma escala de 0 a 10, a média aritmética do quanto os usuários recomendariam o Ronronarte foi de 8.5, de forma que, considerando a nota supracitada e a nota do teste de guerrilha, a média de nota dada pelos potenciais usuários para o Ronronarte foi de 7,8. Dessa forma, conclui-se o sucesso dos testes realizados, pois a equipe conseguiu atingir seu objetivo de validar as funcionalidades do jogo, entender melhor a interação do gato e do tutor e identificar pontos de melhoria.
+
 
 ### 5.2.2 Melhorias
-&nbsp; &nbsp; &nbsp; &nbsp;Com base nos testes de jogabilidade, a equipe CatUp tem como plano de melhorias aumentar o tamanho dos botões, dos alvos e dos textos - haja vista todos os entrevistados no teste de guerrilha relataram algum desconforto com esses itens -, assim como retirar o temporizador e passar a pontuação para o canto da tela, conforme a sugestão do entrevistado 6. Ademais, em razão da distração dos gatos no teste de usabilidade com o som de miar ao acertar os alvos, a equipe entende que é imprescindível alterar o efeito sonoro para uma frequência mais aguda. 
+&nbsp; &nbsp; &nbsp; &nbsp;Com base nos testes de jogabilidade, a equipe CatUp tem como plano de melhorias aumentar o tamanho dos botões, dos alvos e dos textos - haja vista que todos os entrevistados no teste de guerrilha relataram algum desconforto com esses itens -, assim como retirar o temporizador e passar a pontuação para o canto da tela, conforme a sugestão do entrevistado 6 no teste de guerrilha. Ademais, em razão da distração dos gatos no teste de usabilidade com o som de miado ao acertar os alvos, a equipe vai alterar o efeito sonoro para uma frequência mais aguda.
+
+&nbsp; &nbsp; &nbsp; &nbsp;Já a partir dos testes com o público alvo foi possível identificar como pontos de melhorias o aumento do tempo de tirar print do quadro no modo criativo, adicionando mais 2 segundos, e planejar a potencialização da responsividade em trabalhos futuros - já que tal incremento não poderá ser feito até o final da Sprint 5, haja vista o curto período de tempo para entregar o MVP do projeto ao parceiro e a complexidade técnica do aperfeiçoamento. Ademais, devido a sugestão de melhoria no formulário que o pombo poderia ser de uma cor mais chamativa, pois o cinza no azul não atraiu atenção ao gato do voluntário, a equipe escurecerá a cor do sprite do alvo pombo. 
+
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros (sprint 5)
 
@@ -1267,6 +1420,9 @@ No entanto, foi perceptível nos testes de usabilidade que o jogo apresenta difi
 Além disso, como melhoria, a equipe CatUp idealiza a construção de um dispenser com arduíno para automatizar o ato de dar a recompensa para o gato e também permitir que o gato jogue o Ronronarte, mesmo se seu tutor estiver distante. Para tal efeito, será necessário o auxílio financeiro do parceiro para a disponibilidade dos recursos de hardware e da assistência da universidade para proporcionar aulas com os conhecimentos técnicos basilares para a construção do dispenser. 
 
 # <a name="c7"></a>7. Referências
+
+ARIÊ, Alan. NEGRESTUDO: MAPEAMENTO DE ARTISTAS REPRESENTADES PELAS GALERIAS DE ARTE DE SÃO PAULO. [S. l.], 8 out. 2020. Disponível em: https://projetoafro.com/editorial/artigo/negrestudo-mapeamento-artistas-representades-pelas-galerias-de-arte-de-sao-paulo/. Acesso em: 10 abr. 2025.
+
 CASAROTTO, Camila. Como fazer análise SWOT ou FOFA: confira o passo a passo completo com as melhores dicas. [S. l.], 20 dez. 2019. Disponível em: https://rockcontent.com/br/blog/como-fazer-uma-analise-swot/. Acesso em: 8 abr. 2025.
 
 EBAC. Concept Art: uma imagem vale mais que mil palavras. [S. l.], 2 jun. 2023. Disponível em: https://ebaconline.com.br/blog/concept-art-uma-imagem-vale-mais-que-mil-palavras. Acesso em: 8 abr. 2025.
@@ -1287,6 +1443,8 @@ MIKOS, Ana Luzia. Julho Dourado alerta tutores sobre cuidados com os pets: Lei e
 
 NAPOLEÃO, Bianca Minetto. Matriz de Riscos (Matriz de Probabilidade e Impacto). [S. l.], 26 jun. 2019. Disponível em: https://ferramentasdaqualidade.org/matriz-de-riscos-matriz-de-probabilidade-e-impacto/. Acesso em: 20 mar. 2025.
 
+NMWA. Get the Facts: Learn about gender inequity in the arts with some eye-opening facts.. [S. l.], 2022. Disponível em: https://nmwa.org/support/advocacy/get-facts/. Acesso em: 10 abr. 2025.
+
 PEREIRA, Daniel. O que é o Value Proposition Canvas?. [S. l.], 27 set. 2024. Disponível em: https://businessmodelanalyst.com/pt/value-proposition-canvas/. Acesso em: 27 mar. 2025.
 
 PETZ. Gato tem sentimento? O que e como eles sentem?. [S. l.], 6 ago. 2023. Disponível em: https://www.petz.com.br/blog/pets/gatos/gato-tem-sentimento/. Acesso em: 18 fev. 2025.
@@ -1298,8 +1456,4 @@ SCHWERING, Ramona. Como definir casos de teste e prioridades. [S. l.], 9 ago. 20
 SOLLITTO, André. Por que brasileiros têm preferido escolher gatos como companheiros do lar. Veja, 2022.
 Disponível em: https://veja.abril.com.br/comportamento/por-que-brasileiros-tem-preferido-escolher-gatos-como-companheiros-do-lar/. Acesso em: 18 fev. 2025.
 
-
-
-# <a name="c8"></a>Anexos
-
-*Inclua aqui quaisquer complementos para seu projeto, como diagramas, imagens, tabelas etc. Organize em sub-tópicos utilizando headings menores (use ## ou ### para isso)*
+TOTVS. Entenda o que são missão, visão e valores e como defini-los. [S. l.], 27 fev. 2024. Disponível em: https://www.totvs.com/blog/gestao-para-recursos-humanos/missao-visao-e-valores/. Acesso em: 10 abr. 2025.
