@@ -639,7 +639,7 @@ T. **Oportuno:** A entrega do melhor MVP possível terá como prazo a sprint rev
 
 <p align ="center">Figura 11: diagrama de cenas - RonRonArte</p>
 
-![Diagrama de Cenas (4)](https://github.com/user-attachments/assets/bc3cf626-7a2b-4ea4-ae68-f9e452fce3ca)
+![Diagrama de Cenas (4)](https://github.com/Inteli-College/2025-1A-T15-IN01-G03/blob/6af248fdc0bbb9fc66ed9af5f16fe7b475d4eaac/assets/diagrama%20de%20cenas%20-%20ronronartef.png)
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br> <br>
 
