@@ -30,8 +30,6 @@
 
 [7. Referências](#c7)
 
-[Anexos](#c8)
-
 <br>
 
 
@@ -1282,103 +1280,116 @@ O que poderia melhorar no jogo?| Nada | Colocar mais quadros, diversificar mais 
 
 <p align = 'center'>Fonte: material produzido pelos autores (2025).</p>
 
-### 5.2.1.2: Registro dos testes com público-alvo
+### 5.2.1.2: Registro dos testes de usabilidade
+&nbsp; &nbsp; &nbsp; &nbsp;Uma das membros da equipe CatUp - <a href="https://www.linkedin.com/in/nicolli-venino-santana-b84341254 utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Nicolli Venino Santana</a> - realizou testes com gatos na cafeteria Ronron Café em São Paulo. Durante os testes, foi possível verificar que o efeito sonoro de miado emitido após o abate de um alvo dispersou os gatos do jogo, levando a equipe a alterar o som. Ademais, concluiu-se que quanto mais rápido o alvo se move na tela, mais o gato fica interessado em abatê-lo. 
+
+Segue, abaixo, uma imagem do teste de usabilidade:
+
+ <p align = 'center'>Figura 41: teste no Ronron Café.</p> <br><br>
+
+<div align = "center"> 
+	
+![testeUsabilidade](https://github.com/user-attachments/assets/30015946-5385-4994-8299-8d1f5f667d5f)
+</div>
+ <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
+
+### 5.2.1.3: Registro dos testes com público-alvo
 &nbsp; &nbsp; &nbsp; &nbsp;Para realizar o teste com o público alvo (tutores e seus gatos), a equipe CatUp produziu um formulário do Google que resultou em 9 respostas. As perguntas do formulário foram elaboradas com o objetivo de validar funcionalidades do jogo (intuitividade do tutorial e dos botões, visual e proporção dos textos e efeitos sonoros escolhidos), assim como verificar a responsividade em diversos dispositivos e compreender, efetivamente, a resposta emocional dos tutores (Aesthetic no Ronronarte), a interação do tutor e do gato com a jogabilidade e como o gato interage com os elementos do jogo. 
 
-&nbsp; &nbsp; &nbsp; &nbsp;Assim, seguem as imagens dos resultados obtidos no formulário (figuras 41 a 58):
+&nbsp; &nbsp; &nbsp; &nbsp;Assim, seguem as imagens dos resultados obtidos no formulário (figuras 42 a 59):
 
-<p align = 'center'>Figura 41: pergunta 1 </p>
+<p align = 'center'>Figura 42: pergunta 1 </p>
 
 ![Você tem um gato?](https://github.com/user-attachments/assets/344830c4-993f-4607-8369-6f5f9d169435)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
- <p align = 'center'>Figura 42: pergunta 2 </p>
+ <p align = 'center'>Figura 43: pergunta 2 </p>
  
 ![Você já possuía experiência com jogos para gatos?](https://github.com/user-attachments/assets/1b2592ba-7d7c-4374-88d2-0573d8ebcfd8)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
- <p align = 'center'>Figura 43: pergunta 3 </p>
+ <p align = 'center'>Figura 44: pergunta 3 </p>
  
 ![O jogo manteve a proporção correta na tela do seu dispositivo?](https://github.com/user-attachments/assets/e9d682f6-0a14-4a30-b788-6ab537fcb18d)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
- <p align = 'center'>Figura 44: pergunta 4 </p>
+ <p align = 'center'>Figura 45: pergunta 4 </p>
  
 ![No tutorial, você entendeu, facilmente, os textos de instruções?](https://github.com/user-attachments/assets/d8be2b35-6d68-4481-a2c3-587f62f42f79)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
- <p align = 'center'>Figura 45: pergunta 5 </p>
+ <p align = 'center'>Figura 46: pergunta 5 </p>
  
 ![Você entendeu, de forma intuitiva, que os botões devem ser pressionados por um tempo para mudarem de cena?](https://github.com/user-attachments/assets/e7977680-f62c-420f-9141-71a00b091594)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
- <p align = 'center'>Figura 46: pergunta 6 </p>
+ <p align = 'center'>Figura 47: pergunta 6 </p>
  
 ![As disposições dos textos da tela de vitória te agradaram visualmente?](https://github.com/user-attachments/assets/0b676afd-b41d-4754-9aeb-2ea3d95dbb1d)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
- <p align = 'center'>Figura 47: pergunta 7 </p>
+ <p align = 'center'>Figura 48: pergunta 7 </p>
  
 ![O tempo para tirar print foi suficiente para você tirar o print no modo criativo?](https://github.com/user-attachments/assets/af66014a-a955-49d9-b0a3-1a75f8129705)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
- <p align = 'center'>Figura 48: pergunta 8 </p>
+ <p align = 'center'>Figura 49: pergunta 8 </p>
  
 ![Seu gato conseguiu associar a recompensa com o abater de alvos?](https://github.com/user-attachments/assets/63a86c1e-812f-4b42-8a59-bf7543f58aa0)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
- <p align = 'center'>Figura 49: pergunta 9 </p>
+ <p align = 'center'>Figura 50: pergunta 9 </p>
  
 ![Informe qual foi a precisão dele em cada fase do jogo](https://github.com/user-attachments/assets/846fbd49-5d47-4b60-8cca-df6f8c9c5120)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
- <p align = 'center'>Figura 50: pergunta 10 </p>
+ <p align = 'center'>Figura 51: pergunta 10 </p>
  
 ![Quanto tempo, aproximadamente, seu gato manteve atenção no jogo?](https://github.com/user-attachments/assets/48562f6c-0a49-4c1e-82c0-3e23536296ad)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
- <p align = 'center'>Figura 51: pergunta 11 </p>
+ <p align = 'center'>Figura 52: pergunta 11 </p>
  
 ![Disserte como o gato reagiu aos efeitos sonoros. Ele apresentou alguma reação de resistência ou de susto?1](https://github.com/user-attachments/assets/46babf93-6077-4798-be9f-2cbcc4a80dff)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
 
- <p align = 'center'>Figura 52: pergunta 12 </p>
+ <p align = 'center'>Figura 53: pergunta 12 </p>
  
 ![A progressão de dificuldade entre as fases foi perceptível?](https://github.com/user-attachments/assets/1451fb5b-5357-44dc-abf2-046b7d3d9012)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-  <p align = 'center'>Figura 53: pergunta 13 </p>
+  <p align = 'center'>Figura 54: pergunta 13 </p>
   
 ![Jogo apresentou algum erro?](https://github.com/user-attachments/assets/fcaf6da5-7a6f-40f7-8ee5-e5d9b92917a1)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 54: pergunta 14 </p>
+<p align = 'center'>Figura 55: pergunta 14 </p>
    
 ![Você apresentou dificuldades?](https://github.com/user-attachments/assets/5ae430e7-6b01-4239-af8f-1ce1943d6849)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 55: pergunta 15 </p>
+<p align = 'center'>Figura 56: pergunta 15 </p>
 
 ![Nota](https://github.com/user-attachments/assets/219860b6-107c-49e2-b6ce-6fc0d7fd606d)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 56: pergunta 16 </p>
+<p align = 'center'>Figura 57: pergunta 16 </p>
 
 ![Recomendação](https://github.com/user-attachments/assets/bc293d46-33b3-4059-808c-4496069d34aa)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
  
-<p align = 'center'>Figura 57: pergunta 17 </p>
+<p align = 'center'>Figura 58: pergunta 17 </p>
 
 ![ O que você mais gostou no jogo?](https://github.com/user-attachments/assets/86901a20-de7e-4d3b-be05-83f0a9584f03)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-<p align = 'center'>Figura 58: pergunta 18 </p>
+<p align = 'center'>Figura 59: pergunta 18 </p>
 
 ![O que poderia melhorar no jogo?](https://github.com/user-attachments/assets/d514a24f-cfbb-4c6f-9354-943dc6f979cc)
  <p align = 'center'>Fonte: material produzido pelos autores (2025).</p> <br><br>
 
-### 5.2.1.3: Análise das respostas e principais conclusões
+### 5.2.1.4: Análise das respostas e principais conclusões
 &nbsp; &nbsp; &nbsp; &nbsp;Em relação aos testes de guerrilha, foi notório o agrado dos potenciais usuários com o modo criativo e com a abordagem da temática artística no jogo, assim como foi evidente o sucesso das imagens dos alvos. Nesse teste, foi possível também validar a intuitividade das regras do jogo e das instruções do tutorial, o clicar nos botões e a suficiência do tempo de tirar print do quadro no modo criativo. No entanto, foi possível concluir que a disposição e o tamanho dos textos não tiveram êxito, haja vista que pouco mais de 85% dos entrevistados relataram algum problema nesse aspecto. Sobre o jogo em geral, a média aritmética das notas atribuídas nesse teste pelos voluntários foi de 8,6, o que revela uma conclusão positiva no tangente à jogabilidade do Ronronarte.
 
 &nbsp; &nbsp; &nbsp; &nbsp;Já sobre o teste com o público alvo, ou seja, com gatos e tutores, obteve-se 9 respostas e, dessas, 77,8% afirmaram ter um ou mais gatos e 66,7% afirmaram não ter experiência com jogos para gatos. Com esse teste, pode-se validar a intuitividade do tutorial e dos botões (87,5% dos voluntários afirmaram entender o tutorial com facilidade e 77,8% entenderam facilmente que deveriam pressionar os botões por um tempo para que ele direcionasse para outra cena), assim como o agrado visual dos textos da tela de vitória, haja vista que 88,9% dos usuários que testaram o Ronronarte nesse teste assinalaram a alternativa que validava esse aspecto. 
