@@ -23,7 +23,7 @@
 ### Instrutores
 - <a href="https://www.linkedin.com/in/kizzyterra/?originalSubdomain=br">Kizzy Fernanda Terra Ferreira da Paz</a>
 - <a href="https://www.linkedin.com/in/henrique-mohallem-paiva-6854b460/?originalSubdomain=br">Henrique Mohallem Paiva</a> 
-- <a href="https://www.linkedin.com/in/">Bruna Mayer Costa</a> 
+- <a href="http://lattes.cnpq.br/3320717367822283">Bruna Mayer Costa</a> 
 - <a href="https://www.linkedin.com/in/egondaxbacher/">Egon Ferreira Daxbacher </a>
 - <a href="https://www.linkedin.com/in/anacristinadossantos/?originalSubdomain=br">Ana Cristina dos Santos</a> 
 
