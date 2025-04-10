@@ -1,7 +1,26 @@
 export var completedPhases = { Tutorial: false, Phase1: false, Phase2: false, Phase3: false, Phase4: false, CreativeMode: false};
 
-// Classe de cena a ser exportada
+export function resizeGame(game) {
+    // Armazenam as dimensões da janela do navegador
+    let width = window.innerWidth; 
+    let height = window.innerHeight;
+    let gameRatio = 2 / 1; // Proporção fixa de 2:1
 
+    // Ajusta a largura e altura para manter a proporção
+    if (width / height > gameRatio) {
+        width = height * gameRatio;  // Mantém a altura e ajusta a largura
+    } else {
+        height = width / gameRatio;  // Mantém a largura e ajusta a altura
+    }
+
+    // Chama a função que ajusta as dimensões do jogo na tela
+    game.scale.resize(width, height);
+}
+
+// Evento para redimensionar o jogo mantendo 2:1
+window.addEventListener('resize', resizeGame);
+
+// Classe de cena a ser exportada
 export default class SplashScreen extends Phaser.Scene {
     constructor(){
         // Configura a chave de classe
@@ -197,21 +216,5 @@ export default class SplashScreen extends Phaser.Scene {
                 this.cameras.main.fadeOut(time1500, 0, 0, 0); // Aplica um efeito de fade-out que escurece a tela
             } 
         });
-    }
-
-    resizeGame() {
-        // Armazena as dimensões da tela do navegador
-        let width = window.innerWidth;
-        let height = window.innerHeight;
-        let gameRatio = 2 / 1; // Mantém a proporção 2:1
-    
-        // Ajusta a proporção do jogo para a proporção pré-definida
-        if (width / height > gameRatio) {
-            width = height * gameRatio;
-        } else {
-            height = width / gameRatio;
-        }
-    
-        game.scale.resize(width, height); // Chama a função para ajustar as dimensões do jogo de acordo com a proporção definida
     }
 }

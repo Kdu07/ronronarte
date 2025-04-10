@@ -1,4 +1,5 @@
 import { completedPhases } from './splashScreen.js';
+import { resizeGame } from './splashScreen.js'
 
 
 // Classe de cena a ser exportada
@@ -9,6 +10,7 @@ export default class Menu extends Phaser.Scene{
     }
 
     create() {
+        resizeGame(this.game);        
         // Cria imagens de background e botão jogar
         this.bgMenu = this.add.image(this.scale.width/2, this.scale.height/2, 'bgMenu')
         .setDisplaySize(this.scale.width, this.scale.height);
@@ -25,7 +27,7 @@ export default class Menu extends Phaser.Scene{
 
             
             setTimeout(() => {
-                resizeGame()
+                resizeGame(this.game)
             }, 1000);
             
 

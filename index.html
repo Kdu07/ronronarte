@@ -55,26 +55,6 @@
 
     // Instancia o jogo
     const game = new Phaser.Game(config);
-
-    // Evento para redimensionar o jogo mantendo 2:1
-    window.addEventListener('resize', resizeGame);
-
-    function resizeGame() {
-        // Armazenam as dimensões da janela do navegador
-        let width = window.innerWidth; 
-        let height = window.innerHeight;
-        let gameRatio = 2 / 1; // Proporção fixa de 2:1
-
-        // Ajusta a largura e altura para manter a proporção
-        if (width / height > gameRatio) {
-            width = height * gameRatio;  // Mantém a altura e ajusta a largura
-        } else {
-            height = width / gameRatio;  // Mantém a largura e ajusta a altura
-        }
-
-        // Chama a função que ajusta as dimensões do jogo na tela
-        game.scale.resize(width, height);
-    }
   </script>
 </body>
 </html>
